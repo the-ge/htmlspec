@@ -94,6 +94,8 @@ def gen_elements(element):
     elif ";" in element:
         for e in re.split(r'[;\r\n]+', element.strip(string.whitespace + ";")):
             yield from gen_elements(e.strip())
+    elif "(" in element or ")" in element:
+        yield element
     elif " " in element:
         yield element.split(" ")[1]
     else:
