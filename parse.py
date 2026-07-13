@@ -163,6 +163,7 @@ def parse_index_categories(soup):
         assert len(cells) == 3
 
         category, elements, exceptions = cells
+        category = " ".join(category.split())
 
         exceptions = "; ".join(map(lambda x: x.strip(), exceptions.split(";")))
         if category.strip().endswith("*"):
