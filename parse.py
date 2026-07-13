@@ -11,9 +11,9 @@ specdir = Path("contrib")
 output_json = Path("spec-json")
 
 
-# Match a list of one-or-more keywords such as the string `"foo"; "bar";`
+# Match a list of one-or-more keywords such as the string `"foo"; "bar"; "the empty string"`
 # Each keyword is alpha-numeric and may (rarely) contain a hyphen.
-KEYWORDS_PATTERN = re.compile(r'"[a-zA-Z0-9/-]+"(; "[a-zA-Z0-9/-]+")*')
+KEYWORDS_PATTERN = re.compile(r'^(?:"[a-zA-Z0-9/-]*"|the empty string)(?:; (?:"[a-zA-Z0-9/-]*"|the empty string))*$')
 
 # Match a element exceptions such as the string "element (if ...)'
 EXCEPTION_PATTERN = re.compile(r'([a-zA-Z0-9-]+) \(if [a-zA-Z0-9\' -]+\)')
@@ -113,7 +113,15 @@ def gen_keywords(keywords):
     """Given a `keywords` string such as `"foo"; "bar"`, yield each keyword.
     Otherwise, yield nothing."""
     if KEYWORDS_PATTERN.fullmatch(keywords):
-        yield from map(lambda x: x.strip().strip("\""), keywords.split(";"))
+        # Check for the literal phrase and return an empty string, 
+        # otherwise strip the quotes as before.
+        def process_token(token):
+            token = token.strip()
+            if token == 'the empty string':
+                return ''
+            return token.strip('"')
+
+        yield from map(process_token, keywords.split(";"))
 
 
 def parse_index_elements(soup):
