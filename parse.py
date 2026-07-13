@@ -139,7 +139,7 @@ def parse_index_elements(soup):
 
     for row in rows:
         cells = row.find_all(["th", "td"])
-        cells = [x.get_text() for x in cells]
+        cells = [x.get_text().strip() for x in cells]
         assert len(cells) == 7
 
         element, desc, categories, _, children, attributes, _ = cells
@@ -159,7 +159,7 @@ def parse_index_categories(soup):
 
     for row in rows:
         cells = row.find_all(["th", "td"])
-        cells = [x.get_text() for x in cells]
+        cells = [x.get_text().strip() for x in cells]
         assert len(cells) == 3
 
         category, elements, exceptions = cells
@@ -184,7 +184,7 @@ def parse_index_attributes(soup):
 
     for row in rows:
         cells = row.find_all(["th", "td"])
-        cells = [x.get_text() for x in cells]
+        cells = [x.get_text().strip() for x in cells]
         assert len(cells) == 4
 
         attribute, elements, desc, value = cells
