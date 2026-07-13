@@ -145,6 +145,7 @@ def parse_index_elements(soup):
         assert len(cells) == 7
 
         element, desc, categories, _, children, attributes, _ = cells
+        print(f" + element: {element}")
 
         elements = gen_elements(element)
         categories = set(gen_categories(categories))
@@ -166,6 +167,7 @@ def parse_index_categories(soup):
 
         category, elements, exceptions = cells
         category = " ".join(category.split())
+        print(f" + category: {category}")
 
         exceptions = "; ".join(map(lambda x: x.strip(), exceptions.split(";")))
         if category.strip().endswith("*"):
@@ -191,6 +193,7 @@ def parse_index_attributes(soup):
         assert len(cells) == 4
 
         attribute, elements, desc, value = cells
+        print(f" + attribute: {attribute}")
         value_desc = " ".join([x.strip().strip("*") for x in value.split("\n")])
         value_desc = value_desc.strip()
         if value.strip().endswith("*"):
