@@ -30,18 +30,23 @@ COPYING = [x.replace("\n", " ").strip() for x in COPYING]
 
 # Global attributes common to all HTML elements
 # source: https://html.spec.whatwg.org/multipage/dom.html#global-attributes
-# plus class, id, slot, role (ARIA)
+# plus class, id, role (ARIA), and slot
 global_attributes = \
 [
     "accesskey",
     "autocapitalize",
+    "autocorrect",
+    "autofocus",
     "class",
     "contenteditable",
     "dir",
     "draggable",
     "enterkeyhint",
+    "headingoffset",
+    "headingreset",
     "hidden",
     "id",
+    "inert",
     "inputmode",
     "is",
     "itemid",
@@ -51,13 +56,15 @@ global_attributes = \
     "itemtype",
     "lang",
     "nonce",
-    "role", # ARIA
+    "popover",
+    "role",
     "slot",
     "spellcheck",
     "style",
     "tabindex",
     "title",
     "translate",
+    "writingsuggestions",
 ]
 
 
