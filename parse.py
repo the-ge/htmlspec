@@ -68,7 +68,7 @@ global_attributes = \
 ]
 
 
-t_element       = namedtuple("Element",       ["name", "desc", "categories", "attributes", "children"])
+t_element       = namedtuple("Element",       ["name", "description", "categories", "attributes", "children"])
 t_category      = namedtuple("Category",      ["name", "elements", "elements_maybe", "exceptions"])
 t_attribute     = namedtuple("Attributes",    ["name", "elements", "desc", "value_type", "value_keywords"])
 t_event_handler = namedtuple("EventHandlers", ["name", "applies_to"])
