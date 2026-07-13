@@ -192,25 +192,70 @@ def parse_index_attributes(soup):
         cells = [x.get_text().strip() for x in cells]
         assert len(cells) == 4
 
-        attribute_name, tag_scope, attribute_description, value_info = cells
+        attribute_name, tag_scope_description, attribute_description, value_info = cells
         print(f" + attribute: {attribute_name}")
+        is_value_complicated = value_info.endswith("*")
+        if is_value_complicated:
+            value_info = value_info[:-1]
         value_type = " ".join([x.strip().strip("*") for x in value_info.split("\n")])
         value_type = value_type.strip()
-        if value_info.strip().endswith("*"):
-            value_type += ". The actual rules are more complicated than indicated"
+        value_type_description = value_type
+        separator = ''
+
+        is_tag_complicated = False
+        tag_scope = set()
+        tag_notes = []
+        for token in gen_elements(tag_scope_description):
+            tmp = token.strip()
+            idx = tmp.find('(')
+            if idx != -1: # Contains '('
+                is_tag_complicated = True
+                tag_scope.add(tmp[:idx].strip())
+                tag_notes.append(token)
+            else:
+                tag_scope.add(tmp)
+        tag_notes = f' Special tag scope: {', '.join(tag_notes)}.' if is_tag_complicated else ''
+
         value_keywords = set(gen_keywords(value_type))
         if value_keywords:
-            value_type = "Keywords"
+            value_type = "enum"
+            value_type_description = ''
+        else:
+            if value_type == "Text":
+                value_type = 'string'
+            elif value_type == "Boolean attribute":
+                value_type = 'float'
+            elif value_type == "Valid integer":
+                value_type = 'int'
+            elif value_type == "Valid floating-point number":
+                value_type = 'string'
+            elif value_type == "Valid non-negative integer":
+                value_type = 'int'
+            elif value_type == "Valid date string with optional time":
+                value_type = 'datetime'
+            elif value_type == "Valid list of floating-point numbers":
+                value_type = 'string'
+                separator = ','
+            elif any(needle in value_type.lower() for needle in ("comma-separated list of", "set of comma-separated tokens")):
+                value_type = 'string'
+                separator = ','
+            elif "space-separated tokens" in value_type:
+                value_type = 'string'
+                separator = ' '
+            else:
+                value_type = 'string'
 
-        tag_scope = set(map(lambda x: x.strip(";\n "), gen_elements(tag_scope)))
+        if is_value_complicated or is_tag_complicated:
+            value_type_description += f".{tag_notes} *Incomplete description. See the full specification."
+
         yield t_attribute(
             attribute_name,
             tag_scope,
             attribute_description,
             value_type,
             value_keywords,
-            '',
-            '',
+            value_type_description,
+            separator,
         )
 
 
