@@ -1,4 +1,3 @@
-from bs4 import BeautifulSoup
 from email.utils import parsedate_to_datetime
 from datetime import datetime
 from pathlib import Path

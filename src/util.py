@@ -1,9 +1,7 @@
 from dataclasses import dataclass
-from pathlib import Path
-from typing import List, Any, Dict, Union, Set
+from typing import Any, Dict, List, Iterator, Optional, Set
 import dataclasses
 import itertools
-import json
 
 
 @dataclass(frozen=True, slots=True)
