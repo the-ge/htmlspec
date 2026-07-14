@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 from pathlib import Path
 from slugify import slugify
-from typing import Any, Dict, Iterator, List, Optional, Set
+from typing import Any, Callable, Dict, Iterator, List, Optional, Set
 import json
 import logging
 import re
