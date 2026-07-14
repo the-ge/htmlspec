@@ -7,52 +7,7 @@ import logging
 
 from util import grouper
 from models import t_element, t_category, t_attribute, t_event_handler
-
-
-# Patterns used in parsing
-KEYWORDS_PATTERN = re.compile(
-    r'^(?:"[a-zA-Z0-9/-]*"|the empty string)(?:; (?:"[a-zA-Z0-9/-]*"|the empty string))*$'
-)
-EXCEPTION_PATTERN = re.compile(r'([a-zA-Z0-9-]+) \(if [a-zA-Z0-9\' -]+\)')
-
-
-# Global attributes common to all HTML elements
-# source: https://html.spec.whatwg.org/multipage/dom.html#global-attributes
-# plus class, id, role (ARIA), and slot
-GLOBAL_ATTRIBUTES = [
-    "accesskey",
-    "autocapitalize",
-    "autocorrect",
-    "autofocus",
-    "class",
-    "contenteditable",
-    "dir",
-    "draggable",
-    "enterkeyhint",
-    "headingoffset",
-    "headingreset",
-    "hidden",
-    "id",
-    "inert",
-    "inputmode",
-    "is",
-    "itemid",
-    "itemprop",
-    "itemref",
-    "itemscope",
-    "itemtype",
-    "lang",
-    "nonce",
-    "popover",
-    "role",
-    "slot",
-    "spellcheck",
-    "style",
-    "tabindex",
-    "title",
-    "translate",
-    "writingsuggestions",
-]
+from constants import GLOBAL_ATTRIBUTES, KEYWORDS_PATTERN, EXCEPTION_PATTERN
 
 
 # ---- Generators for splitting spec strings ----
