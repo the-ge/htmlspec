@@ -324,7 +324,6 @@ class SpecParser:
             # persist to dedicated file
             self.global_attrs_file.parent.mkdir(parents=True, exist_ok=True)
             with self.global_attrs_file.open("w", encoding="utf-8") as f:
-                print('  -->  ', 327, self.global_attrs_file)
                 json.dump(sorted(parsed), f)
             self._global_attributes = parsed
             return parsed
