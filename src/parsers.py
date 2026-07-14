@@ -1,16 +1,23 @@
 from bs4 import BeautifulSoup
 from slugify import slugify
 from typing import Iterator, Set, List, Dict
+from pathlib import Path
+from typing import Set
 import re
 import string
 import logging
+import json
 
 from util import grouper
 from models import t_element, t_category, t_attribute, t_event_handler
-from constants import GLOBAL_ATTRIBUTES, KEYWORDS_PATTERN, EXCEPTION_PATTERN
+from constants import KEYWORDS_PATTERN, EXCEPTION_PATTERN
+
+
+GLOBAL_ATTRS_FILE = Path(".state") / "global_attributes"
 
 
 # ---- Generators for splitting spec strings ----
+
 
 def gen_elements(element: str) -> Iterator[str]:
     element = element.strip()
@@ -38,11 +45,11 @@ def gen_elements(element: str) -> Iterator[str]:
         yield element
 
 
-def gen_attributes(attributes: str) -> Iterator[str]:
+def gen_attributes(attributes: str, global_attributes: Set[str]) -> Iterator[str]:
     for attribute in attributes.strip(string.whitespace + ";").split(";"):
         attr = attribute.strip("*").strip()
         if attr == "globals":
-            yield from GLOBAL_ATTRIBUTES
+            yield from global_attributes
         else:
             yield attr
 
@@ -75,7 +82,33 @@ def parse_element_exceptions_string(xs: str) -> Iterator[str]:
 
 # ---- Parsers for each section ----
 
-def parse_index_elements(soup: BeautifulSoup) -> Iterator[t_element]:
+
+# Global attributes common to all HTML elements
+# source: https://html.spec.whatwg.org/multipage/dom.html#global-attributes
+# plus class, id, role (ARIA), and slot
+def parse_global_attributes(soup: BeautifulSoup) -> Set[str]:
+    default = {"class", "id", "role", "slot"}
+    try:
+        anchors = soup.find("h4", {"id": "global-attributes"}) \
+                      .find_next("ul", {"class": "brief"}) \
+                      .find_all("a")
+        parsed = default.union({a.get_text().strip() for a in anchors})
+        with GLOBAL_ATTRS_FILE.open("w", encoding="utf-8") as f:
+            json.dump(sorted(parsed), f)   # sorted for deterministic output
+
+        return parsed
+
+    except AttributeError:
+        logging.error("Could not parse global attributes from spec. Trying the fallback.")
+        try:
+            with GLOBAL_ATTRS_FILE.open("r", encoding="utf-8") as f:
+                data = json.load(f)
+                return set(data)
+        except (FileNotFoundError, json.JSONDecodeError):
+            logging.error("No valid fallback found. Using default set.")
+            return default
+
+def parse_index_elements(soup: BeautifulSoup, global_attributes: Set[str]) -> Iterator[t_element]:
     rows = soup.find("h3", {"id": "elements-3"}).find_next("tbody").find_all("tr")
     for row in rows:
         cells = [x.get_text().strip() for x in row.find_all(["th", "td"])]
@@ -86,7 +119,7 @@ def parse_index_elements(soup: BeautifulSoup) -> Iterator[t_element]:
 
         elements = gen_elements(element)
         categories_set = set(gen_categories(categories))
-        attributes_set = set(gen_attributes(attributes))
+        attributes_set = set(gen_attributes(attributes, global_attributes))
         children_set = set(gen_categories(children))
 
         for e in sorted(elements):

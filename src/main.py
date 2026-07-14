@@ -1,6 +1,7 @@
 from util import dictify_namedtuples
 from fmt import pformat
 from parsers import (
+    parse_global_attributes,
     parse_index_elements,
     parse_index_categories,
     parse_index_attributes,
@@ -57,11 +58,16 @@ NOTICE = [x.replace("\n", " ").strip() for x in NOTICE]
 
 
 def main() -> None:
+    # dom.html - get global attributes list
+    with (specdir / "dom.html").open("r") as fp:
+        g_soup = BeautifulSoup(fp, "lxml")
+    global_attributes = parse_global_attributes(g_soup)
+
     # Parse indices.html
     with (specdir / "indices.html").open("r") as fp:
         g_soup = BeautifulSoup(fp, "lxml")
 
-    g_elements = parse_index_elements(g_soup)
+    g_elements = parse_index_elements(g_soup, global_attributes)
     g_categories = parse_index_categories(g_soup)
     g_attributes = list(parse_index_attributes(g_soup))
     g_event_handlers = list(parse_index_event_handlers(g_soup))
