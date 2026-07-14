@@ -311,14 +311,11 @@ class SpecParser:
             return None
         return json.loads(path.read_text(encoding="utf-8"))
 
-    def _log_parse_error(self, e: Exception, cache_key: str):
+    def _log_parse_error_and_fallback(self, e: Exception, cache_key: str):
         if isinstance(e, (AttributeError, ValueError)):
             logging.error(f"Spec structure may have changed: {e}")
         else:
             logging.error(f"Failed to parse {cache_key}: {e}")
-
-    def _log_parse_error_and_fallback(self, e: Exception, cache_key: str):
-        self._log_parse_error(e, cache_key)
         cached = self._load_cache(cache_key)
         if cached is None:
             raise RuntimeError(f"No cache available for {cache_key}") from e
