@@ -26,7 +26,7 @@ def read_timestamp(path):
     return raw, parsedate_to_datetime(raw)
 
 with open("licenses/NOTICE") as fp:
-    COPYING = fp.read().split("\n\n")
+    NOTICE = fp.read().split("\n\n")
 
 whatwg_times = [
     read_timestamp(specdir / f"{stem}.time")
@@ -40,14 +40,14 @@ updates = {
 }
 
 for prefix, published in updates.items():
-    for i, paragraph in enumerate(COPYING):
+    for i, paragraph in enumerate(NOTICE):
         if paragraph.startswith(prefix):
-            COPYING[i] = f"{paragraph} (as published {published})"
+            NOTICE[i] = f"{paragraph} (as published {published})"
             break
     else:
-        raise ValueError(f"licenses/COPYING: no paragraph found starting with {prefix!r}")
+        raise ValueError(f"licenses/NOTICE: no paragraph found starting with {prefix!r}")
 
-COPYING = [x.replace("\n", " ").strip() for x in COPYING]
+NOTICE = [x.replace("\n", " ").strip() for x in NOTICE]
 
 
 # Global attributes common to all HTML elements
@@ -408,7 +408,7 @@ g_element_types = parse_element_types(g_soup)
 
 
 META={
-    "copyright": COPYING
+    "copyright": NOTICE
 }
 
 g_elements = dictify_namedtuples(g_elements, meta=META)
