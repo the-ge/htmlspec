@@ -14,24 +14,29 @@ from constants import KEYWORDS_PATTERN, EXCEPTION_PATTERN
 
 
 GLOBAL_ATTRS_FILE = Path(".dev/state") / "global_attributes"
-
+# Special cases: phrase -> list of yielded tokens (empty list yields nothing)
+SPECIAL_ELEMENTS = {
+    "autonomous custom elements": [],
+    "HTML elements": [],
+    "form-associated custom elements": ["custom"],
+    "MathML math": ["math"],
+    "SVG svg": ["svg"],
+}
 
 # ---- Generators for splitting spec strings ----
 
 
 def gen_elements(element: str) -> Iterator[str]:
     element = element.strip()
-    if element == "autonomous custom elements":
-        pass
-    elif element == "HTML elements":
-        pass
-    elif element == "form-associated custom elements":
-        yield "custom"
-    elif element == "MathML math":
-        yield "math"
-    elif element == "SVG svg":
-        yield "svg"
-    elif ", " in element:
+    if not element:
+        return
+
+    # 1) Handle known special phrases
+    if element in SPECIAL_ELEMENTS:
+        yield from SPECIAL_ELEMENTS[element]
+        return
+
+    if ", " in element:
         for e in element.strip(string.whitespace + ",").split(", "):
             yield from gen_elements(e)
     elif ";" in element:
@@ -39,8 +44,6 @@ def gen_elements(element: str) -> Iterator[str]:
             yield from gen_elements(e.strip())
     elif "(" in element or ")" in element:
         yield element
-    elif " " in element:
-        yield element.split(" ")[1]
     else:
         yield element
 
@@ -195,32 +198,30 @@ def parse_index_attributes(soup: BeautifulSoup) -> Iterator[t_attribute]:
             value_type = "enum"
             value_type_desc = ""
         else:
-            if value_type == "Text":
-                value_type = "string"
-            elif value_type == "Boolean attribute":
-                value_type = "bool"
-            elif value_type == "Valid integer":
-                value_type = "int"
-            elif value_type == "Valid date string with optional time":
-                value_type = "datetime"
-            elif value_type == "Valid list of floating-point numbers":
-                value_type = "string"
-                separator = ","
-            elif value_type.startswith("Valid non-negative integer"):
-                value_type = "int"
-            elif value_type.startswith("Valid floating-point number"):
-                value_type = "float"
-            elif "space-separated tokens" in value_type:
-                value_type = "string"
-                separator = " "
-            elif any(needle in value_type.lower() for needle in ("comma-separated list of", "set of comma-separated tokens")):
-                value_type = "string"
-                separator = ","
-            elif value_type.startswith("Valid source size list"):
-                value_type = "string"
-                separator = ","
-            else:
-                value_type = "string"
+            match value_type:
+                case "Text":                                            value_type = "string"
+                case "Boolean attribute":                               value_type = "bool"
+                case "Valid integer":                                   value_type = "int"
+                case "Valid date string with optional time":            value_type = "datetime"
+                case s if s.startswith("Valid non-negative integer"):   value_type = "int"
+                case s if s.startswith("Valid floating-point number"):  value_type = "float"
+                case s if "space-separated tokens" in s.lower():
+                    value_type = "string"
+                    separator = " "
+                case "Valid list of floating-point numbers":
+                    value_type = "string"
+                    separator = ","
+                case s if s.startswith("Valid source size list"):
+                    value_type = "string"
+                    separator = ","
+                case s if "comma-separated list of" in s.lower():
+                    value_type = "string"
+                    separator = ","
+                case s if "set of comma-separated tokens" in s.lower():
+                    value_type = "string"
+                    separator = ","
+                case _:                                                 value_type = "string"
+
 
         if is_value_complicated or is_tag_complicated:
             value_type_desc += f".{tag_notes_str} *Incomplete description. See the full specification."
