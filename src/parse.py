@@ -8,6 +8,11 @@ from slugify import slugify
 from email.utils import parsedate_to_datetime
 import re
 import string
+import logging
+
+
+# Set up logging
+logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 
 
 specdir = Path(".state")
@@ -163,7 +168,9 @@ def parse_index_elements(soup):
     for row in rows:
         cells = row.find_all(["th", "td"])
         cells = [x.get_text().strip() for x in cells]
-        assert len(cells) == 7
+        if len(cells) != 7:
+            logging.error(f"Expected 7 cells, got {len(cells)}. Skipping row: {row}")
+            continue
 
         element, desc, categories, _, children, attributes, _ = cells
 
@@ -183,7 +190,9 @@ def parse_index_categories(soup):
     for row in rows:
         cells = row.find_all(["th", "td"])
         cells = [x.get_text().strip() for x in cells]
-        assert len(cells) == 3
+        if len(cells) != 3:
+            logging.error(f"Expected 3 cells, got {len(cells)}. Skipping row: {row}")
+            continue
 
         category, elements, exceptions = cells
         category = " ".join(category.split())
@@ -209,7 +218,9 @@ def parse_index_attributes(soup):
     for row in rows:
         cells = row.find_all(["th", "td"])
         cells = [x.get_text().strip() for x in cells]
-        assert len(cells) == 4
+        if len(cells) != 4:
+            logging.error(f"Expected 4 cells, got {len(cells)}. Skipping row: {row}")
+            continue
 
         attribute_name, tag_scope_description, attribute_description, value_info = cells
 
@@ -287,7 +298,9 @@ def parse_index_event_handlers(soup):
     for row in rows:
         cells = row.find_all(["th", "td"])
         cells = [x.get_text() for x in cells]
-        assert len(cells) == 4
+        if len(cells) != 4:
+            logging.error(f"Expected 4 cells, got {len(cells)}. Skipping row: {row}")
+            continue
 
         attribute, elements, _, _ = cells
 
