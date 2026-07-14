@@ -5,7 +5,7 @@ import itertools
 
 
 @dataclass(frozen=True, slots=True)
-class t_element:
+class Element:
     name: str
     description: str
     categories: Set[str]
@@ -14,7 +14,7 @@ class t_element:
 
 
 @dataclass(frozen=True, slots=True)
-class t_category:
+class Category:
     name: str
     elements: Set[str]
     elements_maybe: List[str]
@@ -22,7 +22,7 @@ class t_category:
 
 
 @dataclass(frozen=True, slots=True)
-class t_attribute:
+class Attribute:
     name: str
     tag_scope: Set[str]
     description: str
@@ -33,12 +33,12 @@ class t_attribute:
 
 
 @dataclass(frozen=True, slots=True)
-class t_event_handler:
+class EventHandler:
     name: str
     applies_to: str
 
 
-def pairwise(iterable):
+def pairwise_last(iterable):
     """s -> (s0,s1), (s1,s2), (s2, s3), ..., (sLast, None)"""
     a, b = itertools.tee(iterable)
     next(b, None)
@@ -50,7 +50,7 @@ def dict_lastitems(xs):
     where `last` is True iff it is the last item in the dict iterator.
 
     e.g. `xs -> (k0, v0, False), (k1, v1, False), ..., (kLast, vLast, True)`"""
-    keys = pairwise(xs.keys())
+    keys = pairwise_last(xs.keys())
     for key, key2 in keys:
         yield key, xs[key], key2 is None
 
@@ -60,7 +60,7 @@ def list_lastitems(xs):
     where `last` is True iff it is the last item in the list iterator.
 
     e.g. `xs -> (x0, False), (x1, False), ..., (xLast, True)`"""
-    for x, y in pairwise(xs):
+    for x, y in pairwise_last(xs):
         yield x, y is None
 
 
@@ -91,7 +91,6 @@ def dictify(
         key = getattr(x, key_field)
         r = dataclasses.asdict(x)
         del r[key_field]  # remove the key field from the value dict
-        keyname = key_field
 
         if key in result:
             # Existing entry

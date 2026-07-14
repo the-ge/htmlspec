@@ -7,7 +7,7 @@ import logging
 import re
 import string
 
-from util import grouper, dictify, make_serializable, t_attribute, t_category, t_element, t_event_handler
+from util import grouper, dictify, make_serializable, Attribute, Category, Element, EventHandler
 from config import KEYWORDS_PATTERN, EXCEPTION_PATTERN
 
 
@@ -84,7 +84,7 @@ def parse_element_exceptions_string(xs: str) -> Iterator[str]:
 # ---- Parsers for each section ----
 
 
-def parse_index_elements(soup: BeautifulSoup, global_attributes: Set[str]) -> Iterator[t_element]:
+def parse_index_elements(soup: BeautifulSoup, global_attributes: Set[str]) -> Iterator[Element]:
     rows = soup.find("h3", {"id": "elements-3"}).find_next("tbody").find_all("tr")
     for row in rows:
         cells = [x.get_text().strip() for x in row.find_all(["th", "td"])]
@@ -99,7 +99,7 @@ def parse_index_elements(soup: BeautifulSoup, global_attributes: Set[str]) -> It
         children_set = set(gen_categories(children))
 
         for e in sorted(elements):
-            yield t_element(
+            yield Element(
                 name=e,
                 description=desc.strip(),
                 categories=categories_set,
@@ -108,7 +108,7 @@ def parse_index_elements(soup: BeautifulSoup, global_attributes: Set[str]) -> It
             )
 
 
-def parse_index_categories(soup: BeautifulSoup) -> Iterator[t_category]:
+def parse_index_categories(soup: BeautifulSoup) -> Iterator[Category]:
     rows = soup.find("h3", {"id": "element-content-categories"}).find_next("tbody").find_all("tr")
     for row in rows:
         cells = [x.get_text().strip() for x in row.find_all(["th", "td"])]
@@ -128,7 +128,7 @@ def parse_index_categories(soup: BeautifulSoup) -> Iterator[t_category]:
             exceptions = ""
         elements_maybe = list(parse_element_exceptions_string(exceptions))
 
-        yield t_category(
+        yield Category(
             name=category,
             elements=elements_set,
             elements_maybe=elements_maybe,
@@ -136,7 +136,7 @@ def parse_index_categories(soup: BeautifulSoup) -> Iterator[t_category]:
         )
 
 
-def parse_index_attributes(soup: BeautifulSoup) -> Iterator[t_attribute]:
+def parse_index_attributes(soup: BeautifulSoup) -> Iterator[Attribute]:
     rows = soup.find("h3", {"id": "attributes-3"}).find_next("tbody").find_all("tr")
     for row in rows:
         cells = [x.get_text().strip() for x in row.find_all(["th", "td"])]
@@ -199,7 +199,7 @@ def parse_index_attributes(soup: BeautifulSoup) -> Iterator[t_attribute]:
         if is_value_complicated or is_tag_complicated:
             value_type_desc += f".{tag_notes_str} *Incomplete description. See the full specification."
 
-        yield t_attribute(
+        yield Attribute(
             name=attr_name,
             tag_scope=tag_scope,
             description=attr_desc,
@@ -210,7 +210,7 @@ def parse_index_attributes(soup: BeautifulSoup) -> Iterator[t_attribute]:
         )
 
 
-def parse_index_event_handlers(soup: BeautifulSoup) -> Iterator[t_event_handler]:
+def parse_index_event_handlers(soup: BeautifulSoup) -> Iterator[EventHandler]:
     rows = soup.find("table", {"id": "ix-event-handlers"}).find_next("tbody").find_all("tr")
     for row in rows:
         cells = [x.get_text() for x in row.find_all(["th", "td"])]
@@ -218,7 +218,7 @@ def parse_index_event_handlers(soup: BeautifulSoup) -> Iterator[t_event_handler]
             logging.error(f"Expected 4 cells, got {len(cells)}. Skipping row: {row}")
             continue
         attribute, elements, _, _ = cells
-        yield t_event_handler(
+        yield EventHandler(
             name=attribute.strip(),
             applies_to=elements.strip(),
         )
@@ -233,13 +233,13 @@ def parse_input_type_keywords(soup: BeautifulSoup) -> Iterator[str]:
 
 
 def parse_aria_roles(soup: BeautifulSoup) -> Iterator[str]:
-    concrete_roles = {
+    concrete_roles = (
         "widget",
         "document_structure_roles",
         "landmark_roles",
         "live_region_roles",
         "window_roles",
-    }
+    )
     for role in concrete_roles:
         rows = soup.find("section", {"id": role}).find_next("ul").find_all("li")
         for row in rows:
@@ -360,56 +360,42 @@ class SpecParser:
         try:
             soup = self._load_soup("indices")
             global_attrs = self.get_global_attributes()
-            raw = list(parse_index_elements(soup, global_attrs))
-            if len(raw) < 50:
-                raise ValueError(f"Expected >=50 elements, got {len(raw)}")
-            result = dictify(raw, meta=self.meta)
+            entries = list(parse_index_elements(soup, global_attrs))
+            if len(entries) < 50:
+                raise ValueError(f"Expected >=50 elements, got {len(entries)}")
+            result = dictify(entries, meta=self.meta)
             self._save_cache(key, result)
-            logging.info(f"✅ Parsed and cached {len(raw)} elements")
+            logging.info(f"✅ Parsed and cached {len(entries)} elements")
             return result
-        except (AttributeError, ValueError) as e:
-            logging.error(f"Spec structure may have changed: {e}")
         except Exception as e:
-            logging.error(f"Failed to parse elements: {e}")
-            cached = self._load_cache(key)
-            if cached is None:
-                raise RuntimeError("No cache available for elements") from e
-            logging.info("📦 Loaded elements from cache")
-            return cached
+            return self._log_parse_error_and_fallback(e, key)
 
     def parse_categories(self) -> Dict[str, Any]:
         """Parse categories with caching and validation."""
         key = "categories"
         try:
             soup = self._load_soup("indices")
-            raw = list(parse_index_categories(soup))
-            if len(raw) < 5:
-                raise ValueError(f"Expected >=5 categories, got {len(raw)}")
-            result = dictify(raw, meta=self.meta)
+            entries = list(parse_index_categories(soup))
+            if len(entries) < 5:
+                raise ValueError(f"Expected >=5 categories, got {len(entries)}")
+            result = dictify(entries, meta=self.meta)
             self._save_cache(key, result)
-            logging.info(f"✅ Parsed and cached {len(raw)} categories")
+            logging.info(f"✅ Parsed and cached {len(entries)} categories")
             return result
-        except (AttributeError, ValueError) as e:
-            logging.error(f"Spec structure may have changed: {e}")
         except Exception as e:
-            logging.error(f"Failed to parse categories: {e}")
-            cached = self._load_cache(key)
-            if cached is None:
-                raise RuntimeError("No cache available for categories") from e
-            logging.info("📦 Loaded categories from cache")
-            return cached
+            return self._log_parse_error_and_fallback(e, key)
 
     def parse_attributes(self) -> Dict[str, Any]:
         """Parse attributes (including type & role) with caching and validation."""
         key = "attributes"
         try:
             indices_soup = self._load_soup("indices")
-            raw = list(parse_index_attributes(indices_soup))
+            entries = list(parse_index_attributes(indices_soup))
 
             # Append "type" from input.html
             input_soup = self._load_soup("input")
-            raw.append(
-                t_attribute(
+            entries.append(
+                Attribute(
                     name="type",
                     tag_scope={"input"},
                     description="Type of form control",
@@ -422,8 +408,8 @@ class SpecParser:
 
             # Append "role" from aria.html
             aria_soup = self._load_soup("aria")
-            raw.append(
-                t_attribute(
+            entries.append(
+                Attribute(
                     name="role",
                     tag_scope={"HTML"},
                     description="ARIA semantic role",
@@ -434,12 +420,12 @@ class SpecParser:
                 )
             )
 
-            if len(raw) < 50:
-                raise ValueError(f"Expected >=50 attributes, got {len(raw)}")
+            if len(entries) < 50:
+                raise ValueError(f"Expected >=50 attributes, got {len(entries)}")
             # Note: merge=False for attributes
-            result = dictify(raw, merge=False, meta=self.meta)
+            result = dictify(entries, merge=False, meta=self.meta)
             self._save_cache(key, result)
-            logging.info(f"✅ Parsed and cached {len(raw)} attributes")
+            logging.info(f"✅ Parsed and cached {len(entries)} attributes")
             return result
         except Exception as e:
             return self._log_parse_error_and_fallback(e, key)
@@ -449,12 +435,12 @@ class SpecParser:
         key = "event-handlers"
         try:
             soup = self._load_soup("indices")
-            raw = list(parse_index_event_handlers(soup))
-            if len(raw) < 50:
-                raise ValueError(f"Expected >=50 event handlers, got {len(raw)}")
-            result = dictify(raw, meta=self.meta)
+            entries = list(parse_index_event_handlers(soup))
+            if len(entries) < 50:
+                raise ValueError(f"Expected >=50 event handlers, got {len(entries)}")
+            result = dictify(entries, meta=self.meta)
             self._save_cache(key, result)
-            logging.info(f"✅ Parsed and cached {len(raw)} event handlers")
+            logging.info(f"✅ Parsed and cached {len(entries)} event handlers")
             return result
         except Exception as e:
             return self._log_parse_error_and_fallback(e, key)
@@ -464,16 +450,15 @@ class SpecParser:
         key = "element-types"
         try:
             soup = self._load_soup("syntax")
-            raw = parse_element_types(soup)
-            if len(raw) < 4:
-                raise ValueError(f"Expected >=4 element types, got {len(raw)}")
-            # raw is already a dict; add meta
-            raw["__META__"] = self.meta
-            self._save_cache(key, raw)
-            logging.info(f"✅ Parsed and cached {len(raw)} element types")
-            return raw
-        except (AttributeError, ValueError) as e:
-            logging.error(f"Spec structure may have changed: {e}")
+            entries = parse_element_types(soup)
+            if len(entries) < 4:
+                raise ValueError(f"Expected >=4 element types, got {len(entries)}")
+            # entries is already a dict; add meta
+            entries["__META__"] = self.meta
+            self._save_cache(key, entries)
+            logging.info(f"✅ Parsed and cached {len(entries)} element types")
+            return entries
+
         except Exception as e:
             return self._log_parse_error_and_fallback(e, key)
 
