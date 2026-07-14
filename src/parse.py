@@ -50,7 +50,7 @@ updates: Dict[str, datetime] = {
 for prefix, published in updates.items():
     for i, paragraph in enumerate(NOTICE):
         if paragraph.startswith(prefix):
-            NOTICE[i] = f"{paragraph} (as published {published})"
+            NOTICE[i] = f"{paragraph} (as last published at {published})"
             break
     else:
         raise ValueError(f"licenses/NOTICE: no paragraph found starting with {prefix!r}")
