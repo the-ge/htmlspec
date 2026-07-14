@@ -166,7 +166,6 @@ def parse_index_elements(soup):
         assert len(cells) == 7
 
         element, desc, categories, _, children, attributes, _ = cells
-        print(f" + element: {element}")
 
         elements = gen_elements(element)
         categories = set(gen_categories(categories))
@@ -188,7 +187,6 @@ def parse_index_categories(soup):
 
         category, elements, exceptions = cells
         category = " ".join(category.split())
-        print(f" + category: {category}")
 
         exceptions = "; ".join(map(lambda x: x.strip(), exceptions.split(";")))
         if category.strip().endswith("*"):
@@ -214,7 +212,7 @@ def parse_index_attributes(soup):
         assert len(cells) == 4
 
         attribute_name, tag_scope_description, attribute_description, value_info = cells
-        print(f" + attribute: {attribute_name}")
+
         is_value_complicated = value_info.endswith("*")
         if is_value_complicated:
             value_info = value_info[:-1]
