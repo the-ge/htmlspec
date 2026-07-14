@@ -33,6 +33,7 @@ def read_timestamp(path: Path) -> Tuple[str, datetime]:
     raw: str = path.read_text().strip()
     return raw, parsedate_to_datetime(raw)
 
+
 NOTICE: List[str] = Path("licenses/NOTICE").read_text().split("\n\n")
 
 whatwg_times: List[Tuple[str, datetime]] = [
@@ -42,7 +43,7 @@ whatwg_times: List[Tuple[str, datetime]] = [
 # Keep the raw string (first element) for the published date
 whatwg_time: str = max(whatwg_times, key=lambda pair: pair[1])[0]
 aria_time: str = read_timestamp(specdir / "aria.time")[0]
-updates: Dict[str, datetime] = {
+updates: Dict[str, str] = {  # fixed: values are strings, not datetime
     "The HTML Living Standard": whatwg_time,
     "Accessible Rich Internet Applications (WAI-ARIA)": aria_time,
 }
