@@ -230,7 +230,7 @@ def parse_event_handlers(soup: BeautifulSoup) -> Iterator[EventHandler]:
         )
 
 
-def parse_input_type_keywords(soup: BeautifulSoup) -> Iterator[str]:
+def parse_input_types(soup: BeautifulSoup) -> Iterator[str]:
     rows = soup.find("table", {"id": "attr-input-type-keywords"}).find_next("tbody").find_all("tr")
     for row in rows:
         cells = [x.get_text() for x in row.find_all(["th", "td"])]
@@ -395,7 +395,7 @@ class SpecParser:
                     tag_scope={"input"},
                     description="Type of form control",
                     value_type='An input type e.g. "text"',
-                    value_keywords=set(parse_input_type_keywords(input_soup)),
+                    value_keywords=set(parse_input_types(input_soup)),
                     value_type_description="Type of form control",
                     separator="",
                 )
