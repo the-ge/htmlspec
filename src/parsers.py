@@ -1,0 +1,300 @@
+from bs4 import BeautifulSoup
+from slugify import slugify
+from typing import Iterator, Set, List, Dict
+import re
+import string
+import logging
+
+from util import grouper
+from models import t_element, t_category, t_attribute, t_event_handler
+
+
+# Patterns used in parsing
+KEYWORDS_PATTERN = re.compile(
+    r'^(?:"[a-zA-Z0-9/-]*"|the empty string)(?:; (?:"[a-zA-Z0-9/-]*"|the empty string))*$'
+)
+EXCEPTION_PATTERN = re.compile(r'([a-zA-Z0-9-]+) \(if [a-zA-Z0-9\' -]+\)')
+
+
+# Global attributes common to all HTML elements
+# source: https://html.spec.whatwg.org/multipage/dom.html#global-attributes
+# plus class, id, role (ARIA), and slot
+GLOBAL_ATTRIBUTES = [
+    "accesskey",
+    "autocapitalize",
+    "autocorrect",
+    "autofocus",
+    "class",
+    "contenteditable",
+    "dir",
+    "draggable",
+    "enterkeyhint",
+    "headingoffset",
+    "headingreset",
+    "hidden",
+    "id",
+    "inert",
+    "inputmode",
+    "is",
+    "itemid",
+    "itemprop",
+    "itemref",
+    "itemscope",
+    "itemtype",
+    "lang",
+    "nonce",
+    "popover",
+    "role",
+    "slot",
+    "spellcheck",
+    "style",
+    "tabindex",
+    "title",
+    "translate",
+    "writingsuggestions",
+]
+
+
+# ---- Generators for splitting spec strings ----
+
+def gen_elements(element: str) -> Iterator[str]:
+    element = element.strip()
+    if element == "autonomous custom elements":
+        pass
+    elif element == "HTML elements":
+        pass
+    elif element == "form-associated custom elements":
+        yield "custom"
+    elif element == "MathML math":
+        yield "math"
+    elif element == "SVG svg":
+        yield "svg"
+    elif ", " in element:
+        for e in element.strip(string.whitespace + ",").split(", "):
+            yield from gen_elements(e)
+    elif ";" in element:
+        for e in re.split(r'[;\r\n]+', element.strip(string.whitespace + ";")):
+            yield from gen_elements(e.strip())
+    elif "(" in element or ")" in element:
+        yield element
+    elif " " in element:
+        yield element.split(" ")[1]
+    else:
+        yield element
+
+
+def gen_attributes(attributes: str) -> Iterator[str]:
+    for attribute in attributes.strip(string.whitespace + ";").split(";"):
+        attr = attribute.strip("*").strip()
+        if attr == "globals":
+            yield from GLOBAL_ATTRIBUTES
+        else:
+            yield attr
+
+
+def gen_categories(categories: str) -> Iterator[str]:
+    for category in categories.strip(string.whitespace + ";").split(";"):
+        cat = category.strip().strip("*")
+        if cat != "empty":
+            yield cat
+
+
+def gen_keywords(keywords: str) -> Iterator[str]:
+    if KEYWORDS_PATTERN.fullmatch(keywords):
+        def process_token(token: str) -> str:
+            token = token.strip()
+            return '' if token == 'the empty string' else token.strip('"')
+        yield from map(process_token, keywords.split(";"))
+
+
+def parse_element_exceptions_string(xs: str) -> Iterator[str]:
+    if not xs:
+        return
+    parts = xs.split(";") if ";" in xs else [xs]
+    for x in parts:
+        x = x.strip()
+        matches = EXCEPTION_PATTERN.fullmatch(x)
+        if matches:
+            yield matches.group(1)
+
+
+# ---- Parsers for each section ----
+
+def parse_index_elements(soup: BeautifulSoup) -> Iterator[t_element]:
+    rows = soup.find("h3", {"id": "elements-3"}).find_next("tbody").find_all("tr")
+    for row in rows:
+        cells = [x.get_text().strip() for x in row.find_all(["th", "td"])]
+        if len(cells) != 7:
+            logging.error(f"Expected 7 cells, got {len(cells)}. Skipping row: {row}")
+            continue
+        element, desc, categories, _, children, attributes, _ = cells
+
+        elements = gen_elements(element)
+        categories_set = set(gen_categories(categories))
+        attributes_set = set(gen_attributes(attributes))
+        children_set = set(gen_categories(children))
+
+        for e in sorted(elements):
+            yield t_element(
+                name=e,
+                description=desc.strip(),
+                categories=categories_set,
+                attributes=attributes_set,
+                children=children_set,
+            )
+
+
+def parse_index_categories(soup: BeautifulSoup) -> Iterator[t_category]:
+    rows = soup.find("h3", {"id": "element-content-categories"}).find_next("tbody").find_all("tr")
+    for row in rows:
+        cells = [x.get_text().strip() for x in row.find_all(["th", "td"])]
+        if len(cells) != 3:
+            logging.error(f"Expected 3 cells, got {len(cells)}. Skipping row: {row}")
+            continue
+        category, elements, exceptions = cells
+        category = " ".join(category.split())
+
+        exceptions = "; ".join(x.strip() for x in exceptions.split(";"))
+        if category.endswith("*"):
+            exceptions += "; The tabindex attribute can also make any element into interactive content."
+        category = category.rstrip("*").strip()
+
+        elements_set = set(gen_elements(elements))
+        if exceptions == "—":
+            exceptions = ""
+        elements_maybe = list(parse_element_exceptions_string(exceptions))
+
+        yield t_category(
+            name=category,
+            elements=elements_set,
+            elements_maybe=elements_maybe,
+            exceptions=exceptions,
+        )
+
+
+def parse_index_attributes(soup: BeautifulSoup) -> Iterator[t_attribute]:
+    rows = soup.find("h3", {"id": "attributes-3"}).find_next("tbody").find_all("tr")
+    for row in rows:
+        cells = [x.get_text().strip() for x in row.find_all(["th", "td"])]
+        if len(cells) != 4:
+            logging.error(f"Expected 4 cells, got {len(cells)}. Skipping row: {row}")
+            continue
+        attr_name, tag_scope_desc, attr_desc, value_info = cells
+
+        is_value_complicated = value_info.endswith("*")
+        if is_value_complicated:
+            value_info = value_info[:-1]
+        value_type = " ".join(x.strip().strip("*") for x in value_info.split("\n")).strip()
+        value_type_desc = value_type
+        separator = ""
+
+        is_tag_complicated = False
+        tag_scope: Set[str] = set()
+        tag_notes: List[str] = []
+        for token in gen_elements(tag_scope_desc):
+            tmp = token.strip()
+            idx = tmp.find('(')
+            if idx != -1:
+                is_tag_complicated = True
+                tag_scope.add(tmp[:idx].strip())
+                tag_notes.append(token)
+            else:
+                tag_scope.add(tmp)
+        tag_notes_str = f' Special tag scope: {", ".join(tag_notes)}.' if is_tag_complicated else ""
+
+        value_keywords = set(gen_keywords(value_type))
+        if value_keywords:
+            value_type = "enum"
+            value_type_desc = ""
+        else:
+            if value_type == "Text":
+                value_type = "string"
+            elif value_type == "Boolean attribute":
+                value_type = "bool"
+            elif value_type == "Valid integer":
+                value_type = "int"
+            elif value_type == "Valid date string with optional time":
+                value_type = "datetime"
+            elif value_type == "Valid list of floating-point numbers":
+                value_type = "string"
+                separator = ","
+            elif value_type.startswith("Valid non-negative integer"):
+                value_type = "int"
+            elif value_type.startswith("Valid floating-point number"):
+                value_type = "float"
+            elif "space-separated tokens" in value_type:
+                value_type = "string"
+                separator = " "
+            elif any(needle in value_type.lower() for needle in ("comma-separated list of", "set of comma-separated tokens")):
+                value_type = "string"
+                separator = ","
+            elif value_type.startswith("Valid source size list"):
+                value_type = "string"
+                separator = ","
+            else:
+                value_type = "string"
+
+        if is_value_complicated or is_tag_complicated:
+            value_type_desc += f".{tag_notes_str} *Incomplete description. See the full specification."
+
+        yield t_attribute(
+            name=attr_name,
+            tag_scope=tag_scope,
+            description=attr_desc,
+            value_type=value_type,
+            value_keywords=value_keywords,
+            value_type_description=value_type_desc,
+            separator=separator,
+        )
+
+
+def parse_index_event_handlers(soup: BeautifulSoup) -> Iterator[t_event_handler]:
+    rows = soup.find("table", {"id": "ix-event-handlers"}).find_next("tbody").find_all("tr")
+    for row in rows:
+        cells = [x.get_text() for x in row.find_all(["th", "td"])]
+        if len(cells) != 4:
+            logging.error(f"Expected 4 cells, got {len(cells)}. Skipping row: {row}")
+            continue
+        attribute, elements, _, _ = cells
+        yield t_event_handler(
+            name=attribute.strip(),
+            applies_to=elements.strip(),
+        )
+
+
+def parse_input_type_keywords(soup: BeautifulSoup) -> Iterator[str]:
+    rows = soup.find("table", {"id": "attr-input-type-keywords"}).find_next("tbody").find_all("tr")
+    for row in rows:
+        cells = [x.get_text() for x in row.find_all(["th", "td"])]
+        keyword, *_ = cells
+        yield keyword.strip()
+
+
+def parse_aria_roles(soup: BeautifulSoup) -> Iterator[str]:
+    concrete_roles = {
+        "widget",
+        "document_structure_roles",
+        "landmark_roles",
+        "live_region_roles",
+        "window_roles",
+    }
+    for role in concrete_roles:
+        rows = soup.find("section", {"id": role}).find_next("ul").find_all("li")
+        for row in rows:
+            keyword = row.find("code").get_text()
+            yield keyword.strip()
+
+
+def parse_element_types(soup: BeautifulSoup) -> Dict[str, List[str]]:
+    rows = soup.find("h4", {"id": "elements-2"}).find_next("dl")
+    result: Dict[str, List[str]] = {}
+    for dt, dd in grouper(rows, 2):
+        elements = dd.find_all("code")
+        if not elements:
+            continue
+        dfn = dt.find("dfn").get_text()
+        dfn_slug = slugify(dfn)
+        result.setdefault(dfn_slug, [])
+        for element in elements:
+            result[dfn_slug].append(element.get_text())
+    return result

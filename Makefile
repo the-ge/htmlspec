@@ -12,7 +12,7 @@ install:
 	python3 -m pip install -r requirements.txt
 
 dist:
-	python3 src/parse.py
+	python3 src/main.py
 	# generates `spec-json/*.json`, etc.
 	# run `make -B dist` to force this to update
 
