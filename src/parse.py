@@ -246,21 +246,24 @@ def parse_index_attributes(soup):
                 value_type = 'bool'
             elif value_type == "Valid integer":
                 value_type = 'int'
-            elif value_type == "Valid floating-point number":
-                value_type = 'float'
-            elif value_type == "Valid non-negative integer":
-                value_type = 'int'
             elif value_type == "Valid date string with optional time":
                 value_type = 'datetime'
             elif value_type == "Valid list of floating-point numbers":
                 value_type = 'string'
                 separator = ','
-            elif any(needle in value_type.lower() for needle in ("comma-separated list of", "set of comma-separated tokens")):
-                value_type = 'string'
-                separator = ','
+            elif value_type.startswith("Valid non-negative integer"):
+                value_type = 'int'
+            elif value_type.startswith("Valid floating-point number"):
+                value_type = 'float'
             elif "space-separated tokens" in value_type:
                 value_type = 'string'
                 separator = ' '
+            elif any(needle in value_type.lower() for needle in ("comma-separated list of", "set of comma-separated tokens")):
+                value_type = 'string'
+                separator = ','
+            elif value_type.startswith("Valid source size list"):
+                value_type = 'string'
+                separator = ','
             else:
                 value_type = 'string'
 
