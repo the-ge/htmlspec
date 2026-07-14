@@ -31,8 +31,11 @@ HTML_STEMS = ["indices", "dom", "input", "syntax"]
 ARIA_STEM = "aria"
 
 # ---- html.spec.whatwg.org elements minimum counts ----
-MIN_ELEMENTS = 50
-MIN_CATEGORIES = 5
-MIN_ATTRIBUTES = 50
-MIN_EVENT_HANDLERS = 50
-MIN_ELEMENT_TYPES = 4
+MIN_COUNT = {
+	"elements": 50,
+	"categories": 5,
+	"attributes": 50,
+	"event-handlers": 50,
+	"element-types": 4,
+	"global-attributes": 32,
+}
