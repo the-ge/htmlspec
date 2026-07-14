@@ -1,13 +1,9 @@
-from collections import namedtuple
 from dataclasses import dataclass
 from pathlib import Path
-from typing import List, Any, Dict, Union, Iterator, Optional
-from typing import Set, List
+from typing import List, Any, Dict, Union, Iterator, Optional, Set
 import dataclasses
 import itertools
 import json
-
-import config
 
 
 @dataclass(frozen=True, slots=True)
