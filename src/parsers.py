@@ -1,12 +1,12 @@
 from bs4 import BeautifulSoup
+from pathlib import Path
 from slugify import slugify
 from typing import Iterator, Set, List, Dict
-from pathlib import Path
 from typing import Set
+import json
+import logging
 import re
 import string
-import logging
-import json
 
 from util import grouper
 from models import t_element, t_category, t_attribute, t_event_handler
