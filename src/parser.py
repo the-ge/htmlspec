@@ -7,7 +7,7 @@ import logging
 import re
 import string
 
-from util import grouper, dictify_namedtuples, make_serializable, t_attribute, t_element, t_category, t_attribute, t_event_handler
+from util import grouper, dictify, make_serializable, t_attribute, t_element, t_category, t_attribute, t_event_handler
 from config import KEYWORDS_PATTERN, EXCEPTION_PATTERN
 
 
@@ -351,7 +351,7 @@ class SpecParser:
             raw = list(parse_index_elements(soup, global_attrs))
             if len(raw) < 50:
                 raise ValueError(f"Expected >=50 elements, got {len(raw)}")
-            result = dictify_namedtuples(raw, meta=self.meta)
+            result = dictify(raw, meta=self.meta)
             self._save_cache(key, result)
             logging.info(f"✅ Parsed and cached {len(raw)} elements")
             return result
@@ -373,7 +373,7 @@ class SpecParser:
             raw = list(parse_index_categories(soup))
             if len(raw) < 5:
                 raise ValueError(f"Expected >=5 categories, got {len(raw)}")
-            result = dictify_namedtuples(raw, meta=self.meta)
+            result = dictify(raw, meta=self.meta)
             self._save_cache(key, result)
             logging.info(f"✅ Parsed and cached {len(raw)} categories")
             return result
@@ -425,7 +425,7 @@ class SpecParser:
             if len(raw) < 50:
                 raise ValueError(f"Expected >=50 attributes, got {len(raw)}")
             # Note: merge=False for attributes
-            result = dictify_namedtuples(raw, merge=False, meta=self.meta)
+            result = dictify(raw, merge=False, meta=self.meta)
             self._save_cache(key, result)
             logging.info(f"✅ Parsed and cached {len(raw)} attributes")
             return result
@@ -447,7 +447,7 @@ class SpecParser:
             raw = list(parse_index_event_handlers(soup))
             if len(raw) < 50:
                 raise ValueError(f"Expected >=50 event handlers, got {len(raw)}")
-            result = dictify_namedtuples(raw, meta=self.meta)
+            result = dictify(raw, meta=self.meta)
             self._save_cache(key, result)
             logging.info(f"✅ Parsed and cached {len(raw)} event handlers")
             return result

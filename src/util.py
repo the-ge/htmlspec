@@ -73,7 +73,7 @@ def grouper(iterable, n, fillvalue=None):
     return itertools.zip_longest(*args, fillvalue=fillvalue)
 
 
-def dictify_namedtuples(
+def dictify(
     xs: Iterator[Any],  # list/generator of dataclass objects
     merge: bool = True,
     meta: Optional[Dict] = None
