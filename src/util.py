@@ -19,7 +19,7 @@ class t_element:
     children: Set[str]
 
 
-@dataclass
+@dataclass(frozen=True, slots=True)
 class t_category:
     name: str
     elements: Set[str]
@@ -27,7 +27,7 @@ class t_category:
     exceptions: str
 
 
-@dataclass
+@dataclass(frozen=True, slots=True)
 class t_attribute:
     name: str
     tag_scope: Set[str]
@@ -38,7 +38,7 @@ class t_attribute:
     separator: str
 
 
-@dataclass
+@dataclass(frozen=True, slots=True)
 class t_event_handler:
     name: str
     applies_to: str
