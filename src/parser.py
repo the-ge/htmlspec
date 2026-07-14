@@ -23,26 +23,26 @@ SPECIAL_ELEMENTS = {
 # ---- Generators for splitting spec strings ----
 
 
-def gen_elements(element: str) -> Iterator[str]:
-    element = element.strip()
-    if not element:
+def gen_elements(elements: str) -> Iterator[str]:
+    elements = elements.strip()
+    if not elements:
         return
 
     # 1) Handle known special phrases
-    if element in SPECIAL_ELEMENTS:
-        yield from SPECIAL_ELEMENTS[element]
+    if elements in SPECIAL_ELEMENTS:
+        yield from SPECIAL_ELEMENTS[elements]
         return
 
-    if ", " in element:
-        for e in element.strip(string.whitespace + ",").split(", "):
-            yield from gen_elements(e)
-    elif ";" in element:
-        for e in re.split(r'[;\r\n]+', element.strip(string.whitespace + ";")):
-            yield from gen_elements(e.strip())
-    elif "(" in element or ")" in element:
-        yield element
+    if ", " in elements:
+        for e in elements.strip(string.whitespace + ",").split(", "):
+            yield from gen_elementss(e)
+    elif ";" in elements:
+        for e in re.split(r'[;\r\n]+', elements.strip(string.whitespace + ";")):
+            yield from gen_elementss(e.strip())
+    elif "(" in elements or ")" in elements:
+        yield elements
     else:
-        yield element
+        yield elements
 
 
 def gen_attributes(attributes: str, global_attributes: Set[str]) -> Iterator[str]:
