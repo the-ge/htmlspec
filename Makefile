@@ -9,7 +9,7 @@ _contrib:
 	make -C contrib
 
 json:
-	python3 parse.py
+	python3 src/parse.py
 	# generates `spec-json/*.json`, etc.
 	# run `make -B json` to force this to update
 
