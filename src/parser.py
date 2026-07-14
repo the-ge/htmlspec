@@ -83,6 +83,13 @@ def parse_element_exceptions_string(xs: str) -> Iterator[str]:
 # ---- Parsers for each section ----
 
 
+def parse_global_attributes(soup: BeautifulSoup) -> Set[str]:
+    default = {"class", "id", "role", "slot"}
+    anchors = (soup.find("h4", {"id": "global-attributes"}).find_next("ul", {"class": "brief"}).find_all("a"))
+    entries = default.union({a.get_text().strip() for a in anchors})
+    return entries
+
+
 def parse_index_elements(soup: BeautifulSoup, global_attributes: Set[str]) -> Iterator[Element]:
     rows = soup.find("h3", {"id": "elements-3"}).find_next("tbody").find_all("tr")
     for row in rows:
