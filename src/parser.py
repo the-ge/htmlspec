@@ -331,10 +331,10 @@ class SpecParser:
             soup = self._load_soup(source)
             entries = parser(soup, **parser_kwargs)
             count = len(entries)
-            if len(entries) < MIN_COUNT[key]:
-                raise ValueError(f"Expected >={min_count} {key}, got {len(entries)}")
+            if count < MIN_COUNT[key]:
+                raise ValueError(f"Expected >={MIN_COUNT[key]} {key}, got {count}")
             self._save_cache(key, entries)
-            logging.info(f"✅ Parsed and cached {len(entries)} {key}")
+            logging.info(f"✅ Parsed and cached {count} {key}")
             return entries
         except Exception as e:
             return self._log_parse_error_and_fallback(e, key)
@@ -351,7 +351,7 @@ class SpecParser:
             entries = list(parser(soup, **parser_kwargs))
             count = len(entries)
             if count < MIN_COUNT[key]:
-                raise ValueError(f"Expected >={min_count} {key}, got {count}")
+                raise ValueError(f"Expected >={MIN_COUNT[key]} {key}, got {count}")
             result = dictify(entries, meta=self.meta)
             self._save_cache(key, result)
             logging.info(f"✅ Parsed and cached {count} {key}")
