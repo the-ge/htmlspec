@@ -7,7 +7,7 @@ import logging
 import re
 import string
 
-from util import grouper, dictify, make_serializable, t_attribute, t_element, t_category, t_attribute, t_event_handler
+from util import grouper, dictify, make_serializable, t_attribute, t_category, t_element, t_event_handler
 from config import KEYWORDS_PATTERN, EXCEPTION_PATTERN
 
 
