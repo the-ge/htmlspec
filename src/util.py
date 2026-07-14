@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 from pathlib import Path
-from typing import List, Any, Dict, Union, Iterator, Optional, Set
+from typing import List, Any, Dict, Union, Set
 import dataclasses
 import itertools
 import json
