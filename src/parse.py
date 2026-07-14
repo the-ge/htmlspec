@@ -5,6 +5,7 @@ from collections import namedtuple
 from bs4 import BeautifulSoup
 from pathlib import Path
 from slugify import slugify
+from email.utils import parsedate_to_datetime
 import re
 import string
 
@@ -20,11 +21,22 @@ KEYWORDS_PATTERN = re.compile(r'^(?:"[a-zA-Z0-9/-]*"|the empty string)(?:; (?:"[
 EXCEPTION_PATTERN = re.compile(r'([a-zA-Z0-9-]+) \(if [a-zA-Z0-9\' -]+\)')
 
 
-with Path("licenses/NOTICE").open("r") as fp:
+def read_timestamp(path):
+    raw = path.read_text().strip()
+    return raw, parsedate_to_datetime(raw)
+
+with open("licenses/NOTICE") as fp:
     COPYING = fp.read().split("\n\n")
 
-with (specdir / "timestamp").open("r") as fp:
-    COPYING.append("Based on current published specifications accessed " + fp.read().strip())
+whatwg_times = [
+    read_timestamp(specdir / f"{stem}.time")
+    for stem in ("indices", "dom", "input", "syntax")
+]
+whatwg_time, _ = max(whatwg_times, key=lambda pair: pair[1])
+COPYING.append("HTML Living Standard as published " + whatwg_time)
+
+aria_time, _ = read_timestamp(specdir / "aria.time")
+COPYING.append("WAI-ARIA as published " + aria_time)
 
 COPYING = [x.replace("\n", " ").strip() for x in COPYING]
 
