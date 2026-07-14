@@ -8,6 +8,9 @@ clean:
 _contrib:
 	make -C contrib
 
+install:
+	python3 -m pip install -r requirements.txt
+
 dist:
 	python3 src/parse.py
 	# generates `spec-json/*.json`, etc.
