@@ -320,6 +320,45 @@ class SpecParser:
         logging.info(f"📦 Loaded {cache_key} from cache")
         return cached
 
+    def _get_entries(
+        self,
+        source: str,
+        key: str,
+        parser: Callable,
+        **parser_kwargs,
+    ):
+        try:
+            soup = self._load_soup(source)
+            entries = parser(soup, **parser_kwargs)
+            count = len(entries)
+            if len(entries) < MIN_COUNT[key]:
+                raise ValueError(f"Expected >={min_count} {key}, got {len(entries)}")
+            self._save_cache(key, entries)
+            logging.info(f"✅ Parsed and cached {len(entries)} {key}")
+            return entries
+        except Exception as e:
+            return self._log_parse_error_and_fallback(e, key)
+
+    def _get_dictified(
+        self,
+        source: str,
+        key: str,
+        parser: Callable,
+        **parser_kwargs,
+    ) -> Dict[str, Any]:
+        try:
+            soup = self._load_soup(source)
+            entries = list(parser(soup, **parser_kwargs))
+            count = len(entries)
+            if count < MIN_COUNT[key]:
+                raise ValueError(f"Expected >={min_count} {key}, got {count}")
+            result = dictify(entries, meta=self.meta)
+            self._save_cache(key, result)
+            logging.info(f"✅ Parsed and cached {count} {key}")
+            return result
+        except Exception as e:
+            return self._log_parse_error_and_fallback(e, key)
+
     # ---- public parsers ----
 
     def get_global_attributes(self) -> Set[str]:
@@ -410,42 +449,3 @@ class SpecParser:
             "event-handlers": self.parse_event_handlers(),
             "element-types": self.parse_element_types(),
         }
-
-    def _get_entries(
-        self,
-        source: str,
-        key: str,
-        parser: Callable,
-        **parser_kwargs,
-    ):
-        try:
-            soup = self._load_soup(source)
-            entries = parser(soup, **parser_kwargs)
-            count = len(entries)
-            if len(entries) < MIN_COUNT[key]:
-                raise ValueError(f"Expected >={min_count} {key}, got {len(entries)}")
-            self._save_cache(key, entries)
-            logging.info(f"✅ Parsed and cached {len(entries)} {key}")
-            return entries
-        except Exception as e:
-            return self._log_parse_error_and_fallback(e, key)
-
-    def _get_dictified(
-        self,
-        source: str,
-        key: str,
-        parser: Callable,
-        **parser_kwargs,
-    ) -> Dict[str, Any]:
-        try:
-            soup = self._load_soup(source)
-            entries = list(parser(soup, **parser_kwargs))
-            count = len(entries)
-            if count < MIN_COUNT[key]:
-                raise ValueError(f"Expected >={min_count} {key}, got {count}")
-            result = dictify(entries, meta=self.meta)
-            self._save_cache(key, result)
-            logging.info(f"✅ Parsed and cached {count} {key}")
-            return result
-        except Exception as e:
-            return self._log_parse_error_and_fallback(e, key)
