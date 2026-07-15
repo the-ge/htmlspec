@@ -14,7 +14,7 @@ LICENSES_DIR = PROJECT_ROOT / 'licenses'
 NOTICE_FILE = LICENSES_DIR / 'NOTICE'
 
 # ---- Logging ----
-LOG_LEVEL = 'INFO'
+LOG_LEVEL = 'DEBUG'
 
 # ---- Output format ----
 OUTPUT_FORMAT = 'json'
