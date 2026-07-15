@@ -323,7 +323,6 @@ class SpecParser:
         self.cache_dir = cache_dir
         self.meta = meta or {}
         self._soups: dict[str, BeautifulSoup] = {}
-        self._global_attributes: set[str] | None = None
 
     # ---- internal helpers ----
 
@@ -391,7 +390,6 @@ class SpecParser:
             count = len(entries)
             if count < MIN_COUNT[key]:
                 raise ValueError(f'Expected >={MIN_COUNT[key]} {key}, got {count}')
-            self._global_attributes = entries
             self._save_cache(key, entries)
             logging.info(f'✅ Parsed and cached {count} {key}')
             return entries
