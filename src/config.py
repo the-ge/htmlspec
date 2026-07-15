@@ -7,6 +7,7 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 # ---- Directories ----
 STATE_DIR = PROJECT_ROOT / '.dev/state'  # raw spec HTML files
 JSON_DIR = PROJECT_ROOT / 'dist/json'  # final JSON output
+YAML_DIR = PROJECT_ROOT / 'dist/yaml'  # final YAML output, one file per item
 CACHE_DIR = PROJECT_ROOT / '.dev' / 'cache'  # cached parsed data
 
 # ---- Licenses ----

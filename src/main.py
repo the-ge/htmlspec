@@ -6,7 +6,7 @@ from pathlib import Path
 
 import yaml
 
-from config import ARIA_STEM, CACHE_DIR, HTML_STEMS, JSON_DIR, LOG_LEVEL, NOTICE_FILE, OUTPUT_FORMAT, STATE_DIR
+from config import ARIA_STEM, CACHE_DIR, HTML_STEMS, JSON_DIR, LOG_LEVEL, NOTICE_FILE, OUTPUT_FORMAT, STATE_DIR, YAML_DIR
 from parser import SpecParser
 from util import make_serializable
 
@@ -53,16 +53,35 @@ def write_output(data: dict, path: Path, fmt: str) -> None:
         )
     elif fmt == 'yaml':
         path.write_text(
-            yaml.dump(serializable, indent=2, sort_keys=True, allow_unicode=True),
+            yaml.dump(serializable, indent=2, sort_keys=True, allow_unicode=True, width=float('inf')),
             encoding='utf-8',
         )
     else:
         raise ValueError(f'Unsupported output format: {fmt}')
 
 
+def write_yaml_items(data: dict, dir_path: Path) -> int:
+    """Write each item in data (skipping the '__META__' entry) as its own
+    YAML file under dir_path, named after its key, e.g. dir_path/abbr.yaml.
+    Returns the number of files written."""
+    dir_path.mkdir(parents=True, exist_ok=True)
+    count = 0
+    for key, value in data.items():
+        if key == '__META__':
+            continue
+        filename = key.replace('/', '_')  # guard against path traversal via item keys
+        (dir_path / f'{filename}.yaml').write_text(
+            yaml.dump(make_serializable(value), indent=2, sort_keys=True, allow_unicode=True, width=float('inf')),
+            encoding='utf-8',
+        )
+        count += 1
+    return count
+
+
 def main():
-    # Prepare output directory
+    # Prepare output directories
     JSON_DIR.mkdir(parents=True, exist_ok=True)
+    YAML_DIR.mkdir(parents=True, exist_ok=True)
 
     # Instantiate the parser
     parser = SpecParser(
@@ -82,6 +101,10 @@ def main():
         output_path = JSON_DIR / f'{name}.{ext}'
         write_output(data, output_path, OUTPUT_FORMAT)
         logging.info(f'📝 Wrote {output_path}')
+
+        yaml_subdir = YAML_DIR / name
+        item_count = write_yaml_items(data, yaml_subdir)
+        logging.info(f'📝 Wrote {item_count} individual YAML files to {yaml_subdir}')
 
 
 if __name__ == '__main__':
