@@ -66,7 +66,7 @@ def gen_categories(categories: str) -> Iterator[str]:
             yield cat
 
 
-def gen_keywords(keywords: str) -> Iterator[str]:
+def gen_enum(keywords: str) -> Iterator[str]:
     if KEYWORDS_PATTERN.fullmatch(keywords):
 
         def process_token(token: str) -> str:
@@ -178,7 +178,7 @@ def parse_attributes(soup: BeautifulSoup) -> Iterator[Attribute]:
                 tag_scope.add(tmp)
         tag_notes = '' if tag_notes == [] else f'Special tag scope: {", ".join(tag_notes)}'
 
-        value_enum = set(gen_keywords(value_type))
+        value_enum = set(gen_enum(value_type))
         if value_enum:
             value_type = 'enum'
             value_info = ''
