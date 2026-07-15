@@ -74,7 +74,7 @@ def grouper(iterable, n, fillvalue=None):
 def dictify(
     xs: Iterator[Any],  # list/generator of dataclass objects
     merge: bool = True,
-    meta: Optional[Dict] = None
+    meta: Optional[Dict] = None,
 ) -> Dict[str, Any]:
     """Convert a list of dataclasses to a dict where the key is the first
     field in each object and each key is unique."""
@@ -82,7 +82,7 @@ def dictify(
     result = {}
 
     if meta:
-        result["__META__"] = meta
+        result['__META__'] = meta
 
     for x in xs:
         # Get field names and values using dataclasses
@@ -95,14 +95,14 @@ def dictify(
         if key in result:
             # Existing entry
             if merge is None:
-                raise KeyError(f"Duplicate key {key!r}")
+                raise KeyError(f'Duplicate key {key!r}')
 
             if merge:
                 # Merge each value with existing entry
                 t = result[key]
                 for subkey in t.keys():
                     if isinstance(t[subkey], str):
-                        t[subkey] += ". " + r[subkey]
+                        t[subkey] += '. ' + r[subkey]
                     elif isinstance(t[subkey], set):
                         t[subkey] = t[subkey].union(r[subkey])
                     elif isinstance(t[subkey], list):
@@ -115,16 +115,17 @@ def dictify(
                 # Create a linked-list
                 tail = key
                 count = 2
-                while result[tail].get("next"):
-                    tail = result[tail].get("next")
+                while result[tail].get('next'):
+                    tail = result[tail].get('next')
                     count += 1
-                newkey = f"{key}({count})"
-                result[tail]["next"] = newkey
+                newkey = f'{key}({count})'
+                result[tail]['next'] = newkey
                 result[newkey] = r
         else:
             result[key] = r
 
     return result
+
 
 def make_serializable(obj):
     """Recursively convert sets to sorted lists for JSON serialization."""
