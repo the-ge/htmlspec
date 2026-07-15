@@ -461,6 +461,6 @@ class SpecParser:
             'elements': self.get_elements(),
             'categories': self.get_categories(),
             'attributes': self.get_attributes(),
-            'event-handlers': self.get_event_handlers(),
-            'element-types': self.get_element_types(),
+            'event_handlers': self.get_event_handlers(),
+            'element_types': self.get_element_types(),
         }
