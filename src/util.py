@@ -1,7 +1,7 @@
-from dataclasses import dataclass
-from typing import Any, Dict, List, Iterator, Optional, Set
 import dataclasses
 import itertools
+from dataclasses import dataclass
+from typing import Any, Dict, Iterator, List, Optional, Set
 
 
 @dataclass(frozen=True, slots=True)

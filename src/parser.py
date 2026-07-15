@@ -1,14 +1,16 @@
-from bs4 import BeautifulSoup
-from pathlib import Path
-from slugify import slugify
-from typing import Any, Callable, Dict, Iterator, List, Optional, Set
 import json
 import logging
 import re
 import string
+from collections.abc import Callable, Iterator
+from pathlib import Path
+from typing import Any
 
-from util import grouper, dictify, make_serializable, Attribute, Category, Element, EventHandler
-from config import KEYWORDS_PATTERN, EXCEPTION_PATTERN, MIN_COUNT
+from bs4 import BeautifulSoup
+from slugify import slugify
+
+from config import EXCEPTION_PATTERN, KEYWORDS_PATTERN, MIN_COUNT
+from util import Attribute, Category, Element, EventHandler, dictify, grouper, make_serializable
 
 # Special cases: phrase -> list of yielded tokens (empty list yields nothing)
 SPECIAL_ELEMENTS = {
@@ -50,7 +52,7 @@ def gen_elements(elements: str) -> Iterator[str]:
         yield elements
 
 
-def gen_attributes(attributes: str, global_attributes: Set[str]) -> Iterator[str]:
+def gen_attributes(attributes: str, global_attributes: set[str]) -> Iterator[str]:
     for attribute in attributes.strip(string.whitespace + ';').split(';'):
         attr = attribute.strip('*').strip()
         if attr == 'globals':
@@ -90,7 +92,7 @@ def gen_element_exceptions(xs: str) -> Iterator[str]:
 # ---- Parsers for each section ----
 
 
-def parse_global_attributes(soup: BeautifulSoup) -> Set[str]:
+def parse_global_attributes(soup: BeautifulSoup) -> set[str]:
     # https://html.spec.whatwg.org/dev/dom.html#global-attributes
     default = {'class', 'id', 'role', 'slot'}
     anchors = soup.find('h4', {'id': 'global-attributes'}).find_next('ul', {'class': 'brief'}).find_all('a')
@@ -98,7 +100,7 @@ def parse_global_attributes(soup: BeautifulSoup) -> Set[str]:
     return entries
 
 
-def parse_elements(soup: BeautifulSoup, global_attributes: Set[str]) -> Iterator[Element]:
+def parse_elements(soup: BeautifulSoup, global_attributes: set[str]) -> Iterator[Element]:
     # https://html.spec.whatwg.org/multipage/indices.html#elements-3
     rows = soup.find('h3', {'id': 'elements-3'}).find_next('tbody').find_all('tr')
     for row in rows:
@@ -169,8 +171,8 @@ def parse_attributes(soup: BeautifulSoup) -> Iterator[Attribute]:
         value_info = value_type
         separator = ''
 
-        tag_scope: Set[str] = set()
-        tag_notes: List[str] = []
+        tag_scope: set[str] = set()
+        tag_notes: list[str] = []
         for token in gen_elements(tag_scope_desc):
             tmp = token.strip()
             idx = tmp.find('(')
@@ -221,7 +223,7 @@ def parse_attributes(soup: BeautifulSoup) -> Iterator[Attribute]:
         value_info = '. '.join([v for v in [
             value_info,
             tag_notes,
-            f'*Incomplete description. See the full specification.' if is_complicated else '',
+            '*Incomplete description. See the full specification.' if is_complicated else '',
         ] if v])
 
         yield Attribute(
@@ -279,10 +281,10 @@ def parse_aria_roles(soup: BeautifulSoup) -> Iterator[str]:
             yield keyword.strip()
 
 
-def parse_element_types(soup: BeautifulSoup, meta: Optional[Dict[str, Any]]) -> Dict[str, List[str]]:
+def parse_element_types(soup: BeautifulSoup, meta: dict[str, Any] | None) -> dict[str, list[str]]:
     # https://html.spec.whatwg.org/dev/syntax.html#elements-2
     rows = soup.find('h4', {'id': 'elements-2'}).find_next('dl').find_all(['dt', 'dd'], recursive=False)
-    result: Dict[str, List[str]] = {'__META__': meta}
+    result: dict[str, list[str]] = {'__META__': meta}
     for dt, dd in grouper(rows, 2):
         elements = dd.find_all('code')
         if not elements:
@@ -302,13 +304,13 @@ class SpecParser:
         self,
         state_dir: Path,
         cache_dir: Path,
-        meta: Optional[Dict[str, Any]] = None,
+        meta: dict[str, Any] | None = None,
     ):
         self.state_dir = state_dir
         self.cache_dir = cache_dir
         self.meta = meta or {}
-        self._soups: Dict[str, BeautifulSoup] = {}
-        self._global_attributes: Optional[Set[str]] = None
+        self._soups: dict[str, BeautifulSoup] = {}
+        self._global_attributes: set[str] | None = None
 
     # ---- internal helpers ----
 
@@ -329,7 +331,7 @@ class SpecParser:
             encoding='utf-8',
         )
 
-    def _load_cache(self, key: str) -> Optional[Any]:
+    def _load_cache(self, key: str) -> Any | None:
         """Load a Python object from the cache directory; return None if missing."""
         path = self.cache_dir / f'{key}.json'
         if not path.exists():
@@ -360,7 +362,7 @@ class SpecParser:
         except Exception as e:
             return self._log_parse_error_and_fallback(e, key)
 
-    def _get_dictified(self, source: str, key: str, parser: Callable, **parser_kwargs) -> Dict[str, Any]:
+    def _get_dictified(self, source: str, key: str, parser: Callable, **parser_kwargs) -> dict[str, Any]:
         try:
             soup = self._load_soup(source)
             entries = list(parser(soup, **parser_kwargs))
@@ -376,13 +378,13 @@ class SpecParser:
 
     # ---- public parsers ----
 
-    def get_global_attributes(self) -> Set[str]:
+    def get_global_attributes(self) -> set[str]:
         """Parse or load cached global attributes."""
         entries = self._get_entries('dom', 'global_attributes', parse_global_attributes)
         self._global_attributes = entries
         return entries
 
-    def get_elements(self) -> Dict[str, Any]:
+    def get_elements(self) -> dict[str, Any]:
         """Parse elements with caching and validation."""
         return self._get_dictified(
             'indices',
@@ -391,11 +393,11 @@ class SpecParser:
             global_attributes=self.get_global_attributes(),
         )
 
-    def get_categories(self) -> Dict[str, Any]:
+    def get_categories(self) -> dict[str, Any]:
         """Parse categories with caching and validation."""
         return self._get_dictified('indices', 'categories', parse_categories)
 
-    def get_attributes(self) -> Dict[str, Any]:
+    def get_attributes(self) -> dict[str, Any]:
         """Parse attributes (including type & role) with caching and validation."""
         key = 'attributes'
         try:
@@ -441,12 +443,12 @@ class SpecParser:
         except Exception as e:
             return self._log_parse_error_and_fallback(e, key)
 
-    def get_event_handlers(self) -> Dict[str, Any]:
+    def get_event_handlers(self) -> dict[str, Any]:
         """Parse event handlers with caching and validation."""
         # key = "event_handlers"
         return self._get_dictified('indices', 'event_handlers', parse_event_handlers)
 
-    def get_element_types(self) -> Dict[str, Any]:
+    def get_element_types(self) -> dict[str, Any]:
         """Parse element types with caching and validation."""
         return self._get_entries(
             'syntax',
@@ -455,7 +457,7 @@ class SpecParser:
             meta=self.meta,
         )
 
-    def get_all(self) -> Dict[str, Any]:
+    def get_all(self) -> dict[str, Any]:
         """Convenience method to run all parsers and return a dict of results."""
         return {
             'elements': self.get_elements(),

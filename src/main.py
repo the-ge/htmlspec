@@ -1,14 +1,14 @@
-from email.utils import parsedate_to_datetime
-from datetime import datetime
-from pathlib import Path
-import logging
 import json
+import logging
+from datetime import datetime
+from email.utils import parsedate_to_datetime
+from pathlib import Path
+
 import yaml
 
-from config import HTML_STEMS, ARIA_STEM, LOG_LEVEL, OUTPUT_FORMAT, NOTICE_FILE, STATE_DIR, JSON_DIR, CACHE_DIR
-from util import make_serializable
+from config import ARIA_STEM, CACHE_DIR, HTML_STEMS, JSON_DIR, LOG_LEVEL, NOTICE_FILE, OUTPUT_FORMAT, STATE_DIR
 from parser import SpecParser
-
+from util import make_serializable
 
 logging.basicConfig(level=LOG_LEVEL, format='%(levelname)s: %(message)s')
 
