@@ -1,5 +1,4 @@
 import dataclasses
-import itertools
 from collections.abc import Iterator
 from dataclasses import dataclass
 from typing import Any
