@@ -72,7 +72,7 @@ def main():
     )
 
     # Parse everything
-    results = parser.parse_all()
+    results = parser.get_all()
 
     # Determine file extension
     ext = 'json' if OUTPUT_FORMAT == 'json' else 'yaml'

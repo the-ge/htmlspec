@@ -76,7 +76,7 @@ def gen_enum(keywords: str) -> Iterator[str]:
         yield from map(process_token, keywords.split(';'))
 
 
-def parse_element_exceptions_string(xs: str) -> Iterator[str]:
+def gen_element_exceptions(xs: str) -> Iterator[str]:
     if not xs:
         return
     parts = xs.split(';') if ';' in xs else [xs]
@@ -142,7 +142,7 @@ def parse_categories(soup: BeautifulSoup) -> Iterator[Category]:
         elements_set = set(gen_elements(elements))
         if exceptions == '—':
             exceptions = ''
-        elements_maybe = list(parse_element_exceptions_string(exceptions))
+        elements_maybe = list(gen_element_exceptions(exceptions))
 
         yield Category(
             name=category,
@@ -382,7 +382,7 @@ class SpecParser:
         self._global_attributes = entries
         return entries
 
-    def parse_elements(self) -> Dict[str, Any]:
+    def get_elements(self) -> Dict[str, Any]:
         """Parse elements with caching and validation."""
         return self._get_dictified(
             'indices',
@@ -391,11 +391,11 @@ class SpecParser:
             global_attributes=self.get_global_attributes(),
         )
 
-    def parse_categories(self) -> Dict[str, Any]:
+    def get_categories(self) -> Dict[str, Any]:
         """Parse categories with caching and validation."""
         return self._get_dictified('indices', 'categories', parse_categories)
 
-    def parse_attributes(self) -> Dict[str, Any]:
+    def get_attributes(self) -> Dict[str, Any]:
         """Parse attributes (including type & role) with caching and validation."""
         key = 'attributes'
         try:
@@ -441,12 +441,12 @@ class SpecParser:
         except Exception as e:
             return self._log_parse_error_and_fallback(e, key)
 
-    def parse_event_handlers(self) -> Dict[str, Any]:
+    def get_event_handlers(self) -> Dict[str, Any]:
         """Parse event handlers with caching and validation."""
         # key = "event_handlers"
         return self._get_dictified('indices', 'event_handlers', parse_event_handlers)
 
-    def parse_element_types(self) -> Dict[str, Any]:
+    def get_element_types(self) -> Dict[str, Any]:
         """Parse element types with caching and validation."""
         return self._get_entries(
             'syntax',
@@ -455,12 +455,12 @@ class SpecParser:
             meta=self.meta,
         )
 
-    def parse_all(self) -> Dict[str, Any]:
+    def get_all(self) -> Dict[str, Any]:
         """Convenience method to run all parsers and return a dict of results."""
         return {
-            'elements': self.parse_elements(),
-            'categories': self.parse_categories(),
-            'attributes': self.parse_attributes(),
-            'event-handlers': self.parse_event_handlers(),
-            'element-types': self.parse_element_types(),
+            'elements': self.get_elements(),
+            'categories': self.get_categories(),
+            'attributes': self.get_attributes(),
+            'event-handlers': self.get_event_handlers(),
+            'element-types': self.get_element_types(),
         }
