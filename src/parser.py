@@ -91,6 +91,7 @@ def parse_element_exceptions_string(xs: str) -> Iterator[str]:
 
 
 def parse_global_attributes(soup: BeautifulSoup) -> Set[str]:
+    # https://html.spec.whatwg.org/dev/dom.html#global-attributes
     default = {'class', 'id', 'role', 'slot'}
     anchors = soup.find('h4', {'id': 'global-attributes'}).find_next('ul', {'class': 'brief'}).find_all('a')
     entries = default.union({a.get_text().strip() for a in anchors})
@@ -98,6 +99,7 @@ def parse_global_attributes(soup: BeautifulSoup) -> Set[str]:
 
 
 def parse_elements(soup: BeautifulSoup, global_attributes: Set[str]) -> Iterator[Element]:
+    # https://html.spec.whatwg.org/multipage/indices.html#elements-3
     rows = soup.find('h3', {'id': 'elements-3'}).find_next('tbody').find_all('tr')
     for row in rows:
         cells = [x.get_text().strip() for x in row.find_all(['th', 'td'])]
@@ -122,6 +124,7 @@ def parse_elements(soup: BeautifulSoup, global_attributes: Set[str]) -> Iterator
 
 
 def parse_categories(soup: BeautifulSoup) -> Iterator[Category]:
+    # https://html.spec.whatwg.org/multipage/indices.html#element-content-categories
     rows = soup.find('h3', {'id': 'element-content-categories'}).find_next('tbody').find_all('tr')
     for row in rows:
         cells = [x.get_text().strip() for x in row.find_all(['th', 'td'])]
@@ -150,6 +153,7 @@ def parse_categories(soup: BeautifulSoup) -> Iterator[Category]:
 
 
 def parse_attributes(soup: BeautifulSoup) -> Iterator[Attribute]:
+    # https://html.spec.whatwg.org/multipage/indices.html#attributes-3
     rows = soup.find('h3', {'id': 'attributes-3'}).find_next('tbody').find_all('tr')
     for row in rows:
         cells = [x.get_text().strip() for x in row.find_all(['th', 'td'])]
@@ -232,6 +236,7 @@ def parse_attributes(soup: BeautifulSoup) -> Iterator[Attribute]:
 
 
 def parse_event_handlers(soup: BeautifulSoup) -> Iterator[EventHandler]:
+    # https://html.spec.whatwg.org/multipage/indices.html#ix-event-handlers
     rows = soup.find('table', {'id': 'ix-event-handlers'}).find_next('tbody').find_all('tr')
     for row in rows:
         cells = [x.get_text() for x in row.find_all(['th', 'td'])]
@@ -246,6 +251,7 @@ def parse_event_handlers(soup: BeautifulSoup) -> Iterator[EventHandler]:
 
 
 def parse_input_types(soup: BeautifulSoup) -> Iterator[str]:
+    # https://html.spec.whatwg.org/dev/input.html#attr-input-type-keywords
     rows = soup.find('table', {'id': 'attr-input-type-keywords'}).find_next('tbody').find_all('tr')
     for row in rows:
         cells = [x.get_text() for x in row.find_all(['th', 'td'])]
@@ -254,6 +260,11 @@ def parse_input_types(soup: BeautifulSoup) -> Iterator[str]:
 
 
 def parse_aria_roles(soup: BeautifulSoup) -> Iterator[str]:
+    # https://w3c.github.io/aria/#widget
+    # https://w3c.github.io/aria/#document_structure_roles
+    # https://w3c.github.io/aria/#landmark_roles
+    # https://w3c.github.io/aria/#live_region_roles
+    # https://w3c.github.io/aria/#window_roles
     concrete_roles = (
         'widget',
         'document_structure_roles',
@@ -269,6 +280,7 @@ def parse_aria_roles(soup: BeautifulSoup) -> Iterator[str]:
 
 
 def parse_element_types(soup: BeautifulSoup, meta: Optional[Dict[str, Any]]) -> Dict[str, List[str]]:
+    # https://html.spec.whatwg.org/dev/syntax.html#elements-2
     rows = soup.find('h4', {'id': 'elements-2'}).find_next('dl').find_all(['dt', 'dd'], recursive=False)
     result: Dict[str, List[str]] = {'__META__': meta}
     for dt, dd in grouper(rows, 2):
