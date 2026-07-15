@@ -4,7 +4,7 @@ default: all ;
 _state:
 	make -C .dev/state
 
-clean:
+clear:
 	make -C .dev/state clean
 	rm -f dist/json/*.json
 
