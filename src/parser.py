@@ -455,7 +455,7 @@ class SpecParser:
 
             count = len(entries)
             if count < MIN_COUNT[key]:
-                raise ValueError(f'Expected >=50 attributes, got {count}')
+                raise ValueError(f'Expected >= {MIN_COUNT[key]} {key}, got {count}')
             # Note: merge=False for attributes
             result = self._add_meta(dictify(entries, merge=False))
             self._save_cache(key, result)
