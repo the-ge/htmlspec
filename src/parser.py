@@ -409,7 +409,7 @@ class SpecParser:
             entries.append(
                 Attribute(
                     name='role',
-                    tag_scope=[],
+                    tag_scope=set(),
                     description='ARIA semantic role',
                     value_type='A concrete ARIA role',
                     value_enum=set(parse_aria_roles(aria_soup)),
