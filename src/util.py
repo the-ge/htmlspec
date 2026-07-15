@@ -1,33 +1,34 @@
 import dataclasses
 import itertools
+from collections.abc import Iterator
 from dataclasses import dataclass
-from typing import Any, Dict, Iterator, List, Optional, Set
+from typing import Any
 
 
 @dataclass(frozen=True, slots=True)
 class Element:
     name: str
     description: str
-    categories: Set[str]
-    attributes: Set[str]
-    children: Set[str]
+    categories: set[str]
+    attributes: set[str]
+    children: set[str]
 
 
 @dataclass(frozen=True, slots=True)
 class Category:
     name: str
-    elements: Set[str]
-    elements_maybe: List[str]
+    elements: set[str]
+    elements_maybe: list[str]
     exceptions: str
 
 
 @dataclass(frozen=True, slots=True)
 class Attribute:
     name: str
-    tag_scope: Set[str]
+    tag_scope: set[str]
     description: str
     value_type: str
-    value_enum: Set[str]
+    value_enum: set[str]
     value_info: str
     separator: str
 
@@ -48,8 +49,8 @@ def grouper(iterable, n, fillvalue=None):
 def dictify(
     xs: Iterator[Any],  # list/generator of dataclass objects
     merge: bool = True,
-    meta: Optional[Dict] = None,
-) -> Dict[str, Any]:
+    meta: dict | None = None,
+) -> dict[str, Any]:
     """Convert a list of dataclasses to a dict where the key is the first
     field in each object and each key is unique."""
 
