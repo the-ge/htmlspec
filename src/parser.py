@@ -43,9 +43,9 @@ def gen_elements(elements: str) -> Iterator[str]:
             yield from gen_elements(e)
     elif '(' in elements or ')' in elements:
         yield elements
-    # bug @ https://html.spec.whatwg.org/multipage/indices.html#attributes-3:attr-media-controls
-    # `controls` "Element(s)" cell has no semicolon between 'video' and 'img' <code> elements
     elif elements == 'video\nimg':
+        # bug @ https://html.spec.whatwg.org/multipage/indices.html#attributes-3:attr-media-controls
+        # `controls` "Element(s)" cell has no semicolon between 'video' and 'img' <code> elements
         for e in elements.split('\n'):
             yield from gen_elements(e)
     else:
@@ -163,6 +163,12 @@ def parse_attributes(soup: BeautifulSoup) -> Iterator[Attribute]:
             logging.error(f'Expected 4 cells, got {len(cells)}. Skipping row: {row}')
             continue
         attr_name, tag_scope_desc, attr_desc, value_info = cells
+
+        if attr_name == 'controls':
+            video_idx = tag_scope_desc.find('video')
+            img_idx = tag_scope_desc.find('img', video_idx + len('video')) if video_idx != -1 else -1
+            if img_idx != -1 and ';' in tag_scope_desc[video_idx + len('video'):img_idx]:
+                logging.warning("gen_elements()'s 'video\\nimg' workaround may no longer be needed. Check!")
 
         is_complicated = value_info.endswith('*')
         if is_complicated:
