@@ -367,28 +367,6 @@ class SpecParser:
         logging.info(f'📦 Loaded {cache_key} from cache')
         return cached
 
-    def _get_result(
-        self, source: str, key: str, parser: Callable, with_meta: bool = False, **parser_kwargs
-    ) -> set[str] | dict[str, Any]:
-        """Parse a section (returning a Set or a Dict, either is fine — both support
-        len()), validate, optionally attach meta, cache, and return it."""
-        try:
-            soup = self._load_soup(source)
-            entries = parser(soup, **parser_kwargs)
-            count = len(entries)
-            if count < MIN_COUNT[key]:
-                raise ValueError(f'Expected >={MIN_COUNT[key]} {key}, got {count}')
-            if with_meta:
-                entries = self._add_meta(entries)
-            self._save_cache(key, entries)
-            logging.info(f'✅ Parsed and cached {count} {key}')
-            return entries
-        except Exception as e:
-            cached = self._log_parse_error_and_fallback(e, key)
-            if isinstance(cached, list):
-                cached = set(cached)
-            return cached
-
     def _get_dictified(self, source: str, key: str, parser: Callable, **parser_kwargs) -> dict[str, Any]:
         try:
             soup = self._load_soup(source)
@@ -407,9 +385,19 @@ class SpecParser:
 
     def get_global_attributes(self) -> set[str]:
         """Parse or load cached global attributes."""
-        entries = self._get_result('dom', 'global_attributes', parse_global_attributes)
-        self._global_attributes = entries
-        return entries
+        key = 'global_attributes'
+        try:
+            entries = parse_global_attributes(self._load_soup('dom'))
+            count = len(entries)
+            if count < MIN_COUNT[key]:
+                raise ValueError(f'Expected >={MIN_COUNT[key]} {key}, got {count}')
+            self._global_attributes = entries
+            self._save_cache(key, entries)
+            logging.info(f'✅ Parsed and cached {count} {key}')
+            return entries
+        except Exception as e:
+            cached = self._log_parse_error_and_fallback(e, key)
+            return set(cached) if isinstance(cached, list) else cached
 
     def get_elements(self) -> dict[str, Any]:
         """Parse elements with caching and validation."""
