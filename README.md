@@ -1,9 +1,38 @@
 # html5spec
 
-This repository was originally a fork of [Tawesoft](https://github.com/tawesoft)'s [**html5spec** repository](https://github.com/tawesoft/html5spec/), which was archived by its owner on Nov 3, 2025.
+## Source Data Last Updated
+
+<!-- STATE_LAST_UPDATED:START -->
+
+| Page | Last Updated |
+| :--- | :--- |
+| [Semantics, structure, and APIs of HTML documents](https://html.spec.whatwg.org/multipage/dom.html) | Mon, 13 Jul 2026 14:09:46 GMT
+| [WHATWG HTML Living Standard Index Page](https://html.spec.whatwg.org/multipage/indices.html) | Mon, 13 Jul 2026 14:09:47 GMT
+| [The input element](https://html.spec.whatwg.org/multipage/input.html) | Mon, 13 Jul 2026 14:09:46 GMT
+| [The HTML syntax](https://html.spec.whatwg.org/multipage/syntax.html) | Mon, 13 Jul 2026 14:09:47 GMT
+| [Accessible Rich Internet Applications (WAI-ARIA)](https://w3c.github.io/aria/) | Thu, 09 Jul 2026 17:22:36 GMT
+
+<!-- STATE_LAST_UPDATED:END -->
+
+## Summary
+
+This repository generates JSON and YAML files from the [WHATWG HTML Living Standard](https://html.spec.whatwg.org/multipage/) and [Accessible Rich Internet Applications (WAI-ARIA)](https://w3c.github.io/aria/) websites. It queries the `Last-Modified` header to find when was each source file updated.
+
+This repository was originally a fork of [Tawesoft](https://github.com/tawesoft)'s [**html5spec** repository](https://github.com/tawesoft/html5spec/), which was archived by its owner on Nov 3, 2025. 
 
 > [!CAUTION]
-> **I do not intend to keep any backwards compatibility whatsoever. If you are relying on the old html5spec repository conventions, your best bet would be to fork it yourself. Sorry about that ¯\\\_\_(ツ)\_\_/¯**.
+> **I do not intend to keep any backwards compatibility whatsoever with the old [**html5spec** repository](https://github.com/tawesoft/html5spec/) repository.** If you are relying on the old repository conventions, your best bet would be to fork it yourself. Sorry about that ¯\\\_\_(ツ)\_\_/¯.
+> 
+> Also, aside from the inherent brittle nature of trying to add structure to data from non-structured data sources, this repository' data structures for its own end JSON/YAML/who knows what will be added? files are still work in progress, so do not rely on hardwired keys or data types.
+
+## Source data issues
+
+If the following issues are not crossed of, they are not solved by the updates shown above and they need specific workarounds to overcome their effects.
+
+| Location | Description |
+| :--- | :--- |
+| [**`controls`**](https://html.spec.whatwg.org/multipage/indices.html#attributes-3:attr-media-controls) table row | the "Element(s)" cell is missing a `;` between the `video` and `img` `<code>` elements. |
+
 ## Original README (minus the "Alternatives" section)
 
 > This repository contains Python code that generates machine-readable JSON
