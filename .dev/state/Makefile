@@ -12,13 +12,15 @@ clean:
 aria.html:
 	@touch aria.etag
 	curl --silent --show-error --fail --etag-compare aria.etag --etag-save aria.etag --dump-header aria.headers --output aria.html https://w3c.github.io/aria/
-	@grep --ignore-case '^last-modified:' aria.headers | sed 's/^[Ll]ast-[Mm]odified: //;s/\r$$//' > aria.time
+	@grep --ignore-case '^last-modified:' aria.headers | sed 's/^[Ll]ast-[Mm]odified: //;s/\r$$//' > aria.time.new
+	@if [ -s aria.time.new ]; then mv aria.time.new aria.time; else rm --force aria.time.new; fi
 	@rm --force aria.headers
 
 %.html:
 	@touch $*.etag
 	curl --silent --show-error --fail --etag-compare $*.etag --etag-save $*.etag --dump-header $*.headers --output $@ https://html.spec.whatwg.org/multipage/$@
-	@grep --ignore-case '^last-modified:' $*.headers | sed 's/^[Ll]ast-[Mm]odified: //;s/\r$$//' > $*.time
+	@grep --ignore-case '^last-modified:' $*.headers | sed 's/^[Ll]ast-[Mm]odified: //;s/\r$$//' > $*.time.new
+	@if [ -s $*.time.new ]; then mv $*.time.new $*.time; else rm --force $*.time.new; fi
 	@rm --force $*.headers
 
 all: $(specs) aria.html
