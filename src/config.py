@@ -12,7 +12,12 @@ CACHE_DIR = PROJECT_ROOT / '.dev' / 'cache'  # cached parsed data
 
 # ---- Licenses ----
 LICENSES_DIR = PROJECT_ROOT / 'licenses'
-NOTICE_FILE = LICENSES_DIR / 'NOTICE'
+NOTICE_FILE = LICENSES_DIR / 'NOTICE'  # static, copied verbatim to dist/NOTICE
+
+# ---- Manifest ----
+STATE_MANIFEST_FILE = STATE_DIR / 'manifest.json'  # raw per-source fetch timestamps, written by `make manifest.json`
+DIST_NOTICE_FILE = PROJECT_ROOT / 'dist' / 'NOTICE'
+MANIFEST_FILE = PROJECT_ROOT / 'dist' / 'manifest.json'
 
 # ---- Logging ----
 LOG_LEVEL = 'DEBUG'
@@ -25,10 +30,6 @@ KEYWORDS_PATTERN = re.compile(r'^(?:"[a-zA-Z0-9/-]*"|the empty string)(?:; (?:"[
 
 # Match element exceptions like "element (if ...)"
 EXCEPTION_PATTERN = re.compile(r'([a-zA-Z0-9-]+) \(if [a-zA-Z0-9\' -]+\)')
-
-# ---- Timestamp stems ----
-HTML_STEMS = ['indices', 'dom', 'input', 'syntax']
-ARIA_STEM = 'aria'
 
 # ---- html.spec.whatwg.org elements minimum counts ----
 MIN_COUNT = {

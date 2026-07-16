@@ -4,9 +4,10 @@ default: all ;
 specs=indices.html dom.html input.html syntax.html
 spec_etags=indices.etag dom.etag input.etag syntax.etag
 spec_times=indices.time dom.time input.time syntax.time
+all_times=$(spec_times) aria.time
 
 clean:
-	rm --force $(specs) $(spec_etags) $(spec_times)
+	rm --force $(specs) $(spec_etags) $(spec_times) manifest.json
 	rm --force aria.html aria.etag aria.time
 
 aria.html:
@@ -23,4 +24,18 @@ aria.html:
 	@if [ -s $*.time.new ]; then mv $*.time.new $*.time; else rm --force $*.time.new; fi
 	@rm --force $*.headers
 
-all: $(specs) aria.html
+manifest.json: $(specs) aria.html
+	@{ \
+		echo '{'; \
+		i=0; \
+		total=$(words $(all_times)); \
+		for f in $(all_times); do \
+			i=$$((i + 1)); \
+			name=$${f%.time}; \
+			printf '  "%s": "%s"' "$$name" "$$(cat $$f)"; \
+			[ $$i -lt $$total ] && echo ',' || echo; \
+		done; \
+		echo '}'; \
+	} > $@
+
+all: $(specs) aria.html manifest.json
