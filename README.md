@@ -4,10 +4,10 @@
 
 | Page | Last Updated |
 | :--- | :--- |
-| [Semantics, structure, and APIs of HTML documents](https://html.spec.whatwg.org/multipage/dom.html) | <!-- DOM_LAST_UPDATED:START -->Mon, 13 Jul 2026 14:09:46 GMT<!-- DOM_LAST_UPDATED:END --> |
-| [WHATWG HTML Living Standard Index Page](https://html.spec.whatwg.org/multipage/indices.html) | <!-- INDICES_LAST_UPDATED:START -->Mon, 13 Jul 2026 14:09:47 GMT<!-- INDICES_LAST_UPDATED:END --> |
-| [The input element](https://html.spec.whatwg.org/multipage/input.html) | <!-- INPUT_LAST_UPDATED:START -->Mon, 13 Jul 2026 14:09:46 GMT<!-- INPUT_LAST_UPDATED:END --> |
-| [The HTML syntax](https://html.spec.whatwg.org/multipage/syntax.html) | <!-- SYNTAX_LAST_UPDATED:START -->Mon, 13 Jul 2026 14:09:47 GMT<!-- SYNTAX_LAST_UPDATED:END --> |
+| [Semantics, structure, and APIs of HTML documents](https://html.spec.whatwg.org/multipage/dom.html) | <!-- DOM_LAST_UPDATED:START -->Thu, 16 Jul 2026 16:09:04 GMT<!-- DOM_LAST_UPDATED:END --> |
+| [WHATWG HTML Living Standard Index Page](https://html.spec.whatwg.org/multipage/indices.html) | <!-- INDICES_LAST_UPDATED:START -->Thu, 16 Jul 2026 16:09:06 GMT<!-- INDICES_LAST_UPDATED:END --> |
+| [The input element](https://html.spec.whatwg.org/multipage/input.html) | <!-- INPUT_LAST_UPDATED:START -->Thu, 16 Jul 2026 16:09:05 GMT<!-- INPUT_LAST_UPDATED:END --> |
+| [The HTML syntax](https://html.spec.whatwg.org/multipage/syntax.html) | <!-- SYNTAX_LAST_UPDATED:START -->Thu, 16 Jul 2026 16:09:06 GMT<!-- SYNTAX_LAST_UPDATED:END --> |
 | [Accessible Rich Internet Applications (WAI-ARIA)](https://w3c.github.io/aria/) | <!-- ARIA_LAST_UPDATED:START -->Thu, 09 Jul 2026 17:22:36 GMT<!-- ARIA_LAST_UPDATED:END --> |
 
 ## Summary
@@ -27,7 +27,7 @@ If the following issues are not crossed of, they are not solved by the updates s
 
 | Location | Description | Last checked at |
 | :--- | :--- | :--- |
-| [**`controls`**](https://html.spec.whatwg.org/multipage/indices.html#attributes-3:attr-media-controls) table row | the "Element(s)" cell is missing a `;` between the `video` and `img` `<code>` elements. | <!-- INDICES_LAST_UPDATED:START -->Mon, 13 Jul 2026 14:09:47 GMT<!-- INDICES_LAST_UPDATED:END --> |
+| [**`controls`**](https://html.spec.whatwg.org/multipage/indices.html#attributes-3:attr-media-controls) table row | the "Element(s)" cell is missing a `;` between the `video` and `img` `<code>` elements. | <!-- INDICES_LAST_UPDATED:START -->Thu, 16 Jul 2026 16:09:06 GMT<!-- INDICES_LAST_UPDATED:END --> |
 
 ## Original README (minus the "Alternatives" section)
 
