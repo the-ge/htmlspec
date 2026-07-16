@@ -29,9 +29,9 @@ This repository was originally a fork of [Tawesoft](https://github.com/tawesoft)
 
 If the following issues are not crossed of, they are not solved by the updates shown above and they need specific workarounds to overcome their effects.
 
-| Location | Description |
-| :--- | :--- |
-| [**`controls`**](https://html.spec.whatwg.org/multipage/indices.html#attributes-3:attr-media-controls) table row | the "Element(s)" cell is missing a `;` between the `video` and `img` `<code>` elements. |
+| Location | Description | Last checked at |
+| :--- | :--- | :--- |
+| [**`controls`**](https://html.spec.whatwg.org/multipage/indices.html#attributes-3:attr-media-controls) table row | the "Element(s)" cell is missing a `;` between the `video` and `img` `<code>` elements. | <!-- INDEX_LAST_UPDATED:START -->Mon, 13 Jul 2026 14:09:47 GMT<!-- INDEX_LAST_UPDATED:END --> |
 
 ## Original README (minus the "Alternatives" section)
 
