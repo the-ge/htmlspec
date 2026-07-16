@@ -16,7 +16,7 @@
 
 ## Summary
 
-This repository generates JSON and YAML files from the [WHATWG HTML Living Standard](https://html.spec.whatwg.org/multipage/) and [Accessible Rich Internet Applications (WAI-ARIA)](https://w3c.github.io/aria/) websites. It queries the `Last-Modified` header to find when was each source file updated.
+This repository generates JSON and YAML files from the [WHATWG HTML Living Standard](https://html.spec.whatwg.org/) and [Accessible Rich Internet Applications (WAI-ARIA)](https://w3c.github.io/aria/) websites. It queries the `Last-Modified` header to find when was each source file updated.
 
 This repository was originally a fork of [Tawesoft](https://github.com/tawesoft)'s [**html5spec** repository](https://github.com/tawesoft/html5spec/), which was archived by its owner on Nov 3, 2025. 
 
