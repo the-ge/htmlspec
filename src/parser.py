@@ -137,13 +137,13 @@ def parse_categories(soup: BeautifulSoup) -> Iterator[Category]:
         category = ' '.join(category.split())
 
         exceptions = '; '.join(x.strip() for x in exceptions.split(';'))
+        if exceptions == '—':
+            exceptions = ''
         if category.endswith('*'):
             exceptions += '; The tabindex attribute can also make any element into interactive content.'
         category = category.rstrip('*').strip()
 
         elements_set = set(gen_elements(elements))
-        if exceptions == '—':
-            exceptions = ''
         elements_maybe = list(gen_element_exceptions(exceptions))
 
         yield Category(
