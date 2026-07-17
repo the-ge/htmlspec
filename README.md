@@ -1,4 +1,10 @@
-# html5spec
+# htmlspec
+
+## Summary
+
+This repository generates JSON and YAML files from the [WHATWG HTML Living Standard](https://html.spec.whatwg.org/) and [Accessible Rich Internet Applications (WAI-ARIA)](https://w3c.github.io/aria/) websites. It queries the `Last-Modified` header to find when was each source file updated.
+
+This repository was originally a fork of [Tawesoft](https://github.com/tawesoft)'s [**html5spec** repository](https://github.com/tawesoft/html5spec/), which was archived by its owner on Nov 3, 2025. 
 
 ## Source Data Last Updated
 
@@ -9,12 +15,6 @@
 | [The input element](https://html.spec.whatwg.org/multipage/input.html) | <!-- INPUT_LAST_UPDATED:START -->Thu, 16 Jul 2026 16:09:05 GMT<!-- INPUT_LAST_UPDATED:END --> |
 | [The HTML syntax](https://html.spec.whatwg.org/multipage/syntax.html) | <!-- SYNTAX_LAST_UPDATED:START -->Thu, 16 Jul 2026 16:09:06 GMT<!-- SYNTAX_LAST_UPDATED:END --> |
 | [Accessible Rich Internet Applications (WAI-ARIA)](https://w3c.github.io/aria/) | <!-- ARIA_LAST_UPDATED:START -->Thu, 09 Jul 2026 17:22:36 GMT<!-- ARIA_LAST_UPDATED:END --> |
-
-## Summary
-
-This repository generates JSON and YAML files from the [WHATWG HTML Living Standard](https://html.spec.whatwg.org/) and [Accessible Rich Internet Applications (WAI-ARIA)](https://w3c.github.io/aria/) websites. It queries the `Last-Modified` header to find when was each source file updated.
-
-This repository was originally a fork of [Tawesoft](https://github.com/tawesoft)'s [**html5spec** repository](https://github.com/tawesoft/html5spec/), which was archived by its owner on Nov 3, 2025. 
 
 > [!CAUTION]
 > **I do not intend to keep any backwards compatibility whatsoever with the old [**html5spec** repository](https://github.com/tawesoft/html5spec/) repository.** If you are relying on the old repository conventions, your best bet would be to fork it yourself. Sorry about that ¯\\\_\_(ツ)\_\_/¯.
