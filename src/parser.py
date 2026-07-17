@@ -375,6 +375,16 @@ class SpecParser:
         logging.info(f'📦 Loaded {cache_key} from cache')
         return cached
 
+    def _validate_and_cache(self, key: str, count: int, result: Any) -> Any:
+        """Raise if `count` doesn't meet MIN_COUNT[key]; otherwise cache
+        `result` and log success. The one place "did we get enough data"
+        is decided, shared by every parser entry point below."""
+        if count < MIN_COUNT[key]:
+            raise ValueError(f'Expected >={MIN_COUNT[key]} {key}, got {count}')
+        self._save_cache(key, result)
+        logging.info(f'✅ Parsed and cached {count} {key}')
+        return result
+
     def _get_dictified(self, source: str, key: str, parser: Callable, **parser_kwargs) -> dict[str, Any]:
         try:
             soup = self._load_soup(source)
