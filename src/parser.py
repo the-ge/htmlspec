@@ -89,6 +89,19 @@ def gen_element_exceptions(xs: str) -> Iterator[str]:
             yield matches.group(1)
 
 
+_ADJACENT_TOKENS_PATTERN = re.compile(r'\b[a-zA-Z][a-zA-Z0-9-]*\b[ \t]*\n[ \t]*\b[a-zA-Z][a-zA-Z0-9-]*\b')
+
+
+def warn_if_unseparated_tokens(text: str, context: str) -> None:
+    """Warn if `text` contains element-name-like tokens joined only by
+    whitespace/newline, with no ';' or ',' between them — this silently
+    defeats gen_elements()'s splitting and drops elements. Mirrors the
+    known 'video\\nimg' spec bug (see gen_elements())."""
+    for segment in re.split(r'[;,]', text):
+        if _ADJACENT_TOKENS_PATTERN.search(segment):
+            logging.warning(f'‼️ {context}: missing separator between \'{"' and '".join(segment.strip().split())}\'. Confirm workaround state (find it by "bug @").')
+
+
 # ---- Parsers for each section ----
 
 
@@ -164,11 +177,7 @@ def parse_attributes(soup: BeautifulSoup) -> Iterator[Attribute]:
             continue
         attr_name, tag_scope_info, attr_desc, value_info = cells
 
-        if attr_name == 'controls':
-            video_idx = tag_scope_info.find('video')
-            img_idx = tag_scope_info.find('img', video_idx + len('video')) if video_idx != -1 else -1
-            if img_idx != -1 and ';' in tag_scope_info[video_idx + len('video'):img_idx]:
-                logging.warning("gen_elements()'s 'video\\nimg' workaround may no longer be needed. Check!")
+        warn_if_unseparated_tokens(tag_scope_info, f'Attribute {attr_name!r} tag scope')
 
         is_complicated = value_info.endswith('*')
         if is_complicated:
