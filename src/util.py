@@ -64,9 +64,6 @@ def dictify(
 
         if key in result:
             # Existing entry
-            if merge is None:
-                raise KeyError(f'Duplicate key {key!r}')
-
             if merge:
                 # Merge each value with existing entry
                 t = result[key]
