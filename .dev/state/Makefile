@@ -1,4 +1,4 @@
-.PHONY: default clean
+.PHONY: default clear
 default: all ;
 
 specs=indices.html dom.html input.html syntax.html
@@ -6,7 +6,7 @@ spec_etags=indices.etag dom.etag input.etag syntax.etag
 spec_times=indices.time dom.time input.time syntax.time
 all_times=$(spec_times) aria.time
 
-clean:
+clear:
 	rm --force $(specs) $(spec_etags) $(spec_times) manifest.json
 	rm --force aria.html aria.etag aria.time
 

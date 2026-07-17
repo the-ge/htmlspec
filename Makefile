@@ -1,11 +1,11 @@
-.PHONY: default clean
+.PHONY: default clear
 default: all ;
 
 _state:
 	make -C .dev/state
 
 clear:
-	make -C .dev/state clean
+	make -C .dev/state clear
 	rm -f dist/json/*.json
 
 install:
