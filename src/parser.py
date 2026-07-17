@@ -330,6 +330,7 @@ class SpecParser:
         self.state_dir = state_dir
         self.cache_dir = cache_dir
         self._soups: dict[str, BeautifulSoup] = {}
+        self._global_attributes: set[str] | None = None
 
     # ---- internal helpers ----
 
@@ -390,19 +391,19 @@ class SpecParser:
     # ---- public parsers ----
 
     def get_global_attributes(self) -> set[str]:
-        """Parse or load cached global attributes."""
+        """Parse or load cached global attributes. Memoized on the instance,
+        since get_elements() and get_all() both depend on this."""
+        if self._global_attributes is not None:
+            return self._global_attributes
+
         key = 'global_attributes'
         try:
             entries = parse_global_attributes(self._load_soup('dom'))
-            count = len(entries)
-            if count < MIN_COUNT[key]:
-                raise ValueError(f'Expected >={MIN_COUNT[key]} {key}, got {count}')
-            self._save_cache(key, entries)
-            logging.info(f'✅ Parsed and cached {count} {key}')
-            return entries
+            self._global_attributes = self._validate_and_cache(key, len(entries), entries)
         except Exception as e:
             cached = self._log_parse_error_and_fallback(e, key)
-            return set(cached) if isinstance(cached, list) else cached
+            self._global_attributes = set(cached) if isinstance(cached, list) else cached
+        return self._global_attributes
 
     def get_elements(self) -> dict[str, Any]:
         """Parse elements with caching and validation."""
@@ -452,9 +453,6 @@ class SpecParser:
                 )
             )
 
-            count = len(entries)
-            if count < MIN_COUNT[key]:
-                raise ValueError(f'Expected >= {MIN_COUNT[key]} {key}, got {count}')
             # Note: merge=False for attributes
             result = dictify(entries, merge=False)
             return self._validate_and_cache(key, len(entries), result)
@@ -477,4 +475,7 @@ class SpecParser:
             'attributes': self.get_attributes(),
             'event_handlers': self.get_event_handlers(),
             'element_types': self.get_element_types(),
+            # Plain list, not the {name: {}} dict convention the other
+            # categories use — global attributes are just names.
+            'global_attributes': sorted(self.get_global_attributes()),
         }
