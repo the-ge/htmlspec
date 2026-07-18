@@ -25,5 +25,5 @@ value_enum:
 - time
 - url
 - week
-value_info: Type of form control
-value_type: An input type e.g. "text"
+value_info: An input type e.g. "text", "number", or "week".
+value_type: string

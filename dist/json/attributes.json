@@ -1460,7 +1460,7 @@
     },
     "role": {
         "description": "ARIA semantic role",
-        "separator": "",
+        "separator": " ",
         "tag_scope": [],
         "value_enum": [
             "alert",
@@ -1525,8 +1525,8 @@
             "toolbar",
             "tooltip"
         ],
-        "value_info": "ARIA semantic role",
-        "value_type": "A concrete ARIA role"
+        "value_info": "",
+        "value_type": "string"
     },
     "rows": {
         "description": "Number of lines to show",
@@ -2022,8 +2022,8 @@
             "url",
             "week"
         ],
-        "value_info": "Type of form control",
-        "value_type": "An input type e.g. \"text\""
+        "value_info": "An input type e.g. \"text\", \"number\", or \"week\".",
+        "value_type": "string"
     },
     "usemap": {
         "description": "Name of image map to use",

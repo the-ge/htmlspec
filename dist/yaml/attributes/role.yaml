@@ -1,5 +1,5 @@
 description: ARIA semantic role
-separator: ''
+separator: ' '
 tag_scope: []
 value_enum:
 - alert
@@ -63,5 +63,5 @@ value_enum:
 - time
 - toolbar
 - tooltip
-value_info: ARIA semantic role
-value_type: A concrete ARIA role
+value_info: ''
+value_type: string
