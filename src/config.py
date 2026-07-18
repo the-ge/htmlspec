@@ -5,9 +5,9 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
 # ---- Directories ----
-STATE_DIR = PROJECT_ROOT / '.dev/data/raw'  # raw spec HTML files
-JSON_DIR = PROJECT_ROOT / 'dist/json'  # final JSON output
-YAML_DIR = PROJECT_ROOT / 'dist/yaml'  # final YAML output, one file per item
+RAW_DATA_DIR = PROJECT_ROOT / '.dev/data/raw'  # raw spec HTML files
+DIST_JSON_DATA_DIR = PROJECT_ROOT / 'dist/json'  # final JSON output
+DIST_YAML_DATA_DIR = PROJECT_ROOT / 'dist/yaml'  # final YAML output, one file per item
 CACHE_DIR = PROJECT_ROOT / '.dev/cache'  # cached parsed data
 
 # ---- Licenses ----
@@ -16,8 +16,8 @@ NOTICE_FILE = LICENSES_DIR / 'NOTICE'  # static, copied verbatim to dist/NOTICE
 DIST_NOTICE_FILE = PROJECT_ROOT / 'dist/NOTICE'
 
 # ---- Manifest ----
-STATE_MANIFEST_FILE = STATE_DIR / 'manifest.json'  # raw per-source fetch timestamps, written by `make manifest.json`
-MANIFEST_FILE = PROJECT_ROOT / 'dist/manifest.json'
+RAW_DATA_MANIFEST_FILE = RAW_DATA_DIR / 'manifest.json'  # raw per-source fetch timestamps, written by `make manifest.json`
+DIST_DATA_MANIFEST_FILE = PROJECT_ROOT / 'dist/manifest.json'
 
 # ---- Logging ----
 LOG_LEVEL = 'DEBUG'

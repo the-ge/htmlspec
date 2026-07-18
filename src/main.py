@@ -10,13 +10,13 @@ from util import make_serializable
 from config import (
     CACHE_DIR,
     DIST_NOTICE_FILE,
-    JSON_DIR,
+    DIST_JSON_DATA_DIR,
     LOG_LEVEL,
-    MANIFEST_FILE,
+    DIST_DATA_MANIFEST_FILE,
     NOTICE_FILE,
-    STATE_DIR,
-    STATE_MANIFEST_FILE,
-    YAML_DIR,
+    RAW_DATA_DIR,
+    RAW_DATA_MANIFEST_FILE,
+    DIST_YAML_DATA_DIR,
 )
 
 logging.basicConfig(level=LOG_LEVEL, format='%(levelname)s: %(message)s')
@@ -30,15 +30,15 @@ def copy_notice() -> None:
 
 def build_manifest(counts: dict[str, int]) -> dict:
     """Combine the raw per-source fetch manifest (written by `make manifest.json`
-    into STATE_DIR) with a generation timestamp and per-category item counts."""
+    into RAW_DATA_DIR) with a generation timestamp and per-category item counts."""
     sources = {}
-    if not STATE_MANIFEST_FILE.exists():
-        logging.error(f'Missing {STATE_MANIFEST_FILE}; did you run `make -C .dev/state` first?')
+    if not RAW_DATA_MANIFEST_FILE.exists():
+        logging.error(f'Missing {RAW_DATA_MANIFEST_FILE}; did you run `make -C .dev/state` first?')
     else:
         try:
-            sources = json.loads(STATE_MANIFEST_FILE.read_text(encoding='utf-8'))
+            sources = json.loads(RAW_DATA_MANIFEST_FILE.read_text(encoding='utf-8'))
         except json.JSONDecodeError as e:
-            logging.error(f'Failed to parse {STATE_MANIFEST_FILE}: {e}')
+            logging.error(f'Failed to parse {RAW_DATA_MANIFEST_FILE}: {e}')
 
     return {
         'generated_at': datetime.now(timezone.utc).isoformat(),
@@ -83,12 +83,12 @@ def write_yaml_items(data: dict, dir_path: Path) -> int:
 
 def main():
     # Prepare output directories
-    JSON_DIR.mkdir(parents=True, exist_ok=True)
-    YAML_DIR.mkdir(parents=True, exist_ok=True)
+    DIST_JSON_DATA_DIR.mkdir(parents=True, exist_ok=True)
+    DIST_YAML_DATA_DIR.mkdir(parents=True, exist_ok=True)
 
     # Instantiate the parser
     parser = SpecParser(
-        state_dir=STATE_DIR,
+        raw_data_dir=RAW_DATA_DIR,
         cache_dir=CACHE_DIR,
     )
 
@@ -98,17 +98,17 @@ def main():
     # Write each result
     counts = {}
     for name, data in results.items():
-        output_path = JSON_DIR / f'{name}.json'
+        output_path = DIST_JSON_DATA_DIR / f'{name}.json'
         write_output(data, output_path)
         logging.info(f'📝 Wrote {output_path}')
 
         if isinstance(data, dict):
-            yaml_subdir = YAML_DIR / name
+            yaml_subdir = DIST_YAML_DATA_DIR / name
             item_count = write_yaml_items(data, yaml_subdir)
             counts[name] = item_count
             logging.info(f'📝 Wrote {item_count} individual YAML files to {yaml_subdir}')
         else:
-            yaml_path = YAML_DIR / f'{name}.yaml'
+            yaml_path = DIST_YAML_DATA_DIR / f'{name}.yaml'
             write_yaml_file(data, yaml_path)
             counts[name] = len(data)
             logging.info(f'📝 Wrote {yaml_path}')
@@ -119,8 +119,8 @@ def main():
 
     # Single manifest capturing per-source fetch times, generation time, and item counts
     manifest = build_manifest(counts)
-    MANIFEST_FILE.write_text(json.dumps(manifest, indent=2, sort_keys=True), encoding='utf-8')
-    logging.info(f'📝 Wrote {MANIFEST_FILE}')
+    DIST_DATA_MANIFEST_FILE.write_text(json.dumps(manifest, indent=2, sort_keys=True), encoding='utf-8')
+    logging.info(f'📝 Wrote {DIST_DATA_MANIFEST_FILE}')
 
 
 if __name__ == '__main__':

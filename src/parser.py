@@ -324,10 +324,10 @@ class SpecParser:
 
     def __init__(
         self,
-        state_dir: Path,
+        raw_data_dir: Path,
         cache_dir: Path,
     ):
-        self.state_dir = state_dir
+        self.raw_data_dir = raw_data_dir
         self.cache_dir = cache_dir
         self._soups: dict[str, BeautifulSoup] = {}
         self._global_attributes: set[str] | None = None
@@ -337,7 +337,7 @@ class SpecParser:
     def _load_soup(self, name: str) -> BeautifulSoup:
         """Lazy-load a spec file and cache the BeautifulSoup object."""
         if name not in self._soups:
-            path = self.state_dir / f'{name}.html'
+            path = self.raw_data_dir / f'{name}.html'
             with path.open('r') as fp:
                 self._soups[name] = BeautifulSoup(fp, 'lxml')
         return self._soups[name]
