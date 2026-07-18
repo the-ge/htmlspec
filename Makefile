@@ -1,7 +1,7 @@
-.PHONY: default clear dist all install
+.PHONY: default clear publish all install
 default: all ;
 
-_state:
+_acquire:
 	make -C .dev/state
 
 clear:
@@ -11,9 +11,8 @@ clear:
 install:
 	python3 -m pip install -r requirements.txt
 
-dist:
-	python3 src/main.py
+publish:
 	# generates dist/json/*.json, dist/yaml/**/*.yaml, dist/NOTICE, dist/manifest.json
+	python3 src/main.py
 
-all: _state dist
-
+all: _acquire publish
