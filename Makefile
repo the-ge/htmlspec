@@ -1,7 +1,8 @@
-.PHONY: default clear publish all install
+.PHONY: default clear publish normalize all install
 default: all
 
 OUTDIR = .dev/data/raw/
+NORMDIR = .dev/data/normalized/
 
 specs      := indices.html dom.html input.html syntax.html
 spec_etags := $(addprefix $(OUTDIR), $(specs:.html=.etag))
@@ -9,18 +10,23 @@ spec_times := $(addprefix $(OUTDIR), $(specs:.html=.time))
 all_specs  := $(addprefix $(OUTDIR), $(specs))
 all_times  := $(spec_times) $(OUTDIR)aria.time
 
-all: $(all_specs) $(OUTDIR)aria.html $(OUTDIR)manifest.json publish
+all: publish
 
 install:
 	python3 -m pip install -r requirements.txt
 
-publish:
+publish: normalize
 	# Generates dist/json/*.json, dist/yaml/**/*.yaml, dist/NOTICE, dist/manifest.json.
 	python3 src/main.py
+
+normalize: $(OUTDIR)manifest.json
+	# Extracts raw HTML into faithful NDJSON records + manifest under .dev/data/normalized/
+	python3 src/normalize.py
 
 clear:
 	rm --force $(all_specs) $(spec_etags) $(spec_times)
 	rm --force $(OUTDIR)aria.html $(OUTDIR)aria.etag $(OUTDIR)aria.time $(OUTDIR)manifest.json
+	rm --force --recursive $(NORMDIR)
 	rm --force --recursive dist/*/*
 
 $(OUTDIR):
