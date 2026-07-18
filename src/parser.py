@@ -432,9 +432,9 @@ class SpecParser:
                     name='type',
                     tag_scope={'input'},
                     description='Type of form control',
-                    value_type='An input type e.g. "text"',
+                    value_type='string',
                     value_enum=set(parse_input_types(input_soup)),
-                    value_info='Type of form control',
+                    value_info='An input type e.g. "text", "number", or "week".',
                     separator='',
                 )
             )
@@ -446,9 +446,9 @@ class SpecParser:
                     name='role',
                     tag_scope=set(),
                     description='ARIA semantic role',
-                    value_type='A concrete ARIA role',
+                    value_type='string',
                     value_enum=set(parse_aria_roles(aria_soup)),
-                    value_info='ARIA semantic role',
+                    value_info='',
                     separator='',
                 )
             )
