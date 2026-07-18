@@ -6,6 +6,7 @@ from config import LOG_LEVEL, NORMALIZED_DATA_DIR, NORMALIZED_DATA_MANIFEST_FILE
 from extract import Extractor
 
 logging.basicConfig(level=LOG_LEVEL, format='%(levelname)s: %(message)s')
+logger = logging.getLogger(__name__)
 
 
 def main():
@@ -22,7 +23,7 @@ def main():
         json.dumps(manifest, indent=2, sort_keys=True),
         encoding='utf-8',
     )
-    logging.info(f'📝 Wrote {NORMALIZED_DATA_MANIFEST_FILE}')
+    logger.info(f'📝 Wrote {NORMALIZED_DATA_MANIFEST_FILE}')
 
 
 if __name__ == '__main__':

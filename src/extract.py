@@ -17,6 +17,8 @@ from util import (
     write_ndjson,
 )
 
+logger = logging.getLogger(__name__)
+
 # ---- Per-section extractors ----
 # Each function pulls literal cell/anchor text out of the soup, stripped of
 # surrounding whitespace only. No splitting, typing, or spec-specific
@@ -30,7 +32,7 @@ def extract_elements(soup: BeautifulSoup) -> Iterator[RawElement]:
     for row in rows:
         cells = [x.get_text().strip() for x in row.find_all(['th', 'td'])]
         if len(cells) != 7:
-            logging.error(f'Expected 7 cells, got {len(cells)}. Skipping row: {row}')
+            logger.error(f'Expected 7 cells, got {len(cells)}. Skipping row: {row}')
             continue
         element, desc, categories, _, children, attributes, _ = cells
         yield RawElement(element=element, description=desc, categories=categories, children=children, attributes=attributes)
@@ -42,7 +44,7 @@ def extract_categories(soup: BeautifulSoup) -> Iterator[RawCategory]:
     for row in rows:
         cells = [x.get_text().strip() for x in row.find_all(['th', 'td'])]
         if len(cells) != 3:
-            logging.error(f'Expected 3 cells, got {len(cells)}. Skipping row: {row}')
+            logger.error(f'Expected 3 cells, got {len(cells)}. Skipping row: {row}')
             continue
         category, elements, exceptions = cells
         yield RawCategory(category=category, elements=elements, exceptions=exceptions)
@@ -54,7 +56,7 @@ def extract_attributes(soup: BeautifulSoup) -> Iterator[RawAttribute]:
     for row in rows:
         cells = [x.get_text().strip() for x in row.find_all(['th', 'td'])]
         if len(cells) != 4:
-            logging.error(f'Expected 4 cells, got {len(cells)}. Skipping row: {row}')
+            logger.error(f'Expected 4 cells, got {len(cells)}. Skipping row: {row}')
             continue
         attr_name, tag_scope_info, attr_desc, value_info = cells
         yield RawAttribute(attr_name=attr_name, tag_scope_info=tag_scope_info, attr_desc=attr_desc, value_info=value_info)
@@ -66,7 +68,7 @@ def extract_event_handlers(soup: BeautifulSoup) -> Iterator[RawEventHandler]:
     for row in rows:
         cells = [x.get_text().strip() for x in row.find_all(['th', 'td'])]
         if len(cells) != 4:
-            logging.error(f'Expected 4 cells, got {len(cells)}. Skipping row: {row}')
+            logger.error(f'Expected 4 cells, got {len(cells)}. Skipping row: {row}')
             continue
         attribute, elements, _, _ = cells
         yield RawEventHandler(attribute=attribute, elements=elements)
@@ -97,19 +99,19 @@ def extract_element_types(soup: BeautifulSoup) -> Iterator[RawElementType]:
     for row in rows:
         if row.name == 'dt':
             if prev not in (None, 'dd'):
-                logging.error(f'<dt> not preceded by a <dd>: {row}')
+                logger.error(f'<dt> not preceded by a <dd>: {row}')
             name = row.dfn.get_text().strip()  # literal text; slugify() happens in stage 2
             prev = 'dt'
         elif row.name == 'dd':
             if prev != 'dt':
-                logging.error(f'<dd> not preceded by a <dt>: {row}')
+                logger.error(f'<dd> not preceded by a <dt>: {row}')
                 continue
             tags = [tag.get_text().strip() for tag in row.find_all('code')]
             info = '' if tags else row.get_text().strip()
             prev = 'dd'
             yield RawElementType(name=name, tags=tags, info=info)
     if prev == 'dt':
-        logging.error(f'Trailing <dt> with no following <dd>: {name!r}')
+        logger.error(f'Trailing <dt> with no following <dd>: {name!r}')
 
 
 def extract_aria_roles(soup: BeautifulSoup) -> Iterator[RawAriaRole]:
@@ -165,7 +167,7 @@ class Extractor:
         try:
             soup = self._load_soup(page)
         except OSError as e:
-            logging.error(f'Could not read {page}.html: {e}')
+            logger.error(f'Could not read {page}.html: {e}')
             soup = None
 
         for section in sections:
@@ -183,20 +185,20 @@ class Extractor:
                         'row_count': count,
                         'extracted_at': datetime.now(timezone.utc).isoformat(),
                     }
-                    logging.info(f'✅ Extracted {count} rows -> {path.name}')
+                    logger.info(f'✅ Extracted {count} rows -> {path.name}')
                     continue
                 except Exception as e:
-                    logging.error(f'Failed to extract {key}: {e}')
+                    logger.error(f'Failed to extract {key}: {e}')
 
             # Extraction unavailable this run (missing page or a broken section) —
             # fall back to whatever was written last time, so stage 2 always has
             # *something* faithful to build from, even if it's stale.
             if path.exists():
                 row_count = sum(1 for _ in path.open())
-                logging.info(f'📦 Kept previous {path.name} ({row_count} rows, extraction unavailable this run)')
+                logger.info(f'📦 Kept previous {path.name} ({row_count} rows, extraction unavailable this run)')
                 entries[key] = {'status': 'fallback', 'row_count': row_count}
             else:
-                logging.error(f'No normalized data available for {key} (no previous file to fall back to)')
+                logger.error(f'No normalized data available for {key} (no previous file to fall back to)')
                 entries[key] = {'status': 'missing', 'row_count': 0}
 
         return entries

@@ -28,6 +28,8 @@ from util import (
     read_ndjson,
 )
 
+logger = logging.getLogger(__name__)
+
 # Special cases: phrase -> list of yielded tokens (empty list yields nothing)
 SPECIAL_ELEMENTS = {
     'autonomous custom elements': [],
@@ -115,7 +117,7 @@ def warn_if_unseparated_tokens(text: str, context: str) -> None:
     known 'video\\nimg' spec bug (see gen_elements())."""
     for segment in re.split(r'[;,]', text):
         if _ADJACENT_TOKENS_PATTERN.search(segment):
-            logging.warning(f'‼️ {context}: missing separator between \'{"' and '".join(segment.strip().split())}\'. Confirm workaround state (find it by "bug @").')
+            logger.warning(f'‼️ {context}: missing separator between \'{"' and '".join(segment.strip().split())}\'. Confirm workaround state (find it by "bug @").')
 
 
 # ---- Parsers for each section ----
@@ -308,13 +310,13 @@ class SpecParser:
 
     def _log_parse_error_and_fallback(self, e: Exception, cache_key: str):
         if isinstance(e, (AttributeError, ValueError, FileNotFoundError)):
-            logging.error(f'Normalized data missing or unexpected shape: {e}')
+            logger.error(f'Normalized data missing or unexpected shape: {e}')
         else:
-            logging.error(f'Failed to build {cache_key}: {e}')
+            logger.error(f'Failed to build {cache_key}: {e}')
         cached = self._load_cache(cache_key)
         if cached is None:
             raise RuntimeError(f'No cache available for {cache_key}') from e
-        logging.info(f'📦 Loaded {cache_key} from cache')
+        logger.info(f'📦 Loaded {cache_key} from cache')
         return cached
 
     def _validate_and_cache(self, key: str, count: int, result: Any) -> Any:
@@ -324,7 +326,7 @@ class SpecParser:
         if count < MIN_COUNT[key]:
             raise ValueError(f'Expected >={MIN_COUNT[key]} {key}, got {count}')
         self._save_cache(key, result)
-        logging.info(f'✅ Built and cached {count} {key}')
+        logger.info(f'✅ Built and cached {count} {key}')
         return result
 
     def _get_dictified(self, page: str, section: str, cls: type, key: str, parser: Callable, **parser_kwargs) -> dict[str, Any]:
