@@ -13,8 +13,8 @@ from config import (
     DIST_JSON_DATA_DIR,
     LOG_LEVEL,
     DIST_DATA_MANIFEST_FILE,
+    NORMALIZED_DATA_DIR,
     NOTICE_FILE,
-    RAW_DATA_DIR,
     RAW_DATA_MANIFEST_FILE,
     DIST_YAML_DATA_DIR,
 )
@@ -86,9 +86,10 @@ def main():
     DIST_JSON_DATA_DIR.mkdir(parents=True, exist_ok=True)
     DIST_YAML_DATA_DIR.mkdir(parents=True, exist_ok=True)
 
-    # Instantiate the parser
+    # Instantiate the parser — reads from the normalized layer (see normalize.py),
+    # not raw HTML directly.
     parser = SpecParser(
-        raw_data_dir=RAW_DATA_DIR,
+        normalized_data_dir=NORMALIZED_DATA_DIR,
         cache_dir=CACHE_DIR,
     )
 

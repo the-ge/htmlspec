@@ -6,9 +6,22 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
 # ---- Directories ----
 RAW_DATA_DIR = PROJECT_ROOT / '.dev/data/raw'  # raw spec HTML files
+NORMALIZED_DATA_DIR = PROJECT_ROOT / '.dev/data/normalized'  # faithful HTML -> NDJSON records, one file per (page, section)
 DIST_JSON_DATA_DIR = PROJECT_ROOT / 'dist/json'  # final JSON output
 DIST_YAML_DATA_DIR = PROJECT_ROOT / 'dist/yaml'  # final YAML output, one file per item
 CACHE_DIR = PROJECT_ROOT / '.dev/cache'  # cached parsed data
+
+# ---- Normalization (stage 1: HTML -> normalized/*.ndjson) ----
+# Maps each raw source page to the section names extracted from it. Keys match
+# RAW_DATA_DIR/{page}.html; each (page, section) pair has exactly one NDJSON file
+# at NORMALIZED_DATA_DIR/{page}.{section}.ndjson and one entry in NORMALIZED_MANIFEST_FILE.
+PAGE_SECTIONS = {
+    'indices': ('elements', 'categories', 'attributes', 'event_handlers'),
+    'dom': ('global_attributes',),
+    'input': ('input_types',),
+    'syntax': ('element_types',),
+    'aria': ('aria_roles',),
+}
 
 # ---- Licenses ----
 LICENSES_DIR = PROJECT_ROOT / 'licenses'
@@ -17,6 +30,7 @@ DIST_NOTICE_FILE = PROJECT_ROOT / 'dist/NOTICE'
 
 # ---- Manifest ----
 RAW_DATA_MANIFEST_FILE = RAW_DATA_DIR / 'manifest.json'  # raw per-source fetch timestamps, written by `make manifest.json`
+NORMALIZED_DATA_MANIFEST_FILE = NORMALIZED_DATA_DIR / 'manifest.json'  # per (page, section) extraction status, written by normalize.py
 DIST_DATA_MANIFEST_FILE = PROJECT_ROOT / 'dist/manifest.json'
 
 # ---- Logging ----
