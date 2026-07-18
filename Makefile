@@ -2,10 +2,10 @@
 default: all ;
 
 _acquire:
-	make -C .dev/state
+	make -C .dev/data/raw
 
 clear:
-	make -C .dev/state clear
+	make -C .dev/data/raw clear
 	rm -f dist/*
 
 install:
