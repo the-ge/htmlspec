@@ -449,7 +449,7 @@ class SpecParser:
                     value_type='string',
                     value_enum=set(parse_aria_roles(aria_soup)),
                     value_info='',
-                    separator='',
+                    separator=' ',
                 )
             )
 
