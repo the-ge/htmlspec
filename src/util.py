@@ -5,6 +5,9 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, TypeVar
 
+from config import (DUMP_NDJSON_KWARGS)
+
+
 T = TypeVar('T')
 
 
@@ -165,7 +168,7 @@ def write_ndjson(path: Path, rows: Iterable[Any]) -> int:
     count = 0
     with path.open('w', encoding='utf-8') as fp:
         for row in rows:
-            fp.write(json.dumps(dataclasses.asdict(row), sort_keys=True, ensure_ascii=False))
+            fp.write(json.dumps(dataclasses.asdict(row), **DUMP_NDJSON_KWARGS))
             fp.write('\n')
             count += 1
     return count

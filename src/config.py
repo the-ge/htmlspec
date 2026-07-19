@@ -43,8 +43,9 @@ KEYWORDS_PATTERN = re.compile(r'^(?:"[a-zA-Z0-9/-]*"|the empty string)(?:; (?:"[
 EXCEPTION_PATTERN = re.compile(r'([a-zA-Z0-9-]+) \(if [a-zA-Z0-9\' -]+\)')
 
 # ---- Formatting ----
-DUMP_JSON_KWARGS = {'sort_keys': True, 'indent': 2, 'ensure_ascii': False}
-DUMP_YAML_KWARGS = {'sort_keys': True, 'indent': 2, 'allow_unicode': True, 'width': float('inf')}
+DUMP_NDJSON_KWARGS = {'sort_keys': False, 'ensure_ascii': False}
+DUMP_JSON_KWARGS = {**DUMP_NDJSON_KWARGS, 'indent': 2}
+DUMP_YAML_KWARGS = {'sort_keys': False, 'indent': 2, 'allow_unicode': True, 'width': float('inf')}
 
 # ---- html.spec.whatwg.org elements minimum counts ----
 MIN_COUNT = {
