@@ -1,4 +1,5 @@
 import logging
+import re
 from collections.abc import Iterator
 from datetime import datetime, timezone
 from pathlib import Path
@@ -134,7 +135,15 @@ def extract_aria_roles(soup: BeautifulSoup) -> Iterator[RawAriaRole]:
     for role in concrete_roles:
         rows = soup.find('section', {'id': role}).find_next('ul').find_all('li')
         for row in rows:
-            yield RawAriaRole(name=row.find('code').get_text().strip())
+            deprecated='' if row.strong == None else row.strong.string
+            if deprecated != '':
+                deprecated = re.search(r'(?<=ARIA )\d+\.\d+', deprecated)
+                deprecated = deprecated[0] if deprecated else ''
+            yield RawAriaRole(
+                name=row.code.string.strip(),
+                url=row.a['href'].strip(),
+                deprecated_since_version=deprecated,
+            )
 
 
 # section name -> extractor function; keys match config.PAGE_SECTIONS values

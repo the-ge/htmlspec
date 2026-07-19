@@ -64,6 +64,8 @@ class RawElementType:
 @dataclass(frozen=True, slots=True)
 class RawAriaRole:
     name: str
+    url: str
+    deprecated_since_version: str
 
 
 @dataclass(frozen=True, slots=True)
