@@ -23,7 +23,7 @@ def main():
         json.dumps(manifest, indent=2, sort_keys=True),
         encoding='utf-8',
     )
-    logger.info(f'📝 Wrote {NORMALIZED_DATA_MANIFEST_FILE}')
+    logger.info(f'📋 Wrote {NORMALIZED_DATA_MANIFEST_FILE}')
 
 
 if __name__ == '__main__':
