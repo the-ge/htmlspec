@@ -34,7 +34,7 @@ NORMALIZED_DATA_MANIFEST_FILE = NORMALIZED_DATA_DIR / 'manifest.json'  # per (pa
 DIST_DATA_MANIFEST_FILE = PROJECT_ROOT / 'dist/manifest.json'
 
 # ---- Logging ----
-LOG_LEVEL = 'DEBUG'
+LOG_LEVEL = 'DEBUG'  # DEBUG INFO WARNING ERROR CRITICAL
 
 # Match a list of one-or-more keywords such as `"foo"; "bar"; "the empty string"`
 KEYWORDS_PATTERN = re.compile(r'^(?:"[a-zA-Z0-9/-]*"|the empty string)(?:; (?:"[a-zA-Z0-9/-]*"|the empty string))*$')
