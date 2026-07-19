@@ -9,7 +9,7 @@ RAW_DATA_DIR = PROJECT_ROOT / '.dev/data/raw'  # raw spec HTML files
 NORMALIZED_DATA_DIR = PROJECT_ROOT / '.dev/data/normalized'  # NDJSON records, one file per (page, section)
 DIST_JSON_DATA_DIR = PROJECT_ROOT / 'dist/json'  # final JSON output
 DIST_YAML_DATA_DIR = PROJECT_ROOT / 'dist/yaml'  # final YAML output
-CACHE_DIR = PROJECT_ROOT / '.dev/cache'  # cached parsed data
+DATA_CACHE_DIR = PROJECT_ROOT / '.dev/data/cache'  # cached parsed data
 
 # ---- Normalization (stage 1: HTML -> normalized/*.ndjson) ----
 # Maps each raw source page to the section names extracted from it. Keys match

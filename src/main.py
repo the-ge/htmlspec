@@ -6,7 +6,7 @@ from pathlib import Path
 import yaml
 
 from config import (
-    CACHE_DIR,
+    DATA_CACHE_DIR,
     DIST_DATA_MANIFEST_FILE,
     DIST_JSON_DATA_DIR,
     DIST_NOTICE_FILE,
@@ -91,7 +91,7 @@ def main():
     # not raw HTML directly.
     parser = SpecParser(
         normalized_data_dir=NORMALIZED_DATA_DIR,
-        cache_dir=CACHE_DIR,
+        cache_dir=DATA_CACHE_DIR,
     )
 
     # Parse everything
