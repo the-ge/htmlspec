@@ -1,45 +1,45 @@
 {
-  "generated_at": "2026-07-19T09:43:02.748355+00:00",
+  "generated_at": "2026-07-19T10:54:31.761259+00:00",
   "sections": {
     "indices.elements": {
       "status": "ok",
       "row_count": 111,
-      "extracted_at": "2026-07-19T09:43:01.498457+00:00"
+      "extracted_at": "2026-07-19T10:54:30.545375+00:00"
     },
     "indices.categories": {
       "status": "ok",
       "row_count": 15,
-      "extracted_at": "2026-07-19T09:43:01.502375+00:00"
+      "extracted_at": "2026-07-19T10:54:30.549320+00:00"
     },
     "indices.attributes": {
       "status": "ok",
       "row_count": 179,
-      "extracted_at": "2026-07-19T09:43:01.515890+00:00"
+      "extracted_at": "2026-07-19T10:54:30.561969+00:00"
     },
     "indices.event_handlers": {
       "status": "ok",
       "row_count": 89,
-      "extracted_at": "2026-07-19T09:43:01.525040+00:00"
+      "extracted_at": "2026-07-19T10:54:30.571958+00:00"
     },
     "dom.global_attributes": {
       "status": "ok",
       "row_count": 28,
-      "extracted_at": "2026-07-19T09:43:01.696990+00:00"
+      "extracted_at": "2026-07-19T10:54:30.739035+00:00"
     },
     "input.input_types": {
       "status": "ok",
       "row_count": 22,
-      "extracted_at": "2026-07-19T09:43:01.947250+00:00"
+      "extracted_at": "2026-07-19T10:54:30.980024+00:00"
     },
     "syntax.element_types": {
       "status": "ok",
       "row_count": 6,
-      "extracted_at": "2026-07-19T09:43:01.985715+00:00"
+      "extracted_at": "2026-07-19T10:54:31.016589+00:00"
     },
     "aria.aria_roles": {
       "status": "ok",
       "row_count": 63,
-      "extracted_at": "2026-07-19T09:43:02.748271+00:00"
+      "extracted_at": "2026-07-19T10:54:31.761171+00:00"
     }
   }
 }
