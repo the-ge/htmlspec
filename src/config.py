@@ -7,6 +7,7 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 # ---- Directories ----
 RAW_DATA_DIR = PROJECT_ROOT / '.dev/data/raw'  # raw spec HTML files
 FILTERED_DATA_DIR = PROJECT_ROOT / '.dev/data/filtered'  # NDJSON records, one file per (page, section)
+NORMALIZED_DATA_DIR = PROJECT_ROOT / '.dev/data/normalized'  # @todo
 DIST_JSON_DATA_DIR = PROJECT_ROOT / 'dist/json'  # final JSON output
 DIST_YAML_DATA_DIR = PROJECT_ROOT / 'dist/yaml'  # final YAML output
 DATA_CACHE_DIR = PROJECT_ROOT / '.dev/data/cache'  # cached parsed data
@@ -31,6 +32,7 @@ DIST_NOTICE_FILE = PROJECT_ROOT / 'dist/NOTICE'
 # ---- Manifest ----
 RAW_DATA_MANIFEST_FILE = RAW_DATA_DIR / 'manifest.json'  # raw per-source fetch timestamps
 FILTERED_DATA_MANIFEST_FILE = FILTERED_DATA_DIR / 'manifest.json'  # per (page, section) extraction status
+NORMALIZED_DATA_MANIFEST_FILE = NORMALIZED_DATA_DIR / 'manifest.json'  # @todo
 DIST_DATA_MANIFEST_FILE = PROJECT_ROOT / 'dist/manifest.json'
 
 # ---- Logging ----
