@@ -23,12 +23,8 @@ def main():
     extractor = Extractor(raw_data_dir=RAW_DATA_DIR, normalized_data_dir=NORMALIZED_DATA_DIR)
     sections = extractor.extract_all(PAGE_SECTIONS)
 
-    manifest = {
-        'generated_at': datetime.now(timezone.utc).isoformat(),
-        'sections': sections,
-    }
     NORMALIZED_DATA_MANIFEST_FILE.write_text(
-        json.dumps(manifest, **DUMP_JSON_KWARGS),
+        json.dumps(sections, **DUMP_JSON_KWARGS),
         encoding='utf-8',
     )
     logger.info(f'📋 Wrote {short_path(NORMALIZED_DATA_MANIFEST_FILE)}')

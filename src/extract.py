@@ -197,7 +197,6 @@ class Extractor:
                 entries[key] = {
                     'status': 'ok',
                     'row_count': count,
-                    'extracted_at': datetime.now(timezone.utc).isoformat(),
                 }
                 logger.info(f'🧲 Extracted {count} rows -> {path.name}')
                 continue
