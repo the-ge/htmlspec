@@ -136,7 +136,7 @@ def dictify(
             if merge:
                 # Merge each value with existing entry
                 t = result[key]
-                for subkey in t.keys():
+                for subkey in t:
                     if isinstance(t[subkey], str):
                         t[subkey] += '. ' + r[subkey]
                     elif isinstance(t[subkey], set):
