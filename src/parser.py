@@ -41,6 +41,8 @@ SPECIAL_ELEMENTS = {
     'SVG svg': ['svg'],
 }
 
+RECOVERABLE_FILTER_ERRORS = (AttributeError, ValueError, FileNotFoundError)
+
 
 # ---- Generators for splitting spec strings ----
 
@@ -319,10 +321,7 @@ class SpecParser:
         return json.loads(path.read_text(encoding='utf-8'))
 
     def _log_parse_error_and_fallback(self, e: Exception, cache_key: str):
-        if isinstance(e, (AttributeError, ValueError, FileNotFoundError)):
-            logger.error(f'❌ Normalized data missing or unexpected shape: {e}')
-        else:
-            logger.error(f'❌ Failed to build {cache_key}: {e}')
+        logger.error(f'❌ Filtered data missing or unexpected shape: {e}')
         cached = self._load_cache(cache_key)
         if cached is None:
             raise RuntimeError(f'No cache available for {cache_key}') from e
@@ -347,9 +346,8 @@ class SpecParser:
             entries = list(parser(rows, **parser_kwargs))
             result = dictify(entries)
             return self._validate_and_cache(key, len(entries), result)
-        except Exception as e:
+        except RECOVERABLE_FILTER_ERRORS as e:
             return self._log_parse_error_and_fallback(e, key)
-            raise
 
     # ---- public builders ----
 
@@ -364,10 +362,9 @@ class SpecParser:
             rows = self._load_section('dom', 'global_attributes', RawGlobalAttribute)
             entries = parse_global_attributes(rows)
             self._global_attributes = self._validate_and_cache(key, len(entries), entries)
-        except Exception as e:
+        except RECOVERABLE_FILTER_ERRORS as e:
             cached = self._log_parse_error_and_fallback(e, key)
             self._global_attributes = set(cached) if isinstance(cached, list) else cached
-            raise
         return self._global_attributes
 
     def get_elements(self) -> dict[str, Any]:
