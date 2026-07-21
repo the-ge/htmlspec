@@ -46,7 +46,7 @@ normalize: $(NORMALIZED_DATA_DIR)manifest.json | $(NORMALIZED_DATA_DIR)
 	$(call confirm, Normalization and all preceding steps complete (see $(NORMALIZED_DATA_DIR)manifest.json))
 
 filter: $(FILTERED_DATA_DIR)manifest.json | $(FILTERED_DATA_DIR)
-	$(call confirm, Filtering and accquiring steps complete (see $(FILTERED_DATA_DIR)manifest.json))
+	$(call confirm, Filtering and acquiring steps complete (see $(FILTERED_DATA_DIR)manifest.json))
 
 acquire: $(RAW_DATA_DIR)manifest.json | $(RAW_DATA_DIR)
 	$(call confirm, Acquiring step complete (see $(RAW_DATA_DIR)manifest.json))
