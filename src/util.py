@@ -10,69 +10,6 @@ from config import DUMP_NDJSON_KWARGS, PROJECT_ROOT
 T = TypeVar('T')
 
 
-# ---- Raw records (stage 1: faithful extraction, one dataclass per NDJSON file) ----
-# Field values are cell/anchor text, stripped of surrounding whitespace only.
-# No splitting, typing, or spec-specific interpretation happens here — that's
-# stage 2's job (parser.py), operating on these same dataclasses.
-
-
-@dataclass(frozen=True, slots=True)
-class RawElement:
-    element: str
-    description: str
-    categories: str
-    children: str
-    attributes: str
-
-
-@dataclass(frozen=True, slots=True)
-class RawCategory:
-    category: str
-    elements: str
-    exceptions: str
-
-
-@dataclass(frozen=True, slots=True)
-class RawAttribute:
-    attribute: str
-    elements: str
-    description: str
-    value: str
-
-
-@dataclass(frozen=True, slots=True)
-class RawEventHandler:
-    attribute: str
-    elements: str
-
-
-@dataclass(frozen=True, slots=True)
-class RawGlobalAttribute:
-    name: str
-
-
-@dataclass(frozen=True, slots=True)
-class RawInputType:
-    keyword: str
-    state: str
-    data_type: str
-    control_type: str
-
-
-@dataclass(frozen=True, slots=True)
-class RawElementType:
-    name: str  # literal <dfn> text, pre-slugify — slugified in stage 2
-    tags: list[str]
-    info: str
-
-
-@dataclass(frozen=True, slots=True)
-class RawAriaRole:
-    name: str
-    url: str
-    deprecated_since_version: str
-
-
 @dataclass(frozen=True, slots=True)
 class Element:
     name: str

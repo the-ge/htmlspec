@@ -9,12 +9,7 @@ from typing import Any
 from slugify import slugify
 
 from config import DUMP_JSON_KWARGS, EXCEPTION_PATTERN, KEYWORDS_PATTERN, MIN_COUNT
-from util import (
-    Attribute,
-    Category,
-    Element,
-    ElementType,
-    EventHandler,
+from filtering_engine import (
     RawAriaRole,
     RawAttribute,
     RawCategory,
@@ -23,6 +18,13 @@ from util import (
     RawEventHandler,
     RawGlobalAttribute,
     RawInputType,
+)
+from util import (
+    Attribute,
+    Category,
+    Element,
+    ElementType,
+    EventHandler,
     dictify,
     make_serializable,
     read_ndjson,
