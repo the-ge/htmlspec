@@ -26,7 +26,7 @@ def main():
         json.dumps(sections, **DUMP_JSON_KWARGS),
         encoding='utf-8',
     )
-    logger.info(f'📋 Wrote {short_path(FILTERED_DATA_MANIFEST_FILE)}')
+    logger.info(f'✅ Updated filtered data manifest.')
 
 
 if __name__ == '__main__':
