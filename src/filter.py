@@ -9,7 +9,7 @@ from config import (
     PAGE_SECTIONS,
     RAW_DATA_DIR,
 )
-from extract import Extractor
+from filtering_engine import Extractor
 from util import short_path
 
 logging.basicConfig(level=LOG_LEVEL, format='%(levelname)s: %(message)s')
