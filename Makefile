@@ -1,8 +1,12 @@
 .PHONY: default all clear acquire install filter normalize publish
 default: all
 
-RAW_DATA_DIR      := .dev/data/raw/
-FILTERED_DATA_DIR := .dev/data/filtered/
+RAW_DATA_DIR        := .dev/data/raw/
+FILTERED_DATA_DIR   := .dev/data/filtered/
+NORMALIZED_DATA_DIR := .dev/data/normalized/
+DIST_DATA_DIR       := dist/
+
+DATA_DIRS := $(RAW_DATA_DIR) $(FILTERED_DATA_DIR) $(NORMALIZED_DATA_DIR) $(DIST_DATA_DIR)
 
 specs      := indices.html dom.html input.html syntax.html
 spec_etags := $(addprefix $(RAW_DATA_DIR), $(specs:.html=.etag))
@@ -13,27 +17,24 @@ all_times  := $(spec_times) $(RAW_DATA_DIR)aria.time
 all: publish
 
 clear:
-	rm --force $(all_specs) $(spec_etags) $(spec_times)
-	rm --force $(RAW_DATA_DIR)aria.html $(RAW_DATA_DIR)aria.etag $(RAW_DATA_DIR)aria.time $(RAW_DATA_DIR)manifest.json
-	rm --force --recursive $(FILTERED_DATA_DIR)
-	rm --force --recursive dist/*/*
+	rm --force --recursive $(DATA_DIRS)
 
 install:
 	python3 -m pip install -r requirements.txt
 
-publish: normalize
+publish: normalize | $(DIST_DATA_DIR)
 	# MAKE: 📦 Generate dist/json/*.json, dist/yaml/**/*.yaml, dist/NOTICE, dist/manifest.json.
 	@python3 src/main.py
 
-normalize: filter
+normalize: filter | $(NORMALIZED_DATA_DIR)
 
-filter: acquire
+filter: acquire | $(FILTERED_DATA_DIR)
 	# MAKE: 🧲 Extract raw HTML into faithful NDJSON records + manifest under .dev/data/filtered/
 	@python3 src/filter.py
 
 acquire: $(RAW_DATA_DIR)manifest.json
 
-$(RAW_DATA_DIR):
+$(DATA_DIRS): %/:
 	@mkdir -p $@
 
 $(RAW_DATA_DIR)aria.html: | $(RAW_DATA_DIR)
