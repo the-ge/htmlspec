@@ -180,7 +180,7 @@ def split_splittables(text: str, context: str) -> str:
 
     def repair(match: re.Match) -> str:
         word_a, word_b = match.group(1), match.group(2)
-        logger.warning("⚠️ %s: missing separator between '%s' and '%s'; inserting ';'.", context, word_a, word_b)
+        logger.warning("⚠️ %s: missing separator between '%s' and '%s'.", context, word_a, word_b)
         return f'{word_a};{word_b}'
 
     return _ADJACENT_TOKENS_PATTERN.sub(repair, text)
