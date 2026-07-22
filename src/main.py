@@ -98,7 +98,7 @@ def write_yaml_items(data: dict, dir_path: Path) -> int:
     return count
 
 
-def main():
+def main() -> None:
     # Prepare output directories
     DIST_JSON_DATA_DIR.mkdir(parents=True, exist_ok=True)
     DIST_YAML_DATA_DIR.mkdir(parents=True, exist_ok=True)
