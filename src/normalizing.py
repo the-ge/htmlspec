@@ -16,8 +16,8 @@ logging.basicConfig(level=LOG_LEVEL, format='%(levelname)s: %(message)s')
 logger = logging.getLogger(__name__)
 
 
-def write_categories(results: dict) -> None:
-    """Write each category result to NORMALIZED_DATA_DIR as its own JSON file."""
+def write_data_domains(results: dict) -> None:
+    """Write each datat domain result to NORMALIZED_DATA_DIR as its own JSON file."""
     for category, data in results.items():
         path = NORMALIZED_DATA_DIR / f'{category}.json'
         serializable = make_serializable(data)
@@ -30,7 +30,7 @@ def main() -> None:
 
     normalizer = Normalizer(filtered_data_dir=FILTERED_DATA_DIR, cache_dir=DATA_CACHE_DIR)
     results, manifest = normalizer.get_all()
-    write_categories(results)
+    write_data_domains(results)
     print('  -->  ', 34, manifest)
     NORMALIZED_DATA_MANIFEST_FILE.write_text(
         json.dumps(manifest, **DUMP_JSON_KWARGS),

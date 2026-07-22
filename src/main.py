@@ -34,7 +34,7 @@ def copy_notice() -> None:
     DIST_NOTICE_FILE.write_text(NOTICE_FILE.read_text(encoding='utf-8'), encoding='utf-8')
 
 
-def read_normalized_categories() -> dict[str, object]:
+def read_data_domains() -> dict[str, object]:
     """Load categories produced by the normalize stage from NORMALIZED_DATA_DIR, using its manifest as the index."""
     manifest = json.loads(NORMALIZED_DATA_MANIFEST_FILE.read_text(encoding='utf-8'))
     results = {}
@@ -99,7 +99,7 @@ def main() -> None:
     DIST_YAML_DATA_DIR.mkdir(parents=True, exist_ok=True)
 
     # Assemble from the normalized layer; this stage only formats and writes.
-    results = read_normalized_categories()
+    results = read_data_domains()
 
     # Write each result
     counts = {}

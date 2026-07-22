@@ -26,7 +26,7 @@ class RawElement:
 
 
 @dataclass(frozen=True, slots=True)
-class RawCategory:
+class RawContentCategory:
     category: str
     elements: str
     exceptions: str
@@ -75,10 +75,10 @@ class RawAriaRole:
 
 # Expected cell count in each domain of the online HTML sources
 HTML_CELL_COUNT = {
-    'elements':       7,
-    'categories':     3,
-    'attributes':     4,
-    'event_handlers': 4,
+    'elements':           7,
+    'content_categories': 3,
+    'attributes':         4,
+    'event_handlers':     4,
 }
 
 
@@ -104,17 +104,17 @@ def extract_elements(soup: BeautifulSoup) -> Iterator[RawElement]:
         )
 
 
-def extract_categories(soup: BeautifulSoup) -> Iterator[RawCategory]:
+def extract_content_categories(soup: BeautifulSoup) -> Iterator[RawContentCategory]:
     # https://html.spec.whatwg.org/multipage/indices.html#element-content-categories
     rows = soup.find('h3', {'id': 'element-content-categories'}).find_next('tbody').find_all('tr')
-    count = HTML_CELL_COUNT['categories']
+    count = HTML_CELL_COUNT['content_categories']
     for row in rows:
         cells = [x.get_text().strip() for x in row.find_all(['th', 'td'])]
         if len(cells) != count:
             logger.error('❌ Expected %s cells, got %s. Skipping row: %s', count, len(cells), row)
             continue
         category, elements, exceptions = cells
-        yield RawCategory(category=category, elements=elements, exceptions=exceptions)
+        yield RawContentCategory(category=category, elements=elements, exceptions=exceptions)
 
 
 def extract_attributes(soup: BeautifulSoup) -> Iterator[RawAttribute]:
@@ -217,7 +217,7 @@ def extract_aria_roles(soup: BeautifulSoup) -> Iterator[RawAriaRole]:
 # section name -> extractor function; keys match config.PAGE_SECTIONS values
 EXTRACTORS = {
     'elements': extract_elements,
-    'categories': extract_categories,
+    'content_categories': extract_content_categories,
     'attributes': extract_attributes,
     'event_handlers': extract_event_handlers,
     'global_attributes': extract_global_attributes,

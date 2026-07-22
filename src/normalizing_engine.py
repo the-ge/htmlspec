@@ -14,7 +14,7 @@ from config import DUMP_JSON_KWARGS
 from filtering_engine import (
     RawAriaRole,
     RawAttribute,
-    RawCategory,
+    RawContentCategory,
     RawElement,
     RawElementType,
     RawEventHandler,
@@ -142,7 +142,7 @@ def gen_attributes(attributes: str, global_attributes: set[str]) -> Iterator[str
             yield attr
 
 
-def gen_categories(categories: str) -> Iterator[str]:
+def gen_content_categories(categories: str) -> Iterator[str]:
     for category in categories.strip(string.whitespace + ';').split(';'):
         cat = category.strip().strip('*')
         if cat != 'empty':
@@ -199,21 +199,21 @@ def parse_global_attributes(rows: Iterator[RawGlobalAttribute]) -> set[str]:
 def parse_elements(rows: Iterator[RawElement], global_attributes: set[str]) -> Iterator[Element]:
     for raw in rows:
         elements = gen_elements(raw.element)
-        categories_set = set(gen_categories(raw.categories))
-        attributes_set = set(gen_attributes(raw.attributes, global_attributes))
-        children_set = set(gen_categories(raw.children))
+        categories = set(gen_content_categories(raw.categories))
+        attributes = set(gen_attributes(raw.attributes, global_attributes))
+        children = set(gen_content_categories(raw.children))
 
         for e in sorted(elements):
             yield Element(
                 name=e,
                 description=raw.description.strip(),
-                categories=categories_set,
-                attributes=attributes_set,
-                children=children_set,
+                categories=categories,
+                attributes=attributes,
+                children=children,
             )
 
 
-def parse_categories(rows: Iterator[RawCategory]) -> Iterator[Category]:
+def parse_content_categories(rows: Iterator[RawContentCategory]) -> Iterator[Category]:
     for raw in rows:
         category = ' '.join(raw.category.split())
 
@@ -460,9 +460,9 @@ class Normalizer:
             global_attributes=self.get_global_attributes(),
         )
 
-    def get_categories(self) -> dict[str, Any]:
-        """Build categories with caching and validation."""
-        return self._get_dictified('indices', 'categories', RawCategory)
+    def get_content_categories(self) -> dict[str, Any]:
+        """Build content categories with caching and validation."""
+        return self._get_dictified('indices', 'content_categories', RawContentCategory)
 
     def get_attributes(self) -> dict[str, Any]:
         """Build attributes (including type & role) with caching and validation."""
@@ -512,13 +512,11 @@ class Normalizer:
         """Run all builders and return a dict of results."""
         results = {
             'elements': self.get_elements(),
-            'categories': self.get_categories(),
+            'content_categories': self.get_content_categories(),
             'attributes': self.get_attributes(),
             'event_handlers': self.get_event_handlers(),
             'element_types': self.get_element_types(),
-            # Plain list, not the {name: {}} dict convention the other
-            # categories use — global attributes are just names.
+            # Plain list, not the {name: {}} dict convention the other domains use.
             'global_attributes': sorted(self.get_global_attributes()),
         }
         return results, dict(self._manifest)
-

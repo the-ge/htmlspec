@@ -16,11 +16,11 @@ DATA_CACHE_DIR = PROJECT_ROOT / '.dev/data/cache'  # normalize-stage fallback ca
 # RAW_DATA_DIR/{page}.html; each (page, section) pair has exactly one NDJSON file
 # at FILTERED_DATA_DIR/{page}.{section}.ndjson and one entry in FILTERED_DATA_MANIFEST_FILE.
 PAGE_SECTIONS = {
-    'indices': ('elements', 'categories', 'attributes', 'event_handlers'),
-    'dom': ('global_attributes',),
-    'input': ('input_types',),
-    'syntax': ('element_types',),
-    'aria': ('aria_roles',),
+    'indices': ('elements', 'content_categories', 'attributes', 'event_handlers'),
+    'dom': ('global_attributes'),
+    'input': ('input_types'),
+    'syntax': ('element_types'),
+    'aria': ('aria_roles'),
 }
 
 # ---- Manifest ----
