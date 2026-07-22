@@ -95,6 +95,29 @@ SPECIAL_ELEMENTS = {
 
 RECOVERABLE_FILTER_ERRORS = (AttributeError, ValueError, FileNotFoundError)
 
+ATTRIBUTE_TYPE_IF_EQUALS = {
+    'Boolean attribute':                    'bool',
+    'Valid integer':                        'int',
+    'Valid date string with optional time': 'datetime',
+}
+
+ATTRIBUTE_TYPE_IF_STARTSWITH = {
+    'Valid non-negative integer':  'int',
+    'Valid floating-point number': 'float',
+}
+
+ATTRIBUTE_SEPARATOR_IF_EQUALS = {
+    'Valid list of floating-point numbers': ',',
+    'Valid source size list':               ',',
+}
+
+ATTRIBUTE_SEPARATOR_IF_CONTAINS = {
+    'space-separated tokens':                      ' ',
+    'ordered set of unique space-separated tokens': ' ',
+    'comma-separated list of':                      ',',
+    'set of comma-separated tokens':                ',',
+}
+
 
 # ---- Generators for splitting spec strings ----
 
@@ -224,72 +247,65 @@ def parse_categories(rows: Iterator[RawCategory]) -> Iterator[Category]:
         )
 
 
+def parse_attribute_info(elements_info: str, value_info: str) -> tuple[set, str, bool]:
+    is_complicated = value_info.endswith('*')
+    if is_complicated:
+        value_info = value_info[:-1]
+    value_type = ' '.join(x.strip().strip('*') for x in value_info.split('\n')).strip()
+    value_info = value_type
+
+    elements_set: set[str] = set()
+    elements_notes: list[str] = []
+    for token in gen_elements(elements_info):
+        tmp = token.strip()
+        idx = tmp.find('(')
+        if idx != -1:
+            is_complicated = True
+            elements_set.add(tmp[:idx].strip())
+            elements_notes.append(token)
+        else:
+            elements_set.add(tmp)
+    elements_notes = '' if elements_notes == [] else f'Special tag scope: {", ".join(elements_notes)}'
+    return elements_set, elements_notes, value_type, value_info, is_complicated
+
+
 def parse_attributes(rows: Iterator[RawAttribute]) -> Iterator[Attribute]:
     for raw in rows:
-        name, tag_scope_info, description, value_info = (
+        name, elements_info, description, value_info = (
             raw.attribute,
             raw.elements,
             raw.description,
             raw.value,
         )
 
-        warn_if_unseparated_tokens(tag_scope_info, f'Attribute {raw.attribute!r} tag scope')
+        warn_if_unseparated_tokens(elements_info, f'Attribute {raw.attribute!r} tag scope')
 
-        is_complicated = value_info.endswith('*')
-        if is_complicated:
-            value_info = value_info[:-1]
-        value_type = ' '.join(x.strip().strip('*') for x in value_info.split('\n')).strip()
-        value_info = value_type
-        separator = ''
-
-        tag_scope: set[str] = set()
-        tag_notes: list[str] = []
-        for token in gen_elements(tag_scope_info):
-            tmp = token.strip()
-            idx = tmp.find('(')
-            if idx != -1:
-                is_complicated = True
-                tag_scope.add(tmp[:idx].strip())
-                tag_notes.append(token)
-            else:
-                tag_scope.add(tmp)
-        tag_notes = '' if tag_notes == [] else f'Special tag scope: {", ".join(tag_notes)}'
+        tag_scope, tag_notes, value_type, value_info, is_complicated = parse_attribute_info(elements_info, value_info)
 
         value_enum = set(gen_enum(value_type))
         if value_enum:
-            value_type = 'enum'
-            value_info = ''
+            value_type, value_info, separator = 'enum', '', ''
         else:
-            match value_type:
-                case 'Text':
-                    value_type = 'string'
-                case 'Boolean attribute':
-                    value_type = 'bool'
-                case 'Valid integer':
-                    value_type = 'int'
-                case 'Valid date string with optional time':
-                    value_type = 'datetime'
-                case 'Valid list of floating-point numbers' | 'Valid source size list':
-                    value_type = 'string'
-                    separator = ','
-                case s if s.startswith('Valid non-negative integer'):
-                    value_type = 'int'
-                case s if s.startswith('Valid floating-point number'):
-                    value_type = 'float'
-                case s if 'space-separated tokens' in s.lower():
-                    value_type = 'string'
-                    separator = ' '
-                case s if 'ordered set of unique space-separated tokens' in s.lower():
-                    value_type = 'string'
-                    separator = ' '
-                case s if 'comma-separated list of' in s.lower():
-                    value_type = 'string'
-                    separator = ','
-                case s if 'set of comma-separated tokens' in s.lower():
-                    value_type = 'string'
-                    separator = ','
-                case _:
-                    value_type = 'string'
+            t = ATTRIBUTE_TYPE_IF_EQUALS.get(value_type)
+            if t is None:
+                for prefix, mapped_type in ATTRIBUTE_TYPE_IF_STARTSWITH.items():
+                    if value_type.startswith(prefix):
+                        t = mapped_type
+                        break
+                else:
+                    t = 'string'
+
+            s = ATTRIBUTE_SEPARATOR_IF_EQUALS.get(value_type)
+            if s is None:
+                value_type_lower = value_type.lower()
+                for substring, sep in ATTRIBUTE_SEPARATOR_IF_CONTAINS.items():
+                    if substring in value_type_lower:
+                        s = sep
+                        break
+            if s is None:
+                s = ''
+
+            value_type, separator = t, s
 
         value_info = '. '.join([
             v
