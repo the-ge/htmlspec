@@ -203,7 +203,7 @@ def extract_aria_roles(soup: BeautifulSoup) -> Iterator[RawAriaRole]:
     for role in concrete_roles:
         rows = soup.find('section', {'id': role}).find_next('ul').find_all('li')
         for row in rows:
-            deprecated='' if row.strong is None else row.strong.get_text().strip()
+            deprecated = '' if row.strong is None else row.strong.get_text().strip()
             if deprecated != '':
                 deprecated = re.search(r'(?<=ARIA )\d+\.\d+', deprecated)
                 deprecated = deprecated[0] if deprecated else ''
@@ -242,8 +242,7 @@ class Extractor:
         return self.filtered_data_dir / f'{page}.{section}.ndjson'
 
     def extract_page(self, page: str, sections: tuple[str, ...]) -> dict[str, dict]:
-        """Extract every section belonging to one source page. Returns one
-        manifest entry per (page, section), keyed '{page}.{section}'."""
+        """Extract sections belonging to one source page. Returns one manifest entry per (page, section)."""
         entries: dict[str, dict] = {}
         try:
             soup = self._load_soup(page)
