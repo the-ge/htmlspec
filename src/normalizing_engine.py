@@ -414,9 +414,7 @@ class Normalizer:
         if delta is not None and abs(delta) == 1:
             logger.warning(f'⚠️ {key}: count changed by {delta:+d} since last run ({previous_count} -> {count})')
 
-        entry = {'status': 'ok', 'row_count': count}
-        if delta:
-            entry['delta'] = delta
+        entry = {'status': 'ok', 'row_count': count, 'delta': delta}
         self._manifest[key] = entry
         return entry
 
