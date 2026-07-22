@@ -13,8 +13,7 @@ def dictify(
     xs: Iterator[Any],  # list/generator of dataclass objects
     merge: bool = True,
 ) -> dict[str, Any]:
-    """Convert a list of dataclasses to a dict where the key is the first
-    field in each object and each key is unique."""
+    """Convert a dataclass objects list/generator to a dict with unique keys as the the first field in each object."""
 
     result = {}
 
@@ -59,8 +58,7 @@ def dictify(
 
 
 def write_ndjson(path: Path, rows: Iterable[Any]) -> int:
-    """Write dataclass instances to path, one JSON object per line.
-    Returns the number of rows written."""
+    """Write dataclass instances to path, one JSON object per line. Return the number of rows written."""
     path.parent.mkdir(parents=True, exist_ok=True)
     count = 0
     with path.open('w', encoding='utf-8') as fp:
@@ -72,14 +70,13 @@ def write_ndjson(path: Path, rows: Iterable[Any]) -> int:
 
 
 def read_ndjson(path: Path, cls: type[T]) -> list[T]:
-    """Read an NDJSON file back into a list of `cls` instances. Raises
-    FileNotFoundError if path doesn't exist — callers decide fallback behavior."""
+    """Read an NDJSON file back into a list of `cls` instances. Return a list of JSON objects. Raises FileNotFoundError if path doesn't exist."""
     with path.open('r', encoding='utf-8') as fp:
         return [cls(**json.loads(line)) for line in fp if line.strip()]
 
 
 def make_serializable(obj):
-    """Recursively convert sets to sorted lists for JSON serialization."""
+    """Recursively convert sets, lists, and dicts into a JSON serializable form."""
     if isinstance(obj, set):
         return sorted(make_serializable(v) for v in obj)
     elif isinstance(obj, list):
