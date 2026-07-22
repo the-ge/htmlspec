@@ -96,7 +96,7 @@ def extract_elements(soup: BeautifulSoup) -> Iterator[RawElement]:
     for row in rows:
         cells = [x.get_text().strip() for x in row.find_all(['th', 'td'])]
         if len(cells) != count:
-            logger.error(f'❌ Expected {count} cells, got {len(cells)}. Skipping row: {row}')
+            logger.error('❌ Expected %s cells, got %s. Skipping row: %s', count, len(cells), row)
             continue
         element, description, categories, _, children, attributes, _ = cells
         yield RawElement(
@@ -111,7 +111,7 @@ def extract_categories(soup: BeautifulSoup) -> Iterator[RawCategory]:
     for row in rows:
         cells = [x.get_text().strip() for x in row.find_all(['th', 'td'])]
         if len(cells) != count:
-            logger.error(f'❌ Expected {count} cells, got {len(cells)}. Skipping row: {row}')
+            logger.error('❌ Expected %s cells, got %s. Skipping row: %s', count, len(cells), row)
             continue
         category, elements, exceptions = cells
         yield RawCategory(category=category, elements=elements, exceptions=exceptions)
@@ -124,7 +124,7 @@ def extract_attributes(soup: BeautifulSoup) -> Iterator[RawAttribute]:
     for row in rows:
         cells = [x.get_text().strip() for x in row.find_all(['th', 'td'])]
         if len(cells) != count:
-            logger.error(f'❌ Expected {count} cells, got {len(cells)}. Skipping row: {row}')
+            logger.error('❌ Expected %s cells, got %s. Skipping row: %s', count, len(cells), row)
             continue
         attribute, elements, description, value = cells
         yield RawAttribute(
@@ -139,7 +139,7 @@ def extract_event_handlers(soup: BeautifulSoup) -> Iterator[RawEventHandler]:
     for row in rows:
         cells = [x.get_text().strip() for x in row.find_all(['th', 'td'])]
         if len(cells) != count:
-            logger.error(f'❌ Expected {count} cells, got {len(cells)}. Skipping row: {row}')
+            logger.error('❌ Expected %s cells, got %s. Skipping row: %s', count, len(cells), row)
             continue
         attribute, elements, _, _ = cells
         yield RawEventHandler(attribute=attribute, elements=elements)
@@ -172,19 +172,19 @@ def extract_element_types(soup: BeautifulSoup) -> Iterator[RawElementType]:
     for row in rows:
         if row.name == 'dt':
             if prev not in (None, 'dd'):
-                logger.error(f'❌ <dt> not preceded by a <dd>: {row}')
+                logger.error('❌ <dt> not preceded by a <dd>: %s', row)
             name = row.dfn.get_text().strip()  # literal text; slugify() happens in stage 2
             prev = 'dt'
         elif row.name == 'dd':
             if prev != 'dt':
-                logger.error(f'❌ <dd> not preceded by a <dt>: {row}')
+                logger.error('❌ <dd> not preceded by a <dt>: %s', row)
                 continue
             tags = [tag.get_text().strip() for tag in row.find_all('code')]
             info = '' if tags else row.get_text().strip()
             prev = 'dd'
             yield RawElementType(name=name, tags=tags, info=info)
     if prev == 'dt':
-        logger.error(f'❌ Trailing <dt> with no following <dd>: {name!r}')
+        logger.error('❌ Trailing <dt> with no following <dd>: %s', name)
 
 
 def extract_aria_roles(soup: BeautifulSoup) -> Iterator[RawAriaRole]:
@@ -248,7 +248,7 @@ class Extractor:
         try:
             soup = self._load_soup(page)
         except OSError as e:
-            logger.error(f'❌ Could not read {page}.html: {e}')
+            logger.error('❌ Could not read {page}.html: %s', e)
             soup = None
 
         for section in sections:
@@ -258,13 +258,14 @@ class Extractor:
             if soup is not None:
                 rows = list(EXTRACTORS[section](soup))
                 if not rows:
-                    raise ValueError(f'No rows extracted for {key}; spec structure may have changed')
+                    msg = 'No rows extracted for %s. Spec structure may have changed'
+                    raise ValueError(msg, key)
                 count = write_ndjson(path, rows)
                 entries[key] = {
                     'status': 'ok',
                     'row_count': count,
                 }
-                logger.info(f'🧲 Extracted {count} rows -> {path.name}')
+                logger.info('🧲 Extracted %s rows -> %s', count, path.name)
                 continue
 
             # Extraction unavailable this run (missing page or a broken section) —
@@ -272,10 +273,10 @@ class Extractor:
             # *something* faithful to build from, even if it's stale.
             if path.exists():
                 row_count = sum(1 for _ in path.open())
-                logger.info(f'🛟 Kept previous {path.name} ({row_count} rows, extraction unavailable this run)')
+                logger.info('🛟 Kept previous %s (%s rows, extraction unavailable this run)', path.name, row_count)
                 entries[key] = {'status': 'fallback', 'row_count': row_count}
             else:
-                logger.error(f'❌ No filtered data available for {key} (no previous file to fall back to)')
+                logger.error('❌ No filtered data available for %s (no previous file to fall back to)', key)
                 entries[key] = {'status': 'missing', 'row_count': 0}
 
         return entries
