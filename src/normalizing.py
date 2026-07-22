@@ -31,7 +31,6 @@ def main() -> None:
     normalizer = Normalizer(filtered_data_dir=FILTERED_DATA_DIR, cache_dir=DATA_CACHE_DIR)
     results, manifest = normalizer.get_all()
     write_data_domains(results)
-    print('  -->  ', 34, manifest)
     NORMALIZED_DATA_MANIFEST_FILE.write_text(
         json.dumps(manifest, **DUMP_JSON_KWARGS),
         encoding='utf-8',

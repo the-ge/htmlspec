@@ -29,12 +29,14 @@ logger = logging.getLogger(__name__)
 
 
 @dataclass(frozen=True, slots=True)
-class Element:
+class Attribute:
     name: str
+    tag_scope: set[str]
     description: str
-    categories: set[str]
-    attributes: set[str]
-    children: set[str]
+    value_type: str
+    value_enum: set[str]
+    value_info: str
+    separator: str
 
 
 @dataclass(frozen=True, slots=True)
@@ -46,14 +48,12 @@ class ContentCategory:
 
 
 @dataclass(frozen=True, slots=True)
-class Attribute:
+class Element:
     name: str
-    tag_scope: set[str]
     description: str
-    value_type: str
-    value_enum: set[str]
-    value_info: str
-    separator: str
+    categories: set[str]
+    attributes: set[str]
+    children: set[str]
 
 
 @dataclass(frozen=True, slots=True)
@@ -113,6 +113,22 @@ ATTRIBUTE_SEPARATOR_IF_CONTAINS = {
 # ---- Generators for splitting spec strings ----
 
 
+def gen_attributes(attributes: str, global_attributes: set[str]) -> Iterator[str]:
+    for attribute in attributes.strip(string.whitespace + ';').split(';'):
+        attr = attribute.strip('*').strip()
+        if attr == 'globals':
+            yield from global_attributes
+        else:
+            yield attr
+
+
+def gen_content_categories(categories: str) -> Iterator[str]:
+    for category in categories.strip(string.whitespace + ';').split(';'):
+        cat = category.strip().strip('*')
+        if cat != 'empty':
+            yield cat
+
+
 def gen_elements(elements: str) -> Iterator[str]:
     elements = elements.strip()
     if not elements:
@@ -133,20 +149,14 @@ def gen_elements(elements: str) -> Iterator[str]:
         yield elements
 
 
-def gen_attributes(attributes: str, global_attributes: set[str]) -> Iterator[str]:
-    for attribute in attributes.strip(string.whitespace + ';').split(';'):
-        attr = attribute.strip('*').strip()
-        if attr == 'globals':
-            yield from global_attributes
-        else:
-            yield attr
-
-
-def gen_content_categories(categories: str) -> Iterator[str]:
-    for category in categories.strip(string.whitespace + ';').split(';'):
-        cat = category.strip().strip('*')
-        if cat != 'empty':
-            yield cat
+def gen_element_exceptions(xs: str) -> Iterator[str]:
+    if not xs:
+        return
+    parts = xs.split(';') if ';' in xs else [xs]
+    for x in parts:
+        matches = EXCEPTION_PATTERN.fullmatch(x.strip())
+        if matches:
+            yield matches.group(1)
 
 
 def gen_enum(keywords: str) -> Iterator[str]:
@@ -157,16 +167,6 @@ def gen_enum(keywords: str) -> Iterator[str]:
             return '' if keyword == 'the empty string' else keyword.strip('"')
 
         yield from map(process_keyword, keywords.split(';'))
-
-
-def gen_element_exceptions(xs: str) -> Iterator[str]:
-    if not xs:
-        return
-    parts = xs.split(';') if ';' in xs else [xs]
-    for x in parts:
-        matches = EXCEPTION_PATTERN.fullmatch(x.strip())
-        if matches:
-            yield matches.group(1)
 
 
 _ADJACENT_TOKENS_PATTERN = re.compile(r'\b([a-zA-Z][a-zA-Z0-9-]*)\b[ \t]*\n[ \t]*\b([a-zA-Z][a-zA-Z0-9-]*)\b')
@@ -191,48 +191,9 @@ def split_splittables(text: str, context: str) -> str:
 # FILTERED_DATA_DIR by Normalizer).
 
 
-def parse_global_attributes(rows: Iterator[RawGlobalAttribute]) -> set[str]:
-    default = {'class', 'id', 'role', 'slot'}
-    return default.union({raw.name for raw in rows})
-
-
-def parse_elements(rows: Iterator[RawElement], global_attributes: set[str]) -> Iterator[Element]:
+def parse_aria_roles(rows: Iterator[RawAriaRole]) -> Iterator[str]:
     for raw in rows:
-        elements = gen_elements(raw.element)
-        categories = set(gen_content_categories(raw.categories))
-        attributes = set(gen_attributes(raw.attributes, global_attributes))
-        children = set(gen_content_categories(raw.children))
-
-        for e in sorted(elements):
-            yield Element(
-                name=e,
-                description=raw.description.strip(),
-                categories=categories,
-                attributes=attributes,
-                children=children,
-            )
-
-
-def parse_content_categories(rows: Iterator[RawContentCategory]) -> Iterator[ContentCategory]:
-    for raw in rows:
-        category = ' '.join(raw.category.split())
-
-        exceptions = '; '.join(x.strip() for x in raw.exceptions.split(';'))
-        if exceptions == '—':
-            exceptions = ''
-        if category.endswith('*'):
-            exceptions += '; The tabindex attribute can also make any element into interactive content.'
-        category = category.rstrip('*').strip()
-
-        elements_set = set(gen_elements(raw.elements))
-        elements_maybe = list(gen_element_exceptions(exceptions))
-
-        yield ContentCategory(
-            name=category,
-            elements=elements_set,
-            elements_maybe=elements_maybe,
-            exceptions=exceptions,
-        )
+        yield raw.name
 
 
 def parse_attribute_info(elements_info: str, value_info: str) -> tuple[set, str, bool]:
@@ -316,24 +277,63 @@ def parse_attributes(rows: Iterator[RawAttribute]) -> Iterator[Attribute]:
         )
 
 
-def parse_event_handlers(rows: Iterator[RawEventHandler]) -> Iterator[EventHandler]:
+def parse_content_categories(rows: Iterator[RawContentCategory]) -> Iterator[ContentCategory]:
     for raw in rows:
-        yield EventHandler(name=raw.attribute, applies_to=raw.elements)
+        category = ' '.join(raw.category.split())
+
+        exceptions = '; '.join(x.strip() for x in raw.exceptions.split(';'))
+        if exceptions == '—':
+            exceptions = ''
+        if category.endswith('*'):
+            exceptions += '; The tabindex attribute can also make any element into interactive content.'
+        category = category.rstrip('*').strip()
+
+        elements_set = set(gen_elements(raw.elements))
+        elements_maybe = list(gen_element_exceptions(exceptions))
+
+        yield ContentCategory(
+            name=category,
+            elements=elements_set,
+            elements_maybe=elements_maybe,
+            exceptions=exceptions,
+        )
 
 
-def parse_input_types(rows: Iterator[RawInputType]) -> Iterator[str]:
+def parse_elements(rows: Iterator[RawElement], global_attributes: set[str]) -> Iterator[Element]:
     for raw in rows:
-        yield raw.keyword
+        elements = gen_elements(raw.element)
+        categories = set(gen_content_categories(raw.categories))
+        attributes = set(gen_attributes(raw.attributes, global_attributes))
+        children = set(gen_content_categories(raw.children))
 
-
-def parse_aria_roles(rows: Iterator[RawAriaRole]) -> Iterator[str]:
-    for raw in rows:
-        yield raw.name
+        for e in sorted(elements):
+            yield Element(
+                name=e,
+                description=raw.description.strip(),
+                categories=categories,
+                attributes=attributes,
+                children=children,
+            )
 
 
 def parse_element_types(rows: Iterator[RawElementType]) -> Iterator[ElementType]:
     for raw in rows:
         yield ElementType(name=slugify(raw.name), tags=set(raw.tags), info=raw.info)
+
+
+def parse_event_handlers(rows: Iterator[RawEventHandler]) -> Iterator[EventHandler]:
+    for raw in rows:
+        yield EventHandler(name=raw.attribute, applies_to=raw.elements)
+
+
+def parse_global_attributes(rows: Iterator[RawGlobalAttribute]) -> set[str]:
+    default = {'class', 'id', 'role', 'slot'}
+    return default.union({raw.name for raw in rows})
+
+
+def parse_input_types(rows: Iterator[RawInputType]) -> Iterator[str]:
+    for raw in rows:
+        yield raw.keyword
 
 
 class Normalizer:
@@ -352,13 +352,13 @@ class Normalizer:
 
     # ---- internal helpers ----
 
-    def _load_section(self, page: str, section: str, cls: type) -> list:
-        """Lazy-load a filtered (page, section) NDJSON file and cache the result."""
-        key = (page, section)
-        if key not in self._sections:
-            path = self.filtered_data_dir / f'{page}.{section}.ndjson'
-            self._sections[key] = read_ndjson(path, cls)
-        return self._sections[key]
+    def _cache(self, key: str, count: int, result: Any) -> Any:
+        """Persist `result` for `key` unconditionally and log success.
+        Assumes `_validate()` already ran -- this method only persists.
+        """
+        self._save_cache(key, result)
+        logger.info('🏗️ Built and cached %s %s', count, key)
+        return result
 
     def _save_cache(self, key: str, data: Any) -> None:
         """Save a Python object to the cache directory as JSON."""
@@ -376,6 +376,14 @@ class Normalizer:
             return None
         return json.loads(path.read_text(encoding='utf-8'))
 
+    def _load_section(self, page: str, section: str, cls: type) -> list:
+        """Lazy-load a filtered (page, section) NDJSON file and cache the result."""
+        key = (page, section)
+        if key not in self._sections:
+            path = self.filtered_data_dir / f'{page}.{section}.ndjson'
+            self._sections[key] = read_ndjson(path, cls)
+        return self._sections[key]
+
     def _log_parse_error_and_fallback(self, e: Exception, cache_key: str):
         logger.error('❌ Filtered data missing or unexpected shape: %s', e)
         cached = self._load_cache(cache_key)
@@ -384,14 +392,6 @@ class Normalizer:
             raise RuntimeError(msg) from e
         logger.info('📂 Loaded %s from cache', cache_key)
         return cached
-
-    def _cache(self, key: str, count: int, result: Any) -> Any:
-        """Persist `result` for `key` unconditionally and log success.
-        Assumes `_validate()` already ran -- this method only persists.
-        """
-        self._save_cache(key, result)
-        logger.info('🏗️ Built and cached %s %s', count, key)
-        return result
 
     def _validate(self, key: str, count: int) -> dict:
         """Compare `count` against the previous cached run for `key` (if any) and decide pass/warn/raise. No fixed floor:
@@ -429,40 +429,9 @@ class Normalizer:
             self._validate(section, len(result))
             return self._cache(section, len(result), result)
         except RECOVERABLE_FILTER_ERRORS as e:
-            print('  -->  ', 458, e)
             return self._log_parse_error_and_fallback(e, section)
 
     # ---- public builders ----
-
-    def get_global_attributes(self) -> set[str]:
-        """Build or load cached global attributes. Memoized on the instance,
-        since get_elements() and get_all() both depend on this."""
-        if self._global_attributes is not None:
-            return self._global_attributes
-
-        key = 'global_attributes'
-        try:
-            rows = self._load_section('dom', 'global_attributes', RawGlobalAttribute)
-            entries = parse_global_attributes(rows)
-            self._validate(key, len(entries))
-            self._global_attributes = self._cache(key, len(entries), entries)
-        except RECOVERABLE_FILTER_ERRORS as e:
-            cached = self._log_parse_error_and_fallback(e, key)
-            self._global_attributes = set(cached) if isinstance(cached, list) else cached
-        return self._global_attributes
-
-    def get_elements(self) -> dict[str, Any]:
-        """Build elements with caching and validation."""
-        return self._get_dictified(
-            'indices',
-            'elements',
-            RawElement,
-            global_attributes=self.get_global_attributes(),
-        )
-
-    def get_content_categories(self) -> dict[str, Any]:
-        """Build content categories with caching and validation."""
-        return self._get_dictified('indices', 'content_categories', RawContentCategory)
 
     def get_attributes(self) -> dict[str, Any]:
         """Build attributes (including type & role) with caching and validation."""
@@ -500,22 +469,52 @@ class Normalizer:
         except RECOVERABLE_FILTER_ERRORS as e:
             return self._log_parse_error_and_fallback(e, key)
 
-    def get_event_handlers(self) -> dict[str, Any]:
-        """Build event handlers with caching and validation."""
-        return self._get_dictified('indices', 'event_handlers', RawEventHandler)
+    def get_content_categories(self) -> dict[str, Any]:
+        """Build content categories with caching and validation."""
+        return self._get_dictified('indices', 'content_categories', RawContentCategory)
+
+    def get_elements(self) -> dict[str, Any]:
+        """Build elements with caching and validation."""
+        return self._get_dictified(
+            'indices',
+            'elements',
+            RawElement,
+            global_attributes=self.get_global_attributes(),
+        )
 
     def get_element_types(self) -> dict[str, Any]:
         """Build element types with caching and validation."""
         return self._get_dictified('syntax', 'element_types', RawElementType)
 
+    def get_event_handlers(self) -> dict[str, Any]:
+        """Build event handlers with caching and validation."""
+        return self._get_dictified('indices', 'event_handlers', RawEventHandler)
+
+    def get_global_attributes(self) -> set[str]:
+        """Build or load cached global attributes. Memoized on the instance,
+        since get_elements() and get_all() both depend on this."""
+        if self._global_attributes is not None:
+            return self._global_attributes
+
+        key = 'global_attributes'
+        try:
+            rows = self._load_section('dom', 'global_attributes', RawGlobalAttribute)
+            entries = parse_global_attributes(rows)
+            self._validate(key, len(entries))
+            self._global_attributes = self._cache(key, len(entries), entries)
+        except RECOVERABLE_FILTER_ERRORS as e:
+            cached = self._log_parse_error_and_fallback(e, key)
+            self._global_attributes = set(cached) if isinstance(cached, list) else cached
+        return self._global_attributes
+
     def get_all(self) -> dict[str, Any]:
         """Run all builders and return a dict of results."""
         results = {
-            'elements': self.get_elements(),
-            'content_categories': self.get_content_categories(),
             'attributes': self.get_attributes(),
-            'event_handlers': self.get_event_handlers(),
+            'content_categories': self.get_content_categories(),
+            'elements': self.get_elements(),
             'element_types': self.get_element_types(),
+            'event_handlers': self.get_event_handlers(),
             # Plain list, not the {name: {}} dict convention the other domains use.
             'global_attributes': sorted(self.get_global_attributes()),
         }

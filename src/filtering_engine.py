@@ -17,12 +17,18 @@ logger = logging.getLogger(__name__)
 
 
 @dataclass(frozen=True, slots=True)
-class RawElement:
-    element: str
+class RawAriaRole:
+    name: str
+    url: str
+    deprecated_since_version: str
+
+
+@dataclass(frozen=True, slots=True)
+class RawAttribute:
+    attribute: str
+    elements: str
     description: str
-    categories: str
-    children: str
-    attributes: str
+    value: str
 
 
 @dataclass(frozen=True, slots=True)
@@ -33,11 +39,19 @@ class RawContentCategory:
 
 
 @dataclass(frozen=True, slots=True)
-class RawAttribute:
-    attribute: str
-    elements: str
+class RawElement:
+    element: str
     description: str
-    value: str
+    categories: str
+    children: str
+    attributes: str
+
+
+@dataclass(frozen=True, slots=True)
+class RawElementType:
+    name: str  # literal <dfn> text, pre-slugify — slugified in stage 2
+    tags: list[str]
+    info: str
 
 
 @dataclass(frozen=True, slots=True)
@@ -59,25 +73,11 @@ class RawInputType:
     control_type: str
 
 
-@dataclass(frozen=True, slots=True)
-class RawElementType:
-    name: str  # literal <dfn> text, pre-slugify — slugified in stage 2
-    tags: list[str]
-    info: str
-
-
-@dataclass(frozen=True, slots=True)
-class RawAriaRole:
-    name: str
-    url: str
-    deprecated_since_version: str
-
-
 # Expected cell count in each domain of the online HTML sources
 HTML_CELL_COUNT = {
-    'elements':           7,
-    'content_categories': 3,
     'attributes':         4,
+    'content_categories': 3,
+    'elements':           7,
     'event_handlers':     4,
 }
 
@@ -87,6 +87,61 @@ HTML_CELL_COUNT = {
 # surrounding whitespace only. No splitting, typing, or spec-specific
 # interpretation happens here — that belongs to stage 2 (parser.py), which
 # consumes these same dataclasses from disk instead of a live soup.
+
+
+def extract_aria_roles(soup: BeautifulSoup) -> Iterator[RawAriaRole]:
+    # https://w3c.github.io/aria/#widget
+    # https://w3c.github.io/aria/#document_structure_roles
+    # https://w3c.github.io/aria/#landmark_roles
+    # https://w3c.github.io/aria/#live_region_roles
+    # https://w3c.github.io/aria/#window_roles
+    concrete_roles = (
+        'widget',
+        'document_structure_roles',
+        'landmark_roles',
+        'live_region_roles',
+        'window_roles',
+    )
+    for role in concrete_roles:
+        rows = soup.find('section', {'id': role}).find_next('ul').find_all('li')
+        for row in rows:
+            deprecated = '' if row.strong is None else row.strong.get_text().strip()
+            if deprecated != '':
+                deprecated = re.search(r'(?<=ARIA )\d+\.\d+', deprecated)
+                deprecated = deprecated[0] if deprecated else ''
+            yield RawAriaRole(
+                name=row.code.get_text().strip(),
+                url=row.a['href'].strip(),
+                deprecated_since_version=deprecated,
+            )
+
+
+def extract_attributes(soup: BeautifulSoup) -> Iterator[RawAttribute]:
+    # https://html.spec.whatwg.org/multipage/indices.html#attributes-3
+    rows = soup.find('h3', {'id': 'attributes-3'}).find_next('tbody').find_all('tr')
+    count = HTML_CELL_COUNT['attributes']
+    for row in rows:
+        cells = [x.get_text().strip() for x in row.find_all(['th', 'td'])]
+        if len(cells) != count:
+            logger.error('❌ Expected %s cells, got %s. Skipping row: %s', count, len(cells), row)
+            continue
+        attribute, elements, description, value = cells
+        yield RawAttribute(
+            attribute=attribute, elements=elements, description=description, value=value
+        )
+
+
+def extract_content_categories(soup: BeautifulSoup) -> Iterator[RawContentCategory]:
+    # https://html.spec.whatwg.org/multipage/indices.html#element-content-categories
+    rows = soup.find('h3', {'id': 'element-content-categories'}).find_next('tbody').find_all('tr')
+    count = HTML_CELL_COUNT['content_categories']
+    for row in rows:
+        cells = [x.get_text().strip() for x in row.find_all(['th', 'td'])]
+        if len(cells) != count:
+            logger.error('❌ Expected %s cells, got %s. Skipping row: %s', count, len(cells), row)
+            continue
+        category, elements, exceptions = cells
+        yield RawContentCategory(category=category, elements=elements, exceptions=exceptions)
 
 
 def extract_elements(soup: BeautifulSoup) -> Iterator[RawElement]:
@@ -104,32 +159,27 @@ def extract_elements(soup: BeautifulSoup) -> Iterator[RawElement]:
         )
 
 
-def extract_content_categories(soup: BeautifulSoup) -> Iterator[RawContentCategory]:
-    # https://html.spec.whatwg.org/multipage/indices.html#element-content-categories
-    rows = soup.find('h3', {'id': 'element-content-categories'}).find_next('tbody').find_all('tr')
-    count = HTML_CELL_COUNT['content_categories']
+def extract_element_types(soup: BeautifulSoup) -> Iterator[RawElementType]:
+    # https://html.spec.whatwg.org/dev/syntax.html#elements-2
+    rows = soup.find('h4', {'id': 'elements-2'}).find_next('dl').find_all(['dt', 'dd'], recursive=False)
+    prev = None  # tag name of the last row seen: None, 'dt', or 'dd'
+    name = None
     for row in rows:
-        cells = [x.get_text().strip() for x in row.find_all(['th', 'td'])]
-        if len(cells) != count:
-            logger.error('❌ Expected %s cells, got %s. Skipping row: %s', count, len(cells), row)
-            continue
-        category, elements, exceptions = cells
-        yield RawContentCategory(category=category, elements=elements, exceptions=exceptions)
-
-
-def extract_attributes(soup: BeautifulSoup) -> Iterator[RawAttribute]:
-    # https://html.spec.whatwg.org/multipage/indices.html#attributes-3
-    rows = soup.find('h3', {'id': 'attributes-3'}).find_next('tbody').find_all('tr')
-    count = HTML_CELL_COUNT['attributes']
-    for row in rows:
-        cells = [x.get_text().strip() for x in row.find_all(['th', 'td'])]
-        if len(cells) != count:
-            logger.error('❌ Expected %s cells, got %s. Skipping row: %s', count, len(cells), row)
-            continue
-        attribute, elements, description, value = cells
-        yield RawAttribute(
-            attribute=attribute, elements=elements, description=description, value=value
-        )
+        if row.name == 'dt':
+            if prev not in (None, 'dd'):
+                logger.error('❌ <dt> not preceded by a <dd>: %s', row)
+            name = row.dfn.get_text().strip()  # literal text; slugify() happens in stage 2
+            prev = 'dt'
+        elif row.name == 'dd':
+            if prev != 'dt':
+                logger.error('❌ <dd> not preceded by a <dt>: %s', row)
+                continue
+            tags = [tag.get_text().strip() for tag in row.find_all('code')]
+            info = '' if tags else row.get_text().strip()
+            prev = 'dd'
+            yield RawElementType(name=name, tags=tags, info=info)
+    if prev == 'dt':
+        logger.error('❌ Trailing <dt> with no following <dd>: %s', name)
 
 
 def extract_event_handlers(soup: BeautifulSoup) -> Iterator[RawEventHandler]:
@@ -164,66 +214,16 @@ def extract_input_types(soup: BeautifulSoup) -> Iterator[RawInputType]:
         )
 
 
-def extract_element_types(soup: BeautifulSoup) -> Iterator[RawElementType]:
-    # https://html.spec.whatwg.org/dev/syntax.html#elements-2
-    rows = soup.find('h4', {'id': 'elements-2'}).find_next('dl').find_all(['dt', 'dd'], recursive=False)
-    prev = None  # tag name of the last row seen: None, 'dt', or 'dd'
-    name = None
-    for row in rows:
-        if row.name == 'dt':
-            if prev not in (None, 'dd'):
-                logger.error('❌ <dt> not preceded by a <dd>: %s', row)
-            name = row.dfn.get_text().strip()  # literal text; slugify() happens in stage 2
-            prev = 'dt'
-        elif row.name == 'dd':
-            if prev != 'dt':
-                logger.error('❌ <dd> not preceded by a <dt>: %s', row)
-                continue
-            tags = [tag.get_text().strip() for tag in row.find_all('code')]
-            info = '' if tags else row.get_text().strip()
-            prev = 'dd'
-            yield RawElementType(name=name, tags=tags, info=info)
-    if prev == 'dt':
-        logger.error('❌ Trailing <dt> with no following <dd>: %s', name)
-
-
-def extract_aria_roles(soup: BeautifulSoup) -> Iterator[RawAriaRole]:
-    # https://w3c.github.io/aria/#widget
-    # https://w3c.github.io/aria/#document_structure_roles
-    # https://w3c.github.io/aria/#landmark_roles
-    # https://w3c.github.io/aria/#live_region_roles
-    # https://w3c.github.io/aria/#window_roles
-    concrete_roles = (
-        'widget',
-        'document_structure_roles',
-        'landmark_roles',
-        'live_region_roles',
-        'window_roles',
-    )
-    for role in concrete_roles:
-        rows = soup.find('section', {'id': role}).find_next('ul').find_all('li')
-        for row in rows:
-            deprecated = '' if row.strong is None else row.strong.get_text().strip()
-            if deprecated != '':
-                deprecated = re.search(r'(?<=ARIA )\d+\.\d+', deprecated)
-                deprecated = deprecated[0] if deprecated else ''
-            yield RawAriaRole(
-                name=row.code.get_text().strip(),
-                url=row.a['href'].strip(),
-                deprecated_since_version=deprecated,
-            )
-
-
 # section name -> extractor function; keys match config.PAGE_SECTIONS values
 EXTRACTORS = {
-    'elements': extract_elements,
-    'content_categories': extract_content_categories,
+    'aria_roles': extract_aria_roles,
     'attributes': extract_attributes,
+    'content_categories': extract_content_categories,
+    'elements': extract_elements,
+    'element_types': extract_element_types,
     'event_handlers': extract_event_handlers,
     'global_attributes': extract_global_attributes,
     'input_types': extract_input_types,
-    'element_types': extract_element_types,
-    'aria_roles': extract_aria_roles,
 }
 
 
