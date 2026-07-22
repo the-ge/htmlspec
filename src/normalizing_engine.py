@@ -455,8 +455,8 @@ class Normalizer:
         try:
             entries = list(parse_attributes(self._load_section('indices', 'attributes', RawAttribute)))
 
-            # Append "type" from input.html
-            entries.append(
+            entries.extend((
+                # Append "type" from input.html
                 Attribute(
                     name='type',
                     tag_scope={'input'},
@@ -465,11 +465,8 @@ class Normalizer:
                     value_enum=set(parse_input_types(self._load_section('input', 'input_types', RawInputType))),
                     value_info='An input type e.g. "text", "number", or "week".',
                     separator='',
-                )
-            )
-
-            # Append "role" from aria.html
-            entries.append(
+                ),
+                # Append "role" from aria.html
                 Attribute(
                     name='role',
                     tag_scope=set(),
@@ -478,8 +475,8 @@ class Normalizer:
                     value_enum=set(parse_aria_roles(self._load_section('aria', 'aria_roles', RawAriaRole))),
                     value_info='',
                     separator=' ',
-                )
-            )
+                ),
+            ))
 
             # Note: merge=False for attributes
             result = dictify(entries, merge=False)
