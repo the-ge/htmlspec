@@ -352,7 +352,7 @@ class Normalizer:
 
     # ---- internal helpers ----
 
-    def _cache(self, key: str, count: int, result: Any) -> Any:
+    def _cache(self, key: str, count: int, result: dict | set) -> dict | set:
         """Persist `result` for `key` unconditionally and log success.
         Assumes `_validate()` already ran -- this method only persists.
         """
@@ -360,7 +360,7 @@ class Normalizer:
         logger.info('🏗️ Built and cached %s %s', count, key)
         return result
 
-    def _save_cache(self, key: str, data: Any) -> None:
+    def _save_cache(self, key: str, data: dict | set) -> None:
         """Save a Python object to the cache directory as JSON."""
         self.cache_dir.mkdir(parents=True, exist_ok=True)
         serialized = make_serializable(data)
@@ -369,7 +369,7 @@ class Normalizer:
             encoding='utf-8',
         )
 
-    def _load_cache(self, key: str) -> Any | None:
+    def _load_cache(self, key: str) -> dict | list | None:
         """Load a Python object from the cache directory; return None if missing."""
         path = self.cache_dir / f'{key}.json'
         if not path.exists():
@@ -384,7 +384,7 @@ class Normalizer:
             self._sections[key] = read_ndjson(path, cls)
         return self._sections[key]
 
-    def _log_parse_error_and_fallback(self, e: Exception, cache_key: str):
+    def _log_parse_error_and_fallback(self, e: Exception, cache_key: str) -> dict | list | None:
         logger.error('❌ Filtered data missing or unexpected shape: %s', e)
         cached = self._load_cache(cache_key)
         if cached is None:
