@@ -38,7 +38,7 @@ class Element:
 
 
 @dataclass(frozen=True, slots=True)
-class Category:
+class ContentCategory:
     name: str
     elements: set[str]
     elements_maybe: list[str]
@@ -213,7 +213,7 @@ def parse_elements(rows: Iterator[RawElement], global_attributes: set[str]) -> I
             )
 
 
-def parse_content_categories(rows: Iterator[RawContentCategory]) -> Iterator[Category]:
+def parse_content_categories(rows: Iterator[RawContentCategory]) -> Iterator[ContentCategory]:
     for raw in rows:
         category = ' '.join(raw.category.split())
 
@@ -227,7 +227,7 @@ def parse_content_categories(rows: Iterator[RawContentCategory]) -> Iterator[Cat
         elements_set = set(gen_elements(raw.elements))
         elements_maybe = list(gen_element_exceptions(exceptions))
 
-        yield Category(
+        yield ContentCategory(
             name=category,
             elements=elements_set,
             elements_maybe=elements_maybe,
