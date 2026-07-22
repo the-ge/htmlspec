@@ -354,7 +354,7 @@ class Normalizer:
         self,
         filtered_data_dir: Path,
         cache_dir: Path,
-    ):
+    ) -> None:
         self.filtered_data_dir = filtered_data_dir
         self.cache_dir = cache_dir
         self._sections: dict[tuple[str, str], list] = {}
