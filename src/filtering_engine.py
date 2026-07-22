@@ -246,8 +246,8 @@ class Extractor:
         entries: dict[str, dict] = {}
         try:
             soup = self._load_soup(page)
-        except OSError as e:
-            logger.error('❌ Could not read {page}.html: %s', e)
+        except OSError:
+            logger.exception('❌ Could not read %s.html', page)
             soup = None
 
         for section in sections:
