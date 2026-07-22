@@ -75,12 +75,11 @@ def make_serializable(obj: object) -> JSONType:
     """Recursively convert sets, lists, and dicts into a JSON serializable form."""
     if isinstance(obj, set):
         return sorted(make_serializable(v) for v in obj)
-    elif isinstance(obj, list):
+    if isinstance(obj, list):
         return [make_serializable(v) for v in obj]
-    elif isinstance(obj, dict):
+    if isinstance(obj, dict):
         return {k: make_serializable(v) for k, v in obj.items()}
-    else:
-        return obj
+    return obj
 
 
 def short_path(path: Path) -> str:
