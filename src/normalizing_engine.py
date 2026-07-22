@@ -2,7 +2,8 @@ import json
 import logging
 import re
 import string
-from collections.abc import Callable, Iterator
+import sys
+from collections.abc import Iterator
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
@@ -407,15 +408,16 @@ class Normalizer:
         return result
 
     def _get_dictified(
-        self, page: str, section: str, cls: type, key: str, parser: Callable, **parser_kwargs
+        self, page: str, section: str, cls: type, **parser_kwargs: set[str]
     ) -> dict[str, Any]:
         try:
+            parser = getattr(sys.modules[__name__], f'parse_{section}')
             rows = self._load_section(page, section, cls)
             entries = list(parser(rows, **parser_kwargs))
             result = dictify(entries, merge=True)
-            return self._validate_and_cache(key, len(entries), result)
+            return self._validate_and_cache(section, len(entries), result)
         except RECOVERABLE_FILTER_ERRORS as e:
-            return self._log_parse_error_and_fallback(e, key)
+            return self._log_parse_error_and_fallback(e, section)
 
     # ---- public builders ----
 
@@ -441,14 +443,12 @@ class Normalizer:
             'indices',
             'elements',
             RawElement,
-            'elements',
-            parse_elements,
             global_attributes=self.get_global_attributes(),
         )
 
     def get_categories(self) -> dict[str, Any]:
         """Build categories with caching and validation."""
-        return self._get_dictified('indices', 'categories', RawCategory, 'categories', parse_categories)
+        return self._get_dictified('indices', 'categories', RawCategory)
 
     def get_attributes(self) -> dict[str, Any]:
         """Build attributes (including type & role) with caching and validation."""
@@ -487,11 +487,11 @@ class Normalizer:
 
     def get_event_handlers(self) -> dict[str, Any]:
         """Build event handlers with caching and validation."""
-        return self._get_dictified('indices', 'event_handlers', RawEventHandler, 'event_handlers', parse_event_handlers)
+        return self._get_dictified('indices', 'event_handlers', RawEventHandler)
 
     def get_element_types(self) -> dict[str, Any]:
         """Build element types with caching and validation."""
-        return self._get_dictified('syntax', 'element_types', RawElementType, 'element_types', parse_element_types)
+        return self._get_dictified('syntax', 'element_types', RawElementType)
 
     def get_all(self) -> dict[str, Any]:
         """Run all builders and return a dict of results."""
