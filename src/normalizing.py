@@ -16,28 +16,24 @@ logging.basicConfig(level=LOG_LEVEL, format='%(levelname)s: %(message)s')
 logger = logging.getLogger(__name__)
 
 
-def write_categories(results: dict) -> dict[str, dict]:
-    """Write each category result to NORMALIZED_DATA_DIR as its own JSON file. Returns one manifest entry per category."""
-    manifest_entries: dict[str, dict] = {}
+def write_categories(results: dict) -> None:
+    """Write each category result to NORMALIZED_DATA_DIR as its own JSON file."""
     for category, data in results.items():
         path = NORMALIZED_DATA_DIR / f'{category}.json'
         serializable = make_serializable(data)
         path.write_text(json.dumps(serializable, **DUMP_JSON_KWARGS), encoding='utf-8')
-        count = len(data)
-        manifest_entries[category] = {'status': 'ok', 'row_count': count}
-        logger.info('🔀 Normalized %s (%s -> %s)', count, category, path.name)
-    return manifest_entries
+        logger.info('🔀 Normalized %s (%s -> %s)', len(data), category, path.name)
 
 
 def main() -> None:
     NORMALIZED_DATA_DIR.mkdir(parents=True, exist_ok=True)
 
     normalizer = Normalizer(filtered_data_dir=FILTERED_DATA_DIR, cache_dir=DATA_CACHE_DIR)
-    results = normalizer.get_all()
-    sections = write_categories(results)
-
+    results, manifest = normalizer.get_all()
+    write_categories(results)
+    print('  -->  ', 34, manifest)
     NORMALIZED_DATA_MANIFEST_FILE.write_text(
-        json.dumps(sections, **DUMP_JSON_KWARGS),
+        json.dumps(manifest, **DUMP_JSON_KWARGS),
         encoding='utf-8',
     )
     logger.info('✅ Updated normalized data manifest.')

@@ -512,7 +512,7 @@ class Normalizer:
 
     def get_all(self) -> dict[str, Any]:
         """Run all builders and return a dict of results."""
-        return {
+        results = {
             'elements': self.get_elements(),
             'categories': self.get_categories(),
             'attributes': self.get_attributes(),
@@ -522,3 +522,5 @@ class Normalizer:
             # categories use — global attributes are just names.
             'global_attributes': sorted(self.get_global_attributes()),
         }
+        return results, dict(self._manifest)
+
