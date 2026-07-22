@@ -139,11 +139,6 @@ def gen_elements(elements: str) -> Iterator[str]:
     elif ',' in elements:
         for e in re.split(r'\s*,\s*', elements.strip(string.whitespace + ',')):
             yield from gen_elements(e)
-    elif elements == 'video\nimg':
-        # bug @ https://html.spec.whatwg.org/multipage/indices.html#attributes-3:attr-media-controls
-        # `controls` "Element(s)" cell has no semicolon between 'video' and 'img' <code> elements
-        for e in elements.split('\n'):
-            yield from gen_elements(e)
     else:
         yield elements
 
@@ -184,18 +179,21 @@ def gen_element_exceptions(xs: str) -> Iterator[str]:
             yield matches.group(1)
 
 
-_ADJACENT_TOKENS_PATTERN = re.compile(r'\b[a-zA-Z][a-zA-Z0-9-]*\b[ \t]*\n[ \t]*\b[a-zA-Z][a-zA-Z0-9-]*\b')
+_ADJACENT_TOKENS_PATTERN = re.compile(r'\b([a-zA-Z][a-zA-Z0-9-]*)\b[ \t]*\n[ \t]*\b([a-zA-Z][a-zA-Z0-9-]*)\b')
 
 
-def warn_if_unseparated_tokens(text: str, context: str) -> None:
-    """Warn if `text` contains element-name-like tokens joined only by
-    whitespace/newline, with no ';' or ',' between them — this silently
-    defeats gen_elements()'s splitting and drops elements. Mirrors the
-    known 'video\\nimg' spec bug (see gen_elements())."""
-    for segment in re.split(r'[;,]', text):
-        if _ADJACENT_TOKENS_PATTERN.search(segment):
-            warning = f"missing separator between '{"' and '".join(segment.strip().split())}'"
-            logger.warning('‼️ %s: %s. Confirm workaround state (find it by "bug @").', context, warning)
+def split_splittables(text: str, context: str) -> str:
+    """Detect and repair words missing a separator in the whitespace. Returns the words in a semicolon-separated string.
+    First issue of this kind: `controls` "Element(s)" cell has no semicolon between 'video' and 'img' <code> elements in
+    https://html.spec.whatwg.org/multipage/indices.html#attributes-3:attr-media-controls (still active on 2026-07-22).
+    """
+
+    def repair(match: re.Match) -> str:
+        word_a, word_b = match.group(1), match.group(2)
+        logger.warning("⚠️ %s: missing separator between '%s' and '%s'; inserting ';'.", context, word_a, word_b)
+        return f'{word_a};{word_b}'
+
+    return _ADJACENT_TOKENS_PATTERN.sub(repair, text)
 
 
 # ---- Parsers for each section ----
@@ -278,7 +276,7 @@ def parse_attributes(rows: Iterator[RawAttribute]) -> Iterator[Attribute]:
             raw.value,
         )
 
-        warn_if_unseparated_tokens(elements_info, f'Attribute {raw.attribute!r} tag scope')
+        elements_info = split_splittables(elements_info, f'Attribute {raw.attribute!r} tag scope')
 
         tag_scope, tag_notes, value_type, value_info, is_complicated = parse_attribute_info(elements_info, value_info)
 
