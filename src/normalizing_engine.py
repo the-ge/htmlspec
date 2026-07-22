@@ -405,14 +405,17 @@ class Normalizer:
         Stores and returns the manifest entry for `key`: {status, row_count} plus delta, omitted when 0 (nothing changed)
         or unavailable (first run).
         """
+        delta_warn = 1
+        delta_fatal = 2
         previous = self._load_cache(key)
         previous_count = len(previous) if previous is not None else None
         delta = None if previous_count is None else count - previous_count
 
-        if delta is not None and abs(delta) >= 2:
-            raise ValueError(f'{key}: count changed by {delta:+d} since last run ({previous_count} -> {count})')
-        if delta is not None and abs(delta) == 1:
-            logger.warning(f'⚠️ {key}: count changed by {delta:+d} since last run ({previous_count} -> {count})')
+        if delta is not None and abs(delta) >= delta_fatal:
+            msg = f'{key}: count changed by {delta:+d} since last run ({previous_count} -> {count})'
+            raise ValueError(msg)
+        if delta is not None and abs(delta) == delta_warn:
+            logger.warning('⚠️ %s: count changed by %d since last run (%d -> %d)', key, delta, previous_count, count)
 
         entry = {'status': 'ok', 'row_count': count, 'delta': delta}
         self._manifest[key] = entry
