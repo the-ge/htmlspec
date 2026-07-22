@@ -30,7 +30,7 @@ def write_categories(results: dict) -> dict[str, dict]:
     return manifest_entries
 
 
-def main():
+def main() -> None:
     NORMALIZED_DATA_DIR.mkdir(parents=True, exist_ok=True)
 
     normalizer = Normalizer(filtered_data_dir=FILTERED_DATA_DIR, cache_dir=DATA_CACHE_DIR)
