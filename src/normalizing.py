@@ -26,7 +26,7 @@ def write_categories(results: dict) -> dict[str, dict]:
         path.write_text(json.dumps(serializable, **DUMP_JSON_KWARGS), encoding='utf-8')
         count = len(data)
         manifest_entries[category] = {'status': 'ok', 'row_count': count}
-        logger.info(f'🔀 Normalized {count} {category} -> {path.name}')
+        logger.info('🔀 Normalized %s (%s -> %s)', count, category, path.name)
     return manifest_entries
 
 
