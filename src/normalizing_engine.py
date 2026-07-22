@@ -194,7 +194,7 @@ def warn_if_unseparated_tokens(text: str, context: str) -> None:
     for segment in re.split(r'[;,]', text):
         if _ADJACENT_TOKENS_PATTERN.search(segment):
             warning = f"missing separator between '{"' and '".join(segment.strip().split())}'"
-            logger.warning(f'‼️ {context}: {warning}. Confirm workaround state (find it by "bug @").')
+            logger.warning('‼️ %s: %s. Confirm workaround state (find it by "bug @").', context, warning)
 
 
 # ---- Parsers for each section ----
@@ -388,7 +388,7 @@ class Normalizer:
         return json.loads(path.read_text(encoding='utf-8'))
 
     def _log_parse_error_and_fallback(self, e: Exception, cache_key: str):
-        logger.error(f'❌ Filtered data missing or unexpected shape: {e}')
+        logger.error('❌ Filtered data missing or unexpected shape: %s', e)
         cached = self._load_cache(cache_key)
         if cached is None:
             raise RuntimeError(f'No cache available for {cache_key}') from e
