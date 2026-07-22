@@ -80,7 +80,8 @@ def write_yaml_file(data: list, path: Path) -> None:
 
 def write_yaml_items(data: dict, dir_path: Path) -> int:
     """Write each item as its own YAML file, named after its key, e.g. dir_path/abbr.yaml.
-    Returns the number of files written."""
+    Returns the number of files written.
+    """
     dir_path.mkdir(parents=True, exist_ok=True)
     count = 0
     for key, value in data.items():
