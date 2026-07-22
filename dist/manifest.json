@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-22T15:19:50.224848+00:00",
+  "generated_at": "2026-07-22T15:55:25.316018+00:00",
   "sources": {
     "indices": "Mon, 20 Jul 2026 08:01:46 GMT",
     "dom": "Mon, 20 Jul 2026 08:01:44 GMT",
@@ -10,7 +10,7 @@
   "counts": {
     "global_attributes": 32,
     "elements": 115,
-    "categories": 15,
+    "content_categories": 15,
     "attributes": 181,
     "event_handlers": 89,
     "element_types": 6
