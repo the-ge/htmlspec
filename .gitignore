@@ -3,5 +3,5 @@ __pycache__
 /contrib/*.html
 /contrib/timestamp
 !.gitignore
-venv
+.venv
 venv-start
