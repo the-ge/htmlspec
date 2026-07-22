@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-22T15:55:25.316018+00:00",
+  "generated_at": "2026-07-22T16:42:35.294511+00:00",
   "sources": {
     "indices": "Mon, 20 Jul 2026 08:01:46 GMT",
     "dom": "Mon, 20 Jul 2026 08:01:44 GMT",
@@ -8,11 +8,11 @@
     "aria": "Thu, 09 Jul 2026 17:22:36 GMT"
   },
   "counts": {
+    "attributes": 181,
+    "content_categories": 15,
     "global_attributes": 32,
     "elements": 115,
-    "content_categories": 15,
-    "attributes": 181,
-    "event_handlers": 89,
-    "element_types": 6
+    "element_types": 6,
+    "event_handlers": 89
   }
 }
