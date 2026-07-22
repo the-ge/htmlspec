@@ -3,14 +3,13 @@ import logging
 
 from config import (
     DUMP_JSON_KWARGS,
-    LOG_LEVEL,
     FILTERED_DATA_DIR,
     FILTERED_DATA_MANIFEST_FILE,
+    LOG_LEVEL,
     PAGE_SECTIONS,
     RAW_DATA_DIR,
 )
 from filtering_engine import Extractor
-from util import short_path
 
 logging.basicConfig(level=LOG_LEVEL, format='%(levelname)s: %(message)s')
 logger = logging.getLogger(__name__)
