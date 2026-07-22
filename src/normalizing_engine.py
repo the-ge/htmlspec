@@ -432,17 +432,6 @@ class Normalizer:
         self._manifest[key] = entry
         return entry
 
-    def _validate_and_cache(self, key: str, count: int, result: Any) -> Any:
-        """Raise if `count` doesn't meet MIN_COUNT[key]; otherwise cache
-        `result` and log success. The one place "did we get enough data"
-        is decided, shared by every build entry point below."""
-        if count < MIN_COUNT[key]:
-            msg = f'Expected >={MIN_COUNT[key]} {key}, got {count}'
-            raise ValueError(msg)
-        self._save_cache(key, result)
-        logger.info(f'🏗️ Built and cached {count} {key}')
-        return result
-
     def _get_dictified(
         self, page: str, section: str, cls: type, **parser_kwargs: set[str]
     ) -> dict[str, Any]:
