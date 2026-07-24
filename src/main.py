@@ -1,5 +1,7 @@
 import json
 import logging
+import shutil
+import subprocess  # noqa: S404
 from pathlib import Path
 
 import yaml
@@ -43,8 +45,48 @@ def read_data_domains() -> dict[str, object]:
     return results
 
 
+def get_repo_version() -> dict[str, str]:
+    """Return the repo's official_release (nearest tag, empty if none exist),
+    current_tag (nearest tag plus distance/dirty suffix), and current_commit_id (full HEAD SHA).
+    """
+    git = shutil.which('git')
+    if git is None:
+        msg = 'git executable not found on PATH'
+        raise FileNotFoundError(msg)
+
+    try:
+        official_release = subprocess.run(  # noqa: S603
+            [git, 'describe', '--tags', '--abbrev=0'],
+            check=True,
+            capture_output=True,
+            text=True,
+        ).stdout.strip()
+    except subprocess.CalledProcessError:
+        official_release = ''
+
+    current_tag = subprocess.run(  # noqa: S603
+        [git, 'describe', '--tags', '--always', '--dirty'],
+        check=True,
+        capture_output=True,
+        text=True,
+    ).stdout.strip()
+
+    current_commit_id = subprocess.run(  # noqa: S603
+        [git, 'rev-parse', 'HEAD'],
+        check=True,
+        capture_output=True,
+        text=True,
+    ).stdout.strip()
+
+    return {
+        'official_release': official_release,
+        'current_tag': current_tag,
+        'current_commit_id': current_commit_id,
+    }
+
+
 def build_manifest(counts: dict[str, int]) -> dict:
-    """Combine the raw manifest written by make into RAW_DATA_DIR with a timestamp and category counts."""
+    """Combine the raw manifest written by make into RAW_DATA_DIR with category counts and repository version info."""
     sources = {}
     if not RAW_DATA_MANIFEST_FILE.exists():
         logger.error('❌ File missing: %s; did you run `make -C acquire` first?', short_path(RAW_DATA_MANIFEST_FILE))
@@ -57,6 +99,7 @@ def build_manifest(counts: dict[str, int]) -> dict:
     return {
         'sources': sources,
         'counts': counts,
+        **get_repo_version(),
     }
 
 
