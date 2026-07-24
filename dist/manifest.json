@@ -4,7 +4,7 @@
     "dom": "Mon, 20 Jul 2026 08:01:44 GMT",
     "input": "Mon, 20 Jul 2026 08:01:44 GMT",
     "syntax": "Mon, 20 Jul 2026 08:01:45 GMT",
-    "aria": "Thu, 09 Jul 2026 17:22:36 GMT"
+    "aria": "Fri, 24 Jul 2026 07:02:43 GMT"
   },
   "counts": {
     "attributes": 181,
@@ -14,7 +14,7 @@
     "element_types": 6,
     "event_handlers": 89
   },
-  "official_release": "0.5.1",
-  "current_tag": "0.5.1-60-g82ef9d4-dirty",
-  "current_commit_id": "82ef9d4bf655d154a21217f3154176eecb2beb3f"
+  "official_release": "0.5.2",
+  "current_tag": "0.5.2-dirty",
+  "current_commit_id": "9dea6bec5de8713b654dc6185b52b0e5883716f9"
 }
