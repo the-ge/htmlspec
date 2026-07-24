@@ -60,8 +60,8 @@ def d___(*args: Any, **kwargs: Any) -> None:  # ruff:ignore[any-type]]
     if args or kwargs:
         prefix += '🟰 '
 
-    print(prefix, end='')  # ruff:ignore[print]]
-    print(*args, **kwargs, end=end)  # ruff:ignore[print]]
+    print(prefix, end='')  # noqa: T201
+    print(*args, **kwargs, end=end)  # noqa: T201
 
 
 def location(offset: int = 0, levels: int = 1) -> str:
