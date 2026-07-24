@@ -13,5 +13,8 @@
     "elements": 115,
     "element_types": 6,
     "event_handlers": 89
-  }
+  },
+  "official_release": "0.5.1",
+  "current_tag": "0.5.1-60-g82ef9d4-dirty",
+  "current_commit_id": "82ef9d4bf655d154a21217f3154176eecb2beb3f"
 }
