@@ -1,6 +1,5 @@
 import json
 import logging
-from datetime import datetime, timezone
 from pathlib import Path
 
 import yaml
@@ -56,7 +55,6 @@ def build_manifest(counts: dict[str, int]) -> dict:
             logger.exception('❌ Failed to parse %s', short_path(RAW_DATA_MANIFEST_FILE))
 
     return {
-        'generated_at': datetime.now(timezone.utc).isoformat(),
         'sources': sources,
         'counts': counts,
     }
