@@ -1,0 +1,7 @@
+tag_scope:
+- ol
+description: Number the list backwards
+value_type: bool
+value_enum: []
+value_info: Boolean attribute
+separator: ''

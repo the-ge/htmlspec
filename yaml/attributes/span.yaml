@@ -1,0 +1,8 @@
+tag_scope:
+- col
+- colgroup
+description: Number of columns spanned by the element
+value_type: int
+value_enum: []
+value_info: Valid non-negative integer greater than zero
+separator: ''

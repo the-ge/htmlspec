@@ -1,0 +1,8 @@
+tag_scope:
+- link
+- style
+description: CSS style sheet set name
+value_type: string
+value_enum: []
+value_info: Text
+separator: ''

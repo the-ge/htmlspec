@@ -1,0 +1,11 @@
+elements:
+- base
+- link
+- meta
+- noscript
+- script
+- style
+- template
+- title
+elements_maybe: []
+exceptions: ''

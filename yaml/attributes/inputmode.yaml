@@ -1,0 +1,14 @@
+tag_scope: []
+description: Hint for selecting an input modality
+value_type: enum
+value_enum:
+- decimal
+- email
+- none
+- numeric
+- search
+- tel
+- text
+- url
+value_info: ''
+separator: ''

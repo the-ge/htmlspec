@@ -1,0 +1,9 @@
+tag_scope:
+- area
+- img
+- input
+description: Replacement text for use when images are not available
+value_type: string
+value_enum: []
+value_info: Text. *Incomplete description. See the full specification.
+separator: ''

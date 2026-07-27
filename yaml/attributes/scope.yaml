@@ -1,0 +1,11 @@
+tag_scope:
+- th
+description: Specifies which cells the header cell applies to
+value_type: enum
+value_enum:
+- col
+- colgroup
+- row
+- rowgroup
+value_info: ''
+separator: ''

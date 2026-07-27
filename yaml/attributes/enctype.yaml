@@ -1,0 +1,10 @@
+tag_scope:
+- form
+description: Entry list encoding type to use for form submission
+value_type: enum
+value_enum:
+- application/x-www-form-urlencoded
+- multipart/form-data
+- text/plain
+value_info: ''
+separator: ''

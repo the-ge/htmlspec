@@ -1,0 +1,12 @@
+tag_scope:
+- meta
+description: Pragma directive
+value_type: enum
+value_enum:
+- content-security-policy
+- content-type
+- default-style
+- refresh
+- x-ua-compatible
+value_info: ''
+separator: ''

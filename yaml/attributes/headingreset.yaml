@@ -1,0 +1,6 @@
+tag_scope: []
+description: Prevents a heading offset computation from traversing beyond the element with the attribute
+value_type: bool
+value_enum: []
+value_info: Boolean attribute
+separator: ''

@@ -1,0 +1,7 @@
+tag_scope:
+- textarea
+description: Maximum number of characters per line
+value_type: int
+value_enum: []
+value_info: Valid non-negative integer greater than zero
+separator: ''

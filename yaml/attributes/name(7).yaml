@@ -1,0 +1,7 @@
+tag_scope:
+- slot
+description: Name of shadow tree slot
+value_type: string
+value_enum: []
+value_info: Text
+separator: ''

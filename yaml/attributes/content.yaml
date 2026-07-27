@@ -1,0 +1,7 @@
+tag_scope:
+- meta
+description: Value of the element
+value_type: string
+value_enum: []
+value_info: Text. *Incomplete description. See the full specification.
+separator: ''

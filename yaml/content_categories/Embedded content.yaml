@@ -1,0 +1,13 @@
+elements:
+- audio
+- canvas
+- embed
+- iframe
+- img
+- math
+- object
+- picture
+- svg
+- video
+elements_maybe: []
+exceptions: ''

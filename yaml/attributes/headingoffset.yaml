@@ -1,0 +1,6 @@
+tag_scope: []
+description: Offsets heading levels for descendants
+value_type: int
+value_enum: []
+value_info: Valid non-negative integer between 0 and 8
+separator: ''

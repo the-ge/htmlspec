@@ -1,0 +1,9 @@
+tag_scope:
+- textarea
+description: How the value of the form control is to be wrapped for form submission
+value_type: enum
+value_enum:
+- hard
+- soft
+value_info: ''
+separator: ''

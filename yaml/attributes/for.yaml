@@ -1,0 +1,8 @@
+tag_scope:
+- label
+description: Associate the label with form control
+value_type: string
+value_enum: []
+value_info: ID. *Incomplete description. See the full specification.
+separator: ''
+next: for(2)

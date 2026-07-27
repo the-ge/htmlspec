@@ -1,0 +1,8 @@
+tag_scope:
+- input
+description: Value of the form control
+value_type: string
+value_enum: []
+value_info: Varies. *Incomplete description. See the full specification.
+separator: ''
+next: value(4)

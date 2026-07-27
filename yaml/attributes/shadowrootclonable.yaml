@@ -1,0 +1,7 @@
+tag_scope:
+- template
+description: Sets clonable on a declarative shadow root
+value_type: bool
+value_enum: []
+value_info: Boolean attribute
+separator: ''

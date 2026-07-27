@@ -1,0 +1,7 @@
+tag_scope:
+- dialog
+description: Which user actions will close the dialog
+value_type: string
+value_enum: []
+value_info: '"any"; "closerequest"; "none";'
+separator: ''

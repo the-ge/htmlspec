@@ -1,0 +1,8 @@
+tag_scope:
+- fieldset
+description: Whether the descendant form controls, except any inside legend, are disabled
+value_type: bool
+value_enum: []
+value_info: Boolean attribute
+separator: ''
+next: disabled(3)

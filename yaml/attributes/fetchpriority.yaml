@@ -1,0 +1,12 @@
+tag_scope:
+- img
+- link
+- script
+description: Sets the priority for fetches initiated by the element
+value_type: enum
+value_enum:
+- auto
+- high
+- low
+value_info: ''
+separator: ''

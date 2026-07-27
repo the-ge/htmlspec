@@ -1,0 +1,7 @@
+tag_scope:
+- button
+description: Targets another element to be invoked.
+value_type: string
+value_enum: []
+value_info: ID. *Incomplete description. See the full specification.
+separator: ''

@@ -1,0 +1,6 @@
+tag_scope: []
+description: Keyboard shortcut to activate or focus element
+value_type: string
+value_enum: []
+value_info: Ordered set of unique space-separated tokens, none of which are identical to another, each consisting of one code point in length
+separator: ' '

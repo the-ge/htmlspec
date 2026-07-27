@@ -1,0 +1,7 @@
+tag_scope:
+- input
+description: Allow the color's alpha component to be set
+value_type: bool
+value_enum: []
+value_info: Boolean attribute
+separator: ''

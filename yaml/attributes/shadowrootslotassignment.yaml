@@ -1,0 +1,9 @@
+tag_scope:
+- template
+description: Sets slot assignment on a declarative shadow root
+value_type: enum
+value_enum:
+- manual
+- named
+value_info: ''
+separator: ''

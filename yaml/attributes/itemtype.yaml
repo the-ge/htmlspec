@@ -1,0 +1,6 @@
+tag_scope: []
+description: Item types of a microdata item
+value_type: string
+value_enum: []
+value_info: Unordered set of unique space-separated tokens consisting of valid absolute URLs. *Incomplete description. See the full specification.
+separator: ' '

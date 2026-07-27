@@ -1,0 +1,7 @@
+tag_scope:
+- base
+description: Document base URL
+value_type: string
+value_enum: []
+value_info: Valid URL potentially surrounded by spaces
+separator: ''

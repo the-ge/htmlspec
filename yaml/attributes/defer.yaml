@@ -1,0 +1,7 @@
+tag_scope:
+- script
+description: Defer script execution
+value_type: bool
+value_enum: []
+value_info: Boolean attribute
+separator: ''

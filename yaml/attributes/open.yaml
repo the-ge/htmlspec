@@ -1,0 +1,8 @@
+tag_scope:
+- details
+description: Whether the details are visible
+value_type: bool
+value_enum: []
+value_info: Boolean attribute
+separator: ''
+next: open(2)

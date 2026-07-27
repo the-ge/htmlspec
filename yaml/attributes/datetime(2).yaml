@@ -1,0 +1,7 @@
+tag_scope:
+- time
+description: Machine-readable value
+value_type: string
+value_enum: []
+value_info: Valid month string, valid date string, valid yearless date string, valid time string, valid local date and time string, valid time-zone offset string, valid global date and time string, valid week string, valid non-negative integer, or valid duration string
+separator: ''

@@ -1,0 +1,7 @@
+tag_scope:
+- th
+description: Alternative label to use for the header cell when referencing the cell in other contexts
+value_type: string
+value_enum: []
+value_info: Text. *Incomplete description. See the full specification.
+separator: ''

@@ -1,0 +1,7 @@
+tag_scope:
+- link
+description: Destination for a preload request (for rel="preload" and rel="modulepreload")
+value_type: string
+value_enum: []
+value_info: Preload destination, for rel="preload"; module preload destination, for rel="modulepreload"
+separator: ''
