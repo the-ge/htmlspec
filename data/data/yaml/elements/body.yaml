@@ -1,0 +1,24 @@
+description: Document body
+categories:
+- none
+attributes:
+- onafterprint
+- onbeforeprint
+- onbeforeunload
+- onhashchange
+- onlanguagechange
+- onmessage
+- onmessageerror
+- onoffline
+- ononline
+- onpagehide
+- onpagereveal
+- onpageshow
+- onpageswap
+- onpopstate
+- onrejectionhandled
+- onstorage
+- onunhandledrejection
+- onunload
+children:
+- flow

@@ -1,0 +1,11 @@
+description: Progress bar
+categories:
+- flow
+- labelable
+- palpable
+- phrasing
+attributes:
+- max
+- value
+children:
+- phrasing

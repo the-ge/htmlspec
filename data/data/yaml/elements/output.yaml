@@ -1,0 +1,15 @@
+description: Calculated output value
+categories:
+- flow
+- form-associated
+- labelable
+- listed
+- palpable
+- phrasing
+- resettable
+attributes:
+- for
+- form
+- name
+children:
+- phrasing

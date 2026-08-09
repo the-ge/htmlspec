@@ -1,0 +1,8 @@
+description: Group of columns in a table
+categories:
+- none
+attributes:
+- span
+children:
+- col
+- template

@@ -1,0 +1,7 @@
+description: Root element
+categories:
+- none
+attributes: []
+children:
+- body
+- head

@@ -1,0 +1,8 @@
+description: List
+categories:
+- flow
+- palpable
+attributes: []
+children:
+- li
+- script-supporting elements

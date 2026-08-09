@@ -1,0 +1,9 @@
+description: Machine-readable equivalent
+categories:
+- flow
+- palpable
+- phrasing
+attributes:
+- value
+children:
+- phrasing

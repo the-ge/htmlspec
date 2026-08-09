@@ -1,0 +1,12 @@
+description: Group of options in a list box
+categories:
+- none
+attributes:
+- disabled
+- label
+children:
+- div
+- legend
+- noscript
+- option
+- script-supporting elements

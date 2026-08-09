@@ -1,0 +1,7 @@
+description: Generic flow container, or container for name-value groups in dl elements
+categories:
+- flow
+- palpable
+attributes: []
+children:
+- flow

@@ -1,0 +1,13 @@
+description: Table
+categories:
+- flow
+- palpable
+attributes: []
+children:
+- caption
+- colgroup
+- script-supporting elements
+- tbody
+- tfoot
+- thead
+- tr

@@ -1,0 +1,10 @@
+description: Image map
+categories:
+- flow
+- palpable
+- phrasing
+attributes:
+- name
+children:
+- area
+- transparent

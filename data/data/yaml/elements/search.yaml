@@ -1,0 +1,7 @@
+description: Container for search controls
+categories:
+- flow
+- palpable
+attributes: []
+children:
+- flow

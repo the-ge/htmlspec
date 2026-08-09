@@ -1,0 +1,10 @@
+description: Timed text track
+categories:
+- none
+attributes:
+- default
+- kind
+- label
+- src
+- srclang
+children: []
