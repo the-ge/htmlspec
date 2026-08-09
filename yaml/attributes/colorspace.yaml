@@ -1,9 +1,0 @@
-tag_scope:
-- input
-description: The color space of the serialized color
-value_type: enum
-value_enum:
-- display-p3
-- limited-srgb
-value_info: ''
-separator: ''

@@ -1,7 +1,0 @@
-tag_scope: []
-description: Advisory information for the element
-value_type: string
-value_enum: []
-value_info: Text
-separator: ''
-next: title(2)

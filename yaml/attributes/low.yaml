@@ -1,7 +1,0 @@
-tag_scope:
-- meter
-description: High limit of low range
-value_type: float
-value_enum: []
-value_info: Valid floating-point number. *Incomplete description. See the full specification.
-separator: ''

@@ -1,7 +1,0 @@
-tag_scope:
-- script
-description: Execute script when available, without blocking while fetching
-value_type: bool
-value_enum: []
-value_info: Boolean attribute
-separator: ''

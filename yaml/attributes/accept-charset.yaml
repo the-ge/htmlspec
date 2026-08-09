@@ -1,7 +1,0 @@
-tag_scope:
-- form
-description: Character encodings to use for form submission
-value_type: string
-value_enum: []
-value_info: ASCII case-insensitive match for "UTF-8"
-separator: ''

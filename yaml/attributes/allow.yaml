@@ -1,7 +1,0 @@
-tag_scope:
-- iframe
-description: Permissions policy to be applied to the iframe's contents
-value_type: string
-value_enum: []
-value_info: Serialized permissions policy
-separator: ''

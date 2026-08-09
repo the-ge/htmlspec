@@ -1,7 +1,0 @@
-tag_scope:
-- input
-description: Whether the control is checked
-value_type: bool
-value_enum: []
-value_info: Boolean attribute
-separator: ''

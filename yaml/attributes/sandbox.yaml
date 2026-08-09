@@ -1,7 +1,0 @@
-tag_scope:
-- iframe
-description: Security rules for nested content
-value_type: string
-value_enum: []
-value_info: Unordered set of unique space-separated tokens, ASCII case-insensitive, consisting of "allow-downloads""allow-forms""allow-modals""allow-orientation-lock""allow-pointer-lock""allow-popups""allow-popups-to-escape-sandbox""allow-presentation""allow-same-origin""allow-scripts""allow-top-navigation""allow-top-navigation-by-user-activation""allow-top-navigation-to-custom-protocols"
-separator: ' '

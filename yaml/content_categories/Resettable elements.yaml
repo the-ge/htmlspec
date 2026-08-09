@@ -1,8 +1,0 @@
-elements:
-- custom
-- input
-- output
-- select
-- textarea
-elements_maybe: []
-exceptions: ''

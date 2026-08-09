@@ -1,9 +1,0 @@
-tag_scope:
-- del
-- ins
-description: Date and (optionally) time of the change
-value_type: datetime
-value_enum: []
-value_info: Valid date string with optional time
-separator: ''
-next: datetime(2)

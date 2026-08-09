@@ -1,7 +1,0 @@
-tag_scope:
-- custom
-description: Affects willValidate, plus any behavior added by the custom element author
-value_type: bool
-value_enum: []
-value_info: Boolean attribute
-separator: ''

@@ -1,7 +1,0 @@
-tag_scope:
-- input
-description: Hint for expected file type in file upload controls
-value_type: string
-value_enum: []
-value_info: Set of comma-separated tokens* consisting of valid MIME type strings with no parameters or audio/*, video/*, or image/. *Incomplete description. See the full specification.
-separator: ','

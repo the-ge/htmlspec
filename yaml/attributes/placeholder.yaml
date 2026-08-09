@@ -1,8 +1,0 @@
-tag_scope:
-- input
-- textarea
-description: User-visible label to be placed within the form control
-value_type: string
-value_enum: []
-value_info: Text. *Incomplete description. See the full specification.
-separator: ''

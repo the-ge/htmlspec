@@ -1,8 +1,0 @@
-tag_scope:
-- link
-description: Title of the link
-value_type: string
-value_enum: []
-value_info: Text
-separator: ''
-next: title(5)

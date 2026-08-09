@@ -1,7 +1,0 @@
-tag_scope:
-- track
-description: Enable the track if no other text track is more suitable
-value_type: bool
-value_enum: []
-value_info: Boolean attribute
-separator: ''

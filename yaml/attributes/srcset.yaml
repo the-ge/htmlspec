@@ -1,8 +1,0 @@
-tag_scope:
-- img
-- source
-description: Images to use in different situations, e.g., high-resolution displays, small monitors, etc.
-value_type: string
-value_enum: []
-value_info: Comma-separated list of image candidate strings
-separator: ','

@@ -1,8 +1,0 @@
-tag_scope:
-- input
-- textarea
-description: Maximum length of value
-value_type: int
-value_enum: []
-value_info: Valid non-negative integer
-separator: ''

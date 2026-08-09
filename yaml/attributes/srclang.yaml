@@ -1,7 +1,0 @@
-tag_scope:
-- track
-description: Language of the text track
-value_type: string
-value_enum: []
-value_info: Valid BCP 47 language tag
-separator: ''

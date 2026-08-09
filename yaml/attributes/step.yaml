@@ -1,7 +1,0 @@
-tag_scope:
-- input
-description: Granularity to be matched by the form control's value
-value_type: float
-value_enum: []
-value_info: Valid floating-point number greater than zero, or "any"
-separator: ''

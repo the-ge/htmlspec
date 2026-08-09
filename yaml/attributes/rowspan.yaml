@@ -1,8 +1,0 @@
-tag_scope:
-- td
-- th
-description: Number of rows that the cell is to span
-value_type: int
-value_enum: []
-value_info: Valid non-negative integer
-separator: ''

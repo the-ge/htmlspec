@@ -1,7 +1,0 @@
-tag_scope:
-- ol
-description: Starting value of the list
-value_type: int
-value_enum: []
-value_info: Valid integer
-separator: ''

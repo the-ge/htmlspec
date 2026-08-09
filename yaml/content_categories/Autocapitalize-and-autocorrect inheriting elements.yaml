@@ -1,9 +1,0 @@
-elements:
-- button
-- fieldset
-- input
-- output
-- select
-- textarea
-elements_maybe: []
-exceptions: ''

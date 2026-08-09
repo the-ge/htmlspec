@@ -1,8 +1,0 @@
-tag_scope:
-- meter
-- progress
-description: Current value of the element
-value_type: float
-value_enum: []
-value_info: Valid floating-point number
-separator: ''

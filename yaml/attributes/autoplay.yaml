@@ -1,8 +1,0 @@
-tag_scope:
-- audio
-- video
-description: Hint that the media resource can be started automatically when the page is loaded
-value_type: bool
-value_enum: []
-value_info: Boolean attribute
-separator: ''

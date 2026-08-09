@@ -1,7 +1,0 @@
-tag_scope:
-- template
-description: Enables declarative shadow roots to indicate they will use a custom element registry
-value_type: bool
-value_enum: []
-value_info: Boolean attribute
-separator: ''

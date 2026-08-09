@@ -1,8 +1,0 @@
-tag_scope:
-- a
-- area
-description: Whether to download the resource instead of navigating to it, and its filename if so
-value_type: string
-value_enum: []
-value_info: Text
-separator: ''

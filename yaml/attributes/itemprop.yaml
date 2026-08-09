@@ -1,6 +1,0 @@
-tag_scope: []
-description: Property names of a microdata item
-value_type: string
-value_enum: []
-value_info: Unordered set of unique space-separated tokens consisting of valid absolute URLs, defined property names, or text. *Incomplete description. See the full specification.
-separator: ' '

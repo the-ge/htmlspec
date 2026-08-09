@@ -1,7 +1,0 @@
-tag_scope:
-- area
-description: Coordinates for the shape to be created in an image map
-value_type: string
-value_enum: []
-value_info: Valid list of floating-point numbers. *Incomplete description. See the full specification.
-separator: ','

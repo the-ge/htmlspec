@@ -1,7 +1,0 @@
-tag_scope:
-- link
-description: Relationship between the document containing the hyperlink and the destination resource
-value_type: string
-value_enum: []
-value_info: Unordered set of unique space-separated tokens. *Incomplete description. See the full specification.
-separator: ' '
