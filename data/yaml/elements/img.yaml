@@ -1,0 +1,24 @@
+description: Image
+categories:
+- embedded
+- flow
+- form-associated
+- interactive
+- palpable
+- phrasing
+attributes:
+- alt
+- controls
+- crossorigin
+- decoding
+- fetchpriority
+- height
+- ismap
+- loading
+- referrerpolicy
+- sizes
+- src
+- srcset
+- usemap
+- width
+children: []

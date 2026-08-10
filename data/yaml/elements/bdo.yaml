@@ -1,0 +1,8 @@
+description: Text directionality formatting
+categories:
+- flow
+- palpable
+- phrasing
+attributes: []
+children:
+- phrasing

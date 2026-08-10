@@ -1,0 +1,8 @@
+description: Table row
+categories:
+- none
+attributes: []
+children:
+- script-supporting elements
+- td
+- th

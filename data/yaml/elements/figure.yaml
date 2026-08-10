@@ -1,0 +1,8 @@
+description: Figure with optional caption
+categories:
+- flow
+- palpable
+attributes: []
+children:
+- figcaption
+- flow

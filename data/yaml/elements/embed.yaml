@@ -1,0 +1,14 @@
+description: Plugin
+categories:
+- embedded
+- flow
+- interactive
+- palpable
+- phrasing
+attributes:
+- any
+- height
+- src
+- type
+- width
+children: []

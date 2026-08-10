@@ -1,0 +1,12 @@
+description: Option in a list box or combo box control
+categories:
+- none
+attributes:
+- disabled
+- label
+- selected
+- value
+children:
+- div
+- phrasing
+- text

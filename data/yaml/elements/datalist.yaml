@@ -1,0 +1,9 @@
+description: Container for options for combo box control
+categories:
+- flow
+- phrasing
+attributes: []
+children:
+- option
+- phrasing
+- script-supporting elements

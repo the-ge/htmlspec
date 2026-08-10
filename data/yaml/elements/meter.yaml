@@ -1,0 +1,15 @@
+description: Gauge
+categories:
+- flow
+- labelable
+- palpable
+- phrasing
+attributes:
+- high
+- low
+- max
+- min
+- optimum
+- value
+children:
+- phrasing

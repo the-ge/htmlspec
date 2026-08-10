@@ -1,0 +1,20 @@
+description: Audio player
+categories:
+- embedded
+- flow
+- interactive
+- palpable
+- phrasing
+attributes:
+- autoplay
+- controls
+- crossorigin
+- loading
+- loop
+- muted
+- preload
+- src
+children:
+- source
+- track
+- transparent

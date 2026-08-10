@@ -1,0 +1,8 @@
+description: Generic phrasing container
+categories:
+- flow
+- palpable
+- phrasing
+attributes: []
+children:
+- phrasing

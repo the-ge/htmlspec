@@ -1,0 +1,17 @@
+description: Hyperlink
+categories:
+- flow
+- interactive
+- palpable
+- phrasing
+attributes:
+- download
+- href
+- hreflang
+- ping
+- referrerpolicy
+- rel
+- target
+- type
+children:
+- transparent

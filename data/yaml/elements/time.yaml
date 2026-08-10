@@ -1,0 +1,9 @@
+description: Machine-readable equivalent of date- or time-related data
+categories:
+- flow
+- palpable
+- phrasing
+attributes:
+- datetime
+children:
+- phrasing

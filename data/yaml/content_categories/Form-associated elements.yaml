@@ -1,0 +1,14 @@
+elements:
+- button
+- custom
+- fieldset
+- img
+- input
+- label
+- object
+- output
+- select
+- textarea
+elements_maybe: []
+exceptions: ''
+url: https://html.spec.whatwg.org/multipage/forms.html#form-associated-element

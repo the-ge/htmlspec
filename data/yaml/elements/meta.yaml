@@ -1,0 +1,12 @@
+description: Text metadata
+categories:
+- flow
+- metadata
+- phrasing
+attributes:
+- charset
+- content
+- http-equiv
+- media
+- name
+children: []
