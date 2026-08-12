@@ -7,7 +7,7 @@
     "aria": "Wed, 05 Aug 2026 10:09:42 GMT"
   },
   "counts": {
-    "aria_roles": 61,
+    "aria_roles": 100,
     "attributes": 145,
     "content_categories": 15,
     "elements": 115,
@@ -17,6 +17,6 @@
     "input_types": 22
   },
   "generator_release": "",
-  "generator_tag": "f305d54",
-  "generator_commit_id": "f305d5432eecbfc239caa805b9d1c14252c884b9"
+  "generator_tag": "85653da",
+  "generator_commit_id": "85653da836746d4006e610bb6f2b279240e0fcdb"
 }

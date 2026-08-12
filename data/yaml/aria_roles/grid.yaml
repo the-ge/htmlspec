@@ -1,0 +1,97 @@
+url: https://w3c.github.io/aria/#grid
+description: "A composite widget containing a collection of one or more rows with one or more cells where some or all cells in the grid are focusable by using methods of\n              two-dimensional navigation, such as directional arrow keys."
+is_abstract: false
+parents:
+  composite: https://w3c.github.io/aria/#composite
+  table: https://w3c.github.io/aria/#table
+children:
+  treegrid: https://w3c.github.io/aria/#treegrid
+states:
+  aria-busy:
+    url: https://w3c.github.io/aria/#aria-busy
+    deprecated_since: ''
+  aria-current:
+    url: https://w3c.github.io/aria/#aria-current
+    deprecated_since: ''
+  aria-disabled:
+    url: https://w3c.github.io/aria/#aria-disabled
+    deprecated_since: ''
+  aria-grabbed:
+    url: https://w3c.github.io/aria/#aria-grabbed
+    deprecated_since: ''
+  aria-hidden:
+    url: https://w3c.github.io/aria/#aria-hidden
+    deprecated_since: ''
+  aria-invalid:
+    url: https://w3c.github.io/aria/#aria-invalid
+    deprecated_since: '1.2'
+properties:
+  aria-multiselectable:
+    url: https://w3c.github.io/aria/#aria-multiselectable
+    deprecated_since: ''
+  aria-readonly:
+    url: https://w3c.github.io/aria/#aria-readonly
+    deprecated_since: ''
+  aria-activedescendant:
+    url: https://w3c.github.io/aria/#aria-activedescendant
+    deprecated_since: ''
+  aria-atomic:
+    url: https://w3c.github.io/aria/#aria-atomic
+    deprecated_since: ''
+  aria-braillelabel:
+    url: https://w3c.github.io/aria/#aria-braillelabel
+    deprecated_since: ''
+  aria-brailleroledescription:
+    url: https://w3c.github.io/aria/#aria-brailleroledescription
+    deprecated_since: ''
+  aria-colcount:
+    url: https://w3c.github.io/aria/#aria-colcount
+    deprecated_since: ''
+  aria-controls:
+    url: https://w3c.github.io/aria/#aria-controls
+    deprecated_since: ''
+  aria-describedby:
+    url: https://w3c.github.io/aria/#aria-describedby
+    deprecated_since: ''
+  aria-description:
+    url: https://w3c.github.io/aria/#aria-description
+    deprecated_since: ''
+  aria-details:
+    url: https://w3c.github.io/aria/#aria-details
+    deprecated_since: ''
+  aria-dropeffect:
+    url: https://w3c.github.io/aria/#aria-dropeffect
+    deprecated_since: ''
+  aria-errormessage:
+    url: https://w3c.github.io/aria/#aria-errormessage
+    deprecated_since: '1.2'
+  aria-flowto:
+    url: https://w3c.github.io/aria/#aria-flowto
+    deprecated_since: ''
+  aria-haspopup:
+    url: https://w3c.github.io/aria/#aria-haspopup
+    deprecated_since: '1.2'
+  aria-keyshortcuts:
+    url: https://w3c.github.io/aria/#aria-keyshortcuts
+    deprecated_since: ''
+  aria-label:
+    url: https://w3c.github.io/aria/#aria-label
+    deprecated_since: ''
+  aria-labelledby:
+    url: https://w3c.github.io/aria/#aria-labelledby
+    deprecated_since: ''
+  aria-live:
+    url: https://w3c.github.io/aria/#aria-live
+    deprecated_since: ''
+  aria-owns:
+    url: https://w3c.github.io/aria/#aria-owns
+    deprecated_since: ''
+  aria-relevant:
+    url: https://w3c.github.io/aria/#aria-relevant
+    deprecated_since: ''
+  aria-roledescription:
+    url: https://w3c.github.io/aria/#aria-roledescription
+    deprecated_since: ''
+  aria-rowcount:
+    url: https://w3c.github.io/aria/#aria-rowcount
+    deprecated_since: ''
