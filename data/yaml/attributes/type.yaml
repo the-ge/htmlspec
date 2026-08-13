@@ -1,70 +1,106 @@
 a:
-  description: Hint for the type of the referenced resource
   value_type: string
   value_enum: []
-  value_info: Valid MIME type string
-  is_more_value_info_required: false
   separator: ''
-  urls:
-  - https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-type
-  - https://mimesniff.spec.whatwg.org/#valid-mime-type
+  tag_url: https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-type
+  value_info:
+  - !!python/tuple
+    - Valid MIME type string
+    - https://mimesniff.spec.whatwg.org/#valid-mime-type
+  is_more_value_info_required: false
+  description:
+  - !!python/tuple
+    - Hint for the type of the referenced resource
+    - ''
 link:
-  description: Hint for the type of the referenced resource
   value_type: string
   value_enum: []
-  value_info: Valid MIME type string
-  is_more_value_info_required: false
   separator: ''
-  urls:
-  - https://html.spec.whatwg.org/multipage/semantics.html#attr-link-type
-  - https://mimesniff.spec.whatwg.org/#valid-mime-type
+  tag_url: https://html.spec.whatwg.org/multipage/semantics.html#attr-link-type
+  value_info:
+  - !!python/tuple
+    - Valid MIME type string
+    - https://mimesniff.spec.whatwg.org/#valid-mime-type
+  is_more_value_info_required: false
+  description:
+  - !!python/tuple
+    - Hint for the type of the referenced resource
+    - ''
 button:
-  description: Type of button
-  value_type: enum
-  value_enum:
-  - button
-  - reset
-  - submit
-  value_info: ''
-  is_more_value_info_required: false
+  value_type: string
+  value_enum: []
   separator: ''
-  urls:
-  - https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-type
-  - https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-type-button
-  - https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-type-reset
-  - https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-type-submit
+  tag_url: https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-type
+  value_info:
+  - !!python/tuple
+    - '"'
+    - ''
+  - !!python/tuple
+    - submit
+    - https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-type-submit
+  - !!python/tuple
+    - "\";\n          \""
+    - ''
+  - !!python/tuple
+    - reset
+    - https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-type-reset
+  - !!python/tuple
+    - "\";\n          \""
+    - ''
+  - !!python/tuple
+    - button
+    - https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-type-button
+  - !!python/tuple
+    - '"'
+    - ''
+  is_more_value_info_required: false
+  description:
+  - !!python/tuple
+    - Type of button
+    - ''
 embed:
-  description: Type of embedded resource
   value_type: string
   value_enum: []
-  value_info: Valid MIME type string
-  is_more_value_info_required: false
   separator: ''
-  urls:
-  - https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-embed-type
-  - https://mimesniff.spec.whatwg.org/#valid-mime-type
+  tag_url: https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-embed-type
+  value_info:
+  - !!python/tuple
+    - Valid MIME type string
+    - https://mimesniff.spec.whatwg.org/#valid-mime-type
+  is_more_value_info_required: false
+  description:
+  - !!python/tuple
+    - Type of embedded resource
+    - ''
 object:
-  description: Type of embedded resource
   value_type: string
   value_enum: []
-  value_info: Valid MIME type string
-  is_more_value_info_required: false
   separator: ''
-  urls:
-  - https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-object-type
-  - https://mimesniff.spec.whatwg.org/#valid-mime-type
+  tag_url: https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-object-type
+  value_info:
+  - !!python/tuple
+    - Valid MIME type string
+    - https://mimesniff.spec.whatwg.org/#valid-mime-type
+  is_more_value_info_required: false
+  description:
+  - !!python/tuple
+    - Type of embedded resource
+    - ''
 source:
-  description: Type of embedded resource
   value_type: string
   value_enum: []
-  value_info: Valid MIME type string
-  is_more_value_info_required: false
   separator: ''
-  urls:
-  - https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-type
-  - https://mimesniff.spec.whatwg.org/#valid-mime-type
+  tag_url: https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-type
+  value_info:
+  - !!python/tuple
+    - Valid MIME type string
+    - https://mimesniff.spec.whatwg.org/#valid-mime-type
+  is_more_value_info_required: false
+  description:
+  - !!python/tuple
+    - Type of embedded resource
+    - ''
 input:
-  description: Type of form control
   value_type: enum
   value_enum:
   - button
@@ -89,59 +125,162 @@ input:
   - time
   - url
   - week
-  value_info: ''
-  is_more_value_info_required: false
   separator: ''
-  urls:
-  - https://html.spec.whatwg.org/dev/input.html#button-state-(type=button)
-  - https://html.spec.whatwg.org/dev/input.html#checkbox-state-(type=checkbox)
-  - https://html.spec.whatwg.org/dev/input.html#color-state-(type=color)
-  - https://html.spec.whatwg.org/dev/input.html#date-state-(type=date)
-  - https://html.spec.whatwg.org/dev/input.html#email-state-(type=email)
-  - https://html.spec.whatwg.org/dev/input.html#file-upload-state-(type=file)
-  - https://html.spec.whatwg.org/dev/input.html#hidden-state-(type=hidden)
-  - https://html.spec.whatwg.org/dev/input.html#image-button-state-(type=image)
-  - https://html.spec.whatwg.org/dev/input.html#local-date-and-time-state-(type=datetime-local)
-  - https://html.spec.whatwg.org/dev/input.html#month-state-(type=month)
-  - https://html.spec.whatwg.org/dev/input.html#number-state-(type=number)
-  - https://html.spec.whatwg.org/dev/input.html#password-state-(type=password)
-  - https://html.spec.whatwg.org/dev/input.html#radio-button-state-(type=radio)
-  - https://html.spec.whatwg.org/dev/input.html#range-state-(type=range)
-  - https://html.spec.whatwg.org/dev/input.html#reset-button-state-(type=reset)
-  - https://html.spec.whatwg.org/dev/input.html#submit-button-state-(type=submit)
-  - https://html.spec.whatwg.org/dev/input.html#telephone-state-(type=tel)
-  - https://html.spec.whatwg.org/dev/input.html#text-(type=text)-state-and-search-state-(type=search)
-  - https://html.spec.whatwg.org/dev/input.html#time-state-(type=time)
-  - https://html.spec.whatwg.org/dev/input.html#url-state-(type=url)
-  - https://html.spec.whatwg.org/dev/input.html#week-state-(type=week)
-  - https://html.spec.whatwg.org/multipage/input.html#attr-input-type
+  tag_url: https://html.spec.whatwg.org/multipage/input.html#attr-input-type
+  value_info:
+  - !!python/tuple
+    - hidden
+    - https://html.spec.whatwg.org/dev/input.html#hidden-state-(type=hidden)
+  - !!python/tuple
+    - text
+    - https://html.spec.whatwg.org/dev/input.html#text-(type=text)-state-and-search-state-(type=search)
+  - !!python/tuple
+    - search
+    - https://html.spec.whatwg.org/dev/input.html#text-(type=text)-state-and-search-state-(type=search)
+  - !!python/tuple
+    - tel
+    - https://html.spec.whatwg.org/dev/input.html#telephone-state-(type=tel)
+  - !!python/tuple
+    - url
+    - https://html.spec.whatwg.org/dev/input.html#url-state-(type=url)
+  - !!python/tuple
+    - email
+    - https://html.spec.whatwg.org/dev/input.html#email-state-(type=email)
+  - !!python/tuple
+    - password
+    - https://html.spec.whatwg.org/dev/input.html#password-state-(type=password)
+  - !!python/tuple
+    - date
+    - https://html.spec.whatwg.org/dev/input.html#date-state-(type=date)
+  - !!python/tuple
+    - month
+    - https://html.spec.whatwg.org/dev/input.html#month-state-(type=month)
+  - !!python/tuple
+    - week
+    - https://html.spec.whatwg.org/dev/input.html#week-state-(type=week)
+  - !!python/tuple
+    - time
+    - https://html.spec.whatwg.org/dev/input.html#time-state-(type=time)
+  - !!python/tuple
+    - datetime-local
+    - https://html.spec.whatwg.org/dev/input.html#local-date-and-time-state-(type=datetime-local)
+  - !!python/tuple
+    - number
+    - https://html.spec.whatwg.org/dev/input.html#number-state-(type=number)
+  - !!python/tuple
+    - range
+    - https://html.spec.whatwg.org/dev/input.html#range-state-(type=range)
+  - !!python/tuple
+    - color
+    - https://html.spec.whatwg.org/dev/input.html#color-state-(type=color)
+  - !!python/tuple
+    - checkbox
+    - https://html.spec.whatwg.org/dev/input.html#checkbox-state-(type=checkbox)
+  - !!python/tuple
+    - radio
+    - https://html.spec.whatwg.org/dev/input.html#radio-button-state-(type=radio)
+  - !!python/tuple
+    - file
+    - https://html.spec.whatwg.org/dev/input.html#file-upload-state-(type=file)
+  - !!python/tuple
+    - submit
+    - https://html.spec.whatwg.org/dev/input.html#submit-button-state-(type=submit)
+  - !!python/tuple
+    - image
+    - https://html.spec.whatwg.org/dev/input.html#image-button-state-(type=image)
+  - !!python/tuple
+    - reset
+    - https://html.spec.whatwg.org/dev/input.html#reset-button-state-(type=reset)
+  - !!python/tuple
+    - button
+    - https://html.spec.whatwg.org/dev/input.html#button-state-(type=button)
+  is_more_value_info_required: false
+  description:
+  - !!python/tuple
+    - Type of form control
+    - ''
 ol:
-  description: Kind of list marker
-  value_type: enum
-  value_enum:
-  - '1'
-  - A
-  - I
-  - a
-  - i
-  value_info: ''
-  is_more_value_info_required: false
-  separator: ''
-  urls:
-  - https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-type
-  - https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-type-keyword-decimal
-  - https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-type-keyword-lower-alpha
-  - https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-type-keyword-lower-roman
-  - https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-type-keyword-upper-alpha
-  - https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-type-keyword-upper-roman
-script:
-  description: Type of script
   value_type: string
   value_enum: []
-  value_info: '"module"; "importmap"; "speculationrules"; a valid MIME type string that is not a JavaScript MIME type essence match'
-  is_more_value_info_required: false
   separator: ''
-  urls:
-  - https://html.spec.whatwg.org/multipage/scripting.html#attr-script-type
-  - https://mimesniff.spec.whatwg.org/#javascript-mime-type-essence-match
-  - https://mimesniff.spec.whatwg.org/#valid-mime-type
+  tag_url: https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-type
+  value_info:
+  - !!python/tuple
+    - '"'
+    - ''
+  - !!python/tuple
+    - '1'
+    - https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-type-keyword-decimal
+  - !!python/tuple
+    - "\";\n          \""
+    - ''
+  - !!python/tuple
+    - a
+    - https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-type-keyword-lower-alpha
+  - !!python/tuple
+    - "\";\n          \""
+    - ''
+  - !!python/tuple
+    - A
+    - https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-type-keyword-upper-alpha
+  - !!python/tuple
+    - "\";\n          \""
+    - ''
+  - !!python/tuple
+    - i
+    - https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-type-keyword-lower-roman
+  - !!python/tuple
+    - "\";\n          \""
+    - ''
+  - !!python/tuple
+    - I
+    - https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-type-keyword-upper-roman
+  - !!python/tuple
+    - '"'
+    - ''
+  is_more_value_info_required: false
+  description:
+  - !!python/tuple
+    - Kind of list marker
+    - ''
+script:
+  value_type: string
+  value_enum: []
+  separator: ''
+  tag_url: https://html.spec.whatwg.org/multipage/scripting.html#attr-script-type
+  value_info:
+  - !!python/tuple
+    - '"'
+    - ''
+  - !!python/tuple
+    - module
+    - ''
+  - !!python/tuple
+    - '"; "'
+    - ''
+  - !!python/tuple
+    - importmap
+    - ''
+  - !!python/tuple
+    - '"; "'
+    - ''
+  - !!python/tuple
+    - speculationrules
+    - ''
+  - !!python/tuple
+    - '"; a'
+    - ''
+  - !!python/tuple
+    - valid MIME type string
+    - https://mimesniff.spec.whatwg.org/#valid-mime-type
+  - !!python/tuple
+    - that is not a
+    - ''
+  - !!python/tuple
+    - JavaScript MIME type essence match
+    - https://mimesniff.spec.whatwg.org/#javascript-mime-type-essence-match
+  is_more_value_info_required: false
+  description:
+  - !!python/tuple
+    - Type of script
+    - ''

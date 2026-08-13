@@ -1,21 +1,50 @@
 all:
-  description: Recommended autocapitalization behavior (for supported input methods)
-  value_type: enum
-  value_enum:
-  - characters
-  - none
-  - 'off'
-  - 'on'
-  - sentences
-  - words
-  value_info: ''
-  is_more_value_info_required: false
+  value_type: string
+  value_enum: []
   separator: ''
-  urls:
-  - https://html.spec.whatwg.org/multipage/interaction.html#attr-autocapitalize
-  - https://html.spec.whatwg.org/multipage/interaction.html#attr-autocapitalize-characters
-  - https://html.spec.whatwg.org/multipage/interaction.html#attr-autocapitalize-none
-  - https://html.spec.whatwg.org/multipage/interaction.html#attr-autocapitalize-off
-  - https://html.spec.whatwg.org/multipage/interaction.html#attr-autocapitalize-on
-  - https://html.spec.whatwg.org/multipage/interaction.html#attr-autocapitalize-sentences
-  - https://html.spec.whatwg.org/multipage/interaction.html#attr-autocapitalize-words
+  tag_url: https://html.spec.whatwg.org/multipage/interaction.html#attr-autocapitalize
+  value_info:
+  - !!python/tuple
+    - '"'
+    - ''
+  - !!python/tuple
+    - 'on'
+    - https://html.spec.whatwg.org/multipage/interaction.html#attr-autocapitalize-on
+  - !!python/tuple
+    - "\";\n          \""
+    - ''
+  - !!python/tuple
+    - 'off'
+    - https://html.spec.whatwg.org/multipage/interaction.html#attr-autocapitalize-off
+  - !!python/tuple
+    - "\";\n          \""
+    - ''
+  - !!python/tuple
+    - none
+    - https://html.spec.whatwg.org/multipage/interaction.html#attr-autocapitalize-none
+  - !!python/tuple
+    - "\";\n          \""
+    - ''
+  - !!python/tuple
+    - sentences
+    - https://html.spec.whatwg.org/multipage/interaction.html#attr-autocapitalize-sentences
+  - !!python/tuple
+    - "\";\n          \""
+    - ''
+  - !!python/tuple
+    - words
+    - https://html.spec.whatwg.org/multipage/interaction.html#attr-autocapitalize-words
+  - !!python/tuple
+    - "\";\n          \""
+    - ''
+  - !!python/tuple
+    - characters
+    - https://html.spec.whatwg.org/multipage/interaction.html#attr-autocapitalize-characters
+  - !!python/tuple
+    - '"'
+    - ''
+  is_more_value_info_required: false
+  description:
+  - !!python/tuple
+    - Recommended autocapitalization behavior (for supported input methods)
+    - ''

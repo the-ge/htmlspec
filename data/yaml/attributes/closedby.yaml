@@ -1,12 +1,32 @@
 dialog:
-  description: Which user actions will close the dialog
   value_type: string
   value_enum: []
-  value_info: '"any"; "closerequest"; "none";'
-  is_more_value_info_required: false
   separator: ''
-  urls:
-  - https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-dialog-closedby
-  - https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-dialog-closedby-any
-  - https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-dialog-closedby-closerequest
-  - https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-dialog-closedby-none
+  tag_url: https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-dialog-closedby
+  value_info:
+  - !!python/tuple
+    - '"'
+    - ''
+  - !!python/tuple
+    - any
+    - https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-dialog-closedby-any
+  - !!python/tuple
+    - "\";\n          \""
+    - ''
+  - !!python/tuple
+    - closerequest
+    - https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-dialog-closedby-closerequest
+  - !!python/tuple
+    - "\";\n          \""
+    - ''
+  - !!python/tuple
+    - none
+    - https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-dialog-closedby-none
+  - !!python/tuple
+    - '";'
+    - ''
+  is_more_value_info_required: false
+  description:
+  - !!python/tuple
+    - Which user actions will close the dialog
+    - ''

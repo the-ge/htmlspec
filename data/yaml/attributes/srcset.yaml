@@ -1,20 +1,34 @@
 img:
-  description: Images to use in different situations, e.g., high-resolution displays, small monitors, etc.
   value_type: string
   value_enum: []
-  value_info: Comma-separated list of image candidate strings
-  is_more_value_info_required: false
   separator: ','
-  urls:
-  - https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-srcset
-  - https://html.spec.whatwg.org/multipage/images.html#image-candidate-string
+  tag_url: https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-srcset
+  value_info:
+  - !!python/tuple
+    - Comma-separated list of
+    - ''
+  - !!python/tuple
+    - image candidate strings
+    - https://html.spec.whatwg.org/multipage/images.html#image-candidate-string
+  is_more_value_info_required: false
+  description:
+  - !!python/tuple
+    - Images to use in different situations, e.g., high-resolution displays, small monitors, etc.
+    - ''
 source:
-  description: Images to use in different situations, e.g., high-resolution displays, small monitors, etc.
   value_type: string
   value_enum: []
-  value_info: Comma-separated list of image candidate strings
-  is_more_value_info_required: false
   separator: ','
-  urls:
-  - https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-srcset
-  - https://html.spec.whatwg.org/multipage/images.html#image-candidate-string
+  tag_url: https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-srcset
+  value_info:
+  - !!python/tuple
+    - Comma-separated list of
+    - ''
+  - !!python/tuple
+    - image candidate strings
+    - https://html.spec.whatwg.org/multipage/images.html#image-candidate-string
+  is_more_value_info_required: false
+  description:
+  - !!python/tuple
+    - Images to use in different situations, e.g., high-resolution displays, small monitors, etc.
+    - ''

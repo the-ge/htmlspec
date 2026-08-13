@@ -1,14 +1,29 @@
 textarea:
-  description: How the value of the form control is to be wrapped for form submission
-  value_type: enum
-  value_enum:
-  - hard
-  - soft
-  value_info: ''
-  is_more_value_info_required: false
+  value_type: string
+  value_enum: []
   separator: ''
-  urls:
-  - https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-submission-2
-  - https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-wrap
-  - https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-wrap-hard
-  - https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-wrap-soft
+  tag_url: https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-wrap
+  value_info:
+  - !!python/tuple
+    - '"'
+    - ''
+  - !!python/tuple
+    - soft
+    - https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-wrap-soft
+  - !!python/tuple
+    - "\";\n          \""
+    - ''
+  - !!python/tuple
+    - hard
+    - https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-wrap-hard
+  - !!python/tuple
+    - '"'
+    - ''
+  is_more_value_info_required: false
+  description:
+  - !!python/tuple
+    - How the value of the form control is to be wrapped for
+    - ''
+  - !!python/tuple
+    - form submission
+    - https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-submission-2

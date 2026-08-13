@@ -1,70 +1,130 @@
 audio:
-  description: How the element handles crossorigin requests
-  value_type: enum
-  value_enum:
-  - ''
-  - anonymous
-  - use-credentials
-  value_info: ''
-  is_more_value_info_required: false
+  value_type: string
+  value_enum: []
   separator: ''
-  urls:
-  - https://html.spec.whatwg.org/multipage/media.html#attr-media-crossorigin
-  - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-anonymous-keyword
-  - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-use-credentials-keyword
+  tag_url: https://html.spec.whatwg.org/multipage/media.html#attr-media-crossorigin
+  value_info:
+  - !!python/tuple
+    - '"'
+    - ''
+  - !!python/tuple
+    - anonymous
+    - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-anonymous-keyword
+  - !!python/tuple
+    - "\";\n          \""
+    - ''
+  - !!python/tuple
+    - use-credentials
+    - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-use-credentials-keyword
+  - !!python/tuple
+    - "\";\n          the empty string"
+    - ''
+  is_more_value_info_required: false
+  description:
+  - !!python/tuple
+    - How the element handles crossorigin requests
+    - ''
 img:
-  description: How the element handles crossorigin requests
-  value_type: enum
-  value_enum:
-  - ''
-  - anonymous
-  - use-credentials
-  value_info: ''
-  is_more_value_info_required: false
+  value_type: string
+  value_enum: []
   separator: ''
-  urls:
-  - https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-crossorigin
-  - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-anonymous-keyword
-  - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-use-credentials-keyword
+  tag_url: https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-crossorigin
+  value_info:
+  - !!python/tuple
+    - '"'
+    - ''
+  - !!python/tuple
+    - anonymous
+    - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-anonymous-keyword
+  - !!python/tuple
+    - "\";\n          \""
+    - ''
+  - !!python/tuple
+    - use-credentials
+    - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-use-credentials-keyword
+  - !!python/tuple
+    - "\";\n          the empty string"
+    - ''
+  is_more_value_info_required: false
+  description:
+  - !!python/tuple
+    - How the element handles crossorigin requests
+    - ''
 link:
-  description: How the element handles crossorigin requests
-  value_type: enum
-  value_enum:
-  - ''
-  - anonymous
-  - use-credentials
-  value_info: ''
-  is_more_value_info_required: false
+  value_type: string
+  value_enum: []
   separator: ''
-  urls:
-  - https://html.spec.whatwg.org/multipage/semantics.html#attr-link-crossorigin
-  - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-anonymous-keyword
-  - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-use-credentials-keyword
+  tag_url: https://html.spec.whatwg.org/multipage/semantics.html#attr-link-crossorigin
+  value_info:
+  - !!python/tuple
+    - '"'
+    - ''
+  - !!python/tuple
+    - anonymous
+    - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-anonymous-keyword
+  - !!python/tuple
+    - "\";\n          \""
+    - ''
+  - !!python/tuple
+    - use-credentials
+    - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-use-credentials-keyword
+  - !!python/tuple
+    - "\";\n          the empty string"
+    - ''
+  is_more_value_info_required: false
+  description:
+  - !!python/tuple
+    - How the element handles crossorigin requests
+    - ''
 script:
-  description: How the element handles crossorigin requests
-  value_type: enum
-  value_enum:
-  - ''
-  - anonymous
-  - use-credentials
-  value_info: ''
-  is_more_value_info_required: false
+  value_type: string
+  value_enum: []
   separator: ''
-  urls:
-  - https://html.spec.whatwg.org/multipage/scripting.html#attr-script-crossorigin
-  - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-anonymous-keyword
-  - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-use-credentials-keyword
+  tag_url: https://html.spec.whatwg.org/multipage/scripting.html#attr-script-crossorigin
+  value_info:
+  - !!python/tuple
+    - '"'
+    - ''
+  - !!python/tuple
+    - anonymous
+    - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-anonymous-keyword
+  - !!python/tuple
+    - "\";\n          \""
+    - ''
+  - !!python/tuple
+    - use-credentials
+    - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-use-credentials-keyword
+  - !!python/tuple
+    - "\";\n          the empty string"
+    - ''
+  is_more_value_info_required: false
+  description:
+  - !!python/tuple
+    - How the element handles crossorigin requests
+    - ''
 video:
-  description: How the element handles crossorigin requests
-  value_type: enum
-  value_enum:
-  - ''
-  - anonymous
-  - use-credentials
-  value_info: ''
-  is_more_value_info_required: false
+  value_type: string
+  value_enum: []
   separator: ''
-  urls:
-  - https://html.spec.whatwg.org/multipage/media.html#attr-media-crossorigin
-  - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-anonymous-keyword
-  - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-use-credentials-keyword
+  tag_url: https://html.spec.whatwg.org/multipage/media.html#attr-media-crossorigin
+  value_info:
+  - !!python/tuple
+    - '"'
+    - ''
+  - !!python/tuple
+    - anonymous
+    - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-anonymous-keyword
+  - !!python/tuple
+    - "\";\n          \""
+    - ''
+  - !!python/tuple
+    - use-credentials
+    - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-use-credentials-keyword
+  - !!python/tuple
+    - "\";\n          the empty string"
+    - ''
+  is_more_value_info_required: false
+  description:
+  - !!python/tuple
+    - How the element handles crossorigin requests
+    - ''

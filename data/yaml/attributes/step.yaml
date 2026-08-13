@@ -1,10 +1,23 @@
 input:
-  description: Granularity to be matched by the form control's value
   value_type: float
   value_enum: []
-  value_info: Valid floating-point number greater than zero, or "any"
-  is_more_value_info_required: false
   separator: ''
-  urls:
-  - https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-floating-point-number
-  - https://html.spec.whatwg.org/multipage/input.html#attr-input-step
+  tag_url: https://html.spec.whatwg.org/multipage/input.html#attr-input-step
+  value_info:
+  - !!python/tuple
+    - Valid floating-point number
+    - https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-floating-point-number
+  - !!python/tuple
+    - greater than zero, or "
+    - ''
+  - !!python/tuple
+    - any
+    - ''
+  - !!python/tuple
+    - '"'
+    - ''
+  is_more_value_info_required: false
+  description:
+  - !!python/tuple
+    - Granularity to be matched by the form control's value
+    - ''

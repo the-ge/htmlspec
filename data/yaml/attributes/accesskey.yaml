@@ -1,11 +1,23 @@
 all:
-  description: Keyboard shortcut to activate or focus element
   value_type: string
   value_enum: []
-  value_info: Ordered set of unique space-separated tokens, none of which are identical to another, each consisting of one code point in length
-  is_more_value_info_required: false
   separator: ' '
-  urls:
-  - https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#ordered-set-of-unique-space-separated-tokens
-  - https://html.spec.whatwg.org/multipage/interaction.html#the-accesskey-attribute
-  - https://infra.spec.whatwg.org/#string-is
+  tag_url: https://html.spec.whatwg.org/multipage/interaction.html#the-accesskey-attribute
+  value_info:
+  - !!python/tuple
+    - Ordered set of unique space-separated tokens
+    - https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#ordered-set-of-unique-space-separated-tokens
+  - !!python/tuple
+    - ', none of which are'
+    - ''
+  - !!python/tuple
+    - identical to
+    - https://infra.spec.whatwg.org/#string-is
+  - !!python/tuple
+    - another, each consisting of one code point in length
+    - ''
+  is_more_value_info_required: false
+  description:
+  - !!python/tuple
+    - Keyboard shortcut to activate or focus element
+    - ''

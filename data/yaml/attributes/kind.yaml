@@ -1,19 +1,44 @@
 track:
-  description: The type of text track
-  value_type: enum
-  value_enum:
-  - captions
-  - chapters
-  - descriptions
-  - metadata
-  - subtitles
-  value_info: ''
-  is_more_value_info_required: false
+  value_type: string
+  value_enum: []
   separator: ''
-  urls:
-  - https://html.spec.whatwg.org/multipage/media.html#attr-track-kind
-  - https://html.spec.whatwg.org/multipage/media.html#attr-track-kind-keyword-captions
-  - https://html.spec.whatwg.org/multipage/media.html#attr-track-kind-keyword-chapters
-  - https://html.spec.whatwg.org/multipage/media.html#attr-track-kind-keyword-descriptions
-  - https://html.spec.whatwg.org/multipage/media.html#attr-track-kind-keyword-metadata
-  - https://html.spec.whatwg.org/multipage/media.html#attr-track-kind-keyword-subtitles
+  tag_url: https://html.spec.whatwg.org/multipage/media.html#attr-track-kind
+  value_info:
+  - !!python/tuple
+    - '"'
+    - ''
+  - !!python/tuple
+    - subtitles
+    - https://html.spec.whatwg.org/multipage/media.html#attr-track-kind-keyword-subtitles
+  - !!python/tuple
+    - "\";\n          \""
+    - ''
+  - !!python/tuple
+    - captions
+    - https://html.spec.whatwg.org/multipage/media.html#attr-track-kind-keyword-captions
+  - !!python/tuple
+    - "\";\n          \""
+    - ''
+  - !!python/tuple
+    - descriptions
+    - https://html.spec.whatwg.org/multipage/media.html#attr-track-kind-keyword-descriptions
+  - !!python/tuple
+    - "\";\n          \""
+    - ''
+  - !!python/tuple
+    - chapters
+    - https://html.spec.whatwg.org/multipage/media.html#attr-track-kind-keyword-chapters
+  - !!python/tuple
+    - "\";\n          \""
+    - ''
+  - !!python/tuple
+    - metadata
+    - https://html.spec.whatwg.org/multipage/media.html#attr-track-kind-keyword-metadata
+  - !!python/tuple
+    - '"'
+    - ''
+  is_more_value_info_required: false
+  description:
+  - !!python/tuple
+    - The type of text track
+    - ''

@@ -1,10 +1,14 @@
 all:
-  description: Prevents a heading offset computation from traversing beyond the element with the attribute
   value_type: bool
   value_enum: []
-  value_info: Boolean attribute
-  is_more_value_info_required: false
   separator: ''
-  urls:
-  - https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute
-  - https://html.spec.whatwg.org/multipage/interaction.html#attr-tabindex
+  tag_url: https://html.spec.whatwg.org/multipage/interaction.html#attr-tabindex
+  value_info:
+  - !!python/tuple
+    - Boolean attribute
+    - https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute
+  is_more_value_info_required: false
+  description:
+  - !!python/tuple
+    - Prevents a heading offset computation from traversing beyond the element with the attribute
+    - ''

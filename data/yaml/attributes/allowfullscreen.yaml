@@ -1,12 +1,23 @@
 iframe:
-  description: Whether to allow the iframe's contents to use requestFullscreen()
   value_type: bool
   value_enum: []
-  value_info: Boolean attribute
-  is_more_value_info_required: false
   separator: ''
-  urls:
-  - https://fullscreen.spec.whatwg.org/#dom-element-requestfullscreen
-  - https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute
-  - https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-allowfullscreen
-  - https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-iframe-element
+  tag_url: https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-allowfullscreen
+  value_info:
+  - !!python/tuple
+    - Boolean attribute
+    - https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute
+  is_more_value_info_required: false
+  description:
+  - !!python/tuple
+    - Whether to allow the
+    - ''
+  - !!python/tuple
+    - iframe
+    - https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-iframe-element
+  - !!python/tuple
+    - '''s contents to use'
+    - ''
+  - !!python/tuple
+    - requestFullscreen()
+    - https://fullscreen.spec.whatwg.org/#dom-element-requestfullscreen

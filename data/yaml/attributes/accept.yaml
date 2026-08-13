@@ -1,12 +1,41 @@
 input:
-  description: Hint for expected file type in file upload controls
   value_type: string
   value_enum: []
-  value_info: Set of comma-separated tokens* consisting of valid MIME type strings with no parameters or audio/*, video/*, or image/
-  is_more_value_info_required: true
   separator: ','
-  urls:
-  - https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#set-of-comma-separated-tokens
-  - https://html.spec.whatwg.org/multipage/input.html#attr-input-accept
-  - https://html.spec.whatwg.org/multipage/input.html#file-upload-state-(type=file)
-  - https://mimesniff.spec.whatwg.org/#valid-mime-type-with-no-parameters
+  tag_url: https://html.spec.whatwg.org/multipage/input.html#attr-input-accept
+  value_info:
+  - !!python/tuple
+    - Set of comma-separated tokens
+    - https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#set-of-comma-separated-tokens
+  - !!python/tuple
+    - ' consisting of'
+    - ''
+  - !!python/tuple
+    - valid MIME type strings with no parameters
+    - https://mimesniff.spec.whatwg.org/#valid-mime-type-with-no-parameters
+  - !!python/tuple
+    - or
+    - ''
+  - !!python/tuple
+    - audio/*
+    - ''
+  - !!python/tuple
+    - ','
+    - ''
+  - !!python/tuple
+    - video/*
+    - ''
+  - !!python/tuple
+    - ', or'
+    - ''
+  - !!python/tuple
+    - image/*
+    - ''
+  is_more_value_info_required: true
+  description:
+  - !!python/tuple
+    - Hint for expected file type in
+    - ''
+  - !!python/tuple
+    - file upload controls
+    - https://html.spec.whatwg.org/multipage/input.html#file-upload-state-(type=file)

@@ -1,11 +1,20 @@
 all:
-  description: Referenced elements
   value_type: string
   value_enum: []
-  value_info: Unordered set of unique space-separated tokens consisting of IDs
-  is_more_value_info_required: true
   separator: ' '
-  urls:
-  - https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#unordered-set-of-unique-space-separated-tokens
-  - https://html.spec.whatwg.org/multipage/dom.html#referenced
-  - https://html.spec.whatwg.org/multipage/microdata.html#attr-itemref
+  tag_url: https://html.spec.whatwg.org/multipage/microdata.html#attr-itemref
+  value_info:
+  - !!python/tuple
+    - Unordered set of unique space-separated tokens
+    - https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#unordered-set-of-unique-space-separated-tokens
+  - !!python/tuple
+    - consisting of IDs*
+    - ''
+  is_more_value_info_required: false
+  description:
+  - !!python/tuple
+    - Referenced
+    - https://html.spec.whatwg.org/multipage/dom.html#referenced
+  - !!python/tuple
+    - elements
+    - ''

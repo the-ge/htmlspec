@@ -1,31 +1,48 @@
 input:
-  description: Whether to allow the value to be edited by the user
   value_type: bool
   value_enum: []
-  value_info: Boolean attribute
-  is_more_value_info_required: false
   separator: ''
-  urls:
-  - https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute
-  - https://html.spec.whatwg.org/multipage/input.html#attr-input-readonly
+  tag_url: https://html.spec.whatwg.org/multipage/input.html#attr-input-readonly
+  value_info:
+  - !!python/tuple
+    - Boolean attribute
+    - https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute
+  is_more_value_info_required: false
+  description:
+  - !!python/tuple
+    - Whether to allow the value to be edited by the user
+    - ''
 textarea:
-  description: Whether to allow the value to be edited by the user
   value_type: bool
   value_enum: []
-  value_info: Boolean attribute
-  is_more_value_info_required: false
   separator: ''
-  urls:
-  - https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute
-  - https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-readonly
-custom:
-  description: Affects willValidate, plus any behavior added by the custom element author
+  tag_url: https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-readonly
+  value_info:
+  - !!python/tuple
+    - Boolean attribute
+    - https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute
+  is_more_value_info_required: false
+  description:
+  - !!python/tuple
+    - Whether to allow the value to be edited by the user
+    - ''
+formcustom:
   value_type: bool
   value_enum: []
-  value_info: Boolean attribute
-  is_more_value_info_required: false
   separator: ''
-  urls:
-  - https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute
-  - https://html.spec.whatwg.org/multipage/custom-elements.html#attr-face-readonly
-  - https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-elementinternals-willvalidate
+  tag_url: https://html.spec.whatwg.org/multipage/custom-elements.html#attr-face-readonly
+  value_info:
+  - !!python/tuple
+    - Boolean attribute
+    - https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute
+  is_more_value_info_required: false
+  description:
+  - !!python/tuple
+    - Affects
+    - ''
+  - !!python/tuple
+    - willValidate
+    - https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-elementinternals-willvalidate
+  - !!python/tuple
+    - ', plus any behavior added by the custom element author'
+    - ''

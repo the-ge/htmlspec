@@ -1,17 +1,38 @@
 th:
-  description: Specifies which cells the header cell applies to
-  value_type: enum
-  value_enum:
-  - col
-  - colgroup
-  - row
-  - rowgroup
-  value_info: ''
-  is_more_value_info_required: false
+  value_type: string
+  value_enum: []
   separator: ''
-  urls:
-  - https://html.spec.whatwg.org/multipage/tables.html#attr-th-scope
-  - https://html.spec.whatwg.org/multipage/tables.html#attr-th-scope-col
-  - https://html.spec.whatwg.org/multipage/tables.html#attr-th-scope-colgroup
-  - https://html.spec.whatwg.org/multipage/tables.html#attr-th-scope-row
-  - https://html.spec.whatwg.org/multipage/tables.html#attr-th-scope-rowgroup
+  tag_url: https://html.spec.whatwg.org/multipage/tables.html#attr-th-scope
+  value_info:
+  - !!python/tuple
+    - '"'
+    - ''
+  - !!python/tuple
+    - row
+    - https://html.spec.whatwg.org/multipage/tables.html#attr-th-scope-row
+  - !!python/tuple
+    - "\";\n          \""
+    - ''
+  - !!python/tuple
+    - col
+    - https://html.spec.whatwg.org/multipage/tables.html#attr-th-scope-col
+  - !!python/tuple
+    - "\";\n          \""
+    - ''
+  - !!python/tuple
+    - rowgroup
+    - https://html.spec.whatwg.org/multipage/tables.html#attr-th-scope-rowgroup
+  - !!python/tuple
+    - "\";\n          \""
+    - ''
+  - !!python/tuple
+    - colgroup
+    - https://html.spec.whatwg.org/multipage/tables.html#attr-th-scope-colgroup
+  - !!python/tuple
+    - '"'
+    - ''
+  is_more_value_info_required: false
+  description:
+  - !!python/tuple
+    - Specifies which cells the header cell applies to
+    - ''

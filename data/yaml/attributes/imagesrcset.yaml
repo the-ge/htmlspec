@@ -1,12 +1,29 @@
 link:
-  description: Images to use in different situations, e.g., high-resolution displays, small monitors, etc. (for rel="preload")
   value_type: string
   value_enum: []
-  value_info: Comma-separated list of image candidate strings
-  is_more_value_info_required: false
   separator: ','
-  urls:
-  - https://html.spec.whatwg.org/multipage/images.html#image-candidate-string
-  - https://html.spec.whatwg.org/multipage/links.html#link-type-preload
-  - https://html.spec.whatwg.org/multipage/semantics.html#attr-link-imagesrcset
-  - https://html.spec.whatwg.org/multipage/semantics.html#attr-link-rel
+  tag_url: https://html.spec.whatwg.org/multipage/semantics.html#attr-link-imagesrcset
+  value_info:
+  - !!python/tuple
+    - Comma-separated list of
+    - ''
+  - !!python/tuple
+    - image candidate strings
+    - https://html.spec.whatwg.org/multipage/images.html#image-candidate-string
+  is_more_value_info_required: false
+  description:
+  - !!python/tuple
+    - Images to use in different situations, e.g., high-resolution displays, small monitors, etc. (for
+    - ''
+  - !!python/tuple
+    - rel
+    - https://html.spec.whatwg.org/multipage/semantics.html#attr-link-rel
+  - !!python/tuple
+    - ="
+    - ''
+  - !!python/tuple
+    - preload
+    - https://html.spec.whatwg.org/multipage/links.html#link-type-preload
+  - !!python/tuple
+    - '")'
+    - ''

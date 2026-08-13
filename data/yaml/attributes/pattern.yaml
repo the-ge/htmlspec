@@ -1,10 +1,20 @@
 input:
-  description: Pattern to be matched by the form control's value
   value_type: string
   value_enum: []
-  value_info: Regular expression matching the JavaScript Pattern production
-  is_more_value_info_required: false
   separator: ''
-  urls:
-  - https://html.spec.whatwg.org/multipage/input.html#attr-input-pattern
-  - https://tc39.es/ecma262/#prod-Pattern
+  tag_url: https://html.spec.whatwg.org/multipage/input.html#attr-input-pattern
+  value_info:
+  - !!python/tuple
+    - Regular expression matching the JavaScript
+    - ''
+  - !!python/tuple
+    - Pattern
+    - https://tc39.es/ecma262/#prod-Pattern
+  - !!python/tuple
+    - production
+    - ''
+  is_more_value_info_required: false
+  description:
+  - !!python/tuple
+    - Pattern to be matched by the form control's value
+    - ''

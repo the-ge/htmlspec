@@ -1,30 +1,64 @@
 button:
-  description: Indicates whether a targeted popover element is to be toggled, shown, or hidden
-  value_type: enum
-  value_enum:
-  - hide
-  - show
-  - toggle
-  value_info: ''
-  is_more_value_info_required: false
+  value_type: string
+  value_enum: []
   separator: ''
-  urls:
-  - https://html.spec.whatwg.org/multipage/popover.html#attr-popovertargetaction
-  - https://html.spec.whatwg.org/multipage/popover.html#attr-popovertargetaction-hide
-  - https://html.spec.whatwg.org/multipage/popover.html#attr-popovertargetaction-show
-  - https://html.spec.whatwg.org/multipage/popover.html#attr-popovertargetaction-toggle
+  tag_url: https://html.spec.whatwg.org/multipage/popover.html#attr-popovertargetaction
+  value_info:
+  - !!python/tuple
+    - '"'
+    - ''
+  - !!python/tuple
+    - toggle
+    - https://html.spec.whatwg.org/multipage/popover.html#attr-popovertargetaction-toggle
+  - !!python/tuple
+    - "\";\n          \""
+    - ''
+  - !!python/tuple
+    - show
+    - https://html.spec.whatwg.org/multipage/popover.html#attr-popovertargetaction-show
+  - !!python/tuple
+    - "\";\n          \""
+    - ''
+  - !!python/tuple
+    - hide
+    - https://html.spec.whatwg.org/multipage/popover.html#attr-popovertargetaction-hide
+  - !!python/tuple
+    - '"'
+    - ''
+  is_more_value_info_required: false
+  description:
+  - !!python/tuple
+    - Indicates whether a targeted popover element is to be toggled, shown, or hidden
+    - ''
 input:
-  description: Indicates whether a targeted popover element is to be toggled, shown, or hidden
-  value_type: enum
-  value_enum:
-  - hide
-  - show
-  - toggle
-  value_info: ''
-  is_more_value_info_required: false
+  value_type: string
+  value_enum: []
   separator: ''
-  urls:
-  - https://html.spec.whatwg.org/multipage/popover.html#attr-popovertargetaction
-  - https://html.spec.whatwg.org/multipage/popover.html#attr-popovertargetaction-hide
-  - https://html.spec.whatwg.org/multipage/popover.html#attr-popovertargetaction-show
-  - https://html.spec.whatwg.org/multipage/popover.html#attr-popovertargetaction-toggle
+  tag_url: https://html.spec.whatwg.org/multipage/popover.html#attr-popovertargetaction
+  value_info:
+  - !!python/tuple
+    - '"'
+    - ''
+  - !!python/tuple
+    - toggle
+    - https://html.spec.whatwg.org/multipage/popover.html#attr-popovertargetaction-toggle
+  - !!python/tuple
+    - "\";\n          \""
+    - ''
+  - !!python/tuple
+    - show
+    - https://html.spec.whatwg.org/multipage/popover.html#attr-popovertargetaction-show
+  - !!python/tuple
+    - "\";\n          \""
+    - ''
+  - !!python/tuple
+    - hide
+    - https://html.spec.whatwg.org/multipage/popover.html#attr-popovertargetaction-hide
+  - !!python/tuple
+    - '"'
+    - ''
+  is_more_value_info_required: false
+  description:
+  - !!python/tuple
+    - Indicates whether a targeted popover element is to be toggled, shown, or hidden
+    - ''

@@ -1,51 +1,132 @@
 img:
-  description: Sets the priority for fetches initiated by the element
-  value_type: enum
-  value_enum:
-  - auto
-  - high
-  - low
-  value_info: ''
-  is_more_value_info_required: false
+  value_type: string
+  value_enum: []
   separator: ''
-  urls:
-  - https://fetch.spec.whatwg.org/#concept-fetch
-  - https://fetch.spec.whatwg.org/#request-priority
-  - https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-fetchpriority
-  - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-fetchpriority-auto
-  - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-fetchpriority-high
-  - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-fetchpriority-low
+  tag_url: https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-fetchpriority
+  value_info:
+  - !!python/tuple
+    - '"'
+    - ''
+  - !!python/tuple
+    - auto
+    - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-fetchpriority-auto
+  - !!python/tuple
+    - "\";\n          \""
+    - ''
+  - !!python/tuple
+    - high
+    - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-fetchpriority-high
+  - !!python/tuple
+    - "\";\n          \""
+    - ''
+  - !!python/tuple
+    - low
+    - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-fetchpriority-low
+  - !!python/tuple
+    - '"'
+    - ''
+  is_more_value_info_required: false
+  description:
+  - !!python/tuple
+    - Sets the
+    - ''
+  - !!python/tuple
+    - priority
+    - https://fetch.spec.whatwg.org/#request-priority
+  - !!python/tuple
+    - for
+    - ''
+  - !!python/tuple
+    - fetches
+    - https://fetch.spec.whatwg.org/#concept-fetch
+  - !!python/tuple
+    - initiated by the element
+    - ''
 link:
-  description: Sets the priority for fetches initiated by the element
-  value_type: enum
-  value_enum:
-  - auto
-  - high
-  - low
-  value_info: ''
-  is_more_value_info_required: false
+  value_type: string
+  value_enum: []
   separator: ''
-  urls:
-  - https://fetch.spec.whatwg.org/#concept-fetch
-  - https://fetch.spec.whatwg.org/#request-priority
-  - https://html.spec.whatwg.org/multipage/semantics.html#attr-link-fetchpriority
-  - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-fetchpriority-auto
-  - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-fetchpriority-high
-  - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-fetchpriority-low
+  tag_url: https://html.spec.whatwg.org/multipage/semantics.html#attr-link-fetchpriority
+  value_info:
+  - !!python/tuple
+    - '"'
+    - ''
+  - !!python/tuple
+    - auto
+    - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-fetchpriority-auto
+  - !!python/tuple
+    - "\";\n          \""
+    - ''
+  - !!python/tuple
+    - high
+    - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-fetchpriority-high
+  - !!python/tuple
+    - "\";\n          \""
+    - ''
+  - !!python/tuple
+    - low
+    - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-fetchpriority-low
+  - !!python/tuple
+    - '"'
+    - ''
+  is_more_value_info_required: false
+  description:
+  - !!python/tuple
+    - Sets the
+    - ''
+  - !!python/tuple
+    - priority
+    - https://fetch.spec.whatwg.org/#request-priority
+  - !!python/tuple
+    - for
+    - ''
+  - !!python/tuple
+    - fetches
+    - https://fetch.spec.whatwg.org/#concept-fetch
+  - !!python/tuple
+    - initiated by the element
+    - ''
 script:
-  description: Sets the priority for fetches initiated by the element
-  value_type: enum
-  value_enum:
-  - auto
-  - high
-  - low
-  value_info: ''
-  is_more_value_info_required: false
+  value_type: string
+  value_enum: []
   separator: ''
-  urls:
-  - https://fetch.spec.whatwg.org/#concept-fetch
-  - https://fetch.spec.whatwg.org/#request-priority
-  - https://html.spec.whatwg.org/multipage/scripting.html#attr-script-fetchpriority
-  - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-fetchpriority-auto
-  - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-fetchpriority-high
-  - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-fetchpriority-low
+  tag_url: https://html.spec.whatwg.org/multipage/scripting.html#attr-script-fetchpriority
+  value_info:
+  - !!python/tuple
+    - '"'
+    - ''
+  - !!python/tuple
+    - auto
+    - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-fetchpriority-auto
+  - !!python/tuple
+    - "\";\n          \""
+    - ''
+  - !!python/tuple
+    - high
+    - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-fetchpriority-high
+  - !!python/tuple
+    - "\";\n          \""
+    - ''
+  - !!python/tuple
+    - low
+    - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-fetchpriority-low
+  - !!python/tuple
+    - '"'
+    - ''
+  is_more_value_info_required: false
+  description:
+  - !!python/tuple
+    - Sets the
+    - ''
+  - !!python/tuple
+    - priority
+    - https://fetch.spec.whatwg.org/#request-priority
+  - !!python/tuple
+    - for
+    - ''
+  - !!python/tuple
+    - fetches
+    - https://fetch.spec.whatwg.org/#concept-fetch
+  - !!python/tuple
+    - initiated by the element
+    - ''

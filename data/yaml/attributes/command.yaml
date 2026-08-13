@@ -1,16 +1,53 @@
 button:
-  description: Indicates to the targeted element which action to take.
   value_type: string
   value_enum: []
-  value_info: '"toggle-popover"; "show-popover"; "hide-popover"; "close"; "request-close"; "show-modal"; a custom command keyword'
-  is_more_value_info_required: false
   separator: ''
-  urls:
-  - https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command
-  - https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-close
-  - https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-custom
-  - https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-hide-popover
-  - https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-request-close
-  - https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-show-modal
-  - https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-show-popover
-  - https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-toggle-popover
+  tag_url: https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command
+  value_info:
+  - !!python/tuple
+    - '"'
+    - ''
+  - !!python/tuple
+    - toggle-popover
+    - https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-toggle-popover
+  - !!python/tuple
+    - "\";\n          \""
+    - ''
+  - !!python/tuple
+    - show-popover
+    - https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-show-popover
+  - !!python/tuple
+    - "\";\n          \""
+    - ''
+  - !!python/tuple
+    - hide-popover
+    - https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-hide-popover
+  - !!python/tuple
+    - "\";\n          \""
+    - ''
+  - !!python/tuple
+    - close
+    - https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-close
+  - !!python/tuple
+    - "\";\n          \""
+    - ''
+  - !!python/tuple
+    - request-close
+    - https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-request-close
+  - !!python/tuple
+    - "\";\n          \""
+    - ''
+  - !!python/tuple
+    - show-modal
+    - https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-show-modal
+  - !!python/tuple
+    - "\";\n          a"
+    - ''
+  - !!python/tuple
+    - custom command keyword
+    - https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-custom
+  is_more_value_info_required: false
+  description:
+  - !!python/tuple
+    - Indicates to the targeted element which action to take.
+    - ''

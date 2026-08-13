@@ -1,12 +1,32 @@
 template:
-  description: Sets slot assignment on a declarative shadow root
-  value_type: enum
-  value_enum:
-  - manual
-  - named
-  value_info: ''
-  is_more_value_info_required: false
+  value_type: string
+  value_enum: []
   separator: ''
-  urls:
-  - https://dom.spec.whatwg.org/#dom-shadowroot-slot-assignment
-  - https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootslotassignment
+  tag_url: https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootslotassignment
+  value_info:
+  - !!python/tuple
+    - '"'
+    - ''
+  - !!python/tuple
+    - named
+    - ''
+  - !!python/tuple
+    - "\";\n          \""
+    - ''
+  - !!python/tuple
+    - manual
+    - ''
+  - !!python/tuple
+    - '"'
+    - ''
+  is_more_value_info_required: false
+  description:
+  - !!python/tuple
+    - Sets
+    - ''
+  - !!python/tuple
+    - slot assignment
+    - https://dom.spec.whatwg.org/#dom-shadowroot-slot-assignment
+  - !!python/tuple
+    - on a declarative shadow root
+    - ''

@@ -1,18 +1,28 @@
 a:
-  description: Whether to download the resource instead of navigating to it, and its filename if so
   value_type: string
   value_enum: []
-  value_info: Text
-  is_more_value_info_required: false
   separator: ''
-  urls:
-  - https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-download
+  tag_url: https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-download
+  value_info:
+  - !!python/tuple
+    - Text
+    - ''
+  is_more_value_info_required: false
+  description:
+  - !!python/tuple
+    - Whether to download the resource instead of navigating to it, and its filename if so
+    - ''
 area:
-  description: Whether to download the resource instead of navigating to it, and its filename if so
   value_type: string
   value_enum: []
-  value_info: Text
-  is_more_value_info_required: false
   separator: ''
-  urls:
-  - https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-download
+  tag_url: https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-download
+  value_info:
+  - !!python/tuple
+    - Text
+    - ''
+  is_more_value_info_required: false
+  description:
+  - !!python/tuple
+    - Whether to download the resource instead of navigating to it, and its filename if so
+    - ''

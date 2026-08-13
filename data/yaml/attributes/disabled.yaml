@@ -1,93 +1,132 @@
 button:
-  description: Whether the form control is disabled
   value_type: bool
   value_enum: []
-  value_info: Boolean attribute
-  is_more_value_info_required: false
   separator: ''
-  urls:
-  - https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute
-  - https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled
-custom:
-  description: Whether the form control is disabled
-  value_type: bool
-  value_enum: []
-  value_info: Boolean attribute
+  tag_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled
+  value_info:
+  - !!python/tuple
+    - Boolean attribute
+    - https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute
   is_more_value_info_required: false
-  separator: ''
-  urls:
-  - https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute
-  - https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled
+  description:
+  - !!python/tuple
+    - Whether the form control is disabled
+    - ''
 input:
-  description: Whether the form control is disabled
   value_type: bool
   value_enum: []
-  value_info: Boolean attribute
-  is_more_value_info_required: false
   separator: ''
-  urls:
-  - https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute
-  - https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled
+  tag_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled
+  value_info:
+  - !!python/tuple
+    - Boolean attribute
+    - https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute
+  is_more_value_info_required: false
+  description:
+  - !!python/tuple
+    - Whether the form control is disabled
+    - ''
 optgroup:
-  description: Whether the form control is disabled
   value_type: bool
   value_enum: []
-  value_info: Boolean attribute
-  is_more_value_info_required: false
   separator: ''
-  urls:
-  - https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute
-  - https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled
-  - https://html.spec.whatwg.org/multipage/form-elements.html#attr-optgroup-disabled
+  tag_url: https://html.spec.whatwg.org/multipage/form-elements.html#attr-optgroup-disabled
+  value_info:
+  - !!python/tuple
+    - Boolean attribute
+    - https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute
+  is_more_value_info_required: false
+  description:
+  - !!python/tuple
+    - Whether the form control is disabled
+    - ''
 option:
-  description: Whether the form control is disabled
   value_type: bool
   value_enum: []
-  value_info: Boolean attribute
-  is_more_value_info_required: false
   separator: ''
-  urls:
-  - https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute
-  - https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled
-  - https://html.spec.whatwg.org/multipage/form-elements.html#attr-option-disabled
+  tag_url: https://html.spec.whatwg.org/multipage/form-elements.html#attr-option-disabled
+  value_info:
+  - !!python/tuple
+    - Boolean attribute
+    - https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute
+  is_more_value_info_required: false
+  description:
+  - !!python/tuple
+    - Whether the form control is disabled
+    - ''
 select:
-  description: Whether the form control is disabled
   value_type: bool
   value_enum: []
-  value_info: Boolean attribute
-  is_more_value_info_required: false
   separator: ''
-  urls:
-  - https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute
-  - https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled
+  tag_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled
+  value_info:
+  - !!python/tuple
+    - Boolean attribute
+    - https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute
+  is_more_value_info_required: false
+  description:
+  - !!python/tuple
+    - Whether the form control is disabled
+    - ''
 textarea:
-  description: Whether the form control is disabled
   value_type: bool
   value_enum: []
-  value_info: Boolean attribute
-  is_more_value_info_required: false
   separator: ''
-  urls:
-  - https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute
-  - https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled
+  tag_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled
+  value_info:
+  - !!python/tuple
+    - Boolean attribute
+    - https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute
+  is_more_value_info_required: false
+  description:
+  - !!python/tuple
+    - Whether the form control is disabled
+    - ''
+formcustom:
+  value_type: bool
+  value_enum: []
+  separator: ''
+  tag_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled
+  value_info:
+  - !!python/tuple
+    - Boolean attribute
+    - https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute
+  is_more_value_info_required: false
+  description:
+  - !!python/tuple
+    - Whether the form control is disabled
+    - ''
 fieldset:
-  description: Whether the descendant form controls, except any inside legend, are disabled
   value_type: bool
   value_enum: []
-  value_info: Boolean attribute
-  is_more_value_info_required: false
   separator: ''
-  urls:
-  - https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute
-  - https://html.spec.whatwg.org/multipage/form-elements.html#attr-fieldset-disabled
-  - https://html.spec.whatwg.org/multipage/form-elements.html#the-legend-element
+  tag_url: https://html.spec.whatwg.org/multipage/form-elements.html#attr-fieldset-disabled
+  value_info:
+  - !!python/tuple
+    - Boolean attribute
+    - https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute
+  is_more_value_info_required: false
+  description:
+  - !!python/tuple
+    - Whether the descendant form controls, except any inside
+    - ''
+  - !!python/tuple
+    - legend
+    - https://html.spec.whatwg.org/multipage/form-elements.html#the-legend-element
+  - !!python/tuple
+    - ', are disabled'
+    - ''
 link:
-  description: Whether the link is disabled
   value_type: bool
   value_enum: []
-  value_info: Boolean attribute
-  is_more_value_info_required: false
   separator: ''
-  urls:
-  - https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute
-  - https://html.spec.whatwg.org/multipage/semantics.html#attr-link-disabled
+  tag_url: https://html.spec.whatwg.org/multipage/semantics.html#attr-link-disabled
+  value_info:
+  - !!python/tuple
+    - Boolean attribute
+    - https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute
+  is_more_value_info_required: false
+  description:
+  - !!python/tuple
+    - Whether the link is disabled
+    - ''
