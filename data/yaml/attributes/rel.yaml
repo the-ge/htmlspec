@@ -1,8 +1,8 @@
 a:
+  scope_url: https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-rel
+  separator: ' '
   value_type: string
   value_enum: []
-  separator: ' '
-  tag_url: https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-rel
   value_info:
   - !!python/tuple
     - Unordered set of unique space-separated tokens
@@ -19,10 +19,10 @@ a:
     - and the destination resource
     - ''
 area:
+  scope_url: https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-rel
+  separator: ' '
   value_type: string
   value_enum: []
-  separator: ' '
-  tag_url: https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-rel
   value_info:
   - !!python/tuple
     - Unordered set of unique space-separated tokens
@@ -39,10 +39,10 @@ area:
     - and the destination resource
     - ''
 link:
+  scope_url: https://html.spec.whatwg.org/multipage/semantics.html#attr-link-rel
+  separator: ' '
   value_type: string
   value_enum: []
-  separator: ' '
-  tag_url: https://html.spec.whatwg.org/multipage/semantics.html#attr-link-rel
   value_info:
   - !!python/tuple
     - Unordered set of unique space-separated tokens

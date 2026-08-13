@@ -1,8 +1,8 @@
 track:
+  scope_url: https://html.spec.whatwg.org/multipage/media.html#attr-track-default
+  separator: ''
   value_type: bool
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/media.html#attr-track-default
   value_info:
   - !!python/tuple
     - Boolean attribute

@@ -1,8 +1,8 @@
 del:
+  scope_url: https://html.spec.whatwg.org/multipage/edits.html#attr-mod-datetime
+  separator: ''
   value_type: datetime
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/edits.html#attr-mod-datetime
   value_info:
   - !!python/tuple
     - Valid date string with optional time
@@ -13,10 +13,10 @@ del:
     - Date and (optionally) time of the change
     - ''
 ins:
+  scope_url: https://html.spec.whatwg.org/multipage/edits.html#attr-mod-datetime
+  separator: ''
   value_type: datetime
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/edits.html#attr-mod-datetime
   value_info:
   - !!python/tuple
     - Valid date string with optional time
@@ -27,10 +27,10 @@ ins:
     - Date and (optionally) time of the change
     - ''
 time:
+  scope_url: https://html.spec.whatwg.org/multipage/text-level-semantics.html#attr-time-datetime
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/text-level-semantics.html#attr-time-datetime
   value_info:
   - !!python/tuple
     - Valid month string

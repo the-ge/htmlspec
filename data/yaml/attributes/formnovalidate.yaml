@@ -1,8 +1,8 @@
 button:
+  scope_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formnovalidate
+  separator: ''
   value_type: bool
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formnovalidate
   value_info:
   - !!python/tuple
     - Boolean attribute
@@ -16,10 +16,10 @@ button:
     - form submission
     - https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-submission-2
 input:
+  scope_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formnovalidate
+  separator: ''
   value_type: bool
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formnovalidate
   value_info:
   - !!python/tuple
     - Boolean attribute

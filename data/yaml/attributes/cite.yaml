@@ -1,8 +1,8 @@
 blockquote:
+  scope_url: https://html.spec.whatwg.org/multipage/grouping-content.html#attr-blockquote-cite
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/grouping-content.html#attr-blockquote-cite
   value_info:
   - !!python/tuple
     - Valid URL potentially surrounded by spaces
@@ -13,10 +13,10 @@ blockquote:
     - Link to the source of the quotation or more information about the edit
     - ''
 del:
+  scope_url: https://html.spec.whatwg.org/multipage/edits.html#attr-mod-cite
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/edits.html#attr-mod-cite
   value_info:
   - !!python/tuple
     - Valid URL potentially surrounded by spaces
@@ -27,10 +27,10 @@ del:
     - Link to the source of the quotation or more information about the edit
     - ''
 ins:
+  scope_url: https://html.spec.whatwg.org/multipage/edits.html#attr-mod-cite
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/edits.html#attr-mod-cite
   value_info:
   - !!python/tuple
     - Valid URL potentially surrounded by spaces
@@ -41,10 +41,10 @@ ins:
     - Link to the source of the quotation or more information about the edit
     - ''
 q:
+  scope_url: https://html.spec.whatwg.org/multipage/text-level-semantics.html#attr-q-cite
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/text-level-semantics.html#attr-q-cite
   value_info:
   - !!python/tuple
     - Valid URL potentially surrounded by spaces

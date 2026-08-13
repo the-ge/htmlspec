@@ -1,8 +1,8 @@
 details:
+  scope_url: https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-details-open
+  separator: ''
   value_type: bool
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-details-open
   value_info:
   - !!python/tuple
     - Boolean attribute
@@ -13,10 +13,10 @@ details:
     - Whether the details are visible
     - ''
 dialog:
+  scope_url: https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-dialog-open
+  separator: ''
   value_type: bool
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-dialog-open
   value_info:
   - !!python/tuple
     - Boolean attribute

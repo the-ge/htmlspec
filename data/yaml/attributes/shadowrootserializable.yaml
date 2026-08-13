@@ -1,8 +1,8 @@
 template:
+  scope_url: https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootserializable
+  separator: ''
   value_type: bool
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootserializable
   value_info:
   - !!python/tuple
     - Boolean attribute

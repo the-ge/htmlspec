@@ -1,8 +1,8 @@
 textarea:
+  scope_url: https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-cols
+  separator: ''
   value_type: int
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-cols
   value_info:
   - !!python/tuple
     - Valid non-negative integer

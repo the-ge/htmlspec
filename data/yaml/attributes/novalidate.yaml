@@ -1,8 +1,8 @@
 form:
+  scope_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-novalidate
+  separator: ''
   value_type: bool
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-novalidate
   value_info:
   - !!python/tuple
     - Boolean attribute

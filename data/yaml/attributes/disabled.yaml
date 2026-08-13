@@ -1,8 +1,8 @@
 button:
+  scope_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled
+  separator: ''
   value_type: bool
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled
   value_info:
   - !!python/tuple
     - Boolean attribute
@@ -13,10 +13,10 @@ button:
     - Whether the form control is disabled
     - ''
 input:
+  scope_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled
+  separator: ''
   value_type: bool
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled
   value_info:
   - !!python/tuple
     - Boolean attribute
@@ -27,10 +27,10 @@ input:
     - Whether the form control is disabled
     - ''
 optgroup:
+  scope_url: https://html.spec.whatwg.org/multipage/form-elements.html#attr-optgroup-disabled
+  separator: ''
   value_type: bool
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/form-elements.html#attr-optgroup-disabled
   value_info:
   - !!python/tuple
     - Boolean attribute
@@ -41,10 +41,10 @@ optgroup:
     - Whether the form control is disabled
     - ''
 option:
+  scope_url: https://html.spec.whatwg.org/multipage/form-elements.html#attr-option-disabled
+  separator: ''
   value_type: bool
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/form-elements.html#attr-option-disabled
   value_info:
   - !!python/tuple
     - Boolean attribute
@@ -55,10 +55,10 @@ option:
     - Whether the form control is disabled
     - ''
 select:
+  scope_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled
+  separator: ''
   value_type: bool
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled
   value_info:
   - !!python/tuple
     - Boolean attribute
@@ -69,10 +69,10 @@ select:
     - Whether the form control is disabled
     - ''
 textarea:
+  scope_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled
+  separator: ''
   value_type: bool
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled
   value_info:
   - !!python/tuple
     - Boolean attribute
@@ -83,10 +83,10 @@ textarea:
     - Whether the form control is disabled
     - ''
 formcustom:
+  scope_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled
+  separator: ''
   value_type: bool
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled
   value_info:
   - !!python/tuple
     - Boolean attribute
@@ -97,10 +97,10 @@ formcustom:
     - Whether the form control is disabled
     - ''
 fieldset:
+  scope_url: https://html.spec.whatwg.org/multipage/form-elements.html#attr-fieldset-disabled
+  separator: ''
   value_type: bool
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/form-elements.html#attr-fieldset-disabled
   value_info:
   - !!python/tuple
     - Boolean attribute
@@ -117,10 +117,10 @@ fieldset:
     - ', are disabled'
     - ''
 link:
+  scope_url: https://html.spec.whatwg.org/multipage/semantics.html#attr-link-disabled
+  separator: ''
   value_type: bool
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/semantics.html#attr-link-disabled
   value_info:
   - !!python/tuple
     - Boolean attribute

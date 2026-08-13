@@ -1,8 +1,8 @@
 audio:
+  scope_url: https://html.spec.whatwg.org/multipage/media.html#attr-media-controls
+  separator: ''
   value_type: bool
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/media.html#attr-media-controls
   value_info:
   - !!python/tuple
     - Boolean attribute
@@ -13,10 +13,10 @@ audio:
     - Show user agent controls
     - ''
 video:
+  scope_url: https://html.spec.whatwg.org/multipage/media.html#attr-media-controls
+  separator: ''
   value_type: bool
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/media.html#attr-media-controls
   value_info:
   - !!python/tuple
     - Boolean attribute
@@ -27,10 +27,10 @@ video:
     - Show user agent controls
     - ''
 img:
+  scope_url: https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-controls
+  separator: ''
   value_type: bool
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-controls
   value_info:
   - !!python/tuple
     - Boolean attribute

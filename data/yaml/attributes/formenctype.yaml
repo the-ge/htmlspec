@@ -1,8 +1,8 @@
 button:
+  scope_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formenctype
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formenctype
   value_info:
   - !!python/tuple
     - '"'
@@ -37,10 +37,10 @@ button:
     - form submission
     - https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-submission-2
 input:
+  scope_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formenctype
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formenctype
   value_info:
   - !!python/tuple
     - '"'

@@ -1,8 +1,8 @@
 button:
+  scope_url: https://html.spec.whatwg.org/multipage/popover.html#attr-popovertargetaction
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/popover.html#attr-popovertargetaction
   value_info:
   - !!python/tuple
     - '"'
@@ -31,10 +31,10 @@ button:
     - Indicates whether a targeted popover element is to be toggled, shown, or hidden
     - ''
 input:
+  scope_url: https://html.spec.whatwg.org/multipage/popover.html#attr-popovertargetaction
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/popover.html#attr-popovertargetaction
   value_info:
   - !!python/tuple
     - '"'

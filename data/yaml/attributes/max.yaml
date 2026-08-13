@@ -1,8 +1,8 @@
 input:
+  scope_url: https://html.spec.whatwg.org/multipage/input.html#attr-input-max
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/input.html#attr-input-max
   value_info:
   - !!python/tuple
     - Varies*
@@ -13,10 +13,10 @@ input:
     - Maximum value
     - ''
 meter:
+  scope_url: https://html.spec.whatwg.org/multipage/form-elements.html#attr-meter-max
+  separator: ''
   value_type: float
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/form-elements.html#attr-meter-max
   value_info:
   - !!python/tuple
     - Valid floating-point number
@@ -27,10 +27,10 @@ meter:
     - Upper bound of range
     - ''
 progress:
+  scope_url: https://html.spec.whatwg.org/multipage/form-elements.html#attr-progress-max
+  separator: ''
   value_type: float
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/form-elements.html#attr-progress-max
   value_info:
   - !!python/tuple
     - Valid floating-point number

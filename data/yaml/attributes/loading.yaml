@@ -1,8 +1,8 @@
 iframe:
+  scope_url: https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-loading
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-loading
   value_info:
   - !!python/tuple
     - '"'
@@ -25,10 +25,10 @@ iframe:
     - Used when determining loading deferral
     - ''
 img:
+  scope_url: https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-loading
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-loading
   value_info:
   - !!python/tuple
     - '"'
@@ -51,10 +51,10 @@ img:
     - Used when determining loading deferral
     - ''
 audio:
+  scope_url: https://html.spec.whatwg.org/multipage/media.html#attr-media-loading
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/media.html#attr-media-loading
   value_info:
   - !!python/tuple
     - '"'
@@ -77,10 +77,10 @@ audio:
     - Used when determining loading deferral
     - ''
 video:
+  scope_url: https://html.spec.whatwg.org/multipage/media.html#attr-media-loading
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/media.html#attr-media-loading
   value_info:
   - !!python/tuple
     - '"'

@@ -1,8 +1,8 @@
 td:
+  scope_url: https://html.spec.whatwg.org/multipage/tables.html#attr-tdth-headers
+  separator: ' '
   value_type: string
   value_enum: []
-  separator: ' '
-  tag_url: https://html.spec.whatwg.org/multipage/tables.html#attr-tdth-headers
   value_info:
   - !!python/tuple
     - Unordered set of unique space-separated tokens
@@ -16,10 +16,10 @@ td:
     - The header cells for this cell
     - ''
 th:
+  scope_url: https://html.spec.whatwg.org/multipage/tables.html#attr-tdth-headers
+  separator: ' '
   value_type: string
   value_enum: []
-  separator: ' '
-  tag_url: https://html.spec.whatwg.org/multipage/tables.html#attr-tdth-headers
   value_info:
   - !!python/tuple
     - Unordered set of unique space-separated tokens

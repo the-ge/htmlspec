@@ -1,8 +1,8 @@
 canvas:
+  scope_url: https://html.spec.whatwg.org/multipage/canvas.html#attr-canvas-height
+  separator: ''
   value_type: int
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/canvas.html#attr-canvas-height
   value_info:
   - !!python/tuple
     - Valid non-negative integer
@@ -13,10 +13,10 @@ canvas:
     - Vertical dimension
     - ''
 embed:
+  scope_url: https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height
+  separator: ''
   value_type: int
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height
   value_info:
   - !!python/tuple
     - Valid non-negative integer
@@ -27,10 +27,10 @@ embed:
     - Vertical dimension
     - ''
 iframe:
+  scope_url: https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height
+  separator: ''
   value_type: int
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height
   value_info:
   - !!python/tuple
     - Valid non-negative integer
@@ -41,10 +41,10 @@ iframe:
     - Vertical dimension
     - ''
 img:
+  scope_url: https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height
+  separator: ''
   value_type: int
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height
   value_info:
   - !!python/tuple
     - Valid non-negative integer
@@ -55,10 +55,10 @@ img:
     - Vertical dimension
     - ''
 input:
+  scope_url: https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height
+  separator: ''
   value_type: int
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height
   value_info:
   - !!python/tuple
     - Valid non-negative integer
@@ -69,10 +69,10 @@ input:
     - Vertical dimension
     - ''
 object:
+  scope_url: https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height
+  separator: ''
   value_type: int
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height
   value_info:
   - !!python/tuple
     - Valid non-negative integer
@@ -83,10 +83,10 @@ object:
     - Vertical dimension
     - ''
 source:
+  scope_url: https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height
+  separator: ''
   value_type: int
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height
   value_info:
   - !!python/tuple
     - Valid non-negative integer
@@ -97,10 +97,10 @@ source:
     - Vertical dimension
     - ''
 picture:
+  scope_url: https://html.spec.whatwg.org/multipage/embedded-content.html#the-picture-element
+  separator: ''
   value_type: int
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/embedded-content.html#the-picture-element
   value_info:
   - !!python/tuple
     - Valid non-negative integer
@@ -111,10 +111,10 @@ picture:
     - Vertical dimension
     - ''
 video:
+  scope_url: https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height
+  separator: ''
   value_type: int
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height
   value_info:
   - !!python/tuple
     - Valid non-negative integer

@@ -1,8 +1,8 @@
 link:
+  scope_url: https://html.spec.whatwg.org/multipage/semantics.html#attr-link-blocking
+  separator: ' '
   value_type: string
   value_enum: []
-  separator: ' '
-  tag_url: https://html.spec.whatwg.org/multipage/semantics.html#attr-link-blocking
   value_info:
   - !!python/tuple
     - Unordered set of unique space-separated tokens
@@ -16,10 +16,10 @@ link:
     - potentially render-blocking
     - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#potentially-render-blocking
 script:
+  scope_url: https://html.spec.whatwg.org/multipage/scripting.html#attr-script-blocking
+  separator: ' '
   value_type: string
   value_enum: []
-  separator: ' '
-  tag_url: https://html.spec.whatwg.org/multipage/scripting.html#attr-script-blocking
   value_info:
   - !!python/tuple
     - Unordered set of unique space-separated tokens
@@ -33,10 +33,10 @@ script:
     - potentially render-blocking
     - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#potentially-render-blocking
 style:
+  scope_url: https://html.spec.whatwg.org/multipage/semantics.html#attr-style-blocking
+  separator: ' '
   value_type: string
   value_enum: []
-  separator: ' '
-  tag_url: https://html.spec.whatwg.org/multipage/semantics.html#attr-style-blocking
   value_info:
   - !!python/tuple
     - Unordered set of unique space-separated tokens

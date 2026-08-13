@@ -1,8 +1,8 @@
 input:
+  scope_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-dirname
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-dirname
   value_info:
   - !!python/tuple
     - Text
@@ -22,10 +22,10 @@ input:
     - form submission
     - https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-submission-2
 textarea:
+  scope_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-dirname
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-dirname
   value_info:
   - !!python/tuple
     - Text

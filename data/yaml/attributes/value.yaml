@@ -1,8 +1,8 @@
 button:
+  scope_url: https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-value
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-value
   value_info:
   - !!python/tuple
     - Text
@@ -16,10 +16,10 @@ button:
     - form submission
     - https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-submission-2
 option:
+  scope_url: https://html.spec.whatwg.org/multipage/form-elements.html#attr-option-value
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/form-elements.html#attr-option-value
   value_info:
   - !!python/tuple
     - Text
@@ -33,10 +33,10 @@ option:
     - form submission
     - https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-submission-2
 data:
+  scope_url: https://html.spec.whatwg.org/multipage/text-level-semantics.html#attr-data-value
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/text-level-semantics.html#attr-data-value
   value_info:
   - !!python/tuple
     - Text
@@ -47,10 +47,10 @@ data:
     - Machine-readable value
     - ''
 input:
+  scope_url: https://html.spec.whatwg.org/multipage/input.html#attr-input-value
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/input.html#attr-input-value
   value_info:
   - !!python/tuple
     - Varies*
@@ -61,10 +61,10 @@ input:
     - Value of the form control
     - ''
 li:
+  scope_url: https://html.spec.whatwg.org/multipage/grouping-content.html#attr-li-value
+  separator: ''
   value_type: int
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/grouping-content.html#attr-li-value
   value_info:
   - !!python/tuple
     - Valid integer
@@ -78,10 +78,10 @@ li:
     - of the list item
     - ''
 meter:
+  scope_url: https://html.spec.whatwg.org/multipage/form-elements.html#attr-meter-value
+  separator: ''
   value_type: float
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/form-elements.html#attr-meter-value
   value_info:
   - !!python/tuple
     - Valid floating-point number
@@ -92,10 +92,10 @@ meter:
     - Current value of the element
     - ''
 progress:
+  scope_url: https://html.spec.whatwg.org/multipage/form-elements.html#attr-progress-value
+  separator: ''
   value_type: float
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/form-elements.html#attr-progress-value
   value_info:
   - !!python/tuple
     - Valid floating-point number

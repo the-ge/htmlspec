@@ -1,8 +1,8 @@
 input:
+  scope_url: https://html.spec.whatwg.org/multipage/input.html#attr-input-placeholder
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/input.html#attr-input-placeholder
   value_info:
   - !!python/tuple
     - Text
@@ -13,10 +13,10 @@ input:
     - User-visible label to be placed within the form control
     - ''
 textarea:
+  scope_url: https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-placeholder
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-placeholder
   value_info:
   - !!python/tuple
     - Text

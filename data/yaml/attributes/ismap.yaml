@@ -1,8 +1,8 @@
 img:
+  scope_url: https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-ismap
+  separator: ''
   value_type: bool
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-ismap
   value_info:
   - !!python/tuple
     - Boolean attribute

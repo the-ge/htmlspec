@@ -1,8 +1,8 @@
 input:
+  scope_url: https://html.spec.whatwg.org/multipage/input.html#attr-input-maxlength
+  separator: ''
   value_type: int
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/input.html#attr-input-maxlength
   value_info:
   - !!python/tuple
     - Valid non-negative integer
@@ -19,10 +19,10 @@ input:
     - of value
     - ''
 textarea:
+  scope_url: https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-maxlength
+  separator: ''
   value_type: int
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-maxlength
   value_info:
   - !!python/tuple
     - Valid non-negative integer

@@ -1,8 +1,8 @@
 ol:
+  scope_url: https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-reversed
+  separator: ''
   value_type: bool
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-reversed
   value_info:
   - !!python/tuple
     - Boolean attribute

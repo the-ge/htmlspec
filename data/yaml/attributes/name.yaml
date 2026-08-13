@@ -1,8 +1,8 @@
 button:
+  scope_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name
   value_info:
   - !!python/tuple
     - Text
@@ -25,10 +25,10 @@ button:
     - API
     - ''
 fieldset:
+  scope_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name
   value_info:
   - !!python/tuple
     - Text
@@ -51,10 +51,10 @@ fieldset:
     - API
     - ''
 input:
+  scope_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name
   value_info:
   - !!python/tuple
     - Text
@@ -77,10 +77,10 @@ input:
     - API
     - ''
 output:
+  scope_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name
   value_info:
   - !!python/tuple
     - Text
@@ -103,10 +103,10 @@ output:
     - API
     - ''
 select:
+  scope_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name
   value_info:
   - !!python/tuple
     - Text
@@ -129,10 +129,10 @@ select:
     - API
     - ''
 textarea:
+  scope_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name
   value_info:
   - !!python/tuple
     - Text
@@ -155,10 +155,10 @@ textarea:
     - API
     - ''
 formcustom:
+  scope_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name
   value_info:
   - !!python/tuple
     - Text
@@ -181,10 +181,10 @@ formcustom:
     - API
     - ''
 details:
+  scope_url: https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-details-name
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-details-name
   value_info:
   - !!python/tuple
     - Text
@@ -201,10 +201,10 @@ details:
     - elements
     - ''
 form:
+  scope_url: https://html.spec.whatwg.org/multipage/forms.html#attr-form-name
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/forms.html#attr-form-name
   value_info:
   - !!python/tuple
     - Text
@@ -221,10 +221,10 @@ form:
     - API
     - ''
 iframe:
+  scope_url: https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-name
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-name
   value_info:
   - !!python/tuple
     - Valid navigable target name or keyword
@@ -238,10 +238,10 @@ iframe:
     - content navigable
     - https://html.spec.whatwg.org/multipage/document-sequences.html#content-navigable
 object:
+  scope_url: https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-object-name
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-object-name
   value_info:
   - !!python/tuple
     - Valid navigable target name or keyword
@@ -255,10 +255,10 @@ object:
     - content navigable
     - https://html.spec.whatwg.org/multipage/document-sequences.html#content-navigable
 map:
+  scope_url: https://html.spec.whatwg.org/multipage/image-maps.html#attr-map-name
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/image-maps.html#attr-map-name
   value_info:
   - !!python/tuple
     - Text
@@ -287,10 +287,10 @@ map:
     - attribute
     - ''
 meta:
+  scope_url: https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-name
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-name
   value_info:
   - !!python/tuple
     - Text
@@ -301,10 +301,10 @@ meta:
     - Metadata name
     - ''
 slot:
+  scope_url: https://html.spec.whatwg.org/multipage/scripting.html#attr-slot-name
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/scripting.html#attr-slot-name
   value_info:
   - !!python/tuple
     - Text

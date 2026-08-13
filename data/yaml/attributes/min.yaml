@@ -1,8 +1,8 @@
 input:
+  scope_url: https://html.spec.whatwg.org/multipage/input.html#attr-input-min
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/input.html#attr-input-min
   value_info:
   - !!python/tuple
     - Varies*
@@ -13,10 +13,10 @@ input:
     - Minimum value
     - ''
 meter:
+  scope_url: https://html.spec.whatwg.org/multipage/form-elements.html#attr-meter-min
+  separator: ''
   value_type: float
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/form-elements.html#attr-meter-min
   value_info:
   - !!python/tuple
     - Valid floating-point number

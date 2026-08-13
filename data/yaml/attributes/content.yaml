@@ -1,8 +1,8 @@
 meta:
+  scope_url: https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-content
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-content
   value_info:
   - !!python/tuple
     - Text

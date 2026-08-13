@@ -1,8 +1,8 @@
 all:
+  scope_url: https://html.spec.whatwg.org/multipage/dom.html#attr-title
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/dom.html#attr-title
   value_info:
   - !!python/tuple
     - Text
@@ -13,10 +13,10 @@ all:
     - Advisory information for the element
     - ''
 abbr:
+  scope_url: https://html.spec.whatwg.org/multipage/text-level-semantics.html#attr-abbr-title
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/text-level-semantics.html#attr-abbr-title
   value_info:
   - !!python/tuple
     - Text
@@ -27,10 +27,10 @@ abbr:
     - Full term or expansion of abbreviation
     - ''
 dfn:
+  scope_url: https://html.spec.whatwg.org/multipage/text-level-semantics.html#attr-dfn-title
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/text-level-semantics.html#attr-dfn-title
   value_info:
   - !!python/tuple
     - Text
@@ -41,10 +41,10 @@ dfn:
     - Full term or expansion of abbreviation
     - ''
 input:
+  scope_url: https://html.spec.whatwg.org/multipage/input.html#attr-input-title
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/input.html#attr-input-title
   value_info:
   - !!python/tuple
     - Text
@@ -61,10 +61,10 @@ input:
     - attribute)
     - ''
 link:
+  scope_url: https://html.spec.whatwg.org/multipage/semantics.html#attr-link-title
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/semantics.html#attr-link-title
   value_info:
   - !!python/tuple
     - Text
@@ -75,10 +75,10 @@ link:
     - Title of the link
     - ''
 style:
+  scope_url: https://html.spec.whatwg.org/multipage/semantics.html#attr-style-title
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/semantics.html#attr-style-title
   value_info:
   - !!python/tuple
     - Text

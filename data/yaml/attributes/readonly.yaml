@@ -1,8 +1,8 @@
 input:
+  scope_url: https://html.spec.whatwg.org/multipage/input.html#attr-input-readonly
+  separator: ''
   value_type: bool
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/input.html#attr-input-readonly
   value_info:
   - !!python/tuple
     - Boolean attribute
@@ -13,10 +13,10 @@ input:
     - Whether to allow the value to be edited by the user
     - ''
 textarea:
+  scope_url: https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-readonly
+  separator: ''
   value_type: bool
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-readonly
   value_info:
   - !!python/tuple
     - Boolean attribute
@@ -27,10 +27,10 @@ textarea:
     - Whether to allow the value to be edited by the user
     - ''
 formcustom:
+  scope_url: https://html.spec.whatwg.org/multipage/custom-elements.html#attr-face-readonly
+  separator: ''
   value_type: bool
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/custom-elements.html#attr-face-readonly
   value_info:
   - !!python/tuple
     - Boolean attribute

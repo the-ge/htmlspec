@@ -1,8 +1,8 @@
 audio:
+  scope_url: https://html.spec.whatwg.org/multipage/media.html#attr-media-preload
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/media.html#attr-media-preload
   value_info:
   - !!python/tuple
     - '"'
@@ -37,10 +37,10 @@ audio:
     - will likely need
     - ''
 video:
+  scope_url: https://html.spec.whatwg.org/multipage/media.html#attr-media-preload
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/media.html#attr-media-preload
   value_info:
   - !!python/tuple
     - '"'

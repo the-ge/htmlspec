@@ -1,8 +1,8 @@
 col:
+  scope_url: https://html.spec.whatwg.org/multipage/tables.html#attr-col-span
+  separator: ''
   value_type: int
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/tables.html#attr-col-span
   value_info:
   - !!python/tuple
     - Valid non-negative integer
@@ -16,10 +16,10 @@ col:
     - Number of columns spanned by the element
     - ''
 colgroup:
+  scope_url: https://html.spec.whatwg.org/multipage/tables.html#attr-colgroup-span
+  separator: ''
   value_type: int
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/tables.html#attr-colgroup-span
   value_info:
   - !!python/tuple
     - Valid non-negative integer

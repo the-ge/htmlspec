@@ -1,8 +1,8 @@
 all:
+  scope_url: https://html.spec.whatwg.org/multipage/interaction.html#attr-spellcheck
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/interaction.html#attr-spellcheck
   value_info:
   - !!python/tuple
     - '"'

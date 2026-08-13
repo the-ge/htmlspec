@@ -1,8 +1,8 @@
 audio:
+  scope_url: https://html.spec.whatwg.org/multipage/media.html#attr-media-src
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/media.html#attr-media-src
   value_info:
   - !!python/tuple
     - Valid non-empty URL potentially surrounded by spaces
@@ -19,10 +19,10 @@ audio:
     - Address of the resource
     - ''
 embed:
+  scope_url: https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-embed-src
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-embed-src
   value_info:
   - !!python/tuple
     - Valid non-empty URL potentially surrounded by spaces
@@ -33,10 +33,10 @@ embed:
     - Address of the resource
     - ''
 iframe:
+  scope_url: https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-src
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-src
   value_info:
   - !!python/tuple
     - Valid non-empty URL potentially surrounded by spaces
@@ -47,10 +47,10 @@ iframe:
     - Address of the resource
     - ''
 img:
+  scope_url: https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-src
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-src
   value_info:
   - !!python/tuple
     - Valid non-empty URL potentially surrounded by spaces
@@ -61,10 +61,10 @@ img:
     - Address of the resource
     - ''
 input:
+  scope_url: https://html.spec.whatwg.org/multipage/input.html#attr-input-src
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/input.html#attr-input-src
   value_info:
   - !!python/tuple
     - Valid non-empty URL potentially surrounded by spaces
@@ -75,10 +75,10 @@ input:
     - Address of the resource
     - ''
 script:
+  scope_url: https://html.spec.whatwg.org/multipage/scripting.html#attr-script-src
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/scripting.html#attr-script-src
   value_info:
   - !!python/tuple
     - Valid non-empty URL potentially surrounded by spaces
@@ -89,10 +89,10 @@ script:
     - Address of the resource
     - ''
 source:
+  scope_url: https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-src
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-src
   value_info:
   - !!python/tuple
     - Valid non-empty URL potentially surrounded by spaces
@@ -103,10 +103,10 @@ source:
     - Address of the resource
     - ''
 video:
+  scope_url: https://html.spec.whatwg.org/multipage/media.html#the-video-element
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/media.html#the-video-element
   value_info:
   - !!python/tuple
     - Valid non-empty URL potentially surrounded by spaces
@@ -123,10 +123,10 @@ video:
     - Address of the resource
     - ''
 track:
+  scope_url: https://html.spec.whatwg.org/multipage/media.html#attr-track-src
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/media.html#attr-track-src
   value_info:
   - !!python/tuple
     - Valid non-empty URL potentially surrounded by spaces

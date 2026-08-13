@@ -1,8 +1,8 @@
 input:
+  scope_url: https://html.spec.whatwg.org/multipage/input.html#attr-input-required
+  separator: ''
   value_type: bool
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/input.html#attr-input-required
   value_info:
   - !!python/tuple
     - Boolean attribute
@@ -16,10 +16,10 @@ input:
     - form submission
     - https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-submission-2
 select:
+  scope_url: https://html.spec.whatwg.org/multipage/form-elements.html#attr-select-required
+  separator: ''
   value_type: bool
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/form-elements.html#attr-select-required
   value_info:
   - !!python/tuple
     - Boolean attribute
@@ -33,10 +33,10 @@ select:
     - form submission
     - https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-submission-2
 textarea:
+  scope_url: https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-required
+  separator: ''
   value_type: bool
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-required
   value_info:
   - !!python/tuple
     - Boolean attribute

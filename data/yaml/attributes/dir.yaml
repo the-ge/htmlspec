@@ -1,8 +1,8 @@
 all:
+  scope_url: https://html.spec.whatwg.org/multipage/dom.html#attr-dir
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/dom.html#attr-dir
   value_info:
   - !!python/tuple
     - '"'
@@ -34,10 +34,10 @@ all:
     - of the element
     - ''
 bdo:
+  scope_url: https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-bdo-element
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-bdo-element
   value_info:
   - !!python/tuple
     - '"'

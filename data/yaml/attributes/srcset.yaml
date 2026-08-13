@@ -1,8 +1,8 @@
 img:
+  scope_url: https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-srcset
+  separator: ','
   value_type: string
   value_enum: []
-  separator: ','
-  tag_url: https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-srcset
   value_info:
   - !!python/tuple
     - Comma-separated list of
@@ -16,10 +16,10 @@ img:
     - Images to use in different situations, e.g., high-resolution displays, small monitors, etc.
     - ''
 source:
+  scope_url: https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-srcset
+  separator: ','
   value_type: string
   value_enum: []
-  separator: ','
-  tag_url: https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-srcset
   value_info:
   - !!python/tuple
     - Comma-separated list of

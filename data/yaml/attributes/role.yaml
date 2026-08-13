@@ -1,5 +1,7 @@
 all:
-  value_type: string
+  scope_url: ''
+  separator: ' '
+  value_type: enum
   value_enum:
   - alert
   - alertdialog
@@ -89,8 +91,6 @@ all:
   - tree
   - treegrid
   - treeitem
-  separator: ' '
-  tag_url: ''
   value_info:
   - !!python/tuple
     - alert

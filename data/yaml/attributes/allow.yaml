@@ -1,8 +1,8 @@
 iframe:
+  scope_url: https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-allow
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-allow
   value_info:
   - !!python/tuple
     - Serialized permissions policy

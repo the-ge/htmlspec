@@ -1,8 +1,8 @@
 button:
+  scope_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form
   value_info:
   - !!python/tuple
     - ID
@@ -19,10 +19,10 @@ button:
     - element
     - ''
 fieldset:
+  scope_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form
   value_info:
   - !!python/tuple
     - ID
@@ -39,10 +39,10 @@ fieldset:
     - element
     - ''
 input:
+  scope_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form
   value_info:
   - !!python/tuple
     - ID
@@ -59,10 +59,10 @@ input:
     - element
     - ''
 object:
+  scope_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form
   value_info:
   - !!python/tuple
     - ID
@@ -79,10 +79,10 @@ object:
     - element
     - ''
 output:
+  scope_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form
   value_info:
   - !!python/tuple
     - ID
@@ -99,10 +99,10 @@ output:
     - element
     - ''
 select:
+  scope_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form
   value_info:
   - !!python/tuple
     - ID
@@ -119,10 +119,10 @@ select:
     - element
     - ''
 textarea:
+  scope_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form
   value_info:
   - !!python/tuple
     - ID
@@ -139,10 +139,10 @@ textarea:
     - element
     - ''
 formcustom:
+  scope_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form
   value_info:
   - !!python/tuple
     - ID

@@ -1,8 +1,8 @@
 a:
+  scope_url: https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-href
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-href
   value_info:
   - !!python/tuple
     - Valid URL potentially surrounded by spaces
@@ -16,10 +16,10 @@ a:
     - hyperlink
     - https://html.spec.whatwg.org/multipage/links.html#hyperlink
 area:
+  scope_url: https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-href
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-href
   value_info:
   - !!python/tuple
     - Valid URL potentially surrounded by spaces
@@ -33,10 +33,10 @@ area:
     - hyperlink
     - https://html.spec.whatwg.org/multipage/links.html#hyperlink
 link:
+  scope_url: https://html.spec.whatwg.org/multipage/semantics.html#attr-link-href
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/semantics.html#attr-link-href
   value_info:
   - !!python/tuple
     - Valid non-empty URL potentially surrounded by spaces
@@ -50,10 +50,10 @@ link:
     - hyperlink
     - https://html.spec.whatwg.org/multipage/links.html#hyperlink
 base:
+  scope_url: https://html.spec.whatwg.org/multipage/semantics.html#attr-base-href
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/semantics.html#attr-base-href
   value_info:
   - !!python/tuple
     - Valid URL potentially surrounded by spaces

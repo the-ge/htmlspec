@@ -1,8 +1,8 @@
 audio:
+  scope_url: https://html.spec.whatwg.org/multipage/media.html#attr-media-loop
+  separator: ''
   value_type: bool
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/media.html#attr-media-loop
   value_info:
   - !!python/tuple
     - Boolean attribute
@@ -16,10 +16,10 @@ audio:
     - media resource
     - https://html.spec.whatwg.org/multipage/media.html#media-resource
 video:
+  scope_url: https://html.spec.whatwg.org/multipage/media.html#attr-media-loop
+  separator: ''
   value_type: bool
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/media.html#attr-media-loop
   value_info:
   - !!python/tuple
     - Boolean attribute

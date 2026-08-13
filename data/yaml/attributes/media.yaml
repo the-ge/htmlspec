@@ -1,8 +1,8 @@
 link:
+  scope_url: https://html.spec.whatwg.org/multipage/semantics.html#attr-link-media
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/semantics.html#attr-link-media
   value_info:
   - !!python/tuple
     - Valid media query list
@@ -13,10 +13,10 @@ link:
     - Applicable media
     - ''
 meta:
+  scope_url: https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-media
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-media
   value_info:
   - !!python/tuple
     - Valid media query list
@@ -27,10 +27,10 @@ meta:
     - Applicable media
     - ''
 source:
+  scope_url: https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-media
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-media
   value_info:
   - !!python/tuple
     - Valid media query list
@@ -41,10 +41,10 @@ source:
     - Applicable media
     - ''
 style:
+  scope_url: https://html.spec.whatwg.org/multipage/semantics.html#attr-style-media
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/semantics.html#attr-style-media
   value_info:
   - !!python/tuple
     - Valid media query list

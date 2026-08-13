@@ -1,8 +1,8 @@
 a:
+  scope_url: https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-hreflang
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-hreflang
   value_info:
   - !!python/tuple
     - Valid BCP 47 language tag
@@ -13,10 +13,10 @@ a:
     - Language of the linked resource
     - ''
 link:
+  scope_url: https://html.spec.whatwg.org/multipage/semantics.html#attr-link-hreflang
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/semantics.html#attr-link-hreflang
   value_info:
   - !!python/tuple
     - Valid BCP 47 language tag

@@ -1,8 +1,8 @@
 a:
+  scope_url: https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-type
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-type
   value_info:
   - !!python/tuple
     - Valid MIME type string
@@ -13,10 +13,10 @@ a:
     - Hint for the type of the referenced resource
     - ''
 link:
+  scope_url: https://html.spec.whatwg.org/multipage/semantics.html#attr-link-type
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/semantics.html#attr-link-type
   value_info:
   - !!python/tuple
     - Valid MIME type string
@@ -27,10 +27,10 @@ link:
     - Hint for the type of the referenced resource
     - ''
 button:
+  scope_url: https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-type
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-type
   value_info:
   - !!python/tuple
     - '"'
@@ -59,10 +59,10 @@ button:
     - Type of button
     - ''
 embed:
+  scope_url: https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-embed-type
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-embed-type
   value_info:
   - !!python/tuple
     - Valid MIME type string
@@ -73,10 +73,10 @@ embed:
     - Type of embedded resource
     - ''
 object:
+  scope_url: https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-object-type
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-object-type
   value_info:
   - !!python/tuple
     - Valid MIME type string
@@ -87,10 +87,10 @@ object:
     - Type of embedded resource
     - ''
 source:
+  scope_url: https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-type
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-type
   value_info:
   - !!python/tuple
     - Valid MIME type string
@@ -101,6 +101,8 @@ source:
     - Type of embedded resource
     - ''
 input:
+  scope_url: https://html.spec.whatwg.org/multipage/input.html#attr-input-type
+  separator: ''
   value_type: enum
   value_enum:
   - button
@@ -125,8 +127,6 @@ input:
   - time
   - url
   - week
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/input.html#attr-input-type
   value_info:
   - !!python/tuple
     - hidden
@@ -200,10 +200,10 @@ input:
     - Type of form control
     - ''
 ol:
+  scope_url: https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-type
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-type
   value_info:
   - !!python/tuple
     - '"'
@@ -244,10 +244,10 @@ ol:
     - Kind of list marker
     - ''
 script:
+  scope_url: https://html.spec.whatwg.org/multipage/scripting.html#attr-script-type
+  separator: ''
   value_type: string
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/scripting.html#attr-script-type
   value_info:
   - !!python/tuple
     - '"'

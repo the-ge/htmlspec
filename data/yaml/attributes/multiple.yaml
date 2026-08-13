@@ -1,8 +1,8 @@
 input:
+  scope_url: https://html.spec.whatwg.org/multipage/input.html#attr-input-multiple
+  separator: ''
   value_type: bool
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/input.html#attr-input-multiple
   value_info:
   - !!python/tuple
     - Boolean attribute
@@ -13,10 +13,10 @@ input:
     - Whether to allow multiple values
     - ''
 select:
+  scope_url: https://html.spec.whatwg.org/multipage/form-elements.html#attr-select-multiple
+  separator: ''
   value_type: bool
   value_enum: []
-  separator: ''
-  tag_url: https://html.spec.whatwg.org/multipage/form-elements.html#attr-select-multiple
   value_info:
   - !!python/tuple
     - Boolean attribute

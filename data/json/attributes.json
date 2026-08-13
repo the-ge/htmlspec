@@ -1,10 +1,10 @@
 {
   "abbr": {
     "th": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/tables.html#attr-th-abbr",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/tables.html#attr-th-abbr",
       "value_info": [
         [
           "Text",
@@ -22,10 +22,10 @@
   },
   "accept": {
     "input": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/input.html#attr-input-accept",
+      "separator": ",",
       "value_type": "string",
       "value_enum": [],
-      "separator": ",",
-      "tag_url": "https://html.spec.whatwg.org/multipage/input.html#attr-input-accept",
       "value_info": [
         [
           "Set of comma-separated tokens",
@@ -79,10 +79,10 @@
   },
   "accept-charset": {
     "form": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/forms.html#attr-form-accept-charset",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/forms.html#attr-form-accept-charset",
       "value_info": [
         [
           "ASCII case-insensitive",
@@ -116,10 +116,10 @@
   },
   "accesskey": {
     "all": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/interaction.html#the-accesskey-attribute",
+      "separator": " ",
       "value_type": "string",
       "value_enum": [],
-      "separator": " ",
-      "tag_url": "https://html.spec.whatwg.org/multipage/interaction.html#the-accesskey-attribute",
       "value_info": [
         [
           "Ordered set of unique space-separated tokens",
@@ -149,10 +149,10 @@
   },
   "action": {
     "form": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-action",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-action",
       "value_info": [
         [
           "Valid non-empty URL potentially surrounded by spaces",
@@ -178,10 +178,10 @@
   },
   "allow": {
     "iframe": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-allow",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-allow",
       "value_info": [
         [
           "Serialized permissions policy",
@@ -211,10 +211,10 @@
   },
   "allowfullscreen": {
     "iframe": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-allowfullscreen",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-allowfullscreen",
       "value_info": [
         [
           "Boolean attribute",
@@ -244,10 +244,10 @@
   },
   "alpha": {
     "input": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/input.html#attr-input-alpha",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/input.html#attr-input-alpha",
       "value_info": [
         [
           "Boolean attribute",
@@ -265,10 +265,10 @@
   },
   "alt": {
     "area": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/image-maps.html#attr-area-alt",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/image-maps.html#attr-area-alt",
       "value_info": [
         [
           "Text",
@@ -284,10 +284,10 @@
       ]
     },
     "img": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-alt",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-alt",
       "value_info": [
         [
           "Text",
@@ -303,10 +303,10 @@
       ]
     },
     "input": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/input.html#attr-input-alt",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/input.html#attr-input-alt",
       "value_info": [
         [
           "Text",
@@ -324,10 +324,10 @@
   },
   "as": {
     "link": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-as",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-as",
       "value_info": [
         [
           "Preload destination",
@@ -421,10 +421,10 @@
   },
   "async": {
     "script": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-async",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-async",
       "value_info": [
         [
           "Boolean attribute",
@@ -442,10 +442,10 @@
   },
   "autocapitalize": {
     "all": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/interaction.html#attr-autocapitalize",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/interaction.html#attr-autocapitalize",
       "value_info": [
         [
           "\"",
@@ -511,10 +511,10 @@
   },
   "autocomplete": {
     "form": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/forms.html#attr-form-autocomplete",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/forms.html#attr-form-autocomplete",
       "value_info": [
         [
           "\"",
@@ -546,10 +546,10 @@
       ]
     },
     "input": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-autocomplete",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-autocomplete",
       "value_info": [
         [
           "Autofill field",
@@ -569,10 +569,10 @@
       ]
     },
     "select": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-autocomplete",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-autocomplete",
       "value_info": [
         [
           "Autofill field",
@@ -592,10 +592,10 @@
       ]
     },
     "textarea": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-autocomplete",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-autocomplete",
       "value_info": [
         [
           "Autofill field",
@@ -617,10 +617,10 @@
   },
   "autocorrect": {
     "all": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/interaction.html#attr-autocorrect",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/interaction.html#attr-autocorrect",
       "value_info": [
         [
           "\"",
@@ -654,10 +654,10 @@
   },
   "autofocus": {
     "all": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/interaction.html#attr-fe-autofocus",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/interaction.html#attr-fe-autofocus",
       "value_info": [
         [
           "Boolean attribute",
@@ -675,10 +675,10 @@
   },
   "autoplay": {
     "audio": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/media.html#attr-media-autoplay",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/media.html#attr-media-autoplay",
       "value_info": [
         [
           "Boolean attribute",
@@ -702,10 +702,10 @@
       ]
     },
     "video": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/media.html#attr-media-autoplay",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/media.html#attr-media-autoplay",
       "value_info": [
         [
           "Boolean attribute",
@@ -731,10 +731,10 @@
   },
   "blocking": {
     "link": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-blocking",
+      "separator": " ",
       "value_type": "string",
       "value_enum": [],
-      "separator": " ",
-      "tag_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-blocking",
       "value_info": [
         [
           "Unordered set of unique space-separated tokens",
@@ -754,10 +754,10 @@
       ]
     },
     "script": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-blocking",
+      "separator": " ",
       "value_type": "string",
       "value_enum": [],
-      "separator": " ",
-      "tag_url": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-blocking",
       "value_info": [
         [
           "Unordered set of unique space-separated tokens",
@@ -777,10 +777,10 @@
       ]
     },
     "style": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-style-blocking",
+      "separator": " ",
       "value_type": "string",
       "value_enum": [],
-      "separator": " ",
-      "tag_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-style-blocking",
       "value_info": [
         [
           "Unordered set of unique space-separated tokens",
@@ -802,10 +802,10 @@
   },
   "charset": {
     "meta": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-charset",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-charset",
       "value_info": [
         [
           "\"",
@@ -831,10 +831,10 @@
   },
   "checked": {
     "input": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/input.html#attr-input-checked",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/input.html#attr-input-checked",
       "value_info": [
         [
           "Boolean attribute",
@@ -852,10 +852,10 @@
   },
   "cite": {
     "blockquote": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/grouping-content.html#attr-blockquote-cite",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/grouping-content.html#attr-blockquote-cite",
       "value_info": [
         [
           "Valid URL potentially surrounded by spaces",
@@ -871,10 +871,10 @@
       ]
     },
     "del": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/edits.html#attr-mod-cite",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/edits.html#attr-mod-cite",
       "value_info": [
         [
           "Valid URL potentially surrounded by spaces",
@@ -890,10 +890,10 @@
       ]
     },
     "ins": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/edits.html#attr-mod-cite",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/edits.html#attr-mod-cite",
       "value_info": [
         [
           "Valid URL potentially surrounded by spaces",
@@ -909,10 +909,10 @@
       ]
     },
     "q": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#attr-q-cite",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#attr-q-cite",
       "value_info": [
         [
           "Valid URL potentially surrounded by spaces",
@@ -930,10 +930,10 @@
   },
   "class": {
     "all": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/dom.html#classes",
+      "separator": " ",
       "value_type": "string",
       "value_enum": [],
-      "separator": " ",
-      "tag_url": "https://html.spec.whatwg.org/multipage/dom.html#classes",
       "value_info": [
         [
           "Set of space-separated tokens",
@@ -951,10 +951,10 @@
   },
   "closedby": {
     "dialog": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-dialog-closedby",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-dialog-closedby",
       "value_info": [
         [
           "\"",
@@ -996,10 +996,10 @@
   },
   "color": {
     "link": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-color",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-color",
       "value_info": [
         [
           "CSS",
@@ -1037,10 +1037,10 @@
   },
   "colorspace": {
     "input": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/input.html#attr-input-colorspace",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/input.html#attr-input-colorspace",
       "value_info": [
         [
           "\"",
@@ -1074,10 +1074,10 @@
   },
   "cols": {
     "textarea": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-cols",
+      "separator": "",
       "value_type": "int",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-cols",
       "value_info": [
         [
           "Valid non-negative integer",
@@ -1099,10 +1099,10 @@
   },
   "colspan": {
     "td": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/tables.html#attr-tdth-colspan",
+      "separator": "",
       "value_type": "int",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/tables.html#attr-tdth-colspan",
       "value_info": [
         [
           "Valid non-negative integer",
@@ -1122,10 +1122,10 @@
       ]
     },
     "th": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/tables.html#attr-tdth-colspan",
+      "separator": "",
       "value_type": "int",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/tables.html#attr-tdth-colspan",
       "value_info": [
         [
           "Valid non-negative integer",
@@ -1147,10 +1147,10 @@
   },
   "command": {
     "button": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command",
       "value_info": [
         [
           "\"",
@@ -1220,10 +1220,10 @@
   },
   "commandfor": {
     "button": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-commandfor",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-commandfor",
       "value_info": [
         [
           "ID",
@@ -1241,10 +1241,10 @@
   },
   "content": {
     "meta": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-content",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-content",
       "value_info": [
         [
           "Text",
@@ -1262,10 +1262,10 @@
   },
   "contenteditable": {
     "all": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/interaction.html#attr-contenteditable",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/interaction.html#attr-contenteditable",
       "value_info": [
         [
           "\"",
@@ -1307,10 +1307,10 @@
   },
   "controls": {
     "audio": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/media.html#attr-media-controls",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/media.html#attr-media-controls",
       "value_info": [
         [
           "Boolean attribute",
@@ -1326,10 +1326,10 @@
       ]
     },
     "video": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/media.html#attr-media-controls",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/media.html#attr-media-controls",
       "value_info": [
         [
           "Boolean attribute",
@@ -1345,10 +1345,10 @@
       ]
     },
     "img": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-controls",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-controls",
       "value_info": [
         [
           "Boolean attribute",
@@ -1366,10 +1366,10 @@
   },
   "coords": {
     "area": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/image-maps.html#attr-area-coords",
+      "separator": ",",
       "value_type": "string",
       "value_enum": [],
-      "separator": ",",
-      "tag_url": "https://html.spec.whatwg.org/multipage/image-maps.html#attr-area-coords",
       "value_info": [
         [
           "Valid list of floating-point numbers",
@@ -1391,10 +1391,10 @@
   },
   "crossorigin": {
     "audio": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/media.html#attr-media-crossorigin",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/media.html#attr-media-crossorigin",
       "value_info": [
         [
           "\"",
@@ -1426,10 +1426,10 @@
       ]
     },
     "img": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-crossorigin",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-crossorigin",
       "value_info": [
         [
           "\"",
@@ -1461,10 +1461,10 @@
       ]
     },
     "link": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-crossorigin",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-crossorigin",
       "value_info": [
         [
           "\"",
@@ -1496,10 +1496,10 @@
       ]
     },
     "script": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-crossorigin",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-crossorigin",
       "value_info": [
         [
           "\"",
@@ -1531,10 +1531,10 @@
       ]
     },
     "video": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/media.html#attr-media-crossorigin",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/media.html#attr-media-crossorigin",
       "value_info": [
         [
           "\"",
@@ -1568,10 +1568,10 @@
   },
   "data": {
     "object": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-object-data",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-object-data",
       "value_info": [
         [
           "Valid non-empty URL potentially surrounded by spaces",
@@ -1589,10 +1589,10 @@
   },
   "datetime": {
     "del": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/edits.html#attr-mod-datetime",
+      "separator": "",
       "value_type": "datetime",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/edits.html#attr-mod-datetime",
       "value_info": [
         [
           "Valid date string with optional time",
@@ -1608,10 +1608,10 @@
       ]
     },
     "ins": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/edits.html#attr-mod-datetime",
+      "separator": "",
       "value_type": "datetime",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/edits.html#attr-mod-datetime",
       "value_info": [
         [
           "Valid date string with optional time",
@@ -1627,10 +1627,10 @@
       ]
     },
     "time": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#attr-time-datetime",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#attr-time-datetime",
       "value_info": [
         [
           "Valid month string",
@@ -1720,10 +1720,10 @@
   },
   "decoding": {
     "img": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-decoding",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-decoding",
       "value_info": [
         [
           "\"",
@@ -1765,10 +1765,10 @@
   },
   "default": {
     "track": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/media.html#attr-track-default",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/media.html#attr-track-default",
       "value_info": [
         [
           "Boolean attribute",
@@ -1794,10 +1794,10 @@
   },
   "defer": {
     "script": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-defer",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-defer",
       "value_info": [
         [
           "Boolean attribute",
@@ -1815,10 +1815,10 @@
   },
   "dir": {
     "all": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/dom.html#attr-dir",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/dom.html#attr-dir",
       "value_info": [
         [
           "\"",
@@ -1862,10 +1862,10 @@
       ]
     },
     "bdo": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-bdo-element",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-bdo-element",
       "value_info": [
         [
           "\"",
@@ -1903,10 +1903,10 @@
   },
   "dirname": {
     "input": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-dirname",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-dirname",
       "value_info": [
         [
           "Text",
@@ -1934,10 +1934,10 @@
       ]
     },
     "textarea": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-dirname",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-dirname",
       "value_info": [
         [
           "Text",
@@ -1967,10 +1967,10 @@
   },
   "disabled": {
     "button": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled",
       "value_info": [
         [
           "Boolean attribute",
@@ -1986,10 +1986,10 @@
       ]
     },
     "input": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled",
       "value_info": [
         [
           "Boolean attribute",
@@ -2005,10 +2005,10 @@
       ]
     },
     "optgroup": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-optgroup-disabled",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-optgroup-disabled",
       "value_info": [
         [
           "Boolean attribute",
@@ -2024,10 +2024,10 @@
       ]
     },
     "option": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-option-disabled",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-option-disabled",
       "value_info": [
         [
           "Boolean attribute",
@@ -2043,10 +2043,10 @@
       ]
     },
     "select": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled",
       "value_info": [
         [
           "Boolean attribute",
@@ -2062,10 +2062,10 @@
       ]
     },
     "textarea": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled",
       "value_info": [
         [
           "Boolean attribute",
@@ -2081,10 +2081,10 @@
       ]
     },
     "formcustom": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled",
       "value_info": [
         [
           "Boolean attribute",
@@ -2100,10 +2100,10 @@
       ]
     },
     "fieldset": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-fieldset-disabled",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-fieldset-disabled",
       "value_info": [
         [
           "Boolean attribute",
@@ -2127,10 +2127,10 @@
       ]
     },
     "link": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-disabled",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-disabled",
       "value_info": [
         [
           "Boolean attribute",
@@ -2148,10 +2148,10 @@
   },
   "download": {
     "a": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-download",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-download",
       "value_info": [
         [
           "Text",
@@ -2167,10 +2167,10 @@
       ]
     },
     "area": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-download",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-download",
       "value_info": [
         [
           "Text",
@@ -2188,10 +2188,10 @@
   },
   "draggable": {
     "all": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/dnd.html#attr-draggable",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/dnd.html#attr-draggable",
       "value_info": [
         [
           "\"",
@@ -2225,10 +2225,10 @@
   },
   "enctype": {
     "form": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-enctype",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-enctype",
       "value_info": [
         [
           "\"",
@@ -2278,10 +2278,10 @@
   },
   "enterkeyhint": {
     "all": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/interaction.html#attr-enterkeyhint",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/interaction.html#attr-enterkeyhint",
       "value_info": [
         [
           "\"",
@@ -2355,10 +2355,10 @@
   },
   "fetchpriority": {
     "img": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-fetchpriority",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-fetchpriority",
       "value_info": [
         [
           "\"",
@@ -2414,10 +2414,10 @@
       ]
     },
     "link": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-fetchpriority",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-fetchpriority",
       "value_info": [
         [
           "\"",
@@ -2473,10 +2473,10 @@
       ]
     },
     "script": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-fetchpriority",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-fetchpriority",
       "value_info": [
         [
           "\"",
@@ -2534,10 +2534,10 @@
   },
   "for": {
     "label": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/forms.html#attr-label-for",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/forms.html#attr-label-for",
       "value_info": [
         [
           "ID",
@@ -2553,10 +2553,10 @@
       ]
     },
     "output": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-output-for",
+      "separator": " ",
       "value_type": "string",
       "value_enum": [],
-      "separator": " ",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-output-for",
       "value_info": [
         [
           "Unordered set of unique space-separated tokens",
@@ -2578,10 +2578,10 @@
   },
   "form": {
     "button": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form",
       "value_info": [
         [
           "ID",
@@ -2605,10 +2605,10 @@
       ]
     },
     "fieldset": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form",
       "value_info": [
         [
           "ID",
@@ -2632,10 +2632,10 @@
       ]
     },
     "input": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form",
       "value_info": [
         [
           "ID",
@@ -2659,10 +2659,10 @@
       ]
     },
     "object": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form",
       "value_info": [
         [
           "ID",
@@ -2686,10 +2686,10 @@
       ]
     },
     "output": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form",
       "value_info": [
         [
           "ID",
@@ -2713,10 +2713,10 @@
       ]
     },
     "select": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form",
       "value_info": [
         [
           "ID",
@@ -2740,10 +2740,10 @@
       ]
     },
     "textarea": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form",
       "value_info": [
         [
           "ID",
@@ -2767,10 +2767,10 @@
       ]
     },
     "formcustom": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form",
       "value_info": [
         [
           "ID",
@@ -2796,10 +2796,10 @@
   },
   "formaction": {
     "button": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formaction",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formaction",
       "value_info": [
         [
           "Valid non-empty URL potentially surrounded by spaces",
@@ -2823,10 +2823,10 @@
       ]
     },
     "input": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formaction",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formaction",
       "value_info": [
         [
           "Valid non-empty URL potentially surrounded by spaces",
@@ -2852,10 +2852,10 @@
   },
   "formenctype": {
     "button": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formenctype",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formenctype",
       "value_info": [
         [
           "\"",
@@ -2903,10 +2903,10 @@
       ]
     },
     "input": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formenctype",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formenctype",
       "value_info": [
         [
           "\"",
@@ -2956,10 +2956,10 @@
   },
   "formmethod": {
     "button": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formmethod",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formmethod",
       "value_info": [
         [
           "\"",
@@ -3003,10 +3003,10 @@
       ]
     },
     "input": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formmethod",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formmethod",
       "value_info": [
         [
           "\"",
@@ -3052,10 +3052,10 @@
   },
   "formnovalidate": {
     "button": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formnovalidate",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formnovalidate",
       "value_info": [
         [
           "Boolean attribute",
@@ -3075,10 +3075,10 @@
       ]
     },
     "input": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formnovalidate",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formnovalidate",
       "value_info": [
         [
           "Boolean attribute",
@@ -3100,10 +3100,10 @@
   },
   "formtarget": {
     "button": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formtarget",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formtarget",
       "value_info": [
         [
           "Valid navigable target name or keyword",
@@ -3127,10 +3127,10 @@
       ]
     },
     "input": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formtarget",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formtarget",
       "value_info": [
         [
           "Valid navigable target name or keyword",
@@ -3156,10 +3156,10 @@
   },
   "headers": {
     "td": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/tables.html#attr-tdth-headers",
+      "separator": " ",
       "value_type": "string",
       "value_enum": [],
-      "separator": " ",
-      "tag_url": "https://html.spec.whatwg.org/multipage/tables.html#attr-tdth-headers",
       "value_info": [
         [
           "Unordered set of unique space-separated tokens",
@@ -3179,10 +3179,10 @@
       ]
     },
     "th": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/tables.html#attr-tdth-headers",
+      "separator": " ",
       "value_type": "string",
       "value_enum": [],
-      "separator": " ",
-      "tag_url": "https://html.spec.whatwg.org/multipage/tables.html#attr-tdth-headers",
       "value_info": [
         [
           "Unordered set of unique space-separated tokens",
@@ -3204,10 +3204,10 @@
   },
   "headingoffset": {
     "all": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/interaction.html#attr-tabindex",
+      "separator": "",
       "value_type": "int",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/interaction.html#attr-tabindex",
       "value_info": [
         [
           "Valid non-negative integer",
@@ -3229,10 +3229,10 @@
   },
   "headingreset": {
     "all": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/interaction.html#attr-tabindex",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/interaction.html#attr-tabindex",
       "value_info": [
         [
           "Boolean attribute",
@@ -3250,10 +3250,10 @@
   },
   "height": {
     "canvas": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/canvas.html#attr-canvas-height",
+      "separator": "",
       "value_type": "int",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/canvas.html#attr-canvas-height",
       "value_info": [
         [
           "Valid non-negative integer",
@@ -3269,10 +3269,10 @@
       ]
     },
     "embed": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height",
+      "separator": "",
       "value_type": "int",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height",
       "value_info": [
         [
           "Valid non-negative integer",
@@ -3288,10 +3288,10 @@
       ]
     },
     "iframe": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height",
+      "separator": "",
       "value_type": "int",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height",
       "value_info": [
         [
           "Valid non-negative integer",
@@ -3307,10 +3307,10 @@
       ]
     },
     "img": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height",
+      "separator": "",
       "value_type": "int",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height",
       "value_info": [
         [
           "Valid non-negative integer",
@@ -3326,10 +3326,10 @@
       ]
     },
     "input": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height",
+      "separator": "",
       "value_type": "int",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height",
       "value_info": [
         [
           "Valid non-negative integer",
@@ -3345,10 +3345,10 @@
       ]
     },
     "object": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height",
+      "separator": "",
       "value_type": "int",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height",
       "value_info": [
         [
           "Valid non-negative integer",
@@ -3364,10 +3364,10 @@
       ]
     },
     "source": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height",
+      "separator": "",
       "value_type": "int",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height",
       "value_info": [
         [
           "Valid non-negative integer",
@@ -3383,10 +3383,10 @@
       ]
     },
     "picture": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/embedded-content.html#the-picture-element",
+      "separator": "",
       "value_type": "int",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/embedded-content.html#the-picture-element",
       "value_info": [
         [
           "Valid non-negative integer",
@@ -3402,10 +3402,10 @@
       ]
     },
     "video": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height",
+      "separator": "",
       "value_type": "int",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height",
       "value_info": [
         [
           "Valid non-negative integer",
@@ -3423,10 +3423,10 @@
   },
   "hidden": {
     "all": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/interaction.html#attr-hidden",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/interaction.html#attr-hidden",
       "value_info": [
         [
           "\"",
@@ -3460,10 +3460,10 @@
   },
   "high": {
     "meter": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-meter-high",
+      "separator": "",
       "value_type": "float",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-meter-high",
       "value_info": [
         [
           "Valid floating-point number",
@@ -3481,10 +3481,10 @@
   },
   "href": {
     "a": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-href",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-href",
       "value_info": [
         [
           "Valid URL potentially surrounded by spaces",
@@ -3504,10 +3504,10 @@
       ]
     },
     "area": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-href",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-href",
       "value_info": [
         [
           "Valid URL potentially surrounded by spaces",
@@ -3527,10 +3527,10 @@
       ]
     },
     "link": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-href",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-href",
       "value_info": [
         [
           "Valid non-empty URL potentially surrounded by spaces",
@@ -3550,10 +3550,10 @@
       ]
     },
     "base": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-base-href",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-base-href",
       "value_info": [
         [
           "Valid URL potentially surrounded by spaces",
@@ -3571,10 +3571,10 @@
   },
   "hreflang": {
     "a": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-hreflang",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-hreflang",
       "value_info": [
         [
           "Valid BCP 47 language tag",
@@ -3590,10 +3590,10 @@
       ]
     },
     "link": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-hreflang",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-hreflang",
       "value_info": [
         [
           "Valid BCP 47 language tag",
@@ -3611,10 +3611,10 @@
   },
   "http-equiv": {
     "meta": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-http-equiv",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-http-equiv",
       "value_info": [
         [
           "\"",
@@ -3672,10 +3672,10 @@
   },
   "id": {
     "all": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/dom.html#the-id-attribute",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/dom.html#the-id-attribute",
       "value_info": [
         [
           "Text",
@@ -3697,10 +3697,10 @@
   },
   "imagesizes": {
     "link": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-imagesizes",
+      "separator": ",",
       "value_type": "string",
       "value_enum": [],
-      "separator": ",",
-      "tag_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-imagesizes",
       "value_info": [
         [
           "Valid source size list",
@@ -3734,10 +3734,10 @@
   },
   "imagesrcset": {
     "link": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-imagesrcset",
+      "separator": ",",
       "value_type": "string",
       "value_enum": [],
-      "separator": ",",
-      "tag_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-imagesrcset",
       "value_info": [
         [
           "Comma-separated list of",
@@ -3775,10 +3775,10 @@
   },
   "inert": {
     "all": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/interaction.html#the-inert-attribute",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/interaction.html#the-inert-attribute",
       "value_info": [
         [
           "Boolean attribute",
@@ -3804,10 +3804,10 @@
   },
   "inputmode": {
     "all": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/interaction.html#attr-inputmode",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/interaction.html#attr-inputmode",
       "value_info": [
         [
           "\"",
@@ -3889,10 +3889,10 @@
   },
   "integrity": {
     "link": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-integrity",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-integrity",
       "value_info": [
         [
           "Text",
@@ -3920,10 +3920,10 @@
       ]
     },
     "script": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-integrity",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-integrity",
       "value_info": [
         [
           "Text",
@@ -3953,10 +3953,10 @@
   },
   "is": {
     "all": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/custom-elements.html#attr-is",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/custom-elements.html#attr-is",
       "value_info": [
         [
           "Valid custom element name",
@@ -3986,10 +3986,10 @@
   },
   "ismap": {
     "img": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-ismap",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-ismap",
       "value_info": [
         [
           "Boolean attribute",
@@ -4007,10 +4007,10 @@
   },
   "itemid": {
     "all": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/microdata.html#attr-itemid",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/microdata.html#attr-itemid",
       "value_info": [
         [
           "Valid URL potentially surrounded by spaces",
@@ -4032,10 +4032,10 @@
   },
   "itemprop": {
     "all": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/microdata.html#names:-the-itemprop-attribute",
+      "separator": " ",
       "value_type": "string",
       "value_enum": [],
-      "separator": " ",
-      "tag_url": "https://html.spec.whatwg.org/multipage/microdata.html#names:-the-itemprop-attribute",
       "value_info": [
         [
           "Unordered set of unique space-separated tokens",
@@ -4077,10 +4077,10 @@
   },
   "itemref": {
     "all": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/microdata.html#attr-itemref",
+      "separator": " ",
       "value_type": "string",
       "value_enum": [],
-      "separator": " ",
-      "tag_url": "https://html.spec.whatwg.org/multipage/microdata.html#attr-itemref",
       "value_info": [
         [
           "Unordered set of unique space-separated tokens",
@@ -4106,10 +4106,10 @@
   },
   "itemscope": {
     "all": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/microdata.html#attr-itemscope",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/microdata.html#attr-itemscope",
       "value_info": [
         [
           "Boolean attribute",
@@ -4127,10 +4127,10 @@
   },
   "itemtype": {
     "all": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/microdata.html#attr-itemtype",
+      "separator": " ",
       "value_type": "string",
       "value_enum": [],
-      "separator": " ",
-      "tag_url": "https://html.spec.whatwg.org/multipage/microdata.html#attr-itemtype",
       "value_info": [
         [
           "Unordered set of unique space-separated tokens",
@@ -4160,10 +4160,10 @@
   },
   "kind": {
     "track": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/media.html#attr-track-kind",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/media.html#attr-track-kind",
       "value_info": [
         [
           "\"",
@@ -4221,10 +4221,10 @@
   },
   "label": {
     "optgroup": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-optgroup-label",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-optgroup-label",
       "value_info": [
         [
           "Text",
@@ -4240,10 +4240,10 @@
       ]
     },
     "option": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-option-label",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-option-label",
       "value_info": [
         [
           "Text",
@@ -4259,10 +4259,10 @@
       ]
     },
     "track": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/media.html#attr-track-label",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/media.html#attr-track-label",
       "value_info": [
         [
           "Text",
@@ -4280,10 +4280,10 @@
   },
   "lang": {
     "all": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/dom.html#attr-lang",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/dom.html#attr-lang",
       "value_info": [
         [
           "Valid BCP 47 language tag or the empty string",
@@ -4305,10 +4305,10 @@
   },
   "list": {
     "input": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/input.html#attr-input-list",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/input.html#attr-input-list",
       "value_info": [
         [
           "ID",
@@ -4326,10 +4326,10 @@
   },
   "loading": {
     "iframe": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-loading",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-loading",
       "value_info": [
         [
           "\"",
@@ -4361,10 +4361,10 @@
       ]
     },
     "img": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-loading",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-loading",
       "value_info": [
         [
           "\"",
@@ -4396,10 +4396,10 @@
       ]
     },
     "audio": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/media.html#attr-media-loading",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/media.html#attr-media-loading",
       "value_info": [
         [
           "\"",
@@ -4431,10 +4431,10 @@
       ]
     },
     "video": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/media.html#attr-media-loading",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/media.html#attr-media-loading",
       "value_info": [
         [
           "\"",
@@ -4468,10 +4468,10 @@
   },
   "loop": {
     "audio": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/media.html#attr-media-loop",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/media.html#attr-media-loop",
       "value_info": [
         [
           "Boolean attribute",
@@ -4491,10 +4491,10 @@
       ]
     },
     "video": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/media.html#attr-media-loop",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/media.html#attr-media-loop",
       "value_info": [
         [
           "Boolean attribute",
@@ -4516,10 +4516,10 @@
   },
   "low": {
     "meter": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-meter-low",
+      "separator": "",
       "value_type": "float",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-meter-low",
       "value_info": [
         [
           "Valid floating-point number",
@@ -4537,10 +4537,10 @@
   },
   "max": {
     "input": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/input.html#attr-input-max",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/input.html#attr-input-max",
       "value_info": [
         [
           "Varies*",
@@ -4556,10 +4556,10 @@
       ]
     },
     "meter": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-meter-max",
+      "separator": "",
       "value_type": "float",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-meter-max",
       "value_info": [
         [
           "Valid floating-point number",
@@ -4575,10 +4575,10 @@
       ]
     },
     "progress": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-progress-max",
+      "separator": "",
       "value_type": "float",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-progress-max",
       "value_info": [
         [
           "Valid floating-point number",
@@ -4596,10 +4596,10 @@
   },
   "maxlength": {
     "input": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/input.html#attr-input-maxlength",
+      "separator": "",
       "value_type": "int",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/input.html#attr-input-maxlength",
       "value_info": [
         [
           "Valid non-negative integer",
@@ -4623,10 +4623,10 @@
       ]
     },
     "textarea": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-maxlength",
+      "separator": "",
       "value_type": "int",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-maxlength",
       "value_info": [
         [
           "Valid non-negative integer",
@@ -4652,10 +4652,10 @@
   },
   "media": {
     "link": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-media",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-media",
       "value_info": [
         [
           "Valid media query list",
@@ -4671,10 +4671,10 @@
       ]
     },
     "meta": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-media",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-media",
       "value_info": [
         [
           "Valid media query list",
@@ -4690,10 +4690,10 @@
       ]
     },
     "source": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-media",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-media",
       "value_info": [
         [
           "Valid media query list",
@@ -4709,10 +4709,10 @@
       ]
     },
     "style": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-style-media",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-style-media",
       "value_info": [
         [
           "Valid media query list",
@@ -4730,10 +4730,10 @@
   },
   "method": {
     "form": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-method",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-method",
       "value_info": [
         [
           "\"",
@@ -4779,10 +4779,10 @@
   },
   "min": {
     "input": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/input.html#attr-input-min",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/input.html#attr-input-min",
       "value_info": [
         [
           "Varies*",
@@ -4798,10 +4798,10 @@
       ]
     },
     "meter": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-meter-min",
+      "separator": "",
       "value_type": "float",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-meter-min",
       "value_info": [
         [
           "Valid floating-point number",
@@ -4819,10 +4819,10 @@
   },
   "minlength": {
     "input": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/input.html#attr-input-minlength",
+      "separator": "",
       "value_type": "int",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/input.html#attr-input-minlength",
       "value_info": [
         [
           "Valid non-negative integer",
@@ -4846,10 +4846,10 @@
       ]
     },
     "textarea": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-minlength",
+      "separator": "",
       "value_type": "int",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-minlength",
       "value_info": [
         [
           "Valid non-negative integer",
@@ -4875,10 +4875,10 @@
   },
   "multiple": {
     "input": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/input.html#attr-input-multiple",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/input.html#attr-input-multiple",
       "value_info": [
         [
           "Boolean attribute",
@@ -4894,10 +4894,10 @@
       ]
     },
     "select": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-select-multiple",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-select-multiple",
       "value_info": [
         [
           "Boolean attribute",
@@ -4915,10 +4915,10 @@
   },
   "muted": {
     "audio": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/media.html#attr-media-muted",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/media.html#attr-media-muted",
       "value_info": [
         [
           "Boolean attribute",
@@ -4942,10 +4942,10 @@
       ]
     },
     "video": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/media.html#attr-media-muted",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/media.html#attr-media-muted",
       "value_info": [
         [
           "Boolean attribute",
@@ -4971,10 +4971,10 @@
   },
   "name": {
     "button": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name",
       "value_info": [
         [
           "Text",
@@ -5006,10 +5006,10 @@
       ]
     },
     "fieldset": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name",
       "value_info": [
         [
           "Text",
@@ -5041,10 +5041,10 @@
       ]
     },
     "input": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name",
       "value_info": [
         [
           "Text",
@@ -5076,10 +5076,10 @@
       ]
     },
     "output": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name",
       "value_info": [
         [
           "Text",
@@ -5111,10 +5111,10 @@
       ]
     },
     "select": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name",
       "value_info": [
         [
           "Text",
@@ -5146,10 +5146,10 @@
       ]
     },
     "textarea": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name",
       "value_info": [
         [
           "Text",
@@ -5181,10 +5181,10 @@
       ]
     },
     "formcustom": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name",
       "value_info": [
         [
           "Text",
@@ -5216,10 +5216,10 @@
       ]
     },
     "details": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-details-name",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-details-name",
       "value_info": [
         [
           "Text",
@@ -5243,10 +5243,10 @@
       ]
     },
     "form": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/forms.html#attr-form-name",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/forms.html#attr-form-name",
       "value_info": [
         [
           "Text",
@@ -5270,10 +5270,10 @@
       ]
     },
     "iframe": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-name",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-name",
       "value_info": [
         [
           "Valid navigable target name or keyword",
@@ -5293,10 +5293,10 @@
       ]
     },
     "object": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-object-name",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-object-name",
       "value_info": [
         [
           "Valid navigable target name or keyword",
@@ -5316,10 +5316,10 @@
       ]
     },
     "map": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/image-maps.html#attr-map-name",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/image-maps.html#attr-map-name",
       "value_info": [
         [
           "Text",
@@ -5359,10 +5359,10 @@
       ]
     },
     "meta": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-name",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-name",
       "value_info": [
         [
           "Text",
@@ -5378,10 +5378,10 @@
       ]
     },
     "slot": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/scripting.html#attr-slot-name",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/scripting.html#attr-slot-name",
       "value_info": [
         [
           "Text",
@@ -5399,10 +5399,10 @@
   },
   "nomodule": {
     "script": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-nomodule",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-nomodule",
       "value_info": [
         [
           "Boolean attribute",
@@ -5424,10 +5424,10 @@
   },
   "nonce": {
     "all": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-nonce",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-nonce",
       "value_info": [
         [
           "Text",
@@ -5457,10 +5457,10 @@
   },
   "novalidate": {
     "form": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-novalidate",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-novalidate",
       "value_info": [
         [
           "Boolean attribute",
@@ -5482,10 +5482,10 @@
   },
   "open": {
     "details": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-details-open",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-details-open",
       "value_info": [
         [
           "Boolean attribute",
@@ -5501,10 +5501,10 @@
       ]
     },
     "dialog": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-dialog-open",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-dialog-open",
       "value_info": [
         [
           "Boolean attribute",
@@ -5522,10 +5522,10 @@
   },
   "optimum": {
     "meter": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-meter-optimum",
+      "separator": "",
       "value_type": "float",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-meter-optimum",
       "value_info": [
         [
           "Valid floating-point number",
@@ -5543,10 +5543,10 @@
   },
   "pattern": {
     "input": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/input.html#attr-input-pattern",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/input.html#attr-input-pattern",
       "value_info": [
         [
           "Regular expression matching the JavaScript",
@@ -5572,10 +5572,10 @@
   },
   "ping": {
     "a": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/links.html#ping",
+      "separator": " ",
       "value_type": "string",
       "value_enum": [],
-      "separator": " ",
-      "tag_url": "https://html.spec.whatwg.org/multipage/links.html#ping",
       "value_info": [
         [
           "Set of space-separated tokens",
@@ -5603,10 +5603,10 @@
       ]
     },
     "area": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/links.html#ping",
+      "separator": " ",
       "value_type": "string",
       "value_enum": [],
-      "separator": " ",
-      "tag_url": "https://html.spec.whatwg.org/multipage/links.html#ping",
       "value_info": [
         [
           "Set of space-separated tokens",
@@ -5636,10 +5636,10 @@
   },
   "placeholder": {
     "input": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/input.html#attr-input-placeholder",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/input.html#attr-input-placeholder",
       "value_info": [
         [
           "Text",
@@ -5655,10 +5655,10 @@
       ]
     },
     "textarea": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-placeholder",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-placeholder",
       "value_info": [
         [
           "Text",
@@ -5676,10 +5676,10 @@
   },
   "playsinline": {
     "video": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/media.html#attr-video-playsinline",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/media.html#attr-video-playsinline",
       "value_info": [
         [
           "Boolean attribute",
@@ -5697,10 +5697,10 @@
   },
   "popover": {
     "all": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/popover.html#attr-popover",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/popover.html#attr-popover",
       "value_info": [
         [
           "\"",
@@ -5750,10 +5750,10 @@
   },
   "popovertarget": {
     "button": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/popover.html#attr-popovertarget",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/popover.html#attr-popovertarget",
       "value_info": [
         [
           "ID",
@@ -5769,10 +5769,10 @@
       ]
     },
     "input": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/popover.html#attr-popovertarget",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/popover.html#attr-popovertarget",
       "value_info": [
         [
           "ID",
@@ -5790,10 +5790,10 @@
   },
   "popovertargetaction": {
     "button": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/popover.html#attr-popovertargetaction",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/popover.html#attr-popovertargetaction",
       "value_info": [
         [
           "\"",
@@ -5833,10 +5833,10 @@
       ]
     },
     "input": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/popover.html#attr-popovertargetaction",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/popover.html#attr-popovertargetaction",
       "value_info": [
         [
           "\"",
@@ -5878,10 +5878,10 @@
   },
   "poster": {
     "video": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/media.html#attr-video-poster",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/media.html#attr-video-poster",
       "value_info": [
         [
           "Valid non-empty URL potentially surrounded by spaces",
@@ -5899,10 +5899,10 @@
   },
   "preload": {
     "audio": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/media.html#attr-media-preload",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/media.html#attr-media-preload",
       "value_info": [
         [
           "\"",
@@ -5950,10 +5950,10 @@
       ]
     },
     "video": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/media.html#attr-media-preload",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/media.html#attr-media-preload",
       "value_info": [
         [
           "\"",
@@ -6003,10 +6003,10 @@
   },
   "readonly": {
     "input": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/input.html#attr-input-readonly",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/input.html#attr-input-readonly",
       "value_info": [
         [
           "Boolean attribute",
@@ -6022,10 +6022,10 @@
       ]
     },
     "textarea": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-readonly",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-readonly",
       "value_info": [
         [
           "Boolean attribute",
@@ -6041,10 +6041,10 @@
       ]
     },
     "formcustom": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/custom-elements.html#attr-face-readonly",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/custom-elements.html#attr-face-readonly",
       "value_info": [
         [
           "Boolean attribute",
@@ -6070,10 +6070,10 @@
   },
   "referrerpolicy": {
     "a": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-referrerpolicy",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-referrerpolicy",
       "value_info": [
         [
           "Referrer policy",
@@ -6101,10 +6101,10 @@
       ]
     },
     "area": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-referrerpolicy",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-referrerpolicy",
       "value_info": [
         [
           "Referrer policy",
@@ -6132,10 +6132,10 @@
       ]
     },
     "iframe": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-referrerpolicy",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-referrerpolicy",
       "value_info": [
         [
           "Referrer policy",
@@ -6163,10 +6163,10 @@
       ]
     },
     "img": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-referrerpolicy",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-referrerpolicy",
       "value_info": [
         [
           "Referrer policy",
@@ -6194,10 +6194,10 @@
       ]
     },
     "link": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-referrerpolicy",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-referrerpolicy",
       "value_info": [
         [
           "Referrer policy",
@@ -6225,10 +6225,10 @@
       ]
     },
     "script": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-referrerpolicy",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-referrerpolicy",
       "value_info": [
         [
           "Referrer policy",
@@ -6258,10 +6258,10 @@
   },
   "rel": {
     "a": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-rel",
+      "separator": " ",
       "value_type": "string",
       "value_enum": [],
-      "separator": " ",
-      "tag_url": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-rel",
       "value_info": [
         [
           "Unordered set of unique space-separated tokens",
@@ -6285,10 +6285,10 @@
       ]
     },
     "area": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-rel",
+      "separator": " ",
       "value_type": "string",
       "value_enum": [],
-      "separator": " ",
-      "tag_url": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-rel",
       "value_info": [
         [
           "Unordered set of unique space-separated tokens",
@@ -6312,10 +6312,10 @@
       ]
     },
     "link": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-rel",
+      "separator": " ",
       "value_type": "string",
       "value_enum": [],
-      "separator": " ",
-      "tag_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-rel",
       "value_info": [
         [
           "Unordered set of unique space-separated tokens",
@@ -6341,10 +6341,10 @@
   },
   "required": {
     "input": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/input.html#attr-input-required",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/input.html#attr-input-required",
       "value_info": [
         [
           "Boolean attribute",
@@ -6364,10 +6364,10 @@
       ]
     },
     "select": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-select-required",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-select-required",
       "value_info": [
         [
           "Boolean attribute",
@@ -6387,10 +6387,10 @@
       ]
     },
     "textarea": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-required",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-required",
       "value_info": [
         [
           "Boolean attribute",
@@ -6412,10 +6412,10 @@
   },
   "reversed": {
     "ol": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-reversed",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-reversed",
       "value_info": [
         [
           "Boolean attribute",
@@ -6433,7 +6433,9 @@
   },
   "role": {
     "all": {
-      "value_type": "string",
+      "scope_url": "",
+      "separator": " ",
+      "value_type": "enum",
       "value_enum": [
         "alert",
         "alertdialog",
@@ -6524,8 +6526,6 @@
         "treegrid",
         "treeitem"
       ],
-      "separator": " ",
-      "tag_url": "",
       "value_info": [
         [
           "alert",
@@ -6891,10 +6891,10 @@
   },
   "rows": {
     "textarea": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-rows",
+      "separator": "",
       "value_type": "int",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-rows",
       "value_info": [
         [
           "Valid non-negative integer",
@@ -6916,10 +6916,10 @@
   },
   "rowspan": {
     "td": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/tables.html#attr-tdth-rowspan",
+      "separator": "",
       "value_type": "int",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/tables.html#attr-tdth-rowspan",
       "value_info": [
         [
           "Valid non-negative integer",
@@ -6935,10 +6935,10 @@
       ]
     },
     "th": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/tables.html#attr-tdth-rowspan",
+      "separator": "",
       "value_type": "int",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/tables.html#attr-tdth-rowspan",
       "value_info": [
         [
           "Valid non-negative integer",
@@ -6956,10 +6956,10 @@
   },
   "sandbox": {
     "iframe": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-sandbox",
+      "separator": " ",
       "value_type": "string",
       "value_enum": [],
-      "separator": " ",
-      "tag_url": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-sandbox",
       "value_info": [
         [
           "Unordered set of unique space-separated tokens",
@@ -7145,10 +7145,10 @@
   },
   "scope": {
     "th": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/tables.html#attr-th-scope",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/tables.html#attr-th-scope",
       "value_info": [
         [
           "\"",
@@ -7198,10 +7198,10 @@
   },
   "selected": {
     "option": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-option-selected",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-option-selected",
       "value_info": [
         [
           "Boolean attribute",
@@ -7219,10 +7219,10 @@
   },
   "shadowrootclonable": {
     "template": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootclonable",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootclonable",
       "value_info": [
         [
           "Boolean attribute",
@@ -7248,10 +7248,10 @@
   },
   "shadowrootcustomelementregistry": {
     "template": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootcustomelementregistry",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootcustomelementregistry",
       "value_info": [
         [
           "Boolean attribute",
@@ -7269,10 +7269,10 @@
   },
   "shadowrootdelegatesfocus": {
     "template": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootdelegatesfocus",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootdelegatesfocus",
       "value_info": [
         [
           "Boolean attribute",
@@ -7298,10 +7298,10 @@
   },
   "shadowrootmode": {
     "template": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootmode",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootmode",
       "value_info": [
         [
           "\"",
@@ -7335,10 +7335,10 @@
   },
   "shadowrootserializable": {
     "template": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootserializable",
+      "separator": "",
       "value_type": "bool",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootserializable",
       "value_info": [
         [
           "Boolean attribute",
@@ -7364,10 +7364,10 @@
   },
   "shadowrootslotassignment": {
     "template": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootslotassignment",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootslotassignment",
       "value_info": [
         [
           "\"",
@@ -7409,10 +7409,10 @@
   },
   "shape": {
     "area": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/image-maps.html#attr-area-shape",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/image-maps.html#attr-area-shape",
       "value_info": [
         [
           "\"",
@@ -7466,10 +7466,10 @@
   },
   "size": {
     "input": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/input.html#attr-input-size",
+      "separator": "",
       "value_type": "int",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/input.html#attr-input-size",
       "value_info": [
         [
           "Valid non-negative integer",
@@ -7489,10 +7489,10 @@
       ]
     },
     "select": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-select-size",
+      "separator": "",
       "value_type": "int",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-select-size",
       "value_info": [
         [
           "Valid non-negative integer",
@@ -7514,10 +7514,10 @@
   },
   "sizes": {
     "link": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-sizes",
+      "separator": " ",
       "value_type": "string",
       "value_enum": [],
-      "separator": " ",
-      "tag_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-sizes",
       "value_info": [
         [
           "Unordered set of unique space-separated tokens",
@@ -7561,10 +7561,10 @@
       ]
     },
     "img": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-sizes",
+      "separator": ",",
       "value_type": "string",
       "value_enum": [],
-      "separator": ",",
-      "tag_url": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-sizes",
       "value_info": [
         [
           "Valid source size list",
@@ -7580,10 +7580,10 @@
       ]
     },
     "source": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-sizes",
+      "separator": ",",
       "value_type": "string",
       "value_enum": [],
-      "separator": ",",
-      "tag_url": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-sizes",
       "value_info": [
         [
           "Valid source size list",
@@ -7601,10 +7601,10 @@
   },
   "slot": {
     "all": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/dom.html#the-id-attribute",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/dom.html#the-id-attribute",
       "value_info": [
         [
           "Text",
@@ -7622,10 +7622,10 @@
   },
   "span": {
     "col": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/tables.html#attr-col-span",
+      "separator": "",
       "value_type": "int",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/tables.html#attr-col-span",
       "value_info": [
         [
           "Valid non-negative integer",
@@ -7645,10 +7645,10 @@
       ]
     },
     "colgroup": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/tables.html#attr-colgroup-span",
+      "separator": "",
       "value_type": "int",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/tables.html#attr-colgroup-span",
       "value_info": [
         [
           "Valid non-negative integer",
@@ -7670,10 +7670,10 @@
   },
   "spellcheck": {
     "all": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/interaction.html#attr-spellcheck",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/interaction.html#attr-spellcheck",
       "value_info": [
         [
           "\"",
@@ -7707,10 +7707,10 @@
   },
   "src": {
     "audio": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/media.html#attr-media-src",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/media.html#attr-media-src",
       "value_info": [
         [
           "Valid non-empty URL potentially surrounded by spaces",
@@ -7734,10 +7734,10 @@
       ]
     },
     "embed": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-embed-src",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-embed-src",
       "value_info": [
         [
           "Valid non-empty URL potentially surrounded by spaces",
@@ -7753,10 +7753,10 @@
       ]
     },
     "iframe": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-src",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-src",
       "value_info": [
         [
           "Valid non-empty URL potentially surrounded by spaces",
@@ -7772,10 +7772,10 @@
       ]
     },
     "img": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-src",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-src",
       "value_info": [
         [
           "Valid non-empty URL potentially surrounded by spaces",
@@ -7791,10 +7791,10 @@
       ]
     },
     "input": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/input.html#attr-input-src",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/input.html#attr-input-src",
       "value_info": [
         [
           "Valid non-empty URL potentially surrounded by spaces",
@@ -7810,10 +7810,10 @@
       ]
     },
     "script": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-src",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-src",
       "value_info": [
         [
           "Valid non-empty URL potentially surrounded by spaces",
@@ -7829,10 +7829,10 @@
       ]
     },
     "source": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-src",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-src",
       "value_info": [
         [
           "Valid non-empty URL potentially surrounded by spaces",
@@ -7848,10 +7848,10 @@
       ]
     },
     "video": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/media.html#the-video-element",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/media.html#the-video-element",
       "value_info": [
         [
           "Valid non-empty URL potentially surrounded by spaces",
@@ -7875,10 +7875,10 @@
       ]
     },
     "track": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/media.html#attr-track-src",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/media.html#attr-track-src",
       "value_info": [
         [
           "Valid non-empty URL potentially surrounded by spaces",
@@ -7896,10 +7896,10 @@
   },
   "srcdoc": {
     "iframe": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-srcdoc",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-srcdoc",
       "value_info": [
         [
           "The source of",
@@ -7925,10 +7925,10 @@
   },
   "srclang": {
     "track": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/media.html#attr-track-srclang",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/media.html#attr-track-srclang",
       "value_info": [
         [
           "Valid BCP 47 language tag",
@@ -7946,10 +7946,10 @@
   },
   "srcset": {
     "img": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-srcset",
+      "separator": ",",
       "value_type": "string",
       "value_enum": [],
-      "separator": ",",
-      "tag_url": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-srcset",
       "value_info": [
         [
           "Comma-separated list of",
@@ -7969,10 +7969,10 @@
       ]
     },
     "source": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-srcset",
+      "separator": ",",
       "value_type": "string",
       "value_enum": [],
-      "separator": ",",
-      "tag_url": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-srcset",
       "value_info": [
         [
           "Comma-separated list of",
@@ -7994,10 +7994,10 @@
   },
   "start": {
     "ol": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-start",
+      "separator": "",
       "value_type": "int",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-start",
       "value_info": [
         [
           "Valid integer",
@@ -8019,10 +8019,10 @@
   },
   "step": {
     "input": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/input.html#attr-input-step",
+      "separator": "",
       "value_type": "float",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/input.html#attr-input-step",
       "value_info": [
         [
           "Valid floating-point number",
@@ -8052,10 +8052,10 @@
   },
   "style": {
     "all": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/dom.html#attr-style",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/dom.html#attr-style",
       "value_info": [
         [
           "CSS declarations*",
@@ -8073,10 +8073,10 @@
   },
   "tabindex": {
     "all": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/interaction.html#attr-tabindex",
+      "separator": "",
       "value_type": "int",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/interaction.html#attr-tabindex",
       "value_info": [
         [
           "Valid integer",
@@ -8114,10 +8114,10 @@
   },
   "target": {
     "a": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-target",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-target",
       "value_info": [
         [
           "Valid navigable target name or keyword",
@@ -8145,10 +8145,10 @@
       ]
     },
     "area": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-target",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-target",
       "value_info": [
         [
           "Valid navigable target name or keyword",
@@ -8176,10 +8176,10 @@
       ]
     },
     "base": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-base-target",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-base-target",
       "value_info": [
         [
           "Valid navigable target name or keyword",
@@ -8219,10 +8219,10 @@
       ]
     },
     "form": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-target",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-target",
       "value_info": [
         [
           "Valid navigable target name or keyword",
@@ -8248,10 +8248,10 @@
   },
   "title": {
     "all": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/dom.html#attr-title",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/dom.html#attr-title",
       "value_info": [
         [
           "Text",
@@ -8267,10 +8267,10 @@
       ]
     },
     "abbr": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#attr-abbr-title",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#attr-abbr-title",
       "value_info": [
         [
           "Text",
@@ -8286,10 +8286,10 @@
       ]
     },
     "dfn": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#attr-dfn-title",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#attr-dfn-title",
       "value_info": [
         [
           "Text",
@@ -8305,10 +8305,10 @@
       ]
     },
     "input": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/input.html#attr-input-title",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/input.html#attr-input-title",
       "value_info": [
         [
           "Text",
@@ -8332,10 +8332,10 @@
       ]
     },
     "link": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-title",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-title",
       "value_info": [
         [
           "Text",
@@ -8351,10 +8351,10 @@
       ]
     },
     "style": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-style-title",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-style-title",
       "value_info": [
         [
           "Text",
@@ -8372,10 +8372,10 @@
   },
   "translate": {
     "all": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/dom.html#attr-translate",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/dom.html#attr-translate",
       "value_info": [
         [
           "\"",
@@ -8409,10 +8409,10 @@
   },
   "type": {
     "a": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-type",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-type",
       "value_info": [
         [
           "Valid MIME type string",
@@ -8428,10 +8428,10 @@
       ]
     },
     "link": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-type",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-type",
       "value_info": [
         [
           "Valid MIME type string",
@@ -8447,10 +8447,10 @@
       ]
     },
     "button": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-type",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-type",
       "value_info": [
         [
           "\"",
@@ -8490,10 +8490,10 @@
       ]
     },
     "embed": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-embed-type",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-embed-type",
       "value_info": [
         [
           "Valid MIME type string",
@@ -8509,10 +8509,10 @@
       ]
     },
     "object": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-object-type",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-object-type",
       "value_info": [
         [
           "Valid MIME type string",
@@ -8528,10 +8528,10 @@
       ]
     },
     "source": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-type",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-type",
       "value_info": [
         [
           "Valid MIME type string",
@@ -8547,6 +8547,8 @@
       ]
     },
     "input": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/input.html#attr-input-type",
+      "separator": "",
       "value_type": "enum",
       "value_enum": [
         "button",
@@ -8572,8 +8574,6 @@
         "url",
         "week"
       ],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/input.html#attr-input-type",
       "value_info": [
         [
           "hidden",
@@ -8673,10 +8673,10 @@
       ]
     },
     "ol": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-type",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-type",
       "value_info": [
         [
           "\"",
@@ -8732,10 +8732,10 @@
       ]
     },
     "script": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-type",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-type",
       "value_info": [
         [
           "\"",
@@ -8789,10 +8789,10 @@
   },
   "usemap": {
     "img": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/image-maps.html#attr-hyperlink-usemap",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/image-maps.html#attr-hyperlink-usemap",
       "value_info": [
         [
           "Valid hash-name reference",
@@ -8818,10 +8818,10 @@
   },
   "value": {
     "button": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-value",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-value",
       "value_info": [
         [
           "Text",
@@ -8841,10 +8841,10 @@
       ]
     },
     "option": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-option-value",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-option-value",
       "value_info": [
         [
           "Text",
@@ -8864,10 +8864,10 @@
       ]
     },
     "data": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#attr-data-value",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#attr-data-value",
       "value_info": [
         [
           "Text",
@@ -8883,10 +8883,10 @@
       ]
     },
     "input": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/input.html#attr-input-value",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/input.html#attr-input-value",
       "value_info": [
         [
           "Varies*",
@@ -8902,10 +8902,10 @@
       ]
     },
     "li": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/grouping-content.html#attr-li-value",
+      "separator": "",
       "value_type": "int",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/grouping-content.html#attr-li-value",
       "value_info": [
         [
           "Valid integer",
@@ -8925,10 +8925,10 @@
       ]
     },
     "meter": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-meter-value",
+      "separator": "",
       "value_type": "float",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-meter-value",
       "value_info": [
         [
           "Valid floating-point number",
@@ -8944,10 +8944,10 @@
       ]
     },
     "progress": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-progress-value",
+      "separator": "",
       "value_type": "float",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-progress-value",
       "value_info": [
         [
           "Valid floating-point number",
@@ -8965,10 +8965,10 @@
   },
   "width": {
     "canvas": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/canvas.html#attr-canvas-width",
+      "separator": "",
       "value_type": "int",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/canvas.html#attr-canvas-width",
       "value_info": [
         [
           "Valid non-negative integer",
@@ -8984,10 +8984,10 @@
       ]
     },
     "embed": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width",
+      "separator": "",
       "value_type": "int",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width",
       "value_info": [
         [
           "Valid non-negative integer",
@@ -9003,10 +9003,10 @@
       ]
     },
     "iframe": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width",
+      "separator": "",
       "value_type": "int",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width",
       "value_info": [
         [
           "Valid non-negative integer",
@@ -9022,10 +9022,10 @@
       ]
     },
     "img": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width",
+      "separator": "",
       "value_type": "int",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width",
       "value_info": [
         [
           "Valid non-negative integer",
@@ -9041,10 +9041,10 @@
       ]
     },
     "input": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width",
+      "separator": "",
       "value_type": "int",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width",
       "value_info": [
         [
           "Valid non-negative integer",
@@ -9060,10 +9060,10 @@
       ]
     },
     "object": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width",
+      "separator": "",
       "value_type": "int",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width",
       "value_info": [
         [
           "Valid non-negative integer",
@@ -9079,10 +9079,10 @@
       ]
     },
     "source": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width",
+      "separator": "",
       "value_type": "int",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width",
       "value_info": [
         [
           "Valid non-negative integer",
@@ -9098,10 +9098,10 @@
       ]
     },
     "picture": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/embedded-content.html#the-picture-element",
+      "separator": "",
       "value_type": "int",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/embedded-content.html#the-picture-element",
       "value_info": [
         [
           "Valid non-negative integer",
@@ -9117,10 +9117,10 @@
       ]
     },
     "video": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width",
+      "separator": "",
       "value_type": "int",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width",
       "value_info": [
         [
           "Valid non-negative integer",
@@ -9138,10 +9138,10 @@
   },
   "wrap": {
     "textarea": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-wrap",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-wrap",
       "value_info": [
         [
           "\"",
@@ -9179,10 +9179,10 @@
   },
   "writingsuggestions": {
     "all": {
+      "scope_url": "https://html.spec.whatwg.org/multipage/interaction.html#attr-writingsuggestions",
+      "separator": "",
       "value_type": "string",
       "value_enum": [],
-      "separator": "",
-      "tag_url": "https://html.spec.whatwg.org/multipage/interaction.html#attr-writingsuggestions",
       "value_info": [
         [
           "\"",
