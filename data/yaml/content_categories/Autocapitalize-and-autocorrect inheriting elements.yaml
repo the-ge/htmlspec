@@ -1,10 +1,21 @@
-elements:
-- button
-- fieldset
-- input
-- output
-- select
-- textarea
-elements_maybe: []
-exceptions: ''
 url: https://html.spec.whatwg.org/multipage/forms.html#category-autocapitalize
+elements:
+- !!python/tuple
+  - button
+  - https://html.spec.whatwg.org/multipage/form-elements.html#the-button-element
+- !!python/tuple
+  - fieldset
+  - https://html.spec.whatwg.org/multipage/form-elements.html#the-fieldset-element
+- !!python/tuple
+  - input
+  - https://html.spec.whatwg.org/multipage/input.html#the-input-element
+- !!python/tuple
+  - output
+  - https://html.spec.whatwg.org/multipage/form-elements.html#the-output-element
+- !!python/tuple
+  - select
+  - https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element
+- !!python/tuple
+  - textarea
+  - https://html.spec.whatwg.org/multipage/form-elements.html#the-textarea-element
+elements_if: null

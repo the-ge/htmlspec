@@ -1,62 +1,204 @@
-elements:
-- Text
-- a
-- abbr
-- audio
-- b
-- bdi
-- bdo
-- br
-- button
-- canvas
-- cite
-- code
-- data
-- datalist
-- del
-- dfn
-- em
-- embed
-- i
-- iframe
-- img
-- input
-- ins
-- kbd
-- label
-- map
-- mark
-- math
-- meter
-- noscript
-- object
-- output
-- picture
-- progress
-- q
-- ruby
-- s
-- samp
-- script
-- select
-- selectedcontent
-- slot
-- small
-- span
-- strong
-- sub
-- sup
-- svg
-- template
-- textarea
-- time
-- u
-- var
-- video
-- wbr
-elements_maybe:
-- area
-- link
-- meta
-exceptions: area (if it is a descendant of a  map element); link (if it is allowed in the body); meta (if the itemprop attribute is present)
 url: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+elements:
+- !!python/tuple
+  - a
+  - https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-a-element
+- !!python/tuple
+  - abbr
+  - https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-abbr-element
+- !!python/tuple
+  - audio
+  - https://html.spec.whatwg.org/multipage/media.html#the-audio-element
+- !!python/tuple
+  - b
+  - https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-b-element
+- !!python/tuple
+  - bdi
+  - https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-bdi-element
+- !!python/tuple
+  - bdo
+  - https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-bdo-element
+- !!python/tuple
+  - br
+  - https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-br-element
+- !!python/tuple
+  - button
+  - https://html.spec.whatwg.org/multipage/form-elements.html#the-button-element
+- !!python/tuple
+  - canvas
+  - https://html.spec.whatwg.org/multipage/canvas.html#the-canvas-element
+- !!python/tuple
+  - cite
+  - https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-cite-element
+- !!python/tuple
+  - code
+  - https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-code-element
+- !!python/tuple
+  - data
+  - https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-data-element
+- !!python/tuple
+  - datalist
+  - https://html.spec.whatwg.org/multipage/form-elements.html#the-datalist-element
+- !!python/tuple
+  - del
+  - https://html.spec.whatwg.org/multipage/edits.html#the-del-element
+- !!python/tuple
+  - dfn
+  - https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-dfn-element
+- !!python/tuple
+  - em
+  - https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-em-element
+- !!python/tuple
+  - embed
+  - https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-embed-element
+- !!python/tuple
+  - i
+  - https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-i-element
+- !!python/tuple
+  - iframe
+  - https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-iframe-element
+- !!python/tuple
+  - img
+  - https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element
+- !!python/tuple
+  - input
+  - https://html.spec.whatwg.org/multipage/input.html#the-input-element
+- !!python/tuple
+  - ins
+  - https://html.spec.whatwg.org/multipage/edits.html#the-ins-element
+- !!python/tuple
+  - kbd
+  - https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-kbd-element
+- !!python/tuple
+  - label
+  - https://html.spec.whatwg.org/multipage/forms.html#the-label-element
+- !!python/tuple
+  - map
+  - https://html.spec.whatwg.org/multipage/image-maps.html#the-map-element
+- !!python/tuple
+  - mark
+  - https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-mark-element
+- !!python/tuple
+  - math
+  - https://w3c.github.io/mathml-core/#the-top-level-math-element
+- !!python/tuple
+  - meter
+  - https://html.spec.whatwg.org/multipage/form-elements.html#the-meter-element
+- !!python/tuple
+  - noscript
+  - https://html.spec.whatwg.org/multipage/scripting.html#the-noscript-element
+- !!python/tuple
+  - object
+  - https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-object-element
+- !!python/tuple
+  - output
+  - https://html.spec.whatwg.org/multipage/form-elements.html#the-output-element
+- !!python/tuple
+  - picture
+  - https://html.spec.whatwg.org/multipage/embedded-content.html#the-picture-element
+- !!python/tuple
+  - progress
+  - https://html.spec.whatwg.org/multipage/form-elements.html#the-progress-element
+- !!python/tuple
+  - q
+  - https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-q-element
+- !!python/tuple
+  - ruby
+  - https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-ruby-element
+- !!python/tuple
+  - s
+  - https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-s-element
+- !!python/tuple
+  - samp
+  - https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-samp-element
+- !!python/tuple
+  - script
+  - https://html.spec.whatwg.org/multipage/scripting.html#the-script-element
+- !!python/tuple
+  - select
+  - https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element
+- !!python/tuple
+  - selectedcontent
+  - https://html.spec.whatwg.org/multipage/form-elements.html#the-selectedcontent-element
+- !!python/tuple
+  - slot
+  - https://html.spec.whatwg.org/multipage/scripting.html#the-slot-element
+- !!python/tuple
+  - small
+  - https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-small-element
+- !!python/tuple
+  - span
+  - https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-span-element
+- !!python/tuple
+  - strong
+  - https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-strong-element
+- !!python/tuple
+  - sub
+  - https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-sub-and-sup-elements
+- !!python/tuple
+  - sup
+  - https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-sub-and-sup-elements
+- !!python/tuple
+  - svg
+  - https://w3c.github.io/svgwg/svg2-draft/struct.html#elementdef-svg
+- !!python/tuple
+  - template
+  - https://html.spec.whatwg.org/multipage/scripting.html#the-template-element
+- !!python/tuple
+  - textarea
+  - https://html.spec.whatwg.org/multipage/form-elements.html#the-textarea-element
+- !!python/tuple
+  - time
+  - https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-time-element
+- !!python/tuple
+  - u
+  - https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-u-element
+- !!python/tuple
+  - var
+  - https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-var-element
+- !!python/tuple
+  - video
+  - https://html.spec.whatwg.org/multipage/media.html#the-video-element
+- !!python/tuple
+  - wbr
+  - https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-wbr-element
+- !!python/tuple
+  - _custom-autonomous
+  - https://html.spec.whatwg.org/multipage/custom-elements.html#autonomous-custom-element
+- !!python/tuple
+  - _text
+  - https://html.spec.whatwg.org/multipage/dom.html#text-content
+elements_if:
+- !!python/tuple
+  - area
+  - https://html.spec.whatwg.org/multipage/image-maps.html#the-area-element
+  - - !!python/tuple
+      - it is a descendant of a
+      - ''
+    - !!python/tuple
+      - map
+      - https://html.spec.whatwg.org/multipage/image-maps.html#the-map-element
+    - !!python/tuple
+      - element
+      - ''
+- !!python/tuple
+  - link
+  - https://html.spec.whatwg.org/multipage/semantics.html#the-link-element
+  - - !!python/tuple
+      - it is
+      - ''
+    - !!python/tuple
+      - allowed in the body
+      - https://html.spec.whatwg.org/multipage/semantics.html#allowed-in-the-body
+- !!python/tuple
+  - meta
+  - https://html.spec.whatwg.org/multipage/semantics.html#the-meta-element
+  - - !!python/tuple
+      - the
+      - ''
+    - !!python/tuple
+      - itemprop
+      - https://html.spec.whatwg.org/multipage/microdata.html#names:-the-itemprop-attribute
+    - !!python/tuple
+      - attribute is present
+      - ''

@@ -1,8 +1,15 @@
-elements:
-- article
-- aside
-- nav
-- section
-elements_maybe: []
-exceptions: ''
 url: https://html.spec.whatwg.org/multipage/dom.html#sectioning-content-2
+elements:
+- !!python/tuple
+  - article
+  - https://html.spec.whatwg.org/multipage/sections.html#the-article-element
+- !!python/tuple
+  - aside
+  - https://html.spec.whatwg.org/multipage/sections.html#the-aside-element
+- !!python/tuple
+  - nav
+  - https://html.spec.whatwg.org/multipage/sections.html#the-nav-element
+- !!python/tuple
+  - section
+  - https://html.spec.whatwg.org/multipage/sections.html#the-section-element
+elements_if: null

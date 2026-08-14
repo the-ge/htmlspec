@@ -1,12 +1,27 @@
-elements:
-- base
-- link
-- meta
-- noscript
-- script
-- style
-- template
-- title
-elements_maybe: []
-exceptions: ''
 url: https://html.spec.whatwg.org/multipage/dom.html#metadata-content-2
+elements:
+- !!python/tuple
+  - base
+  - https://html.spec.whatwg.org/multipage/semantics.html#the-base-element
+- !!python/tuple
+  - link
+  - https://html.spec.whatwg.org/multipage/semantics.html#the-link-element
+- !!python/tuple
+  - meta
+  - https://html.spec.whatwg.org/multipage/semantics.html#the-meta-element
+- !!python/tuple
+  - noscript
+  - https://html.spec.whatwg.org/multipage/scripting.html#the-noscript-element
+- !!python/tuple
+  - script
+  - https://html.spec.whatwg.org/multipage/scripting.html#the-script-element
+- !!python/tuple
+  - style
+  - https://html.spec.whatwg.org/multipage/semantics.html#the-style-element
+- !!python/tuple
+  - template
+  - https://html.spec.whatwg.org/multipage/scripting.html#the-template-element
+- !!python/tuple
+  - title
+  - https://html.spec.whatwg.org/multipage/semantics.html#the-title-element
+elements_if: null

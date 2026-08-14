@@ -1,6 +1,9 @@
-elements:
-- script
-- template
-elements_maybe: []
-exceptions: ''
 url: https://html.spec.whatwg.org/multipage/dom.html#script-supporting-elements-2
+elements:
+- !!python/tuple
+  - script
+  - https://html.spec.whatwg.org/multipage/scripting.html#the-script-element
+- !!python/tuple
+  - template
+  - https://html.spec.whatwg.org/multipage/scripting.html#the-template-element
+elements_if: null

@@ -1,14 +1,33 @@
-elements:
-- audio
-- canvas
-- embed
-- iframe
-- img
-- math
-- object
-- picture
-- svg
-- video
-elements_maybe: []
-exceptions: ''
 url: https://html.spec.whatwg.org/multipage/dom.html#embedded-content-category
+elements:
+- !!python/tuple
+  - audio
+  - https://html.spec.whatwg.org/multipage/media.html#the-audio-element
+- !!python/tuple
+  - canvas
+  - https://html.spec.whatwg.org/multipage/canvas.html#the-canvas-element
+- !!python/tuple
+  - embed
+  - https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-embed-element
+- !!python/tuple
+  - iframe
+  - https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-iframe-element
+- !!python/tuple
+  - img
+  - https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element
+- !!python/tuple
+  - math
+  - https://w3c.github.io/mathml-core/#the-top-level-math-element
+- !!python/tuple
+  - object
+  - https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-object-element
+- !!python/tuple
+  - picture
+  - https://html.spec.whatwg.org/multipage/embedded-content.html#the-picture-element
+- !!python/tuple
+  - svg
+  - https://w3c.github.io/svgwg/svg2-draft/struct.html#elementdef-svg
+- !!python/tuple
+  - video
+  - https://html.spec.whatwg.org/multipage/media.html#the-video-element
+elements_if: null

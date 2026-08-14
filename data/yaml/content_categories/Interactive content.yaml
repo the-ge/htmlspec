@@ -1,16 +1,102 @@
-elements:
-- button
-- details
-- embed
-- iframe
-- label
-- select
-- textarea
-elements_maybe:
-- a
-- audio
-- img
-- input
-- video
-exceptions: a (if the href attribute is present); audio (if the controls attribute is present); img (if the usemap or controls attribute is present); input (if the type attribute is not in the Hidden state); video (if the controls attribute is present)
 url: https://html.spec.whatwg.org/multipage/dom.html#interactive-content-2
+elements:
+- !!python/tuple
+  - button
+  - https://html.spec.whatwg.org/multipage/form-elements.html#the-button-element
+- !!python/tuple
+  - details
+  - https://html.spec.whatwg.org/multipage/interactive-elements.html#the-details-element
+- !!python/tuple
+  - embed
+  - https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-embed-element
+- !!python/tuple
+  - iframe
+  - https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-iframe-element
+- !!python/tuple
+  - label
+  - https://html.spec.whatwg.org/multipage/forms.html#the-label-element
+- !!python/tuple
+  - select
+  - https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element
+- !!python/tuple
+  - textarea
+  - https://html.spec.whatwg.org/multipage/form-elements.html#the-textarea-element
+elements_if:
+- !!python/tuple
+  - a
+  - https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-a-element
+  - - !!python/tuple
+      - the
+      - ''
+    - !!python/tuple
+      - href
+      - https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-href
+    - !!python/tuple
+      - attribute is present
+      - ''
+- !!python/tuple
+  - audio
+  - https://html.spec.whatwg.org/multipage/media.html#the-audio-element
+  - - !!python/tuple
+      - the
+      - ''
+    - !!python/tuple
+      - controls
+      - https://html.spec.whatwg.org/multipage/media.html#attr-media-controls
+    - !!python/tuple
+      - attribute is present
+      - ''
+- !!python/tuple
+  - img
+  - https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element
+  - - !!python/tuple
+      - the
+      - ''
+    - !!python/tuple
+      - usemap
+      - https://html.spec.whatwg.org/multipage/image-maps.html#attr-hyperlink-usemap
+    - !!python/tuple
+      - or
+      - ''
+    - !!python/tuple
+      - controls
+      - https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-controls
+    - !!python/tuple
+      - attribute is present
+      - ''
+- !!python/tuple
+  - input
+  - https://html.spec.whatwg.org/multipage/input.html#the-input-element
+  - - !!python/tuple
+      - the
+      - ''
+    - !!python/tuple
+      - type
+      - https://html.spec.whatwg.org/multipage/input.html#attr-input-type
+    - !!python/tuple
+      - attribute is
+      - ''
+    - !!python/tuple
+      - not
+      - ''
+    - !!python/tuple
+      - in the
+      - ''
+    - !!python/tuple
+      - Hidden
+      - https://html.spec.whatwg.org/multipage/input.html#hidden-state-(type=hidden)
+    - !!python/tuple
+      - state
+      - ''
+- !!python/tuple
+  - video
+  - https://html.spec.whatwg.org/multipage/media.html#the-video-element
+  - - !!python/tuple
+      - the
+      - ''
+    - !!python/tuple
+      - controls
+      - https://html.spec.whatwg.org/multipage/media.html#attr-media-controls
+    - !!python/tuple
+      - attribute is present
+      - ''
