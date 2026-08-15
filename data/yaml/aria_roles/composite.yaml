@@ -1,5 +1,11 @@
 url: https://w3c.github.io/aria/#composite
-description: A widget that can contain navigable accessibility descendants.
+description:
+- - widget
+  - https://html.spec.whatwg.org/multipage/#dfn-widget
+- - that can contain navigable
+  - ''
+- - accessibility descendants
+  - https://html.spec.whatwg.org/multipage/#dfn-accessibility-descendant
 is_abstract: true
 parents:
   widget: https://w3c.github.io/aria/#widget

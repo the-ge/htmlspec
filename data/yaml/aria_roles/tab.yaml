@@ -1,5 +1,7 @@
 url: https://w3c.github.io/aria/#tab
-description: A grouping label providing a mechanism for selecting the tab content that is to be rendered to the user.
+description:
+- - A grouping label providing a mechanism for selecting the tab content that is to be rendered to the user.
+  - ''
 is_abstract: false
 parents:
   sectionhead: https://w3c.github.io/aria/#sectionhead

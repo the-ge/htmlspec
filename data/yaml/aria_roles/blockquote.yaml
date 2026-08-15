@@ -1,5 +1,7 @@
 url: https://w3c.github.io/aria/#blockquote
-description: A section of content that is quoted from another source.
+description:
+- - A section of content that is quoted from another source.
+  - ''
 is_abstract: false
 parents:
   section: https://w3c.github.io/aria/#section

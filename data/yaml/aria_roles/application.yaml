@@ -1,5 +1,17 @@
 url: https://w3c.github.io/aria/#application
-description: "A structure containing one or more focusable elements requiring user input, such as keyboard or gesture events, that do not follow a standard interaction pattern\n              supported by a widget role."
+description:
+- - structure
+  - https://w3c.github.io/aria/#structure
+- - containing one or more
+  - ''
+- - focusable
+  - https://html.spec.whatwg.org/multipage/#dfn-focusable
+- - elements requiring user input, such as keyboard or gesture events, that do not follow a standard interaction pattern supported by a
+  - ''
+- - widget
+  - https://w3c.github.io/aria/#widget
+- - role.
+  - ''
 is_abstract: false
 parents:
   structure: https://w3c.github.io/aria/#structure

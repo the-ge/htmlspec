@@ -1,5 +1,9 @@
 url: https://w3c.github.io/aria/#definition
-description: A definition of a term or concept. See related term.
+description:
+- - A definition of a term or concept. See related
+  - ''
+- - term
+  - https://w3c.github.io/aria/#term
 is_abstract: false
 parents:
   section: https://w3c.github.io/aria/#section

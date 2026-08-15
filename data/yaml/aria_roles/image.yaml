@@ -1,5 +1,13 @@
 url: https://w3c.github.io/aria/#image
-description: A container for a collection of elements that form an image. See synonym img.
+description:
+- - A container for a collection of
+  - ''
+- - elements
+  - https://dom.spec.whatwg.org/#concept-element
+- - that form an image. See synonym
+  - ''
+- - img
+  - https://w3c.github.io/aria/#img
 is_abstract: false
 parents:
   section: https://w3c.github.io/aria/#section

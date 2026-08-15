@@ -1,5 +1,9 @@
 url: https://w3c.github.io/aria/#deletion
-description: "A deletion represents content that is marked as removed, content that is being suggested for removal, or content that is no longer relevant in the context of its accompanying content.\n              See related insertion."
+description:
+- - A deletion represents content that is marked as removed, content that is being suggested for removal, or content that is no longer relevant in the context of its accompanying content. See related
+  - ''
+- - insertion
+  - https://w3c.github.io/aria/#insertion
 is_abstract: false
 parents:
   section: https://w3c.github.io/aria/#section

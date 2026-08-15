@@ -1,5 +1,9 @@
 url: https://w3c.github.io/aria/#switch
-description: A type of checkbox that represents on/off values, as opposed to checked/unchecked values. See related checkbox.
+description:
+- - A type of checkbox that represents on/off values, as opposed to checked/unchecked values. See related
+  - ''
+- - checkbox
+  - https://w3c.github.io/aria/#checkbox
 is_abstract: false
 parents:
   checkbox: https://w3c.github.io/aria/#checkbox

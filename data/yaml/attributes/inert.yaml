@@ -15,6 +15,3 @@ all:
   - !!python/tuple
     - inert
     - https://html.spec.whatwg.org/multipage/interaction.html#inert
-  - !!python/tuple
-    - .
-    - ''

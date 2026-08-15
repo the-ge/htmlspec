@@ -1,5 +1,7 @@
 url: https://w3c.github.io/aria/#textbox
-description: A type of input that allows free-form text as its value.
+description:
+- - A type of input that allows free-form text as its value.
+  - ''
 is_abstract: false
 parents:
   input: https://w3c.github.io/aria/#input

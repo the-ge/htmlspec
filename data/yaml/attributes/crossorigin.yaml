@@ -11,13 +11,13 @@ audio:
     - anonymous
     - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-anonymous-keyword
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - use-credentials
     - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-use-credentials-keyword
   - !!python/tuple
-    - "\";\n          the empty string"
+    - '"; the empty string'
     - ''
   is_more_value_info_required: false
   description:
@@ -37,13 +37,13 @@ img:
     - anonymous
     - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-anonymous-keyword
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - use-credentials
     - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-use-credentials-keyword
   - !!python/tuple
-    - "\";\n          the empty string"
+    - '"; the empty string'
     - ''
   is_more_value_info_required: false
   description:
@@ -63,13 +63,13 @@ link:
     - anonymous
     - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-anonymous-keyword
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - use-credentials
     - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-use-credentials-keyword
   - !!python/tuple
-    - "\";\n          the empty string"
+    - '"; the empty string'
     - ''
   is_more_value_info_required: false
   description:
@@ -89,13 +89,13 @@ script:
     - anonymous
     - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-anonymous-keyword
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - use-credentials
     - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-use-credentials-keyword
   - !!python/tuple
-    - "\";\n          the empty string"
+    - '"; the empty string'
     - ''
   is_more_value_info_required: false
   description:
@@ -115,13 +115,13 @@ video:
     - anonymous
     - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-anonymous-keyword
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - use-credentials
     - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-use-credentials-keyword
   - !!python/tuple
-    - "\";\n          the empty string"
+    - '"; the empty string'
     - ''
   is_more_value_info_required: false
   description:

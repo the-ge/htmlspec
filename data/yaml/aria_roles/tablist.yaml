@@ -1,5 +1,17 @@
 url: https://w3c.github.io/aria/#tablist
-description: A list of tab elements, which are references to tabpanel elements.
+description:
+- - A list of
+  - ''
+- - tab
+  - https://w3c.github.io/aria/#tab
+- - elements
+  - https://dom.spec.whatwg.org/#concept-element
+- - ', which are references to'
+  - ''
+- - tabpanel
+  - https://w3c.github.io/aria/#tabpanel
+- - elements.
+  - ''
 is_abstract: false
 parents:
   composite: https://w3c.github.io/aria/#composite

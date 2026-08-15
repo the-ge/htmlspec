@@ -1,5 +1,17 @@
 url: https://w3c.github.io/aria/#tabpanel
-description: A container for the resources associated with a tab, where each tab is contained in a tablist.
+description:
+- - A container for the resources associated with a
+  - ''
+- - tab
+  - https://w3c.github.io/aria/#tab
+- - ', where each'
+  - ''
+- - tab
+  - https://w3c.github.io/aria/#tab
+- - is contained in a
+  - ''
+- - tablist
+  - https://w3c.github.io/aria/#tablist
 is_abstract: false
 parents:
   section: https://w3c.github.io/aria/#section

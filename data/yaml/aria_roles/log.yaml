@@ -1,5 +1,11 @@
 url: https://w3c.github.io/aria/#log
-description: A type of live region where new information is added in meaningful order and old information can disappear.
+description:
+- - A type of
+  - ''
+- - live region
+  - https://html.spec.whatwg.org/multipage/#dfn-live-region
+- - where new information is added in meaningful order and old information can disappear.
+  - ''
 is_abstract: false
 parents:
   section: https://w3c.github.io/aria/#section

@@ -11,13 +11,13 @@ all:
     - until-found
     - https://html.spec.whatwg.org/multipage/interaction.html#attr-hidden-until-found
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - hidden
     - https://html.spec.whatwg.org/multipage/interaction.html#attr-hidden
   - !!python/tuple
-    - "\";\n          the empty string"
+    - '"; the empty string'
     - ''
   is_more_value_info_required: false
   description:

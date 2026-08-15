@@ -11,43 +11,43 @@ all:
     - none
     - https://html.spec.whatwg.org/multipage/interaction.html#attr-inputmode-keyword-none
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - text
     - https://html.spec.whatwg.org/multipage/interaction.html#attr-inputmode-keyword-text
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - tel
     - https://html.spec.whatwg.org/multipage/interaction.html#attr-inputmode-keyword-tel
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - email
     - https://html.spec.whatwg.org/multipage/interaction.html#attr-inputmode-keyword-email
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - url
     - https://html.spec.whatwg.org/multipage/interaction.html#attr-inputmode-keyword-url
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - numeric
     - https://html.spec.whatwg.org/multipage/interaction.html#attr-inputmode-keyword-numeric
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - decimal
     - https://html.spec.whatwg.org/multipage/interaction.html#attr-inputmode-keyword-decimal
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - search

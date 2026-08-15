@@ -22,7 +22,7 @@ all:
     - sequentially focusable
     - https://html.spec.whatwg.org/multipage/interaction.html#sequentially-focusable
   - !!python/tuple
-    - ", and\n     the relative order of the element for the purposes of"
+    - ', and the relative order of the element for the purposes of'
     - ''
   - !!python/tuple
     - sequential focus navigation

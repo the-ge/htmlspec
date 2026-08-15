@@ -1,5 +1,13 @@
 url: https://w3c.github.io/aria/#group
-description: A set of user interface objects and information that is not intended to be included in a page summary or table of contents by assistive technologies.
+description:
+- - A set of user interface
+  - ''
+- - objects
+  - https://html.spec.whatwg.org/multipage/#dfn-object
+- - and information that is not intended to be included in a page summary or table of contents by
+  - ''
+- - assistive technologies
+  - https://html.spec.whatwg.org/multipage/#assistive-technology
 is_abstract: false
 parents:
   section: https://w3c.github.io/aria/#section

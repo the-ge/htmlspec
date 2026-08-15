@@ -1,5 +1,7 @@
 url: https://w3c.github.io/aria/#math
-description: Content that represents a mathematical expression.
+description:
+- - Content that represents a mathematical expression.
+  - ''
 is_abstract: false
 parents:
   section: https://w3c.github.io/aria/#section

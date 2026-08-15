@@ -1,5 +1,11 @@
 url: https://w3c.github.io/aria/#menuitemradio
-description: A checkable menuitem in a set of elements with the same role, only one of which can be checked at a time.
+description:
+- - A checkable
+  - ''
+- - menuitem
+  - https://w3c.github.io/aria/#menuitem
+- - in a set of elements with the same role, only one of which can be checked at a time.
+  - ''
 is_abstract: false
 parents:
   menuitem: https://w3c.github.io/aria/#menuitem

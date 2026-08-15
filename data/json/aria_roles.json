@@ -1,7 +1,32 @@
 {
   "alert": {
     "url": "https://w3c.github.io/aria/#alert",
-    "description": "A type of live region with important, and usually time-sensitive, information. See related alertdialog and status.",
+    "description": [
+      [
+        "A type of",
+        ""
+      ],
+      [
+        "live region",
+        "https://html.spec.whatwg.org/multipage/#dfn-live-region"
+      ],
+      [
+        "with important, and usually time-sensitive, information. See related",
+        ""
+      ],
+      [
+        "alertdialog",
+        "https://w3c.github.io/aria/#alertdialog"
+      ],
+      [
+        "and",
+        ""
+      ],
+      [
+        "status",
+        "https://w3c.github.io/aria/#status"
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
@@ -112,7 +137,32 @@
   },
   "alertdialog": {
     "url": "https://w3c.github.io/aria/#alertdialog",
-    "description": "A type of dialog that contains an alert message, where initial focus goes to an element within the dialog. See related alert and dialog.",
+    "description": [
+      [
+        "A type of dialog that contains an alert message, where initial focus goes to an",
+        ""
+      ],
+      [
+        "element",
+        "https://dom.spec.whatwg.org/#concept-element"
+      ],
+      [
+        "within the dialog. See related",
+        ""
+      ],
+      [
+        "alert",
+        "https://w3c.github.io/aria/#alert"
+      ],
+      [
+        "and",
+        ""
+      ],
+      [
+        "dialog",
+        "https://w3c.github.io/aria/#dialog"
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "alert": "https://w3c.github.io/aria/#alert",
@@ -226,7 +276,32 @@
   },
   "application": {
     "url": "https://w3c.github.io/aria/#application",
-    "description": "A structure containing one or more focusable elements requiring user input, such as keyboard or gesture events, that do not follow a standard interaction pattern\n              supported by a widget role.",
+    "description": [
+      [
+        "structure",
+        "https://w3c.github.io/aria/#structure"
+      ],
+      [
+        "containing one or more",
+        ""
+      ],
+      [
+        "focusable",
+        "https://html.spec.whatwg.org/multipage/#dfn-focusable"
+      ],
+      [
+        "elements requiring user input, such as keyboard or gesture events, that do not follow a standard interaction pattern supported by a",
+        ""
+      ],
+      [
+        "widget",
+        "https://w3c.github.io/aria/#widget"
+      ],
+      [
+        "role.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "structure": "https://w3c.github.io/aria/#structure"
@@ -343,7 +418,12 @@
   },
   "article": {
     "url": "https://w3c.github.io/aria/#article",
-    "description": "A section of a page that consists of a composition that forms an independent part of a document, page, or site.",
+    "description": [
+      [
+        "A section of a page that consists of a composition that forms an independent part of a document, page, or site.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "document": "https://w3c.github.io/aria/#document"
@@ -462,7 +542,16 @@
   },
   "banner": {
     "url": "https://w3c.github.io/aria/#banner",
-    "description": "A landmark that contains mostly site-oriented content, rather than page-specific content.",
+    "description": [
+      [
+        "landmark",
+        "https://w3c.github.io/aria/#landmark"
+      ],
+      [
+        "that contains mostly site-oriented content, rather than page-specific content.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "landmark": "https://w3c.github.io/aria/#landmark"
@@ -571,7 +660,12 @@
   },
   "blockquote": {
     "url": "https://w3c.github.io/aria/#blockquote",
-    "description": "A section of content that is quoted from another source.",
+    "description": [
+      [
+        "A section of content that is quoted from another source.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
@@ -680,7 +774,16 @@
   },
   "button": {
     "url": "https://w3c.github.io/aria/#button",
-    "description": "An input that allows for user-triggered actions when clicked or pressed. See related link.",
+    "description": [
+      [
+        "An input that allows for user-triggered actions when clicked or pressed. See related",
+        ""
+      ],
+      [
+        "link",
+        "https://w3c.github.io/aria/#link"
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "command": "https://w3c.github.io/aria/#command"
@@ -797,7 +900,56 @@
   },
   "caption": {
     "url": "https://w3c.github.io/aria/#caption",
-    "description": "Visible content that names, or describes a figure, grid, group, radiogroup, table or treegrid.",
+    "description": [
+      [
+        "Visible content that names, or describes a",
+        ""
+      ],
+      [
+        "figure",
+        "https://w3c.github.io/aria/#figure"
+      ],
+      [
+        ",",
+        ""
+      ],
+      [
+        "grid",
+        "https://w3c.github.io/aria/#grid"
+      ],
+      [
+        ",",
+        ""
+      ],
+      [
+        "group",
+        "https://w3c.github.io/aria/#group"
+      ],
+      [
+        ",",
+        ""
+      ],
+      [
+        "radiogroup",
+        "https://w3c.github.io/aria/#radiogroup"
+      ],
+      [
+        ",",
+        ""
+      ],
+      [
+        "table",
+        "https://w3c.github.io/aria/#table"
+      ],
+      [
+        "or",
+        ""
+      ],
+      [
+        "treegrid",
+        "https://w3c.github.io/aria/#treegrid"
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
@@ -894,7 +1046,16 @@
   },
   "cell": {
     "url": "https://w3c.github.io/aria/#cell",
-    "description": "A cell in a tabular container. See related gridcell.",
+    "description": [
+      [
+        "A cell in a tabular container. See related",
+        ""
+      ],
+      [
+        "gridcell",
+        "https://w3c.github.io/aria/#gridcell"
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
@@ -1031,7 +1192,12 @@
   },
   "checkbox": {
     "url": "https://w3c.github.io/aria/#checkbox",
-    "description": "A checkable input that has three possible values: true, false, or mixed.",
+    "description": [
+      [
+        "A checkable input that has three possible values : true , false , or mixed",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "input": "https://w3c.github.io/aria/#input"
@@ -1154,7 +1320,12 @@
   },
   "code": {
     "url": "https://w3c.github.io/aria/#code",
-    "description": "A section whose content represents a fragment of computer code.",
+    "description": [
+      [
+        "A section whose content represents a fragment of computer code.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
@@ -1251,7 +1422,12 @@
   },
   "columnheader": {
     "url": "https://w3c.github.io/aria/#columnheader",
-    "description": "A cell containing header information for a column.",
+    "description": [
+      [
+        "A cell containing header information for a column.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "cell": "https://w3c.github.io/aria/#cell",
@@ -1402,7 +1578,36 @@
   },
   "combobox": {
     "url": "https://w3c.github.io/aria/#combobox",
-    "description": "An input that controls another element, such as a listbox or grid, that can dynamically pop up to help the user set the value of the\n              input.",
+    "description": [
+      [
+        "input",
+        "https://w3c.github.io/aria/#input"
+      ],
+      [
+        "that controls another element, such as a",
+        ""
+      ],
+      [
+        "listbox",
+        "https://w3c.github.io/aria/#listbox"
+      ],
+      [
+        "or",
+        ""
+      ],
+      [
+        "grid",
+        "https://w3c.github.io/aria/#grid"
+      ],
+      [
+        ", that can dynamically pop up to help the user set the value of the",
+        ""
+      ],
+      [
+        "input",
+        "https://w3c.github.io/aria/#input"
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "input": "https://w3c.github.io/aria/#input"
@@ -1527,7 +1732,12 @@
   },
   "command": {
     "url": "https://w3c.github.io/aria/#command",
-    "description": "A form of widget that performs an action but does not receive input data.",
+    "description": [
+      [
+        "A form of widget that performs an action but does not receive input data.",
+        ""
+      ]
+    ],
     "is_abstract": true,
     "parents": {
       "widget": "https://w3c.github.io/aria/#widget"
@@ -1640,7 +1850,12 @@
   },
   "comment": {
     "url": "https://w3c.github.io/aria/#comment",
-    "description": "A comment contains content expressing reaction to other content.",
+    "description": [
+      [
+        "A comment contains content expressing reaction to other content.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "article": "https://w3c.github.io/aria/#article"
@@ -1761,7 +1976,16 @@
   },
   "complementary": {
     "url": "https://w3c.github.io/aria/#complementary",
-    "description": "A landmark that is designed to be complementary to the main content that it is a sibling to, or a direct descendant of. The contents of a complementary landmark would be\n              expected to remain meaningful if it were to be separated from the main content it is relevant to.",
+    "description": [
+      [
+        "landmark",
+        "https://w3c.github.io/aria/#landmark"
+      ],
+      [
+        "that is designed to be complementary to the main content that it is a sibling to, or a direct descendant of. The contents of a complementary landmark would be expected to remain meaningful if it were to be separated from the main content it is relevant to.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "landmark": "https://w3c.github.io/aria/#landmark"
@@ -1870,7 +2094,20 @@
   },
   "composite": {
     "url": "https://w3c.github.io/aria/#composite",
-    "description": "A widget that can contain navigable accessibility descendants.",
+    "description": [
+      [
+        "widget",
+        "https://html.spec.whatwg.org/multipage/#dfn-widget"
+      ],
+      [
+        "that can contain navigable",
+        ""
+      ],
+      [
+        "accessibility descendants",
+        "https://html.spec.whatwg.org/multipage/#dfn-accessibility-descendant"
+      ]
+    ],
     "is_abstract": true,
     "parents": {
       "widget": "https://w3c.github.io/aria/#widget"
@@ -1988,7 +2225,16 @@
   },
   "contentinfo": {
     "url": "https://w3c.github.io/aria/#contentinfo",
-    "description": "A landmark that contains information about the parent document.",
+    "description": [
+      [
+        "landmark",
+        "https://w3c.github.io/aria/#landmark"
+      ],
+      [
+        "that contains information about the parent document.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "landmark": "https://w3c.github.io/aria/#landmark"
@@ -2097,7 +2343,16 @@
   },
   "definition": {
     "url": "https://w3c.github.io/aria/#definition",
-    "description": "A definition of a term or concept. See related term.",
+    "description": [
+      [
+        "A definition of a term or concept. See related",
+        ""
+      ],
+      [
+        "term",
+        "https://w3c.github.io/aria/#term"
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
@@ -2194,7 +2449,16 @@
   },
   "deletion": {
     "url": "https://w3c.github.io/aria/#deletion",
-    "description": "A deletion represents content that is marked as removed, content that is being suggested for removal, or content that is no longer relevant in the context of its accompanying content.\n              See related insertion.",
+    "description": [
+      [
+        "A deletion represents content that is marked as removed, content that is being suggested for removal, or content that is no longer relevant in the context of its accompanying content. See related",
+        ""
+      ],
+      [
+        "insertion",
+        "https://w3c.github.io/aria/#insertion"
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
@@ -2291,7 +2555,12 @@
   },
   "dialog": {
     "url": "https://w3c.github.io/aria/#dialog",
-    "description": "A dialog is a descendant window of the primary window of a web application. For HTML pages, the primary application window is the entire web document.",
+    "description": [
+      [
+        "A dialog is a descendant window of the primary window of a web application. For HTML pages, the primary application window is the entire web document.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "window": "https://w3c.github.io/aria/#window"
@@ -2406,7 +2675,12 @@
   },
   "directory": {
     "url": "https://w3c.github.io/aria/#directory",
-    "description": "[Deprecated in ARIA 1.2] A list of references to members of a group, such as a static table of contents.",
+    "description": [
+      [
+        "[Deprecated in ARIA 1.2] A list of references to members of a group, such as a static table of contents.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "list": "https://w3c.github.io/aria/#list"
@@ -2515,7 +2789,24 @@
   },
   "document": {
     "url": "https://w3c.github.io/aria/#document",
-    "description": "An element containing content that assistive technology users might want to browse in a reading mode.",
+    "description": [
+      [
+        "element",
+        "https://dom.spec.whatwg.org/#concept-element"
+      ],
+      [
+        "containing content that",
+        ""
+      ],
+      [
+        "assistive technology",
+        "https://html.spec.whatwg.org/multipage/#assistive-technology"
+      ],
+      [
+        "users might want to browse in a reading mode.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "structure": "https://w3c.github.io/aria/#structure"
@@ -2626,7 +2917,16 @@
   },
   "emphasis": {
     "url": "https://w3c.github.io/aria/#emphasis",
-    "description": "One or more emphasized characters. See related strong.",
+    "description": [
+      [
+        "One or more emphasized characters. See related",
+        ""
+      ],
+      [
+        "strong",
+        "https://w3c.github.io/aria/#strong"
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
@@ -2723,7 +3023,36 @@
   },
   "feed": {
     "url": "https://w3c.github.io/aria/#feed",
-    "description": "A scrollable list of articles where scrolling might cause articles to be added to or removed from either end of\n              the list.",
+    "description": [
+      [
+        "A scrollable",
+        ""
+      ],
+      [
+        "list",
+        "https://w3c.github.io/aria/#list"
+      ],
+      [
+        "of",
+        ""
+      ],
+      [
+        "articles",
+        "https://w3c.github.io/aria/#article"
+      ],
+      [
+        "where scrolling might cause",
+        ""
+      ],
+      [
+        "articles",
+        "https://w3c.github.io/aria/#article"
+      ],
+      [
+        "to be added to or removed from either end of the list.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "list": "https://w3c.github.io/aria/#list"
@@ -2832,7 +3161,28 @@
   },
   "figure": {
     "url": "https://w3c.github.io/aria/#figure",
-    "description": "A perceivable section of content that typically contains a graphical document, images, media player, code snippets, or example text. The parts of a\n              figure MAY be user-navigable.",
+    "description": [
+      [
+        "A perceivable",
+        ""
+      ],
+      [
+        "section",
+        "https://w3c.github.io/aria/#section"
+      ],
+      [
+        "of content that typically contains a",
+        ""
+      ],
+      [
+        "graphical document",
+        "https://html.spec.whatwg.org/multipage/#dfn-graphical-document"
+      ],
+      [
+        ", images, media player, code snippets, or example text. The parts of a figure MAY be user-navigable.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
@@ -2941,7 +3291,20 @@
   },
   "form": {
     "url": "https://w3c.github.io/aria/#form",
-    "description": "A landmark region that contains a collection of items and objects that, as a whole, combine to create a form. See related search.",
+    "description": [
+      [
+        "landmark",
+        "https://w3c.github.io/aria/#landmark"
+      ],
+      [
+        "region that contains a collection of items and objects that, as a whole, combine to create a form. See related",
+        ""
+      ],
+      [
+        "search",
+        "https://w3c.github.io/aria/#search"
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "landmark": "https://w3c.github.io/aria/#landmark"
@@ -3050,7 +3413,20 @@
   },
   "generic": {
     "url": "https://w3c.github.io/aria/#generic",
-    "description": "A nameless container element that has no semantic meaning on its own.",
+    "description": [
+      [
+        "A nameless container",
+        ""
+      ],
+      [
+        "element",
+        "https://dom.spec.whatwg.org/#concept-element"
+      ],
+      [
+        "that has no semantic meaning on its own.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "structure": "https://w3c.github.io/aria/#structure"
@@ -3139,7 +3515,28 @@
   },
   "grid": {
     "url": "https://w3c.github.io/aria/#grid",
-    "description": "A composite widget containing a collection of one or more rows with one or more cells where some or all cells in the grid are focusable by using methods of\n              two-dimensional navigation, such as directional arrow keys.",
+    "description": [
+      [
+        "A composite",
+        ""
+      ],
+      [
+        "widget",
+        "https://w3c.github.io/aria/#widget"
+      ],
+      [
+        "containing a collection of one or more rows with one or more cells where some or all cells in the grid are",
+        ""
+      ],
+      [
+        "focusable",
+        "https://html.spec.whatwg.org/multipage/#dfn-focusable"
+      ],
+      [
+        "by using methods of two-dimensional navigation, such as directional arrow keys.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "composite": "https://w3c.github.io/aria/#composite",
@@ -3271,7 +3668,28 @@
   },
   "gridcell": {
     "url": "https://w3c.github.io/aria/#gridcell",
-    "description": "A cell in a grid or treegrid.",
+    "description": [
+      [
+        "cell",
+        "https://w3c.github.io/aria/#cell"
+      ],
+      [
+        "in a",
+        ""
+      ],
+      [
+        "grid",
+        "https://w3c.github.io/aria/#grid"
+      ],
+      [
+        "or",
+        ""
+      ],
+      [
+        "treegrid",
+        "https://w3c.github.io/aria/#treegrid"
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "cell": "https://w3c.github.io/aria/#cell",
@@ -3424,7 +3842,24 @@
   },
   "group": {
     "url": "https://w3c.github.io/aria/#group",
-    "description": "A set of user interface objects and information that is not intended to be included in a page summary or table of contents by assistive technologies.",
+    "description": [
+      [
+        "A set of user interface",
+        ""
+      ],
+      [
+        "objects",
+        "https://html.spec.whatwg.org/multipage/#dfn-object"
+      ],
+      [
+        "and information that is not intended to be included in a page summary or table of contents by",
+        ""
+      ],
+      [
+        "assistive technologies",
+        "https://html.spec.whatwg.org/multipage/#assistive-technology"
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
@@ -3541,7 +3976,12 @@
   },
   "heading": {
     "url": "https://w3c.github.io/aria/#heading",
-    "description": "A heading for a section of the page.",
+    "description": [
+      [
+        "A heading for a section of the page.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "sectionhead": "https://w3c.github.io/aria/#sectionhead"
@@ -3650,7 +4090,24 @@
   },
   "image": {
     "url": "https://w3c.github.io/aria/#image",
-    "description": "A container for a collection of elements that form an image. See synonym img.",
+    "description": [
+      [
+        "A container for a collection of",
+        ""
+      ],
+      [
+        "elements",
+        "https://dom.spec.whatwg.org/#concept-element"
+      ],
+      [
+        "that form an image. See synonym",
+        ""
+      ],
+      [
+        "img",
+        "https://w3c.github.io/aria/#img"
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
@@ -3759,7 +4216,24 @@
   },
   "img": {
     "url": "https://w3c.github.io/aria/#img",
-    "description": "A container for a collection of elements that form an image. See synonym image.",
+    "description": [
+      [
+        "A container for a collection of",
+        ""
+      ],
+      [
+        "elements",
+        "https://dom.spec.whatwg.org/#concept-element"
+      ],
+      [
+        "that form an image. See synonym",
+        ""
+      ],
+      [
+        "image",
+        "https://w3c.github.io/aria/#image"
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
@@ -3868,7 +4342,20 @@
   },
   "input": {
     "url": "https://w3c.github.io/aria/#input",
-    "description": "A generic type of widget that allows user input.",
+    "description": [
+      [
+        "A generic type of",
+        ""
+      ],
+      [
+        "widget",
+        "https://html.spec.whatwg.org/multipage/#dfn-widget"
+      ],
+      [
+        "that allows user input.",
+        ""
+      ]
+    ],
     "is_abstract": true,
     "parents": {
       "widget": "https://w3c.github.io/aria/#widget"
@@ -3981,7 +4468,16 @@
   },
   "insertion": {
     "url": "https://w3c.github.io/aria/#insertion",
-    "description": "An insertion contains content that is marked as added or content that is being suggested for addition. See related deletion.",
+    "description": [
+      [
+        "An insertion contains content that is marked as added or content that is being suggested for addition. See related",
+        ""
+      ],
+      [
+        "deletion",
+        "https://w3c.github.io/aria/#deletion"
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
@@ -4078,7 +4574,20 @@
   },
   "landmark": {
     "url": "https://w3c.github.io/aria/#landmark",
-    "description": "A perceivable section containing content that is relevant to a specific, author-specified purpose and sufficiently important that users will likely want to be able to\n              navigate to the section easily and to have it listed in a summary of the page. Such a page summary could be generated dynamically by a user agent or assistive technology.",
+    "description": [
+      [
+        "A perceivable",
+        ""
+      ],
+      [
+        "section",
+        "https://w3c.github.io/aria/#section"
+      ],
+      [
+        "containing content that is relevant to a specific, author-specified purpose and sufficiently important that users will likely want to be able to navigate to the section easily and to have it listed in a summary of the page. Such a page summary could be generated dynamically by a user agent or assistive technology.",
+        ""
+      ]
+    ],
     "is_abstract": true,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
@@ -4196,7 +4705,16 @@
   },
   "link": {
     "url": "https://w3c.github.io/aria/#link",
-    "description": "An interactive reference to an internal or external resource that, when activated, causes the user agent to navigate to that resource. See related button.",
+    "description": [
+      [
+        "An interactive reference to an internal or external resource that, when activated, causes the user agent to navigate to that resource. See related",
+        ""
+      ],
+      [
+        "button",
+        "https://w3c.github.io/aria/#button"
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "command": "https://w3c.github.io/aria/#command"
@@ -4309,7 +4827,28 @@
   },
   "list": {
     "url": "https://w3c.github.io/aria/#list",
-    "description": "A section containing listitem elements. See related listbox.",
+    "description": [
+      [
+        "section",
+        "https://w3c.github.io/aria/#section"
+      ],
+      [
+        "containing",
+        ""
+      ],
+      [
+        "listitem",
+        "https://w3c.github.io/aria/#listitem"
+      ],
+      [
+        "elements. See related",
+        ""
+      ],
+      [
+        "listbox",
+        "https://w3c.github.io/aria/#listbox"
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
@@ -4421,7 +4960,28 @@
   },
   "listbox": {
     "url": "https://w3c.github.io/aria/#listbox",
-    "description": "A widget that allows the user to select one or more items from a list of choices. See related combobox and list.",
+    "description": [
+      [
+        "widget",
+        "https://html.spec.whatwg.org/multipage/#dfn-widget"
+      ],
+      [
+        "that allows the user to select one or more items from a list of choices. See related",
+        ""
+      ],
+      [
+        "combobox",
+        "https://w3c.github.io/aria/#combobox"
+      ],
+      [
+        "and",
+        ""
+      ],
+      [
+        "list",
+        "https://w3c.github.io/aria/#list"
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "select": "https://w3c.github.io/aria/#select"
@@ -4550,7 +5110,12 @@
   },
   "listitem": {
     "url": "https://w3c.github.io/aria/#listitem",
-    "description": "A single item in a list or directory.",
+    "description": [
+      [
+        "A single item in a list or directory.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
@@ -4669,7 +5234,20 @@
   },
   "log": {
     "url": "https://w3c.github.io/aria/#log",
-    "description": "A type of live region where new information is added in meaningful order and old information can disappear.",
+    "description": [
+      [
+        "A type of",
+        ""
+      ],
+      [
+        "live region",
+        "https://html.spec.whatwg.org/multipage/#dfn-live-region"
+      ],
+      [
+        "where new information is added in meaningful order and old information can disappear.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
@@ -4778,7 +5356,16 @@
   },
   "main": {
     "url": "https://w3c.github.io/aria/#main",
-    "description": "A landmark containing the main content of a document.",
+    "description": [
+      [
+        "landmark",
+        "https://w3c.github.io/aria/#landmark"
+      ],
+      [
+        "containing the main content of a document.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "landmark": "https://w3c.github.io/aria/#landmark"
@@ -4887,7 +5474,12 @@
   },
   "mark": {
     "url": "https://w3c.github.io/aria/#mark",
-    "description": "Content which is marked or highlighted for reference or notation purposes, due to the content's relevance in the enclosing context.",
+    "description": [
+      [
+        "Content which is marked or highlighted for reference or notation purposes, due to the content's relevance in the enclosing context.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
@@ -4984,7 +5576,12 @@
   },
   "marquee": {
     "url": "https://w3c.github.io/aria/#marquee",
-    "description": "A section of content where non-essential information changes frequently.",
+    "description": [
+      [
+        "A section of content where non-essential information changes frequently.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
@@ -5093,7 +5690,12 @@
   },
   "math": {
     "url": "https://w3c.github.io/aria/#math",
-    "description": "Content that represents a mathematical expression.",
+    "description": [
+      [
+        "Content that represents a mathematical expression.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
@@ -5202,7 +5804,20 @@
   },
   "menu": {
     "url": "https://w3c.github.io/aria/#menu",
-    "description": "A type of widget that offers a list of choices to the user.",
+    "description": [
+      [
+        "A type of",
+        ""
+      ],
+      [
+        "widget",
+        "https://html.spec.whatwg.org/multipage/#dfn-widget"
+      ],
+      [
+        "that offers a list of choices to the user.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "select": "https://w3c.github.io/aria/#select"
@@ -5321,7 +5936,20 @@
   },
   "menubar": {
     "url": "https://w3c.github.io/aria/#menubar",
-    "description": "A presentation of menu that usually remains visible and is usually presented horizontally.",
+    "description": [
+      [
+        "A presentation of",
+        ""
+      ],
+      [
+        "menu",
+        "https://w3c.github.io/aria/#menu"
+      ],
+      [
+        "that usually remains visible and is usually presented horizontally.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "menu": "https://w3c.github.io/aria/#menu"
@@ -5438,7 +6066,24 @@
   },
   "menuitem": {
     "url": "https://w3c.github.io/aria/#menuitem",
-    "description": "An option in a set of choices contained by a menu or menubar.",
+    "description": [
+      [
+        "An option in a set of choices contained by a",
+        ""
+      ],
+      [
+        "menu",
+        "https://w3c.github.io/aria/#menu"
+      ],
+      [
+        "or",
+        ""
+      ],
+      [
+        "menubar",
+        "https://w3c.github.io/aria/#menubar"
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "command": "https://w3c.github.io/aria/#command"
@@ -5562,7 +6207,16 @@
   },
   "menuitemcheckbox": {
     "url": "https://w3c.github.io/aria/#menuitemcheckbox",
-    "description": "A menuitem with a checkable state whose possible values are true, false, or mixed.",
+    "description": [
+      [
+        "menuitem",
+        "https://w3c.github.io/aria/#menuitem"
+      ],
+      [
+        "with a checkable state whose possible values are true , false , or mixed",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "menuitem": "https://w3c.github.io/aria/#menuitem"
@@ -5683,7 +6337,20 @@
   },
   "menuitemradio": {
     "url": "https://w3c.github.io/aria/#menuitemradio",
-    "description": "A checkable menuitem in a set of elements with the same role, only one of which can be checked at a time.",
+    "description": [
+      [
+        "A checkable",
+        ""
+      ],
+      [
+        "menuitem",
+        "https://w3c.github.io/aria/#menuitem"
+      ],
+      [
+        "in a set of elements with the same role, only one of which can be checked at a time.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "menuitem": "https://w3c.github.io/aria/#menuitem"
@@ -5804,7 +6471,20 @@
   },
   "meter": {
     "url": "https://w3c.github.io/aria/#meter",
-    "description": "An element that represents a scalar measurement within a known range, or a fractional value. See related progressbar.",
+    "description": [
+      [
+        "element",
+        "https://dom.spec.whatwg.org/#concept-element"
+      ],
+      [
+        "that represents a scalar measurement within a known range, or a fractional value. See related",
+        ""
+      ],
+      [
+        "progressbar",
+        "https://w3c.github.io/aria/#progressbar"
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "range": "https://w3c.github.io/aria/#range"
@@ -5925,7 +6605,24 @@
   },
   "navigation": {
     "url": "https://w3c.github.io/aria/#navigation",
-    "description": "A landmark containing a collection of navigational elements (usually links) for navigating the document or related documents.",
+    "description": [
+      [
+        "landmark",
+        "https://w3c.github.io/aria/#landmark"
+      ],
+      [
+        "containing a collection of navigational",
+        ""
+      ],
+      [
+        "elements",
+        "https://dom.spec.whatwg.org/#concept-element"
+      ],
+      [
+        "(usually links) for navigating the document or related documents.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "landmark": "https://w3c.github.io/aria/#landmark"
@@ -6034,7 +6731,28 @@
   },
   "none": {
     "url": "https://w3c.github.io/aria/#none",
-    "description": "An element whose implicit native role semantics will not be mapped to the accessibility API. See synonym presentation.",
+    "description": [
+      [
+        "element",
+        "https://dom.spec.whatwg.org/#concept-element"
+      ],
+      [
+        "whose implicit native role semantics will not be mapped to the",
+        ""
+      ],
+      [
+        "accessibility API",
+        "https://html.spec.whatwg.org/multipage/#dfn-accessibility-api"
+      ],
+      [
+        ". See synonym",
+        ""
+      ],
+      [
+        "presentation",
+        "https://w3c.github.io/aria/#presentation"
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "structure": "https://w3c.github.io/aria/#structure"
@@ -6131,7 +6849,16 @@
   },
   "note": {
     "url": "https://w3c.github.io/aria/#note",
-    "description": "A section whose content represents additional information or parenthetical context to the primary content it supplements.",
+    "description": [
+      [
+        "section",
+        "https://w3c.github.io/aria/#section"
+      ],
+      [
+        "whose content represents additional information or parenthetical context to the primary content it supplements.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
@@ -6240,7 +6967,16 @@
   },
   "option": {
     "url": "https://w3c.github.io/aria/#option",
-    "description": "An item in a listbox.",
+    "description": [
+      [
+        "An item in a",
+        ""
+      ],
+      [
+        "listbox",
+        "https://w3c.github.io/aria/#listbox"
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "input": "https://w3c.github.io/aria/#input"
@@ -6367,7 +7103,12 @@
   },
   "paragraph": {
     "url": "https://w3c.github.io/aria/#paragraph",
-    "description": "A paragraph of content.",
+    "description": [
+      [
+        "A paragraph of content.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
@@ -6464,7 +7205,28 @@
   },
   "presentation": {
     "url": "https://w3c.github.io/aria/#presentation",
-    "description": "An element whose implicit native role semantics will not be mapped to the accessibility API. See synonym none.",
+    "description": [
+      [
+        "element",
+        "https://dom.spec.whatwg.org/#concept-element"
+      ],
+      [
+        "whose implicit native role semantics will not be mapped to the",
+        ""
+      ],
+      [
+        "accessibility API",
+        "https://html.spec.whatwg.org/multipage/#dfn-accessibility-api"
+      ],
+      [
+        ". See synonym",
+        ""
+      ],
+      [
+        "none",
+        "https://w3c.github.io/aria/#none"
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "structure": "https://w3c.github.io/aria/#structure"
@@ -6561,7 +7323,16 @@
   },
   "progressbar": {
     "url": "https://w3c.github.io/aria/#progressbar",
-    "description": "An element that displays the progress status for tasks that take a long time.",
+    "description": [
+      [
+        "element",
+        "https://dom.spec.whatwg.org/#concept-element"
+      ],
+      [
+        "that displays the progress status for tasks that take a long time.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "range": "https://w3c.github.io/aria/#range",
@@ -6687,7 +7458,12 @@
   },
   "radio": {
     "url": "https://w3c.github.io/aria/#radio",
-    "description": "A checkable input in a group of elements with the same role, only one of which can be checked at a time.",
+    "description": [
+      [
+        "A checkable input in a group of elements with the same role, only one of which can be checked at a time.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "input": "https://w3c.github.io/aria/#input"
@@ -6804,7 +7580,20 @@
   },
   "radiogroup": {
     "url": "https://w3c.github.io/aria/#radiogroup",
-    "description": "A group of radio buttons.",
+    "description": [
+      [
+        "A group of",
+        ""
+      ],
+      [
+        "radio",
+        "https://w3c.github.io/aria/#radio"
+      ],
+      [
+        "buttons.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "select": "https://w3c.github.io/aria/#select"
@@ -6929,7 +7718,12 @@
   },
   "range": {
     "url": "https://w3c.github.io/aria/#range",
-    "description": "An element representing a range of values.",
+    "description": [
+      [
+        "An element representing a range of values.",
+        ""
+      ]
+    ],
     "is_abstract": true,
     "parents": {
       "structure": "https://w3c.github.io/aria/#structure"
@@ -7060,7 +7854,16 @@
   },
   "region": {
     "url": "https://w3c.github.io/aria/#region",
-    "description": "A landmark containing content that is relevant to a specific, author-specified purpose and sufficiently important that users will likely want to be able to navigate to the\n              section easily and to have it listed in a summary of the page. Such a page summary could be generated dynamically by a user agent or assistive technology.",
+    "description": [
+      [
+        "landmark",
+        "https://w3c.github.io/aria/#landmark"
+      ],
+      [
+        "containing content that is relevant to a specific, author-specified purpose and sufficiently important that users will likely want to be able to navigate to the section easily and to have it listed in a summary of the page. Such a page summary could be generated dynamically by a user agent or assistive technology.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "landmark": "https://w3c.github.io/aria/#landmark"
@@ -7169,7 +7972,20 @@
   },
   "roletype": {
     "url": "https://w3c.github.io/aria/#roletype",
-    "description": "The base role from which all other roles inherit.",
+    "description": [
+      [
+        "The base",
+        ""
+      ],
+      [
+        "role",
+        "https://html.spec.whatwg.org/multipage/#dfn-role"
+      ],
+      [
+        "from which all other roles inherit.",
+        ""
+      ]
+    ],
     "is_abstract": true,
     "parents": {},
     "children": {
@@ -7280,7 +8096,12 @@
   },
   "row": {
     "url": "https://w3c.github.io/aria/#row",
-    "description": "A row of cells in a tabular container.",
+    "description": [
+      [
+        "A row of cells in a tabular container.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "group": "https://w3c.github.io/aria/#group",
@@ -7426,7 +8247,12 @@
   },
   "rowgroup": {
     "url": "https://w3c.github.io/aria/#rowgroup",
-    "description": "A structure containing one or more row elements in a tabular container.",
+    "description": [
+      [
+        "A structure containing one or more row elements in a tabular container.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "structure": "https://w3c.github.io/aria/#structure"
@@ -7535,7 +8361,12 @@
   },
   "rowheader": {
     "url": "https://w3c.github.io/aria/#rowheader",
-    "description": "A cell containing header information for a row.",
+    "description": [
+      [
+        "A cell containing header information for a row.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "cell": "https://w3c.github.io/aria/#cell",
@@ -7690,7 +8521,12 @@
   },
   "scrollbar": {
     "url": "https://w3c.github.io/aria/#scrollbar",
-    "description": "A graphical object that controls the scrolling of content within a viewing area, regardless of whether the content is fully displayed within the viewing area.",
+    "description": [
+      [
+        "A graphical object that controls the scrolling of content within a viewing area, regardless of whether the content is fully displayed within the viewing area.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "range": "https://w3c.github.io/aria/#range",
@@ -7816,7 +8652,28 @@
   },
   "search": {
     "url": "https://w3c.github.io/aria/#search",
-    "description": "A landmark region that contains a collection of items and objects that, as a whole, combine to create a search facility. See related form and\n              searchbox.",
+    "description": [
+      [
+        "landmark",
+        "https://w3c.github.io/aria/#landmark"
+      ],
+      [
+        "region that contains a collection of items and objects that, as a whole, combine to create a search facility. See related",
+        ""
+      ],
+      [
+        "form",
+        "https://w3c.github.io/aria/#form"
+      ],
+      [
+        "and",
+        ""
+      ],
+      [
+        "searchbox",
+        "https://w3c.github.io/aria/#searchbox"
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "landmark": "https://w3c.github.io/aria/#landmark"
@@ -7925,7 +8782,24 @@
   },
   "searchbox": {
     "url": "https://w3c.github.io/aria/#searchbox",
-    "description": "A type of textbox intended for specifying search criteria. See related textbox and search.",
+    "description": [
+      [
+        "A type of textbox intended for specifying search criteria. See related",
+        ""
+      ],
+      [
+        "textbox",
+        "https://w3c.github.io/aria/#textbox"
+      ],
+      [
+        "and",
+        ""
+      ],
+      [
+        "search",
+        "https://w3c.github.io/aria/#search"
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "textbox": "https://w3c.github.io/aria/#textbox"
@@ -8058,7 +8932,12 @@
   },
   "section": {
     "url": "https://w3c.github.io/aria/#section",
-    "description": "A renderable structural containment unit on a page.",
+    "description": [
+      [
+        "A renderable structural containment unit on a page.",
+        ""
+      ]
+    ],
     "is_abstract": true,
     "parents": {
       "structure": "https://w3c.github.io/aria/#structure"
@@ -8201,7 +9080,20 @@
   },
   "sectionfooter": {
     "url": "https://w3c.github.io/aria/#sectionfooter",
-    "description": "A set of user interface objects and information representing information about its closest ancestral content group. For instance, a sectionfooter can include information\n              about who wrote the specific section of content, such as an article. It can contain links to related documents, copyright information or other indices and colophon specific\n              to the current section of the page.",
+    "description": [
+      [
+        "A set of user interface objects and information representing information about its closest ancestral content group. For instance, a sectionfooter can include information about who wrote the specific section of content, such as an",
+        ""
+      ],
+      [
+        "article",
+        "https://w3c.github.io/aria/#article"
+      ],
+      [
+        ". It can contain links to related documents, copyright information or other indices and colophon specific to the current section of the page.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
@@ -8310,7 +9202,12 @@
   },
   "sectionhead": {
     "url": "https://w3c.github.io/aria/#sectionhead",
-    "description": "A structure that labels or summarizes the topic of its related section.",
+    "description": [
+      [
+        "A structure that labels or summarizes the topic of its related section.",
+        ""
+      ]
+    ],
     "is_abstract": true,
     "parents": {
       "structure": "https://w3c.github.io/aria/#structure"
@@ -8424,7 +9321,28 @@
   },
   "sectionheader": {
     "url": "https://w3c.github.io/aria/#sectionheader",
-    "description": "A set of user interface objects and information that represents a collection of introductory items for the element's closest ancestral content group. For instance, a\n              sectionheader can include the heading, introductory statement and related meta data for a section of content, for instance a region or article,\n              within a web page.",
+    "description": [
+      [
+        "A set of user interface objects and information that represents a collection of introductory items for the element's closest ancestral content group. For instance, a sectionheader can include the heading, introductory statement and related meta data for a section of content, for instance a",
+        ""
+      ],
+      [
+        "region",
+        "https://w3c.github.io/aria/#region"
+      ],
+      [
+        "or",
+        ""
+      ],
+      [
+        "article",
+        "https://w3c.github.io/aria/#article"
+      ],
+      [
+        ", within a web page.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
@@ -8533,7 +9451,12 @@
   },
   "select": {
     "url": "https://w3c.github.io/aria/#select",
-    "description": "A form widget that allows the user to make selections from a set of choices.",
+    "description": [
+      [
+        "A form widget that allows the user to make selections from a set of choices.",
+        ""
+      ]
+    ],
     "is_abstract": true,
     "parents": {
       "composite": "https://w3c.github.io/aria/#composite",
@@ -8652,7 +9575,12 @@
   },
   "separator": {
     "url": "https://w3c.github.io/aria/#separator",
-    "description": "A divider that separates and distinguishes sections of content or groups of menuitems.",
+    "description": [
+      [
+        "A divider that separates and distinguishes sections of content or groups of menuitems.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "structure": "https://w3c.github.io/aria/#structure",
@@ -8778,7 +9706,12 @@
   },
   "slider": {
     "url": "https://w3c.github.io/aria/#slider",
-    "description": "An input where the user selects a value from within a given range.",
+    "description": [
+      [
+        "An input where the user selects a value from within a given range.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "input": "https://w3c.github.io/aria/#input",
@@ -8908,7 +9841,20 @@
   },
   "spinbutton": {
     "url": "https://w3c.github.io/aria/#spinbutton",
-    "description": "A form of range that expects the user to select from among discrete choices.",
+    "description": [
+      [
+        "A form of",
+        ""
+      ],
+      [
+        "range",
+        "https://w3c.github.io/aria/#range"
+      ],
+      [
+        "that expects the user to select from among discrete choices.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "composite": "https://w3c.github.io/aria/#composite",
@@ -9047,7 +9993,28 @@
   },
   "status": {
     "url": "https://w3c.github.io/aria/#status",
-    "description": "A type of live region whose content is advisory information for the user but is not important enough to justify an alert, often but not necessarily presented as a\n              status bar.",
+    "description": [
+      [
+        "A type of",
+        ""
+      ],
+      [
+        "live region",
+        "https://html.spec.whatwg.org/multipage/#dfn-live-region"
+      ],
+      [
+        "whose content is advisory information for the user but is not important enough to justify an",
+        ""
+      ],
+      [
+        "alert",
+        "https://w3c.github.io/aria/#alert"
+      ],
+      [
+        ", often but not necessarily presented as a status bar.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
@@ -9158,7 +10125,16 @@
   },
   "strong": {
     "url": "https://w3c.github.io/aria/#strong",
-    "description": "Content that is important, serious, or urgent. See related emphasis.",
+    "description": [
+      [
+        "Content that is important, serious, or urgent. See related",
+        ""
+      ],
+      [
+        "emphasis",
+        "https://w3c.github.io/aria/#emphasis"
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
@@ -9255,7 +10231,16 @@
   },
   "structure": {
     "url": "https://w3c.github.io/aria/#structure",
-    "description": "A document structural element.",
+    "description": [
+      [
+        "A document structural",
+        ""
+      ],
+      [
+        "element",
+        "https://dom.spec.whatwg.org/#concept-element"
+      ]
+    ],
     "is_abstract": true,
     "parents": {
       "roletype": "https://w3c.github.io/aria/#roletype"
@@ -9374,7 +10359,16 @@
   },
   "subscript": {
     "url": "https://w3c.github.io/aria/#subscript",
-    "description": "One or more subscripted characters. See related superscript.",
+    "description": [
+      [
+        "One or more subscripted characters. See related",
+        ""
+      ],
+      [
+        "superscript",
+        "https://w3c.github.io/aria/#superscript"
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
@@ -9471,7 +10465,12 @@
   },
   "suggestion": {
     "url": "https://w3c.github.io/aria/#suggestion",
-    "description": "A single proposed change to content.",
+    "description": [
+      [
+        "A single proposed change to content.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
@@ -9568,7 +10567,16 @@
   },
   "superscript": {
     "url": "https://w3c.github.io/aria/#superscript",
-    "description": "One or more superscripted characters. See related subscript.",
+    "description": [
+      [
+        "One or more superscripted characters. See related",
+        ""
+      ],
+      [
+        "subscript",
+        "https://w3c.github.io/aria/#subscript"
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
@@ -9665,7 +10673,16 @@
   },
   "switch": {
     "url": "https://w3c.github.io/aria/#switch",
-    "description": "A type of checkbox that represents on/off values, as opposed to checked/unchecked values. See related checkbox.",
+    "description": [
+      [
+        "A type of checkbox that represents on/off values, as opposed to checked/unchecked values. See related",
+        ""
+      ],
+      [
+        "checkbox",
+        "https://w3c.github.io/aria/#checkbox"
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "checkbox": "https://w3c.github.io/aria/#checkbox"
@@ -9786,7 +10803,12 @@
   },
   "tab": {
     "url": "https://w3c.github.io/aria/#tab",
-    "description": "A grouping label providing a mechanism for selecting the tab content that is to be rendered to the user.",
+    "description": [
+      [
+        "A grouping label providing a mechanism for selecting the tab content that is to be rendered to the user.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "sectionhead": "https://w3c.github.io/aria/#sectionhead",
@@ -9912,7 +10934,20 @@
   },
   "table": {
     "url": "https://w3c.github.io/aria/#table",
-    "description": "A section containing data arranged in rows and columns. See related grid.",
+    "description": [
+      [
+        "section",
+        "https://w3c.github.io/aria/#section"
+      ],
+      [
+        "containing data arranged in rows and columns. See related",
+        ""
+      ],
+      [
+        "grid",
+        "https://w3c.github.io/aria/#grid"
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
@@ -10031,7 +11066,32 @@
   },
   "tablist": {
     "url": "https://w3c.github.io/aria/#tablist",
-    "description": "A list of tab elements, which are references to tabpanel elements.",
+    "description": [
+      [
+        "A list of",
+        ""
+      ],
+      [
+        "tab",
+        "https://w3c.github.io/aria/#tab"
+      ],
+      [
+        "elements",
+        "https://dom.spec.whatwg.org/#concept-element"
+      ],
+      [
+        ", which are references to",
+        ""
+      ],
+      [
+        "tabpanel",
+        "https://w3c.github.io/aria/#tabpanel"
+      ],
+      [
+        "elements.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "composite": "https://w3c.github.io/aria/#composite"
@@ -10152,7 +11212,32 @@
   },
   "tabpanel": {
     "url": "https://w3c.github.io/aria/#tabpanel",
-    "description": "A container for the resources associated with a tab, where each tab is contained in a tablist.",
+    "description": [
+      [
+        "A container for the resources associated with a",
+        ""
+      ],
+      [
+        "tab",
+        "https://w3c.github.io/aria/#tab"
+      ],
+      [
+        ", where each",
+        ""
+      ],
+      [
+        "tab",
+        "https://w3c.github.io/aria/#tab"
+      ],
+      [
+        "is contained in a",
+        ""
+      ],
+      [
+        "tablist",
+        "https://w3c.github.io/aria/#tablist"
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
@@ -10261,7 +11346,16 @@
   },
   "term": {
     "url": "https://w3c.github.io/aria/#term",
-    "description": "A word or phrase with an optional corresponding definition. See related definition.",
+    "description": [
+      [
+        "A word or phrase with an optional corresponding definition. See related",
+        ""
+      ],
+      [
+        "definition",
+        "https://w3c.github.io/aria/#definition"
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
@@ -10358,7 +11452,12 @@
   },
   "textbox": {
     "url": "https://w3c.github.io/aria/#textbox",
-    "description": "A type of input that allows free-form text as its value.",
+    "description": [
+      [
+        "A type of input that allows free-form text as its value.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "input": "https://w3c.github.io/aria/#input"
@@ -10493,7 +11592,12 @@
   },
   "time": {
     "url": "https://w3c.github.io/aria/#time",
-    "description": "An element that represents a specific point in time.",
+    "description": [
+      [
+        "An element that represents a specific point in time.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
@@ -10590,7 +11694,12 @@
   },
   "timer": {
     "url": "https://w3c.github.io/aria/#timer",
-    "description": "A section of content containing a numerical counter which indicates an amount of elapsed time from a start point, or the time remaining until an end point.",
+    "description": [
+      [
+        "A section of content containing a numerical counter which indicates an amount of elapsed time from a start point, or the time remaining until an end point.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "status": "https://w3c.github.io/aria/#status"
@@ -10699,7 +11808,12 @@
   },
   "toolbar": {
     "url": "https://w3c.github.io/aria/#toolbar",
-    "description": "A collection of commonly used function buttons or controls represented in compact visual form.",
+    "description": [
+      [
+        "A collection of commonly used function buttons or controls represented in compact visual form.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "group": "https://w3c.github.io/aria/#group"
@@ -10812,7 +11926,12 @@
   },
   "tooltip": {
     "url": "https://w3c.github.io/aria/#tooltip",
-    "description": "A contextual popup that displays a description for an element.",
+    "description": [
+      [
+        "A contextual popup that displays a description for an element.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
@@ -10909,7 +12028,16 @@
   },
   "tree": {
     "url": "https://w3c.github.io/aria/#tree",
-    "description": "A widget that allows the user to select one or more items from a hierarchically organized collection.",
+    "description": [
+      [
+        "widget",
+        "https://w3c.github.io/aria/#widget"
+      ],
+      [
+        "that allows the user to select one or more items from a hierarchically organized collection.",
+        ""
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "select": "https://w3c.github.io/aria/#select"
@@ -11036,7 +12164,20 @@
   },
   "treegrid": {
     "url": "https://w3c.github.io/aria/#treegrid",
-    "description": "A grid whose rows can be expanded and collapsed in the same manner as for a tree.",
+    "description": [
+      [
+        "grid",
+        "https://w3c.github.io/aria/#grid"
+      ],
+      [
+        "whose rows can be expanded and collapsed in the same manner as for a",
+        ""
+      ],
+      [
+        "tree",
+        "https://w3c.github.io/aria/#tree"
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "grid": "https://w3c.github.io/aria/#grid",
@@ -11174,7 +12315,16 @@
   },
   "treeitem": {
     "url": "https://w3c.github.io/aria/#treeitem",
-    "description": "An item in a tree.",
+    "description": [
+      [
+        "An item in a",
+        ""
+      ],
+      [
+        "tree",
+        "https://w3c.github.io/aria/#tree"
+      ]
+    ],
     "is_abstract": false,
     "parents": {
       "listitem": "https://w3c.github.io/aria/#listitem",
@@ -11308,7 +12458,12 @@
   },
   "widget": {
     "url": "https://w3c.github.io/aria/#widget",
-    "description": "An interactive component of a graphical user interface (GUI).",
+    "description": [
+      [
+        "An interactive component of a graphical user interface ( GUI ).",
+        ""
+      ]
+    ],
     "is_abstract": true,
     "parents": {
       "roletype": "https://w3c.github.io/aria/#roletype"
@@ -11427,7 +12582,12 @@
   },
   "window": {
     "url": "https://w3c.github.io/aria/#window",
-    "description": "A browser or application window.",
+    "description": [
+      [
+        "A browser or application window.",
+        ""
+      ]
+    ],
     "is_abstract": true,
     "parents": {
       "roletype": "https://w3c.github.io/aria/#roletype"

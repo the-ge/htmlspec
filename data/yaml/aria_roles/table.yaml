@@ -1,5 +1,11 @@
 url: https://w3c.github.io/aria/#table
-description: A section containing data arranged in rows and columns. See related grid.
+description:
+- - section
+  - https://w3c.github.io/aria/#section
+- - containing data arranged in rows and columns. See related
+  - ''
+- - grid
+  - https://w3c.github.io/aria/#grid
 is_abstract: false
 parents:
   section: https://w3c.github.io/aria/#section

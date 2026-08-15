@@ -5,7 +5,7 @@ template:
   value_enum: []
   value_info:
   - !!python/tuple
-    - "\" named \";\n          \" manual \""
+    - '" named "; " manual "'
     - ''
   is_more_value_info_required: false
   description:

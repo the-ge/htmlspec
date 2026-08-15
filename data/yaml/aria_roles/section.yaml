@@ -1,5 +1,7 @@
 url: https://w3c.github.io/aria/#section
-description: A renderable structural containment unit on a page.
+description:
+- - A renderable structural containment unit on a page.
+  - ''
 is_abstract: true
 parents:
   structure: https://w3c.github.io/aria/#structure

@@ -11,13 +11,13 @@ all:
     - 'true'
     - https://html.spec.whatwg.org/multipage/interaction.html#attr-spellcheck-true
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - 'false'
     - https://html.spec.whatwg.org/multipage/interaction.html#attr-spellcheck-false
   - !!python/tuple
-    - "\";\n          the empty string"
+    - '"; the empty string'
     - ''
   is_more_value_info_required: false
   description:

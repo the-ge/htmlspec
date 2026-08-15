@@ -11,13 +11,13 @@ img:
     - auto
     - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-fetchpriority-auto
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - high
     - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-fetchpriority-high
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - low
@@ -55,13 +55,13 @@ link:
     - auto
     - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-fetchpriority-auto
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - high
     - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-fetchpriority-high
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - low
@@ -99,13 +99,13 @@ script:
     - auto
     - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-fetchpriority-auto
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - high
     - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-fetchpriority-high
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - low

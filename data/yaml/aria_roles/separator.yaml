@@ -1,5 +1,7 @@
 url: https://w3c.github.io/aria/#separator
-description: A divider that separates and distinguishes sections of content or groups of menuitems.
+description:
+- - A divider that separates and distinguishes sections of content or groups of menuitems.
+  - ''
 is_abstract: false
 parents:
   structure: https://w3c.github.io/aria/#structure

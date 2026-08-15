@@ -1,5 +1,7 @@
 url: https://w3c.github.io/aria/#rowgroup
-description: A structure containing one or more row elements in a tabular container.
+description:
+- - A structure containing one or more row elements in a tabular container.
+  - ''
 is_abstract: false
 parents:
   structure: https://w3c.github.io/aria/#structure

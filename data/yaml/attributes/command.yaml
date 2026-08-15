@@ -11,37 +11,37 @@ button:
     - toggle-popover
     - https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-toggle-popover
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - show-popover
     - https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-show-popover
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - hide-popover
     - https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-hide-popover
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - close
     - https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-close
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - request-close
     - https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-request-close
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - show-modal
     - https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-show-modal
   - !!python/tuple
-    - "\";\n          a"
+    - '"; a'
     - ''
   - !!python/tuple
     - custom command keyword

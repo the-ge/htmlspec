@@ -1,5 +1,11 @@
 url: https://w3c.github.io/aria/#roletype
-description: The base role from which all other roles inherit.
+description:
+- - The base
+  - ''
+- - role
+  - https://html.spec.whatwg.org/multipage/#dfn-role
+- - from which all other roles inherit.
+  - ''
 is_abstract: true
 parents: {}
 children:

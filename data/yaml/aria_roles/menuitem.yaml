@@ -1,5 +1,13 @@
 url: https://w3c.github.io/aria/#menuitem
-description: An option in a set of choices contained by a menu or menubar.
+description:
+- - An option in a set of choices contained by a
+  - ''
+- - menu
+  - https://w3c.github.io/aria/#menu
+- - or
+  - ''
+- - menubar
+  - https://w3c.github.io/aria/#menubar
 is_abstract: false
 parents:
   command: https://w3c.github.io/aria/#command

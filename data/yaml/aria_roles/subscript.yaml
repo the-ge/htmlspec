@@ -1,5 +1,9 @@
 url: https://w3c.github.io/aria/#subscript
-description: One or more subscripted characters. See related superscript.
+description:
+- - One or more subscripted characters. See related
+  - ''
+- - superscript
+  - https://w3c.github.io/aria/#superscript
 is_abstract: false
 parents:
   section: https://w3c.github.io/aria/#section

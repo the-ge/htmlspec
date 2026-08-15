@@ -1,5 +1,15 @@
 url: https://w3c.github.io/aria/#listbox
-description: A widget that allows the user to select one or more items from a list of choices. See related combobox and list.
+description:
+- - widget
+  - https://html.spec.whatwg.org/multipage/#dfn-widget
+- - that allows the user to select one or more items from a list of choices. See related
+  - ''
+- - combobox
+  - https://w3c.github.io/aria/#combobox
+- - and
+  - ''
+- - list
+  - https://w3c.github.io/aria/#list
 is_abstract: false
 parents:
   select: https://w3c.github.io/aria/#select

@@ -1,5 +1,11 @@
 url: https://w3c.github.io/aria/#form
-description: A landmark region that contains a collection of items and objects that, as a whole, combine to create a form. See related search.
+description:
+- - landmark
+  - https://w3c.github.io/aria/#landmark
+- - region that contains a collection of items and objects that, as a whole, combine to create a form. See related
+  - ''
+- - search
+  - https://w3c.github.io/aria/#search
 is_abstract: false
 parents:
   landmark: https://w3c.github.io/aria/#landmark

@@ -1,5 +1,7 @@
 url: https://w3c.github.io/aria/#listitem
-description: A single item in a list or directory.
+description:
+- - A single item in a list or directory.
+  - ''
 is_abstract: false
 parents:
   section: https://w3c.github.io/aria/#section

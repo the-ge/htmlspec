@@ -11,13 +11,13 @@ dialog:
     - any
     - https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-dialog-closedby-any
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - closerequest
     - https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-dialog-closedby-closerequest
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - none

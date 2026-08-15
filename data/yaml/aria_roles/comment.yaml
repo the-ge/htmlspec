@@ -1,5 +1,7 @@
 url: https://w3c.github.io/aria/#comment
-description: A comment contains content expressing reaction to other content.
+description:
+- - A comment contains content expressing reaction to other content.
+  - ''
 is_abstract: false
 parents:
   article: https://w3c.github.io/aria/#article

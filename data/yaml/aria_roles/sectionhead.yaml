@@ -1,5 +1,7 @@
 url: https://w3c.github.io/aria/#sectionhead
-description: A structure that labels or summarizes the topic of its related section.
+description:
+- - A structure that labels or summarizes the topic of its related section.
+  - ''
 is_abstract: true
 parents:
   structure: https://w3c.github.io/aria/#structure

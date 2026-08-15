@@ -1,5 +1,7 @@
 url: https://w3c.github.io/aria/#time
-description: An element that represents a specific point in time.
+description:
+- - An element that represents a specific point in time.
+  - ''
 is_abstract: false
 parents:
   section: https://w3c.github.io/aria/#section

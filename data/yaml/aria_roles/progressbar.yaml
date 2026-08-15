@@ -1,5 +1,9 @@
 url: https://w3c.github.io/aria/#progressbar
-description: An element that displays the progress status for tasks that take a long time.
+description:
+- - element
+  - https://dom.spec.whatwg.org/#concept-element
+- - that displays the progress status for tasks that take a long time.
+  - ''
 is_abstract: false
 parents:
   range: https://w3c.github.io/aria/#range

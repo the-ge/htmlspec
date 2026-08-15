@@ -1,5 +1,9 @@
 url: https://w3c.github.io/aria/#main
-description: A landmark containing the main content of a document.
+description:
+- - landmark
+  - https://w3c.github.io/aria/#landmark
+- - containing the main content of a document.
+  - ''
 is_abstract: false
 parents:
   landmark: https://w3c.github.io/aria/#landmark

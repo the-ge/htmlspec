@@ -1,5 +1,7 @@
 url: https://w3c.github.io/aria/#dialog
-description: A dialog is a descendant window of the primary window of a web application. For HTML pages, the primary application window is the entire web document.
+description:
+- - A dialog is a descendant window of the primary window of a web application. For HTML pages, the primary application window is the entire web document.
+  - ''
 is_abstract: false
 parents:
   window: https://w3c.github.io/aria/#window

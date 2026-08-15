@@ -1,5 +1,11 @@
 url: https://w3c.github.io/aria/#radiogroup
-description: A group of radio buttons.
+description:
+- - A group of
+  - ''
+- - radio
+  - https://w3c.github.io/aria/#radio
+- - buttons.
+  - ''
 is_abstract: false
 parents:
   select: https://w3c.github.io/aria/#select

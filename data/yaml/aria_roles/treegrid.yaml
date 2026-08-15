@@ -1,5 +1,11 @@
 url: https://w3c.github.io/aria/#treegrid
-description: A grid whose rows can be expanded and collapsed in the same manner as for a tree.
+description:
+- - grid
+  - https://w3c.github.io/aria/#grid
+- - whose rows can be expanded and collapsed in the same manner as for a
+  - ''
+- - tree
+  - https://w3c.github.io/aria/#tree
 is_abstract: false
 parents:
   grid: https://w3c.github.io/aria/#grid

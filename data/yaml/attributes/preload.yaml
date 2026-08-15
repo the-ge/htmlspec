@@ -11,19 +11,19 @@ audio:
     - none
     - https://html.spec.whatwg.org/multipage/media.html#attr-media-preload-none
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - metadata
     - https://html.spec.whatwg.org/multipage/media.html#attr-media-preload-metadata
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - auto
     - https://html.spec.whatwg.org/multipage/media.html#attr-media-preload-auto
   - !!python/tuple
-    - "\";\n          the empty string"
+    - '"; the empty string'
     - ''
   is_more_value_info_required: false
   description:
@@ -49,19 +49,19 @@ video:
     - none
     - https://html.spec.whatwg.org/multipage/media.html#attr-media-preload-none
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - metadata
     - https://html.spec.whatwg.org/multipage/media.html#attr-media-preload-metadata
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - auto
     - https://html.spec.whatwg.org/multipage/media.html#attr-media-preload-auto
   - !!python/tuple
-    - "\";\n          the empty string"
+    - '"; the empty string'
     - ''
   is_more_value_info_required: false
   description:

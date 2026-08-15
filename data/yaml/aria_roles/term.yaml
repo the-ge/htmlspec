@@ -1,5 +1,9 @@
 url: https://w3c.github.io/aria/#term
-description: A word or phrase with an optional corresponding definition. See related definition.
+description:
+- - A word or phrase with an optional corresponding definition. See related
+  - ''
+- - definition
+  - https://w3c.github.io/aria/#definition
 is_abstract: false
 parents:
   section: https://w3c.github.io/aria/#section

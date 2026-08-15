@@ -1,5 +1,15 @@
 url: https://w3c.github.io/aria/#none
-description: An element whose implicit native role semantics will not be mapped to the accessibility API. See synonym presentation.
+description:
+- - element
+  - https://dom.spec.whatwg.org/#concept-element
+- - whose implicit native role semantics will not be mapped to the
+  - ''
+- - accessibility API
+  - https://html.spec.whatwg.org/multipage/#dfn-accessibility-api
+- - . See synonym
+  - ''
+- - presentation
+  - https://w3c.github.io/aria/#presentation
 is_abstract: false
 parents:
   structure: https://w3c.github.io/aria/#structure

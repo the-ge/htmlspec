@@ -11,13 +11,13 @@ button:
     - toggle
     - https://html.spec.whatwg.org/multipage/popover.html#attr-popovertargetaction-toggle
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - show
     - https://html.spec.whatwg.org/multipage/popover.html#attr-popovertargetaction-show
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - hide
@@ -43,13 +43,13 @@ input:
     - toggle
     - https://html.spec.whatwg.org/multipage/popover.html#attr-popovertargetaction-toggle
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - show
     - https://html.spec.whatwg.org/multipage/popover.html#attr-popovertargetaction-show
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - hide

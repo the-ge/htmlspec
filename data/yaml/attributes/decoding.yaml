@@ -11,13 +11,13 @@ img:
     - sync
     - https://html.spec.whatwg.org/multipage/images.html#attr-img-decoding-sync
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - async
     - https://html.spec.whatwg.org/multipage/images.html#attr-img-decoding-async
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - auto

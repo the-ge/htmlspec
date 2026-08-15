@@ -1,5 +1,7 @@
 url: https://w3c.github.io/aria/#slider
-description: An input where the user selects a value from within a given range.
+description:
+- - An input where the user selects a value from within a given range.
+  - ''
 is_abstract: false
 parents:
   input: https://w3c.github.io/aria/#input

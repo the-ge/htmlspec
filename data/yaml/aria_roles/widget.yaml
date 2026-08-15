@@ -1,5 +1,7 @@
 url: https://w3c.github.io/aria/#widget
-description: An interactive component of a graphical user interface (GUI).
+description:
+- - An interactive component of a graphical user interface ( GUI ).
+  - ''
 is_abstract: true
 parents:
   roletype: https://w3c.github.io/aria/#roletype

@@ -11,7 +11,7 @@ input:
     - limited-srgb
     - https://html.spec.whatwg.org/multipage/input.html#attr-input-colorspace-limited-srgb
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - display-p3

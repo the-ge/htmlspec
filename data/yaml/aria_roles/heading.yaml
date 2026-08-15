@@ -1,5 +1,7 @@
 url: https://w3c.github.io/aria/#heading
-description: A heading for a section of the page.
+description:
+- - A heading for a section of the page.
+  - ''
 is_abstract: false
 parents:
   sectionhead: https://w3c.github.io/aria/#sectionhead

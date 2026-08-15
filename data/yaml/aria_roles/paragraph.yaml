@@ -1,5 +1,7 @@
 url: https://w3c.github.io/aria/#paragraph
-description: A paragraph of content.
+description:
+- - A paragraph of content.
+  - ''
 is_abstract: false
 parents:
   section: https://w3c.github.io/aria/#section

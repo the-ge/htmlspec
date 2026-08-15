@@ -1,5 +1,7 @@
 url: https://w3c.github.io/aria/#command
-description: A form of widget that performs an action but does not receive input data.
+description:
+- - A form of widget that performs an action but does not receive input data.
+  - ''
 is_abstract: true
 parents:
   widget: https://w3c.github.io/aria/#widget

@@ -11,25 +11,25 @@ meta:
     - content-type
     - https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-http-equiv-keyword-content-type
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - default-style
     - https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-http-equiv-keyword-default-style
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - refresh
     - https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-http-equiv-keyword-refresh
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - x-ua-compatible
     - https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-http-equiv-keyword-x-ua-compatible
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - content-security-policy

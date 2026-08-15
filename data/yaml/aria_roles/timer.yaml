@@ -1,5 +1,7 @@
 url: https://w3c.github.io/aria/#timer
-description: A section of content containing a numerical counter which indicates an amount of elapsed time from a start point, or the time remaining until an end point.
+description:
+- - A section of content containing a numerical counter which indicates an amount of elapsed time from a start point, or the time remaining until an end point.
+  - ''
 is_abstract: false
 parents:
   status: https://w3c.github.io/aria/#status

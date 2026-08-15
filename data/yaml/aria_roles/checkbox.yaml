@@ -1,5 +1,7 @@
 url: https://w3c.github.io/aria/#checkbox
-description: 'A checkable input that has three possible values: true, false, or mixed.'
+description:
+- - 'A checkable input that has three possible values : true , false , or mixed'
+  - ''
 is_abstract: false
 parents:
   input: https://w3c.github.io/aria/#input

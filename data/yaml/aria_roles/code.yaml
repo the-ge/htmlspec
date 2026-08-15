@@ -1,5 +1,7 @@
 url: https://w3c.github.io/aria/#code
-description: A section whose content represents a fragment of computer code.
+description:
+- - A section whose content represents a fragment of computer code.
+  - ''
 is_abstract: false
 parents:
   section: https://w3c.github.io/aria/#section

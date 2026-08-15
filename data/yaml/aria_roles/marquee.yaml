@@ -1,5 +1,7 @@
 url: https://w3c.github.io/aria/#marquee
-description: A section of content where non-essential information changes frequently.
+description:
+- - A section of content where non-essential information changes frequently.
+  - ''
 is_abstract: false
 parents:
   section: https://w3c.github.io/aria/#section

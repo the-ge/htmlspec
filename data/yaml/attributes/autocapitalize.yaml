@@ -11,31 +11,31 @@ all:
     - 'on'
     - https://html.spec.whatwg.org/multipage/interaction.html#attr-autocapitalize-on
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - 'off'
     - https://html.spec.whatwg.org/multipage/interaction.html#attr-autocapitalize-off
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - none
     - https://html.spec.whatwg.org/multipage/interaction.html#attr-autocapitalize-none
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - sentences
     - https://html.spec.whatwg.org/multipage/interaction.html#attr-autocapitalize-sentences
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - words
     - https://html.spec.whatwg.org/multipage/interaction.html#attr-autocapitalize-words
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - characters

@@ -1,5 +1,11 @@
 url: https://w3c.github.io/aria/#input
-description: A generic type of widget that allows user input.
+description:
+- - A generic type of
+  - ''
+- - widget
+  - https://html.spec.whatwg.org/multipage/#dfn-widget
+- - that allows user input.
+  - ''
 is_abstract: true
 parents:
   widget: https://w3c.github.io/aria/#widget

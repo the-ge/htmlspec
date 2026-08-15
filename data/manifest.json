@@ -16,7 +16,7 @@
     "global_attributes": 32,
     "input_types": 22
   },
-  "generator_release": "",
-  "generator_tag": "d469d94",
-  "generator_commit_id": "d469d9487da1e777a905cb1f28975718cdf0deb8"
+  "generator_release": "0.7.7",
+  "generator_tag": "0.7.7",
+  "generator_commit_id": "eaf547432f0ea21818276a67ed06829092d9658a"
 }

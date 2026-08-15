@@ -1,5 +1,17 @@
 url: https://w3c.github.io/aria/#alertdialog
-description: A type of dialog that contains an alert message, where initial focus goes to an element within the dialog. See related alert and dialog.
+description:
+- - A type of dialog that contains an alert message, where initial focus goes to an
+  - ''
+- - element
+  - https://dom.spec.whatwg.org/#concept-element
+- - within the dialog. See related
+  - ''
+- - alert
+  - https://w3c.github.io/aria/#alert
+- - and
+  - ''
+- - dialog
+  - https://w3c.github.io/aria/#dialog
 is_abstract: false
 parents:
   alert: https://w3c.github.io/aria/#alert

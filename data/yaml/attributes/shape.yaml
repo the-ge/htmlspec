@@ -11,19 +11,19 @@ area:
     - circle
     - https://html.spec.whatwg.org/multipage/image-maps.html#attr-area-shape-keyword-circle
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - default
     - https://html.spec.whatwg.org/multipage/image-maps.html#attr-area-shape-keyword-default
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - poly
     - https://html.spec.whatwg.org/multipage/image-maps.html#attr-area-shape-keyword-poly
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - rect

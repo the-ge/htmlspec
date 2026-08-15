@@ -11,7 +11,7 @@ iframe:
     - lazy
     - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-loading-lazy
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - eager
@@ -37,7 +37,7 @@ img:
     - lazy
     - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-loading-lazy
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - eager
@@ -63,7 +63,7 @@ audio:
     - lazy
     - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-loading-lazy
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - eager
@@ -89,7 +89,7 @@ video:
     - lazy
     - https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-loading-lazy
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - eager

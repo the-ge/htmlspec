@@ -1,5 +1,11 @@
 url: https://w3c.github.io/aria/#sectionfooter
-description: "A set of user interface objects and information representing information about its closest ancestral content group. For instance, a sectionfooter can include information\n              about who wrote the specific section of content, such as an article. It can contain links to related documents, copyright information or other indices and colophon specific\n              to the current section of the page."
+description:
+- - A set of user interface objects and information representing information about its closest ancestral content group. For instance, a sectionfooter can include information about who wrote the specific section of content, such as an
+  - ''
+- - article
+  - https://w3c.github.io/aria/#article
+- - . It can contain links to related documents, copyright information or other indices and colophon specific to the current section of the page.
+  - ''
 is_abstract: false
 parents:
   section: https://w3c.github.io/aria/#section

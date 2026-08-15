@@ -11,19 +11,19 @@ th:
     - row
     - https://html.spec.whatwg.org/multipage/tables.html#attr-th-scope-row
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - col
     - https://html.spec.whatwg.org/multipage/tables.html#attr-th-scope-col
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - rowgroup
     - https://html.spec.whatwg.org/multipage/tables.html#attr-th-scope-rowgroup
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - colgroup

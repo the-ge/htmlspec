@@ -1,5 +1,11 @@
 url: https://w3c.github.io/aria/#meter
-description: An element that represents a scalar measurement within a known range, or a fractional value. See related progressbar.
+description:
+- - element
+  - https://dom.spec.whatwg.org/#concept-element
+- - that represents a scalar measurement within a known range, or a fractional value. See related
+  - ''
+- - progressbar
+  - https://w3c.github.io/aria/#progressbar
 is_abstract: false
 parents:
   range: https://w3c.github.io/aria/#range

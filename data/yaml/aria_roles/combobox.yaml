@@ -1,5 +1,19 @@
 url: https://w3c.github.io/aria/#combobox
-description: "An input that controls another element, such as a listbox or grid, that can dynamically pop up to help the user set the value of the\n              input."
+description:
+- - input
+  - https://w3c.github.io/aria/#input
+- - that controls another element, such as a
+  - ''
+- - listbox
+  - https://w3c.github.io/aria/#listbox
+- - or
+  - ''
+- - grid
+  - https://w3c.github.io/aria/#grid
+- - ', that can dynamically pop up to help the user set the value of the'
+  - ''
+- - input
+  - https://w3c.github.io/aria/#input
 is_abstract: false
 parents:
   input: https://w3c.github.io/aria/#input

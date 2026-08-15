@@ -1,5 +1,7 @@
 url: https://w3c.github.io/aria/#row
-description: A row of cells in a tabular container.
+description:
+- - A row of cells in a tabular container.
+  - ''
 is_abstract: false
 parents:
   group: https://w3c.github.io/aria/#group

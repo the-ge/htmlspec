@@ -1,5 +1,9 @@
 url: https://w3c.github.io/aria/#menuitemcheckbox
-description: A menuitem with a checkable state whose possible values are true, false, or mixed.
+description:
+- - menuitem
+  - https://w3c.github.io/aria/#menuitem
+- - with a checkable state whose possible values are true , false , or mixed
+  - ''
 is_abstract: false
 parents:
   menuitem: https://w3c.github.io/aria/#menuitem

@@ -1,5 +1,7 @@
 url: https://w3c.github.io/aria/#suggestion
-description: A single proposed change to content.
+description:
+- - A single proposed change to content.
+  - ''
 is_abstract: false
 parents:
   section: https://w3c.github.io/aria/#section

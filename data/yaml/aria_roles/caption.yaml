@@ -1,5 +1,29 @@
 url: https://w3c.github.io/aria/#caption
-description: Visible content that names, or describes a figure, grid, group, radiogroup, table or treegrid.
+description:
+- - Visible content that names, or describes a
+  - ''
+- - figure
+  - https://w3c.github.io/aria/#figure
+- - ','
+  - ''
+- - grid
+  - https://w3c.github.io/aria/#grid
+- - ','
+  - ''
+- - group
+  - https://w3c.github.io/aria/#group
+- - ','
+  - ''
+- - radiogroup
+  - https://w3c.github.io/aria/#radiogroup
+- - ','
+  - ''
+- - table
+  - https://w3c.github.io/aria/#table
+- - or
+  - ''
+- - treegrid
+  - https://w3c.github.io/aria/#treegrid
 is_abstract: false
 parents:
   section: https://w3c.github.io/aria/#section

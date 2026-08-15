@@ -11,37 +11,37 @@ all:
     - enter
     - https://html.spec.whatwg.org/multipage/interaction.html#attr-enterkeyhint-keyword-enter
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - done
     - https://html.spec.whatwg.org/multipage/interaction.html#attr-enterkeyhint-keyword-done
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - go
     - https://html.spec.whatwg.org/multipage/interaction.html#attr-enterkeyhint-keyword-go
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - next
     - https://html.spec.whatwg.org/multipage/interaction.html#attr-enterkeyhint-keyword-next
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - previous
     - https://html.spec.whatwg.org/multipage/interaction.html#attr-enterkeyhint-keyword-previous
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - search
     - https://html.spec.whatwg.org/multipage/interaction.html#attr-enterkeyhint-keyword-search
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - send

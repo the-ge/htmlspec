@@ -11,13 +11,13 @@ form:
     - get
     - https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-method-get-keyword
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - post
     - https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-method-post-keyword
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - dialog

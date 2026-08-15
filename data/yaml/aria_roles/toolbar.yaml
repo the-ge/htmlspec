@@ -1,5 +1,7 @@
 url: https://w3c.github.io/aria/#toolbar
-description: A collection of commonly used function buttons or controls represented in compact visual form.
+description:
+- - A collection of commonly used function buttons or controls represented in compact visual form.
+  - ''
 is_abstract: false
 parents:
   group: https://w3c.github.io/aria/#group

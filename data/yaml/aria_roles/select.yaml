@@ -1,5 +1,7 @@
 url: https://w3c.github.io/aria/#select
-description: A form widget that allows the user to make selections from a set of choices.
+description:
+- - A form widget that allows the user to make selections from a set of choices.
+  - ''
 is_abstract: true
 parents:
   composite: https://w3c.github.io/aria/#composite

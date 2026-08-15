@@ -1,5 +1,19 @@
 url: https://w3c.github.io/aria/#feed
-description: "A scrollable list of articles where scrolling might cause articles to be added to or removed from either end of\n              the list."
+description:
+- - A scrollable
+  - ''
+- - list
+  - https://w3c.github.io/aria/#list
+- - of
+  - ''
+- - articles
+  - https://w3c.github.io/aria/#article
+- - where scrolling might cause
+  - ''
+- - articles
+  - https://w3c.github.io/aria/#article
+- - to be added to or removed from either end of the list.
+  - ''
 is_abstract: false
 parents:
   list: https://w3c.github.io/aria/#list

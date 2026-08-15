@@ -1,5 +1,11 @@
 url: https://w3c.github.io/aria/#generic
-description: A nameless container element that has no semantic meaning on its own.
+description:
+- - A nameless container
+  - ''
+- - element
+  - https://dom.spec.whatwg.org/#concept-element
+- - that has no semantic meaning on its own.
+  - ''
 is_abstract: false
 parents:
   structure: https://w3c.github.io/aria/#structure

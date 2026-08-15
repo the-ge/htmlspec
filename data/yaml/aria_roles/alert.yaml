@@ -1,5 +1,17 @@
 url: https://w3c.github.io/aria/#alert
-description: A type of live region with important, and usually time-sensitive, information. See related alertdialog and status.
+description:
+- - A type of
+  - ''
+- - live region
+  - https://html.spec.whatwg.org/multipage/#dfn-live-region
+- - with important, and usually time-sensitive, information. See related
+  - ''
+- - alertdialog
+  - https://w3c.github.io/aria/#alertdialog
+- - and
+  - ''
+- - status
+  - https://w3c.github.io/aria/#status
 is_abstract: false
 parents:
   section: https://w3c.github.io/aria/#section

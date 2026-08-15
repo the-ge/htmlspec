@@ -39,13 +39,13 @@ button:
     - submit
     - https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-type-submit
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - reset
     - https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-type-reset
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - button
@@ -212,25 +212,25 @@ ol:
     - '1'
     - https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-type-keyword-decimal
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - a
     - https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-type-keyword-lower-alpha
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - A
     - https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-type-keyword-upper-alpha
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - i
     - https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-type-keyword-lower-roman
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - I

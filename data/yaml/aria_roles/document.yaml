@@ -1,5 +1,13 @@
 url: https://w3c.github.io/aria/#document
-description: An element containing content that assistive technology users might want to browse in a reading mode.
+description:
+- - element
+  - https://dom.spec.whatwg.org/#concept-element
+- - containing content that
+  - ''
+- - assistive technology
+  - https://html.spec.whatwg.org/multipage/#assistive-technology
+- - users might want to browse in a reading mode.
+  - ''
 is_abstract: false
 parents:
   structure: https://w3c.github.io/aria/#structure

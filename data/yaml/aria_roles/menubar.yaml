@@ -1,5 +1,11 @@
 url: https://w3c.github.io/aria/#menubar
-description: A presentation of menu that usually remains visible and is usually presented horizontally.
+description:
+- - A presentation of
+  - ''
+- - menu
+  - https://w3c.github.io/aria/#menu
+- - that usually remains visible and is usually presented horizontally.
+  - ''
 is_abstract: false
 parents:
   menu: https://w3c.github.io/aria/#menu

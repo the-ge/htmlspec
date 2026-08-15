@@ -11,25 +11,25 @@ track:
     - subtitles
     - https://html.spec.whatwg.org/multipage/media.html#attr-track-kind-keyword-subtitles
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - captions
     - https://html.spec.whatwg.org/multipage/media.html#attr-track-kind-keyword-captions
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - descriptions
     - https://html.spec.whatwg.org/multipage/media.html#attr-track-kind-keyword-descriptions
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - chapters
     - https://html.spec.whatwg.org/multipage/media.html#attr-track-kind-keyword-chapters
   - !!python/tuple
-    - "\";\n          \""
+    - '"; "'
     - ''
   - !!python/tuple
     - metadata

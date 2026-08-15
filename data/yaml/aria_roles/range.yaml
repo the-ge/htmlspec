@@ -1,5 +1,7 @@
 url: https://w3c.github.io/aria/#range
-description: An element representing a range of values.
+description:
+- - An element representing a range of values.
+  - ''
 is_abstract: true
 parents:
   structure: https://w3c.github.io/aria/#structure
