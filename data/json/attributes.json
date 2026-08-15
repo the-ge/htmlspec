@@ -40,27 +40,7 @@
           "https://mimesniff.spec.whatwg.org/#valid-mime-type-with-no-parameters"
         ],
         [
-          "or",
-          ""
-        ],
-        [
-          "audio/*",
-          ""
-        ],
-        [
-          ",",
-          ""
-        ],
-        [
-          "video/*",
-          ""
-        ],
-        [
-          ", or",
-          ""
-        ],
-        [
-          "image/*",
+          "or audio/* , video/* , or image/*",
           ""
         ]
       ],
@@ -89,15 +69,7 @@
           "https://infra.spec.whatwg.org/#ascii-case-insensitive"
         ],
         [
-          "match for \"",
-          ""
-        ],
-        [
-          "UTF-8",
-          ""
-        ],
-        [
-          "\"",
+          "match for \" UTF-8 \"",
           ""
         ]
       ],
@@ -517,23 +489,7 @@
       "value_enum": [],
       "value_info": [
         [
-          "\"",
-          ""
-        ],
-        [
-          "on",
-          ""
-        ],
-        [
-          "\"; \"",
-          ""
-        ],
-        [
-          "off",
-          ""
-        ],
-        [
-          "\"",
+          "\" on \"; \" off \"",
           ""
         ]
       ],
@@ -808,15 +764,7 @@
       "value_enum": [],
       "value_info": [
         [
-          "\"",
-          ""
-        ],
-        [
-          "utf-8",
-          ""
-        ],
-        [
-          "\"",
+          "\" utf-8 \"",
           ""
         ]
       ],
@@ -1021,15 +969,7 @@
           "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-rel"
         ],
         [
-          "=\"",
-          ""
-        ],
-        [
-          "mask-icon",
-          ""
-        ],
-        [
-          "\")",
+          "=\" mask-icon \")",
           ""
         ]
       ]
@@ -1268,31 +1208,7 @@
       "value_enum": [],
       "value_info": [
         [
-          "\"",
-          ""
-        ],
-        [
-          "true",
-          ""
-        ],
-        [
-          "\";\n          \"",
-          ""
-        ],
-        [
-          "false",
-          ""
-        ],
-        [
-          "\";\n          \"",
-          ""
-        ],
-        [
-          "plaintext-only",
-          ""
-        ],
-        [
-          "\";\n          the empty string",
+          "\" true \";\n          \" false \";\n          \" plaintext-only \";\n          the empty string",
           ""
         ]
       ],
@@ -2194,23 +2110,7 @@
       "value_enum": [],
       "value_info": [
         [
-          "\"",
-          ""
-        ],
-        [
-          "true",
-          ""
-        ],
-        [
-          "\"; \"",
-          ""
-        ],
-        [
-          "false",
-          ""
-        ],
-        [
-          "\"",
+          "\" true \"; \" false \"",
           ""
         ]
       ],
@@ -3902,15 +3802,7 @@
       "is_more_value_info_required": false,
       "description": [
         [
-          "Integrity metadata used in",
-          ""
-        ],
-        [
-          "Subresource Integrity",
-          ""
-        ],
-        [
-          "checks",
+          "Integrity metadata used in Subresource Integrity checks",
           ""
         ],
         [
@@ -3933,15 +3825,7 @@
       "is_more_value_info_required": false,
       "description": [
         [
-          "Integrity metadata used in",
-          ""
-        ],
-        [
-          "Subresource Integrity",
-          ""
-        ],
-        [
-          "checks",
+          "Integrity metadata used in Subresource Integrity checks",
           ""
         ],
         [
@@ -5437,15 +5321,7 @@
       "is_more_value_info_required": false,
       "description": [
         [
-          "Cryptographic nonce used in",
-          ""
-        ],
-        [
-          "Content Security Policy",
-          ""
-        ],
-        [
-          "checks",
+          "Cryptographic nonce used in Content Security Policy checks",
           ""
         ],
         [
@@ -6974,11 +6850,7 @@
           "https://infra.spec.whatwg.org/#ascii-case-insensitive"
         ],
         [
-          ", consisting of",
-          ""
-        ],
-        [
-          "\"",
+          ", consisting of \"",
           ""
         ],
         [
@@ -6986,11 +6858,7 @@
           "https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-downloads"
         ],
         [
-          "\"",
-          ""
-        ],
-        [
-          "\"",
+          "\" \"",
           ""
         ],
         [
@@ -6998,11 +6866,7 @@
           "https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-forms"
         ],
         [
-          "\"",
-          ""
-        ],
-        [
-          "\"",
+          "\" \"",
           ""
         ],
         [
@@ -7010,11 +6874,7 @@
           "https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-modals"
         ],
         [
-          "\"",
-          ""
-        ],
-        [
-          "\"",
+          "\" \"",
           ""
         ],
         [
@@ -7022,11 +6882,7 @@
           "https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-orientation-lock"
         ],
         [
-          "\"",
-          ""
-        ],
-        [
-          "\"",
+          "\" \"",
           ""
         ],
         [
@@ -7034,11 +6890,7 @@
           "https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-pointer-lock"
         ],
         [
-          "\"",
-          ""
-        ],
-        [
-          "\"",
+          "\" \"",
           ""
         ],
         [
@@ -7046,11 +6898,7 @@
           "https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-popups"
         ],
         [
-          "\"",
-          ""
-        ],
-        [
-          "\"",
+          "\" \"",
           ""
         ],
         [
@@ -7058,11 +6906,7 @@
           "https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-popups-to-escape-sandbox"
         ],
         [
-          "\"",
-          ""
-        ],
-        [
-          "\"",
+          "\" \"",
           ""
         ],
         [
@@ -7070,11 +6914,7 @@
           "https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-presentation"
         ],
         [
-          "\"",
-          ""
-        ],
-        [
-          "\"",
+          "\" \"",
           ""
         ],
         [
@@ -7082,11 +6922,7 @@
           "https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-same-origin"
         ],
         [
-          "\"",
-          ""
-        ],
-        [
-          "\"",
+          "\" \"",
           ""
         ],
         [
@@ -7094,11 +6930,7 @@
           "https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-scripts"
         ],
         [
-          "\"",
-          ""
-        ],
-        [
-          "\"",
+          "\" \"",
           ""
         ],
         [
@@ -7106,11 +6938,7 @@
           "https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-top-navigation"
         ],
         [
-          "\"",
-          ""
-        ],
-        [
-          "\"",
+          "\" \"",
           ""
         ],
         [
@@ -7118,11 +6946,7 @@
           "https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-top-navigation-by-user-activation"
         ],
         [
-          "\"",
-          ""
-        ],
-        [
-          "\"",
+          "\" \"",
           ""
         ],
         [
@@ -7304,23 +7128,7 @@
       "value_enum": [],
       "value_info": [
         [
-          "\"",
-          ""
-        ],
-        [
-          "open",
-          ""
-        ],
-        [
-          "\";\n          \"",
-          ""
-        ],
-        [
-          "closed",
-          ""
-        ],
-        [
-          "\"",
+          "\" open \";\n          \" closed \"",
           ""
         ]
       ],
@@ -7370,23 +7178,7 @@
       "value_enum": [],
       "value_info": [
         [
-          "\"",
-          ""
-        ],
-        [
-          "named",
-          ""
-        ],
-        [
-          "\";\n          \"",
-          ""
-        ],
-        [
-          "manual",
-          ""
-        ],
-        [
-          "\"",
+          "\" named \";\n          \" manual \"",
           ""
         ]
       ],
@@ -8029,15 +7821,7 @@
           "https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-floating-point-number"
         ],
         [
-          "greater than zero, or \"",
-          ""
-        ],
-        [
-          "any",
-          ""
-        ],
-        [
-          "\"",
+          "greater than zero, or \" any \"",
           ""
         ]
       ],
@@ -8378,23 +8162,7 @@
       "value_enum": [],
       "value_info": [
         [
-          "\"",
-          ""
-        ],
-        [
-          "yes",
-          ""
-        ],
-        [
-          "\"; \"",
-          ""
-        ],
-        [
-          "no",
-          ""
-        ],
-        [
-          "\"; the empty string",
+          "\" yes \"; \" no \"; the empty string",
           ""
         ]
       ],
@@ -8738,31 +8506,7 @@
       "value_enum": [],
       "value_info": [
         [
-          "\"",
-          ""
-        ],
-        [
-          "module",
-          ""
-        ],
-        [
-          "\"; \"",
-          ""
-        ],
-        [
-          "importmap",
-          ""
-        ],
-        [
-          "\"; \"",
-          ""
-        ],
-        [
-          "speculationrules",
-          ""
-        ],
-        [
-          "\"; a",
+          "\" module \"; \" importmap \"; \" speculationrules \"; a",
           ""
         ],
         [

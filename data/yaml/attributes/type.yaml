@@ -250,25 +250,7 @@ script:
   value_enum: []
   value_info:
   - !!python/tuple
-    - '"'
-    - ''
-  - !!python/tuple
-    - module
-    - ''
-  - !!python/tuple
-    - '"; "'
-    - ''
-  - !!python/tuple
-    - importmap
-    - ''
-  - !!python/tuple
-    - '"; "'
-    - ''
-  - !!python/tuple
-    - speculationrules
-    - ''
-  - !!python/tuple
-    - '"; a'
+    - '" module "; " importmap "; " speculationrules "; a'
     - ''
   - !!python/tuple
     - valid MIME type string

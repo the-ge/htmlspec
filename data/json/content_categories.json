@@ -425,16 +425,12 @@
         "https://html.spec.whatwg.org/multipage/image-maps.html#the-area-element",
         [
           [
-            "it is a descendant of a",
+            "descendant of",
             ""
           ],
           [
             "map",
             "https://html.spec.whatwg.org/multipage/image-maps.html#the-map-element"
-          ],
-          [
-            "element",
-            ""
           ]
         ]
       ],
@@ -442,10 +438,6 @@
         "link",
         "https://html.spec.whatwg.org/multipage/semantics.html#the-link-element",
         [
-          [
-            "it is",
-            ""
-          ],
           [
             "allowed in the body",
             "https://html.spec.whatwg.org/multipage/semantics.html#allowed-in-the-body"
@@ -457,10 +449,6 @@
         "https://html.spec.whatwg.org/multipage/grouping-content.html#the-main-element",
         [
           [
-            "it is a",
-            ""
-          ],
-          [
             "hierarchically correct main element",
             "https://html.spec.whatwg.org/multipage/grouping-content.html#hierarchically-correct-main-element"
           ]
@@ -471,16 +459,12 @@
         "https://html.spec.whatwg.org/multipage/semantics.html#the-meta-element",
         [
           [
-            "the",
+            "attribute is present",
             ""
           ],
           [
             "itemprop",
             "https://html.spec.whatwg.org/multipage/microdata.html#names:-the-itemprop-attribute"
-          ],
-          [
-            "attribute is present",
-            ""
           ]
         ]
       ]
@@ -604,16 +588,12 @@
         "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-a-element",
         [
           [
-            "the",
+            "attribute is present",
             ""
           ],
           [
             "href",
             "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-href"
-          ],
-          [
-            "attribute is present",
-            ""
           ]
         ]
       ],
@@ -622,16 +602,12 @@
         "https://html.spec.whatwg.org/multipage/media.html#the-audio-element",
         [
           [
-            "the",
+            "attribute is present",
             ""
           ],
           [
             "controls",
             "https://html.spec.whatwg.org/multipage/media.html#attr-media-controls"
-          ],
-          [
-            "attribute is present",
-            ""
           ]
         ]
       ],
@@ -640,7 +616,7 @@
         "https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element",
         [
           [
-            "the",
+            "attribute is present",
             ""
           ],
           [
@@ -648,16 +624,8 @@
             "https://html.spec.whatwg.org/multipage/image-maps.html#attr-hyperlink-usemap"
           ],
           [
-            "or",
-            ""
-          ],
-          [
             "controls",
             "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-controls"
-          ],
-          [
-            "attribute is present",
-            ""
           ]
         ]
       ],
@@ -666,7 +634,7 @@
         "https://html.spec.whatwg.org/multipage/input.html#the-input-element",
         [
           [
-            "the",
+            "attribute is not in state",
             ""
           ],
           [
@@ -674,24 +642,8 @@
             "https://html.spec.whatwg.org/multipage/input.html#attr-input-type"
           ],
           [
-            "attribute is",
-            ""
-          ],
-          [
-            "not",
-            ""
-          ],
-          [
-            "in the",
-            ""
-          ],
-          [
             "Hidden",
             "https://html.spec.whatwg.org/multipage/input.html#hidden-state-(type=hidden)"
-          ],
-          [
-            "state",
-            ""
           ]
         ]
       ],
@@ -700,16 +652,12 @@
         "https://html.spec.whatwg.org/multipage/media.html#the-video-element",
         [
           [
-            "the",
+            "attribute is present",
             ""
           ],
           [
             "controls",
             "https://html.spec.whatwg.org/multipage/media.html#attr-media-controls"
-          ],
-          [
-            "attribute is present",
-            ""
           ]
         ]
       ]
@@ -1119,16 +1067,12 @@
         "https://html.spec.whatwg.org/multipage/media.html#the-audio-element",
         [
           [
-            "the",
+            "attribute is present",
             ""
           ],
           [
             "controls",
             "https://html.spec.whatwg.org/multipage/media.html#attr-media-controls"
-          ],
-          [
-            "attribute is present",
-            ""
           ]
         ]
       ],
@@ -1147,7 +1091,7 @@
         "https://html.spec.whatwg.org/multipage/input.html#the-input-element",
         [
           [
-            "the",
+            "attribute is not in state",
             ""
           ],
           [
@@ -1155,24 +1099,8 @@
             "https://html.spec.whatwg.org/multipage/input.html#attr-input-type"
           ],
           [
-            "attribute is",
-            ""
-          ],
-          [
-            "not",
-            ""
-          ],
-          [
-            "in the",
-            ""
-          ],
-          [
             "Hidden",
             "https://html.spec.whatwg.org/multipage/input.html#hidden-state-(type=hidden)"
-          ],
-          [
-            "state",
-            ""
           ]
         ]
       ],
@@ -1181,16 +1109,12 @@
         "https://html.spec.whatwg.org/multipage/grouping-content.html#the-menu-element",
         [
           [
-            "the element's children include at least one",
+            "at least one child",
             ""
           ],
           [
             "li",
             "https://html.spec.whatwg.org/multipage/grouping-content.html#the-li-element"
-          ],
-          [
-            "element",
-            ""
           ]
         ]
       ],
@@ -1199,16 +1123,12 @@
         "https://html.spec.whatwg.org/multipage/grouping-content.html#the-ol-element",
         [
           [
-            "the element's children include at least one",
+            "at least one child",
             ""
           ],
           [
             "li",
             "https://html.spec.whatwg.org/multipage/grouping-content.html#the-li-element"
-          ],
-          [
-            "element",
-            ""
           ]
         ]
       ],
@@ -1217,16 +1137,12 @@
         "https://html.spec.whatwg.org/multipage/grouping-content.html#the-ul-element",
         [
           [
-            "the element's children include at least one",
+            "at least one child",
             ""
           ],
           [
             "li",
             "https://html.spec.whatwg.org/multipage/grouping-content.html#the-li-element"
-          ],
-          [
-            "element",
-            ""
           ]
         ]
       ],
@@ -1480,16 +1396,12 @@
         "https://html.spec.whatwg.org/multipage/image-maps.html#the-area-element",
         [
           [
-            "it is a descendant of a",
+            "descendant of",
             ""
           ],
           [
             "map",
             "https://html.spec.whatwg.org/multipage/image-maps.html#the-map-element"
-          ],
-          [
-            "element",
-            ""
           ]
         ]
       ],
@@ -1497,10 +1409,6 @@
         "link",
         "https://html.spec.whatwg.org/multipage/semantics.html#the-link-element",
         [
-          [
-            "it is",
-            ""
-          ],
           [
             "allowed in the body",
             "https://html.spec.whatwg.org/multipage/semantics.html#allowed-in-the-body"
@@ -1512,16 +1420,12 @@
         "https://html.spec.whatwg.org/multipage/semantics.html#the-meta-element",
         [
           [
-            "the",
+            "attribute is present",
             ""
           ],
           [
             "itemprop",
             "https://html.spec.whatwg.org/multipage/microdata.html#names:-the-itemprop-attribute"
-          ],
-          [
-            "attribute is present",
-            ""
           ]
         ]
       ]

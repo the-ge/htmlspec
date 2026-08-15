@@ -5,19 +5,7 @@ all:
   value_enum: []
   value_info:
   - !!python/tuple
-    - '"'
-    - ''
-  - !!python/tuple
-    - 'true'
-    - ''
-  - !!python/tuple
-    - '"; "'
-    - ''
-  - !!python/tuple
-    - 'false'
-    - ''
-  - !!python/tuple
-    - '"'
+    - '" true "; " false "'
     - ''
   is_more_value_info_required: false
   description:

@@ -5,19 +5,7 @@ template:
   value_enum: []
   value_info:
   - !!python/tuple
-    - '"'
-    - ''
-  - !!python/tuple
-    - open
-    - ''
-  - !!python/tuple
-    - "\";\n          \""
-    - ''
-  - !!python/tuple
-    - closed
-    - ''
-  - !!python/tuple
-    - '"'
+    - "\" open \";\n          \" closed \""
     - ''
   is_more_value_info_required: false
   description:

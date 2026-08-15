@@ -8,13 +8,7 @@ form:
     - ASCII case-insensitive
     - https://infra.spec.whatwg.org/#ascii-case-insensitive
   - !!python/tuple
-    - match for "
-    - ''
-  - !!python/tuple
-    - UTF-8
-    - ''
-  - !!python/tuple
-    - '"'
+    - match for " UTF-8 "
     - ''
   is_more_value_info_required: false
   description:

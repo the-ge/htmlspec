@@ -19,11 +19,5 @@ link:
     - rel
     - https://html.spec.whatwg.org/multipage/semantics.html#attr-link-rel
   - !!python/tuple
-    - ="
-    - ''
-  - !!python/tuple
-    - mask-icon
-    - ''
-  - !!python/tuple
-    - '")'
+    - =" mask-icon ")
     - ''

@@ -10,13 +10,7 @@ all:
   is_more_value_info_required: false
   description:
   - !!python/tuple
-    - Cryptographic nonce used in
-    - ''
-  - !!python/tuple
-    - Content Security Policy
-    - ''
-  - !!python/tuple
-    - checks
+    - Cryptographic nonce used in Content Security Policy checks
     - ''
   - !!python/tuple
     - '[CSP]'

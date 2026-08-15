@@ -14,118 +14,79 @@ iframe:
     - ASCII case-insensitive
     - https://infra.spec.whatwg.org/#ascii-case-insensitive
   - !!python/tuple
-    - ', consisting of'
-    - ''
-  - !!python/tuple
-    - '"'
+    - ', consisting of "'
     - ''
   - !!python/tuple
     - allow-downloads
     - https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-downloads
   - !!python/tuple
-    - '"'
-    - ''
-  - !!python/tuple
-    - '"'
+    - '" "'
     - ''
   - !!python/tuple
     - allow-forms
     - https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-forms
   - !!python/tuple
-    - '"'
-    - ''
-  - !!python/tuple
-    - '"'
+    - '" "'
     - ''
   - !!python/tuple
     - allow-modals
     - https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-modals
   - !!python/tuple
-    - '"'
-    - ''
-  - !!python/tuple
-    - '"'
+    - '" "'
     - ''
   - !!python/tuple
     - allow-orientation-lock
     - https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-orientation-lock
   - !!python/tuple
-    - '"'
-    - ''
-  - !!python/tuple
-    - '"'
+    - '" "'
     - ''
   - !!python/tuple
     - allow-pointer-lock
     - https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-pointer-lock
   - !!python/tuple
-    - '"'
-    - ''
-  - !!python/tuple
-    - '"'
+    - '" "'
     - ''
   - !!python/tuple
     - allow-popups
     - https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-popups
   - !!python/tuple
-    - '"'
-    - ''
-  - !!python/tuple
-    - '"'
+    - '" "'
     - ''
   - !!python/tuple
     - allow-popups-to-escape-sandbox
     - https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-popups-to-escape-sandbox
   - !!python/tuple
-    - '"'
-    - ''
-  - !!python/tuple
-    - '"'
+    - '" "'
     - ''
   - !!python/tuple
     - allow-presentation
     - https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-presentation
   - !!python/tuple
-    - '"'
-    - ''
-  - !!python/tuple
-    - '"'
+    - '" "'
     - ''
   - !!python/tuple
     - allow-same-origin
     - https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-same-origin
   - !!python/tuple
-    - '"'
-    - ''
-  - !!python/tuple
-    - '"'
+    - '" "'
     - ''
   - !!python/tuple
     - allow-scripts
     - https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-scripts
   - !!python/tuple
-    - '"'
-    - ''
-  - !!python/tuple
-    - '"'
+    - '" "'
     - ''
   - !!python/tuple
     - allow-top-navigation
     - https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-top-navigation
   - !!python/tuple
-    - '"'
-    - ''
-  - !!python/tuple
-    - '"'
+    - '" "'
     - ''
   - !!python/tuple
     - allow-top-navigation-by-user-activation
     - https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-top-navigation-by-user-activation
   - !!python/tuple
-    - '"'
-    - ''
-  - !!python/tuple
-    - '"'
+    - '" "'
     - ''
   - !!python/tuple
     - allow-top-navigation-to-custom-protocols

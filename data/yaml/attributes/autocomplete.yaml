@@ -5,19 +5,7 @@ form:
   value_enum: []
   value_info:
   - !!python/tuple
-    - '"'
-    - ''
-  - !!python/tuple
-    - 'on'
-    - ''
-  - !!python/tuple
-    - '"; "'
-    - ''
-  - !!python/tuple
-    - 'off'
-    - ''
-  - !!python/tuple
-    - '"'
+    - '" on "; " off "'
     - ''
   is_more_value_info_required: false
   description:

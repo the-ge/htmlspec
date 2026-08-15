@@ -14,22 +14,7 @@ input:
     - valid MIME type strings with no parameters
     - https://mimesniff.spec.whatwg.org/#valid-mime-type-with-no-parameters
   - !!python/tuple
-    - or
-    - ''
-  - !!python/tuple
-    - audio/*
-    - ''
-  - !!python/tuple
-    - ','
-    - ''
-  - !!python/tuple
-    - video/*
-    - ''
-  - !!python/tuple
-    - ', or'
-    - ''
-  - !!python/tuple
-    - image/*
+    - or audio/* , video/* , or image/*
     - ''
   is_more_value_info_required: true
   description:

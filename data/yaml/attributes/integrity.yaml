@@ -10,13 +10,7 @@ link:
   is_more_value_info_required: false
   description:
   - !!python/tuple
-    - Integrity metadata used in
-    - ''
-  - !!python/tuple
-    - Subresource Integrity
-    - ''
-  - !!python/tuple
-    - checks
+    - Integrity metadata used in Subresource Integrity checks
     - ''
   - !!python/tuple
     - '[SRI]'
@@ -33,13 +27,7 @@ script:
   is_more_value_info_required: false
   description:
   - !!python/tuple
-    - Integrity metadata used in
-    - ''
-  - !!python/tuple
-    - Subresource Integrity
-    - ''
-  - !!python/tuple
-    - checks
+    - Integrity metadata used in Subresource Integrity checks
     - ''
   - !!python/tuple
     - '[SRI]'
