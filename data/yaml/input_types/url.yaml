@@ -1,3 +1,6 @@
+url: https://html.spec.whatwg.org/dev/input.html#attr-input-type-url-keyword
+state:
+  name: URL
+  url: https://html.spec.whatwg.org/dev/input.html#url-state-(type=url)
 value_type: An absolute URL
 control_type: A text control
-url: https://html.spec.whatwg.org/dev/input.html#url-state-(type=url)

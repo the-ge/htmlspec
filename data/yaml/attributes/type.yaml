@@ -130,70 +130,70 @@ input:
   value_info:
   - !!python/tuple
     - hidden
-    - https://html.spec.whatwg.org/dev/input.html#hidden-state-(type=hidden)
+    - https://html.spec.whatwg.org/dev/input.html#attr-input-type-hidden-keyword
   - !!python/tuple
     - text
-    - https://html.spec.whatwg.org/dev/input.html#text-(type=text)-state-and-search-state-(type=search)
+    - https://html.spec.whatwg.org/dev/input.html#attr-input-type-text-keyword
   - !!python/tuple
     - search
-    - https://html.spec.whatwg.org/dev/input.html#text-(type=text)-state-and-search-state-(type=search)
+    - https://html.spec.whatwg.org/dev/input.html#attr-input-type-search-keyword
   - !!python/tuple
     - tel
-    - https://html.spec.whatwg.org/dev/input.html#telephone-state-(type=tel)
+    - https://html.spec.whatwg.org/dev/input.html#attr-input-type-tel-keyword
   - !!python/tuple
     - url
-    - https://html.spec.whatwg.org/dev/input.html#url-state-(type=url)
+    - https://html.spec.whatwg.org/dev/input.html#attr-input-type-url-keyword
   - !!python/tuple
     - email
-    - https://html.spec.whatwg.org/dev/input.html#email-state-(type=email)
+    - https://html.spec.whatwg.org/dev/input.html#attr-input-type-email-keyword
   - !!python/tuple
     - password
-    - https://html.spec.whatwg.org/dev/input.html#password-state-(type=password)
+    - https://html.spec.whatwg.org/dev/input.html#attr-input-type-password-keyword
   - !!python/tuple
     - date
-    - https://html.spec.whatwg.org/dev/input.html#date-state-(type=date)
+    - https://html.spec.whatwg.org/dev/input.html#attr-input-type-date-keyword
   - !!python/tuple
     - month
-    - https://html.spec.whatwg.org/dev/input.html#month-state-(type=month)
+    - https://html.spec.whatwg.org/dev/input.html#attr-input-type-month-keyword
   - !!python/tuple
     - week
-    - https://html.spec.whatwg.org/dev/input.html#week-state-(type=week)
+    - https://html.spec.whatwg.org/dev/input.html#attr-input-type-week-keyword
   - !!python/tuple
     - time
-    - https://html.spec.whatwg.org/dev/input.html#time-state-(type=time)
+    - https://html.spec.whatwg.org/dev/input.html#attr-input-type-time-keyword
   - !!python/tuple
     - datetime-local
-    - https://html.spec.whatwg.org/dev/input.html#local-date-and-time-state-(type=datetime-local)
+    - https://html.spec.whatwg.org/dev/input.html#attr-input-type-datetime-local-keyword
   - !!python/tuple
     - number
-    - https://html.spec.whatwg.org/dev/input.html#number-state-(type=number)
+    - https://html.spec.whatwg.org/dev/input.html#attr-input-type-number-keyword
   - !!python/tuple
     - range
-    - https://html.spec.whatwg.org/dev/input.html#range-state-(type=range)
+    - https://html.spec.whatwg.org/dev/input.html#attr-input-type-range-keyword
   - !!python/tuple
     - color
-    - https://html.spec.whatwg.org/dev/input.html#color-state-(type=color)
+    - https://html.spec.whatwg.org/dev/input.html#attr-input-type-color-keyword
   - !!python/tuple
     - checkbox
-    - https://html.spec.whatwg.org/dev/input.html#checkbox-state-(type=checkbox)
+    - https://html.spec.whatwg.org/dev/input.html#attr-input-type-checkbox-keyword
   - !!python/tuple
     - radio
-    - https://html.spec.whatwg.org/dev/input.html#radio-button-state-(type=radio)
+    - https://html.spec.whatwg.org/dev/input.html#attr-input-type-radio-keyword
   - !!python/tuple
     - file
-    - https://html.spec.whatwg.org/dev/input.html#file-upload-state-(type=file)
+    - https://html.spec.whatwg.org/dev/input.html#attr-input-type-file-keyword
   - !!python/tuple
     - submit
-    - https://html.spec.whatwg.org/dev/input.html#submit-button-state-(type=submit)
+    - https://html.spec.whatwg.org/dev/input.html#attr-input-type-submit-keyword
   - !!python/tuple
     - image
-    - https://html.spec.whatwg.org/dev/input.html#image-button-state-(type=image)
+    - https://html.spec.whatwg.org/dev/input.html#attr-input-type-image-keyword
   - !!python/tuple
     - reset
-    - https://html.spec.whatwg.org/dev/input.html#reset-button-state-(type=reset)
+    - https://html.spec.whatwg.org/dev/input.html#attr-input-type-reset-keyword
   - !!python/tuple
     - button
-    - https://html.spec.whatwg.org/dev/input.html#button-state-(type=button)
+    - https://html.spec.whatwg.org/dev/input.html#attr-input-type-button-keyword
   is_more_value_info_required: false
   description:
   - !!python/tuple

@@ -1,3 +1,6 @@
+url: https://html.spec.whatwg.org/dev/input.html#attr-input-type-week-keyword
+state:
+  name: Week
+  url: https://html.spec.whatwg.org/dev/input.html#week-state-(type=week)
 value_type: A date consisting of a week-year number and a week number with no time zone
 control_type: A week control
-url: https://html.spec.whatwg.org/dev/input.html#week-state-(type=week)

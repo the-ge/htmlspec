@@ -1,3 +1,6 @@
+url: https://html.spec.whatwg.org/dev/input.html#attr-input-type-hidden-keyword
+state:
+  name: Hidden
+  url: https://html.spec.whatwg.org/dev/input.html#hidden-state-(type=hidden)
 value_type: An arbitrary string
 control_type: n/a
-url: https://html.spec.whatwg.org/dev/input.html#hidden-state-(type=hidden)

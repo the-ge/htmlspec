@@ -8341,91 +8341,91 @@
       "value_info": [
         [
           "hidden",
-          "https://html.spec.whatwg.org/dev/input.html#hidden-state-(type=hidden)"
+          "https://html.spec.whatwg.org/dev/input.html#attr-input-type-hidden-keyword"
         ],
         [
           "text",
-          "https://html.spec.whatwg.org/dev/input.html#text-(type=text)-state-and-search-state-(type=search)"
+          "https://html.spec.whatwg.org/dev/input.html#attr-input-type-text-keyword"
         ],
         [
           "search",
-          "https://html.spec.whatwg.org/dev/input.html#text-(type=text)-state-and-search-state-(type=search)"
+          "https://html.spec.whatwg.org/dev/input.html#attr-input-type-search-keyword"
         ],
         [
           "tel",
-          "https://html.spec.whatwg.org/dev/input.html#telephone-state-(type=tel)"
+          "https://html.spec.whatwg.org/dev/input.html#attr-input-type-tel-keyword"
         ],
         [
           "url",
-          "https://html.spec.whatwg.org/dev/input.html#url-state-(type=url)"
+          "https://html.spec.whatwg.org/dev/input.html#attr-input-type-url-keyword"
         ],
         [
           "email",
-          "https://html.spec.whatwg.org/dev/input.html#email-state-(type=email)"
+          "https://html.spec.whatwg.org/dev/input.html#attr-input-type-email-keyword"
         ],
         [
           "password",
-          "https://html.spec.whatwg.org/dev/input.html#password-state-(type=password)"
+          "https://html.spec.whatwg.org/dev/input.html#attr-input-type-password-keyword"
         ],
         [
           "date",
-          "https://html.spec.whatwg.org/dev/input.html#date-state-(type=date)"
+          "https://html.spec.whatwg.org/dev/input.html#attr-input-type-date-keyword"
         ],
         [
           "month",
-          "https://html.spec.whatwg.org/dev/input.html#month-state-(type=month)"
+          "https://html.spec.whatwg.org/dev/input.html#attr-input-type-month-keyword"
         ],
         [
           "week",
-          "https://html.spec.whatwg.org/dev/input.html#week-state-(type=week)"
+          "https://html.spec.whatwg.org/dev/input.html#attr-input-type-week-keyword"
         ],
         [
           "time",
-          "https://html.spec.whatwg.org/dev/input.html#time-state-(type=time)"
+          "https://html.spec.whatwg.org/dev/input.html#attr-input-type-time-keyword"
         ],
         [
           "datetime-local",
-          "https://html.spec.whatwg.org/dev/input.html#local-date-and-time-state-(type=datetime-local)"
+          "https://html.spec.whatwg.org/dev/input.html#attr-input-type-datetime-local-keyword"
         ],
         [
           "number",
-          "https://html.spec.whatwg.org/dev/input.html#number-state-(type=number)"
+          "https://html.spec.whatwg.org/dev/input.html#attr-input-type-number-keyword"
         ],
         [
           "range",
-          "https://html.spec.whatwg.org/dev/input.html#range-state-(type=range)"
+          "https://html.spec.whatwg.org/dev/input.html#attr-input-type-range-keyword"
         ],
         [
           "color",
-          "https://html.spec.whatwg.org/dev/input.html#color-state-(type=color)"
+          "https://html.spec.whatwg.org/dev/input.html#attr-input-type-color-keyword"
         ],
         [
           "checkbox",
-          "https://html.spec.whatwg.org/dev/input.html#checkbox-state-(type=checkbox)"
+          "https://html.spec.whatwg.org/dev/input.html#attr-input-type-checkbox-keyword"
         ],
         [
           "radio",
-          "https://html.spec.whatwg.org/dev/input.html#radio-button-state-(type=radio)"
+          "https://html.spec.whatwg.org/dev/input.html#attr-input-type-radio-keyword"
         ],
         [
           "file",
-          "https://html.spec.whatwg.org/dev/input.html#file-upload-state-(type=file)"
+          "https://html.spec.whatwg.org/dev/input.html#attr-input-type-file-keyword"
         ],
         [
           "submit",
-          "https://html.spec.whatwg.org/dev/input.html#submit-button-state-(type=submit)"
+          "https://html.spec.whatwg.org/dev/input.html#attr-input-type-submit-keyword"
         ],
         [
           "image",
-          "https://html.spec.whatwg.org/dev/input.html#image-button-state-(type=image)"
+          "https://html.spec.whatwg.org/dev/input.html#attr-input-type-image-keyword"
         ],
         [
           "reset",
-          "https://html.spec.whatwg.org/dev/input.html#reset-button-state-(type=reset)"
+          "https://html.spec.whatwg.org/dev/input.html#attr-input-type-reset-keyword"
         ],
         [
           "button",
-          "https://html.spec.whatwg.org/dev/input.html#button-state-(type=button)"
+          "https://html.spec.whatwg.org/dev/input.html#attr-input-type-button-keyword"
         ]
       ],
       "is_more_value_info_required": false,

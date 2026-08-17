@@ -1,3 +1,6 @@
+url: https://html.spec.whatwg.org/dev/input.html#attr-input-type-datetime-local-keyword
+state:
+  name: Local Date and Time
+  url: https://html.spec.whatwg.org/dev/input.html#local-date-and-time-state-(type=datetime-local)
 value_type: A date and time (year, month, day, hour, minute, second, fraction of a second) with no time zone
 control_type: A date and time control
-url: https://html.spec.whatwg.org/dev/input.html#local-date-and-time-state-(type=datetime-local)

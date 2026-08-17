@@ -1,3 +1,6 @@
+url: https://html.spec.whatwg.org/dev/input.html#attr-input-type-search-keyword
+state:
+  name: Search
+  url: https://html.spec.whatwg.org/dev/input.html#text-(type=text)-state-and-search-state-(type=search)
 value_type: Text with no line breaks
 control_type: Search control
-url: https://html.spec.whatwg.org/dev/input.html#text-(type=text)-state-and-search-state-(type=search)
