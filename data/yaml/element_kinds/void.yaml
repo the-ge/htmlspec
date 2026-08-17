@@ -1,0 +1,16 @@
+title: Void elements
+tags:
+  area: image-maps.html#the-area-element
+  base: semantics.html#the-base-element
+  br: text-level-semantics.html#the-br-element
+  col: tables.html#the-col-element
+  embed: iframe-embed-object.html#the-embed-element
+  hr: grouping-content.html#the-hr-element
+  img: embedded-content.html#the-img-element
+  input: input.html#the-input-element
+  link: semantics.html#the-link-element
+  meta: semantics.html#the-meta-element
+  source: embedded-content.html#the-source-element
+  track: media.html#the-track-element
+  wbr: text-level-semantics.html#the-wbr-element
+info: ''

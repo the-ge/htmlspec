@@ -1,48 +1,54 @@
 {
-  "escapable-raw-text-elements": {
-    "tags": [
-      "textarea",
-      "title"
-    ],
+  "escapable": {
+    "title": "Escapable raw text elements",
+    "tags": {
+      "textarea": "form-elements.html#the-textarea-element",
+      "title": "semantics.html#the-title-element"
+    },
     "info": ""
   },
-  "foreign-elements": {
-    "tags": [],
+  "foreign": {
+    "title": "Foreign elements",
+    "tags": {},
     "info": "Elements from the MathML namespace and the SVG namespace."
   },
-  "normal-elements": {
-    "tags": [],
+  "normal": {
+    "title": "Normal elements",
+    "tags": {},
     "info": "All other allowed HTML elements are normal elements."
   },
-  "raw-text-elements": {
-    "tags": [
-      "script",
-      "style"
-    ],
+  "raw": {
+    "title": "Raw text elements",
+    "tags": {
+      "script": "scripting.html#the-script-element",
+      "style": "semantics.html#the-style-element"
+    },
     "info": ""
   },
-  "the-template-element": {
-    "tags": [
-      "template"
-    ],
+  "template": {
+    "title": "The template element",
+    "tags": {
+      "template": "scripting.html#the-template-element"
+    },
     "info": ""
   },
-  "void-elements": {
-    "tags": [
-      "area",
-      "base",
-      "br",
-      "col",
-      "embed",
-      "hr",
-      "img",
-      "input",
-      "link",
-      "meta",
-      "source",
-      "track",
-      "wbr"
-    ],
+  "void": {
+    "title": "Void elements",
+    "tags": {
+      "area": "image-maps.html#the-area-element",
+      "base": "semantics.html#the-base-element",
+      "br": "text-level-semantics.html#the-br-element",
+      "col": "tables.html#the-col-element",
+      "embed": "iframe-embed-object.html#the-embed-element",
+      "hr": "grouping-content.html#the-hr-element",
+      "img": "embedded-content.html#the-img-element",
+      "input": "input.html#the-input-element",
+      "link": "semantics.html#the-link-element",
+      "meta": "semantics.html#the-meta-element",
+      "source": "embedded-content.html#the-source-element",
+      "track": "media.html#the-track-element",
+      "wbr": "text-level-semantics.html#the-wbr-element"
+    },
     "info": ""
   }
 }
