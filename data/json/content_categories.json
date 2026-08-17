@@ -1,5 +1,6 @@
 {
-  "Autocapitalize-and-autocorrect inheriting elements": {
+  "auto-inheriting": {
+    "title": "Autocapitalize-and-autocorrect inheriting elements",
     "url": "https://html.spec.whatwg.org/multipage/forms.html#category-autocapitalize",
     "elements": [
       [
@@ -29,7 +30,8 @@
     ],
     "elements_if": null
   },
-  "Embedded content": {
+  "embedded": {
+    "title": "Embedded content",
     "url": "https://html.spec.whatwg.org/multipage/dom.html#embedded-content-category",
     "elements": [
       [
@@ -75,7 +77,8 @@
     ],
     "elements_if": null
   },
-  "Flow content": {
+  "flow": {
+    "title": "Flow content",
     "url": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
     "elements": [
       [
@@ -470,7 +473,8 @@
       ]
     ]
   },
-  "Form-associated elements": {
+  "form-associated": {
+    "title": "Form-associated elements",
     "url": "https://html.spec.whatwg.org/multipage/forms.html#form-associated-element",
     "elements": [
       [
@@ -516,7 +520,8 @@
     ],
     "elements_if": null
   },
-  "Heading content": {
+  "heading": {
+    "title": "Heading content",
     "url": "https://html.spec.whatwg.org/multipage/dom.html#heading-content-2",
     "elements": [
       [
@@ -550,7 +555,8 @@
     ],
     "elements_if": null
   },
-  "Interactive content": {
+  "interactive": {
+    "title": "Interactive content",
     "url": "https://html.spec.whatwg.org/multipage/dom.html#interactive-content-2",
     "elements": [
       [
@@ -663,7 +669,8 @@
       ]
     ]
   },
-  "Labelable elements": {
+  "labelable": {
+    "title": "Labelable elements",
     "url": "https://html.spec.whatwg.org/multipage/forms.html#category-label",
     "elements": [
       [
@@ -701,7 +708,8 @@
     ],
     "elements_if": null
   },
-  "Listed elements": {
+  "listed": {
+    "title": "Listed elements",
     "url": "https://html.spec.whatwg.org/multipage/forms.html#category-listed",
     "elements": [
       [
@@ -739,7 +747,8 @@
     ],
     "elements_if": null
   },
-  "Metadata content": {
+  "metadata": {
+    "title": "Metadata content",
     "url": "https://html.spec.whatwg.org/multipage/dom.html#metadata-content-2",
     "elements": [
       [
@@ -777,7 +786,8 @@
     ],
     "elements_if": null
   },
-  "Palpable content": {
+  "palpable": {
+    "title": "Palpable content",
     "url": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2",
     "elements": [
       [
@@ -1162,7 +1172,8 @@
       ]
     ]
   },
-  "Phrasing content": {
+  "phrasing": {
+    "title": "Phrasing content",
     "url": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
     "elements": [
       [
@@ -1431,7 +1442,8 @@
       ]
     ]
   },
-  "Resettable elements": {
+  "resettable": {
+    "title": "Resettable elements",
     "url": "https://html.spec.whatwg.org/multipage/forms.html#category-reset",
     "elements": [
       [
@@ -1457,7 +1469,8 @@
     ],
     "elements_if": null
   },
-  "Script-supporting elements": {
+  "script-supporting": {
+    "title": "Script-supporting elements",
     "url": "https://html.spec.whatwg.org/multipage/dom.html#script-supporting-elements-2",
     "elements": [
       [
@@ -1471,7 +1484,8 @@
     ],
     "elements_if": null
   },
-  "Sectioning content": {
+  "sectioning": {
+    "title": "Sectioning content",
     "url": "https://html.spec.whatwg.org/multipage/dom.html#sectioning-content-2",
     "elements": [
       [
@@ -1493,7 +1507,8 @@
     ],
     "elements_if": null
   },
-  "Submittable elements": {
+  "submittable": {
+    "title": "Submittable elements",
     "url": "https://html.spec.whatwg.org/multipage/forms.html#category-submit",
     "elements": [
       [

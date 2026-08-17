@@ -1,4 +1,5 @@
-url: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+title: Flow content
+url: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
 elements:
 - !!python/tuple
   - a
@@ -6,6 +7,15 @@ elements:
 - !!python/tuple
   - abbr
   - https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-abbr-element
+- !!python/tuple
+  - address
+  - https://html.spec.whatwg.org/multipage/sections.html#the-address-element
+- !!python/tuple
+  - article
+  - https://html.spec.whatwg.org/multipage/sections.html#the-article-element
+- !!python/tuple
+  - aside
+  - https://html.spec.whatwg.org/multipage/sections.html#the-aside-element
 - !!python/tuple
   - audio
   - https://html.spec.whatwg.org/multipage/media.html#the-audio-element
@@ -18,6 +28,9 @@ elements:
 - !!python/tuple
   - bdo
   - https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-bdo-element
+- !!python/tuple
+  - blockquote
+  - https://html.spec.whatwg.org/multipage/grouping-content.html#the-blockquote-element
 - !!python/tuple
   - br
   - https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-br-element
@@ -43,14 +56,65 @@ elements:
   - del
   - https://html.spec.whatwg.org/multipage/edits.html#the-del-element
 - !!python/tuple
+  - details
+  - https://html.spec.whatwg.org/multipage/interactive-elements.html#the-details-element
+- !!python/tuple
   - dfn
   - https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-dfn-element
+- !!python/tuple
+  - dialog
+  - https://html.spec.whatwg.org/multipage/interactive-elements.html#the-dialog-element
+- !!python/tuple
+  - div
+  - https://html.spec.whatwg.org/multipage/grouping-content.html#the-div-element
+- !!python/tuple
+  - dl
+  - https://html.spec.whatwg.org/multipage/grouping-content.html#the-dl-element
 - !!python/tuple
   - em
   - https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-em-element
 - !!python/tuple
   - embed
   - https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-embed-element
+- !!python/tuple
+  - fieldset
+  - https://html.spec.whatwg.org/multipage/form-elements.html#the-fieldset-element
+- !!python/tuple
+  - figure
+  - https://html.spec.whatwg.org/multipage/grouping-content.html#the-figure-element
+- !!python/tuple
+  - footer
+  - https://html.spec.whatwg.org/multipage/sections.html#the-footer-element
+- !!python/tuple
+  - form
+  - https://html.spec.whatwg.org/multipage/forms.html#the-form-element
+- !!python/tuple
+  - h1
+  - https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements
+- !!python/tuple
+  - h2
+  - https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements
+- !!python/tuple
+  - h3
+  - https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements
+- !!python/tuple
+  - h4
+  - https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements
+- !!python/tuple
+  - h5
+  - https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements
+- !!python/tuple
+  - h6
+  - https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements
+- !!python/tuple
+  - header
+  - https://html.spec.whatwg.org/multipage/sections.html#the-header-element
+- !!python/tuple
+  - hgroup
+  - https://html.spec.whatwg.org/multipage/sections.html#the-hgroup-element
+- !!python/tuple
+  - hr
+  - https://html.spec.whatwg.org/multipage/grouping-content.html#the-hr-element
 - !!python/tuple
   - i
   - https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-i-element
@@ -82,8 +146,14 @@ elements:
   - math
   - https://w3c.github.io/mathml-core/#the-top-level-math-element
 - !!python/tuple
+  - menu
+  - https://html.spec.whatwg.org/multipage/grouping-content.html#the-menu-element
+- !!python/tuple
   - meter
   - https://html.spec.whatwg.org/multipage/form-elements.html#the-meter-element
+- !!python/tuple
+  - nav
+  - https://html.spec.whatwg.org/multipage/sections.html#the-nav-element
 - !!python/tuple
   - noscript
   - https://html.spec.whatwg.org/multipage/scripting.html#the-noscript-element
@@ -91,11 +161,20 @@ elements:
   - object
   - https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-object-element
 - !!python/tuple
+  - ol
+  - https://html.spec.whatwg.org/multipage/grouping-content.html#the-ol-element
+- !!python/tuple
   - output
   - https://html.spec.whatwg.org/multipage/form-elements.html#the-output-element
 - !!python/tuple
+  - p
+  - https://html.spec.whatwg.org/multipage/grouping-content.html#the-p-element
+- !!python/tuple
   - picture
   - https://html.spec.whatwg.org/multipage/embedded-content.html#the-picture-element
+- !!python/tuple
+  - pre
+  - https://html.spec.whatwg.org/multipage/grouping-content.html#the-pre-element
 - !!python/tuple
   - progress
   - https://html.spec.whatwg.org/multipage/form-elements.html#the-progress-element
@@ -115,11 +194,14 @@ elements:
   - script
   - https://html.spec.whatwg.org/multipage/scripting.html#the-script-element
 - !!python/tuple
+  - search
+  - https://html.spec.whatwg.org/multipage/grouping-content.html#the-search-element
+- !!python/tuple
+  - section
+  - https://html.spec.whatwg.org/multipage/sections.html#the-section-element
+- !!python/tuple
   - select
   - https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element
-- !!python/tuple
-  - selectedcontent
-  - https://html.spec.whatwg.org/multipage/form-elements.html#the-selectedcontent-element
 - !!python/tuple
   - slot
   - https://html.spec.whatwg.org/multipage/scripting.html#the-slot-element
@@ -142,6 +224,9 @@ elements:
   - svg
   - https://w3c.github.io/svgwg/svg2-draft/struct.html#elementdef-svg
 - !!python/tuple
+  - table
+  - https://html.spec.whatwg.org/multipage/tables.html#the-table-element
+- !!python/tuple
   - template
   - https://html.spec.whatwg.org/multipage/scripting.html#the-template-element
 - !!python/tuple
@@ -153,6 +238,9 @@ elements:
 - !!python/tuple
   - u
   - https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-u-element
+- !!python/tuple
+  - ul
+  - https://html.spec.whatwg.org/multipage/grouping-content.html#the-ul-element
 - !!python/tuple
   - var
   - https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-var-element
@@ -184,6 +272,12 @@ elements_if:
   - - !!python/tuple
       - allowed in the body
       - https://html.spec.whatwg.org/multipage/semantics.html#allowed-in-the-body
+- !!python/tuple
+  - main
+  - https://html.spec.whatwg.org/multipage/grouping-content.html#the-main-element
+  - - !!python/tuple
+      - hierarchically correct main element
+      - https://html.spec.whatwg.org/multipage/grouping-content.html#hierarchically-correct-main-element
 - !!python/tuple
   - meta
   - https://html.spec.whatwg.org/multipage/semantics.html#the-meta-element

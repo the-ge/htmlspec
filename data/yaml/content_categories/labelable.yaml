@@ -1,4 +1,5 @@
-url: https://html.spec.whatwg.org/multipage/forms.html#category-submit
+title: Labelable elements
+url: https://html.spec.whatwg.org/multipage/forms.html#category-label
 elements:
 - !!python/tuple
   - button
@@ -6,6 +7,15 @@ elements:
 - !!python/tuple
   - input
   - https://html.spec.whatwg.org/multipage/input.html#the-input-element
+- !!python/tuple
+  - meter
+  - https://html.spec.whatwg.org/multipage/form-elements.html#the-meter-element
+- !!python/tuple
+  - output
+  - https://html.spec.whatwg.org/multipage/form-elements.html#the-output-element
+- !!python/tuple
+  - progress
+  - https://html.spec.whatwg.org/multipage/form-elements.html#the-progress-element
 - !!python/tuple
   - select
   - https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element

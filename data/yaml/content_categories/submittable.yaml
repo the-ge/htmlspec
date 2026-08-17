@@ -1,20 +1,12 @@
-url: https://html.spec.whatwg.org/multipage/forms.html#category-listed
+title: Submittable elements
+url: https://html.spec.whatwg.org/multipage/forms.html#category-submit
 elements:
 - !!python/tuple
   - button
   - https://html.spec.whatwg.org/multipage/form-elements.html#the-button-element
 - !!python/tuple
-  - fieldset
-  - https://html.spec.whatwg.org/multipage/form-elements.html#the-fieldset-element
-- !!python/tuple
   - input
   - https://html.spec.whatwg.org/multipage/input.html#the-input-element
-- !!python/tuple
-  - object
-  - https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-object-element
-- !!python/tuple
-  - output
-  - https://html.spec.whatwg.org/multipage/form-elements.html#the-output-element
 - !!python/tuple
   - select
   - https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element

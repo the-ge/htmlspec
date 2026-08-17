@@ -1,4 +1,5 @@
-url: https://html.spec.whatwg.org/multipage/forms.html#form-associated-element
+title: Listed elements
+url: https://html.spec.whatwg.org/multipage/forms.html#category-listed
 elements:
 - !!python/tuple
   - button
@@ -9,9 +10,6 @@ elements:
 - !!python/tuple
   - input
   - https://html.spec.whatwg.org/multipage/input.html#the-input-element
-- !!python/tuple
-  - label
-  - https://html.spec.whatwg.org/multipage/forms.html#the-label-element
 - !!python/tuple
   - object
   - https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-object-element
@@ -24,9 +22,6 @@ elements:
 - !!python/tuple
   - textarea
   - https://html.spec.whatwg.org/multipage/form-elements.html#the-textarea-element
-- !!python/tuple
-  - img
-  - https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element
 - !!python/tuple
   - _custom-form-associated
   - https://html.spec.whatwg.org/multipage/custom-elements.html#form-associated-custom-element
