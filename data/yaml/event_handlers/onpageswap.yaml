@@ -1,6 +1,15 @@
-applies_to: body
-urls:
-- https://html.spec.whatwg.org/multipage/#event-pageswap
-- https://html.spec.whatwg.org/multipage/nav-history-apis.html#window
-- https://html.spec.whatwg.org/multipage/webappapis.html#event-handler-content-attributes
-- https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onpageswap
+scope:
+  body: webappapis.html#handler-window-onpageswap
+description:
+- !!python/tuple
+  - pageswap
+  - https://html.spec.whatwg.org/multipage/#event-pageswap
+- !!python/tuple
+  - event handler for
+  - ''
+- !!python/tuple
+  - Window
+  - https://html.spec.whatwg.org/multipage/nav-history-apis.html#window
+- !!python/tuple
+  - object
+  - ''

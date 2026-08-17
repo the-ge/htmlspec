@@ -1,6 +1,15 @@
-applies_to: body
-urls:
-- https://html.spec.whatwg.org/multipage/#event-afterprint
-- https://html.spec.whatwg.org/multipage/nav-history-apis.html#window
-- https://html.spec.whatwg.org/multipage/webappapis.html#event-handler-content-attributes
-- https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onafterprint
+scope:
+  body: webappapis.html#handler-window-onafterprint
+description:
+- !!python/tuple
+  - afterprint
+  - https://html.spec.whatwg.org/multipage/#event-afterprint
+- !!python/tuple
+  - event handler for
+  - ''
+- !!python/tuple
+  - Window
+  - https://html.spec.whatwg.org/multipage/nav-history-apis.html#window
+- !!python/tuple
+  - object
+  - ''

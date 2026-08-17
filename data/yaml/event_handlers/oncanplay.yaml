@@ -1,5 +1,9 @@
-applies_to: HTML elements
-urls:
-- https://html.spec.whatwg.org/multipage/media.html#event-media-canplay
-- https://html.spec.whatwg.org/multipage/webappapis.html#event-handler-content-attributes
-- https://html.spec.whatwg.org/multipage/webappapis.html#handler-oncanplay
+scope:
+  HTML elements: webappapis.html#handler-oncanplay
+description:
+- !!python/tuple
+  - canplay
+  - https://html.spec.whatwg.org/multipage/media.html#event-media-canplay
+- !!python/tuple
+  - event handler
+  - ''

@@ -1,5 +1,9 @@
-applies_to: HTML elements
-urls:
-- https://html.spec.whatwg.org/multipage/webappapis.html#event-handler-content-attributes
-- https://html.spec.whatwg.org/multipage/webappapis.html#handler-ondblclick
-- https://w3c.github.io/pointerevents/#dblclick
+scope:
+  HTML elements: webappapis.html#handler-ondblclick
+description:
+- !!python/tuple
+  - dblclick
+  - https://w3c.github.io/pointerevents/#dblclick
+- !!python/tuple
+  - event handler
+  - ''

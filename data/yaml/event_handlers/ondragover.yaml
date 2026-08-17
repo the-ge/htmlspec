@@ -1,5 +1,9 @@
-applies_to: HTML elements
-urls:
-- https://html.spec.whatwg.org/multipage/dnd.html#event-dnd-dragover
-- https://html.spec.whatwg.org/multipage/webappapis.html#event-handler-content-attributes
-- https://html.spec.whatwg.org/multipage/webappapis.html#handler-ondragover
+scope:
+  HTML elements: webappapis.html#handler-ondragover
+description:
+- !!python/tuple
+  - dragover
+  - https://html.spec.whatwg.org/multipage/dnd.html#event-dnd-dragover
+- !!python/tuple
+  - event handler
+  - ''

@@ -1,5 +1,9 @@
-applies_to: HTML elements
-urls:
-- https://html.spec.whatwg.org/multipage/#event-toggle
-- https://html.spec.whatwg.org/multipage/webappapis.html#event-handler-content-attributes
-- https://html.spec.whatwg.org/multipage/webappapis.html#handler-ontoggle
+scope:
+  HTML elements: webappapis.html#handler-ontoggle
+description:
+- !!python/tuple
+  - toggle
+  - https://html.spec.whatwg.org/multipage/#event-toggle
+- !!python/tuple
+  - event handler
+  - ''

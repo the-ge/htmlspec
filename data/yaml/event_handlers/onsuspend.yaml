@@ -1,5 +1,9 @@
-applies_to: HTML elements
-urls:
-- https://html.spec.whatwg.org/multipage/media.html#event-media-suspend
-- https://html.spec.whatwg.org/multipage/webappapis.html#event-handler-content-attributes
-- https://html.spec.whatwg.org/multipage/webappapis.html#handler-onsuspend
+scope:
+  HTML elements: webappapis.html#handler-onsuspend
+description:
+- !!python/tuple
+  - suspend
+  - https://html.spec.whatwg.org/multipage/media.html#event-media-suspend
+- !!python/tuple
+  - event handler
+  - ''

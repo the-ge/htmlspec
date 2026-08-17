@@ -1,5 +1,9 @@
-applies_to: HTML elements
-urls:
-- https://html.spec.whatwg.org/multipage/dnd.html#event-dnd-dragstart
-- https://html.spec.whatwg.org/multipage/webappapis.html#event-handler-content-attributes
-- https://html.spec.whatwg.org/multipage/webappapis.html#handler-ondragstart
+scope:
+  HTML elements: webappapis.html#handler-ondragstart
+description:
+- !!python/tuple
+  - dragstart
+  - https://html.spec.whatwg.org/multipage/dnd.html#event-dnd-dragstart
+- !!python/tuple
+  - event handler
+  - ''

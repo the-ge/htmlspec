@@ -1,5 +1,9 @@
-applies_to: HTML elements
-urls:
-- https://html.spec.whatwg.org/multipage/webappapis.html#event-handler-content-attributes
-- https://html.spec.whatwg.org/multipage/webappapis.html#handler-oncopy
-- https://w3c.github.io/clipboard-apis/#clipboard-event-copy
+scope:
+  HTML elements: webappapis.html#handler-oncopy
+description:
+- !!python/tuple
+  - copy
+  - https://w3c.github.io/clipboard-apis/#clipboard-event-copy
+- !!python/tuple
+  - event handler
+  - ''

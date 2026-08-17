@@ -1,5 +1,9 @@
-applies_to: HTML elements
-urls:
-- https://html.spec.whatwg.org/multipage/media.html#event-media-seeked
-- https://html.spec.whatwg.org/multipage/webappapis.html#event-handler-content-attributes
-- https://html.spec.whatwg.org/multipage/webappapis.html#handler-onseeked
+scope:
+  HTML elements: webappapis.html#handler-onseeked
+description:
+- !!python/tuple
+  - seeked
+  - https://html.spec.whatwg.org/multipage/media.html#event-media-seeked
+- !!python/tuple
+  - event handler
+  - ''

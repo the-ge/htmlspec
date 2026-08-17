@@ -1,5 +1,9 @@
-applies_to: HTML elements
-urls:
-- https://html.spec.whatwg.org/multipage/webappapis.html#event-handler-content-attributes
-- https://html.spec.whatwg.org/multipage/webappapis.html#handler-onwheel
-- https://w3c.github.io/pointerevents/#wheel
+scope:
+  HTML elements: webappapis.html#handler-onwheel
+description:
+- !!python/tuple
+  - wheel
+  - https://w3c.github.io/pointerevents/#wheel
+- !!python/tuple
+  - event handler
+  - ''

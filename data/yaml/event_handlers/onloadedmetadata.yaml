@@ -1,5 +1,9 @@
-applies_to: HTML elements
-urls:
-- https://html.spec.whatwg.org/multipage/media.html#event-media-loadedmetadata
-- https://html.spec.whatwg.org/multipage/webappapis.html#event-handler-content-attributes
-- https://html.spec.whatwg.org/multipage/webappapis.html#handler-onloadedmetadata
+scope:
+  HTML elements: webappapis.html#handler-onloadedmetadata
+description:
+- !!python/tuple
+  - loadedmetadata
+  - https://html.spec.whatwg.org/multipage/media.html#event-media-loadedmetadata
+- !!python/tuple
+  - event handler
+  - ''

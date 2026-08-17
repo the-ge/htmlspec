@@ -1,5 +1,9 @@
-applies_to: HTML elements
-urls:
-- https://drafts.csswg.org/cssom-view/#eventdef-document-scroll
-- https://html.spec.whatwg.org/multipage/webappapis.html#event-handler-content-attributes
-- https://html.spec.whatwg.org/multipage/webappapis.html#handler-onscroll
+scope:
+  HTML elements: webappapis.html#handler-onscroll
+description:
+- !!python/tuple
+  - scroll
+  - https://drafts.csswg.org/cssom-view/#eventdef-document-scroll
+- !!python/tuple
+  - event handler
+  - ''

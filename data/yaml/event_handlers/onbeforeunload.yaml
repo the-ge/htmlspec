@@ -1,6 +1,15 @@
-applies_to: body
-urls:
-- https://html.spec.whatwg.org/multipage/#event-beforeunload
-- https://html.spec.whatwg.org/multipage/nav-history-apis.html#window
-- https://html.spec.whatwg.org/multipage/webappapis.html#event-handler-content-attributes
-- https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onbeforeunload
+scope:
+  body: webappapis.html#handler-window-onbeforeunload
+description:
+- !!python/tuple
+  - beforeunload
+  - https://html.spec.whatwg.org/multipage/#event-beforeunload
+- !!python/tuple
+  - event handler for
+  - ''
+- !!python/tuple
+  - Window
+  - https://html.spec.whatwg.org/multipage/nav-history-apis.html#window
+- !!python/tuple
+  - object
+  - ''

@@ -1,5 +1,9 @@
-applies_to: HTML elements
-urls:
-- https://html.spec.whatwg.org/multipage/webappapis.html#event-handler-content-attributes
-- https://html.spec.whatwg.org/multipage/webappapis.html#handler-onpaste
-- https://w3c.github.io/clipboard-apis/#clipboard-event-paste
+scope:
+  HTML elements: webappapis.html#handler-onpaste
+description:
+- !!python/tuple
+  - paste
+  - https://w3c.github.io/clipboard-apis/#clipboard-event-paste
+- !!python/tuple
+  - event handler
+  - ''

@@ -1,5 +1,9 @@
-applies_to: HTML elements
-urls:
-- https://html.spec.whatwg.org/multipage/media.html#event-media-pause
-- https://html.spec.whatwg.org/multipage/webappapis.html#event-handler-content-attributes
-- https://html.spec.whatwg.org/multipage/webappapis.html#handler-onpause
+scope:
+  HTML elements: webappapis.html#handler-onpause
+description:
+- !!python/tuple
+  - pause
+  - https://html.spec.whatwg.org/multipage/media.html#event-media-pause
+- !!python/tuple
+  - event handler
+  - ''
