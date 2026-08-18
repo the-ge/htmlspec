@@ -1,18 +1,24 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-object-element
+semantics_url: https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-object-element
 description: Image, child navigable, or plugin
 categories:
-- embedded
-- flow
-- form-associated
-- interactive
-- listed
-- palpable
-- phrasing
-attributes:
-- data
-- form
-- height
-- name
-- type
-- width
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+  embedded: https://html.spec.whatwg.org/multipage/dom.html#embedded-content-category
+  interactive: https://html.spec.whatwg.org/multipage/dom.html#interactive-content-2
+  listed: https://html.spec.whatwg.org/multipage/forms.html#category-listed
+  form-associated: https://html.spec.whatwg.org/multipage/forms.html#form-associated-element
+  palpable: https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2
+parents:
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
 children:
-- transparent
+  transparent: https://html.spec.whatwg.org/multipage/dom.html#transparent
+attributes:
+  data: https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-object-data
+  type: https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-object-type
+  name: https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-object-name
+  form: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form
+  width: https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width
+  height: https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height
+interface:
+  HTMLObjectElement: https://html.spec.whatwg.org/multipage/iframe-embed-object.html#htmlobjectelement

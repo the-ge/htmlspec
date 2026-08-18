@@ -1,8 +1,14 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-sub-and-sup-elements-2
+semantics_url: https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-sub-and-sup-elements
 description: Superscript
 categories:
-- flow
-- palpable
-- phrasing
-attributes: []
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+  palpable: https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2
+parents:
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
 children:
-- phrasing
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+attributes: {}
+interface:
+  HTMLElement: https://html.spec.whatwg.org/multipage/dom.html#htmlelement

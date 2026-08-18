@@ -1,19 +1,25 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-iframe-element
+semantics_url: https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-iframe-element
 description: Child navigable
 categories:
-- embedded
-- flow
-- interactive
-- palpable
-- phrasing
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+  embedded: https://html.spec.whatwg.org/multipage/dom.html#embedded-content-category
+  interactive: https://html.spec.whatwg.org/multipage/dom.html#interactive-content-2
+  palpable: https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2
+parents:
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+children: {}
 attributes:
-- allow
-- allowfullscreen
-- height
-- loading
-- name
-- referrerpolicy
-- sandbox
-- src
-- srcdoc
-- width
-children: []
+  src: https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-src
+  srcdoc: https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-srcdoc
+  name: https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-name
+  sandbox: https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-sandbox
+  allow: https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-allow
+  allowfullscreen: https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-allowfullscreen
+  width: https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width
+  height: https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height
+  referrerpolicy: https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-referrerpolicy
+  loading: https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-loading
+interface:
+  HTMLIFrameElement: https://html.spec.whatwg.org/multipage/iframe-embed-object.html#htmliframeelement

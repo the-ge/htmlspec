@@ -1,1695 +1,2613 @@
 {
   "a": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-a-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-a-element",
     "description": "Hyperlink",
-    "categories": [
-      "flow",
-      "interactive",
-      "palpable",
-      "phrasing"
-    ],
-    "attributes": [
-      "download",
-      "href",
-      "hreflang",
-      "ping",
-      "referrerpolicy",
-      "rel",
-      "target",
-      "type"
-    ],
-    "children": [
-      "transparent"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "interactive": "https://html.spec.whatwg.org/multipage/dom.html#interactive-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {
+      "transparent": "https://html.spec.whatwg.org/multipage/dom.html#transparent"
+    },
+    "attributes": {
+      "href": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-href",
+      "target": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-target",
+      "download": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-download",
+      "ping": "https://html.spec.whatwg.org/multipage/links.html#ping",
+      "rel": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-rel",
+      "hreflang": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-hreflang",
+      "type": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-type",
+      "referrerpolicy": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-referrerpolicy"
+    },
+    "interface": {
+      "HTMLAnchorElement": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#htmlanchorelement"
+    }
   },
   "abbr": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-abbr-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-abbr-element",
     "description": "Abbreviation",
-    "categories": [
-      "flow",
-      "palpable",
-      "phrasing"
-    ],
-    "attributes": [],
-    "children": [
-      "phrasing"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLElement": "https://html.spec.whatwg.org/multipage/dom.html#htmlelement"
+    }
   },
   "address": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-address-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/sections.html#the-address-element",
     "description": "Contact information for a page or article element",
-    "categories": [
-      "flow",
-      "palpable"
-    ],
-    "attributes": [],
-    "children": [
-      "flow"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "children": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLElement": "https://html.spec.whatwg.org/multipage/dom.html#htmlelement"
+    }
   },
   "area": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-area-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/image-maps.html#the-area-element",
     "description": "Hyperlink or dead area on an image map",
-    "categories": [
-      "flow",
-      "phrasing"
-    ],
-    "attributes": [
-      "alt",
-      "coords",
-      "download",
-      "href",
-      "ping",
-      "referrerpolicy",
-      "rel",
-      "shape",
-      "target"
-    ],
-    "children": []
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {},
+    "attributes": {
+      "alt": "https://html.spec.whatwg.org/multipage/image-maps.html#attr-area-alt",
+      "coords": "https://html.spec.whatwg.org/multipage/image-maps.html#attr-area-coords",
+      "shape": "https://html.spec.whatwg.org/multipage/image-maps.html#attr-area-shape",
+      "href": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-href",
+      "target": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-target",
+      "download": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-download",
+      "ping": "https://html.spec.whatwg.org/multipage/links.html#ping",
+      "rel": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-rel",
+      "referrerpolicy": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-referrerpolicy"
+    },
+    "interface": {
+      "HTMLAreaElement": "https://html.spec.whatwg.org/multipage/image-maps.html#htmlareaelement"
+    }
   },
   "article": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-article-element-2",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/sections.html#the-article-element",
     "description": "Self-contained syndicatable or reusable composition",
-    "categories": [
-      "flow",
-      "palpable",
-      "sectioning"
-    ],
-    "attributes": [],
-    "children": [
-      "flow"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "sectioning": "https://html.spec.whatwg.org/multipage/dom.html#sectioning-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "children": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLElement": "https://html.spec.whatwg.org/multipage/dom.html#htmlelement"
+    }
   },
   "aside": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-aside-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/sections.html#the-aside-element",
     "description": "Sidebar for tangentially related content",
-    "categories": [
-      "flow",
-      "palpable",
-      "sectioning"
-    ],
-    "attributes": [],
-    "children": [
-      "flow"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "sectioning": "https://html.spec.whatwg.org/multipage/dom.html#sectioning-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "children": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLElement": "https://html.spec.whatwg.org/multipage/dom.html#htmlelement"
+    }
   },
   "audio": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-audio-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/media.html#the-audio-element",
     "description": "Audio player",
-    "categories": [
-      "embedded",
-      "flow",
-      "interactive",
-      "palpable",
-      "phrasing"
-    ],
-    "attributes": [
-      "autoplay",
-      "controls",
-      "crossorigin",
-      "loading",
-      "loop",
-      "muted",
-      "preload",
-      "src"
-    ],
-    "children": [
-      "source",
-      "track",
-      "transparent"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "embedded": "https://html.spec.whatwg.org/multipage/dom.html#embedded-content-category",
+      "interactive": "https://html.spec.whatwg.org/multipage/dom.html#interactive-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {
+      "source": "https://html.spec.whatwg.org/multipage/embedded-content.html#the-source-element",
+      "track": "https://html.spec.whatwg.org/multipage/media.html#the-track-element",
+      "transparent": "https://html.spec.whatwg.org/multipage/dom.html#transparent"
+    },
+    "attributes": {
+      "src": "https://html.spec.whatwg.org/multipage/media.html#attr-media-src",
+      "crossorigin": "https://html.spec.whatwg.org/multipage/media.html#attr-media-crossorigin",
+      "preload": "https://html.spec.whatwg.org/multipage/media.html#attr-media-preload",
+      "autoplay": "https://html.spec.whatwg.org/multipage/media.html#attr-media-autoplay",
+      "loading": "https://html.spec.whatwg.org/multipage/media.html#attr-media-loading",
+      "loop": "https://html.spec.whatwg.org/multipage/media.html#attr-media-loop",
+      "muted": "https://html.spec.whatwg.org/multipage/media.html#attr-media-muted",
+      "controls": "https://html.spec.whatwg.org/multipage/media.html#attr-media-controls"
+    },
+    "interface": {
+      "HTMLAudioElement": "https://html.spec.whatwg.org/multipage/media.html#htmlaudioelement"
+    }
   },
   "b": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-b-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-b-element",
     "description": "Keywords",
-    "categories": [
-      "flow",
-      "palpable",
-      "phrasing"
-    ],
-    "attributes": [],
-    "children": [
-      "phrasing"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLElement": "https://html.spec.whatwg.org/multipage/dom.html#htmlelement"
+    }
   },
   "base": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-base-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/semantics.html#the-base-element",
     "description": "Base URL and default target navigable for hyperlinks and forms",
-    "categories": [
-      "metadata"
-    ],
-    "attributes": [
-      "href",
-      "target"
-    ],
-    "children": []
+    "categories": {
+      "metadata": "https://html.spec.whatwg.org/multipage/dom.html#metadata-content-2"
+    },
+    "parents": {
+      "head": "https://html.spec.whatwg.org/multipage/semantics.html#the-head-element"
+    },
+    "children": {},
+    "attributes": {
+      "href": "https://html.spec.whatwg.org/multipage/semantics.html#attr-base-href",
+      "target": "https://html.spec.whatwg.org/multipage/semantics.html#attr-base-target"
+    },
+    "interface": {
+      "HTMLBaseElement": "https://html.spec.whatwg.org/multipage/semantics.html#htmlbaseelement"
+    }
   },
   "bdi": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-bdi-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-bdi-element",
     "description": "Text directionality isolation",
-    "categories": [
-      "flow",
-      "palpable",
-      "phrasing"
-    ],
-    "attributes": [],
-    "children": [
-      "phrasing"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLElement": "https://html.spec.whatwg.org/multipage/dom.html#htmlelement"
+    }
   },
   "bdo": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-bdo-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-bdo-element",
     "description": "Text directionality formatting",
-    "categories": [
-      "flow",
-      "palpable",
-      "phrasing"
-    ],
-    "attributes": [],
-    "children": [
-      "phrasing"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLElement": "https://html.spec.whatwg.org/multipage/dom.html#htmlelement"
+    }
   },
   "blockquote": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-blockquote-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-blockquote-element",
     "description": "A section quoted from another source",
-    "categories": [
-      "flow",
-      "palpable"
-    ],
-    "attributes": [
-      "cite"
-    ],
-    "children": [
-      "flow"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "children": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "attributes": {
+      "cite": "https://html.spec.whatwg.org/multipage/grouping-content.html#attr-blockquote-cite"
+    },
+    "interface": {
+      "HTMLQuoteElement": "https://html.spec.whatwg.org/multipage/grouping-content.html#htmlquoteelement"
+    }
   },
   "body": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-body-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/sections.html#the-body-element",
     "description": "Document body",
-    "categories": [
-      "none"
-    ],
-    "attributes": [
-      "onafterprint",
-      "onbeforeprint",
-      "onbeforeunload",
-      "onhashchange",
-      "onlanguagechange",
-      "onmessage",
-      "onmessageerror",
-      "onoffline",
-      "ononline",
-      "onpagehide",
-      "onpagereveal",
-      "onpageshow",
-      "onpageswap",
-      "onpopstate",
-      "onrejectionhandled",
-      "onstorage",
-      "onunhandledrejection",
-      "onunload"
-    ],
-    "children": [
-      "flow"
-    ]
+    "categories": {},
+    "parents": {
+      "html": "https://html.spec.whatwg.org/multipage/semantics.html#the-html-element"
+    },
+    "children": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "attributes": {
+      "onafterprint": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onafterprint",
+      "onbeforeprint": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onbeforeprint",
+      "onbeforeunload": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onbeforeunload",
+      "onhashchange": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onhashchange",
+      "onlanguagechange": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onlanguagechange",
+      "onmessage": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onmessage",
+      "onmessageerror": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onmessageerror",
+      "onoffline": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onoffline",
+      "ononline": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-ononline",
+      "onpageswap": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onpageswap",
+      "onpagehide": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onpagehide",
+      "onpagereveal": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onpagereveal",
+      "onpageshow": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onpageshow",
+      "onpopstate": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onpopstate",
+      "onrejectionhandled": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onrejectionhandled",
+      "onstorage": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onstorage",
+      "onunhandledrejection": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onunhandledrejection",
+      "onunload": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onunload"
+    },
+    "interface": {
+      "HTMLBodyElement": "https://html.spec.whatwg.org/multipage/sections.html#htmlbodyelement"
+    }
   },
   "br": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-br-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-br-element",
     "description": "Line break, e.g. in poem or postal address",
-    "categories": [
-      "flow",
-      "phrasing"
-    ],
-    "attributes": [],
-    "children": []
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {},
+    "attributes": {},
+    "interface": {
+      "HTMLBRElement": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#htmlbrelement"
+    }
   },
   "button": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-button-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/form-elements.html#the-button-element",
     "description": "Button control",
-    "categories": [
-      "flow",
-      "form-associated",
-      "interactive",
-      "labelable",
-      "listed",
-      "palpable",
-      "phrasing",
-      "submittable"
-    ],
-    "attributes": [
-      "command",
-      "commandfor",
-      "disabled",
-      "form",
-      "formaction",
-      "formenctype",
-      "formmethod",
-      "formnovalidate",
-      "formtarget",
-      "name",
-      "popovertarget",
-      "popovertargetaction",
-      "type",
-      "value"
-    ],
-    "children": [
-      "phrasing"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "interactive": "https://html.spec.whatwg.org/multipage/dom.html#interactive-content-2",
+      "listed": "https://html.spec.whatwg.org/multipage/forms.html#category-listed",
+      "labelable": "https://html.spec.whatwg.org/multipage/forms.html#category-label",
+      "submittable": "https://html.spec.whatwg.org/multipage/forms.html#category-submit",
+      "form-associated": "https://html.spec.whatwg.org/multipage/forms.html#form-associated-element",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "select": "https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element"
+    },
+    "children": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "attributes": {
+      "command": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command",
+      "commandfor": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-commandfor",
+      "disabled": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled",
+      "form": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form",
+      "formaction": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formaction",
+      "formenctype": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formenctype",
+      "formmethod": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formmethod",
+      "formnovalidate": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formnovalidate",
+      "formtarget": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formtarget",
+      "name": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name",
+      "popovertarget": "https://html.spec.whatwg.org/multipage/popover.html#attr-popovertarget",
+      "popovertargetaction": "https://html.spec.whatwg.org/multipage/popover.html#attr-popovertargetaction",
+      "type": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-type",
+      "value": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-value"
+    },
+    "interface": {
+      "HTMLButtonElement": "https://html.spec.whatwg.org/multipage/form-elements.html#htmlbuttonelement"
+    }
   },
   "canvas": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-canvas-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/canvas.html#the-canvas-element",
     "description": "Scriptable bitmap canvas",
-    "categories": [
-      "embedded",
-      "flow",
-      "palpable",
-      "phrasing"
-    ],
-    "attributes": [
-      "height",
-      "width"
-    ],
-    "children": [
-      "transparent"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "embedded": "https://html.spec.whatwg.org/multipage/dom.html#embedded-content-category",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {
+      "transparent": "https://html.spec.whatwg.org/multipage/dom.html#transparent"
+    },
+    "attributes": {
+      "width": "https://html.spec.whatwg.org/multipage/canvas.html#attr-canvas-width",
+      "height": "https://html.spec.whatwg.org/multipage/canvas.html#attr-canvas-height"
+    },
+    "interface": {
+      "HTMLCanvasElement": "https://html.spec.whatwg.org/multipage/canvas.html#htmlcanvaselement"
+    }
   },
   "caption": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-caption-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/tables.html#the-caption-element",
     "description": "Table caption",
-    "categories": [
-      "none"
-    ],
-    "attributes": [],
-    "children": [
-      "flow"
-    ]
+    "categories": {},
+    "parents": {
+      "table": "https://html.spec.whatwg.org/multipage/tables.html#the-table-element"
+    },
+    "children": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLTableCaptionElement": "https://html.spec.whatwg.org/multipage/tables.html#htmltablecaptionelement"
+    }
   },
   "cite": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-cite-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-cite-element",
     "description": "Title of a work",
-    "categories": [
-      "flow",
-      "palpable",
-      "phrasing"
-    ],
-    "attributes": [],
-    "children": [
-      "phrasing"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLElement": "https://html.spec.whatwg.org/multipage/dom.html#htmlelement"
+    }
   },
   "code": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-code-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-code-element",
     "description": "Computer code",
-    "categories": [
-      "flow",
-      "palpable",
-      "phrasing"
-    ],
-    "attributes": [],
-    "children": [
-      "phrasing"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLElement": "https://html.spec.whatwg.org/multipage/dom.html#htmlelement"
+    }
   },
   "col": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-col-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/tables.html#the-col-element",
     "description": "Table column",
-    "categories": [
-      "none"
-    ],
-    "attributes": [
-      "span"
-    ],
-    "children": []
+    "categories": {},
+    "parents": {
+      "colgroup": "https://html.spec.whatwg.org/multipage/tables.html#the-colgroup-element"
+    },
+    "children": {},
+    "attributes": {
+      "span": "https://html.spec.whatwg.org/multipage/tables.html#attr-col-span"
+    },
+    "interface": {
+      "HTMLTableColElement": "https://html.spec.whatwg.org/multipage/tables.html#htmltablecolelement"
+    }
   },
   "colgroup": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-colgroup-element-2",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/tables.html#the-colgroup-element",
     "description": "Group of columns in a table",
-    "categories": [
-      "none"
-    ],
-    "attributes": [
-      "span"
-    ],
-    "children": [
-      "col",
-      "template"
-    ]
+    "categories": {},
+    "parents": {
+      "table": "https://html.spec.whatwg.org/multipage/tables.html#the-table-element"
+    },
+    "children": {
+      "col": "https://html.spec.whatwg.org/multipage/tables.html#the-col-element",
+      "template": "https://html.spec.whatwg.org/multipage/scripting.html#the-template-element"
+    },
+    "attributes": {
+      "span": "https://html.spec.whatwg.org/multipage/tables.html#attr-colgroup-span"
+    },
+    "interface": {
+      "HTMLTableColElement": "https://html.spec.whatwg.org/multipage/tables.html#htmltablecolelement"
+    }
   },
   "data": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-data-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-data-element",
     "description": "Machine-readable equivalent",
-    "categories": [
-      "flow",
-      "palpable",
-      "phrasing"
-    ],
-    "attributes": [
-      "value"
-    ],
-    "children": [
-      "phrasing"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "attributes": {
+      "value": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#attr-data-value"
+    },
+    "interface": {
+      "HTMLDataElement": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#htmldataelement"
+    }
   },
   "datalist": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-datalist-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/form-elements.html#the-datalist-element",
     "description": "Container for options for combo box control",
-    "categories": [
-      "flow",
-      "phrasing"
-    ],
-    "attributes": [],
-    "children": [
-      "option",
-      "phrasing",
-      "script-supporting elements"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "option": "https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element",
+      "script-supporting elements": "https://html.spec.whatwg.org/multipage/dom.html#script-supporting-elements-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLDataListElement": "https://html.spec.whatwg.org/multipage/form-elements.html#htmldatalistelement"
+    }
   },
   "dd": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-dd-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-dd-element",
     "description": "Content for corresponding dt element(s)",
-    "categories": [
-      "none"
-    ],
-    "attributes": [],
-    "children": [
-      "flow"
-    ]
+    "categories": {},
+    "parents": {
+      "dl": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-dl-element",
+      "div": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-div-element"
+    },
+    "children": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLElement": "https://html.spec.whatwg.org/multipage/dom.html#htmlelement"
+    }
   },
   "del": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-del-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/edits.html#the-del-element",
     "description": "A removal from the document",
-    "categories": [
-      "flow",
-      "palpable",
-      "phrasing"
-    ],
-    "attributes": [
-      "cite",
-      "datetime"
-    ],
-    "children": [
-      "transparent"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {
+      "transparent": "https://html.spec.whatwg.org/multipage/dom.html#transparent"
+    },
+    "attributes": {
+      "cite": "https://html.spec.whatwg.org/multipage/edits.html#attr-mod-cite",
+      "datetime": "https://html.spec.whatwg.org/multipage/edits.html#attr-mod-datetime"
+    },
+    "interface": {
+      "HTMLModElement": "https://html.spec.whatwg.org/multipage/edits.html#htmlmodelement"
+    }
   },
   "details": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-details-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/interactive-elements.html#the-details-element",
     "description": "Disclosure control for hiding details",
-    "categories": [
-      "flow",
-      "interactive",
-      "palpable"
-    ],
-    "attributes": [
-      "name",
-      "open"
-    ],
-    "children": [
-      "flow",
-      "summary"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "interactive": "https://html.spec.whatwg.org/multipage/dom.html#interactive-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "children": {
+      "summary": "https://html.spec.whatwg.org/multipage/interactive-elements.html#the-summary-element",
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "attributes": {
+      "name": "https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-details-name",
+      "open": "https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-details-open"
+    },
+    "interface": {
+      "HTMLDetailsElement": "https://html.spec.whatwg.org/multipage/interactive-elements.html#htmldetailselement"
+    }
   },
   "dfn": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-dfn-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-dfn-element",
     "description": "Defining instance",
-    "categories": [
-      "flow",
-      "palpable",
-      "phrasing"
-    ],
-    "attributes": [],
-    "children": [
-      "phrasing"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLElement": "https://html.spec.whatwg.org/multipage/dom.html#htmlelement"
+    }
   },
   "dialog": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-dialog-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/interactive-elements.html#the-dialog-element",
     "description": "Dialog box or window",
-    "categories": [
-      "flow"
-    ],
-    "attributes": [
-      "open"
-    ],
-    "children": [
-      "flow"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "parents": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "children": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "attributes": {
+      "open": "https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-dialog-open"
+    },
+    "interface": {
+      "HTMLDialogElement": "https://html.spec.whatwg.org/multipage/interactive-elements.html#htmldialogelement"
+    }
   },
   "div": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-div-element-2",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-div-element",
     "description": "Generic flow container, or container for name-value groups in dl elements",
-    "categories": [
-      "flow",
-      "palpable"
-    ],
-    "attributes": [],
-    "children": [
-      "flow"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "dl": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-dl-element",
+      "option": "https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element",
+      "optgroup": "https://html.spec.whatwg.org/multipage/form-elements.html#the-optgroup-element",
+      "select": "https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element"
+    },
+    "children": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLDivElement": "https://html.spec.whatwg.org/multipage/grouping-content.html#htmldivelement"
+    }
   },
   "dl": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-dl-element-4",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-dl-element",
     "description": "Association list consisting of zero or more name-value groups",
-    "categories": [
-      "flow",
-      "palpable"
-    ],
-    "attributes": [],
-    "children": [
-      "dd",
-      "div",
-      "dt",
-      "script-supporting elements"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "children": {
+      "dt": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-dt-element",
+      "dd": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-dd-element",
+      "div": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-div-element",
+      "script-supporting elements": "https://html.spec.whatwg.org/multipage/dom.html#script-supporting-elements-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLDListElement": "https://html.spec.whatwg.org/multipage/grouping-content.html#htmldlistelement"
+    }
   },
   "dt": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-dt-element-3",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-dt-element",
     "description": "Legend for corresponding dd element(s)",
-    "categories": [
-      "none"
-    ],
-    "attributes": [],
-    "children": [
-      "flow"
-    ]
+    "categories": {},
+    "parents": {
+      "dl": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-dl-element",
+      "div": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-div-element"
+    },
+    "children": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLElement": "https://html.spec.whatwg.org/multipage/dom.html#htmlelement"
+    }
   },
   "em": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-em-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-em-element",
     "description": "Stress emphasis",
-    "categories": [
-      "flow",
-      "palpable",
-      "phrasing"
-    ],
-    "attributes": [],
-    "children": [
-      "phrasing"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLElement": "https://html.spec.whatwg.org/multipage/dom.html#htmlelement"
+    }
   },
   "embed": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-embed-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-embed-element",
     "description": "Plugin",
-    "categories": [
-      "embedded",
-      "flow",
-      "interactive",
-      "palpable",
-      "phrasing"
-    ],
-    "attributes": [
-      "any",
-      "height",
-      "src",
-      "type",
-      "width"
-    ],
-    "children": []
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "embedded": "https://html.spec.whatwg.org/multipage/dom.html#embedded-content-category",
+      "interactive": "https://html.spec.whatwg.org/multipage/dom.html#interactive-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {},
+    "attributes": {
+      "src": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-embed-src",
+      "type": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-embed-type",
+      "width": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width",
+      "height": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height",
+      "any": ""
+    },
+    "interface": {
+      "HTMLEmbedElement": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#htmlembedelement"
+    }
   },
   "fieldset": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-fieldset-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/form-elements.html#the-fieldset-element",
     "description": "Group of form controls",
-    "categories": [
-      "flow",
-      "form-associated",
-      "listed",
-      "palpable"
-    ],
-    "attributes": [
-      "disabled",
-      "form",
-      "name"
-    ],
-    "children": [
-      "flow",
-      "legend"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "listed": "https://html.spec.whatwg.org/multipage/forms.html#category-listed",
+      "form-associated": "https://html.spec.whatwg.org/multipage/forms.html#form-associated-element",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "children": {
+      "legend": "https://html.spec.whatwg.org/multipage/form-elements.html#the-legend-element",
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "attributes": {
+      "disabled": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-fieldset-disabled",
+      "form": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form",
+      "name": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name"
+    },
+    "interface": {
+      "HTMLFieldSetElement": "https://html.spec.whatwg.org/multipage/form-elements.html#htmlfieldsetelement"
+    }
   },
   "figcaption": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-figcaption-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-figcaption-element",
     "description": "Caption for figure",
-    "categories": [
-      "none"
-    ],
-    "attributes": [],
-    "children": [
-      "flow"
-    ]
+    "categories": {},
+    "parents": {
+      "figure": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-figure-element"
+    },
+    "children": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLElement": "https://html.spec.whatwg.org/multipage/dom.html#htmlelement"
+    }
   },
   "figure": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-figure-element-3",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-figure-element",
     "description": "Figure with optional caption",
-    "categories": [
-      "flow",
-      "palpable"
-    ],
-    "attributes": [],
-    "children": [
-      "figcaption",
-      "flow"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "children": {
+      "figcaption": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-figcaption-element",
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLElement": "https://html.spec.whatwg.org/multipage/dom.html#htmlelement"
+    }
   },
   "footer": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-footer-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/sections.html#the-footer-element",
     "description": "Footer for a page or section",
-    "categories": [
-      "flow",
-      "palpable"
-    ],
-    "attributes": [],
-    "children": [
-      "flow"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "children": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLElement": "https://html.spec.whatwg.org/multipage/dom.html#htmlelement"
+    }
   },
   "form": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-form-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/forms.html#the-form-element",
     "description": "User-submittable form",
-    "categories": [
-      "flow",
-      "palpable"
-    ],
-    "attributes": [
-      "accept-charset",
-      "action",
-      "autocomplete",
-      "enctype",
-      "method",
-      "name",
-      "novalidate",
-      "rel",
-      "target"
-    ],
-    "children": [
-      "flow"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "children": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "attributes": {
+      "accept-charset": "https://html.spec.whatwg.org/multipage/forms.html#attr-form-accept-charset",
+      "action": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-action",
+      "autocomplete": "https://html.spec.whatwg.org/multipage/forms.html#attr-form-autocomplete",
+      "enctype": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-enctype",
+      "method": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-method",
+      "name": "https://html.spec.whatwg.org/multipage/forms.html#attr-form-name",
+      "novalidate": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-novalidate",
+      "rel": "https://html.spec.whatwg.org/multipage/forms.html#attr-form-rel",
+      "target": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-target"
+    },
+    "interface": {
+      "HTMLFormElement": "https://html.spec.whatwg.org/multipage/forms.html#htmlformelement"
+    }
   },
   "h1": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-h1,-h2,-h3,-h4,-h5,-and-h6-elements",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements",
     "description": "Heading",
-    "categories": [
-      "flow",
-      "heading",
-      "palpable"
-    ],
-    "attributes": [],
-    "children": [
-      "phrasing"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "heading": "https://html.spec.whatwg.org/multipage/dom.html#heading-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "legend": "https://html.spec.whatwg.org/multipage/form-elements.html#the-legend-element",
+      "summary": "https://html.spec.whatwg.org/multipage/interactive-elements.html#the-summary-element",
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "children": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLHeadingElement": "https://html.spec.whatwg.org/multipage/sections.html#htmlheadingelement"
+    }
   },
   "h2": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-h1,-h2,-h3,-h4,-h5,-and-h6-elements-2",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements",
     "description": "Heading",
-    "categories": [
-      "flow",
-      "heading",
-      "palpable"
-    ],
-    "attributes": [],
-    "children": [
-      "phrasing"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "heading": "https://html.spec.whatwg.org/multipage/dom.html#heading-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "legend": "https://html.spec.whatwg.org/multipage/form-elements.html#the-legend-element",
+      "summary": "https://html.spec.whatwg.org/multipage/interactive-elements.html#the-summary-element",
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "children": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLHeadingElement": "https://html.spec.whatwg.org/multipage/sections.html#htmlheadingelement"
+    }
   },
   "h3": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-h1,-h2,-h3,-h4,-h5,-and-h6-elements-3",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements",
     "description": "Heading",
-    "categories": [
-      "flow",
-      "heading",
-      "palpable"
-    ],
-    "attributes": [],
-    "children": [
-      "phrasing"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "heading": "https://html.spec.whatwg.org/multipage/dom.html#heading-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "legend": "https://html.spec.whatwg.org/multipage/form-elements.html#the-legend-element",
+      "summary": "https://html.spec.whatwg.org/multipage/interactive-elements.html#the-summary-element",
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "children": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLHeadingElement": "https://html.spec.whatwg.org/multipage/sections.html#htmlheadingelement"
+    }
   },
   "h4": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-h1,-h2,-h3,-h4,-h5,-and-h6-elements-4",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements",
     "description": "Heading",
-    "categories": [
-      "flow",
-      "heading",
-      "palpable"
-    ],
-    "attributes": [],
-    "children": [
-      "phrasing"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "heading": "https://html.spec.whatwg.org/multipage/dom.html#heading-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "legend": "https://html.spec.whatwg.org/multipage/form-elements.html#the-legend-element",
+      "summary": "https://html.spec.whatwg.org/multipage/interactive-elements.html#the-summary-element",
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "children": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLHeadingElement": "https://html.spec.whatwg.org/multipage/sections.html#htmlheadingelement"
+    }
   },
   "h5": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-h1,-h2,-h3,-h4,-h5,-and-h6-elements-5",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements",
     "description": "Heading",
-    "categories": [
-      "flow",
-      "heading",
-      "palpable"
-    ],
-    "attributes": [],
-    "children": [
-      "phrasing"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "heading": "https://html.spec.whatwg.org/multipage/dom.html#heading-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "legend": "https://html.spec.whatwg.org/multipage/form-elements.html#the-legend-element",
+      "summary": "https://html.spec.whatwg.org/multipage/interactive-elements.html#the-summary-element",
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "children": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLHeadingElement": "https://html.spec.whatwg.org/multipage/sections.html#htmlheadingelement"
+    }
   },
   "h6": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-h1,-h2,-h3,-h4,-h5,-and-h6-elements-6",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements",
     "description": "Heading",
-    "categories": [
-      "flow",
-      "heading",
-      "palpable"
-    ],
-    "attributes": [],
-    "children": [
-      "phrasing"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "heading": "https://html.spec.whatwg.org/multipage/dom.html#heading-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "legend": "https://html.spec.whatwg.org/multipage/form-elements.html#the-legend-element",
+      "summary": "https://html.spec.whatwg.org/multipage/interactive-elements.html#the-summary-element",
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "children": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLHeadingElement": "https://html.spec.whatwg.org/multipage/sections.html#htmlheadingelement"
+    }
   },
   "head": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-head-element-2",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/semantics.html#the-head-element",
     "description": "Container for document metadata",
-    "categories": [
-      "none"
-    ],
-    "attributes": [],
-    "children": [
-      "metadata content"
-    ]
+    "categories": {},
+    "parents": {
+      "html": "https://html.spec.whatwg.org/multipage/semantics.html#the-html-element"
+    },
+    "children": {
+      "metadata content": "https://html.spec.whatwg.org/multipage/dom.html#metadata-content-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLHeadElement": "https://html.spec.whatwg.org/multipage/semantics.html#htmlheadelement"
+    }
   },
   "header": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-header-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/sections.html#the-header-element",
     "description": "Introductory or navigational aids for a page or section",
-    "categories": [
-      "flow",
-      "palpable"
-    ],
-    "attributes": [],
-    "children": [
-      "flow"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "children": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLElement": "https://html.spec.whatwg.org/multipage/dom.html#htmlelement"
+    }
   },
   "hgroup": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-hgroup-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/sections.html#the-hgroup-element",
     "description": "Heading container",
-    "categories": [
-      "flow",
-      "palpable"
-    ],
-    "attributes": [],
-    "children": [
-      "h1",
-      "h2",
-      "h3",
-      "h4",
-      "h5",
-      "h6",
-      "p",
-      "script-supporting elements"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "legend": "https://html.spec.whatwg.org/multipage/form-elements.html#the-legend-element",
+      "summary": "https://html.spec.whatwg.org/multipage/interactive-elements.html#the-summary-element",
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "children": {
+      "h1": "https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements",
+      "h2": "https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements",
+      "h3": "https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements",
+      "h4": "https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements",
+      "h5": "https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements",
+      "h6": "https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements",
+      "p": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-p-element",
+      "script-supporting elements": "https://html.spec.whatwg.org/multipage/dom.html#script-supporting-elements-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLElement": "https://html.spec.whatwg.org/multipage/dom.html#htmlelement"
+    }
   },
   "hr": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-hr-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-hr-element",
     "description": "Thematic break",
-    "categories": [
-      "flow"
-    ],
-    "attributes": [],
-    "children": []
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "parents": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "select": "https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element"
+    },
+    "children": {},
+    "attributes": {},
+    "interface": {
+      "HTMLHRElement": "https://html.spec.whatwg.org/multipage/grouping-content.html#htmlhrelement"
+    }
   },
   "html": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-html-element-3",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/semantics.html#the-html-element",
     "description": "Root element",
-    "categories": [
-      "none"
-    ],
-    "attributes": [],
-    "children": [
-      "body",
-      "head"
-    ]
+    "categories": {},
+    "parents": {},
+    "children": {
+      "head": "https://html.spec.whatwg.org/multipage/semantics.html#the-head-element",
+      "body": "https://html.spec.whatwg.org/multipage/sections.html#the-body-element"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLHtmlElement": "https://html.spec.whatwg.org/multipage/semantics.html#htmlhtmlelement"
+    }
   },
   "i": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-i-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-i-element",
     "description": "Alternate voice",
-    "categories": [
-      "flow",
-      "palpable",
-      "phrasing"
-    ],
-    "attributes": [],
-    "children": [
-      "phrasing"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLElement": "https://html.spec.whatwg.org/multipage/dom.html#htmlelement"
+    }
   },
   "iframe": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-iframe-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-iframe-element",
     "description": "Child navigable",
-    "categories": [
-      "embedded",
-      "flow",
-      "interactive",
-      "palpable",
-      "phrasing"
-    ],
-    "attributes": [
-      "allow",
-      "allowfullscreen",
-      "height",
-      "loading",
-      "name",
-      "referrerpolicy",
-      "sandbox",
-      "src",
-      "srcdoc",
-      "width"
-    ],
-    "children": []
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "embedded": "https://html.spec.whatwg.org/multipage/dom.html#embedded-content-category",
+      "interactive": "https://html.spec.whatwg.org/multipage/dom.html#interactive-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {},
+    "attributes": {
+      "src": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-src",
+      "srcdoc": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-srcdoc",
+      "name": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-name",
+      "sandbox": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-sandbox",
+      "allow": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-allow",
+      "allowfullscreen": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-allowfullscreen",
+      "width": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width",
+      "height": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height",
+      "referrerpolicy": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-referrerpolicy",
+      "loading": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-loading"
+    },
+    "interface": {
+      "HTMLIFrameElement": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#htmliframeelement"
+    }
   },
   "img": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-img-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element",
     "description": "Image",
-    "categories": [
-      "embedded",
-      "flow",
-      "form-associated",
-      "interactive",
-      "palpable",
-      "phrasing"
-    ],
-    "attributes": [
-      "alt",
-      "controls",
-      "crossorigin",
-      "decoding",
-      "fetchpriority",
-      "height",
-      "ismap",
-      "loading",
-      "referrerpolicy",
-      "sizes",
-      "src",
-      "srcset",
-      "usemap",
-      "width"
-    ],
-    "children": []
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "embedded": "https://html.spec.whatwg.org/multipage/dom.html#embedded-content-category",
+      "interactive": "https://html.spec.whatwg.org/multipage/dom.html#interactive-content-2",
+      "form-associated": "https://html.spec.whatwg.org/multipage/forms.html#form-associated-element",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "picture": "https://html.spec.whatwg.org/multipage/embedded-content.html#the-picture-element"
+    },
+    "children": {},
+    "attributes": {
+      "alt": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-alt",
+      "src": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-src",
+      "srcset": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-srcset",
+      "sizes": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-sizes",
+      "crossorigin": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-crossorigin",
+      "usemap": "https://html.spec.whatwg.org/multipage/image-maps.html#attr-hyperlink-usemap",
+      "ismap": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-ismap",
+      "controls": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-controls",
+      "width": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width",
+      "height": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height",
+      "referrerpolicy": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-referrerpolicy",
+      "decoding": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-decoding",
+      "loading": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-loading",
+      "fetchpriority": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-fetchpriority"
+    },
+    "interface": {
+      "HTMLImageElement": "https://html.spec.whatwg.org/multipage/embedded-content.html#htmlimageelement"
+    }
   },
   "input": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-input-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/input.html#the-input-element",
     "description": "Form control",
-    "categories": [
-      "flow",
-      "form-associated",
-      "interactive",
-      "labelable",
-      "listed",
-      "palpable",
-      "phrasing",
-      "resettable",
-      "submittable"
-    ],
-    "attributes": [
-      "accept",
-      "alpha",
-      "alt",
-      "autocomplete",
-      "checked",
-      "colorspace",
-      "dirname",
-      "disabled",
-      "form",
-      "formaction",
-      "formenctype",
-      "formmethod",
-      "formnovalidate",
-      "formtarget",
-      "height",
-      "list",
-      "max",
-      "maxlength",
-      "min",
-      "minlength",
-      "multiple",
-      "name",
-      "pattern",
-      "placeholder",
-      "popovertarget",
-      "popovertargetaction",
-      "readonly",
-      "required",
-      "size",
-      "src",
-      "step",
-      "type",
-      "value",
-      "width"
-    ],
-    "children": []
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "interactive": "https://html.spec.whatwg.org/multipage/dom.html#interactive-content-2",
+      "listed": "https://html.spec.whatwg.org/multipage/forms.html#category-listed",
+      "labelable": "https://html.spec.whatwg.org/multipage/forms.html#category-label",
+      "submittable": "https://html.spec.whatwg.org/multipage/forms.html#category-submit",
+      "resettable": "https://html.spec.whatwg.org/multipage/forms.html#category-reset",
+      "form-associated": "https://html.spec.whatwg.org/multipage/forms.html#form-associated-element",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {},
+    "attributes": {
+      "accept": "https://html.spec.whatwg.org/multipage/input.html#attr-input-accept",
+      "alpha": "https://html.spec.whatwg.org/multipage/input.html#attr-input-alpha",
+      "alt": "https://html.spec.whatwg.org/multipage/input.html#attr-input-alt",
+      "autocomplete": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-autocomplete",
+      "checked": "https://html.spec.whatwg.org/multipage/input.html#attr-input-checked",
+      "colorspace": "https://html.spec.whatwg.org/multipage/input.html#attr-input-colorspace",
+      "dirname": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-dirname",
+      "disabled": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled",
+      "form": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form",
+      "formaction": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formaction",
+      "formenctype": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formenctype",
+      "formmethod": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formmethod",
+      "formnovalidate": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formnovalidate",
+      "formtarget": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formtarget",
+      "height": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height",
+      "list": "https://html.spec.whatwg.org/multipage/input.html#attr-input-list",
+      "max": "https://html.spec.whatwg.org/multipage/input.html#attr-input-max",
+      "maxlength": "https://html.spec.whatwg.org/multipage/input.html#attr-input-maxlength",
+      "min": "https://html.spec.whatwg.org/multipage/input.html#attr-input-min",
+      "minlength": "https://html.spec.whatwg.org/multipage/input.html#attr-input-minlength",
+      "multiple": "https://html.spec.whatwg.org/multipage/input.html#attr-input-multiple",
+      "name": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name",
+      "pattern": "https://html.spec.whatwg.org/multipage/input.html#attr-input-pattern",
+      "placeholder": "https://html.spec.whatwg.org/multipage/input.html#attr-input-placeholder",
+      "popovertarget": "https://html.spec.whatwg.org/multipage/popover.html#attr-popovertarget",
+      "popovertargetaction": "https://html.spec.whatwg.org/multipage/popover.html#attr-popovertargetaction",
+      "readonly": "https://html.spec.whatwg.org/multipage/input.html#attr-input-readonly",
+      "required": "https://html.spec.whatwg.org/multipage/input.html#attr-input-required",
+      "size": "https://html.spec.whatwg.org/multipage/input.html#attr-input-size",
+      "src": "https://html.spec.whatwg.org/multipage/input.html#attr-input-src",
+      "step": "https://html.spec.whatwg.org/multipage/input.html#attr-input-step",
+      "type": "https://html.spec.whatwg.org/multipage/input.html#attr-input-type",
+      "value": "https://html.spec.whatwg.org/multipage/input.html#attr-input-value",
+      "width": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width"
+    },
+    "interface": {
+      "HTMLInputElement": "https://html.spec.whatwg.org/multipage/input.html#htmlinputelement"
+    }
   },
   "ins": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-ins-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/edits.html#the-ins-element",
     "description": "An addition to the document",
-    "categories": [
-      "flow",
-      "palpable",
-      "phrasing"
-    ],
-    "attributes": [
-      "cite",
-      "datetime"
-    ],
-    "children": [
-      "transparent"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {
+      "transparent": "https://html.spec.whatwg.org/multipage/dom.html#transparent"
+    },
+    "attributes": {
+      "cite": "https://html.spec.whatwg.org/multipage/edits.html#attr-mod-cite",
+      "datetime": "https://html.spec.whatwg.org/multipage/edits.html#attr-mod-datetime"
+    },
+    "interface": {
+      "HTMLModElement": "https://html.spec.whatwg.org/multipage/edits.html#htmlmodelement"
+    }
   },
   "kbd": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-kbd-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-kbd-element",
     "description": "User input",
-    "categories": [
-      "flow",
-      "palpable",
-      "phrasing"
-    ],
-    "attributes": [],
-    "children": [
-      "phrasing"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLElement": "https://html.spec.whatwg.org/multipage/dom.html#htmlelement"
+    }
   },
   "label": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-label-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/forms.html#the-label-element",
     "description": "Caption for a form control",
-    "categories": [
-      "flow",
-      "interactive",
-      "palpable",
-      "phrasing"
-    ],
-    "attributes": [
-      "for"
-    ],
-    "children": [
-      "phrasing"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "interactive": "https://html.spec.whatwg.org/multipage/dom.html#interactive-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "attributes": {
+      "for": "https://html.spec.whatwg.org/multipage/forms.html#attr-label-for"
+    },
+    "interface": {
+      "HTMLLabelElement": "https://html.spec.whatwg.org/multipage/forms.html#htmllabelelement"
+    }
   },
   "legend": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-legend-element-4",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/form-elements.html#the-legend-element",
     "description": "Caption for fieldset",
-    "categories": [
-      "none"
-    ],
-    "attributes": [],
-    "children": [
-      "heading content",
-      "phrasing"
-    ]
+    "categories": {},
+    "parents": {
+      "fieldset": "https://html.spec.whatwg.org/multipage/form-elements.html#the-fieldset-element",
+      "optgroup": "https://html.spec.whatwg.org/multipage/form-elements.html#the-optgroup-element"
+    },
+    "children": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "heading content": "https://html.spec.whatwg.org/multipage/dom.html#heading-content-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLLegendElement": "https://html.spec.whatwg.org/multipage/form-elements.html#htmllegendelement"
+    }
   },
   "li": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-li-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-li-element",
     "description": "List item",
-    "categories": [
-      "none"
-    ],
-    "attributes": [
-      "value"
-    ],
-    "children": [
-      "flow"
-    ]
+    "categories": {},
+    "parents": {
+      "ol": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-ol-element",
+      "ul": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-ul-element",
+      "menu": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-menu-element"
+    },
+    "children": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "attributes": {
+      "value": "https://html.spec.whatwg.org/multipage/grouping-content.html#attr-li-value"
+    },
+    "interface": {
+      "HTMLLIElement": "https://html.spec.whatwg.org/multipage/grouping-content.html#htmllielement"
+    }
   },
   "link": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-link-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/semantics.html#the-link-element",
     "description": "Link metadata",
-    "categories": [
-      "flow",
-      "metadata",
-      "phrasing"
-    ],
-    "attributes": [
-      "as",
-      "blocking",
-      "color",
-      "crossorigin",
-      "disabled",
-      "fetchpriority",
-      "href",
-      "hreflang",
-      "imagesizes",
-      "imagesrcset",
-      "integrity",
-      "media",
-      "referrerpolicy",
-      "rel",
-      "sizes",
-      "type"
-    ],
-    "children": []
+    "categories": {
+      "metadata": "https://html.spec.whatwg.org/multipage/dom.html#metadata-content-2",
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "parents": {
+      "head": "https://html.spec.whatwg.org/multipage/semantics.html#the-head-element",
+      "noscript": "https://html.spec.whatwg.org/multipage/scripting.html#the-noscript-element",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {},
+    "attributes": {
+      "href": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-href",
+      "crossorigin": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-crossorigin",
+      "rel": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-rel",
+      "as": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-as",
+      "media": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-media",
+      "hreflang": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-hreflang",
+      "type": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-type",
+      "sizes": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-sizes",
+      "imagesrcset": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-imagesrcset",
+      "imagesizes": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-imagesizes",
+      "referrerpolicy": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-referrerpolicy",
+      "integrity": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-integrity",
+      "blocking": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-blocking",
+      "color": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-color",
+      "disabled": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-disabled",
+      "fetchpriority": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-fetchpriority"
+    },
+    "interface": {
+      "HTMLLinkElement": "https://html.spec.whatwg.org/multipage/semantics.html#htmllinkelement"
+    }
   },
   "main": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-main-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-main-element",
     "description": "Container for the dominant contents of the document",
-    "categories": [
-      "flow",
-      "palpable"
-    ],
-    "attributes": [],
-    "children": [
-      "flow"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "children": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLElement": "https://html.spec.whatwg.org/multipage/dom.html#htmlelement"
+    }
   },
   "map": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-map-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/image-maps.html#the-map-element",
     "description": "Image map",
-    "categories": [
-      "flow",
-      "palpable",
-      "phrasing"
-    ],
-    "attributes": [
-      "name"
-    ],
-    "children": [
-      "area",
-      "transparent"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {
+      "transparent": "https://html.spec.whatwg.org/multipage/dom.html#transparent",
+      "area": "https://html.spec.whatwg.org/multipage/image-maps.html#the-area-element"
+    },
+    "attributes": {
+      "name": "https://html.spec.whatwg.org/multipage/image-maps.html#attr-map-name"
+    },
+    "interface": {
+      "HTMLMapElement": "https://html.spec.whatwg.org/multipage/image-maps.html#htmlmapelement"
+    }
   },
   "mark": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-mark-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-mark-element",
     "description": "Highlight",
-    "categories": [
-      "flow",
-      "palpable",
-      "phrasing"
-    ],
-    "attributes": [],
-    "children": [
-      "phrasing"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLElement": "https://html.spec.whatwg.org/multipage/dom.html#htmlelement"
+    }
   },
   "math": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:mathml-math",
+    "semantics_url": "https://w3c.github.io/mathml-core/#the-top-level-math-element",
     "description": "MathML root",
-    "categories": [
-      "embedded",
-      "flow",
-      "palpable",
-      "phrasing"
-    ],
-    "attributes": [
-      "per [MATHML]"
-    ],
-    "children": [
-      "per [MATHML]"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "embedded": "https://html.spec.whatwg.org/multipage/dom.html#embedded-content-category",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {
+      "per": "",
+      "[MATHML]": "https://html.spec.whatwg.org/multipage/references.html#refsMATHML"
+    },
+    "attributes": {
+      "per": "",
+      "[MATHML]": "https://html.spec.whatwg.org/multipage/references.html#refsMATHML"
+    },
+    "interface": {
+      "Element": "https://dom.spec.whatwg.org/#interface-element"
+    }
   },
   "menu": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-menu-element-2",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-menu-element",
     "description": "Menu of commands",
-    "categories": [
-      "flow",
-      "palpable"
-    ],
-    "attributes": [],
-    "children": [
-      "li",
-      "script-supporting elements"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "children": {
+      "li": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-li-element",
+      "script-supporting elements": "https://html.spec.whatwg.org/multipage/dom.html#script-supporting-elements-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLMenuElement": "https://html.spec.whatwg.org/multipage/grouping-content.html#htmlmenuelement"
+    }
   },
   "meta": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-meta-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/semantics.html#the-meta-element",
     "description": "Text metadata",
-    "categories": [
-      "flow",
-      "metadata",
-      "phrasing"
-    ],
-    "attributes": [
-      "charset",
-      "content",
-      "http-equiv",
-      "media",
-      "name"
-    ],
-    "children": []
+    "categories": {
+      "metadata": "https://html.spec.whatwg.org/multipage/dom.html#metadata-content-2",
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "parents": {
+      "head": "https://html.spec.whatwg.org/multipage/semantics.html#the-head-element",
+      "noscript": "https://html.spec.whatwg.org/multipage/scripting.html#the-noscript-element",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {},
+    "attributes": {
+      "name": "https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-name",
+      "http-equiv": "https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-http-equiv",
+      "content": "https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-content",
+      "charset": "https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-charset",
+      "media": "https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-media"
+    },
+    "interface": {
+      "HTMLMetaElement": "https://html.spec.whatwg.org/multipage/semantics.html#htmlmetaelement"
+    }
   },
   "meter": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-meter-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/form-elements.html#the-meter-element",
     "description": "Gauge",
-    "categories": [
-      "flow",
-      "labelable",
-      "palpable",
-      "phrasing"
-    ],
-    "attributes": [
-      "high",
-      "low",
-      "max",
-      "min",
-      "optimum",
-      "value"
-    ],
-    "children": [
-      "phrasing"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "labelable": "https://html.spec.whatwg.org/multipage/forms.html#category-label",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "attributes": {
+      "value": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-meter-value",
+      "min": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-meter-min",
+      "max": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-meter-max",
+      "low": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-meter-low",
+      "high": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-meter-high",
+      "optimum": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-meter-optimum"
+    },
+    "interface": {
+      "HTMLMeterElement": "https://html.spec.whatwg.org/multipage/form-elements.html#htmlmeterelement"
+    }
   },
   "nav": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-nav-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/sections.html#the-nav-element",
     "description": "Section with navigational links",
-    "categories": [
-      "flow",
-      "palpable",
-      "sectioning"
-    ],
-    "attributes": [],
-    "children": [
-      "flow"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "sectioning": "https://html.spec.whatwg.org/multipage/dom.html#sectioning-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "children": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLElement": "https://html.spec.whatwg.org/multipage/dom.html#htmlelement"
+    }
   },
   "noscript": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-noscript-element-3",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/scripting.html#the-noscript-element",
     "description": "Fallback content for script",
-    "categories": [
-      "flow",
-      "metadata",
-      "phrasing"
-    ],
-    "attributes": [],
-    "children": [
-      "varies"
-    ]
+    "categories": {
+      "metadata": "https://html.spec.whatwg.org/multipage/dom.html#metadata-content-2",
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "parents": {
+      "head": "https://html.spec.whatwg.org/multipage/semantics.html#the-head-element",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "select": "https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element",
+      "optgroup": "https://html.spec.whatwg.org/multipage/form-elements.html#the-optgroup-element"
+    },
+    "children": {},
+    "attributes": {},
+    "interface": {
+      "HTMLElement": "https://html.spec.whatwg.org/multipage/dom.html#htmlelement"
+    }
   },
   "object": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-object-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-object-element",
     "description": "Image, child navigable, or plugin",
-    "categories": [
-      "embedded",
-      "flow",
-      "form-associated",
-      "interactive",
-      "listed",
-      "palpable",
-      "phrasing"
-    ],
-    "attributes": [
-      "data",
-      "form",
-      "height",
-      "name",
-      "type",
-      "width"
-    ],
-    "children": [
-      "transparent"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "embedded": "https://html.spec.whatwg.org/multipage/dom.html#embedded-content-category",
+      "interactive": "https://html.spec.whatwg.org/multipage/dom.html#interactive-content-2",
+      "listed": "https://html.spec.whatwg.org/multipage/forms.html#category-listed",
+      "form-associated": "https://html.spec.whatwg.org/multipage/forms.html#form-associated-element",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {
+      "transparent": "https://html.spec.whatwg.org/multipage/dom.html#transparent"
+    },
+    "attributes": {
+      "data": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-object-data",
+      "type": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-object-type",
+      "name": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-object-name",
+      "form": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form",
+      "width": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width",
+      "height": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height"
+    },
+    "interface": {
+      "HTMLObjectElement": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#htmlobjectelement"
+    }
   },
   "ol": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-ol-element-2",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-ol-element",
     "description": "Ordered list",
-    "categories": [
-      "flow",
-      "palpable"
-    ],
-    "attributes": [
-      "reversed",
-      "start",
-      "type"
-    ],
-    "children": [
-      "li",
-      "script-supporting elements"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "children": {
+      "li": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-li-element",
+      "script-supporting elements": "https://html.spec.whatwg.org/multipage/dom.html#script-supporting-elements-2"
+    },
+    "attributes": {
+      "reversed": "https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-reversed",
+      "start": "https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-start",
+      "type": "https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-type"
+    },
+    "interface": {
+      "HTMLOListElement": "https://html.spec.whatwg.org/multipage/grouping-content.html#htmlolistelement"
+    }
   },
   "optgroup": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-optgroup-element-4",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/form-elements.html#the-optgroup-element",
     "description": "Group of options in a list box",
-    "categories": [
-      "none"
-    ],
-    "attributes": [
-      "disabled",
-      "label"
-    ],
-    "children": [
-      "div",
-      "legend",
-      "noscript",
-      "option",
-      "script-supporting elements"
-    ]
+    "categories": {},
+    "parents": {
+      "select": "https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element",
+      "div": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-div-element"
+    },
+    "children": {
+      "option": "https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element",
+      "script-supporting elements": "https://html.spec.whatwg.org/multipage/dom.html#script-supporting-elements-2",
+      "noscript": "https://html.spec.whatwg.org/multipage/scripting.html#the-noscript-element",
+      "div": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-div-element",
+      "legend": "https://html.spec.whatwg.org/multipage/form-elements.html#the-legend-element"
+    },
+    "attributes": {
+      "disabled": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-optgroup-disabled",
+      "label": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-optgroup-label"
+    },
+    "interface": {
+      "HTMLOptGroupElement": "https://html.spec.whatwg.org/multipage/form-elements.html#htmloptgroupelement"
+    }
   },
   "option": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-option-element-4",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element",
     "description": "Option in a list box or combo box control",
-    "categories": [
-      "none"
-    ],
-    "attributes": [
-      "disabled",
-      "label",
-      "selected",
-      "value"
-    ],
-    "children": [
-      "div",
-      "phrasing",
-      "text"
-    ]
+    "categories": {},
+    "parents": {
+      "select": "https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element",
+      "datalist": "https://html.spec.whatwg.org/multipage/form-elements.html#the-datalist-element",
+      "optgroup": "https://html.spec.whatwg.org/multipage/form-elements.html#the-optgroup-element",
+      "div": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-div-element"
+    },
+    "children": {
+      "text": "https://html.spec.whatwg.org/multipage/dom.html#text-content",
+      "div": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-div-element",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "attributes": {
+      "disabled": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-option-disabled",
+      "label": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-option-label",
+      "selected": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-option-selected",
+      "value": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-option-value"
+    },
+    "interface": {
+      "HTMLOptionElement": "https://html.spec.whatwg.org/multipage/form-elements.html#htmloptionelement"
+    }
   },
   "output": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-output-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/form-elements.html#the-output-element",
     "description": "Calculated output value",
-    "categories": [
-      "flow",
-      "form-associated",
-      "labelable",
-      "listed",
-      "palpable",
-      "phrasing",
-      "resettable"
-    ],
-    "attributes": [
-      "for",
-      "form",
-      "name"
-    ],
-    "children": [
-      "phrasing"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "listed": "https://html.spec.whatwg.org/multipage/forms.html#category-listed",
+      "labelable": "https://html.spec.whatwg.org/multipage/forms.html#category-label",
+      "resettable": "https://html.spec.whatwg.org/multipage/forms.html#category-reset",
+      "form-associated": "https://html.spec.whatwg.org/multipage/forms.html#form-associated-element",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "attributes": {
+      "for": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-output-for",
+      "form": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form",
+      "name": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name"
+    },
+    "interface": {
+      "HTMLOutputElement": "https://html.spec.whatwg.org/multipage/form-elements.html#htmloutputelement"
+    }
   },
   "p": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-p-element-2",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-p-element",
     "description": "Paragraph",
-    "categories": [
-      "flow",
-      "palpable"
-    ],
-    "attributes": [],
-    "children": [
-      "phrasing"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "children": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLParagraphElement": "https://html.spec.whatwg.org/multipage/grouping-content.html#htmlparagraphelement"
+    }
   },
   "picture": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-picture-element-2",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/embedded-content.html#the-picture-element",
     "description": "Image",
-    "categories": [
-      "embedded",
-      "flow",
-      "palpable",
-      "phrasing"
-    ],
-    "attributes": [],
-    "children": [
-      "one img",
-      "script-supporting elements",
-      "source"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "embedded": "https://html.spec.whatwg.org/multipage/dom.html#embedded-content-category",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {
+      "source": "https://html.spec.whatwg.org/multipage/embedded-content.html#the-source-element",
+      "one": "",
+      "img": "https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element",
+      "script-supporting elements": "https://html.spec.whatwg.org/multipage/dom.html#script-supporting-elements-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLPictureElement": "https://html.spec.whatwg.org/multipage/embedded-content.html#htmlpictureelement"
+    }
   },
   "pre": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-pre-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-pre-element",
     "description": "Block of preformatted text",
-    "categories": [
-      "flow",
-      "palpable"
-    ],
-    "attributes": [],
-    "children": [
-      "phrasing"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "children": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLPreElement": "https://html.spec.whatwg.org/multipage/grouping-content.html#htmlpreelement"
+    }
   },
   "progress": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-progress-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/form-elements.html#the-progress-element",
     "description": "Progress bar",
-    "categories": [
-      "flow",
-      "labelable",
-      "palpable",
-      "phrasing"
-    ],
-    "attributes": [
-      "max",
-      "value"
-    ],
-    "children": [
-      "phrasing"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "labelable": "https://html.spec.whatwg.org/multipage/forms.html#category-label",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "attributes": {
+      "value": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-progress-value",
+      "max": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-progress-max"
+    },
+    "interface": {
+      "HTMLProgressElement": "https://html.spec.whatwg.org/multipage/form-elements.html#htmlprogresselement"
+    }
   },
   "q": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-q-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-q-element",
     "description": "Quotation",
-    "categories": [
-      "flow",
-      "palpable",
-      "phrasing"
-    ],
-    "attributes": [
-      "cite"
-    ],
-    "children": [
-      "phrasing"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "attributes": {
+      "cite": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#attr-q-cite"
+    },
+    "interface": {
+      "HTMLQuoteElement": "https://html.spec.whatwg.org/multipage/grouping-content.html#htmlquoteelement"
+    }
   },
   "rp": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-rp-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-rp-element",
     "description": "Parenthesis for ruby annotation text",
-    "categories": [
-      "none"
-    ],
-    "attributes": [],
-    "children": [
-      "text"
-    ]
+    "categories": {},
+    "parents": {
+      "ruby": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-ruby-element"
+    },
+    "children": {
+      "text": "https://html.spec.whatwg.org/multipage/dom.html#text-content"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLElement": "https://html.spec.whatwg.org/multipage/dom.html#htmlelement"
+    }
   },
   "rt": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-rt-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-rt-element",
     "description": "Ruby annotation text",
-    "categories": [
-      "none"
-    ],
-    "attributes": [],
-    "children": [
-      "phrasing"
-    ]
+    "categories": {},
+    "parents": {
+      "ruby": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-ruby-element"
+    },
+    "children": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLElement": "https://html.spec.whatwg.org/multipage/dom.html#htmlelement"
+    }
   },
   "ruby": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-ruby-element-3",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-ruby-element",
     "description": "Ruby annotation(s)",
-    "categories": [
-      "flow",
-      "palpable",
-      "phrasing"
-    ],
-    "attributes": [],
-    "children": [
-      "phrasing",
-      "rp",
-      "rt"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "rt": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-rt-element",
+      "rp": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-rp-element"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLElement": "https://html.spec.whatwg.org/multipage/dom.html#htmlelement"
+    }
   },
   "s": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-s-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-s-element",
     "description": "Inaccurate text",
-    "categories": [
-      "flow",
-      "palpable",
-      "phrasing"
-    ],
-    "attributes": [],
-    "children": [
-      "phrasing"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLElement": "https://html.spec.whatwg.org/multipage/dom.html#htmlelement"
+    }
   },
   "samp": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-samp-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-samp-element",
     "description": "Computer output",
-    "categories": [
-      "flow",
-      "palpable",
-      "phrasing"
-    ],
-    "attributes": [],
-    "children": [
-      "phrasing"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLElement": "https://html.spec.whatwg.org/multipage/dom.html#htmlelement"
+    }
   },
   "script": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-script-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/scripting.html#the-script-element",
     "description": "Embedded script",
-    "categories": [
-      "flow",
-      "metadata",
-      "phrasing",
-      "script-supporting"
-    ],
-    "attributes": [
-      "async",
-      "blocking",
-      "crossorigin",
-      "defer",
-      "fetchpriority",
-      "integrity",
-      "nomodule",
-      "referrerpolicy",
-      "src",
-      "type"
-    ],
-    "children": [
-      "script, data, or script documentation"
-    ]
+    "categories": {
+      "metadata": "https://html.spec.whatwg.org/multipage/dom.html#metadata-content-2",
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "script-supporting": "https://html.spec.whatwg.org/multipage/dom.html#script-supporting-elements-2"
+    },
+    "parents": {
+      "head": "https://html.spec.whatwg.org/multipage/semantics.html#the-head-element",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "script-supporting": "https://html.spec.whatwg.org/multipage/dom.html#script-supporting-elements-2"
+    },
+    "children": {},
+    "attributes": {
+      "src": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-src",
+      "type": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-type",
+      "nomodule": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-nomodule",
+      "async": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-async",
+      "defer": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-defer",
+      "crossorigin": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-crossorigin",
+      "integrity": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-integrity",
+      "referrerpolicy": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-referrerpolicy",
+      "blocking": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-blocking",
+      "fetchpriority": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-fetchpriority"
+    },
+    "interface": {
+      "HTMLScriptElement": "https://html.spec.whatwg.org/multipage/scripting.html#htmlscriptelement"
+    }
   },
   "search": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-search-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-search-element",
     "description": "Container for search controls",
-    "categories": [
-      "flow",
-      "palpable"
-    ],
-    "attributes": [],
-    "children": [
-      "flow"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "children": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLElement": "https://html.spec.whatwg.org/multipage/dom.html#htmlelement"
+    }
   },
   "section": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-section-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/sections.html#the-section-element",
     "description": "Generic document or application section",
-    "categories": [
-      "flow",
-      "palpable",
-      "sectioning"
-    ],
-    "attributes": [],
-    "children": [
-      "flow"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "sectioning": "https://html.spec.whatwg.org/multipage/dom.html#sectioning-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "children": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLElement": "https://html.spec.whatwg.org/multipage/dom.html#htmlelement"
+    }
   },
   "select": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-select-element-7",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element",
     "description": "List box control",
-    "categories": [
-      "flow",
-      "form-associated",
-      "interactive",
-      "labelable",
-      "listed",
-      "palpable",
-      "phrasing",
-      "resettable",
-      "submittable"
-    ],
-    "attributes": [
-      "autocomplete",
-      "disabled",
-      "form",
-      "multiple",
-      "name",
-      "required",
-      "size"
-    ],
-    "children": [
-      "button",
-      "div",
-      "hr",
-      "noscript",
-      "optgroup",
-      "option",
-      "script-supporting elements"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "interactive": "https://html.spec.whatwg.org/multipage/dom.html#interactive-content-2",
+      "listed": "https://html.spec.whatwg.org/multipage/forms.html#category-listed",
+      "labelable": "https://html.spec.whatwg.org/multipage/forms.html#category-label",
+      "submittable": "https://html.spec.whatwg.org/multipage/forms.html#category-submit",
+      "resettable": "https://html.spec.whatwg.org/multipage/forms.html#category-reset",
+      "form-associated": "https://html.spec.whatwg.org/multipage/forms.html#form-associated-element",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {
+      "option": "https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element",
+      "optgroup": "https://html.spec.whatwg.org/multipage/form-elements.html#the-optgroup-element",
+      "hr": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-hr-element",
+      "script-supporting elements": "https://html.spec.whatwg.org/multipage/dom.html#script-supporting-elements-2",
+      "noscript": "https://html.spec.whatwg.org/multipage/scripting.html#the-noscript-element",
+      "div": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-div-element",
+      "button": "https://html.spec.whatwg.org/multipage/form-elements.html#the-button-element"
+    },
+    "attributes": {
+      "autocomplete": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-autocomplete",
+      "disabled": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled",
+      "form": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form",
+      "multiple": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-select-multiple",
+      "name": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name",
+      "required": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-select-required",
+      "size": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-select-size"
+    },
+    "interface": {
+      "HTMLSelectElement": "https://html.spec.whatwg.org/multipage/form-elements.html#htmlselectelement"
+    }
   },
   "selectedcontent": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-selectedcontent-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/form-elements.html#the-selectedcontent-element",
     "description": "Mirrors content from an option",
-    "categories": [
-      "none"
-    ],
-    "attributes": [],
-    "children": []
+    "categories": {},
+    "parents": {
+      "button": "https://html.spec.whatwg.org/multipage/form-elements.html#the-button-element"
+    },
+    "children": {},
+    "attributes": {},
+    "interface": {
+      "HTMLSelectedContentElement": "https://html.spec.whatwg.org/multipage/form-elements.html#htmlselectedcontentelement"
+    }
   },
   "slot": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-slot-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/scripting.html#the-slot-element",
     "description": "Shadow tree slot",
-    "categories": [
-      "flow",
-      "phrasing"
-    ],
-    "attributes": [
-      "name"
-    ],
-    "children": [
-      "transparent"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {
+      "transparent": "https://html.spec.whatwg.org/multipage/dom.html#transparent"
+    },
+    "attributes": {
+      "name": "https://html.spec.whatwg.org/multipage/scripting.html#attr-slot-name"
+    },
+    "interface": {
+      "HTMLSlotElement": "https://html.spec.whatwg.org/multipage/scripting.html#htmlslotelement"
+    }
   },
   "small": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-small-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-small-element",
     "description": "Side comment",
-    "categories": [
-      "flow",
-      "palpable",
-      "phrasing"
-    ],
-    "attributes": [],
-    "children": [
-      "phrasing"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLElement": "https://html.spec.whatwg.org/multipage/dom.html#htmlelement"
+    }
   },
   "source": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-source-element-3",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/embedded-content.html#the-source-element",
     "description": "Image source for img or media source for video or audio",
-    "categories": [
-      "none"
-    ],
-    "attributes": [
-      "height",
-      "media",
-      "sizes",
-      "src",
-      "srcset",
-      "type",
-      "width"
-    ],
-    "children": []
+    "categories": {},
+    "parents": {
+      "picture": "https://html.spec.whatwg.org/multipage/embedded-content.html#the-picture-element",
+      "video": "https://html.spec.whatwg.org/multipage/media.html#the-video-element",
+      "audio": "https://html.spec.whatwg.org/multipage/media.html#the-audio-element"
+    },
+    "children": {},
+    "attributes": {
+      "type": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-type",
+      "media": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-media",
+      "src": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-src",
+      "srcset": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-srcset",
+      "sizes": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-sizes",
+      "width": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width",
+      "height": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height"
+    },
+    "interface": {
+      "HTMLSourceElement": "https://html.spec.whatwg.org/multipage/embedded-content.html#htmlsourceelement"
+    }
   },
   "span": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-span-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-span-element",
     "description": "Generic phrasing container",
-    "categories": [
-      "flow",
-      "palpable",
-      "phrasing"
-    ],
-    "attributes": [],
-    "children": [
-      "phrasing"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLSpanElement": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#htmlspanelement"
+    }
   },
   "strong": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-strong-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-strong-element",
     "description": "Importance",
-    "categories": [
-      "flow",
-      "palpable",
-      "phrasing"
-    ],
-    "attributes": [],
-    "children": [
-      "phrasing"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLElement": "https://html.spec.whatwg.org/multipage/dom.html#htmlelement"
+    }
   },
   "style": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-style-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/semantics.html#the-style-element",
     "description": "Embedded styling information",
-    "categories": [
-      "metadata"
-    ],
-    "attributes": [
-      "blocking",
-      "media"
-    ],
-    "children": [
-      "text"
-    ]
+    "categories": {
+      "metadata": "https://html.spec.whatwg.org/multipage/dom.html#metadata-content-2"
+    },
+    "parents": {
+      "head": "https://html.spec.whatwg.org/multipage/semantics.html#the-head-element",
+      "noscript": "https://html.spec.whatwg.org/multipage/scripting.html#the-noscript-element"
+    },
+    "children": {},
+    "attributes": {
+      "media": "https://html.spec.whatwg.org/multipage/semantics.html#attr-style-media",
+      "blocking": "https://html.spec.whatwg.org/multipage/semantics.html#attr-style-blocking"
+    },
+    "interface": {
+      "HTMLStyleElement": "https://html.spec.whatwg.org/multipage/semantics.html#htmlstyleelement"
+    }
   },
   "sub": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-sub-and-sup-elements",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-sub-and-sup-elements",
     "description": "Subscript",
-    "categories": [
-      "flow",
-      "palpable",
-      "phrasing"
-    ],
-    "attributes": [],
-    "children": [
-      "phrasing"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLElement": "https://html.spec.whatwg.org/multipage/dom.html#htmlelement"
+    }
   },
   "summary": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-summary-element-4",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/interactive-elements.html#the-summary-element",
     "description": "Caption for details",
-    "categories": [
-      "none"
-    ],
-    "attributes": [],
-    "children": [
-      "heading content",
-      "phrasing"
-    ]
+    "categories": {},
+    "parents": {
+      "details": "https://html.spec.whatwg.org/multipage/interactive-elements.html#the-details-element"
+    },
+    "children": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "heading content": "https://html.spec.whatwg.org/multipage/dom.html#heading-content-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLElement": "https://html.spec.whatwg.org/multipage/dom.html#htmlelement"
+    }
   },
   "sup": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-sub-and-sup-elements-2",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-sub-and-sup-elements",
     "description": "Superscript",
-    "categories": [
-      "flow",
-      "palpable",
-      "phrasing"
-    ],
-    "attributes": [],
-    "children": [
-      "phrasing"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLElement": "https://html.spec.whatwg.org/multipage/dom.html#htmlelement"
+    }
   },
   "svg": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:svg-svg",
+    "semantics_url": "https://w3c.github.io/svgwg/svg2-draft/struct.html#elementdef-svg",
     "description": "SVG root",
-    "categories": [
-      "embedded",
-      "flow",
-      "palpable",
-      "phrasing"
-    ],
-    "attributes": [
-      "per [SVG]"
-    ],
-    "children": [
-      "per [SVG]"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "embedded": "https://html.spec.whatwg.org/multipage/dom.html#embedded-content-category",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {
+      "per": "",
+      "[SVG]": "https://html.spec.whatwg.org/multipage/references.html#refsSVG"
+    },
+    "attributes": {
+      "per": "",
+      "[SVG]": "https://html.spec.whatwg.org/multipage/references.html#refsSVG"
+    },
+    "interface": {
+      "SVGSVGElement": "https://svgwg.org/svg2-draft/struct.html#InterfaceSVGSVGElement"
+    }
   },
   "table": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-table-element-3",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/tables.html#the-table-element",
     "description": "Table",
-    "categories": [
-      "flow",
-      "palpable"
-    ],
-    "attributes": [],
-    "children": [
-      "caption",
-      "colgroup",
-      "script-supporting elements",
-      "tbody",
-      "tfoot",
-      "thead",
-      "tr"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "children": {
+      "caption": "https://html.spec.whatwg.org/multipage/tables.html#the-caption-element",
+      "colgroup": "https://html.spec.whatwg.org/multipage/tables.html#the-colgroup-element",
+      "thead": "https://html.spec.whatwg.org/multipage/tables.html#the-thead-element",
+      "tbody": "https://html.spec.whatwg.org/multipage/tables.html#the-tbody-element",
+      "tfoot": "https://html.spec.whatwg.org/multipage/tables.html#the-tfoot-element",
+      "tr": "https://html.spec.whatwg.org/multipage/tables.html#the-tr-element",
+      "script-supporting elements": "https://html.spec.whatwg.org/multipage/dom.html#script-supporting-elements-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLTableElement": "https://html.spec.whatwg.org/multipage/tables.html#htmltableelement"
+    }
   },
   "tbody": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-tbody-element-2",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/tables.html#the-tbody-element",
     "description": "Group of rows in a table",
-    "categories": [
-      "none"
-    ],
-    "attributes": [],
-    "children": [
-      "script-supporting elements",
-      "tr"
-    ]
+    "categories": {},
+    "parents": {
+      "table": "https://html.spec.whatwg.org/multipage/tables.html#the-table-element"
+    },
+    "children": {
+      "tr": "https://html.spec.whatwg.org/multipage/tables.html#the-tr-element",
+      "script-supporting elements": "https://html.spec.whatwg.org/multipage/dom.html#script-supporting-elements-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLTableSectionElement": "https://html.spec.whatwg.org/multipage/tables.html#htmltablesectionelement"
+    }
   },
   "td": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-td-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/tables.html#the-td-element",
     "description": "Table cell",
-    "categories": [
-      "none"
-    ],
-    "attributes": [
-      "colspan",
-      "headers",
-      "rowspan"
-    ],
-    "children": [
-      "flow"
-    ]
+    "categories": {},
+    "parents": {
+      "tr": "https://html.spec.whatwg.org/multipage/tables.html#the-tr-element"
+    },
+    "children": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "attributes": {
+      "colspan": "https://html.spec.whatwg.org/multipage/tables.html#attr-tdth-colspan",
+      "rowspan": "https://html.spec.whatwg.org/multipage/tables.html#attr-tdth-rowspan",
+      "headers": "https://html.spec.whatwg.org/multipage/tables.html#attr-tdth-headers"
+    },
+    "interface": {
+      "HTMLTableCellElement": "https://html.spec.whatwg.org/multipage/tables.html#htmltablecellelement"
+    }
   },
   "template": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-template-element-2",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/scripting.html#the-template-element",
     "description": "Template",
-    "categories": [
-      "flow",
-      "metadata",
-      "phrasing",
-      "script-supporting"
-    ],
-    "attributes": [
-      "shadowrootclonable",
-      "shadowrootcustomelementregistry",
-      "shadowrootdelegatesfocus",
-      "shadowrootmode",
-      "shadowrootserializable",
-      "shadowrootslotassignment"
-    ],
-    "children": []
+    "categories": {
+      "metadata": "https://html.spec.whatwg.org/multipage/dom.html#metadata-content-2",
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "script-supporting": "https://html.spec.whatwg.org/multipage/dom.html#script-supporting-elements-2"
+    },
+    "parents": {
+      "metadata": "https://html.spec.whatwg.org/multipage/dom.html#metadata-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "script-supporting": "https://html.spec.whatwg.org/multipage/dom.html#script-supporting-elements-2",
+      "colgroup": "https://html.spec.whatwg.org/multipage/tables.html#the-colgroup-element"
+    },
+    "children": {},
+    "attributes": {
+      "shadowrootmode": "https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootmode",
+      "shadowrootdelegatesfocus": "https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootdelegatesfocus",
+      "shadowrootslotassignment": "https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootslotassignment",
+      "shadowrootclonable": "https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootclonable",
+      "shadowrootserializable": "https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootserializable",
+      "shadowrootcustomelementregistry": "https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootcustomelementregistry"
+    },
+    "interface": {
+      "HTMLTemplateElement": "https://html.spec.whatwg.org/multipage/scripting.html#htmltemplateelement"
+    }
   },
   "textarea": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-textarea-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/form-elements.html#the-textarea-element",
     "description": "Multiline text controls",
-    "categories": [
-      "flow",
-      "form-associated",
-      "interactive",
-      "labelable",
-      "listed",
-      "palpable",
-      "phrasing",
-      "resettable",
-      "submittable"
-    ],
-    "attributes": [
-      "autocomplete",
-      "cols",
-      "dirname",
-      "disabled",
-      "form",
-      "maxlength",
-      "minlength",
-      "name",
-      "placeholder",
-      "readonly",
-      "required",
-      "rows",
-      "wrap"
-    ],
-    "children": [
-      "text"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "interactive": "https://html.spec.whatwg.org/multipage/dom.html#interactive-content-2",
+      "listed": "https://html.spec.whatwg.org/multipage/forms.html#category-listed",
+      "labelable": "https://html.spec.whatwg.org/multipage/forms.html#category-label",
+      "submittable": "https://html.spec.whatwg.org/multipage/forms.html#category-submit",
+      "resettable": "https://html.spec.whatwg.org/multipage/forms.html#category-reset",
+      "form-associated": "https://html.spec.whatwg.org/multipage/forms.html#form-associated-element",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {
+      "text": "https://html.spec.whatwg.org/multipage/dom.html#text-content"
+    },
+    "attributes": {
+      "autocomplete": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-autocomplete",
+      "cols": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-cols",
+      "dirname": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-dirname",
+      "disabled": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled",
+      "form": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form",
+      "maxlength": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-maxlength",
+      "minlength": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-minlength",
+      "name": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name",
+      "placeholder": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-placeholder",
+      "readonly": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-readonly",
+      "required": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-required",
+      "rows": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-rows",
+      "wrap": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-wrap"
+    },
+    "interface": {
+      "HTMLTextAreaElement": "https://html.spec.whatwg.org/multipage/form-elements.html#htmltextareaelement"
+    }
   },
   "tfoot": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-tfoot-element-2",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/tables.html#the-tfoot-element",
     "description": "Group of footer rows in a table",
-    "categories": [
-      "none"
-    ],
-    "attributes": [],
-    "children": [
-      "script-supporting elements",
-      "tr"
-    ]
+    "categories": {},
+    "parents": {
+      "table": "https://html.spec.whatwg.org/multipage/tables.html#the-table-element"
+    },
+    "children": {
+      "tr": "https://html.spec.whatwg.org/multipage/tables.html#the-tr-element",
+      "script-supporting elements": "https://html.spec.whatwg.org/multipage/dom.html#script-supporting-elements-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLTableSectionElement": "https://html.spec.whatwg.org/multipage/tables.html#htmltablesectionelement"
+    }
   },
   "th": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-th-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/tables.html#the-th-element",
     "description": "Table header cell",
-    "categories": [
-      "interactive"
-    ],
-    "attributes": [
-      "abbr",
-      "colspan",
-      "headers",
-      "rowspan",
-      "scope"
-    ],
-    "children": [
-      "flow"
-    ]
+    "categories": {
+      "interactive": "https://html.spec.whatwg.org/multipage/dom.html#interactive-content-2"
+    },
+    "parents": {
+      "tr": "https://html.spec.whatwg.org/multipage/tables.html#the-tr-element"
+    },
+    "children": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "attributes": {
+      "colspan": "https://html.spec.whatwg.org/multipage/tables.html#attr-tdth-colspan",
+      "rowspan": "https://html.spec.whatwg.org/multipage/tables.html#attr-tdth-rowspan",
+      "headers": "https://html.spec.whatwg.org/multipage/tables.html#attr-tdth-headers",
+      "scope": "https://html.spec.whatwg.org/multipage/tables.html#attr-th-scope",
+      "abbr": "https://html.spec.whatwg.org/multipage/tables.html#attr-th-abbr"
+    },
+    "interface": {
+      "HTMLTableCellElement": "https://html.spec.whatwg.org/multipage/tables.html#htmltablecellelement"
+    }
   },
   "thead": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-thead-element-2",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/tables.html#the-thead-element",
     "description": "Group of heading rows in a table",
-    "categories": [
-      "none"
-    ],
-    "attributes": [],
-    "children": [
-      "script-supporting elements",
-      "tr"
-    ]
+    "categories": {},
+    "parents": {
+      "table": "https://html.spec.whatwg.org/multipage/tables.html#the-table-element"
+    },
+    "children": {
+      "tr": "https://html.spec.whatwg.org/multipage/tables.html#the-tr-element",
+      "script-supporting elements": "https://html.spec.whatwg.org/multipage/dom.html#script-supporting-elements-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLTableSectionElement": "https://html.spec.whatwg.org/multipage/tables.html#htmltablesectionelement"
+    }
   },
   "time": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-time-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-time-element",
     "description": "Machine-readable equivalent of date- or time-related data",
-    "categories": [
-      "flow",
-      "palpable",
-      "phrasing"
-    ],
-    "attributes": [
-      "datetime"
-    ],
-    "children": [
-      "phrasing"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "attributes": {
+      "datetime": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#attr-time-datetime"
+    },
+    "interface": {
+      "HTMLTimeElement": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#htmltimeelement"
+    }
   },
   "title": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-title-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/semantics.html#the-title-element",
     "description": "Document title",
-    "categories": [
-      "metadata"
-    ],
-    "attributes": [],
-    "children": [
-      "text"
-    ]
+    "categories": {
+      "metadata": "https://html.spec.whatwg.org/multipage/dom.html#metadata-content-2"
+    },
+    "parents": {
+      "head": "https://html.spec.whatwg.org/multipage/semantics.html#the-head-element"
+    },
+    "children": {
+      "text": "https://html.spec.whatwg.org/multipage/dom.html#text-content"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLTitleElement": "https://html.spec.whatwg.org/multipage/semantics.html#htmltitleelement"
+    }
   },
   "tr": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-tr-element-7",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/tables.html#the-tr-element",
     "description": "Table row",
-    "categories": [
-      "none"
-    ],
-    "attributes": [],
-    "children": [
-      "script-supporting elements",
-      "td",
-      "th"
-    ]
+    "categories": {},
+    "parents": {
+      "table": "https://html.spec.whatwg.org/multipage/tables.html#the-table-element",
+      "thead": "https://html.spec.whatwg.org/multipage/tables.html#the-thead-element",
+      "tbody": "https://html.spec.whatwg.org/multipage/tables.html#the-tbody-element",
+      "tfoot": "https://html.spec.whatwg.org/multipage/tables.html#the-tfoot-element"
+    },
+    "children": {
+      "th": "https://html.spec.whatwg.org/multipage/tables.html#the-th-element",
+      "td": "https://html.spec.whatwg.org/multipage/tables.html#the-td-element",
+      "script-supporting elements": "https://html.spec.whatwg.org/multipage/dom.html#script-supporting-elements-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLTableRowElement": "https://html.spec.whatwg.org/multipage/tables.html#htmltablerowelement"
+    }
   },
   "track": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-track-element-2",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/media.html#the-track-element",
     "description": "Timed text track",
-    "categories": [
-      "none"
-    ],
-    "attributes": [
-      "default",
-      "kind",
-      "label",
-      "src",
-      "srclang"
-    ],
-    "children": []
+    "categories": {},
+    "parents": {
+      "audio": "https://html.spec.whatwg.org/multipage/media.html#the-audio-element",
+      "video": "https://html.spec.whatwg.org/multipage/media.html#the-video-element"
+    },
+    "children": {},
+    "attributes": {
+      "default": "https://html.spec.whatwg.org/multipage/media.html#attr-track-default",
+      "kind": "https://html.spec.whatwg.org/multipage/media.html#attr-track-kind",
+      "label": "https://html.spec.whatwg.org/multipage/media.html#attr-track-label",
+      "src": "https://html.spec.whatwg.org/multipage/media.html#attr-track-src",
+      "srclang": "https://html.spec.whatwg.org/multipage/media.html#attr-track-srclang"
+    },
+    "interface": {
+      "HTMLTrackElement": "https://html.spec.whatwg.org/multipage/media.html#htmltrackelement"
+    }
   },
   "u": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-u-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-u-element",
     "description": "Unarticulated annotation",
-    "categories": [
-      "flow",
-      "palpable",
-      "phrasing"
-    ],
-    "attributes": [],
-    "children": [
-      "phrasing"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLElement": "https://html.spec.whatwg.org/multipage/dom.html#htmlelement"
+    }
   },
   "ul": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-ul-element-2",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-ul-element",
     "description": "List",
-    "categories": [
-      "flow",
-      "palpable"
-    ],
-    "attributes": [],
-    "children": [
-      "li",
-      "script-supporting elements"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2"
+    },
+    "children": {
+      "li": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-li-element",
+      "script-supporting elements": "https://html.spec.whatwg.org/multipage/dom.html#script-supporting-elements-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLUListElement": "https://html.spec.whatwg.org/multipage/grouping-content.html#htmlulistelement"
+    }
   },
   "var": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-var-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-var-element",
     "description": "Variable",
-    "categories": [
-      "flow",
-      "palpable",
-      "phrasing"
-    ],
-    "attributes": [],
-    "children": [
-      "phrasing"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "attributes": {},
+    "interface": {
+      "HTMLElement": "https://html.spec.whatwg.org/multipage/dom.html#htmlelement"
+    }
   },
   "video": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-video-element-4",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/media.html#the-video-element",
     "description": "Video player",
-    "categories": [
-      "embedded",
-      "flow",
-      "interactive",
-      "palpable",
-      "phrasing"
-    ],
-    "attributes": [
-      "autoplay",
-      "controls",
-      "crossorigin",
-      "height",
-      "loading",
-      "loop",
-      "muted",
-      "playsinline",
-      "poster",
-      "preload",
-      "src",
-      "width"
-    ],
-    "children": [
-      "source",
-      "track",
-      "transparent"
-    ]
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2",
+      "embedded": "https://html.spec.whatwg.org/multipage/dom.html#embedded-content-category",
+      "interactive": "https://html.spec.whatwg.org/multipage/dom.html#interactive-content-2",
+      "palpable": "https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {
+      "source": "https://html.spec.whatwg.org/multipage/embedded-content.html#the-source-element",
+      "track": "https://html.spec.whatwg.org/multipage/media.html#the-track-element",
+      "transparent": "https://html.spec.whatwg.org/multipage/dom.html#transparent"
+    },
+    "attributes": {
+      "src": "https://html.spec.whatwg.org/multipage/media.html#attr-media-src",
+      "crossorigin": "https://html.spec.whatwg.org/multipage/media.html#attr-media-crossorigin",
+      "poster": "https://html.spec.whatwg.org/multipage/media.html#attr-video-poster",
+      "preload": "https://html.spec.whatwg.org/multipage/media.html#attr-media-preload",
+      "autoplay": "https://html.spec.whatwg.org/multipage/media.html#attr-media-autoplay",
+      "playsinline": "https://html.spec.whatwg.org/multipage/media.html#attr-video-playsinline",
+      "loading": "https://html.spec.whatwg.org/multipage/media.html#attr-media-loading",
+      "loop": "https://html.spec.whatwg.org/multipage/media.html#attr-media-loop",
+      "muted": "https://html.spec.whatwg.org/multipage/media.html#attr-media-muted",
+      "controls": "https://html.spec.whatwg.org/multipage/media.html#attr-media-controls",
+      "width": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width",
+      "height": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height"
+    },
+    "interface": {
+      "HTMLVideoElement": "https://html.spec.whatwg.org/multipage/media.html#htmlvideoelement"
+    }
   },
   "wbr": {
+    "summary_url": "https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-wbr-element",
+    "semantics_url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-wbr-element",
     "description": "Line breaking opportunity",
-    "categories": [
-      "flow",
-      "phrasing"
-    ],
-    "attributes": [],
-    "children": []
+    "categories": {
+      "flow": "https://html.spec.whatwg.org/multipage/dom.html#flow-content-2",
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "parents": {
+      "phrasing": "https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2"
+    },
+    "children": {},
+    "attributes": {},
+    "interface": {
+      "HTMLElement": "https://html.spec.whatwg.org/multipage/dom.html#htmlelement"
+    }
   }
 }

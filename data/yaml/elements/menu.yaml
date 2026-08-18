@@ -1,8 +1,14 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-menu-element-2
+semantics_url: https://html.spec.whatwg.org/multipage/grouping-content.html#the-menu-element
 description: Menu of commands
 categories:
-- flow
-- palpable
-attributes: []
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+  palpable: https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2
+parents:
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
 children:
-- li
-- script-supporting elements
+  li: https://html.spec.whatwg.org/multipage/grouping-content.html#the-li-element
+  script-supporting elements: https://html.spec.whatwg.org/multipage/dom.html#script-supporting-elements-2
+attributes: {}
+interface:
+  HTMLMenuElement: https://html.spec.whatwg.org/multipage/grouping-content.html#htmlmenuelement

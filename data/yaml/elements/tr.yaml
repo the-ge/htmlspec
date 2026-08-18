@@ -1,8 +1,16 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-tr-element-7
+semantics_url: https://html.spec.whatwg.org/multipage/tables.html#the-tr-element
 description: Table row
-categories:
-- none
-attributes: []
+categories: {}
+parents:
+  table: https://html.spec.whatwg.org/multipage/tables.html#the-table-element
+  thead: https://html.spec.whatwg.org/multipage/tables.html#the-thead-element
+  tbody: https://html.spec.whatwg.org/multipage/tables.html#the-tbody-element
+  tfoot: https://html.spec.whatwg.org/multipage/tables.html#the-tfoot-element
 children:
-- script-supporting elements
-- td
-- th
+  th: https://html.spec.whatwg.org/multipage/tables.html#the-th-element
+  td: https://html.spec.whatwg.org/multipage/tables.html#the-td-element
+  script-supporting elements: https://html.spec.whatwg.org/multipage/dom.html#script-supporting-elements-2
+attributes: {}
+interface:
+  HTMLTableRowElement: https://html.spec.whatwg.org/multipage/tables.html#htmltablerowelement

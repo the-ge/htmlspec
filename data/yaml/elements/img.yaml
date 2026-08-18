@@ -1,24 +1,31 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-img-element
+semantics_url: https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element
 description: Image
 categories:
-- embedded
-- flow
-- form-associated
-- interactive
-- palpable
-- phrasing
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+  embedded: https://html.spec.whatwg.org/multipage/dom.html#embedded-content-category
+  interactive: https://html.spec.whatwg.org/multipage/dom.html#interactive-content-2
+  form-associated: https://html.spec.whatwg.org/multipage/forms.html#form-associated-element
+  palpable: https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2
+parents:
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+  picture: https://html.spec.whatwg.org/multipage/embedded-content.html#the-picture-element
+children: {}
 attributes:
-- alt
-- controls
-- crossorigin
-- decoding
-- fetchpriority
-- height
-- ismap
-- loading
-- referrerpolicy
-- sizes
-- src
-- srcset
-- usemap
-- width
-children: []
+  alt: https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-alt
+  src: https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-src
+  srcset: https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-srcset
+  sizes: https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-sizes
+  crossorigin: https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-crossorigin
+  usemap: https://html.spec.whatwg.org/multipage/image-maps.html#attr-hyperlink-usemap
+  ismap: https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-ismap
+  controls: https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-controls
+  width: https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width
+  height: https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height
+  referrerpolicy: https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-referrerpolicy
+  decoding: https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-decoding
+  loading: https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-loading
+  fetchpriority: https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-fetchpriority
+interface:
+  HTMLImageElement: https://html.spec.whatwg.org/multipage/embedded-content.html#htmlimageelement

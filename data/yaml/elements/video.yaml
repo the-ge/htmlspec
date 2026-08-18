@@ -1,24 +1,30 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-video-element-4
+semantics_url: https://html.spec.whatwg.org/multipage/media.html#the-video-element
 description: Video player
 categories:
-- embedded
-- flow
-- interactive
-- palpable
-- phrasing
-attributes:
-- autoplay
-- controls
-- crossorigin
-- height
-- loading
-- loop
-- muted
-- playsinline
-- poster
-- preload
-- src
-- width
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+  embedded: https://html.spec.whatwg.org/multipage/dom.html#embedded-content-category
+  interactive: https://html.spec.whatwg.org/multipage/dom.html#interactive-content-2
+  palpable: https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2
+parents:
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
 children:
-- source
-- track
-- transparent
+  source: https://html.spec.whatwg.org/multipage/embedded-content.html#the-source-element
+  track: https://html.spec.whatwg.org/multipage/media.html#the-track-element
+  transparent: https://html.spec.whatwg.org/multipage/dom.html#transparent
+attributes:
+  src: https://html.spec.whatwg.org/multipage/media.html#attr-media-src
+  crossorigin: https://html.spec.whatwg.org/multipage/media.html#attr-media-crossorigin
+  poster: https://html.spec.whatwg.org/multipage/media.html#attr-video-poster
+  preload: https://html.spec.whatwg.org/multipage/media.html#attr-media-preload
+  autoplay: https://html.spec.whatwg.org/multipage/media.html#attr-media-autoplay
+  playsinline: https://html.spec.whatwg.org/multipage/media.html#attr-video-playsinline
+  loading: https://html.spec.whatwg.org/multipage/media.html#attr-media-loading
+  loop: https://html.spec.whatwg.org/multipage/media.html#attr-media-loop
+  muted: https://html.spec.whatwg.org/multipage/media.html#attr-media-muted
+  controls: https://html.spec.whatwg.org/multipage/media.html#attr-media-controls
+  width: https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width
+  height: https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height
+interface:
+  HTMLVideoElement: https://html.spec.whatwg.org/multipage/media.html#htmlvideoelement

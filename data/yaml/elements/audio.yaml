@@ -1,20 +1,26 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-audio-element
+semantics_url: https://html.spec.whatwg.org/multipage/media.html#the-audio-element
 description: Audio player
 categories:
-- embedded
-- flow
-- interactive
-- palpable
-- phrasing
-attributes:
-- autoplay
-- controls
-- crossorigin
-- loading
-- loop
-- muted
-- preload
-- src
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+  embedded: https://html.spec.whatwg.org/multipage/dom.html#embedded-content-category
+  interactive: https://html.spec.whatwg.org/multipage/dom.html#interactive-content-2
+  palpable: https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2
+parents:
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
 children:
-- source
-- track
-- transparent
+  source: https://html.spec.whatwg.org/multipage/embedded-content.html#the-source-element
+  track: https://html.spec.whatwg.org/multipage/media.html#the-track-element
+  transparent: https://html.spec.whatwg.org/multipage/dom.html#transparent
+attributes:
+  src: https://html.spec.whatwg.org/multipage/media.html#attr-media-src
+  crossorigin: https://html.spec.whatwg.org/multipage/media.html#attr-media-crossorigin
+  preload: https://html.spec.whatwg.org/multipage/media.html#attr-media-preload
+  autoplay: https://html.spec.whatwg.org/multipage/media.html#attr-media-autoplay
+  loading: https://html.spec.whatwg.org/multipage/media.html#attr-media-loading
+  loop: https://html.spec.whatwg.org/multipage/media.html#attr-media-loop
+  muted: https://html.spec.whatwg.org/multipage/media.html#attr-media-muted
+  controls: https://html.spec.whatwg.org/multipage/media.html#attr-media-controls
+interface:
+  HTMLAudioElement: https://html.spec.whatwg.org/multipage/media.html#htmlaudioelement

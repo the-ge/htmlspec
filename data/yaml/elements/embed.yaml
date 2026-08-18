@@ -1,14 +1,20 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-embed-element
+semantics_url: https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-embed-element
 description: Plugin
 categories:
-- embedded
-- flow
-- interactive
-- palpable
-- phrasing
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+  embedded: https://html.spec.whatwg.org/multipage/dom.html#embedded-content-category
+  interactive: https://html.spec.whatwg.org/multipage/dom.html#interactive-content-2
+  palpable: https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2
+parents:
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+children: {}
 attributes:
-- any
-- height
-- src
-- type
-- width
-children: []
+  src: https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-embed-src
+  type: https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-embed-type
+  width: https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width
+  height: https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height
+  any: ''
+interface:
+  HTMLEmbedElement: https://html.spec.whatwg.org/multipage/iframe-embed-object.html#htmlembedelement

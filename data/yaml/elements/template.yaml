@@ -1,14 +1,23 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-template-element-2
+semantics_url: https://html.spec.whatwg.org/multipage/scripting.html#the-template-element
 description: Template
 categories:
-- flow
-- metadata
-- phrasing
-- script-supporting
+  metadata: https://html.spec.whatwg.org/multipage/dom.html#metadata-content-2
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+  script-supporting: https://html.spec.whatwg.org/multipage/dom.html#script-supporting-elements-2
+parents:
+  metadata: https://html.spec.whatwg.org/multipage/dom.html#metadata-content-2
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+  script-supporting: https://html.spec.whatwg.org/multipage/dom.html#script-supporting-elements-2
+  colgroup: https://html.spec.whatwg.org/multipage/tables.html#the-colgroup-element
+children: {}
 attributes:
-- shadowrootclonable
-- shadowrootcustomelementregistry
-- shadowrootdelegatesfocus
-- shadowrootmode
-- shadowrootserializable
-- shadowrootslotassignment
-children: []
+  shadowrootmode: https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootmode
+  shadowrootdelegatesfocus: https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootdelegatesfocus
+  shadowrootslotassignment: https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootslotassignment
+  shadowrootclonable: https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootclonable
+  shadowrootserializable: https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootserializable
+  shadowrootcustomelementregistry: https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootcustomelementregistry
+interface:
+  HTMLTemplateElement: https://html.spec.whatwg.org/multipage/scripting.html#htmltemplateelement

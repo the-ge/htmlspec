@@ -1,7 +1,12 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-tbody-element-2
+semantics_url: https://html.spec.whatwg.org/multipage/tables.html#the-tbody-element
 description: Group of rows in a table
-categories:
-- none
-attributes: []
+categories: {}
+parents:
+  table: https://html.spec.whatwg.org/multipage/tables.html#the-table-element
 children:
-- script-supporting elements
-- tr
+  tr: https://html.spec.whatwg.org/multipage/tables.html#the-tr-element
+  script-supporting elements: https://html.spec.whatwg.org/multipage/dom.html#script-supporting-elements-2
+attributes: {}
+interface:
+  HTMLTableSectionElement: https://html.spec.whatwg.org/multipage/tables.html#htmltablesectionelement

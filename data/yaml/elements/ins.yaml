@@ -1,10 +1,16 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-ins-element
+semantics_url: https://html.spec.whatwg.org/multipage/edits.html#the-ins-element
 description: An addition to the document
 categories:
-- flow
-- palpable
-- phrasing
-attributes:
-- cite
-- datetime
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+  palpable: https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2
+parents:
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
 children:
-- transparent
+  transparent: https://html.spec.whatwg.org/multipage/dom.html#transparent
+attributes:
+  cite: https://html.spec.whatwg.org/multipage/edits.html#attr-mod-cite
+  datetime: https://html.spec.whatwg.org/multipage/edits.html#attr-mod-datetime
+interface:
+  HTMLModElement: https://html.spec.whatwg.org/multipage/edits.html#htmlmodelement

@@ -1,6 +1,12 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-br-element
+semantics_url: https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-br-element
 description: Line break, e.g. in poem or postal address
 categories:
-- flow
-- phrasing
-attributes: []
-children: []
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+parents:
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+children: {}
+attributes: {}
+interface:
+  HTMLBRElement: https://html.spec.whatwg.org/multipage/text-level-semantics.html#htmlbrelement

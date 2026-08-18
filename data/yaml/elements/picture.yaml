@@ -1,11 +1,18 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-picture-element-2
+semantics_url: https://html.spec.whatwg.org/multipage/embedded-content.html#the-picture-element
 description: Image
 categories:
-- embedded
-- flow
-- palpable
-- phrasing
-attributes: []
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+  embedded: https://html.spec.whatwg.org/multipage/dom.html#embedded-content-category
+  palpable: https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2
+parents:
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
 children:
-- one img
-- script-supporting elements
-- source
+  source: https://html.spec.whatwg.org/multipage/embedded-content.html#the-source-element
+  one: ''
+  img: https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element
+  script-supporting elements: https://html.spec.whatwg.org/multipage/dom.html#script-supporting-elements-2
+attributes: {}
+interface:
+  HTMLPictureElement: https://html.spec.whatwg.org/multipage/embedded-content.html#htmlpictureelement

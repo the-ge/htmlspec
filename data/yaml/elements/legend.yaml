@@ -1,7 +1,13 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-legend-element-4
+semantics_url: https://html.spec.whatwg.org/multipage/form-elements.html#the-legend-element
 description: Caption for fieldset
-categories:
-- none
-attributes: []
+categories: {}
+parents:
+  fieldset: https://html.spec.whatwg.org/multipage/form-elements.html#the-fieldset-element
+  optgroup: https://html.spec.whatwg.org/multipage/form-elements.html#the-optgroup-element
 children:
-- heading content
-- phrasing
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+  heading content: https://html.spec.whatwg.org/multipage/dom.html#heading-content-2
+attributes: {}
+interface:
+  HTMLLegendElement: https://html.spec.whatwg.org/multipage/form-elements.html#htmllegendelement

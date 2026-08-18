@@ -1,7 +1,13 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-footer-element
+semantics_url: https://html.spec.whatwg.org/multipage/sections.html#the-footer-element
 description: Footer for a page or section
 categories:
-- flow
-- palpable
-attributes: []
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+  palpable: https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2
+parents:
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
 children:
-- flow
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+attributes: {}
+interface:
+  HTMLElement: https://html.spec.whatwg.org/multipage/dom.html#htmlelement

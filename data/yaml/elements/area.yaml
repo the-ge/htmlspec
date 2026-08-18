@@ -1,15 +1,21 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-area-element
+semantics_url: https://html.spec.whatwg.org/multipage/image-maps.html#the-area-element
 description: Hyperlink or dead area on an image map
 categories:
-- flow
-- phrasing
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+parents:
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+children: {}
 attributes:
-- alt
-- coords
-- download
-- href
-- ping
-- referrerpolicy
-- rel
-- shape
-- target
-children: []
+  alt: https://html.spec.whatwg.org/multipage/image-maps.html#attr-area-alt
+  coords: https://html.spec.whatwg.org/multipage/image-maps.html#attr-area-coords
+  shape: https://html.spec.whatwg.org/multipage/image-maps.html#attr-area-shape
+  href: https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-href
+  target: https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-target
+  download: https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-download
+  ping: https://html.spec.whatwg.org/multipage/links.html#ping
+  rel: https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-rel
+  referrerpolicy: https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-referrerpolicy
+interface:
+  HTMLAreaElement: https://html.spec.whatwg.org/multipage/image-maps.html#htmlareaelement

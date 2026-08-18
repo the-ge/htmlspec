@@ -1,13 +1,19 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-table-element-3
+semantics_url: https://html.spec.whatwg.org/multipage/tables.html#the-table-element
 description: Table
 categories:
-- flow
-- palpable
-attributes: []
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+  palpable: https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2
+parents:
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
 children:
-- caption
-- colgroup
-- script-supporting elements
-- tbody
-- tfoot
-- thead
-- tr
+  caption: https://html.spec.whatwg.org/multipage/tables.html#the-caption-element
+  colgroup: https://html.spec.whatwg.org/multipage/tables.html#the-colgroup-element
+  thead: https://html.spec.whatwg.org/multipage/tables.html#the-thead-element
+  tbody: https://html.spec.whatwg.org/multipage/tables.html#the-tbody-element
+  tfoot: https://html.spec.whatwg.org/multipage/tables.html#the-tfoot-element
+  tr: https://html.spec.whatwg.org/multipage/tables.html#the-tr-element
+  script-supporting elements: https://html.spec.whatwg.org/multipage/dom.html#script-supporting-elements-2
+attributes: {}
+interface:
+  HTMLTableElement: https://html.spec.whatwg.org/multipage/tables.html#htmltableelement

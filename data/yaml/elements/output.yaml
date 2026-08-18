@@ -1,15 +1,21 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-output-element
+semantics_url: https://html.spec.whatwg.org/multipage/form-elements.html#the-output-element
 description: Calculated output value
 categories:
-- flow
-- form-associated
-- labelable
-- listed
-- palpable
-- phrasing
-- resettable
-attributes:
-- for
-- form
-- name
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+  listed: https://html.spec.whatwg.org/multipage/forms.html#category-listed
+  labelable: https://html.spec.whatwg.org/multipage/forms.html#category-label
+  resettable: https://html.spec.whatwg.org/multipage/forms.html#category-reset
+  form-associated: https://html.spec.whatwg.org/multipage/forms.html#form-associated-element
+  palpable: https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2
+parents:
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
 children:
-- phrasing
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+attributes:
+  for: https://html.spec.whatwg.org/multipage/form-elements.html#attr-output-for
+  form: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form
+  name: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name
+interface:
+  HTMLOutputElement: https://html.spec.whatwg.org/multipage/form-elements.html#htmloutputelement

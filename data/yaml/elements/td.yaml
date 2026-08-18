@@ -1,9 +1,14 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-td-element
+semantics_url: https://html.spec.whatwg.org/multipage/tables.html#the-td-element
 description: Table cell
-categories:
-- none
-attributes:
-- colspan
-- headers
-- rowspan
+categories: {}
+parents:
+  tr: https://html.spec.whatwg.org/multipage/tables.html#the-tr-element
 children:
-- flow
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+attributes:
+  colspan: https://html.spec.whatwg.org/multipage/tables.html#attr-tdth-colspan
+  rowspan: https://html.spec.whatwg.org/multipage/tables.html#attr-tdth-rowspan
+  headers: https://html.spec.whatwg.org/multipage/tables.html#attr-tdth-headers
+interface:
+  HTMLTableCellElement: https://html.spec.whatwg.org/multipage/tables.html#htmltablecellelement

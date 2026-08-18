@@ -1,8 +1,14 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-blockquote-element
+semantics_url: https://html.spec.whatwg.org/multipage/grouping-content.html#the-blockquote-element
 description: A section quoted from another source
 categories:
-- flow
-- palpable
-attributes:
-- cite
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+  palpable: https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2
+parents:
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
 children:
-- flow
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+attributes:
+  cite: https://html.spec.whatwg.org/multipage/grouping-content.html#attr-blockquote-cite
+interface:
+  HTMLQuoteElement: https://html.spec.whatwg.org/multipage/grouping-content.html#htmlquoteelement

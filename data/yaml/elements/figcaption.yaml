@@ -1,6 +1,11 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-figcaption-element
+semantics_url: https://html.spec.whatwg.org/multipage/grouping-content.html#the-figcaption-element
 description: Caption for figure
-categories:
-- none
-attributes: []
+categories: {}
+parents:
+  figure: https://html.spec.whatwg.org/multipage/grouping-content.html#the-figure-element
 children:
-- flow
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+attributes: {}
+interface:
+  HTMLElement: https://html.spec.whatwg.org/multipage/dom.html#htmlelement

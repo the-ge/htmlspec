@@ -1,27 +1,33 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-textarea-element
+semantics_url: https://html.spec.whatwg.org/multipage/form-elements.html#the-textarea-element
 description: Multiline text controls
 categories:
-- flow
-- form-associated
-- interactive
-- labelable
-- listed
-- palpable
-- phrasing
-- resettable
-- submittable
-attributes:
-- autocomplete
-- cols
-- dirname
-- disabled
-- form
-- maxlength
-- minlength
-- name
-- placeholder
-- readonly
-- required
-- rows
-- wrap
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+  interactive: https://html.spec.whatwg.org/multipage/dom.html#interactive-content-2
+  listed: https://html.spec.whatwg.org/multipage/forms.html#category-listed
+  labelable: https://html.spec.whatwg.org/multipage/forms.html#category-label
+  submittable: https://html.spec.whatwg.org/multipage/forms.html#category-submit
+  resettable: https://html.spec.whatwg.org/multipage/forms.html#category-reset
+  form-associated: https://html.spec.whatwg.org/multipage/forms.html#form-associated-element
+  palpable: https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2
+parents:
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
 children:
-- text
+  text: https://html.spec.whatwg.org/multipage/dom.html#text-content
+attributes:
+  autocomplete: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-autocomplete
+  cols: https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-cols
+  dirname: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-dirname
+  disabled: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled
+  form: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form
+  maxlength: https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-maxlength
+  minlength: https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-minlength
+  name: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name
+  placeholder: https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-placeholder
+  readonly: https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-readonly
+  required: https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-required
+  rows: https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-rows
+  wrap: https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-wrap
+interface:
+  HTMLTextAreaElement: https://html.spec.whatwg.org/multipage/form-elements.html#htmltextareaelement

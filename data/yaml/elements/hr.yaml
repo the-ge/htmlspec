@@ -1,5 +1,12 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-hr-element
+semantics_url: https://html.spec.whatwg.org/multipage/grouping-content.html#the-hr-element
 description: Thematic break
 categories:
-- flow
-attributes: []
-children: []
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+parents:
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+  select: https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element
+children: {}
+attributes: {}
+interface:
+  HTMLHRElement: https://html.spec.whatwg.org/multipage/grouping-content.html#htmlhrelement

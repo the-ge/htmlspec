@@ -1,13 +1,19 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-fieldset-element
+semantics_url: https://html.spec.whatwg.org/multipage/form-elements.html#the-fieldset-element
 description: Group of form controls
 categories:
-- flow
-- form-associated
-- listed
-- palpable
-attributes:
-- disabled
-- form
-- name
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+  listed: https://html.spec.whatwg.org/multipage/forms.html#category-listed
+  form-associated: https://html.spec.whatwg.org/multipage/forms.html#form-associated-element
+  palpable: https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2
+parents:
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
 children:
-- flow
-- legend
+  legend: https://html.spec.whatwg.org/multipage/form-elements.html#the-legend-element
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+attributes:
+  disabled: https://html.spec.whatwg.org/multipage/form-elements.html#attr-fieldset-disabled
+  form: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form
+  name: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name
+interface:
+  HTMLFieldSetElement: https://html.spec.whatwg.org/multipage/form-elements.html#htmlfieldsetelement

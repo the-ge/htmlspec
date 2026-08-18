@@ -1,23 +1,31 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-link-element
+semantics_url: https://html.spec.whatwg.org/multipage/semantics.html#the-link-element
 description: Link metadata
 categories:
-- flow
-- metadata
-- phrasing
+  metadata: https://html.spec.whatwg.org/multipage/dom.html#metadata-content-2
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+parents:
+  head: https://html.spec.whatwg.org/multipage/semantics.html#the-head-element
+  noscript: https://html.spec.whatwg.org/multipage/scripting.html#the-noscript-element
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+children: {}
 attributes:
-- as
-- blocking
-- color
-- crossorigin
-- disabled
-- fetchpriority
-- href
-- hreflang
-- imagesizes
-- imagesrcset
-- integrity
-- media
-- referrerpolicy
-- rel
-- sizes
-- type
-children: []
+  href: https://html.spec.whatwg.org/multipage/semantics.html#attr-link-href
+  crossorigin: https://html.spec.whatwg.org/multipage/semantics.html#attr-link-crossorigin
+  rel: https://html.spec.whatwg.org/multipage/semantics.html#attr-link-rel
+  as: https://html.spec.whatwg.org/multipage/semantics.html#attr-link-as
+  media: https://html.spec.whatwg.org/multipage/semantics.html#attr-link-media
+  hreflang: https://html.spec.whatwg.org/multipage/semantics.html#attr-link-hreflang
+  type: https://html.spec.whatwg.org/multipage/semantics.html#attr-link-type
+  sizes: https://html.spec.whatwg.org/multipage/semantics.html#attr-link-sizes
+  imagesrcset: https://html.spec.whatwg.org/multipage/semantics.html#attr-link-imagesrcset
+  imagesizes: https://html.spec.whatwg.org/multipage/semantics.html#attr-link-imagesizes
+  referrerpolicy: https://html.spec.whatwg.org/multipage/semantics.html#attr-link-referrerpolicy
+  integrity: https://html.spec.whatwg.org/multipage/semantics.html#attr-link-integrity
+  blocking: https://html.spec.whatwg.org/multipage/semantics.html#attr-link-blocking
+  color: https://html.spec.whatwg.org/multipage/semantics.html#attr-link-color
+  disabled: https://html.spec.whatwg.org/multipage/semantics.html#attr-link-disabled
+  fetchpriority: https://html.spec.whatwg.org/multipage/semantics.html#attr-link-fetchpriority
+interface:
+  HTMLLinkElement: https://html.spec.whatwg.org/multipage/semantics.html#htmllinkelement

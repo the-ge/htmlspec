@@ -1,7 +1,13 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-base-element
+semantics_url: https://html.spec.whatwg.org/multipage/semantics.html#the-base-element
 description: Base URL and default target navigable for hyperlinks and forms
 categories:
-- metadata
+  metadata: https://html.spec.whatwg.org/multipage/dom.html#metadata-content-2
+parents:
+  head: https://html.spec.whatwg.org/multipage/semantics.html#the-head-element
+children: {}
 attributes:
-- href
-- target
-children: []
+  href: https://html.spec.whatwg.org/multipage/semantics.html#attr-base-href
+  target: https://html.spec.whatwg.org/multipage/semantics.html#attr-base-target
+interface:
+  HTMLBaseElement: https://html.spec.whatwg.org/multipage/semantics.html#htmlbaseelement

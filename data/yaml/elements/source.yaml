@@ -1,12 +1,19 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-source-element-3
+semantics_url: https://html.spec.whatwg.org/multipage/embedded-content.html#the-source-element
 description: Image source for img or media source for video or audio
-categories:
-- none
+categories: {}
+parents:
+  picture: https://html.spec.whatwg.org/multipage/embedded-content.html#the-picture-element
+  video: https://html.spec.whatwg.org/multipage/media.html#the-video-element
+  audio: https://html.spec.whatwg.org/multipage/media.html#the-audio-element
+children: {}
 attributes:
-- height
-- media
-- sizes
-- src
-- srcset
-- type
-- width
-children: []
+  type: https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-type
+  media: https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-media
+  src: https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-src
+  srcset: https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-srcset
+  sizes: https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-sizes
+  width: https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width
+  height: https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height
+interface:
+  HTMLSourceElement: https://html.spec.whatwg.org/multipage/embedded-content.html#htmlsourceelement

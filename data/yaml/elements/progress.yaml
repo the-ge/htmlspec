@@ -1,11 +1,17 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-progress-element
+semantics_url: https://html.spec.whatwg.org/multipage/form-elements.html#the-progress-element
 description: Progress bar
 categories:
-- flow
-- labelable
-- palpable
-- phrasing
-attributes:
-- max
-- value
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+  labelable: https://html.spec.whatwg.org/multipage/forms.html#category-label
+  palpable: https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2
+parents:
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
 children:
-- phrasing
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+attributes:
+  value: https://html.spec.whatwg.org/multipage/form-elements.html#attr-progress-value
+  max: https://html.spec.whatwg.org/multipage/form-elements.html#attr-progress-max
+interface:
+  HTMLProgressElement: https://html.spec.whatwg.org/multipage/form-elements.html#htmlprogresselement

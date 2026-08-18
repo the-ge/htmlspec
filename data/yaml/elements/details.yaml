@@ -1,11 +1,17 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-details-element
+semantics_url: https://html.spec.whatwg.org/multipage/interactive-elements.html#the-details-element
 description: Disclosure control for hiding details
 categories:
-- flow
-- interactive
-- palpable
-attributes:
-- name
-- open
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+  interactive: https://html.spec.whatwg.org/multipage/dom.html#interactive-content-2
+  palpable: https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2
+parents:
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
 children:
-- flow
-- summary
+  summary: https://html.spec.whatwg.org/multipage/interactive-elements.html#the-summary-element
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+attributes:
+  name: https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-details-name
+  open: https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-details-open
+interface:
+  HTMLDetailsElement: https://html.spec.whatwg.org/multipage/interactive-elements.html#htmldetailselement

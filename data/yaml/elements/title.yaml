@@ -1,6 +1,12 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-title-element
+semantics_url: https://html.spec.whatwg.org/multipage/semantics.html#the-title-element
 description: Document title
 categories:
-- metadata
-attributes: []
+  metadata: https://html.spec.whatwg.org/multipage/dom.html#metadata-content-2
+parents:
+  head: https://html.spec.whatwg.org/multipage/semantics.html#the-head-element
 children:
-- text
+  text: https://html.spec.whatwg.org/multipage/dom.html#text-content
+attributes: {}
+interface:
+  HTMLTitleElement: https://html.spec.whatwg.org/multipage/semantics.html#htmltitleelement

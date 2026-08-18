@@ -1,10 +1,18 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:svg-svg
+semantics_url: https://w3c.github.io/svgwg/svg2-draft/struct.html#elementdef-svg
 description: SVG root
 categories:
-- embedded
-- flow
-- palpable
-- phrasing
-attributes:
-- per [SVG]
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+  embedded: https://html.spec.whatwg.org/multipage/dom.html#embedded-content-category
+  palpable: https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2
+parents:
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
 children:
-- per [SVG]
+  per: ''
+  '[SVG]': https://html.spec.whatwg.org/multipage/references.html#refsSVG
+attributes:
+  per: ''
+  '[SVG]': https://html.spec.whatwg.org/multipage/references.html#refsSVG
+interface:
+  SVGSVGElement: https://svgwg.org/svg2-draft/struct.html#InterfaceSVGSVGElement

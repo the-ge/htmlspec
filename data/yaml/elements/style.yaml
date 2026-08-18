@@ -1,8 +1,14 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-style-element
+semantics_url: https://html.spec.whatwg.org/multipage/semantics.html#the-style-element
 description: Embedded styling information
 categories:
-- metadata
+  metadata: https://html.spec.whatwg.org/multipage/dom.html#metadata-content-2
+parents:
+  head: https://html.spec.whatwg.org/multipage/semantics.html#the-head-element
+  noscript: https://html.spec.whatwg.org/multipage/scripting.html#the-noscript-element
+children: {}
 attributes:
-- blocking
-- media
-children:
-- text
+  media: https://html.spec.whatwg.org/multipage/semantics.html#attr-style-media
+  blocking: https://html.spec.whatwg.org/multipage/semantics.html#attr-style-blocking
+interface:
+  HTMLStyleElement: https://html.spec.whatwg.org/multipage/semantics.html#htmlstyleelement

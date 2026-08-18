@@ -1,8 +1,16 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-noscript-element-3
+semantics_url: https://html.spec.whatwg.org/multipage/scripting.html#the-noscript-element
 description: Fallback content for script
 categories:
-- flow
-- metadata
-- phrasing
-attributes: []
-children:
-- varies
+  metadata: https://html.spec.whatwg.org/multipage/dom.html#metadata-content-2
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+parents:
+  head: https://html.spec.whatwg.org/multipage/semantics.html#the-head-element
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+  select: https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element
+  optgroup: https://html.spec.whatwg.org/multipage/form-elements.html#the-optgroup-element
+children: {}
+attributes: {}
+interface:
+  HTMLElement: https://html.spec.whatwg.org/multipage/dom.html#htmlelement

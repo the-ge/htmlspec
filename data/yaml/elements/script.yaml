@@ -1,19 +1,26 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-script-element
+semantics_url: https://html.spec.whatwg.org/multipage/scripting.html#the-script-element
 description: Embedded script
 categories:
-- flow
-- metadata
-- phrasing
-- script-supporting
+  metadata: https://html.spec.whatwg.org/multipage/dom.html#metadata-content-2
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+  script-supporting: https://html.spec.whatwg.org/multipage/dom.html#script-supporting-elements-2
+parents:
+  head: https://html.spec.whatwg.org/multipage/semantics.html#the-head-element
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+  script-supporting: https://html.spec.whatwg.org/multipage/dom.html#script-supporting-elements-2
+children: {}
 attributes:
-- async
-- blocking
-- crossorigin
-- defer
-- fetchpriority
-- integrity
-- nomodule
-- referrerpolicy
-- src
-- type
-children:
-- script, data, or script documentation
+  src: https://html.spec.whatwg.org/multipage/scripting.html#attr-script-src
+  type: https://html.spec.whatwg.org/multipage/scripting.html#attr-script-type
+  nomodule: https://html.spec.whatwg.org/multipage/scripting.html#attr-script-nomodule
+  async: https://html.spec.whatwg.org/multipage/scripting.html#attr-script-async
+  defer: https://html.spec.whatwg.org/multipage/scripting.html#attr-script-defer
+  crossorigin: https://html.spec.whatwg.org/multipage/scripting.html#attr-script-crossorigin
+  integrity: https://html.spec.whatwg.org/multipage/scripting.html#attr-script-integrity
+  referrerpolicy: https://html.spec.whatwg.org/multipage/scripting.html#attr-script-referrerpolicy
+  blocking: https://html.spec.whatwg.org/multipage/scripting.html#attr-script-blocking
+  fetchpriority: https://html.spec.whatwg.org/multipage/scripting.html#attr-script-fetchpriority
+interface:
+  HTMLScriptElement: https://html.spec.whatwg.org/multipage/scripting.html#htmlscriptelement

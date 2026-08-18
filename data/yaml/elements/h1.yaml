@@ -1,8 +1,16 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-h1,-h2,-h3,-h4,-h5,-and-h6-elements
+semantics_url: https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements
 description: Heading
 categories:
-- flow
-- heading
-- palpable
-attributes: []
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+  heading: https://html.spec.whatwg.org/multipage/dom.html#heading-content-2
+  palpable: https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2
+parents:
+  legend: https://html.spec.whatwg.org/multipage/form-elements.html#the-legend-element
+  summary: https://html.spec.whatwg.org/multipage/interactive-elements.html#the-summary-element
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
 children:
-- phrasing
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+attributes: {}
+interface:
+  HTMLHeadingElement: https://html.spec.whatwg.org/multipage/sections.html#htmlheadingelement

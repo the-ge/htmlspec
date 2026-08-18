@@ -1,17 +1,23 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-a-element
+semantics_url: https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-a-element
 description: Hyperlink
 categories:
-- flow
-- interactive
-- palpable
-- phrasing
-attributes:
-- download
-- href
-- hreflang
-- ping
-- referrerpolicy
-- rel
-- target
-- type
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+  interactive: https://html.spec.whatwg.org/multipage/dom.html#interactive-content-2
+  palpable: https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2
+parents:
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
 children:
-- transparent
+  transparent: https://html.spec.whatwg.org/multipage/dom.html#transparent
+attributes:
+  href: https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-href
+  target: https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-target
+  download: https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-download
+  ping: https://html.spec.whatwg.org/multipage/links.html#ping
+  rel: https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-rel
+  hreflang: https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-hreflang
+  type: https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-type
+  referrerpolicy: https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-referrerpolicy
+interface:
+  HTMLAnchorElement: https://html.spec.whatwg.org/multipage/text-level-semantics.html#htmlanchorelement

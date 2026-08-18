@@ -1,12 +1,18 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-optgroup-element-4
+semantics_url: https://html.spec.whatwg.org/multipage/form-elements.html#the-optgroup-element
 description: Group of options in a list box
-categories:
-- none
-attributes:
-- disabled
-- label
+categories: {}
+parents:
+  select: https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element
+  div: https://html.spec.whatwg.org/multipage/grouping-content.html#the-div-element
 children:
-- div
-- legend
-- noscript
-- option
-- script-supporting elements
+  option: https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element
+  script-supporting elements: https://html.spec.whatwg.org/multipage/dom.html#script-supporting-elements-2
+  noscript: https://html.spec.whatwg.org/multipage/scripting.html#the-noscript-element
+  div: https://html.spec.whatwg.org/multipage/grouping-content.html#the-div-element
+  legend: https://html.spec.whatwg.org/multipage/form-elements.html#the-legend-element
+attributes:
+  disabled: https://html.spec.whatwg.org/multipage/form-elements.html#attr-optgroup-disabled
+  label: https://html.spec.whatwg.org/multipage/form-elements.html#attr-optgroup-label
+interface:
+  HTMLOptGroupElement: https://html.spec.whatwg.org/multipage/form-elements.html#htmloptgroupelement

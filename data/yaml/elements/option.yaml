@@ -1,12 +1,20 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-option-element-4
+semantics_url: https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element
 description: Option in a list box or combo box control
-categories:
-- none
-attributes:
-- disabled
-- label
-- selected
-- value
+categories: {}
+parents:
+  select: https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element
+  datalist: https://html.spec.whatwg.org/multipage/form-elements.html#the-datalist-element
+  optgroup: https://html.spec.whatwg.org/multipage/form-elements.html#the-optgroup-element
+  div: https://html.spec.whatwg.org/multipage/grouping-content.html#the-div-element
 children:
-- div
-- phrasing
-- text
+  text: https://html.spec.whatwg.org/multipage/dom.html#text-content
+  div: https://html.spec.whatwg.org/multipage/grouping-content.html#the-div-element
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+attributes:
+  disabled: https://html.spec.whatwg.org/multipage/form-elements.html#attr-option-disabled
+  label: https://html.spec.whatwg.org/multipage/form-elements.html#attr-option-label
+  selected: https://html.spec.whatwg.org/multipage/form-elements.html#attr-option-selected
+  value: https://html.spec.whatwg.org/multipage/form-elements.html#attr-option-value
+interface:
+  HTMLOptionElement: https://html.spec.whatwg.org/multipage/form-elements.html#htmloptionelement

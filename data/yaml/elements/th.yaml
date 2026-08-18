@@ -1,11 +1,17 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-th-element
+semantics_url: https://html.spec.whatwg.org/multipage/tables.html#the-th-element
 description: Table header cell
 categories:
-- interactive
-attributes:
-- abbr
-- colspan
-- headers
-- rowspan
-- scope
+  interactive: https://html.spec.whatwg.org/multipage/dom.html#interactive-content-2
+parents:
+  tr: https://html.spec.whatwg.org/multipage/tables.html#the-tr-element
 children:
-- flow
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+attributes:
+  colspan: https://html.spec.whatwg.org/multipage/tables.html#attr-tdth-colspan
+  rowspan: https://html.spec.whatwg.org/multipage/tables.html#attr-tdth-rowspan
+  headers: https://html.spec.whatwg.org/multipage/tables.html#attr-tdth-headers
+  scope: https://html.spec.whatwg.org/multipage/tables.html#attr-th-scope
+  abbr: https://html.spec.whatwg.org/multipage/tables.html#attr-th-abbr
+interface:
+  HTMLTableCellElement: https://html.spec.whatwg.org/multipage/tables.html#htmltablecellelement

@@ -1,27 +1,34 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-button-element
+semantics_url: https://html.spec.whatwg.org/multipage/form-elements.html#the-button-element
 description: Button control
 categories:
-- flow
-- form-associated
-- interactive
-- labelable
-- listed
-- palpable
-- phrasing
-- submittable
-attributes:
-- command
-- commandfor
-- disabled
-- form
-- formaction
-- formenctype
-- formmethod
-- formnovalidate
-- formtarget
-- name
-- popovertarget
-- popovertargetaction
-- type
-- value
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+  interactive: https://html.spec.whatwg.org/multipage/dom.html#interactive-content-2
+  listed: https://html.spec.whatwg.org/multipage/forms.html#category-listed
+  labelable: https://html.spec.whatwg.org/multipage/forms.html#category-label
+  submittable: https://html.spec.whatwg.org/multipage/forms.html#category-submit
+  form-associated: https://html.spec.whatwg.org/multipage/forms.html#form-associated-element
+  palpable: https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2
+parents:
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+  select: https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element
 children:
-- phrasing
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+attributes:
+  command: https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command
+  commandfor: https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-commandfor
+  disabled: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled
+  form: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form
+  formaction: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formaction
+  formenctype: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formenctype
+  formmethod: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formmethod
+  formnovalidate: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formnovalidate
+  formtarget: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formtarget
+  name: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name
+  popovertarget: https://html.spec.whatwg.org/multipage/popover.html#attr-popovertarget
+  popovertargetaction: https://html.spec.whatwg.org/multipage/popover.html#attr-popovertargetaction
+  type: https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-type
+  value: https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-value
+interface:
+  HTMLButtonElement: https://html.spec.whatwg.org/multipage/form-elements.html#htmlbuttonelement

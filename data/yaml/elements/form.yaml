@@ -1,16 +1,22 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-form-element
+semantics_url: https://html.spec.whatwg.org/multipage/forms.html#the-form-element
 description: User-submittable form
 categories:
-- flow
-- palpable
-attributes:
-- accept-charset
-- action
-- autocomplete
-- enctype
-- method
-- name
-- novalidate
-- rel
-- target
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+  palpable: https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2
+parents:
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
 children:
-- flow
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+attributes:
+  accept-charset: https://html.spec.whatwg.org/multipage/forms.html#attr-form-accept-charset
+  action: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-action
+  autocomplete: https://html.spec.whatwg.org/multipage/forms.html#attr-form-autocomplete
+  enctype: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-enctype
+  method: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-method
+  name: https://html.spec.whatwg.org/multipage/forms.html#attr-form-name
+  novalidate: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-novalidate
+  rel: https://html.spec.whatwg.org/multipage/forms.html#attr-form-rel
+  target: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-target
+interface:
+  HTMLFormElement: https://html.spec.whatwg.org/multipage/forms.html#htmlformelement

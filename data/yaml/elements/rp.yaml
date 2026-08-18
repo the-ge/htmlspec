@@ -1,6 +1,11 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-rp-element
+semantics_url: https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-rp-element
 description: Parenthesis for ruby annotation text
-categories:
-- none
-attributes: []
+categories: {}
+parents:
+  ruby: https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-ruby-element
 children:
-- text
+  text: https://html.spec.whatwg.org/multipage/dom.html#text-content
+attributes: {}
+interface:
+  HTMLElement: https://html.spec.whatwg.org/multipage/dom.html#htmlelement

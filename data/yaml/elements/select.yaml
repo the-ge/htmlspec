@@ -1,27 +1,33 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-select-element-7
+semantics_url: https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element
 description: List box control
 categories:
-- flow
-- form-associated
-- interactive
-- labelable
-- listed
-- palpable
-- phrasing
-- resettable
-- submittable
-attributes:
-- autocomplete
-- disabled
-- form
-- multiple
-- name
-- required
-- size
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+  interactive: https://html.spec.whatwg.org/multipage/dom.html#interactive-content-2
+  listed: https://html.spec.whatwg.org/multipage/forms.html#category-listed
+  labelable: https://html.spec.whatwg.org/multipage/forms.html#category-label
+  submittable: https://html.spec.whatwg.org/multipage/forms.html#category-submit
+  resettable: https://html.spec.whatwg.org/multipage/forms.html#category-reset
+  form-associated: https://html.spec.whatwg.org/multipage/forms.html#form-associated-element
+  palpable: https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2
+parents:
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
 children:
-- button
-- div
-- hr
-- noscript
-- optgroup
-- option
-- script-supporting elements
+  option: https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element
+  optgroup: https://html.spec.whatwg.org/multipage/form-elements.html#the-optgroup-element
+  hr: https://html.spec.whatwg.org/multipage/grouping-content.html#the-hr-element
+  script-supporting elements: https://html.spec.whatwg.org/multipage/dom.html#script-supporting-elements-2
+  noscript: https://html.spec.whatwg.org/multipage/scripting.html#the-noscript-element
+  div: https://html.spec.whatwg.org/multipage/grouping-content.html#the-div-element
+  button: https://html.spec.whatwg.org/multipage/form-elements.html#the-button-element
+attributes:
+  autocomplete: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-autocomplete
+  disabled: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled
+  form: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form
+  multiple: https://html.spec.whatwg.org/multipage/form-elements.html#attr-select-multiple
+  name: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name
+  required: https://html.spec.whatwg.org/multipage/form-elements.html#attr-select-required
+  size: https://html.spec.whatwg.org/multipage/form-elements.html#attr-select-size
+interface:
+  HTMLSelectElement: https://html.spec.whatwg.org/multipage/form-elements.html#htmlselectelement

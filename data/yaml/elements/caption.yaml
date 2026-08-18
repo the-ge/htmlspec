@@ -1,6 +1,11 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-caption-element
+semantics_url: https://html.spec.whatwg.org/multipage/tables.html#the-caption-element
 description: Table caption
-categories:
-- none
-attributes: []
+categories: {}
+parents:
+  table: https://html.spec.whatwg.org/multipage/tables.html#the-table-element
 children:
-- flow
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+attributes: {}
+interface:
+  HTMLTableCaptionElement: https://html.spec.whatwg.org/multipage/tables.html#htmltablecaptionelement

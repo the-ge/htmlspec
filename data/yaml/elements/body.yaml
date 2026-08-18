@@ -1,24 +1,29 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-body-element
+semantics_url: https://html.spec.whatwg.org/multipage/sections.html#the-body-element
 description: Document body
-categories:
-- none
-attributes:
-- onafterprint
-- onbeforeprint
-- onbeforeunload
-- onhashchange
-- onlanguagechange
-- onmessage
-- onmessageerror
-- onoffline
-- ononline
-- onpagehide
-- onpagereveal
-- onpageshow
-- onpageswap
-- onpopstate
-- onrejectionhandled
-- onstorage
-- onunhandledrejection
-- onunload
+categories: {}
+parents:
+  html: https://html.spec.whatwg.org/multipage/semantics.html#the-html-element
 children:
-- flow
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+attributes:
+  onafterprint: https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onafterprint
+  onbeforeprint: https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onbeforeprint
+  onbeforeunload: https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onbeforeunload
+  onhashchange: https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onhashchange
+  onlanguagechange: https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onlanguagechange
+  onmessage: https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onmessage
+  onmessageerror: https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onmessageerror
+  onoffline: https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onoffline
+  ononline: https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-ononline
+  onpageswap: https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onpageswap
+  onpagehide: https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onpagehide
+  onpagereveal: https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onpagereveal
+  onpageshow: https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onpageshow
+  onpopstate: https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onpopstate
+  onrejectionhandled: https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onrejectionhandled
+  onstorage: https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onstorage
+  onunhandledrejection: https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onunhandledrejection
+  onunload: https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onunload
+interface:
+  HTMLBodyElement: https://html.spec.whatwg.org/multipage/sections.html#htmlbodyelement

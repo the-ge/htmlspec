@@ -1,9 +1,15 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-q-element
+semantics_url: https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-q-element
 description: Quotation
 categories:
-- flow
-- palpable
-- phrasing
-attributes:
-- cite
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+  palpable: https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2
+parents:
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
 children:
-- phrasing
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+attributes:
+  cite: https://html.spec.whatwg.org/multipage/text-level-semantics.html#attr-q-cite
+interface:
+  HTMLQuoteElement: https://html.spec.whatwg.org/multipage/grouping-content.html#htmlquoteelement

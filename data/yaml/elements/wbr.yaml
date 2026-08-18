@@ -1,6 +1,12 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-wbr-element
+semantics_url: https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-wbr-element
 description: Line breaking opportunity
 categories:
-- flow
-- phrasing
-attributes: []
-children: []
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+parents:
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+children: {}
+attributes: {}
+interface:
+  HTMLElement: https://html.spec.whatwg.org/multipage/dom.html#htmlelement

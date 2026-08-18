@@ -1,11 +1,17 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-canvas-element
+semantics_url: https://html.spec.whatwg.org/multipage/canvas.html#the-canvas-element
 description: Scriptable bitmap canvas
 categories:
-- embedded
-- flow
-- palpable
-- phrasing
-attributes:
-- height
-- width
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+  embedded: https://html.spec.whatwg.org/multipage/dom.html#embedded-content-category
+  palpable: https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2
+parents:
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
 children:
-- transparent
+  transparent: https://html.spec.whatwg.org/multipage/dom.html#transparent
+attributes:
+  width: https://html.spec.whatwg.org/multipage/canvas.html#attr-canvas-width
+  height: https://html.spec.whatwg.org/multipage/canvas.html#attr-canvas-height
+interface:
+  HTMLCanvasElement: https://html.spec.whatwg.org/multipage/canvas.html#htmlcanvaselement

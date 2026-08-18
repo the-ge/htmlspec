@@ -1,12 +1,20 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-meta-element
+semantics_url: https://html.spec.whatwg.org/multipage/semantics.html#the-meta-element
 description: Text metadata
 categories:
-- flow
-- metadata
-- phrasing
+  metadata: https://html.spec.whatwg.org/multipage/dom.html#metadata-content-2
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+parents:
+  head: https://html.spec.whatwg.org/multipage/semantics.html#the-head-element
+  noscript: https://html.spec.whatwg.org/multipage/scripting.html#the-noscript-element
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+children: {}
 attributes:
-- charset
-- content
-- http-equiv
-- media
-- name
-children: []
+  name: https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-name
+  http-equiv: https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-http-equiv
+  content: https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-content
+  charset: https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-charset
+  media: https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-media
+interface:
+  HTMLMetaElement: https://html.spec.whatwg.org/multipage/semantics.html#htmlmetaelement

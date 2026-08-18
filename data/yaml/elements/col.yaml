@@ -1,6 +1,11 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-col-element
+semantics_url: https://html.spec.whatwg.org/multipage/tables.html#the-col-element
 description: Table column
-categories:
-- none
+categories: {}
+parents:
+  colgroup: https://html.spec.whatwg.org/multipage/tables.html#the-colgroup-element
+children: {}
 attributes:
-- span
-children: []
+  span: https://html.spec.whatwg.org/multipage/tables.html#attr-col-span
+interface:
+  HTMLTableColElement: https://html.spec.whatwg.org/multipage/tables.html#htmltablecolelement

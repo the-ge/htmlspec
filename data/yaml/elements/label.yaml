@@ -1,10 +1,16 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-label-element
+semantics_url: https://html.spec.whatwg.org/multipage/forms.html#the-label-element
 description: Caption for a form control
 categories:
-- flow
-- interactive
-- palpable
-- phrasing
-attributes:
-- for
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+  interactive: https://html.spec.whatwg.org/multipage/dom.html#interactive-content-2
+  palpable: https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2
+parents:
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
 children:
-- phrasing
+  phrasing: https://html.spec.whatwg.org/multipage/dom.html#phrasing-content-2
+attributes:
+  for: https://html.spec.whatwg.org/multipage/forms.html#attr-label-for
+interface:
+  HTMLLabelElement: https://html.spec.whatwg.org/multipage/forms.html#htmllabelelement

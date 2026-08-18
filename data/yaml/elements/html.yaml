@@ -1,7 +1,11 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-html-element-3
+semantics_url: https://html.spec.whatwg.org/multipage/semantics.html#the-html-element
 description: Root element
-categories:
-- none
-attributes: []
+categories: {}
+parents: {}
 children:
-- body
-- head
+  head: https://html.spec.whatwg.org/multipage/semantics.html#the-head-element
+  body: https://html.spec.whatwg.org/multipage/sections.html#the-body-element
+attributes: {}
+interface:
+  HTMLHtmlElement: https://html.spec.whatwg.org/multipage/semantics.html#htmlhtmlelement

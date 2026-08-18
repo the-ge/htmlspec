@@ -1,7 +1,17 @@
+summary_url: https://html.spec.whatwg.org/multipage/indices.html#elements-3:the-div-element-2
+semantics_url: https://html.spec.whatwg.org/multipage/grouping-content.html#the-div-element
 description: Generic flow container, or container for name-value groups in dl elements
 categories:
-- flow
-- palpable
-attributes: []
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+  palpable: https://html.spec.whatwg.org/multipage/dom.html#palpable-content-2
+parents:
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+  dl: https://html.spec.whatwg.org/multipage/grouping-content.html#the-dl-element
+  option: https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element
+  optgroup: https://html.spec.whatwg.org/multipage/form-elements.html#the-optgroup-element
+  select: https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element
 children:
-- flow
+  flow: https://html.spec.whatwg.org/multipage/dom.html#flow-content-2
+attributes: {}
+interface:
+  HTMLDivElement: https://html.spec.whatwg.org/multipage/grouping-content.html#htmldivelement
