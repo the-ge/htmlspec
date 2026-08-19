@@ -1,0 +1,3782 @@
+{
+  "alert": {
+    "is_abstract": false,
+    "parents": [
+      "section"
+    ],
+    "children": [
+      "alertdialog"
+    ],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "alertdialog": {
+    "is_abstract": false,
+    "parents": [
+      "alert",
+      "dialog"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-modal": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "application": {
+    "is_abstract": false,
+    "parents": [
+      "structure"
+    ],
+    "children": [],
+    "states": {
+      "aria-disabled": "",
+      "aria-expanded": "",
+      "aria-invalid": "",
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-grabbed": "",
+      "aria-hidden": ""
+    },
+    "properties": {
+      "aria-activedescendant": "",
+      "aria-errormessage": "",
+      "aria-haspopup": "",
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-flowto": "",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "article": {
+    "is_abstract": false,
+    "parents": [
+      "document"
+    ],
+    "children": [
+      "comment"
+    ],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-posinset": "",
+      "aria-setsize": "",
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "banner": {
+    "is_abstract": false,
+    "parents": [
+      "landmark"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "blockquote": {
+    "is_abstract": false,
+    "parents": [
+      "section"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "button": {
+    "is_abstract": false,
+    "parents": [
+      "command"
+    ],
+    "children": [],
+    "states": {
+      "aria-disabled": "",
+      "aria-expanded": "",
+      "aria-pressed": "",
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-haspopup": "",
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "caption": {
+    "is_abstract": false,
+    "parents": [
+      "section"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "cell": {
+    "is_abstract": false,
+    "parents": [
+      "section"
+    ],
+    "children": [
+      "columnheader",
+      "gridcell",
+      "rowheader"
+    ],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-colindex": "",
+      "aria-colindextext": "",
+      "aria-colspan": "",
+      "aria-rowindex": "",
+      "aria-rowindextext": "",
+      "aria-rowspan": "",
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "checkbox": {
+    "is_abstract": false,
+    "parents": [
+      "input"
+    ],
+    "children": [
+      "switch"
+    ],
+    "states": {
+      "aria-expanded": "",
+      "aria-invalid": "",
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "",
+      "aria-grabbed": "",
+      "aria-hidden": ""
+    },
+    "properties": {
+      "aria-errormessage": "",
+      "aria-readonly": "",
+      "aria-required": "",
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "code": {
+    "is_abstract": false,
+    "parents": [
+      "section"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "columnheader": {
+    "is_abstract": false,
+    "parents": [
+      "cell",
+      "gridcell",
+      "sectionhead"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "",
+      "aria-expanded": "",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "",
+      "aria-selected": ""
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-colindex": "",
+      "aria-colindextext": "",
+      "aria-colspan": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "",
+      "aria-flowto": "",
+      "aria-haspopup": "",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-readonly": "",
+      "aria-relevant": "",
+      "aria-required": "",
+      "aria-roledescription": "",
+      "aria-rowindex": "",
+      "aria-rowindextext": "",
+      "aria-rowspan": ""
+    }
+  },
+  "combobox": {
+    "is_abstract": false,
+    "parents": [
+      "input"
+    ],
+    "children": [],
+    "states": {
+      "aria-invalid": "",
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "",
+      "aria-grabbed": "",
+      "aria-hidden": ""
+    },
+    "properties": {
+      "aria-activedescendant": "",
+      "aria-autocomplete": "",
+      "aria-controls": "",
+      "aria-errormessage": "",
+      "aria-haspopup": "",
+      "aria-readonly": "",
+      "aria-required": "",
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-flowto": "",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "command": {
+    "is_abstract": true,
+    "parents": [
+      "widget"
+    ],
+    "children": [
+      "button",
+      "link",
+      "menuitem"
+    ],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "comment": {
+    "is_abstract": false,
+    "parents": [
+      "article"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-level": "",
+      "aria-posinset": "",
+      "aria-setsize": "",
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "complementary": {
+    "is_abstract": false,
+    "parents": [
+      "landmark"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "composite": {
+    "is_abstract": true,
+    "parents": [
+      "widget"
+    ],
+    "children": [
+      "grid",
+      "select",
+      "spinbutton",
+      "tablist"
+    ],
+    "states": {
+      "aria-disabled": "",
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-activedescendant": "",
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "contentinfo": {
+    "is_abstract": false,
+    "parents": [
+      "landmark"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "definition": {
+    "is_abstract": false,
+    "parents": [
+      "section"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "deletion": {
+    "is_abstract": false,
+    "parents": [
+      "section"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "dialog": {
+    "is_abstract": false,
+    "parents": [
+      "window"
+    ],
+    "children": [
+      "alertdialog"
+    ],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-modal": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "directory": {
+    "is_abstract": false,
+    "parents": [
+      "list"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "document": {
+    "is_abstract": false,
+    "parents": [
+      "structure"
+    ],
+    "children": [
+      "article"
+    ],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "emphasis": {
+    "is_abstract": false,
+    "parents": [
+      "section"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "feed": {
+    "is_abstract": false,
+    "parents": [
+      "list"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "figure": {
+    "is_abstract": false,
+    "parents": [
+      "section"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "form": {
+    "is_abstract": false,
+    "parents": [
+      "landmark"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "generic": {
+    "is_abstract": false,
+    "parents": [
+      "structure"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": ""
+    }
+  },
+  "grid": {
+    "is_abstract": false,
+    "parents": [
+      "composite",
+      "table"
+    ],
+    "children": [
+      "treegrid"
+    ],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-multiselectable": "",
+      "aria-readonly": "",
+      "aria-activedescendant": "",
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-colcount": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": "",
+      "aria-rowcount": ""
+    }
+  },
+  "gridcell": {
+    "is_abstract": false,
+    "parents": [
+      "cell",
+      "widget"
+    ],
+    "children": [
+      "columnheader",
+      "rowheader"
+    ],
+    "states": {
+      "aria-disabled": "",
+      "aria-expanded": "",
+      "aria-invalid": "",
+      "aria-selected": "",
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-grabbed": "",
+      "aria-hidden": ""
+    },
+    "properties": {
+      "aria-errormessage": "",
+      "aria-haspopup": "",
+      "aria-readonly": "",
+      "aria-required": "",
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-colindex": "",
+      "aria-colindextext": "",
+      "aria-colspan": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-flowto": "",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": "",
+      "aria-rowindex": "",
+      "aria-rowindextext": "",
+      "aria-rowspan": ""
+    }
+  },
+  "group": {
+    "is_abstract": false,
+    "parents": [
+      "section"
+    ],
+    "children": [
+      "row",
+      "select",
+      "toolbar"
+    ],
+    "states": {
+      "aria-disabled": "",
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-activedescendant": "",
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "heading": {
+    "is_abstract": false,
+    "parents": [
+      "sectionhead"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "image": {
+    "is_abstract": false,
+    "parents": [
+      "section"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "img": {
+    "is_abstract": false,
+    "parents": [
+      "section"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "input": {
+    "is_abstract": true,
+    "parents": [
+      "widget"
+    ],
+    "children": [
+      "checkbox",
+      "combobox",
+      "option",
+      "radio",
+      "slider",
+      "spinbutton",
+      "textbox"
+    ],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "insertion": {
+    "is_abstract": false,
+    "parents": [
+      "section"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "landmark": {
+    "is_abstract": true,
+    "parents": [
+      "section"
+    ],
+    "children": [
+      "banner",
+      "complementary",
+      "contentinfo",
+      "form",
+      "main",
+      "navigation",
+      "region",
+      "search"
+    ],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "link": {
+    "is_abstract": false,
+    "parents": [
+      "command"
+    ],
+    "children": [],
+    "states": {
+      "aria-disabled": "",
+      "aria-expanded": "",
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-haspopup": "",
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "list": {
+    "is_abstract": false,
+    "parents": [
+      "section"
+    ],
+    "children": [
+      "directory",
+      "feed"
+    ],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "listbox": {
+    "is_abstract": false,
+    "parents": [
+      "select"
+    ],
+    "children": [],
+    "states": {
+      "aria-invalid": "",
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "",
+      "aria-grabbed": "",
+      "aria-hidden": ""
+    },
+    "properties": {
+      "aria-errormessage": "",
+      "aria-multiselectable": "",
+      "aria-readonly": "",
+      "aria-required": "",
+      "aria-activedescendant": "",
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-orientation": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "listitem": {
+    "is_abstract": false,
+    "parents": [
+      "section"
+    ],
+    "children": [
+      "treeitem"
+    ],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-posinset": "",
+      "aria-setsize": "",
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "log": {
+    "is_abstract": false,
+    "parents": [
+      "section"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "main": {
+    "is_abstract": false,
+    "parents": [
+      "landmark"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "mark": {
+    "is_abstract": false,
+    "parents": [
+      "section"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "marquee": {
+    "is_abstract": false,
+    "parents": [
+      "section"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "math": {
+    "is_abstract": false,
+    "parents": [
+      "section"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "menu": {
+    "is_abstract": false,
+    "parents": [
+      "select"
+    ],
+    "children": [
+      "menubar"
+    ],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-activedescendant": "",
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-orientation": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "menubar": {
+    "is_abstract": false,
+    "parents": [
+      "menu"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-activedescendant": "",
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-orientation": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "menuitem": {
+    "is_abstract": false,
+    "parents": [
+      "command"
+    ],
+    "children": [
+      "menuitemcheckbox",
+      "menuitemradio"
+    ],
+    "states": {
+      "aria-disabled": "",
+      "aria-expanded": "",
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-haspopup": "",
+      "aria-posinset": "",
+      "aria-setsize": "",
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "menuitemcheckbox": {
+    "is_abstract": false,
+    "parents": [
+      "menuitem"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "",
+      "aria-expanded": "",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-posinset": "",
+      "aria-relevant": "",
+      "aria-roledescription": "",
+      "aria-setsize": ""
+    }
+  },
+  "menuitemradio": {
+    "is_abstract": false,
+    "parents": [
+      "menuitem"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "",
+      "aria-expanded": "",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-posinset": "",
+      "aria-relevant": "",
+      "aria-roledescription": "",
+      "aria-setsize": ""
+    }
+  },
+  "meter": {
+    "is_abstract": false,
+    "parents": [
+      "range"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": "",
+      "aria-valuemax": "",
+      "aria-valuemin": "",
+      "aria-valuetext": ""
+    }
+  },
+  "navigation": {
+    "is_abstract": false,
+    "parents": [
+      "landmark"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "none": {
+    "is_abstract": false,
+    "parents": [
+      "structure"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "note": {
+    "is_abstract": false,
+    "parents": [
+      "section"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "option": {
+    "is_abstract": false,
+    "parents": [
+      "input"
+    ],
+    "children": [
+      "treeitem"
+    ],
+    "states": {
+      "aria-checked": "",
+      "aria-selected": "",
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-posinset": "",
+      "aria-setsize": "",
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "paragraph": {
+    "is_abstract": false,
+    "parents": [
+      "section"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "presentation": {
+    "is_abstract": false,
+    "parents": [
+      "structure"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "progressbar": {
+    "is_abstract": false,
+    "parents": [
+      "range",
+      "widget"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": "",
+      "aria-valuemax": "",
+      "aria-valuemin": "",
+      "aria-valuenow": "",
+      "aria-valuetext": ""
+    }
+  },
+  "radio": {
+    "is_abstract": false,
+    "parents": [
+      "input"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-posinset": "",
+      "aria-setsize": "",
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "radiogroup": {
+    "is_abstract": false,
+    "parents": [
+      "select"
+    ],
+    "children": [],
+    "states": {
+      "aria-invalid": "",
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "",
+      "aria-grabbed": "",
+      "aria-hidden": ""
+    },
+    "properties": {
+      "aria-errormessage": "",
+      "aria-readonly": "",
+      "aria-required": "",
+      "aria-activedescendant": "",
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-orientation": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "range": {
+    "is_abstract": true,
+    "parents": [
+      "structure"
+    ],
+    "children": [
+      "meter",
+      "progressbar",
+      "scrollbar",
+      "slider",
+      "spinbutton"
+    ],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-valuemax": "",
+      "aria-valuemin": "",
+      "aria-valuenow": "",
+      "aria-valuetext": "",
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "region": {
+    "is_abstract": false,
+    "parents": [
+      "landmark"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "roletype": {
+    "is_abstract": true,
+    "parents": [],
+    "children": [
+      "structure",
+      "widget",
+      "window"
+    ],
+    "states": {
+      "aria-busy (state)": "",
+      "aria-current (state)": "",
+      "aria-disabled (state)": "",
+      "aria-grabbed (state)": "",
+      "aria-hidden (state)": "",
+      "aria-invalid (state)": ""
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "",
+      "aria-flowto": "",
+      "aria-haspopup": "",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "row": {
+    "is_abstract": false,
+    "parents": [
+      "group",
+      "widget"
+    ],
+    "children": [],
+    "states": {
+      "aria-expanded": "",
+      "aria-selected": "",
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-colindex": "",
+      "aria-level": "",
+      "aria-posinset": "",
+      "aria-rowindex": "",
+      "aria-rowindextext": "",
+      "aria-setsize": "",
+      "aria-activedescendant": "",
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "rowgroup": {
+    "is_abstract": false,
+    "parents": [
+      "structure"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "rowheader": {
+    "is_abstract": false,
+    "parents": [
+      "cell",
+      "gridcell",
+      "sectionhead"
+    ],
+    "children": [],
+    "states": {
+      "aria-expanded": "",
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "",
+      "aria-selected": ""
+    },
+    "properties": {
+      "aria-sort": "",
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-colindex": "",
+      "aria-colindextext": "",
+      "aria-colspan": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "",
+      "aria-flowto": "",
+      "aria-haspopup": "",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-readonly": "",
+      "aria-relevant": "",
+      "aria-required": "",
+      "aria-roledescription": "",
+      "aria-rowindex": "",
+      "aria-rowindextext": "",
+      "aria-rowspan": ""
+    }
+  },
+  "scrollbar": {
+    "is_abstract": false,
+    "parents": [
+      "range",
+      "widget"
+    ],
+    "children": [],
+    "states": {
+      "aria-disabled": "",
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-orientation": "",
+      "aria-valuemax": "",
+      "aria-valuemin": "",
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": "",
+      "aria-valuetext": ""
+    }
+  },
+  "search": {
+    "is_abstract": false,
+    "parents": [
+      "landmark"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "searchbox": {
+    "is_abstract": false,
+    "parents": [
+      "textbox"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": ""
+    },
+    "properties": {
+      "aria-activedescendant": "",
+      "aria-atomic": "",
+      "aria-autocomplete": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "",
+      "aria-flowto": "",
+      "aria-haspopup": "",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-multiline": "",
+      "aria-owns": "",
+      "aria-placeholder": "",
+      "aria-readonly": "",
+      "aria-relevant": "",
+      "aria-required": "",
+      "aria-roledescription": ""
+    }
+  },
+  "section": {
+    "is_abstract": true,
+    "parents": [
+      "structure"
+    ],
+    "children": [
+      "alert",
+      "blockquote",
+      "caption",
+      "cell",
+      "code",
+      "definition",
+      "deletion",
+      "emphasis",
+      "figure",
+      "group",
+      "image",
+      "insertion",
+      "landmark",
+      "list",
+      "listitem",
+      "log",
+      "mark",
+      "marquee",
+      "math",
+      "note",
+      "paragraph",
+      "sectionfooter",
+      "sectionheader",
+      "status",
+      "strong",
+      "subscript",
+      "suggestion",
+      "superscript",
+      "table",
+      "tabpanel",
+      "term",
+      "time",
+      "tooltip"
+    ],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "sectionfooter": {
+    "is_abstract": false,
+    "parents": [
+      "section"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "sectionhead": {
+    "is_abstract": true,
+    "parents": [
+      "structure"
+    ],
+    "children": [
+      "columnheader",
+      "heading",
+      "rowheader",
+      "tab"
+    ],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "sectionheader": {
+    "is_abstract": false,
+    "parents": [
+      "section"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "select": {
+    "is_abstract": true,
+    "parents": [
+      "composite",
+      "group"
+    ],
+    "children": [
+      "listbox",
+      "menu",
+      "radiogroup",
+      "tree"
+    ],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-activedescendant": "",
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "separator": {
+    "is_abstract": false,
+    "parents": [
+      "structure",
+      "widget"
+    ],
+    "children": [],
+    "states": {
+      "aria-disabled": "",
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-orientation": "",
+      "aria-valuemax": "",
+      "aria-valuemin": "",
+      "aria-valuetext": "",
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "slider": {
+    "is_abstract": false,
+    "parents": [
+      "input",
+      "range"
+    ],
+    "children": [],
+    "states": {
+      "aria-invalid": "",
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "",
+      "aria-grabbed": "",
+      "aria-hidden": ""
+    },
+    "properties": {
+      "aria-errormessage": "",
+      "aria-haspopup": "",
+      "aria-orientation": "",
+      "aria-readonly": "",
+      "aria-valuemax": "",
+      "aria-valuemin": "",
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-flowto": "",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": "",
+      "aria-valuetext": ""
+    }
+  },
+  "spinbutton": {
+    "is_abstract": false,
+    "parents": [
+      "composite",
+      "input",
+      "range"
+    ],
+    "children": [],
+    "states": {
+      "aria-invalid": "",
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "",
+      "aria-grabbed": "",
+      "aria-hidden": ""
+    },
+    "properties": {
+      "aria-errormessage": "",
+      "aria-readonly": "",
+      "aria-required": "",
+      "aria-valuemax": "",
+      "aria-valuemin": "",
+      "aria-valuenow": "",
+      "aria-valuetext": "",
+      "aria-activedescendant": "",
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "status": {
+    "is_abstract": false,
+    "parents": [
+      "section"
+    ],
+    "children": [
+      "timer"
+    ],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "strong": {
+    "is_abstract": false,
+    "parents": [
+      "section"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "structure": {
+    "is_abstract": true,
+    "parents": [
+      "roletype"
+    ],
+    "children": [
+      "application",
+      "document",
+      "generic",
+      "none",
+      "range",
+      "rowgroup",
+      "section",
+      "sectionhead",
+      "separator"
+    ],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "subscript": {
+    "is_abstract": false,
+    "parents": [
+      "section"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "suggestion": {
+    "is_abstract": false,
+    "parents": [
+      "section"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "superscript": {
+    "is_abstract": false,
+    "parents": [
+      "section"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "switch": {
+    "is_abstract": false,
+    "parents": [
+      "checkbox"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "",
+      "aria-expanded": "",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": ""
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-readonly": "",
+      "aria-relevant": "",
+      "aria-required": "",
+      "aria-roledescription": ""
+    }
+  },
+  "tab": {
+    "is_abstract": false,
+    "parents": [
+      "sectionhead",
+      "widget"
+    ],
+    "children": [],
+    "states": {
+      "aria-disabled": "",
+      "aria-expanded": "",
+      "aria-selected": "",
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-haspopup": "",
+      "aria-posinset": "",
+      "aria-setsize": "",
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "table": {
+    "is_abstract": false,
+    "parents": [
+      "section"
+    ],
+    "children": [
+      "grid"
+    ],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-colcount": "",
+      "aria-rowcount": "",
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "tablist": {
+    "is_abstract": false,
+    "parents": [
+      "composite"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-multiselectable": "",
+      "aria-orientation": "",
+      "aria-activedescendant": "",
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "tabpanel": {
+    "is_abstract": false,
+    "parents": [
+      "section"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "term": {
+    "is_abstract": false,
+    "parents": [
+      "section"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "textbox": {
+    "is_abstract": false,
+    "parents": [
+      "input"
+    ],
+    "children": [
+      "searchbox"
+    ],
+    "states": {
+      "aria-invalid": "",
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "",
+      "aria-grabbed": "",
+      "aria-hidden": ""
+    },
+    "properties": {
+      "aria-activedescendant": "",
+      "aria-autocomplete": "",
+      "aria-errormessage": "",
+      "aria-haspopup": "",
+      "aria-multiline": "",
+      "aria-placeholder": "",
+      "aria-readonly": "",
+      "aria-required": "",
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-flowto": "",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "time": {
+    "is_abstract": false,
+    "parents": [
+      "section"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "timer": {
+    "is_abstract": false,
+    "parents": [
+      "status"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "toolbar": {
+    "is_abstract": false,
+    "parents": [
+      "group"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-activedescendant": "",
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "tooltip": {
+    "is_abstract": false,
+    "parents": [
+      "section"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "tree": {
+    "is_abstract": false,
+    "parents": [
+      "select"
+    ],
+    "children": [
+      "treegrid"
+    ],
+    "states": {
+      "aria-invalid": "",
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "",
+      "aria-grabbed": "",
+      "aria-hidden": ""
+    },
+    "properties": {
+      "aria-errormessage": "",
+      "aria-multiselectable": "",
+      "aria-required": "",
+      "aria-activedescendant": "",
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-orientation": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "treegrid": {
+    "is_abstract": false,
+    "parents": [
+      "grid",
+      "tree"
+    ],
+    "children": [],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": ""
+    },
+    "properties": {
+      "aria-activedescendant": "",
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-colcount": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-multiselectable": "",
+      "aria-orientation": "",
+      "aria-owns": "",
+      "aria-readonly": "",
+      "aria-relevant": "",
+      "aria-required": "",
+      "aria-roledescription": "",
+      "aria-rowcount": ""
+    }
+  },
+  "treeitem": {
+    "is_abstract": false,
+    "parents": [
+      "listitem",
+      "option"
+    ],
+    "children": [],
+    "states": {
+      "aria-expanded": "",
+      "aria-busy": "",
+      "aria-checked": "",
+      "aria-current": "",
+      "aria-disabled": "",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2",
+      "aria-selected": ""
+    },
+    "properties": {
+      "aria-haspopup": "",
+      "aria-level": "",
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-posinset": "",
+      "aria-relevant": "",
+      "aria-roledescription": "",
+      "aria-setsize": ""
+    }
+  },
+  "widget": {
+    "is_abstract": true,
+    "parents": [
+      "roletype"
+    ],
+    "children": [
+      "command",
+      "composite",
+      "gridcell",
+      "input",
+      "progressbar",
+      "row",
+      "scrollbar",
+      "separator",
+      "tab"
+    ],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  },
+  "window": {
+    "is_abstract": true,
+    "parents": [
+      "roletype"
+    ],
+    "children": [
+      "dialog"
+    ],
+    "states": {
+      "aria-busy": "",
+      "aria-current": "",
+      "aria-disabled": "1.2",
+      "aria-grabbed": "",
+      "aria-hidden": "",
+      "aria-invalid": "1.2"
+    },
+    "properties": {
+      "aria-atomic": "",
+      "aria-braillelabel": "",
+      "aria-brailleroledescription": "",
+      "aria-controls": "",
+      "aria-describedby": "",
+      "aria-description": "",
+      "aria-details": "",
+      "aria-dropeffect": "",
+      "aria-errormessage": "1.2",
+      "aria-flowto": "",
+      "aria-haspopup": "1.2",
+      "aria-keyshortcuts": "",
+      "aria-label": "",
+      "aria-labelledby": "",
+      "aria-live": "",
+      "aria-owns": "",
+      "aria-relevant": "",
+      "aria-roledescription": ""
+    }
+  }
+}

@@ -1,0 +1,40 @@
+is_abstract: false
+parents:
+- group
+- widget
+children: []
+states:
+  aria-expanded: ''
+  aria-selected: ''
+  aria-busy: ''
+  aria-current: ''
+  aria-disabled: ''
+  aria-grabbed: ''
+  aria-hidden: ''
+  aria-invalid: '1.2'
+properties:
+  aria-colindex: ''
+  aria-level: ''
+  aria-posinset: ''
+  aria-rowindex: ''
+  aria-rowindextext: ''
+  aria-setsize: ''
+  aria-activedescendant: ''
+  aria-atomic: ''
+  aria-braillelabel: ''
+  aria-brailleroledescription: ''
+  aria-controls: ''
+  aria-describedby: ''
+  aria-description: ''
+  aria-details: ''
+  aria-dropeffect: ''
+  aria-errormessage: '1.2'
+  aria-flowto: ''
+  aria-haspopup: '1.2'
+  aria-keyshortcuts: ''
+  aria-label: ''
+  aria-labelledby: ''
+  aria-live: ''
+  aria-owns: ''
+  aria-relevant: ''
+  aria-roledescription: ''

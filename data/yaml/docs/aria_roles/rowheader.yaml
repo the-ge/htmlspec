@@ -1,0 +1,41 @@
+url: https://w3c.github.io/aria/#rowheader
+description:
+- - A cell containing header information for a row.
+  - ''
+states:
+  aria-expanded: https://w3c.github.io/aria/#aria-expanded
+  aria-busy: https://w3c.github.io/aria/#aria-busy
+  aria-current: https://w3c.github.io/aria/#aria-current
+  aria-disabled: https://w3c.github.io/aria/#aria-disabled
+  aria-grabbed: https://w3c.github.io/aria/#aria-grabbed
+  aria-hidden: https://w3c.github.io/aria/#aria-hidden
+  aria-invalid: https://w3c.github.io/aria/#aria-invalid
+  aria-selected: https://w3c.github.io/aria/#aria-selected
+properties:
+  aria-sort: https://w3c.github.io/aria/#aria-sort
+  aria-atomic: https://w3c.github.io/aria/#aria-atomic
+  aria-braillelabel: https://w3c.github.io/aria/#aria-braillelabel
+  aria-brailleroledescription: https://w3c.github.io/aria/#aria-brailleroledescription
+  aria-colindex: https://w3c.github.io/aria/#aria-colindex
+  aria-colindextext: https://w3c.github.io/aria/#aria-colindextext
+  aria-colspan: https://w3c.github.io/aria/#aria-colspan
+  aria-controls: https://w3c.github.io/aria/#aria-controls
+  aria-describedby: https://w3c.github.io/aria/#aria-describedby
+  aria-description: https://w3c.github.io/aria/#aria-description
+  aria-details: https://w3c.github.io/aria/#aria-details
+  aria-dropeffect: https://w3c.github.io/aria/#aria-dropeffect
+  aria-errormessage: https://w3c.github.io/aria/#aria-errormessage
+  aria-flowto: https://w3c.github.io/aria/#aria-flowto
+  aria-haspopup: https://w3c.github.io/aria/#aria-haspopup
+  aria-keyshortcuts: https://w3c.github.io/aria/#aria-keyshortcuts
+  aria-label: https://w3c.github.io/aria/#aria-label
+  aria-labelledby: https://w3c.github.io/aria/#aria-labelledby
+  aria-live: https://w3c.github.io/aria/#aria-live
+  aria-owns: https://w3c.github.io/aria/#aria-owns
+  aria-readonly: https://w3c.github.io/aria/#aria-readonly
+  aria-relevant: https://w3c.github.io/aria/#aria-relevant
+  aria-required: https://w3c.github.io/aria/#aria-required
+  aria-roledescription: https://w3c.github.io/aria/#aria-roledescription
+  aria-rowindex: https://w3c.github.io/aria/#aria-rowindex
+  aria-rowindextext: https://w3c.github.io/aria/#aria-rowindextext
+  aria-rowspan: https://w3c.github.io/aria/#aria-rowspan

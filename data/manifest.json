@@ -7,16 +7,17 @@
     "aria": "Wed, 05 Aug 2026 10:09:42 GMT"
   },
   "counts": {
-    "aria_roles": 100,
     "attributes": 145,
     "content_categories": 15,
     "elements": 115,
     "element_kinds": 6,
     "event_handlers": 89,
     "global_attributes": 32,
-    "input_types": 22
+    "input_types": 22,
+    "aria_roles_spec": 100,
+    "aria_roles_docs": 100
   },
-  "generator_release": "",
-  "generator_tag": "cf747e9",
-  "generator_commit_id": "cf747e9617e900c6f54931f52cdc41651717ad5c"
+  "generator_release": "0.7.10",
+  "generator_tag": "0.7.10-8-g449dc66",
+  "generator_commit_id": "449dc66e0872cb03726f96bced2a3dda0445dbb7"
 }

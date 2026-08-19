@@ -1,0 +1,35 @@
+is_abstract: false
+parents:
+- range
+- widget
+children: []
+states:
+  aria-disabled: ''
+  aria-busy: ''
+  aria-current: ''
+  aria-grabbed: ''
+  aria-hidden: ''
+  aria-invalid: '1.2'
+properties:
+  aria-orientation: ''
+  aria-valuemax: ''
+  aria-valuemin: ''
+  aria-atomic: ''
+  aria-braillelabel: ''
+  aria-brailleroledescription: ''
+  aria-controls: ''
+  aria-describedby: ''
+  aria-description: ''
+  aria-details: ''
+  aria-dropeffect: ''
+  aria-errormessage: '1.2'
+  aria-flowto: ''
+  aria-haspopup: '1.2'
+  aria-keyshortcuts: ''
+  aria-label: ''
+  aria-labelledby: ''
+  aria-live: ''
+  aria-owns: ''
+  aria-relevant: ''
+  aria-roledescription: ''
+  aria-valuetext: ''

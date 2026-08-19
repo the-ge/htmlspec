@@ -1,0 +1,39 @@
+url: https://w3c.github.io/aria/#row
+description:
+- - A row of cells in a tabular container.
+  - ''
+states:
+  aria-expanded: https://w3c.github.io/aria/#aria-expanded
+  aria-selected: https://w3c.github.io/aria/#aria-selected
+  aria-busy: https://w3c.github.io/aria/#aria-busy
+  aria-current: https://w3c.github.io/aria/#aria-current
+  aria-disabled: https://w3c.github.io/aria/#aria-disabled
+  aria-grabbed: https://w3c.github.io/aria/#aria-grabbed
+  aria-hidden: https://w3c.github.io/aria/#aria-hidden
+  aria-invalid: https://w3c.github.io/aria/#aria-invalid
+properties:
+  aria-colindex: https://w3c.github.io/aria/#aria-colindex
+  aria-level: https://w3c.github.io/aria/#aria-level
+  aria-posinset: https://w3c.github.io/aria/#aria-posinset
+  aria-rowindex: https://w3c.github.io/aria/#aria-rowindex
+  aria-rowindextext: https://w3c.github.io/aria/#aria-rowindextext
+  aria-setsize: https://w3c.github.io/aria/#aria-setsize
+  aria-activedescendant: https://w3c.github.io/aria/#aria-activedescendant
+  aria-atomic: https://w3c.github.io/aria/#aria-atomic
+  aria-braillelabel: https://w3c.github.io/aria/#aria-braillelabel
+  aria-brailleroledescription: https://w3c.github.io/aria/#aria-brailleroledescription
+  aria-controls: https://w3c.github.io/aria/#aria-controls
+  aria-describedby: https://w3c.github.io/aria/#aria-describedby
+  aria-description: https://w3c.github.io/aria/#aria-description
+  aria-details: https://w3c.github.io/aria/#aria-details
+  aria-dropeffect: https://w3c.github.io/aria/#aria-dropeffect
+  aria-errormessage: https://w3c.github.io/aria/#aria-errormessage
+  aria-flowto: https://w3c.github.io/aria/#aria-flowto
+  aria-haspopup: https://w3c.github.io/aria/#aria-haspopup
+  aria-keyshortcuts: https://w3c.github.io/aria/#aria-keyshortcuts
+  aria-label: https://w3c.github.io/aria/#aria-label
+  aria-labelledby: https://w3c.github.io/aria/#aria-labelledby
+  aria-live: https://w3c.github.io/aria/#aria-live
+  aria-owns: https://w3c.github.io/aria/#aria-owns
+  aria-relevant: https://w3c.github.io/aria/#aria-relevant
+  aria-roledescription: https://w3c.github.io/aria/#aria-roledescription

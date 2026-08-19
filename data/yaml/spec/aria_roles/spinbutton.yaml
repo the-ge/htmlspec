@@ -1,0 +1,39 @@
+is_abstract: false
+parents:
+- composite
+- input
+- range
+children: []
+states:
+  aria-invalid: ''
+  aria-busy: ''
+  aria-current: ''
+  aria-disabled: ''
+  aria-grabbed: ''
+  aria-hidden: ''
+properties:
+  aria-errormessage: ''
+  aria-readonly: ''
+  aria-required: ''
+  aria-valuemax: ''
+  aria-valuemin: ''
+  aria-valuenow: ''
+  aria-valuetext: ''
+  aria-activedescendant: ''
+  aria-atomic: ''
+  aria-braillelabel: ''
+  aria-brailleroledescription: ''
+  aria-controls: ''
+  aria-describedby: ''
+  aria-description: ''
+  aria-details: ''
+  aria-dropeffect: ''
+  aria-flowto: ''
+  aria-haspopup: '1.2'
+  aria-keyshortcuts: ''
+  aria-label: ''
+  aria-labelledby: ''
+  aria-live: ''
+  aria-owns: ''
+  aria-relevant: ''
+  aria-roledescription: ''

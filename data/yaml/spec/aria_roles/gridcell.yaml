@@ -1,0 +1,43 @@
+is_abstract: false
+parents:
+- cell
+- widget
+children:
+- columnheader
+- rowheader
+states:
+  aria-disabled: ''
+  aria-expanded: ''
+  aria-invalid: ''
+  aria-selected: ''
+  aria-busy: ''
+  aria-current: ''
+  aria-grabbed: ''
+  aria-hidden: ''
+properties:
+  aria-errormessage: ''
+  aria-haspopup: ''
+  aria-readonly: ''
+  aria-required: ''
+  aria-atomic: ''
+  aria-braillelabel: ''
+  aria-brailleroledescription: ''
+  aria-colindex: ''
+  aria-colindextext: ''
+  aria-colspan: ''
+  aria-controls: ''
+  aria-describedby: ''
+  aria-description: ''
+  aria-details: ''
+  aria-dropeffect: ''
+  aria-flowto: ''
+  aria-keyshortcuts: ''
+  aria-label: ''
+  aria-labelledby: ''
+  aria-live: ''
+  aria-owns: ''
+  aria-relevant: ''
+  aria-roledescription: ''
+  aria-rowindex: ''
+  aria-rowindextext: ''
+  aria-rowspan: ''

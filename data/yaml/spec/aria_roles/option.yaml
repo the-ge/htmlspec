@@ -1,0 +1,35 @@
+is_abstract: false
+parents:
+- input
+children:
+- treeitem
+states:
+  aria-checked: ''
+  aria-selected: ''
+  aria-busy: ''
+  aria-current: ''
+  aria-disabled: ''
+  aria-grabbed: ''
+  aria-hidden: ''
+  aria-invalid: '1.2'
+properties:
+  aria-posinset: ''
+  aria-setsize: ''
+  aria-atomic: ''
+  aria-braillelabel: ''
+  aria-brailleroledescription: ''
+  aria-controls: ''
+  aria-describedby: ''
+  aria-description: ''
+  aria-details: ''
+  aria-dropeffect: ''
+  aria-errormessage: '1.2'
+  aria-flowto: ''
+  aria-haspopup: '1.2'
+  aria-keyshortcuts: ''
+  aria-label: ''
+  aria-labelledby: ''
+  aria-live: ''
+  aria-owns: ''
+  aria-relevant: ''
+  aria-roledescription: ''

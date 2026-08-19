@@ -1,0 +1,37 @@
+is_abstract: false
+parents:
+- listitem
+- option
+children: []
+states:
+  aria-expanded: ''
+  aria-busy: ''
+  aria-checked: ''
+  aria-current: ''
+  aria-disabled: ''
+  aria-grabbed: ''
+  aria-hidden: ''
+  aria-invalid: '1.2'
+  aria-selected: ''
+properties:
+  aria-haspopup: ''
+  aria-level: ''
+  aria-atomic: ''
+  aria-braillelabel: ''
+  aria-brailleroledescription: ''
+  aria-controls: ''
+  aria-describedby: ''
+  aria-description: ''
+  aria-details: ''
+  aria-dropeffect: ''
+  aria-errormessage: '1.2'
+  aria-flowto: ''
+  aria-keyshortcuts: ''
+  aria-label: ''
+  aria-labelledby: ''
+  aria-live: ''
+  aria-owns: ''
+  aria-posinset: ''
+  aria-relevant: ''
+  aria-roledescription: ''
+  aria-setsize: ''

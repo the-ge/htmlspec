@@ -1,0 +1,38 @@
+is_abstract: false
+parents:
+- grid
+- tree
+children: []
+states:
+  aria-busy: ''
+  aria-current: ''
+  aria-disabled: ''
+  aria-grabbed: ''
+  aria-hidden: ''
+  aria-invalid: ''
+properties:
+  aria-activedescendant: ''
+  aria-atomic: ''
+  aria-braillelabel: ''
+  aria-brailleroledescription: ''
+  aria-colcount: ''
+  aria-controls: ''
+  aria-describedby: ''
+  aria-description: ''
+  aria-details: ''
+  aria-dropeffect: ''
+  aria-errormessage: ''
+  aria-flowto: ''
+  aria-haspopup: '1.2'
+  aria-keyshortcuts: ''
+  aria-label: ''
+  aria-labelledby: ''
+  aria-live: ''
+  aria-multiselectable: ''
+  aria-orientation: ''
+  aria-owns: ''
+  aria-readonly: ''
+  aria-relevant: ''
+  aria-required: ''
+  aria-roledescription: ''
+  aria-rowcount: ''

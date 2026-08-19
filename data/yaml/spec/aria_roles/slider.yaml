@@ -1,0 +1,36 @@
+is_abstract: false
+parents:
+- input
+- range
+children: []
+states:
+  aria-invalid: ''
+  aria-busy: ''
+  aria-current: ''
+  aria-disabled: ''
+  aria-grabbed: ''
+  aria-hidden: ''
+properties:
+  aria-errormessage: ''
+  aria-haspopup: ''
+  aria-orientation: ''
+  aria-readonly: ''
+  aria-valuemax: ''
+  aria-valuemin: ''
+  aria-atomic: ''
+  aria-braillelabel: ''
+  aria-brailleroledescription: ''
+  aria-controls: ''
+  aria-describedby: ''
+  aria-description: ''
+  aria-details: ''
+  aria-dropeffect: ''
+  aria-flowto: ''
+  aria-keyshortcuts: ''
+  aria-label: ''
+  aria-labelledby: ''
+  aria-live: ''
+  aria-owns: ''
+  aria-relevant: ''
+  aria-roledescription: ''
+  aria-valuetext: ''

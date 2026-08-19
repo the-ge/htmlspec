@@ -1,0 +1,43 @@
+is_abstract: false
+parents:
+- cell
+- gridcell
+- sectionhead
+children: []
+states:
+  aria-expanded: ''
+  aria-busy: ''
+  aria-current: ''
+  aria-disabled: ''
+  aria-grabbed: ''
+  aria-hidden: ''
+  aria-invalid: ''
+  aria-selected: ''
+properties:
+  aria-sort: ''
+  aria-atomic: ''
+  aria-braillelabel: ''
+  aria-brailleroledescription: ''
+  aria-colindex: ''
+  aria-colindextext: ''
+  aria-colspan: ''
+  aria-controls: ''
+  aria-describedby: ''
+  aria-description: ''
+  aria-details: ''
+  aria-dropeffect: ''
+  aria-errormessage: ''
+  aria-flowto: ''
+  aria-haspopup: ''
+  aria-keyshortcuts: ''
+  aria-label: ''
+  aria-labelledby: ''
+  aria-live: ''
+  aria-owns: ''
+  aria-readonly: ''
+  aria-relevant: ''
+  aria-required: ''
+  aria-roledescription: ''
+  aria-rowindex: ''
+  aria-rowindextext: ''
+  aria-rowspan: ''

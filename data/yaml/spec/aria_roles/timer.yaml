@@ -1,0 +1,30 @@
+is_abstract: false
+parents:
+- status
+children: []
+states:
+  aria-busy: ''
+  aria-current: ''
+  aria-disabled: '1.2'
+  aria-grabbed: ''
+  aria-hidden: ''
+  aria-invalid: '1.2'
+properties:
+  aria-atomic: ''
+  aria-braillelabel: ''
+  aria-brailleroledescription: ''
+  aria-controls: ''
+  aria-describedby: ''
+  aria-description: ''
+  aria-details: ''
+  aria-dropeffect: ''
+  aria-errormessage: '1.2'
+  aria-flowto: ''
+  aria-haspopup: '1.2'
+  aria-keyshortcuts: ''
+  aria-label: ''
+  aria-labelledby: ''
+  aria-live: ''
+  aria-owns: ''
+  aria-relevant: ''
+  aria-roledescription: ''
