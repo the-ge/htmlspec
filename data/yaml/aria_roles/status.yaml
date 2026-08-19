@@ -1,3 +1,4 @@
+is_abstract: false
 url: https://w3c.github.io/aria/#status
 description:
 - - A type of
@@ -10,7 +11,6 @@ description:
   - https://w3c.github.io/aria/#alert
 - - ', often but not necessarily presented as a status bar.'
   - ''
-is_abstract: false
 parents:
   section: https://w3c.github.io/aria/#section
 children:

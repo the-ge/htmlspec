@@ -1,8 +1,8 @@
+is_abstract: false
 url: https://w3c.github.io/aria/#columnheader
 description:
 - - A cell containing header information for a column.
   - ''
-is_abstract: false
 parents:
   cell: https://w3c.github.io/aria/#cell
   gridcell: https://w3c.github.io/aria/#gridcell

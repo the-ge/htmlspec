@@ -1,3 +1,4 @@
+is_abstract: false
 url: https://w3c.github.io/aria/#log
 description:
 - - A type of
@@ -6,7 +7,6 @@ description:
   - https://html.spec.whatwg.org/multipage/#dfn-live-region
 - - where new information is added in meaningful order and old information can disappear.
   - ''
-is_abstract: false
 parents:
   section: https://w3c.github.io/aria/#section
 children: {}

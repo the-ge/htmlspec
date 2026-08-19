@@ -1,3 +1,4 @@
+is_abstract: false
 url: https://w3c.github.io/aria/#searchbox
 description:
 - - A type of textbox intended for specifying search criteria. See related
@@ -8,7 +9,6 @@ description:
   - ''
 - - search
   - https://w3c.github.io/aria/#search
-is_abstract: false
 parents:
   textbox: https://w3c.github.io/aria/#textbox
 children: {}

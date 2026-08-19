@@ -1,3 +1,4 @@
+is_abstract: false
 url: https://w3c.github.io/aria/#menubar
 description:
 - - A presentation of
@@ -6,7 +7,6 @@ description:
   - https://w3c.github.io/aria/#menu
 - - that usually remains visible and is usually presented horizontally.
   - ''
-is_abstract: false
 parents:
   menu: https://w3c.github.io/aria/#menu
 children: {}

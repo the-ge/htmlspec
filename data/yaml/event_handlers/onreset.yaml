@@ -4,6 +4,3 @@ description:
 - !!python/tuple
   - reset
   - https://html.spec.whatwg.org/multipage/#event-reset
-- !!python/tuple
-  - event handler
-  - ''

@@ -1,3 +1,4 @@
+is_abstract: false
 url: https://w3c.github.io/aria/#grid
 description:
 - - A composite
@@ -10,7 +11,6 @@ description:
   - https://html.spec.whatwg.org/multipage/#dfn-focusable
 - - by using methods of two-dimensional navigation, such as directional arrow keys.
   - ''
-is_abstract: false
 parents:
   composite: https://w3c.github.io/aria/#composite
   table: https://w3c.github.io/aria/#table

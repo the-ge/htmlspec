@@ -1,3 +1,4 @@
+is_abstract: false
 url: https://w3c.github.io/aria/#caption
 description:
 - - Visible content that names, or describes a
@@ -24,7 +25,6 @@ description:
   - ''
 - - treegrid
   - https://w3c.github.io/aria/#treegrid
-is_abstract: false
 parents:
   section: https://w3c.github.io/aria/#section
 children: {}

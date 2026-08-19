@@ -4,6 +4,3 @@ description:
 - !!python/tuple
   - pause
   - https://html.spec.whatwg.org/multipage/media.html#event-media-pause
-- !!python/tuple
-  - event handler
-  - ''

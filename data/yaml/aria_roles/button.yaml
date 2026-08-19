@@ -1,10 +1,10 @@
+is_abstract: false
 url: https://w3c.github.io/aria/#button
 description:
 - - An input that allows for user-triggered actions when clicked or pressed. See related
   - ''
 - - link
   - https://w3c.github.io/aria/#link
-is_abstract: false
 parents:
   command: https://w3c.github.io/aria/#command
 children: {}

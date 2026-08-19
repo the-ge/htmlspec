@@ -4,6 +4,3 @@ description:
 - !!python/tuple
   - dragover
   - https://html.spec.whatwg.org/multipage/dnd.html#event-dnd-dragover
-- !!python/tuple
-  - event handler
-  - ''

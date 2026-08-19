@@ -4,6 +4,3 @@ description:
 - !!python/tuple
   - dragend
   - https://html.spec.whatwg.org/multipage/dnd.html#event-dnd-dragend
-- !!python/tuple
-  - event handler
-  - ''

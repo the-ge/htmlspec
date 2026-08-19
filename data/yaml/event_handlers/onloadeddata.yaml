@@ -4,6 +4,3 @@ description:
 - !!python/tuple
   - loadeddata
   - https://html.spec.whatwg.org/multipage/media.html#event-media-loadeddata
-- !!python/tuple
-  - event handler
-  - ''

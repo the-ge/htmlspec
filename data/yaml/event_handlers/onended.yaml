@@ -4,6 +4,3 @@ description:
 - !!python/tuple
   - ended
   - https://html.spec.whatwg.org/multipage/media.html#event-media-ended
-- !!python/tuple
-  - event handler
-  - ''

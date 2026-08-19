@@ -1,8 +1,8 @@
+is_abstract: false
 url: https://w3c.github.io/aria/#tooltip
 description:
 - - A contextual popup that displays a description for an element.
   - ''
-is_abstract: false
 parents:
   section: https://w3c.github.io/aria/#section
 children: {}

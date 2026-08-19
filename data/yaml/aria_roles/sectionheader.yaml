@@ -1,3 +1,4 @@
+is_abstract: false
 url: https://w3c.github.io/aria/#sectionheader
 description:
 - - A set of user interface objects and information that represents a collection of introductory items for the element's closest ancestral content group. For instance, a sectionheader can include the heading, introductory statement and related meta data for a section of content, for instance a
@@ -10,7 +11,6 @@ description:
   - https://w3c.github.io/aria/#article
 - - ', within a web page.'
   - ''
-is_abstract: false
 parents:
   section: https://w3c.github.io/aria/#section
 children: {}

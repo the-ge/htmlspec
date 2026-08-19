@@ -4,6 +4,3 @@ description:
 - !!python/tuple
   - scrollend
   - https://drafts.csswg.org/cssom-view/#eventdef-document-scrollend
-- !!python/tuple
-  - event handler
-  - ''

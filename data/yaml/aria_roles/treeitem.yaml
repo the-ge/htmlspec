@@ -1,10 +1,10 @@
+is_abstract: false
 url: https://w3c.github.io/aria/#treeitem
 description:
 - - An item in a
   - ''
 - - tree
   - https://w3c.github.io/aria/#tree
-is_abstract: false
 parents:
   listitem: https://w3c.github.io/aria/#listitem
   option: https://w3c.github.io/aria/#option

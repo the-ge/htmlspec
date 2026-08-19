@@ -4,6 +4,3 @@ description:
 - !!python/tuple
   - progress
   - https://html.spec.whatwg.org/multipage/media.html#event-media-progress
-- !!python/tuple
-  - event handler
-  - ''

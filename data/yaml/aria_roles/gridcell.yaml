@@ -1,3 +1,4 @@
+is_abstract: false
 url: https://w3c.github.io/aria/#gridcell
 description:
 - - cell
@@ -10,7 +11,6 @@ description:
   - ''
 - - treegrid
   - https://w3c.github.io/aria/#treegrid
-is_abstract: false
 parents:
   cell: https://w3c.github.io/aria/#cell
   widget: https://w3c.github.io/aria/#widget

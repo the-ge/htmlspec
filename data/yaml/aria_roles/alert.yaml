@@ -1,3 +1,4 @@
+is_abstract: false
 url: https://w3c.github.io/aria/#alert
 description:
 - - A type of
@@ -12,7 +13,6 @@ description:
   - ''
 - - status
   - https://w3c.github.io/aria/#status
-is_abstract: false
 parents:
   section: https://w3c.github.io/aria/#section
 children:

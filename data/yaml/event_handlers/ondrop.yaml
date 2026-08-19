@@ -4,6 +4,3 @@ description:
 - !!python/tuple
   - drop
   - https://html.spec.whatwg.org/multipage/dnd.html#event-dnd-drop
-- !!python/tuple
-  - event handler
-  - ''

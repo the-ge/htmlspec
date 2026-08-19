@@ -1,10 +1,10 @@
+is_abstract: false
 url: https://w3c.github.io/aria/#note
 description:
 - - section
   - https://w3c.github.io/aria/#section
 - - whose content represents additional information or parenthetical context to the primary content it supplements.
   - ''
-is_abstract: false
 parents:
   section: https://w3c.github.io/aria/#section
 children: {}

@@ -1,3 +1,4 @@
+is_abstract: false
 url: https://w3c.github.io/aria/#combobox
 description:
 - - input
@@ -14,7 +15,6 @@ description:
   - ''
 - - input
   - https://w3c.github.io/aria/#input
-is_abstract: false
 parents:
   input: https://w3c.github.io/aria/#input
 children: {}

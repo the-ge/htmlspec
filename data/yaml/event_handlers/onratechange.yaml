@@ -4,6 +4,3 @@ description:
 - !!python/tuple
   - ratechange
   - https://html.spec.whatwg.org/multipage/media.html#event-media-ratechange
-- !!python/tuple
-  - event handler
-  - ''

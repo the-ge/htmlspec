@@ -4,6 +4,3 @@ description:
 - !!python/tuple
   - dragleave
   - https://html.spec.whatwg.org/multipage/dnd.html#event-dnd-dragleave
-- !!python/tuple
-  - event handler
-  - ''

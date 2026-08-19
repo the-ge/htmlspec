@@ -1,3 +1,4 @@
+is_abstract: false
 url: https://w3c.github.io/aria/#img
 description:
 - - A container for a collection of
@@ -8,7 +9,6 @@ description:
   - ''
 - - image
   - https://w3c.github.io/aria/#image
-is_abstract: false
 parents:
   section: https://w3c.github.io/aria/#section
 children: {}

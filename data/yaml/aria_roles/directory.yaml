@@ -1,8 +1,8 @@
+is_abstract: false
 url: https://w3c.github.io/aria/#directory
 description:
 - - '[Deprecated in ARIA 1.2] A list of references to members of a group, such as a static table of contents.'
   - ''
-is_abstract: false
 parents:
   list: https://w3c.github.io/aria/#list
 children: {}

@@ -1,3 +1,4 @@
+is_abstract: true
 url: https://w3c.github.io/aria/#input
 description:
 - - A generic type of
@@ -6,7 +7,6 @@ description:
   - https://html.spec.whatwg.org/multipage/#dfn-widget
 - - that allows user input.
   - ''
-is_abstract: true
 parents:
   widget: https://w3c.github.io/aria/#widget
 children:

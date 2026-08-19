@@ -1,5 +1,6 @@
 {
   "alert": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#alert",
     "description": [
       [
@@ -27,7 +28,6 @@
         "https://w3c.github.io/aria/#status"
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
     },
@@ -136,6 +136,7 @@
     }
   },
   "alertdialog": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#alertdialog",
     "description": [
       [
@@ -163,7 +164,6 @@
         "https://w3c.github.io/aria/#dialog"
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "alert": "https://w3c.github.io/aria/#alert",
       "dialog": "https://w3c.github.io/aria/#dialog"
@@ -275,6 +275,7 @@
     }
   },
   "application": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#application",
     "description": [
       [
@@ -302,7 +303,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "structure": "https://w3c.github.io/aria/#structure"
     },
@@ -417,6 +417,7 @@
     }
   },
   "article": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#article",
     "description": [
       [
@@ -424,7 +425,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "document": "https://w3c.github.io/aria/#document"
     },
@@ -541,6 +541,7 @@
     }
   },
   "banner": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#banner",
     "description": [
       [
@@ -552,7 +553,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "landmark": "https://w3c.github.io/aria/#landmark"
     },
@@ -659,6 +659,7 @@
     }
   },
   "blockquote": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#blockquote",
     "description": [
       [
@@ -666,7 +667,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
     },
@@ -773,6 +773,7 @@
     }
   },
   "button": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#button",
     "description": [
       [
@@ -784,7 +785,6 @@
         "https://w3c.github.io/aria/#link"
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "command": "https://w3c.github.io/aria/#command"
     },
@@ -899,6 +899,7 @@
     }
   },
   "caption": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#caption",
     "description": [
       [
@@ -950,7 +951,6 @@
         "https://w3c.github.io/aria/#treegrid"
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
     },
@@ -1045,6 +1045,7 @@
     }
   },
   "cell": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#cell",
     "description": [
       [
@@ -1056,7 +1057,6 @@
         "https://w3c.github.io/aria/#gridcell"
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
     },
@@ -1191,6 +1191,7 @@
     }
   },
   "checkbox": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#checkbox",
     "description": [
       [
@@ -1198,7 +1199,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "input": "https://w3c.github.io/aria/#input"
     },
@@ -1319,6 +1319,7 @@
     }
   },
   "code": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#code",
     "description": [
       [
@@ -1326,7 +1327,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
     },
@@ -1421,6 +1421,7 @@
     }
   },
   "columnheader": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#columnheader",
     "description": [
       [
@@ -1428,7 +1429,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "cell": "https://w3c.github.io/aria/#cell",
       "gridcell": "https://w3c.github.io/aria/#gridcell",
@@ -1577,6 +1577,7 @@
     }
   },
   "combobox": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#combobox",
     "description": [
       [
@@ -1608,7 +1609,6 @@
         "https://w3c.github.io/aria/#input"
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "input": "https://w3c.github.io/aria/#input"
     },
@@ -1731,6 +1731,7 @@
     }
   },
   "command": {
+    "is_abstract": true,
     "url": "https://w3c.github.io/aria/#command",
     "description": [
       [
@@ -1738,7 +1739,6 @@
         ""
       ]
     ],
-    "is_abstract": true,
     "parents": {
       "widget": "https://w3c.github.io/aria/#widget"
     },
@@ -1849,6 +1849,7 @@
     }
   },
   "comment": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#comment",
     "description": [
       [
@@ -1856,7 +1857,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "article": "https://w3c.github.io/aria/#article"
     },
@@ -1975,6 +1975,7 @@
     }
   },
   "complementary": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#complementary",
     "description": [
       [
@@ -1986,7 +1987,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "landmark": "https://w3c.github.io/aria/#landmark"
     },
@@ -2093,6 +2093,7 @@
     }
   },
   "composite": {
+    "is_abstract": true,
     "url": "https://w3c.github.io/aria/#composite",
     "description": [
       [
@@ -2108,7 +2109,6 @@
         "https://html.spec.whatwg.org/multipage/#dfn-accessibility-descendant"
       ]
     ],
-    "is_abstract": true,
     "parents": {
       "widget": "https://w3c.github.io/aria/#widget"
     },
@@ -2224,6 +2224,7 @@
     }
   },
   "contentinfo": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#contentinfo",
     "description": [
       [
@@ -2235,7 +2236,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "landmark": "https://w3c.github.io/aria/#landmark"
     },
@@ -2342,6 +2342,7 @@
     }
   },
   "definition": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#definition",
     "description": [
       [
@@ -2353,7 +2354,6 @@
         "https://w3c.github.io/aria/#term"
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
     },
@@ -2448,6 +2448,7 @@
     }
   },
   "deletion": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#deletion",
     "description": [
       [
@@ -2459,7 +2460,6 @@
         "https://w3c.github.io/aria/#insertion"
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
     },
@@ -2554,6 +2554,7 @@
     }
   },
   "dialog": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#dialog",
     "description": [
       [
@@ -2561,7 +2562,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "window": "https://w3c.github.io/aria/#window"
     },
@@ -2674,6 +2674,7 @@
     }
   },
   "directory": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#directory",
     "description": [
       [
@@ -2681,7 +2682,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "list": "https://w3c.github.io/aria/#list"
     },
@@ -2788,6 +2788,7 @@
     }
   },
   "document": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#document",
     "description": [
       [
@@ -2807,7 +2808,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "structure": "https://w3c.github.io/aria/#structure"
     },
@@ -2916,6 +2916,7 @@
     }
   },
   "emphasis": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#emphasis",
     "description": [
       [
@@ -2927,7 +2928,6 @@
         "https://w3c.github.io/aria/#strong"
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
     },
@@ -3022,6 +3022,7 @@
     }
   },
   "feed": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#feed",
     "description": [
       [
@@ -3053,7 +3054,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "list": "https://w3c.github.io/aria/#list"
     },
@@ -3160,6 +3160,7 @@
     }
   },
   "figure": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#figure",
     "description": [
       [
@@ -3183,7 +3184,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
     },
@@ -3290,6 +3290,7 @@
     }
   },
   "form": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#form",
     "description": [
       [
@@ -3305,7 +3306,6 @@
         "https://w3c.github.io/aria/#search"
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "landmark": "https://w3c.github.io/aria/#landmark"
     },
@@ -3412,6 +3412,7 @@
     }
   },
   "generic": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#generic",
     "description": [
       [
@@ -3427,7 +3428,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "structure": "https://w3c.github.io/aria/#structure"
     },
@@ -3514,6 +3514,7 @@
     }
   },
   "grid": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#grid",
     "description": [
       [
@@ -3537,7 +3538,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "composite": "https://w3c.github.io/aria/#composite",
       "table": "https://w3c.github.io/aria/#table"
@@ -3667,6 +3667,7 @@
     }
   },
   "gridcell": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#gridcell",
     "description": [
       [
@@ -3690,7 +3691,6 @@
         "https://w3c.github.io/aria/#treegrid"
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "cell": "https://w3c.github.io/aria/#cell",
       "widget": "https://w3c.github.io/aria/#widget"
@@ -3841,6 +3841,7 @@
     }
   },
   "group": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#group",
     "description": [
       [
@@ -3860,7 +3861,6 @@
         "https://html.spec.whatwg.org/multipage/#assistive-technology"
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
     },
@@ -3975,6 +3975,7 @@
     }
   },
   "heading": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#heading",
     "description": [
       [
@@ -3982,7 +3983,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "sectionhead": "https://w3c.github.io/aria/#sectionhead"
     },
@@ -4089,6 +4089,7 @@
     }
   },
   "image": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#image",
     "description": [
       [
@@ -4108,7 +4109,6 @@
         "https://w3c.github.io/aria/#img"
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
     },
@@ -4215,6 +4215,7 @@
     }
   },
   "img": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#img",
     "description": [
       [
@@ -4234,7 +4235,6 @@
         "https://w3c.github.io/aria/#image"
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
     },
@@ -4341,6 +4341,7 @@
     }
   },
   "input": {
+    "is_abstract": true,
     "url": "https://w3c.github.io/aria/#input",
     "description": [
       [
@@ -4356,7 +4357,6 @@
         ""
       ]
     ],
-    "is_abstract": true,
     "parents": {
       "widget": "https://w3c.github.io/aria/#widget"
     },
@@ -4467,6 +4467,7 @@
     }
   },
   "insertion": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#insertion",
     "description": [
       [
@@ -4478,7 +4479,6 @@
         "https://w3c.github.io/aria/#deletion"
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
     },
@@ -4573,6 +4573,7 @@
     }
   },
   "landmark": {
+    "is_abstract": true,
     "url": "https://w3c.github.io/aria/#landmark",
     "description": [
       [
@@ -4588,7 +4589,6 @@
         ""
       ]
     ],
-    "is_abstract": true,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
     },
@@ -4704,6 +4704,7 @@
     }
   },
   "link": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#link",
     "description": [
       [
@@ -4715,7 +4716,6 @@
         "https://w3c.github.io/aria/#button"
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "command": "https://w3c.github.io/aria/#command"
     },
@@ -4826,6 +4826,7 @@
     }
   },
   "list": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#list",
     "description": [
       [
@@ -4849,7 +4850,6 @@
         "https://w3c.github.io/aria/#listbox"
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
     },
@@ -4959,6 +4959,7 @@
     }
   },
   "listbox": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#listbox",
     "description": [
       [
@@ -4982,7 +4983,6 @@
         "https://w3c.github.io/aria/#list"
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "select": "https://w3c.github.io/aria/#select"
     },
@@ -5109,6 +5109,7 @@
     }
   },
   "listitem": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#listitem",
     "description": [
       [
@@ -5116,7 +5117,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
     },
@@ -5233,6 +5233,7 @@
     }
   },
   "log": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#log",
     "description": [
       [
@@ -5248,7 +5249,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
     },
@@ -5355,6 +5355,7 @@
     }
   },
   "main": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#main",
     "description": [
       [
@@ -5366,7 +5367,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "landmark": "https://w3c.github.io/aria/#landmark"
     },
@@ -5473,6 +5473,7 @@
     }
   },
   "mark": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#mark",
     "description": [
       [
@@ -5480,7 +5481,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
     },
@@ -5575,6 +5575,7 @@
     }
   },
   "marquee": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#marquee",
     "description": [
       [
@@ -5582,7 +5583,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
     },
@@ -5689,6 +5689,7 @@
     }
   },
   "math": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#math",
     "description": [
       [
@@ -5696,7 +5697,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
     },
@@ -5803,6 +5803,7 @@
     }
   },
   "menu": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#menu",
     "description": [
       [
@@ -5818,7 +5819,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "select": "https://w3c.github.io/aria/#select"
     },
@@ -5935,6 +5935,7 @@
     }
   },
   "menubar": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#menubar",
     "description": [
       [
@@ -5950,7 +5951,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "menu": "https://w3c.github.io/aria/#menu"
     },
@@ -6065,6 +6065,7 @@
     }
   },
   "menuitem": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#menuitem",
     "description": [
       [
@@ -6084,7 +6085,6 @@
         "https://w3c.github.io/aria/#menubar"
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "command": "https://w3c.github.io/aria/#command"
     },
@@ -6206,6 +6206,7 @@
     }
   },
   "menuitemcheckbox": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#menuitemcheckbox",
     "description": [
       [
@@ -6217,7 +6218,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "menuitem": "https://w3c.github.io/aria/#menuitem"
     },
@@ -6336,6 +6336,7 @@
     }
   },
   "menuitemradio": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#menuitemradio",
     "description": [
       [
@@ -6351,7 +6352,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "menuitem": "https://w3c.github.io/aria/#menuitem"
     },
@@ -6470,6 +6470,7 @@
     }
   },
   "meter": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#meter",
     "description": [
       [
@@ -6485,7 +6486,6 @@
         "https://w3c.github.io/aria/#progressbar"
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "range": "https://w3c.github.io/aria/#range"
     },
@@ -6604,6 +6604,7 @@
     }
   },
   "navigation": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#navigation",
     "description": [
       [
@@ -6623,7 +6624,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "landmark": "https://w3c.github.io/aria/#landmark"
     },
@@ -6730,6 +6730,7 @@
     }
   },
   "none": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#none",
     "description": [
       [
@@ -6753,7 +6754,6 @@
         "https://w3c.github.io/aria/#presentation"
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "structure": "https://w3c.github.io/aria/#structure"
     },
@@ -6848,6 +6848,7 @@
     }
   },
   "note": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#note",
     "description": [
       [
@@ -6859,7 +6860,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
     },
@@ -6966,6 +6966,7 @@
     }
   },
   "option": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#option",
     "description": [
       [
@@ -6977,7 +6978,6 @@
         "https://w3c.github.io/aria/#listbox"
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "input": "https://w3c.github.io/aria/#input"
     },
@@ -7102,6 +7102,7 @@
     }
   },
   "paragraph": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#paragraph",
     "description": [
       [
@@ -7109,7 +7110,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
     },
@@ -7204,6 +7204,7 @@
     }
   },
   "presentation": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#presentation",
     "description": [
       [
@@ -7227,7 +7228,6 @@
         "https://w3c.github.io/aria/#none"
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "structure": "https://w3c.github.io/aria/#structure"
     },
@@ -7322,6 +7322,7 @@
     }
   },
   "progressbar": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#progressbar",
     "description": [
       [
@@ -7333,7 +7334,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "range": "https://w3c.github.io/aria/#range",
       "widget": "https://w3c.github.io/aria/#widget"
@@ -7457,6 +7457,7 @@
     }
   },
   "radio": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#radio",
     "description": [
       [
@@ -7464,7 +7465,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "input": "https://w3c.github.io/aria/#input"
     },
@@ -7579,6 +7579,7 @@
     }
   },
   "radiogroup": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#radiogroup",
     "description": [
       [
@@ -7594,7 +7595,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "select": "https://w3c.github.io/aria/#select"
     },
@@ -7717,6 +7717,7 @@
     }
   },
   "range": {
+    "is_abstract": true,
     "url": "https://w3c.github.io/aria/#range",
     "description": [
       [
@@ -7724,7 +7725,6 @@
         ""
       ]
     ],
-    "is_abstract": true,
     "parents": {
       "structure": "https://w3c.github.io/aria/#structure"
     },
@@ -7853,6 +7853,7 @@
     }
   },
   "region": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#region",
     "description": [
       [
@@ -7864,7 +7865,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "landmark": "https://w3c.github.io/aria/#landmark"
     },
@@ -7971,6 +7971,7 @@
     }
   },
   "roletype": {
+    "is_abstract": true,
     "url": "https://w3c.github.io/aria/#roletype",
     "description": [
       [
@@ -7986,7 +7987,6 @@
         ""
       ]
     ],
-    "is_abstract": true,
     "parents": {},
     "children": {
       "structure": "https://w3c.github.io/aria/#structure",
@@ -8095,6 +8095,7 @@
     }
   },
   "row": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#row",
     "description": [
       [
@@ -8102,7 +8103,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "group": "https://w3c.github.io/aria/#group",
       "widget": "https://w3c.github.io/aria/#widget"
@@ -8246,6 +8246,7 @@
     }
   },
   "rowgroup": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#rowgroup",
     "description": [
       [
@@ -8253,7 +8254,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "structure": "https://w3c.github.io/aria/#structure"
     },
@@ -8360,6 +8360,7 @@
     }
   },
   "rowheader": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#rowheader",
     "description": [
       [
@@ -8367,7 +8368,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "cell": "https://w3c.github.io/aria/#cell",
       "gridcell": "https://w3c.github.io/aria/#gridcell",
@@ -8520,6 +8520,7 @@
     }
   },
   "scrollbar": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#scrollbar",
     "description": [
       [
@@ -8527,7 +8528,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "range": "https://w3c.github.io/aria/#range",
       "widget": "https://w3c.github.io/aria/#widget"
@@ -8651,6 +8651,7 @@
     }
   },
   "search": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#search",
     "description": [
       [
@@ -8674,7 +8675,6 @@
         "https://w3c.github.io/aria/#searchbox"
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "landmark": "https://w3c.github.io/aria/#landmark"
     },
@@ -8781,6 +8781,7 @@
     }
   },
   "searchbox": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#searchbox",
     "description": [
       [
@@ -8800,7 +8801,6 @@
         "https://w3c.github.io/aria/#search"
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "textbox": "https://w3c.github.io/aria/#textbox"
     },
@@ -8931,6 +8931,7 @@
     }
   },
   "section": {
+    "is_abstract": true,
     "url": "https://w3c.github.io/aria/#section",
     "description": [
       [
@@ -8938,7 +8939,6 @@
         ""
       ]
     ],
-    "is_abstract": true,
     "parents": {
       "structure": "https://w3c.github.io/aria/#structure"
     },
@@ -9079,6 +9079,7 @@
     }
   },
   "sectionfooter": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#sectionfooter",
     "description": [
       [
@@ -9094,7 +9095,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
     },
@@ -9201,6 +9201,7 @@
     }
   },
   "sectionhead": {
+    "is_abstract": true,
     "url": "https://w3c.github.io/aria/#sectionhead",
     "description": [
       [
@@ -9208,7 +9209,6 @@
         ""
       ]
     ],
-    "is_abstract": true,
     "parents": {
       "structure": "https://w3c.github.io/aria/#structure"
     },
@@ -9320,6 +9320,7 @@
     }
   },
   "sectionheader": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#sectionheader",
     "description": [
       [
@@ -9343,7 +9344,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
     },
@@ -9450,6 +9450,7 @@
     }
   },
   "select": {
+    "is_abstract": true,
     "url": "https://w3c.github.io/aria/#select",
     "description": [
       [
@@ -9457,7 +9458,6 @@
         ""
       ]
     ],
-    "is_abstract": true,
     "parents": {
       "composite": "https://w3c.github.io/aria/#composite",
       "group": "https://w3c.github.io/aria/#group"
@@ -9574,6 +9574,7 @@
     }
   },
   "separator": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#separator",
     "description": [
       [
@@ -9581,7 +9582,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "structure": "https://w3c.github.io/aria/#structure",
       "widget": "https://w3c.github.io/aria/#widget"
@@ -9705,6 +9705,7 @@
     }
   },
   "slider": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#slider",
     "description": [
       [
@@ -9712,7 +9713,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "input": "https://w3c.github.io/aria/#input",
       "range": "https://w3c.github.io/aria/#range"
@@ -9840,6 +9840,7 @@
     }
   },
   "spinbutton": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#spinbutton",
     "description": [
       [
@@ -9855,7 +9856,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "composite": "https://w3c.github.io/aria/#composite",
       "input": "https://w3c.github.io/aria/#input",
@@ -9992,6 +9992,7 @@
     }
   },
   "status": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#status",
     "description": [
       [
@@ -10015,7 +10016,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
     },
@@ -10124,6 +10124,7 @@
     }
   },
   "strong": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#strong",
     "description": [
       [
@@ -10135,7 +10136,6 @@
         "https://w3c.github.io/aria/#emphasis"
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
     },
@@ -10230,6 +10230,7 @@
     }
   },
   "structure": {
+    "is_abstract": true,
     "url": "https://w3c.github.io/aria/#structure",
     "description": [
       [
@@ -10241,7 +10242,6 @@
         "https://dom.spec.whatwg.org/#concept-element"
       ]
     ],
-    "is_abstract": true,
     "parents": {
       "roletype": "https://w3c.github.io/aria/#roletype"
     },
@@ -10358,6 +10358,7 @@
     }
   },
   "subscript": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#subscript",
     "description": [
       [
@@ -10369,7 +10370,6 @@
         "https://w3c.github.io/aria/#superscript"
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
     },
@@ -10464,6 +10464,7 @@
     }
   },
   "suggestion": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#suggestion",
     "description": [
       [
@@ -10471,7 +10472,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
     },
@@ -10566,6 +10566,7 @@
     }
   },
   "superscript": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#superscript",
     "description": [
       [
@@ -10577,7 +10578,6 @@
         "https://w3c.github.io/aria/#subscript"
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
     },
@@ -10672,6 +10672,7 @@
     }
   },
   "switch": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#switch",
     "description": [
       [
@@ -10683,7 +10684,6 @@
         "https://w3c.github.io/aria/#checkbox"
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "checkbox": "https://w3c.github.io/aria/#checkbox"
     },
@@ -10802,6 +10802,7 @@
     }
   },
   "tab": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#tab",
     "description": [
       [
@@ -10809,7 +10810,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "sectionhead": "https://w3c.github.io/aria/#sectionhead",
       "widget": "https://w3c.github.io/aria/#widget"
@@ -10933,6 +10933,7 @@
     }
   },
   "table": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#table",
     "description": [
       [
@@ -10948,7 +10949,6 @@
         "https://w3c.github.io/aria/#grid"
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
     },
@@ -11065,6 +11065,7 @@
     }
   },
   "tablist": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#tablist",
     "description": [
       [
@@ -11092,7 +11093,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "composite": "https://w3c.github.io/aria/#composite"
     },
@@ -11211,6 +11211,7 @@
     }
   },
   "tabpanel": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#tabpanel",
     "description": [
       [
@@ -11238,7 +11239,6 @@
         "https://w3c.github.io/aria/#tablist"
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
     },
@@ -11345,6 +11345,7 @@
     }
   },
   "term": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#term",
     "description": [
       [
@@ -11356,7 +11357,6 @@
         "https://w3c.github.io/aria/#definition"
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
     },
@@ -11451,6 +11451,7 @@
     }
   },
   "textbox": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#textbox",
     "description": [
       [
@@ -11458,7 +11459,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "input": "https://w3c.github.io/aria/#input"
     },
@@ -11591,6 +11591,7 @@
     }
   },
   "time": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#time",
     "description": [
       [
@@ -11598,7 +11599,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
     },
@@ -11693,6 +11693,7 @@
     }
   },
   "timer": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#timer",
     "description": [
       [
@@ -11700,7 +11701,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "status": "https://w3c.github.io/aria/#status"
     },
@@ -11807,6 +11807,7 @@
     }
   },
   "toolbar": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#toolbar",
     "description": [
       [
@@ -11814,7 +11815,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "group": "https://w3c.github.io/aria/#group"
     },
@@ -11925,6 +11925,7 @@
     }
   },
   "tooltip": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#tooltip",
     "description": [
       [
@@ -11932,7 +11933,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "section": "https://w3c.github.io/aria/#section"
     },
@@ -12027,6 +12027,7 @@
     }
   },
   "tree": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#tree",
     "description": [
       [
@@ -12038,7 +12039,6 @@
         ""
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "select": "https://w3c.github.io/aria/#select"
     },
@@ -12163,6 +12163,7 @@
     }
   },
   "treegrid": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#treegrid",
     "description": [
       [
@@ -12178,7 +12179,6 @@
         "https://w3c.github.io/aria/#tree"
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "grid": "https://w3c.github.io/aria/#grid",
       "tree": "https://w3c.github.io/aria/#tree"
@@ -12314,6 +12314,7 @@
     }
   },
   "treeitem": {
+    "is_abstract": false,
     "url": "https://w3c.github.io/aria/#treeitem",
     "description": [
       [
@@ -12325,7 +12326,6 @@
         "https://w3c.github.io/aria/#tree"
       ]
     ],
-    "is_abstract": false,
     "parents": {
       "listitem": "https://w3c.github.io/aria/#listitem",
       "option": "https://w3c.github.io/aria/#option"
@@ -12457,6 +12457,7 @@
     }
   },
   "widget": {
+    "is_abstract": true,
     "url": "https://w3c.github.io/aria/#widget",
     "description": [
       [
@@ -12464,7 +12465,6 @@
         ""
       ]
     ],
-    "is_abstract": true,
     "parents": {
       "roletype": "https://w3c.github.io/aria/#roletype"
     },
@@ -12581,6 +12581,7 @@
     }
   },
   "window": {
+    "is_abstract": true,
     "url": "https://w3c.github.io/aria/#window",
     "description": [
       [
@@ -12588,7 +12589,6 @@
         ""
       ]
     ],
-    "is_abstract": true,
     "parents": {
       "roletype": "https://w3c.github.io/aria/#roletype"
     },

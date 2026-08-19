@@ -1,10 +1,10 @@
+is_abstract: false
 url: https://w3c.github.io/aria/#complementary
 description:
 - - landmark
   - https://w3c.github.io/aria/#landmark
 - - that is designed to be complementary to the main content that it is a sibling to, or a direct descendant of. The contents of a complementary landmark would be expected to remain meaningful if it were to be separated from the main content it is relevant to.
   - ''
-is_abstract: false
 parents:
   landmark: https://w3c.github.io/aria/#landmark
 children: {}

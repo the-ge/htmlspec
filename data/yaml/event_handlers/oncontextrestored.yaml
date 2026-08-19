@@ -4,6 +4,3 @@ description:
 - !!python/tuple
   - contextrestored
   - https://html.spec.whatwg.org/multipage/#event-contextrestored
-- !!python/tuple
-  - event handler
-  - ''

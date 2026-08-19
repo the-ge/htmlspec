@@ -4,6 +4,3 @@ description:
 - !!python/tuple
   - cut
   - https://w3c.github.io/clipboard-apis/#clipboard-event-cut
-- !!python/tuple
-  - event handler
-  - ''

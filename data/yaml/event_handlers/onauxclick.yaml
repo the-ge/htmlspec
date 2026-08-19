@@ -4,6 +4,3 @@ description:
 - !!python/tuple
   - auxclick
   - https://w3c.github.io/pointerevents/#auxclick
-- !!python/tuple
-  - event handler
-  - ''

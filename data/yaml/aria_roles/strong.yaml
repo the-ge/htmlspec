@@ -1,10 +1,10 @@
+is_abstract: false
 url: https://w3c.github.io/aria/#strong
 description:
 - - Content that is important, serious, or urgent. See related
   - ''
 - - emphasis
   - https://w3c.github.io/aria/#emphasis
-is_abstract: false
 parents:
   section: https://w3c.github.io/aria/#section
 children: {}

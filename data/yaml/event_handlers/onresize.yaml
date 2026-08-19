@@ -4,6 +4,3 @@ description:
 - !!python/tuple
   - resize
   - https://drafts.csswg.org/cssom-view/#eventdef-window-resize
-- !!python/tuple
-  - event handler
-  - ''

@@ -4,6 +4,3 @@ description:
 - !!python/tuple
   - cuechange
   - https://html.spec.whatwg.org/multipage/media.html#event-media-cuechange
-- !!python/tuple
-  - event handler
-  - ''

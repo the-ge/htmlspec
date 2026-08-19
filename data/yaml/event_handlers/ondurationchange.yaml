@@ -4,6 +4,3 @@ description:
 - !!python/tuple
   - durationchange
   - https://html.spec.whatwg.org/multipage/media.html#event-media-durationchange
-- !!python/tuple
-  - event handler
-  - ''

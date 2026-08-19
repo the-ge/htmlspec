@@ -4,6 +4,3 @@ description:
 - !!python/tuple
   - wheel
   - https://w3c.github.io/pointerevents/#wheel
-- !!python/tuple
-  - event handler
-  - ''

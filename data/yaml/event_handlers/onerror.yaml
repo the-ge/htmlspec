@@ -4,6 +4,3 @@ description:
 - !!python/tuple
   - error
   - https://html.spec.whatwg.org/multipage/#event-error
-- !!python/tuple
-  - event handler
-  - ''

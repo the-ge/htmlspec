@@ -1,10 +1,10 @@
+is_abstract: false
 url: https://w3c.github.io/aria/#cell
 description:
 - - A cell in a tabular container. See related
   - ''
 - - gridcell
   - https://w3c.github.io/aria/#gridcell
-is_abstract: false
 parents:
   section: https://w3c.github.io/aria/#section
 children:

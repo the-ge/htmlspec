@@ -1,8 +1,8 @@
+is_abstract: false
 url: https://w3c.github.io/aria/#scrollbar
 description:
 - - A graphical object that controls the scrolling of content within a viewing area, regardless of whether the content is fully displayed within the viewing area.
   - ''
-is_abstract: false
 parents:
   range: https://w3c.github.io/aria/#range
   widget: https://w3c.github.io/aria/#widget

@@ -1,8 +1,8 @@
+is_abstract: true
 url: https://w3c.github.io/aria/#window
 description:
 - - A browser or application window.
   - ''
-is_abstract: true
 parents:
   roletype: https://w3c.github.io/aria/#roletype
 children:

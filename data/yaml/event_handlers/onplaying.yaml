@@ -4,6 +4,3 @@ description:
 - !!python/tuple
   - playing
   - https://html.spec.whatwg.org/multipage/media.html#event-media-playing
-- !!python/tuple
-  - event handler
-  - ''

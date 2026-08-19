@@ -1,10 +1,10 @@
+is_abstract: false
 url: https://w3c.github.io/aria/#main
 description:
 - - landmark
   - https://w3c.github.io/aria/#landmark
 - - containing the main content of a document.
   - ''
-is_abstract: false
 parents:
   landmark: https://w3c.github.io/aria/#landmark
 children: {}

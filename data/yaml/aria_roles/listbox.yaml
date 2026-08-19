@@ -1,3 +1,4 @@
+is_abstract: false
 url: https://w3c.github.io/aria/#listbox
 description:
 - - widget
@@ -10,7 +11,6 @@ description:
   - ''
 - - list
   - https://w3c.github.io/aria/#list
-is_abstract: false
 parents:
   select: https://w3c.github.io/aria/#select
 children: {}

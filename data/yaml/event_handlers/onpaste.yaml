@@ -4,6 +4,3 @@ description:
 - !!python/tuple
   - paste
   - https://w3c.github.io/clipboard-apis/#clipboard-event-paste
-- !!python/tuple
-  - event handler
-  - ''

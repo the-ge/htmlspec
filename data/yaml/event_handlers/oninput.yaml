@@ -4,6 +4,3 @@ description:
 - !!python/tuple
   - input
   - https://w3c.github.io/uievents/#event-type-input
-- !!python/tuple
-  - event handler
-  - ''

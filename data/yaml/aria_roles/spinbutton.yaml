@@ -1,3 +1,4 @@
+is_abstract: false
 url: https://w3c.github.io/aria/#spinbutton
 description:
 - - A form of
@@ -6,7 +7,6 @@ description:
   - https://w3c.github.io/aria/#range
 - - that expects the user to select from among discrete choices.
   - ''
-is_abstract: false
 parents:
   composite: https://w3c.github.io/aria/#composite
   input: https://w3c.github.io/aria/#input

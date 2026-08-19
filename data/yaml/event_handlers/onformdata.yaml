@@ -4,6 +4,3 @@ description:
 - !!python/tuple
   - formdata
   - https://html.spec.whatwg.org/multipage/#event-formdata
-- !!python/tuple
-  - event handler
-  - ''

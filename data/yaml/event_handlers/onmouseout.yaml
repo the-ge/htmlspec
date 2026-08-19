@@ -4,6 +4,3 @@ description:
 - !!python/tuple
   - mouseout
   - https://w3c.github.io/pointerevents/#mouseout
-- !!python/tuple
-  - event handler
-  - ''

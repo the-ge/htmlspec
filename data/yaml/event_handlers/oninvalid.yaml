@@ -4,6 +4,3 @@ description:
 - !!python/tuple
   - invalid
   - https://html.spec.whatwg.org/multipage/#event-invalid
-- !!python/tuple
-  - event handler
-  - ''

@@ -4,6 +4,3 @@ description:
 - !!python/tuple
   - focus
   - https://html.spec.whatwg.org/multipage/#event-focus
-- !!python/tuple
-  - event handler
-  - ''

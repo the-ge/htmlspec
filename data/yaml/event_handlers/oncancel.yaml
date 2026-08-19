@@ -4,6 +4,3 @@ description:
 - !!python/tuple
   - cancel
   - https://html.spec.whatwg.org/multipage/#event-cancel
-- !!python/tuple
-  - event handler
-  - ''

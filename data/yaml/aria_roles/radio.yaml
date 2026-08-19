@@ -1,8 +1,8 @@
+is_abstract: false
 url: https://w3c.github.io/aria/#radio
 description:
 - - A checkable input in a group of elements with the same role, only one of which can be checked at a time.
   - ''
-is_abstract: false
 parents:
   input: https://w3c.github.io/aria/#input
 children: {}

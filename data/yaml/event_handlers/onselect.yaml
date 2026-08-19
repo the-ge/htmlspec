@@ -4,6 +4,3 @@ description:
 - !!python/tuple
   - select
   - https://html.spec.whatwg.org/multipage/#event-select
-- !!python/tuple
-  - event handler
-  - ''

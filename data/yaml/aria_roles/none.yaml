@@ -1,3 +1,4 @@
+is_abstract: false
 url: https://w3c.github.io/aria/#none
 description:
 - - element
@@ -10,7 +11,6 @@ description:
   - ''
 - - presentation
   - https://w3c.github.io/aria/#presentation
-is_abstract: false
 parents:
   structure: https://w3c.github.io/aria/#structure
 children: {}

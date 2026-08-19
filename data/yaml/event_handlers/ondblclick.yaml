@@ -4,6 +4,3 @@ description:
 - !!python/tuple
   - dblclick
   - https://w3c.github.io/pointerevents/#dblclick
-- !!python/tuple
-  - event handler
-  - ''

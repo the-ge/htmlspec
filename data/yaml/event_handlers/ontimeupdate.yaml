@@ -4,6 +4,3 @@ description:
 - !!python/tuple
   - timeupdate
   - https://html.spec.whatwg.org/multipage/media.html#event-media-timeupdate
-- !!python/tuple
-  - event handler
-  - ''

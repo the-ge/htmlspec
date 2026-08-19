@@ -4,6 +4,3 @@ description:
 - !!python/tuple
   - keyup
   - https://w3c.github.io/uievents/#event-type-keyup
-- !!python/tuple
-  - event handler
-  - ''

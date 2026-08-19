@@ -1,10 +1,10 @@
+is_abstract: false
 url: https://w3c.github.io/aria/#progressbar
 description:
 - - element
   - https://dom.spec.whatwg.org/#concept-element
 - - that displays the progress status for tasks that take a long time.
   - ''
-is_abstract: false
 parents:
   range: https://w3c.github.io/aria/#range
   widget: https://w3c.github.io/aria/#widget

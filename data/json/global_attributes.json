@@ -12,7 +12,7 @@
     "url": "https://html.spec.whatwg.org/dev/interaction.html#attr-fe-autofocus"
   },
   "class": {
-    "url": ""
+    "url": "https://html.spec.whatwg.org/dev/dom.html#classes"
   },
   "contenteditable": {
     "url": "https://html.spec.whatwg.org/dev/interaction.html#attr-contenteditable"
@@ -36,7 +36,7 @@
     "url": "https://html.spec.whatwg.org/dev/interaction.html#attr-hidden"
   },
   "id": {
-    "url": ""
+    "url": "https://html.spec.whatwg.org/dev/dom.html#the-id-attribute"
   },
   "inert": {
     "url": "https://html.spec.whatwg.org/dev/interaction.html#the-inert-attribute"
@@ -72,10 +72,10 @@
     "url": "https://html.spec.whatwg.org/dev/popover.html#attr-popover"
   },
   "role": {
-    "url": ""
+    "url": "https://w3c.github.io/aria/#introroles"
   },
   "slot": {
-    "url": ""
+    "url": "https://html.spec.whatwg.org/dev/dom.html#attr-slot"
   },
   "spellcheck": {
     "url": "https://html.spec.whatwg.org/dev/interaction.html#attr-spellcheck"

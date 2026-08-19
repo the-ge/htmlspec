@@ -1,10 +1,10 @@
+is_abstract: false
 url: https://w3c.github.io/aria/#insertion
 description:
 - - An insertion contains content that is marked as added or content that is being suggested for addition. See related
   - ''
 - - deletion
   - https://w3c.github.io/aria/#deletion
-is_abstract: false
 parents:
   section: https://w3c.github.io/aria/#section
 children: {}

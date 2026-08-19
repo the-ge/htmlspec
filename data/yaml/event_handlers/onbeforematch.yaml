@@ -4,6 +4,3 @@ description:
 - !!python/tuple
   - beforematch
   - https://html.spec.whatwg.org/multipage/#event-beforematch
-- !!python/tuple
-  - event handler
-  - ''

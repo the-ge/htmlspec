@@ -4,6 +4,3 @@ description:
 - !!python/tuple
   - submit
   - https://html.spec.whatwg.org/multipage/#event-submit
-- !!python/tuple
-  - event handler
-  - ''

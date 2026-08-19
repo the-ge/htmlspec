@@ -1,3 +1,4 @@
+is_abstract: false
 url: https://w3c.github.io/aria/#feed
 description:
 - - A scrollable
@@ -14,7 +15,6 @@ description:
   - https://w3c.github.io/aria/#article
 - - to be added to or removed from either end of the list.
   - ''
-is_abstract: false
 parents:
   list: https://w3c.github.io/aria/#list
 children: {}

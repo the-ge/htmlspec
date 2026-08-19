@@ -4,6 +4,3 @@ description:
 - !!python/tuple
   - click
   - https://w3c.github.io/pointerevents/#click
-- !!python/tuple
-  - event handler
-  - ''

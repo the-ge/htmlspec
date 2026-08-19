@@ -4,6 +4,3 @@ description:
 - !!python/tuple
   - securitypolicyviolation
   - https://w3c.github.io/webappsec-csp/#eventdef-globaleventhandlers-securitypolicyviolation
-- !!python/tuple
-  - event handler
-  - ''

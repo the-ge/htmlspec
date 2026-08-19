@@ -1,3 +1,4 @@
+is_abstract: false
 url: https://w3c.github.io/aria/#figure
 description:
 - - A perceivable
@@ -10,7 +11,6 @@ description:
   - https://html.spec.whatwg.org/multipage/#dfn-graphical-document
 - - ', images, media player, code snippets, or example text. The parts of a figure MAY be user-navigable.'
   - ''
-is_abstract: false
 parents:
   section: https://w3c.github.io/aria/#section
 children: {}

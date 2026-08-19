@@ -1,3 +1,4 @@
+is_abstract: false
 url: https://w3c.github.io/aria/#treegrid
 description:
 - - grid
@@ -6,7 +7,6 @@ description:
   - ''
 - - tree
   - https://w3c.github.io/aria/#tree
-is_abstract: false
 parents:
   grid: https://w3c.github.io/aria/#grid
   tree: https://w3c.github.io/aria/#tree

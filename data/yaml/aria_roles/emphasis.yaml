@@ -1,10 +1,10 @@
+is_abstract: false
 url: https://w3c.github.io/aria/#emphasis
 description:
 - - One or more emphasized characters. See related
   - ''
 - - strong
   - https://w3c.github.io/aria/#strong
-is_abstract: false
 parents:
   section: https://w3c.github.io/aria/#section
 children: {}

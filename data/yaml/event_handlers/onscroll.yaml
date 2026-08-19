@@ -4,6 +4,3 @@ description:
 - !!python/tuple
   - scroll
   - https://drafts.csswg.org/cssom-view/#eventdef-document-scroll
-- !!python/tuple
-  - event handler
-  - ''

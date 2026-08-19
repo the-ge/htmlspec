@@ -4,6 +4,3 @@ description:
 - !!python/tuple
   - stalled
   - https://html.spec.whatwg.org/multipage/media.html#event-media-stalled
-- !!python/tuple
-  - event handler
-  - ''

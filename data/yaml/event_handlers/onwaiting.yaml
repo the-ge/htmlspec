@@ -4,6 +4,3 @@ description:
 - !!python/tuple
   - waiting
   - https://html.spec.whatwg.org/multipage/media.html#event-media-waiting
-- !!python/tuple
-  - event handler
-  - ''

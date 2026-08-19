@@ -4,6 +4,3 @@ description:
 - !!python/tuple
   - blur
   - https://html.spec.whatwg.org/multipage/#event-blur
-- !!python/tuple
-  - event handler
-  - ''

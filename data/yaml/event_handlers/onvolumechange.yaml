@@ -4,6 +4,3 @@ description:
 - !!python/tuple
   - volumechange
   - https://html.spec.whatwg.org/multipage/media.html#event-media-volumechange
-- !!python/tuple
-  - event handler
-  - ''

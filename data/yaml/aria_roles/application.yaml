@@ -1,3 +1,4 @@
+is_abstract: false
 url: https://w3c.github.io/aria/#application
 description:
 - - structure
@@ -12,7 +13,6 @@ description:
   - https://w3c.github.io/aria/#widget
 - - role.
   - ''
-is_abstract: false
 parents:
   structure: https://w3c.github.io/aria/#structure
 children: {}

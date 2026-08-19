@@ -30,10 +30,6 @@
       [
         "auxclick",
         "https://w3c.github.io/pointerevents/#auxclick"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -45,10 +41,6 @@
       [
         "beforeinput",
         "https://w3c.github.io/uievents/#event-type-beforeinput"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -60,10 +52,6 @@
       [
         "beforematch",
         "https://html.spec.whatwg.org/multipage/#event-beforematch"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -98,10 +86,6 @@
       [
         "beforetoggle",
         "https://html.spec.whatwg.org/multipage/#event-beforetoggle"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -136,10 +120,6 @@
       [
         "blur",
         "https://html.spec.whatwg.org/multipage/#event-blur"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -151,10 +131,6 @@
       [
         "cancel",
         "https://html.spec.whatwg.org/multipage/#event-cancel"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -166,10 +142,6 @@
       [
         "canplay",
         "https://html.spec.whatwg.org/multipage/media.html#event-media-canplay"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -181,10 +153,6 @@
       [
         "canplaythrough",
         "https://html.spec.whatwg.org/multipage/media.html#event-media-canplaythrough"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -196,10 +164,6 @@
       [
         "change",
         "https://html.spec.whatwg.org/multipage/#event-change"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -211,10 +175,6 @@
       [
         "click",
         "https://w3c.github.io/pointerevents/#click"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -226,10 +186,6 @@
       [
         "close",
         "https://html.spec.whatwg.org/multipage/#event-close"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -241,10 +197,6 @@
       [
         "command",
         "https://html.spec.whatwg.org/multipage/#event-command"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -256,10 +208,6 @@
       [
         "contextlost",
         "https://html.spec.whatwg.org/multipage/#event-contextlost"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -271,10 +219,6 @@
       [
         "contextmenu",
         "https://w3c.github.io/uievents/#event-type-contextmenu"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -286,10 +230,6 @@
       [
         "contextrestored",
         "https://html.spec.whatwg.org/multipage/#event-contextrestored"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -301,10 +241,6 @@
       [
         "copy",
         "https://w3c.github.io/clipboard-apis/#clipboard-event-copy"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -316,10 +252,6 @@
       [
         "cuechange",
         "https://html.spec.whatwg.org/multipage/media.html#event-media-cuechange"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -331,10 +263,6 @@
       [
         "cut",
         "https://w3c.github.io/clipboard-apis/#clipboard-event-cut"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -346,10 +274,6 @@
       [
         "dblclick",
         "https://w3c.github.io/pointerevents/#dblclick"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -361,10 +285,6 @@
       [
         "drag",
         "https://html.spec.whatwg.org/multipage/dnd.html#event-dnd-drag"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -376,10 +296,6 @@
       [
         "dragend",
         "https://html.spec.whatwg.org/multipage/dnd.html#event-dnd-dragend"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -391,10 +307,6 @@
       [
         "dragenter",
         "https://html.spec.whatwg.org/multipage/dnd.html#event-dnd-dragenter"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -406,10 +318,6 @@
       [
         "dragleave",
         "https://html.spec.whatwg.org/multipage/dnd.html#event-dnd-dragleave"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -421,10 +329,6 @@
       [
         "dragover",
         "https://html.spec.whatwg.org/multipage/dnd.html#event-dnd-dragover"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -436,10 +340,6 @@
       [
         "dragstart",
         "https://html.spec.whatwg.org/multipage/dnd.html#event-dnd-dragstart"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -451,10 +351,6 @@
       [
         "drop",
         "https://html.spec.whatwg.org/multipage/dnd.html#event-dnd-drop"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -466,10 +362,6 @@
       [
         "durationchange",
         "https://html.spec.whatwg.org/multipage/media.html#event-media-durationchange"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -481,10 +373,6 @@
       [
         "emptied",
         "https://html.spec.whatwg.org/multipage/media.html#event-media-emptied"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -496,10 +384,6 @@
       [
         "ended",
         "https://html.spec.whatwg.org/multipage/media.html#event-media-ended"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -511,10 +395,6 @@
       [
         "error",
         "https://html.spec.whatwg.org/multipage/#event-error"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -526,10 +406,6 @@
       [
         "focus",
         "https://html.spec.whatwg.org/multipage/#event-focus"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -541,10 +417,6 @@
       [
         "formdata",
         "https://html.spec.whatwg.org/multipage/#event-formdata"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -579,10 +451,6 @@
       [
         "input",
         "https://w3c.github.io/uievents/#event-type-input"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -594,10 +462,6 @@
       [
         "invalid",
         "https://html.spec.whatwg.org/multipage/#event-invalid"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -609,10 +473,6 @@
       [
         "keydown",
         "https://w3c.github.io/uievents/#event-type-keydown"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -624,10 +484,6 @@
       [
         "keypress",
         "https://w3c.github.io/uievents/#event-type-keypress"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -639,10 +495,6 @@
       [
         "keyup",
         "https://w3c.github.io/uievents/#event-type-keyup"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -677,10 +529,6 @@
       [
         "load",
         "https://html.spec.whatwg.org/multipage/#event-load"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -692,10 +540,6 @@
       [
         "loadeddata",
         "https://html.spec.whatwg.org/multipage/media.html#event-media-loadeddata"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -707,10 +551,6 @@
       [
         "loadedmetadata",
         "https://html.spec.whatwg.org/multipage/media.html#event-media-loadedmetadata"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -722,10 +562,6 @@
       [
         "loadstart",
         "https://html.spec.whatwg.org/multipage/media.html#event-media-loadstart"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -783,10 +619,6 @@
       [
         "mousedown",
         "https://w3c.github.io/pointerevents/#mousedown"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -798,10 +630,6 @@
       [
         "mouseenter",
         "https://w3c.github.io/pointerevents/#mouseenter"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -813,10 +641,6 @@
       [
         "mouseleave",
         "https://w3c.github.io/pointerevents/#mouseleave"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -828,10 +652,6 @@
       [
         "mousemove",
         "https://w3c.github.io/pointerevents/#mousemove"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -843,10 +663,6 @@
       [
         "mouseout",
         "https://w3c.github.io/pointerevents/#mouseout"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -858,10 +674,6 @@
       [
         "mouseover",
         "https://w3c.github.io/pointerevents/#mouseover"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -873,10 +685,6 @@
       [
         "mouseup",
         "https://w3c.github.io/pointerevents/#mouseup"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -1026,10 +834,6 @@
       [
         "paste",
         "https://w3c.github.io/clipboard-apis/#clipboard-event-paste"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -1041,10 +845,6 @@
       [
         "pause",
         "https://html.spec.whatwg.org/multipage/media.html#event-media-pause"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -1056,10 +856,6 @@
       [
         "play",
         "https://html.spec.whatwg.org/multipage/media.html#event-media-play"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -1071,10 +867,6 @@
       [
         "playing",
         "https://html.spec.whatwg.org/multipage/media.html#event-media-playing"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -1109,10 +901,6 @@
       [
         "progress",
         "https://html.spec.whatwg.org/multipage/media.html#event-media-progress"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -1124,10 +912,6 @@
       [
         "ratechange",
         "https://html.spec.whatwg.org/multipage/media.html#event-media-ratechange"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -1162,10 +946,6 @@
       [
         "reset",
         "https://html.spec.whatwg.org/multipage/#event-reset"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -1177,10 +957,6 @@
       [
         "resize",
         "https://drafts.csswg.org/cssom-view/#eventdef-window-resize"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -1192,10 +968,6 @@
       [
         "scroll",
         "https://drafts.csswg.org/cssom-view/#eventdef-document-scroll"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -1207,10 +979,6 @@
       [
         "scrollend",
         "https://drafts.csswg.org/cssom-view/#eventdef-document-scrollend"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -1222,10 +990,6 @@
       [
         "securitypolicyviolation",
         "https://w3c.github.io/webappsec-csp/#eventdef-globaleventhandlers-securitypolicyviolation"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -1237,10 +1001,6 @@
       [
         "seeked",
         "https://html.spec.whatwg.org/multipage/media.html#event-media-seeked"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -1252,10 +1012,6 @@
       [
         "seeking",
         "https://html.spec.whatwg.org/multipage/media.html#event-media-seeking"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -1267,10 +1023,6 @@
       [
         "select",
         "https://html.spec.whatwg.org/multipage/#event-select"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -1282,10 +1034,6 @@
       [
         "slotchange",
         "https://dom.spec.whatwg.org/#eventdef-htmlslotelement-slotchange"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -1297,10 +1045,6 @@
       [
         "stalled",
         "https://html.spec.whatwg.org/multipage/media.html#event-media-stalled"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -1335,10 +1079,6 @@
       [
         "submit",
         "https://html.spec.whatwg.org/multipage/#event-submit"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -1350,10 +1090,6 @@
       [
         "suspend",
         "https://html.spec.whatwg.org/multipage/media.html#event-media-suspend"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -1365,10 +1101,6 @@
       [
         "timeupdate",
         "https://html.spec.whatwg.org/multipage/media.html#event-media-timeupdate"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -1380,10 +1112,6 @@
       [
         "toggle",
         "https://html.spec.whatwg.org/multipage/#event-toggle"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -1441,10 +1169,6 @@
       [
         "volumechange",
         "https://html.spec.whatwg.org/multipage/media.html#event-media-volumechange"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -1456,10 +1180,6 @@
       [
         "waiting",
         "https://html.spec.whatwg.org/multipage/media.html#event-media-waiting"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   },
@@ -1471,10 +1191,6 @@
       [
         "wheel",
         "https://w3c.github.io/pointerevents/#wheel"
-      ],
-      [
-        "event handler",
-        ""
       ]
     ]
   }

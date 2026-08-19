@@ -4,6 +4,3 @@ description:
 - !!python/tuple
   - mouseover
   - https://w3c.github.io/pointerevents/#mouseover
-- !!python/tuple
-  - event handler
-  - ''

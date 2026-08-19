@@ -1,10 +1,10 @@
+is_abstract: false
 url: https://w3c.github.io/aria/#tree
 description:
 - - widget
   - https://w3c.github.io/aria/#widget
 - - that allows the user to select one or more items from a hierarchically organized collection.
   - ''
-is_abstract: false
 parents:
   select: https://w3c.github.io/aria/#select
 children:

@@ -1,10 +1,10 @@
+is_abstract: false
 url: https://w3c.github.io/aria/#superscript
 description:
 - - One or more superscripted characters. See related
   - ''
 - - subscript
   - https://w3c.github.io/aria/#subscript
-is_abstract: false
 parents:
   section: https://w3c.github.io/aria/#section
 children: {}

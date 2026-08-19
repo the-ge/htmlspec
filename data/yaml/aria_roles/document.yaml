@@ -1,3 +1,4 @@
+is_abstract: false
 url: https://w3c.github.io/aria/#document
 description:
 - - element
@@ -8,7 +9,6 @@ description:
   - https://html.spec.whatwg.org/multipage/#assistive-technology
 - - users might want to browse in a reading mode.
   - ''
-is_abstract: false
 parents:
   structure: https://w3c.github.io/aria/#structure
 children:

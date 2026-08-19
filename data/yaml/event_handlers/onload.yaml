@@ -4,6 +4,3 @@ description:
 - !!python/tuple
   - load
   - https://html.spec.whatwg.org/multipage/#event-load
-- !!python/tuple
-  - event handler
-  - ''

@@ -1,10 +1,10 @@
+is_abstract: true
 url: https://w3c.github.io/aria/#structure
 description:
 - - A document structural
   - ''
 - - element
   - https://dom.spec.whatwg.org/#concept-element
-is_abstract: true
 parents:
   roletype: https://w3c.github.io/aria/#roletype
 children:

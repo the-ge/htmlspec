@@ -1,8 +1,8 @@
+is_abstract: false
 url: https://w3c.github.io/aria/#article
 description:
 - - A section of a page that consists of a composition that forms an independent part of a document, page, or site.
   - ''
-is_abstract: false
 parents:
   document: https://w3c.github.io/aria/#document
 children:

@@ -4,6 +4,3 @@ description:
 - !!python/tuple
   - slotchange
   - https://dom.spec.whatwg.org/#eventdef-htmlslotelement-slotchange
-- !!python/tuple
-  - event handler
-  - ''

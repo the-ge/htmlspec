@@ -4,6 +4,3 @@ description:
 - !!python/tuple
   - toggle
   - https://html.spec.whatwg.org/multipage/#event-toggle
-- !!python/tuple
-  - event handler
-  - ''
